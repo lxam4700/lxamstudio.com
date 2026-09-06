@@ -504,8 +504,8 @@
   <!-- ============ NAV ============ -->
   <nav class="lxnav" style="position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(18px,5vw,64px);backdrop-filter:blur(14px);background:linear-gradient(180deg,rgba(14,10,7,.86),rgba(14,10,7,.32));border-bottom:1px solid rgba(255,255,255,.06);">
     <a data-cursor="" onclick="{{goTop}}" class="lxlogo" style="display:flex;align-items:center;gap:11px;text-decoration:none;cursor:pointer;">
-      <img src="assets/2792c6e0.png" alt="LXAM" style="width:34px;height:34px;display:block;">
-      <div style="line-height:1;">
+      <img src="assets/2792c6e0.png" alt="LXAM" class="lxlogo-icon" style="width:34px;height:34px;display:block;">
+      <div class="lxwordmark" style="line-height:1;">
         <div style="font-family:'Space Age','Unbounded',sans-serif;font-weight:400;text-transform:lowercase;font-size:23px;letter-spacing:8px;color:#fff;">LXAM</div>
         <div style="font-family:'SFU Futura',sans-serif;font-size:8.5px;letter-spacing:3.9px;color:#9a8f84;margin-top:5px;">3D ART STUDIO</div>
       </div>
@@ -980,6 +980,9 @@
       .lxcta{display:none !important;}
       .lxnav{justify-content:center !important;}
       .lxnav-actions{position:absolute;right:clamp(18px,5vw,64px);top:50%;transform:translateY(-50%);gap:0 !important;}
+      .lxwordmark{display:none !important;}
+      .lxlogo{gap:0 !important;}
+      .lxlogo-icon{width:42px !important;height:42px !important;}
     }
     .lxcombo{justify-content:center !important;text-align:center;}
     .lxcombo > div{margin-left:auto;margin-right:auto;}
