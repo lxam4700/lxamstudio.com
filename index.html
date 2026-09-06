@@ -1275,7 +1275,7 @@ class Component extends DCLogic {
     var slot = ph.closest('[data-vslot]');
     if(!slot) return;
     var v = slot.querySelector('[data-vid][data-baked]');
-    if(!v) return;
+    if(!v){ e.preventDefault(); e.stopPropagation(); return; }
     e.preventDefault(); e.stopPropagation();
     ph.style.display = 'none';
     v.style.display = 'block';
