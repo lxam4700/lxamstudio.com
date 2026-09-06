@@ -595,7 +595,7 @@
         <p style="font-size:13px;line-height:1.7;color:#6f665d;font-style:italic;margin:0 0 30px;max-width:560px;">10+ years in 3D Art &amp; Multimedia — guiding every student personally from mindset and workflow to a portfolio-grade final piece.</p>
         <div style="display:flex;flex-wrap:wrap;gap:12px;">
           <a data-cursor="" href="https://www.facebook.com/anhminh.lexuan/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border:1px solid rgba(255,255,255,.14);border-radius:40px;color:#ece4db;font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;">Facebook cá nhân ↗</a>
-          <a data-cursor="" href="https://www.facebook.com/profile.php?id=100067051315786" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border:1px solid rgba(255,255,255,.14);border-radius:40px;color:#ece4db;font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;">Fanpage Studio ↗</a>
+          <a data-cursor="" href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border:1px solid rgba(255,255,255,.14);border-radius:40px;color:#ece4db;font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;">Fanpage Studio ↗</a>
           <a data-cursor="" href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:11px 18px;border:1px solid rgba(255,122,26,.34);border-radius:40px;color:var(--ac,#ff7a1a);font-size:13px;font-weight:500;text-decoration:none;cursor:pointer;">YouTube @LXAMStudios ↗</a>
         </div>
       </div>
@@ -875,17 +875,21 @@
             <form onsubmit="{{submit}}" style="display:flex;flex-direction:column;gap:16px;">
               <div>
                 <label style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Họ và tên</label>
-                <input required="" placeholder="Nguyễn Văn A" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
+                <input required="" data-f="name" name="name" autocomplete="name" placeholder="Nguyễn Văn A" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
               </div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;" class="lxform2">
                 <div>
                   <label style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Số điện thoại</label>
-                  <input required="" placeholder="09xx xxx xxx" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
+                  <input required="" data-f="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
                 </div>
                 <div>
-                  <label style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Facebook / Email</label>
-                  <input placeholder="fb.com/ban" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
+                  <label style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Email</label>
+                  <input required="" data-f="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="ban@email.com" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
                 </div>
+              </div>
+              <div>
+                <label style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Facebook (không bắt buộc)</label>
+                <input data-f="fb" name="fb" placeholder="fb.com/ban" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
               </div>
               <div>
                 <label style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:10px;">Bạn quan tâm gói nào?</label>
@@ -946,7 +950,7 @@
         <div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#7d736a;margin-bottom:18px;">Kết nối</div>
         <div style="display:flex;flex-direction:column;gap:12px;">
           <a data-cursor="" href="https://www.facebook.com/anhminh.lexuan/" target="_blank" rel="noopener" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Facebook cá nhân ↗</a>
-          <a data-cursor="" href="https://www.facebook.com/profile.php?id=100067051315786" target="_blank" rel="noopener" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Fanpage Studio ↗</a>
+          <a data-cursor="" href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Fanpage Studio ↗</a>
           <a data-cursor="" href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">YouTube @LXAMStudios ↗</a>
         </div>
       </div>
@@ -1327,6 +1331,43 @@ class Component extends DCLogic {
     });
     document.addEventListener('visibilitychange', function(){ if(!document.hidden) kickHero(); });
   }
+
+  // ── gửi đăng ký về Google Apps Script ──
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbyxhiWlUEYx4x-grFV-DImPZyea2Ca1iz2JFl3XjcpLXY4abll4eW1Ht0Bn9CstVL3Oww/exec';
+  document.addEventListener('submit', function(ev){
+    var f = ev.target;
+    if(!f || f.tagName !== 'FORM') return;
+    var nameEl = f.querySelector('[data-f="name"]');
+    if(!nameEl) return;
+    if(f._sending) return;
+    f._sending = 1;
+    setTimeout(function(){ f._sending = 0; }, 4000);
+
+    var get = function(k){
+      var el = f.querySelector('[data-f="' + k + '"]');
+      return el ? String(el.value == null ? '' : el.value).trim() : '';
+    };
+    var pkg = '';
+    var pills = f.querySelectorAll('button[type="button"]');
+    for (var i = 0; i < pills.length; i++){
+      if (pills[i].querySelector('span')) pkg = (pills[i].textContent || '').trim();
+    }
+
+    var data = new URLSearchParams();
+    data.append('name',  get('name'));
+    data.append('phone', get('phone'));
+    data.append('email', get('email'));
+    data.append('fb',    get('fb'));
+    data.append('pkg',   pkg);
+    data.append('src',   location.href);
+
+    var sent = false;
+    try { if (navigator.sendBeacon) sent = navigator.sendBeacon(ENDPOINT, data); } catch(err){}
+    if (!sent) {
+      try { fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: data, keepalive: true }); } catch(err){}
+    }
+  }, true);
+
   if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', armHero); } else { armHero(); }
   [300,900,1800,3000,5000,8000].forEach(function(ms){ setTimeout(kickHero, ms); });
   var tries = 0;
