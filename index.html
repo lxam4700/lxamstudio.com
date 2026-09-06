@@ -1280,7 +1280,19 @@ class Component extends DCLogic {
     ph.style.display = 'none';
     v.style.display = 'block';
     v.setAttribute('controls','');
+    v.preload = 'auto';
+    if(v.readyState === 0){ try{ v.load(); }catch(err){} }
     var pr = v.play(); if(pr && pr.catch) pr.catch(function(){});
+    if(!v._retry){
+      v._retry = 1;
+      var n = 0;
+      var t = setInterval(function(){
+        n++;
+        if(n > 24 || (v.readyState > 2 && !v.paused)){ clearInterval(t); return; }
+        if(v.readyState === 0 && n % 5 === 1){ try{ v.load(); }catch(err){} }
+        var p3 = v.play(); if(p3 && p3.catch) p3.catch(function(){});
+      }, 500);
+    }
   }, true);
 
   function kickHero(){
