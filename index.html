@@ -532,14 +532,11 @@
   <!-- ============ HERO ============ -->
   <header id="hero" data-vslot="hero" style="position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:128px clamp(18px,5vw,64px) clamp(46px,6vw,76px);overflow:hidden;">
     <!-- MASTER COVER · showreel video (full-bleed upload slot) -->
-    <div data-still="" style="position:absolute;inset:0;z-index:0;background:url(&quot;assets/4c9ff169.jpg&quot;) center/cover;"></div>
-    <video data-vid="" playsinline="" muted="" loop="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:none;background:#0a0705;"></video>
+    <div data-still="" style="position:absolute;inset:0;z-index:0;background:url(&quot;assets/hero-poster.jpg&quot;) center/cover;"></div>
+    <video data-vid="" data-baked="1" src="assets/hero.mp4" poster="assets/hero-poster.jpg" autoplay="" playsinline="" muted="" loop="" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block;background:#0a0705;"></video>
     <div style="position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(14,10,7,.6) 0%,rgba(14,10,7,.16) 32%,rgba(14,10,7,.48) 62%,rgba(14,10,7,.93) 100%),linear-gradient(90deg,rgba(14,10,7,.86),rgba(14,10,7,.3) 58%,transparent);"></div>
     <!-- empty-state hint (auto-hides once a video is loaded) -->
-    <div data-ph="" style="position:absolute;bottom:clamp(40px,6vw,76px);right:clamp(18px,5vw,64px);z-index:3;display:inline-flex;align-items:center;gap:10px;padding:11px 17px;border-radius:40px;border:1px dashed rgba(255,122,26,.55);background:rgba(14,10,7,.55);backdrop-filter:blur(8px);cursor:pointer;">
-      <span style="margin-left:2px;border-style:solid;border-width:7px 0 7px 12px;border-color:transparent transparent transparent var(--ac,#ff7a1a);"></span>
-      <span style="font-family:'Unbounded';font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#fff;">Showreel cover · kéo thả 16:9</span>
-    </div>
+    
     <div style="position:relative;z-index:3;width:100%;max-width:1320px;margin:0 auto;">
       <div style="max-width:780px;">
         <div style="display:inline-flex;align-items:center;gap:9px;padding:7px 15px;border:1px solid rgba(255,122,26,.4);border-radius:40px;color:var(--ac,#ff7a1a);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:26px;background:rgba(14,10,7,.45);backdrop-filter:blur(6px);">◆ LXAM Studio · Blender 3D School</div>
@@ -549,8 +546,8 @@
         <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:42px;">
           <a data-cursor="" onclick="{{navDk}}" style="display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:44px;background:linear-gradient(120deg,var(--ac,#ff8a1e),var(--acRed,#e62b0d));color:#fff;font-size:15px;font-weight:600;text-decoration:none;cursor:pointer;box-shadow:0 14px 38px rgba(226,45,15,.4);">Giữ chỗ ngay <span style="font-size:17px;">→</span></a>
           <a data-cursor="" onclick="{{navLo}}" style="display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:44px;background:rgba(20,15,11,.5);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.2);color:#ece4db;font-size:15px;font-weight:500;text-decoration:none;cursor:pointer;">Xem lộ trình</a>
-          <button data-cursor="" data-heroplay="" type="button" style="display:none;align-items:center;gap:9px;padding:14px 24px;border-radius:44px;background:rgba(20,15,11,.5);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;"><span style="border-style:solid;border-width:6px 0 6px 11px;border-color:transparent transparent transparent #fff;"></span> Phát showreel</button>
-          <button data-cursor="" data-vpick="hero" type="button" style="display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:44px;background:rgba(20,15,11,.4);backdrop-filter:blur(6px);border:1px dashed rgba(255,122,26,.5);color:var(--ac,#ff7a1a);font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">◷ Tải showreel cover</button>
+          
+          
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:14px 34px;">
           <div><div style="font-family:'Unbounded';font-size:34px;font-weight:700;color:#fff;line-height:1;"><span data-count="10">10</span><span style="font-size:16px;color:var(--ac,#ff7a1a);"> năm</span></div><div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#bdb3a8;margin-top:6px;">Kinh nghiệm 3D</div></div>
@@ -615,12 +612,12 @@
       <p style="font-size:14px;line-height:1.6;color:#8b8178;max-width:340px;margin:0;">Showreel tổng hợp các shot TVC, animation &amp; render do studio và học viên thực hiện.</p>
     </div>
     <div data-vslot="reel" data-cursor="" style="position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.1);background:#15100b;box-shadow:0 40px 90px rgba(0,0,0,.45);cursor:pointer;">
-      <div data-still="" style="position:absolute;inset:0;background:url(&quot;assets/2cdbf5f9.jpg&quot;) center/cover;"></div>
-      <video data-vid="" playsinline="" loop="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0a0705;display:none;"></video>
+      <div data-still="" style="position:absolute;inset:0;background:url(&quot;assets/reel-poster.jpg&quot;) center/cover;"></div>
+      <video data-vid="" data-baked="1" src="assets/reel.mp4" poster="assets/reel-poster.jpg" preload="none" playsinline="" controls="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0a0705;display:none;"></video>
       <div data-ph="" style="position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;background:linear-gradient(180deg,rgba(8,6,4,.45),rgba(8,6,4,.72));cursor:pointer;">
         <div style="width:84px;height:84px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;background:rgba(14,10,7,.4);backdrop-filter:blur(6px);"><span style="margin-left:6px;border-style:solid;border-width:14px 0 14px 24px;border-color:transparent transparent transparent #fff;"></span></div>
         <div style="font-family:'Unbounded';font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#fff;">Showreel · 16:9</div>
-        <div style="font-size:13px;color:#cabfb4;max-width:340px;line-height:1.5;">Kéo &amp; thả video showreel vào khung này — hoặc bấm để chọn file.</div>
+        <div style="font-size:13px;color:#cabfb4;max-width:340px;line-height:1.5;">Bấm để xem showreel — 2 phút 08 giây</div>
       </div>
     </div>
     <input data-vslot-input="reel" type="file" accept="video/*" style="display:none;">
@@ -711,16 +708,16 @@
         <div style="display:inline-flex;align-items:center;gap:9px;color:var(--ac,#ff7a1a);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;">◆ Bài tốt nghiệp · Student TVC</div>
         <h2 style="font-family:'Unbounded';font-weight:700;text-transform:uppercase;font-size:clamp(34px,5vw,68px);line-height:.95;letter-spacing:-1px;color:#fff;margin:0;">TVC của học viên</h2>
       </div>
-      <p style="font-size:14px;line-height:1.6;color:#8b8178;max-width:360px;margin:0;">Sản phẩm TVC ô tô do học viên tự dựng &amp; render — kéo thả video 16:9 vào từng khung để cập nhật.</p>
+      <p style="font-size:14px;line-height:1.6;color:#8b8178;max-width:360px;margin:0;">Sản phẩm TVC ô tô do học viên tự dựng &amp; render trong khoá Master Class.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;" class="lxgrid3">
       <div>
         <div data-vslot="tvc1" data-cursor="" style="position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.09);background:#15100b;cursor:pointer;">
-          <div data-still="" style="position:absolute;inset:0;background:url(&quot;assets/a26a7e39.jpg&quot;) center/cover;"></div>
-          <video data-vid="" playsinline="" loop="" muted="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0a0705;display:none;"></video>
+          <div data-still="" style="position:absolute;inset:0;background:url(&quot;assets/tvc1-poster.jpg&quot;) center/cover;"></div>
+          <video data-vid="" data-baked="1" src="assets/tvc1.mp4" poster="assets/tvc1-poster.jpg" preload="none" playsinline="" controls="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0a0705;display:none;"></video>
           <div data-ph="" style="position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:linear-gradient(180deg,rgba(8,6,4,.4),rgba(8,6,4,.7));cursor:pointer;">
             <div style="width:60px;height:60px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;background:rgba(14,10,7,.4);"><span style="margin-left:4px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff;"></span></div>
-            <div style="font-size:12px;color:#cabfb4;line-height:1.4;">Kéo thả / bấm để tải TVC 16:9</div>
+            <div style="font-size:12px;color:#cabfb4;line-height:1.4;">Bấm để xem</div>
           </div>
         </div>
         <input data-vslot-input="tvc1" type="file" accept="video/*" style="display:none;">
@@ -732,7 +729,7 @@
           <video data-vid="" playsinline="" loop="" muted="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0a0705;display:none;"></video>
           <div data-ph="" style="position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:linear-gradient(180deg,rgba(8,6,4,.4),rgba(8,6,4,.7));cursor:pointer;">
             <div style="width:60px;height:60px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;background:rgba(14,10,7,.4);"><span style="margin-left:4px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff;"></span></div>
-            <div style="font-size:12px;color:#cabfb4;line-height:1.4;">Kéo thả / bấm để tải TVC 16:9</div>
+            <div style="font-size:12px;color:#cabfb4;line-height:1.4;">Bấm để xem</div>
           </div>
         </div>
         <input data-vslot-input="tvc2" type="file" accept="video/*" style="display:none;">
@@ -744,7 +741,7 @@
           <video data-vid="" playsinline="" loop="" muted="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0a0705;display:none;"></video>
           <div data-ph="" style="position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;background:linear-gradient(180deg,rgba(8,6,4,.4),rgba(8,6,4,.7));cursor:pointer;">
             <div style="width:60px;height:60px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);display:flex;align-items:center;justify-content:center;background:rgba(14,10,7,.4);"><span style="margin-left:4px;border-style:solid;border-width:10px 0 10px 17px;border-color:transparent transparent transparent #fff;"></span></div>
-            <div style="font-size:12px;color:#cabfb4;line-height:1.4;">Kéo thả / bấm để tải TVC 16:9</div>
+            <div style="font-size:12px;color:#cabfb4;line-height:1.4;">Bấm để xem</div>
           </div>
         </div>
         <input data-vslot-input="tvc3" type="file" accept="video/*" style="display:none;">
@@ -1267,4 +1264,24 @@ class Component extends DCLogic {
 </script>
 
 
+
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    if(!t || !t.closest) return;
+    var ph = t.closest('[data-ph]');
+    if(!ph) return;
+    var slot = ph.closest('[data-vslot]');
+    if(!slot) return;
+    var v = slot.querySelector('[data-vid][data-baked]');
+    if(!v) return;
+    e.preventDefault(); e.stopPropagation();
+    ph.style.display = 'none';
+    v.style.display = 'block';
+    v.setAttribute('controls','');
+    var pr = v.play(); if(pr && pr.catch) pr.catch(function(){});
+  }, true);
+})();
+</script>
 </body></html>
