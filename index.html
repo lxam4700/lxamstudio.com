@@ -1286,8 +1286,13 @@ class Component extends DCLogic {
   function kickHero(){
     var v = document.querySelector('[data-vslot="hero"] [data-vid][data-baked]');
     if(!v) return;
-    v.muted = true; v.defaultMuted = true; v.playsInline = true;
-    v.setAttribute('muted',''); v.setAttribute('playsinline','');
+    v.muted = true; v.defaultMuted = true; v.playsInline = true; v.loop = true;
+    v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('loop','');
+    if(!v._loopw){
+      v._loopw = 1;
+      v.addEventListener('ended', function(){ try{ v.currentTime = 0; }catch(e){} var p2 = v.play(); if(p2 && p2.catch) p2.catch(function(){}); });
+    }
+    if(v.ended){ try{ v.currentTime = 0; }catch(e){} }
     if(!v.getAttribute('src')){
       var small = false;
       try{ small = window.matchMedia('(max-width: 900px)').matches; }catch(e){ small = (window.innerWidth||1200) <= 900; }
@@ -1300,7 +1305,7 @@ class Component extends DCLogic {
       v.setAttribute('src', pick);
       v.load();
     }
-    if(v.readyState === 0){ v.preload = 'auto'; try{ v.load(); }catch(e){} }
+    if(v.readyState === 0 && (v._tries||0) < 3){ v._tries = (v._tries||0) + 1; v.preload = 'auto'; try{ v.load(); }catch(e){} }
     if(v.paused){ var pr = v.play(); if(pr && pr.catch) pr.catch(function(){}); }
   }
   function armHero(){
@@ -1316,7 +1321,8 @@ class Component extends DCLogic {
   var iv = setInterval(function(){
     tries++;
     var v = document.querySelector('[data-vslot="hero"] [data-vid][data-baked]');
-    if(tries > 40 || (v && v.readyState > 2 && !v.paused)){ clearInterval(iv); return; }
+    if(tries > 400){ clearInterval(iv); return; }
+    if(v && v.readyState > 2 && !v.paused && v.loop){ return; }
     kickHero();
   }, 700);
 })();
