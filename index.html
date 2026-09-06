@@ -532,8 +532,8 @@
   <!-- ============ HERO ============ -->
   <header id="hero" data-vslot="hero" style="position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:128px clamp(18px,5vw,64px) clamp(46px,6vw,76px);overflow:hidden;">
     <!-- MASTER COVER · showreel video (full-bleed upload slot) -->
-    <div data-still="" style="position:absolute;inset:0;z-index:0;background:url(&quot;assets/hero-poster.jpg&quot;) center/cover;"></div>
-    <video data-vid="" data-baked="1" src="assets/hero.mp4" poster="assets/hero-poster.jpg" autoplay="" playsinline="" muted="" loop="" preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block;background:#0a0705;"></video>
+    <div data-still="" style="position:absolute;inset:0;z-index:0;background:url(&quot;assets/hero-p.jpg&quot;) center/cover;"></div>
+    <video data-vid="" data-baked="1" data-src-d="assets/hero-d.mp4" data-src-m="assets/hero-m.mp4" poster="assets/hero-p.jpg" autoplay="" playsinline="" muted="" loop="" preload="none" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;display:block;background:#0a0705;"></video>
     <div style="position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(14,10,7,.6) 0%,rgba(14,10,7,.16) 32%,rgba(14,10,7,.48) 62%,rgba(14,10,7,.93) 100%),linear-gradient(90deg,rgba(14,10,7,.86),rgba(14,10,7,.3) 58%,transparent);"></div>
     <!-- empty-state hint (auto-hides once a video is loaded) -->
     
@@ -1282,6 +1282,37 @@ class Component extends DCLogic {
     v.setAttribute('controls','');
     var pr = v.play(); if(pr && pr.catch) pr.catch(function(){});
   }, true);
+
+  function kickHero(){
+    var v = document.querySelector('[data-vslot="hero"] [data-vid][data-baked]');
+    if(!v) return;
+    v.muted = true; v.defaultMuted = true; v.playsInline = true;
+    v.setAttribute('muted',''); v.setAttribute('playsinline','');
+    if(!v.getAttribute('src')){
+      var small = false;
+      try{ small = window.matchMedia('(max-width: 900px)').matches; }catch(e){ small = (window.innerWidth||1200) <= 900; }
+      var save = false;
+      try{ var c = navigator.connection || {}; save = !!c.saveData || /(^|-)2g$/.test(c.effectiveType || ''); }catch(e){}
+      var pick = v.getAttribute(small ? 'data-src-m' : 'data-src-d');
+      if(save) pick = v.getAttribute('data-src-m');
+      if(!pick) return;
+      v.setAttribute('preload','auto');
+      v.setAttribute('src', pick);
+      v.load();
+    }
+    if(!v.paused) return;
+    var pr = v.play();
+    if(pr && pr.catch) pr.catch(function(){});
+  }
+  function armHero(){
+    kickHero();
+    ['pointerdown','touchstart','keydown','scroll','mousemove'].forEach(function(ev){
+      window.addEventListener(ev, kickHero, {once:false, passive:true});
+    });
+    document.addEventListener('visibilitychange', function(){ if(!document.hidden) kickHero(); });
+  }
+  if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', armHero); } else { armHero(); }
+  setTimeout(kickHero, 600); setTimeout(kickHero, 2000); setTimeout(kickHero, 5000);
 })();
 </script>
 </body></html>
