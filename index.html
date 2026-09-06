@@ -1300,9 +1300,8 @@ class Component extends DCLogic {
       v.setAttribute('src', pick);
       v.load();
     }
-    if(!v.paused) return;
-    var pr = v.play();
-    if(pr && pr.catch) pr.catch(function(){});
+    if(v.readyState === 0){ v.preload = 'auto'; try{ v.load(); }catch(e){} }
+    if(v.paused){ var pr = v.play(); if(pr && pr.catch) pr.catch(function(){}); }
   }
   function armHero(){
     kickHero();
@@ -1312,7 +1311,14 @@ class Component extends DCLogic {
     document.addEventListener('visibilitychange', function(){ if(!document.hidden) kickHero(); });
   }
   if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', armHero); } else { armHero(); }
-  setTimeout(kickHero, 600); setTimeout(kickHero, 2000); setTimeout(kickHero, 5000);
+  [300,900,1800,3000,5000,8000].forEach(function(ms){ setTimeout(kickHero, ms); });
+  var tries = 0;
+  var iv = setInterval(function(){
+    tries++;
+    var v = document.querySelector('[data-vslot="hero"] [data-vid][data-baked]');
+    if(tries > 40 || (v && v.readyState > 2 && !v.paused)){ clearInterval(iv); return; }
+    kickHero();
+  }, 700);
 })();
 </script>
 </body></html>
