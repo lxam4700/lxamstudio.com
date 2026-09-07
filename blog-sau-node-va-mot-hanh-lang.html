@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru — LXAM Studio</title>
+<meta name="description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
+<meta name="theme-color" content="#0e0a07">
+<link rel="icon" href="assets/2792c6e0.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/2792c6e0.png">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-09-07">
+<meta property="og:site_name" content="LXAM Studio">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru — LXAM Studio">
+<meta property="og:description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
+<meta property="og:image" content="https://lxamstudio.com/assets/2cdbf5f9.jpg">
+<meta property="og:url" content="https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html">
+<link rel="stylesheet" href="assets/lx.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "description": "Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.", "image": "https://lxamstudio.com/assets/2cdbf5f9.jpg", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "item": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}]}</script>
+
+</head>
+<body>
+<nav class="lxnav">
+  <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
+    <img src="assets/2792c6e0.png" alt="LXAM" class="lxlogo-icon">
+    <div class="lxwordmark">
+      <div class="wm">LXAM</div>
+      <div class="wm-sub">3D ART STUDIO</div>
+    </div>
+  </a>
+  <div class="lxnav-links"><a href="index.html#khoahoc">Khóa học</a><a href="index.html#lotrinh">Lộ trình</a><a href="index.html#portfolio">Portfolio</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="blog.html" class="is-active">Blog</a><a href="hoc-vien.html">Khu học viên</a></div>
+  <div class="lxnav-actions">
+    <a class="lxcta" href="index.html#dangky">Giữ chỗ</a>
+    <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
+  </div>
+</nav>
+<div class="lxdrawer" id="lxdrawer">
+  <a href="index.html#khoahoc">Khóa học</a><a href="index.html#lotrinh">Lộ trình</a><a href="index.html#portfolio">Portfolio</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a>
+  <a class="lxcta" href="index.html#dangky">Giữ chỗ →</a>
+</div>
+
+
+<main>
+  <article class="prose">
+    <div class="wrap-narrow">
+      <a href="blog.html" style="display:inline-block;font-size:13px;color:#9a8f84;text-decoration:none;margin-bottom:26px;">← Tất cả bài viết</a>
+      <span class="tag">Kỹ thuật</span>
+      <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru</h1>
+      <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · 6 phút đọc</p>
+      <img src="assets/2cdbf5f9.jpg" alt="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:0 0 40px;">
+      
+<p class="lead">Andrew Price — Blender Guru — dựng lại cảnh Backrooms và tuyên bố khoảng 90% hiệu ứng đến từ sáu node, không cần model, không cần UV unwrap. Nghe như mẹo vặt, nhưng bên dưới là một nguyên tắc đáng học.</p>
+
+<h2>Anh ấy làm gì</h2>
+
+<p>Theo mô tả trên 80 Level: tường dựng bằng cách tính toán thay vì model, đường đi tạo từ texture, các khoảng khoét bằng khối hộp, texture áp bằng projection thay vì UV. Nhóm node chính gồm Grid, Greater Than, Mesh to Curve, Quadrilateral và Curve to Mesh. Đường đi được điều khiển bằng cách chỉnh scale của Noise Texture; box projection dùng để áp vật liệu cho gọn.</p>
+
+<p>Phần render đi qua Cycles, chỉnh màu bằng RGB curve, thêm film grain cho chất analog, và thêm glare khi compositing. Giá trị shader được nối vào Geometry Nodes để bật tắt đèn và tạo sự ngẫu nhiên cho các tấm đèn trần.</p>
+
+<h2>Điểm đáng học không phải là sáu node</h2>
+
+<p>Nếu bạn chỉ chép lại setup node, bạn có một cảnh Backrooms. Hết. Điều đáng lấy là câu hỏi Price đặt ra trước khi bắt đầu: <strong style="color:#fff;">cảnh này thật ra cần gì để thuyết phục?</strong></p>
+
+<p>Backrooms thuyết phục nhờ ba thứ: sự lặp lại đến mức bất an, ánh sáng huỳnh quang bẹt, và cảm giác không gian kéo dài vô tận. Không thứ nào đòi hỏi model chi tiết. Nhận ra điều đó cho phép bỏ qua 90% khối lượng công việc mà không mất gì.</p>
+
+<blockquote><p>Trước khi hỏi làm thế nào, hỏi cảnh này thật sự cần gì. Câu trả lời thường ngắn hơn bạn tưởng.</p></blockquote>
+
+<h2>Khi nào cách này dùng được, khi nào không</h2>
+
+<h3>Dùng được</h3>
+<p>Không gian lặp lại và mang tính không khí: hành lang, kho, bãi đỗ xe, nội thất công nghiệp, background phía sau chủ thể chính. Những chỗ người xem cảm nhận tổng thể chứ không soi chi tiết.</p>
+
+<h3>Không dùng được</h3>
+<p>Sản phẩm nằm ở tiền cảnh. Nếu khách trả tiền để chai nước hay chiếc điện thoại của họ lên hình, mọi bevel đều bị soi. Không mẹo procedural nào thay được model đúng ở đó.</p>
+
+<p>Nhưng ngay trong job sản phẩm, nguyên tắc vẫn dùng được cho phần nền. Dựng cả một studio chi tiết phía sau chai nước là lãng phí — nền chỉ cần đúng ánh sáng và đúng vệt phản chiếu.</p>
+
+<h2>Ba chi tiết nhỏ đáng chú ý</h2>
+
+<h3>Box projection thay UV</h3>
+<p>Với bề mặt phẳng và lặp lại, projection cho kết quả đủ tốt và tiết kiệm hoàn toàn khâu UV. Đây là thứ nhiều người học Blender không biết mình được phép bỏ qua.</p>
+
+<h3>Ngẫu nhiên hoá đèn trần</h3>
+<p>Một vài tấm đèn tắt, một vài tấm sáng yếu hơn. Chi tiết rất nhỏ nhưng là thứ tách cảnh CG khỏi cảnh trông như thật — sự đều tăm tắp là dấu hiệu của máy tính.</p>
+
+<h3>Film grain và glare</h3>
+<p>Hai thứ này thêm ở khâu compositing, nhưng chỉ hiệu quả khi ánh sáng bên dưới đã đúng. Nếu bạn thấy mình dựa vào grain để cảnh đỡ giả, vấn đề nằm ở đèn — tôi có viết kỹ hơn trong <a href="blog-5-loi-lighting.html">bài về 5 lỗi lighting</a>.</p>
+
+<h2>Bài tập</h2>
+
+<p>Lấy một không gian bạn từng dựng thủ công và tự hỏi: nếu chỉ được dùng năm node, phần nào của cảnh này thật sự cần thiết? Trả lời được câu đó, bạn tiết kiệm được vài chục giờ cho mọi dự án sau.</p>
+
+      <hr class="hr"><h2 style="font-size:clamp(19px,2.2vw,26px);">Nguồn tham khảo</h2><p style="font-size:14.5px;color:#9a8f84;">Bài viết là phân tích và quan điểm riêng của LXAM Studio, dựa trên thông tin từ các nguồn dưới đây. Bấm vào để đọc bản gốc.</p><ul style="margin-top:14px;"><li><a href="https://80.lv/articles/blender-guru-shares-how-to-create-the-backrooms-using-blender" target="_blank" rel="noopener" style="color:#ff7a1a;">Blender Guru Shares How to Create The Backrooms Using Blender — 80 Level</a></li></ul>
+      <hr class="hr">
+      <div class="card" style="text-align:center;border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
+        <h3 style="margin-bottom:12px;">Muốn được sửa bài trực tiếp?</h3>
+        <p style="margin:0 auto 22px;max-width:460px;">Coaching 1:1 online, đồng hành trọn một năm. Để lại thông tin, tôi xem qua và tư vấn bạn nên bắt đầu từ đâu.</p>
+        <a class="lxcta" href="index.html#dangky">Đăng ký tư vấn</a>
+      </div>
+    </div>
+  </article>
+</main>
+<footer class="lxfooter">
+  <div class="lxfoot">
+    <div>
+      <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
+        <img src="assets/2792c6e0.png" alt="LXAM" style="width:40px;height:40px;">
+        <div class="lxwordmark">
+          <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
+          <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
+        </div>
+      </a>
+      <p>Đào tạo 3D từ con số 0 đến TVC điện ảnh. Coaching 1:1 online, đồng hành trọn 1 năm cùng giảng viên 10 năm kinh nghiệm.</p>
+    </div>
+    <div>
+      <div class="col-head">Điều hướng</div>
+      <div class="links">
+        <a href="index.html#khoahoc">Khóa học</a>
+        <a href="index.html#lotrinh">Lộ trình</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="blog.html">Blog</a>
+        <a href="hoc-vien.html">Khu học viên</a>
+      </div>
+    </div>
+    <div>
+      <div class="col-head">Kết nối</div>
+      <div class="links">
+        <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Fanpage Studio ↗</a>
+        <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube @LXAMStudios ↗</a>
+        <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="tel:0942890363">Hotline 0942 890 363</a>
+      </div>
+    </div>
+  </div>
+  <div class="lxfoot-base">
+    <span>© 2026 LXAM Studio. All rights reserved.</span>
+    <span>3D · Modeling · Lighting · Rendering · Animation · TVC</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('lxburger'), d=document.getElementById('lxdrawer');
+  if(!b||!d) return;
+  b.addEventListener('click', function(){
+    var open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open ? '✕' : '≡';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  d.addEventListener('click', function(e){
+    if(e.target.tagName==='A'){ d.classList.remove('open'); b.textContent='≡'; document.body.style.overflow=''; }
+  });
+})();
+</script>
+</body></html>
