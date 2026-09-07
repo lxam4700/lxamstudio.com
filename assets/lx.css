@@ -152,6 +152,16 @@ article.prose code{
   background:rgba(255,255,255,.07);padding:2px 7px;border-radius:6px;
   font-size:14px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
 }
+
+article.prose figure{margin:32px 0;}
+article.prose figure img{margin:0 0 12px;width:100%;display:block;border-radius:14px;}
+article.prose figcaption{font-size:13.5px;line-height:1.65;color:#8b8178;margin:0;}
+article.prose figcaption strong{color:#b8afa6;font-weight:600;}
+.faq-q{font-weight:600;color:#fff;margin:0 0 8px;}
+article.prose table{width:100%;border-collapse:collapse;margin:26px 0;font-size:14.5px;}
+article.prose th,article.prose td{border:1px solid var(--line);padding:12px 14px;text-align:left;color:#c9c0b7;vertical-align:top;}
+article.prose th{color:#fff;font-weight:600;background:rgba(255,255,255,.03);}
+.table-wrap{overflow-x:auto;}
 .hr{height:1px;background:var(--line);border:0;margin:46px 0;}
 
 /* ---------- FOOTER ---------- */
