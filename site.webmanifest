@@ -1,0 +1,14 @@
+{
+  "name": "LXAM Studio",
+  "short_name": "LXAM",
+  "description": "Học Blender 3D từ số 0 đến TVC điện ảnh",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e0a07",
+  "theme_color": "#0e0a07",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
