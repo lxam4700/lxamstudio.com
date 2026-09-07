@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5 lỗi lighting khiến render của bạn trông rẻ tiền — LXAM Studio</title>
+<meta name="description" content="Không phải do máy yếu hay thiếu plugin. Năm lỗi ánh sáng dưới đây gặp ở gần như mọi bài tự học, và cái nào cũng sửa được trong một buổi.">
+<meta name="theme-color" content="#0e0a07">
+<link rel="icon" href="assets/2792c6e0.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/2792c6e0.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LXAM Studio">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="5 lỗi lighting khiến render của bạn trông rẻ tiền — LXAM Studio">
+<meta property="og:description" content="Không phải do máy yếu hay thiếu plugin. Năm lỗi ánh sáng dưới đây gặp ở gần như mọi bài tự học, và cái nào cũng sửa được trong một buổi.">
+<meta property="og:image" content="https://lxamstudio.com/assets/hero-p.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/lx.css">
+
+</head>
+<body>
+<nav class="lxnav">
+  <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
+    <img src="assets/2792c6e0.png" alt="LXAM" class="lxlogo-icon">
+    <div class="lxwordmark">
+      <div class="wm">LXAM</div>
+      <div class="wm-sub">3D ART STUDIO</div>
+    </div>
+  </a>
+  <div class="lxnav-links"><a href="index.html#khoahoc">Khóa học</a><a href="index.html#lotrinh">Lộ trình</a><a href="index.html#portfolio">Portfolio</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="blog.html" class="is-active">Blog</a><a href="hoc-vien.html">Khu học viên</a></div>
+  <div class="lxnav-actions">
+    <a class="lxcta" href="index.html#dangky">Giữ chỗ</a>
+    <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
+  </div>
+</nav>
+<div class="lxdrawer" id="lxdrawer">
+  <a href="index.html#khoahoc">Khóa học</a><a href="index.html#lotrinh">Lộ trình</a><a href="index.html#portfolio">Portfolio</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a>
+  <a class="lxcta" href="index.html#dangky">Giữ chỗ →</a>
+</div>
+
+
+<main>
+  <article class="prose">
+    <div class="wrap-narrow">
+      <a href="blog.html" style="display:inline-block;font-size:13px;color:#9a8f84;text-decoration:none;margin-bottom:26px;">← Tất cả bài viết</a>
+      <span class="tag">Kỹ thuật</span>
+      <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">5 lỗi lighting khiến render của bạn trông rẻ tiền</h1>
+      <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · 6 phút đọc</p>
+      <img src="assets/2afcaceb.jpg" alt="5 lỗi lighting khiến render của bạn trông rẻ tiền" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:0 0 40px;">
+      
+<p class="lead">Khi ai đó gửi tôi một bài render và hỏi "sao nhìn nó chưa đã", tám trên mười lần vấn đề nằm ở ánh sáng — không phải model, không phải vật liệu, và gần như không bao giờ là do card đồ hoạ.</p>
+
+<p>Dưới đây là năm lỗi tôi gặp nhiều nhất. Không cái nào cần plugin trả phí để sửa.</p>
+
+<h2>1. Dùng đúng một HDRI và gọi đó là lighting</h2>
+
+<p>HDRI cho bạn ánh sáng môi trường tử tế trong ba mươi giây, nên rất dễ dừng lại ở đó. Vấn đề là HDRI chiếu đều từ mọi phía — nó xoá đi cái bạn cần nhất: hướng. Không có hướng thì không có khối, không có khối thì vật thể trông như dán lên nền.</p>
+
+<p><strong style="color:#fff;">Sửa:</strong> giữ HDRI làm nền, hạ cường độ xuống còn khoảng một phần ba, rồi thêm một area light làm nguồn chính. Chỉ một đèn thôi. So sánh trước/sau, bạn sẽ thấy vật thể đột nhiên có trọng lượng.</p>
+
+<h2>2. Đèn quá nhỏ so với vật thể</h2>
+
+<p>Đây là lỗi âm thầm nhất. Nguồn sáng nhỏ tạo bóng đổ sắc cạnh và highlight nhỏ như đầu kim — thứ ngoài đời chỉ xuất hiện dưới nắng gắt hoặc đèn flash trần. Sản phẩm chụp studio luôn dùng nguồn lớn, vì nguồn lớn cho chuyển sáng mềm dọc theo bề mặt cong, và chính cái chuyển đó nói cho mắt người biết vật thể làm bằng gì.</p>
+
+<p><strong style="color:#fff;">Sửa:</strong> phóng area light của bạn to lên. To hơn nữa. Quy tắc thô: nguồn chính nên lớn ít nhất bằng vật thể, thường là gấp hai đến ba lần.</p>
+
+<blockquote><p>Nếu highlight trên bề mặt kim loại của bạn là một chấm nhỏ thay vì một vệt dài, đèn của bạn đang quá nhỏ.</p></blockquote>
+
+<h2>3. Không có gì để phản chiếu</h2>
+
+<p>Kim loại và nhựa bóng không tự đẹp — chúng đẹp nhờ những gì xung quanh phản chiếu vào. Render một chiếc đồng hồ trong không gian trống, bề mặt của nó sẽ chỉ có màu xám chết. Studio thật luôn đầy vật thể: hắt sáng, cờ đen, tường, trần.</p>
+
+<p><strong style="color:#fff;">Sửa:</strong> đặt vài mặt phẳng lớn quanh vật thể — một trắng để hắt sáng, một đen để tạo mảng tối tương phản trên cạnh. Tắt bóng đổ của chúng nếu cần. Chi phí render gần như bằng không, khác biệt thì thấy ngay.</p>
+
+<h2>4. Sáng đều tuyệt đối, không có vùng tối</h2>
+
+<p>Người mới sợ vùng tối, nên thêm fill light cho tới khi mọi ngóc ngách đều nhìn rõ. Kết quả là ảnh phẳng lì. Vùng tối không phải chỗ thiếu thông tin — nó là chỗ mắt người nghỉ, và là thứ làm vùng sáng trở nên sáng.</p>
+
+<p><strong style="color:#fff;">Sửa:</strong> tắt hết đèn phụ, chỉ để nguồn chính. Nhìn kỹ. Rồi thêm lại từng đèn một, mỗi lần tự hỏi "đèn này đang giải quyết vấn đề gì?". Đèn nào không trả lời được thì xoá.</p>
+
+<h2>5. Chỉnh màu ở khâu hậu kỳ để cứu ánh sáng sai</h2>
+
+<p>Kéo contrast và saturation trong Compositor cho tới khi ảnh "đỡ tệ" là dấu hiệu bạn đang vá triệu chứng. Hậu kỳ nên là bước tinh chỉnh cuối, không phải bước cứu hộ. Nếu bạn phải kéo mạnh tay, quay lại sửa đèn — nhanh hơn nhiều.</p>
+
+<hr class="hr">
+
+<h2>Cách tự kiểm tra trong ba mươi giây</h2>
+
+<p>Đổi toàn bộ vật liệu trong cảnh sang một chất xám trung tính rồi render nháp. Nếu ảnh xám đó đã đọc được hình khối và có chiều sâu, ánh sáng của bạn ổn — phần còn lại là chuyện vật liệu. Nếu ảnh xám trông phẳng và nhạt, không vật liệu nào cứu được nó.</p>
+
+<p>Bài kiểm tra này tôi dùng cho gần như mọi shot, và nó bắt lỗi sớm hơn bất kỳ thứ gì khác.</p>
+
+      <hr class="hr">
+      <div class="card" style="text-align:center;border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
+        <h3 style="margin-bottom:12px;">Muốn được sửa bài trực tiếp?</h3>
+        <p style="margin:0 auto 22px;max-width:460px;">Coaching 1:1 online, đồng hành trọn một năm. Để lại thông tin, tôi xem qua và tư vấn bạn nên bắt đầu từ đâu.</p>
+        <a class="lxcta" href="index.html#dangky">Đăng ký tư vấn</a>
+      </div>
+    </div>
+  </article>
+</main>
+<footer class="lxfooter">
+  <div class="lxfoot">
+    <div>
+      <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
+        <img src="assets/2792c6e0.png" alt="LXAM" style="width:40px;height:40px;">
+        <div class="lxwordmark">
+          <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
+          <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
+        </div>
+      </a>
+      <p>Đào tạo 3D từ con số 0 đến TVC điện ảnh. Coaching 1:1 online, đồng hành trọn 1 năm cùng giảng viên 10 năm kinh nghiệm.</p>
+    </div>
+    <div>
+      <div class="col-head">Điều hướng</div>
+      <div class="links">
+        <a href="index.html#khoahoc">Khóa học</a>
+        <a href="index.html#lotrinh">Lộ trình</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="blog.html">Blog</a>
+        <a href="hoc-vien.html">Khu học viên</a>
+      </div>
+    </div>
+    <div>
+      <div class="col-head">Kết nối</div>
+      <div class="links">
+        <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Fanpage Studio ↗</a>
+        <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube @LXAMStudios ↗</a>
+        <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="tel:0942890363">Hotline 0942 890 363</a>
+      </div>
+    </div>
+  </div>
+  <div class="lxfoot-base">
+    <span>© 2026 LXAM Studio. All rights reserved.</span>
+    <span>3D · Modeling · Lighting · Rendering · Animation · TVC</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('lxburger'), d=document.getElementById('lxdrawer');
+  if(!b||!d) return;
+  b.addEventListener('click', function(){
+    var open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open ? '✕' : '≡';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  d.addEventListener('click', function(e){
+    if(e.target.tagName==='A'){ d.classList.remove('open'); b.textContent='≡'; document.body.style.overflow=''; }
+  });
+})();
+</script>
+</body></html>
