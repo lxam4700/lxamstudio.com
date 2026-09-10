@@ -786,7 +786,43 @@
   <section id="hocphi" data-reveal="" style="padding:clamp(60px,8vw,110px) clamp(18px,5vw,64px);max-width:1320px;margin:0 auto;">
     <div style="display:inline-flex;align-items:center;gap:9px;color:var(--ac,#ff7a1a);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">◆ Học phí linh hoạt</div>
     <h2 style="font-family:'Unbounded';font-weight:700;text-transform:uppercase;font-size:clamp(38px,6vw,82px);line-height:1.4;color:#fff;margin:0 0 14px;">Trả đúng thứ bạn học</h2>
-    <p style="font-size:16px;line-height:1.6;color:#9a9088;max-width:560px;margin:0 0 50px;">Lộ trình chia theo từng kỹ năng — mỗi kỹ năng <strong style="color:#fff;">5 triệu</strong>. Học riêng từng phần, hoặc gộp gói để <span style="color:var(--ac,#ff7a1a);">tiết kiệm</span>.</p>
+    <p style="font-size:16px;line-height:1.6;color:#9a9088;max-width:620px;margin:0 0 38px;">Hai cách học: theo lịch của bạn với video quay sẵn, hoặc vào lớp có deadline. Bên dưới là lộ trình đầy đủ chia theo từng kỹ năng — mỗi kỹ năng <strong style="color:#fff;">5 triệu</strong>, gộp gói để <span style="color:var(--ac,#ff7a1a);">tiết kiệm</span>.</p>
+    <!-- ==== HANG MOI: quay san + cohort ==== -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px;" class="lx2col">
+
+      <!-- video quay san -->
+      <div data-cursor="" style="border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:34px 30px;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0));display:flex;flex-direction:column;">
+        <div style="font-family:'Unbounded';font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#8b8178;margin-bottom:18px;">Video quay sẵn</div>
+        <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:12px;"><span style="font-family:'Unbounded';font-size:52px;font-weight:700;color:#fff;line-height:1;">2,5tr</span><span style="font-size:14px;color:#8b8178;">· học theo lịch của bạn</span></div>
+        <p style="font-size:14px;color:#9a9088;line-height:1.55;margin:0 0 22px;">Trọn bộ bài giảng quay sẵn, xem lúc nào cũng được — nhưng mỗi tuần vẫn có người xem bài bạn làm và nói thẳng chỗ nào sai.</p>
+        <div style="display:flex;flex-direction:column;gap:11px;margin-bottom:28px;">
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#cfc6bd;">Bài giảng quay sẵn, xem lại không giới hạn</span></div>
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#cfc6bd;"><strong style="color:#fff;">Chữa bài hàng tuần</strong> — nộp bài, nhận nhận xét</span></div>
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#cfc6bd;">File dự án &amp; tài liệu đi kèm</span></div>
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#cfc6bd;">Không giới hạn thời gian học</span></div>
+        </div>
+        <button data-cursor="" onclick="{{selVideo}}" style="margin-top:auto;width:100%;padding:14px;border-radius:40px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.16);color:#ece4db;font-family:'Unbounded';font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;">Đăng ký</button>
+      </div>
+
+      <!-- cohort 8 tuan -->
+      <div data-cursor="" style="position:relative;border:1px solid rgba(255,122,26,.4);border-radius:20px;padding:34px 30px;background:linear-gradient(168deg,rgba(255,122,26,.14),rgba(226,45,15,.05) 55%,rgba(255,255,255,0));display:flex;flex-direction:column;overflow:hidden;">
+        <div style="position:absolute;top:-30%;right:-25%;width:80%;height:120%;background:radial-gradient(circle,rgba(255,122,26,.22),transparent 62%);pointer-events:none;"></div>
+        <div style="position:absolute;top:18px;right:18px;font-size:9px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#fff;background:linear-gradient(120deg,var(--ac,#ff8a1e),var(--acRed,#e62b0d));padding:5px 11px;border-radius:30px;">Tối đa 10 suất</div>
+        <div style="position:relative;font-family:'Unbounded';font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--ac,#ff7a1a);margin-bottom:18px;">Cohort 8 tuần</div>
+        <div style="position:relative;display:flex;align-items:baseline;gap:8px;margin-bottom:12px;"><span style="font-family:'Unbounded';font-size:52px;font-weight:700;color:var(--ac,#ff7a1a);line-height:1;">12tr</span><span style="font-size:14px;color:#bdb3a8;">· chia 2 mốc 6tr</span></div>
+        <p style="position:relative;font-size:14px;color:#bdb3a8;line-height:1.55;margin:0 0 22px;">Học kèm ngắn hạn, có lịch và có deadline. Tám tuần, một nhóm nhỏ, kết thúc là có ba sản phẩm bỏ vào portfolio.</p>
+        <div style="position:relative;display:flex;flex-direction:column;gap:11px;margin-bottom:28px;">
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#e6ddd3;">Lớp tối đa 10 người, kèm sát từng buổi</span></div>
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#e6ddd3;">3 sản phẩm portfolio: hard-surface, scene lighting, sản phẩm thương mại</span></div>
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#e6ddd3;">Có deadline — thứ người tự học hay thiếu</span></div>
+          <div style="display:flex;gap:10px;"><span style="color:var(--ac,#ff7a1a);">✓</span><span style="font-size:13.5px;color:#e6ddd3;">Đóng làm 2 mốc, mỗi mốc 6tr</span></div>
+        </div>
+        <button data-cursor="" onclick="{{selCohort}}" style="position:relative;margin-top:auto;width:100%;padding:14px;border-radius:40px;background:linear-gradient(120deg,var(--ac,#ff8a1e),var(--acRed,#e62b0d));border:none;color:#fff;font-family:'Unbounded';font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer;box-shadow:0 12px 30px rgba(226,45,15,.36);">Giữ chỗ Cohort</button>
+      </div>
+    </div>
+
+    <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#6f665d;margin:0 0 18px;">Hoặc học trọn lộ trình 7 kỹ năng</div>
+
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;" class="lxgrid3">
       <!-- skill -->
       <div data-cursor="" style="border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:34px 30px;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0));display:flex;flex-direction:column;">
@@ -1272,8 +1308,8 @@ class Component extends DCLogic {
 
     const faqBase = [
       {q:'Mình chưa biết gì về 3D, học được không?', a:'Hoàn toàn được. Basic Class được thiết kế cho người mới bắt đầu, đi từ công cụ dựng hình cơ bản đến render sản phẩm đầu tiên, có giảng viên theo sát từng bước.'},
-      {q:'Hình thức học diễn ra như thế nào?', a:'Coaching 1:1 online — học trực tiếp cùng giảng viên, lịch linh hoạt, được sửa bài chi tiết và đồng hành trọn 1 năm.'},
-      {q:'Học phí đóng ra sao?', a:'Bạn có thể học theo từng kỹ năng (5tr/kỹ năng), theo gói Basic/Master, hoặc Full Combo trả theo tháng. Đóng trước 50% học phí được tặng thêm 6 tháng coaching miễn phí.'},
+      {q:'Hình thức học diễn ra như thế nào?', a:'Ba kiểu, tuỳ bạn chọn. Video quay sẵn: học theo lịch của bạn, mỗi tuần nộp bài và được chữa. Cohort 8 tuần: lớp tối đa 10 người, có lịch và deadline, kết thúc có 3 sản phẩm portfolio. Coaching 1:1 online: học trực tiếp cùng giảng viên, lịch linh hoạt, sửa bài chi tiết và đồng hành trọn 1 năm.'},
+      {q:'Học phí đóng ra sao?', a:'Có nhiều mức tuỳ cách bạn muốn học: video quay sẵn kèm chữa bài hàng tuần 2,5tr; Cohort 8 tuần 12tr chia làm 2 mốc mỗi mốc 6tr; hoặc lộ trình đầy đủ — theo từng kỹ năng 5tr/kỹ năng, gói Basic/Master, hay Full Combo trả theo tháng. Đóng trước 50% học phí được tặng thêm 6 tháng coaching miễn phí.'},
       {q:'Học xong có làm được việc thật không?', a:'Hoàn toàn được. Giảng viên là người có vị trí cao trong ngành, trực tiếp hướng dẫn bạn build portfolio và truyền lại những kỹ năng — cả kỹ năng cứng lẫn kỹ năng mềm — mà không nơi nào trên mạng dạy, đủ để lọt vào mắt xanh của nhà tuyển dụng và khách hàng.'},
       {q:'Cần chuẩn bị máy cấu hình thế nào?', a:'Máy chạy Blender mượt ở mức cơ bản là đủ để bắt đầu. Khi học lên cao và render nặng hơn, bạn nên trang bị cấu hình đủ mạnh để làm việc hiệu quả:', specs:[
         {k:'CPU', v:'Intel i7-14700K hoặc i9-14900K'},
@@ -1287,6 +1323,8 @@ class Component extends DCLogic {
     const faqs = faqBase.map((f,i)=>({ ...f, open: this.state.openFaq===i, sign: this.state.openFaq===i ? '–' : '+', toggle: ()=>this.toggleFaq(i) }));
 
     const pkgBase = [
+      {key:'video', label:'Video quay sẵn · 2,5tr'},
+      {key:'cohort', label:'Cohort 8 tuần · 12tr'},
       {key:'skill', label:'Theo kỹ năng · 5tr'},
       {key:'basic', label:'Gói Basic · 15tr'},
       {key:'master', label:'Gói Master · 20tr'},
@@ -1306,6 +1344,8 @@ class Component extends DCLogic {
       navGia: ()=>this.scrollTo('hocphi'),
       navDk: ()=>this.scrollTo('dangky'),
       modules, portfolio, testimonials, faqs, packages,
+      selVideo: ()=>this.selectPkg('video'),
+      selCohort: ()=>this.selectPkg('cohort'),
       selSkill: ()=>this.selectPkg('skill'),
       selBasic: ()=>this.selectPkg('basic'),
       selMaster: ()=>this.selectPkg('master'),
