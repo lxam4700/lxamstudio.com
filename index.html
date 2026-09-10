@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi"><head><script>window.__resources = {"pfGt3": "assets/a26a7e39.jpg", "pfProduct": "assets/2afcaceb.jpg", "pfAerial": "assets/a77adfda.jpg", "pf911top": "assets/0954717e.jpg", "pfEngine": "assets/b64a4cd7.jpg", "pfGwagon": "assets/4c9ff169.jpg", "pfMclaren": "assets/2cdbf5f9.jpg", "pfGt3rs": "assets/hero-poster.jpg", "pfVplasExp": "assets/vplas-exploded-view-blender.jpg", "pfVplasFx": "assets/vplas-hieu-ung-plasma-blender.jpg", "pfVplasStudio": "assets/vplas-render-san-pham-blender.jpg", "pfVplasPort": "assets/vplas-chi-tiet-cong-sac-render.jpg"};</script>
+<html lang="vi"><head><script>window.__resources = {"pfGt3": "assets/a26a7e39.jpg", "pfProduct": "assets/2afcaceb.jpg", "pfAerial": "assets/a77adfda.jpg", "pf911top": "assets/0954717e.jpg", "pfEngine": "assets/b64a4cd7.jpg", "pfGwagon": "assets/4c9ff169.jpg", "pfMclaren": "assets/2cdbf5f9.jpg", "pfVplasFx": "assets/vplas-hieu-ung-plasma-blender.jpg", "pfVplasPort": "assets/vplas-chi-tiet-cong-sac-render.jpg"};</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LXAM Studio — Học Blender 3D từ số 0 đến TVC điện ảnh</title>
@@ -705,7 +705,7 @@
       <p style="font-size:14px;line-height:1.6;color:#8b8178;max-width:340px;margin:0;">Bài tốt nghiệp của học viên đặt cạnh dự án thương mại LXAM Studio đang làm — cùng một chuẩn nghề, cùng một quy trình được dạy trong khoá.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;" class="lxgrid3">
-      <sc-for list="{{portfolio}}" as="p" hint-placeholder-count="12">
+      <sc-for list="{{portfolio}}" as="p" hint-placeholder-count="9">
         <div data-cursor="" class="lxpf" style="position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;border:1px solid rgba(255,255,255,.08);background:#15100b;">
           <img src="{{p.img}}" alt="{{p.title}}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .7s cubic-bezier(.2,.7,.2,1);">
           <div style="position:absolute;left:0;right:0;bottom:0;height:58%;background:linear-gradient(180deg,transparent,rgba(8,6,4,.88));pointer-events:none;"></div>
@@ -1254,17 +1254,14 @@ class Component extends DCLogic {
     const R = (typeof window !== 'undefined' && window.__resources) || {};
     const portfolio = [
       {img: R.pfGwagon || 'assets/pf-gwagon.jpg', title:'Mercedes G · TVC', tag:'Cinematic · VFX · SFX'},
-      {img: R.pf911top || 'assets/pf-911top.jpg', title:'Porsche 911 Turbo S', tag:'Hardsurface · Car'},
-      {img: R.pfProduct || 'assets/pf-product.jpg', title:'Product Exploded', tag:'Hardsurface Render'},
-      {img: R.pfEngine || 'assets/pf-engine.jpg', title:'Engine · Động cơ', tag:'Mechanical · Lighting'},
-      {img: R.pfAerial || 'assets/pf-aerial.jpg', title:'Aerial Drive', tag:'Environment · Camera'},
-      {img: R.pfGt3 || 'assets/pf-gt3.jpg', title:'Porsche GT3 · Pitlane', tag:'Compositing'},
       {img: R.pfMclaren || 'assets/pf-mclaren.jpg', title:'McLaren 765LT · Horizon', tag:'Key Visual · Lighting'},
-      {img: R.pfGt3rs || 'assets/pf-gt3rs.jpg', title:'Porsche GT3 RS · Track', tag:'Cinematic · Camera'},
-      {img: R.pfVplasExp || 'assets/pf-vplas-exp.jpg', title:'VPLAS · Exploded View', tag:'Hardsurface · Product'},
-      {img: R.pfVplasFx || 'assets/pf-vplas-fx.jpg', title:'VPLAS · Plasma FX', tag:'VFX · Volumetric'},
-      {img: R.pfVplasStudio || 'assets/pf-vplas-studio.jpg', title:'VPLAS · Studio Render', tag:'Product · Lighting'},
-      {img: R.pfVplasPort || 'assets/pf-vplas-port.jpg', title:'Chi tiết cổng sạc', tag:'Macro · Materials'},
+      {img: R.pf911top || 'assets/pf-911top.jpg', title:'Porsche 911 Turbo S', tag:'Hardsurface · Car'},
+      {img: R.pfGt3 || 'assets/pf-gt3.jpg', title:'Porsche GT3 · Pitlane', tag:'Environment · Compositing'},
+      {img: R.pfAerial || 'assets/pf-aerial.jpg', title:'Aerial Drive', tag:'Environment · Camera'},
+      {img: R.pfEngine || 'assets/pf-engine.jpg', title:'Engine · Động cơ', tag:'Mechanical · Lighting'},
+      {img: R.pfProduct || 'assets/pf-product.jpg', title:'Thiết bị VPLAS · Exploded', tag:'Hardsurface · Product'},
+      {img: R.pfVplasFx || 'assets/pf-vplas-fx.jpg', title:'Tia plasma · VFX', tag:'Volumetric · Simulation'},
+      {img: R.pfVplasPort || 'assets/pf-vplas-port.jpg', title:'Cổng sạc · Macro', tag:'Close-up · Materials'},
     ];
 
     const testimonials = [
