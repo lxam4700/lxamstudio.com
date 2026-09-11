@@ -515,10 +515,10 @@
     </a>
     <div style="display:flex;align-items:center;gap:22px;" class="lxnav-links">
       <a data-cursor="" onclick="{{navHoc}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Khóa học</a>
-      <a data-cursor="" onclick="{{navLo}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Lộ trình</a>
       <a data-cursor="" onclick="{{navPort}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Portfolio</a>
-      <a data-cursor="" href="cam-nang.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Cẩm nang</a>
+      <a data-cursor="" onclick="{{navLo}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Lộ trình</a>
       <a data-cursor="" onclick="{{navGia}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Học phí</a>
+      <a data-cursor="" href="cam-nang.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Cẩm nang</a>
       <a data-cursor="" href="ve-chung-toi.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Về chúng tôi</a>
       <a data-cursor="" href="blog.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Blog</a>
       <a data-cursor="" href="hoc-vien.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Khu học viên</a>
@@ -679,22 +679,6 @@
     </div>
   </section>
 
-  <!-- ============ ROADMAP ============ -->
-  <section id="lotrinh" data-reveal="" style="padding:clamp(60px,8vw,110px) clamp(18px,5vw,64px);max-width:1180px;margin:0 auto;">
-    <div style="display:inline-flex;align-items:center;gap:9px;color:var(--ac,#ff7a1a);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">◆ Lộ trình học · Roadmap</div>
-    <h2 style="font-family:'Unbounded';font-weight:700;text-transform:uppercase;font-size:clamp(38px,6.4vw,86px);line-height:1.4;color:#fff;margin:0 0 50px;">Từ số 0 đến TVC điện ảnh</h2>
-    <sc-for list="{{modules}}" as="m" hint-placeholder-count="6">
-      <div data-cursor="" style="display:grid;grid-template-columns:140px 1fr;gap:24px;padding:26px 0;border-top:1px solid rgba(255,255,255,.09);align-items:start;" class="lxmod">
-        <div style="font-family:'Unbounded';font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--ac,#ff7a1a);padding-top:6px;">{{m.tag}}</div>
-        <div>
-          <h3 style="font-family:'Unbounded';font-size:clamp(22px,2.6vw,30px);font-weight:700;text-transform:uppercase;color:#fff;margin:0 0 8px;line-height:1.34;">{{m.title}}</h3>
-          <p style="font-size:14px;line-height:1.55;color:#8b8178;margin:0;max-width:640px;">{{m.desc}}</p>
-        </div>
-      </div>
-    </sc-for>
-    <div style="border-top:1px solid rgba(255,255,255,.09);"></div>
-  </section>
-
   <!-- ============ PORTFOLIO ============ -->
   <section id="portfolio" data-reveal="" style="padding:clamp(60px,8vw,110px) clamp(18px,5vw,64px);max-width:1320px;margin:0 auto;">
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:44px;">
@@ -764,8 +748,24 @@
     </div>
   </section>
 
+  <!-- ============ ROADMAP ============ -->
+  <section id="lotrinh" data-reveal="" style="padding:clamp(60px,8vw,110px) clamp(18px,5vw,64px) 0;max-width:1320px;margin:0 auto;">
+    <div style="display:inline-flex;align-items:center;gap:9px;color:var(--ac,#ff7a1a);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">◆ Lộ trình học · Roadmap</div>
+    <h2 style="font-family:'Unbounded';font-weight:700;text-transform:uppercase;font-size:clamp(38px,6.4vw,86px);line-height:1.4;color:#fff;margin:0 0 50px;">Từ số 0 đến TVC điện ảnh</h2>
+    <p style="font-size:16px;line-height:1.6;color:#9a9088;max-width:620px;margin:-34px 0 46px;">Bảy kỹ năng dưới đây là thứ bạn sẽ học. Ngay sau nó là bảng học phí — mỗi gói gồm đúng những kỹ năng nào, không phải đoán.</p>
+    <sc-for list="{{modules}}" as="m" hint-placeholder-count="6">
+      <div data-cursor="" style="display:grid;grid-template-columns:140px 1fr;gap:24px;padding:26px 0;border-top:1px solid rgba(255,255,255,.09);align-items:start;" class="lxmod">
+        <div style="font-family:'Unbounded';font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--ac,#ff7a1a);padding-top:6px;">{{m.tag}}</div>
+        <div>
+          <h3 style="font-family:'Unbounded';font-size:clamp(22px,2.6vw,30px);font-weight:700;text-transform:uppercase;color:#fff;margin:0 0 8px;line-height:1.34;">{{m.title}}</h3>
+          <p style="font-size:14px;line-height:1.55;color:#8b8178;margin:0;max-width:640px;">{{m.desc}}</p>
+        </div>
+      </div>
+    </sc-for>
+  </section>
+
   <!-- ============ PRICING ============ -->
-  <section id="hocphi" data-reveal="" style="padding:clamp(60px,8vw,110px) clamp(18px,5vw,64px);max-width:1320px;margin:0 auto;">
+  <section id="hocphi" data-reveal="" style="padding:clamp(30px,4vw,52px) clamp(18px,5vw,64px) clamp(60px,8vw,110px);max-width:1320px;margin:0 auto;">
     <div style="display:inline-flex;align-items:center;gap:9px;color:var(--ac,#ff7a1a);font-size:11px;font-weight:600;letter-spacing:4px;text-transform:uppercase;margin-bottom:14px;">◆ Học phí linh hoạt</div>
     <h2 style="font-family:'Unbounded';font-weight:700;text-transform:uppercase;font-size:clamp(38px,6vw,82px);line-height:1.4;color:#fff;margin:0 0 14px;">Trả đúng thứ bạn học</h2>
     <p style="font-size:16px;line-height:1.6;color:#9a9088;max-width:640px;margin:0 0 12px;">Hai nhánh, khác nhau ở chỗ ai ngồi cạnh bạn khi sửa bài: một lớp có bạn học và có deadline, hay một mình bạn với giảng viên.</p>
