@@ -93,7 +93,21 @@
     font-weight:600;color:#fff;margin-bottom:7px;line-height:1.45;
   }
   .track-cta-txt p{margin:0;font-size:14.5px;line-height:1.65;color:#b8afa6;}
+  .track-cta-btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
   .track-cta .lxcta{padding:14px 28px;font-size:14.5px;}
+  .lxcta-ghost{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:13px 24px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.22);background:transparent;
+    color:#e6ded6;font-size:14px;font-weight:500;letter-spacing:.2px;
+    text-decoration:none;white-space:nowrap;
+    transition:border-color .2s ease,color .2s ease,background .2s ease;
+  }
+  .lxcta-ghost:hover{border-color:rgba(255,122,26,.55);color:#fff;background:rgba(255,122,26,.07);}
+  @media (max-width:560px){
+    .track-cta-btns{width:100%;}
+    .track-cta-btns a{width:100%;}
+  }
   .pick{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px;}
   @media (max-width:900px){
     .lvl{grid-template-columns:1fr;gap:22px;}
@@ -171,10 +185,13 @@
       
       <div class="track-cta">
         <div class="track-cta-txt">
-          <strong>Chưa chắc hệ này hợp với bạn?</strong>
-          <p>Cẩm nang đi đúng thứ tự bảy kỹ năng mà hệ này dạy — đọc trước để biết mình đang đứng ở đâu. Đăng ký tư vấn và nhận luôn <strong style="display:inline;font-family:inherit;font-size:inherit;color:#fff;">Cẩm Nang Blender 3D — 112 trang tiếng Việt</strong>, miễn phí, gửi thẳng vào hộp thư.</p>
+          <strong>Sẵn sàng vào Hệ 3D Automotive?</strong>
+          <p>Giữ chỗ lớp gần nhất — mỗi lớp giới hạn suất để còn sửa bài được cho từng người. Chưa chắc thì đọc cẩm nang trước: nó đi đúng thứ tự bảy kỹ năng mà hệ này dạy.</p>
         </div>
-        <a class="lxcta" href="cam-nang.html?from=he01-automotive">Đăng ký tư vấn &amp; nhận cẩm nang →</a>
+        <div class="track-cta-btns">
+          <a class="lxcta" href="index.html?khoa=he01-automotive#dangky">Đăng ký Hệ 3D Automotive →</a>
+          <a class="lxcta-ghost" href="cam-nang.html?from=he01-automotive">Nhận cẩm nang 112 trang miễn phí</a>
+        </div>
       </div>
     </div>
   </section>
@@ -217,10 +234,13 @@
       
       <div class="track-cta">
         <div class="track-cta-txt">
-          <strong>Chưa chắc hệ này hợp với bạn?</strong>
-          <p>Phần 3D nền tảng của hệ này nằm gọn trong cẩm nang — đọc thử trước khi quyết định. Đăng ký tư vấn và nhận luôn <strong style="display:inline;font-family:inherit;font-size:inherit;color:#fff;">Cẩm Nang Blender 3D — 112 trang tiếng Việt</strong>, miễn phí, gửi thẳng vào hộp thư.</p>
+          <strong>Sẵn sàng vào Hệ 3D × A.I?</strong>
+          <p>Giữ chỗ lớp gần nhất. Hoặc đọc cẩm nang trước — phần 3D nền tảng của hệ này nằm gọn trong đó, đọc xong bạn biết mình bắt đầu từ đâu.</p>
         </div>
-        <a class="lxcta" href="cam-nang.html?from=he02-ai">Đăng ký tư vấn &amp; nhận cẩm nang →</a>
+        <div class="track-cta-btns">
+          <a class="lxcta" href="index.html?khoa=he02-ai#dangky">Đăng ký Hệ 3D × A.I →</a>
+          <a class="lxcta-ghost" href="cam-nang.html?from=he02-ai">Nhận cẩm nang 112 trang miễn phí</a>
+        </div>
       </div>
     </div>
   </section>
