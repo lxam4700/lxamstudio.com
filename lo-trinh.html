@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lộ trình học — LXAM Studio</title>
+<meta name="description" content="Hai lộ trình riêng tại LXAM Academy: 3D Automotive (Blender từ Beginner đến Masterclass) và 3D × A.I dành cho người cần học AI vào quy trình hình ảnh.">
+<meta name="theme-color" content="#0e0a07">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LXAM Studio">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Lộ trình học — LXAM Studio">
+<meta property="og:description" content="Hai lộ trình riêng tại LXAM Academy: 3D Automotive (Blender từ Beginner đến Masterclass) và 3D × A.I dành cho người cần học AI vào quy trình hình ảnh.">
+<meta property="og:image" content="https://lxamstudio.com/assets/lo-trinh-automotive-masterclass.jpg">
+<meta property="og:url" content="https://lxamstudio.com/lo-trinh.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lxamstudio.com/lo-trinh.html">
+<link rel="stylesheet" href="assets/lx.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Lộ trình học LXAM Academy", "description": "Hai lộ trình riêng tại LXAM Academy: 3D Automotive (Blender từ Beginner đến Masterclass) và 3D × A.I dành cho người cần học AI vào quy trình hình ảnh.", "itemListElement": [{"@type": "Course", "position": 1, "name": "The Blender Automotive Beginner", "description": "Modeling 2 tháng + Rendering 1 tháng. Dựng và render được sản phẩm, xe cơ bản trong Blender.", "provider": {"@type": "Organization", "name": "LXAM Academy", "url": "https://lxamstudio.com/"}, "inLanguage": "vi-VN", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P3M"}}, {"@type": "Course", "position": 2, "name": "The Blender Automotive Masterclass", "description": "Modeling nâng cao 2 tháng + TVC 1 tháng + Rendering 1 tháng. Hard-surface nâng cao, car modeling, rigging, animation, VFX, SFX.", "provider": {"@type": "Organization", "name": "LXAM Academy", "url": "https://lxamstudio.com/"}, "inLanguage": "vi-VN", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P4M"}}, {"@type": "Course", "position": 3, "name": "3D Basic — Blender Foundation", "description": "3 tháng nền tảng: modeling hard-surface, material & lighting, rendering, tư duy hình ảnh.", "provider": {"@type": "Organization", "name": "LXAM Academy", "url": "https://lxamstudio.com/"}, "inLanguage": "vi-VN", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P3M"}}, {"@type": "Course", "position": 4, "name": "A.I Advance — AI × Visual", "description": "1 tháng: tư duy prompt, góc máy và ánh sáng với AI, workflow 3D × AI, ứng dụng Nano Banana Pro, Seedance, Kling 3.0.", "provider": {"@type": "Organization", "name": "LXAM Academy", "url": "https://lxamstudio.com/"}, "inLanguage": "vi-VN", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P1M"}}]}</script>
+
+<style>
+  .track{margin-top:18px;}
+  .track-head{
+    display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;
+    padding-bottom:20px;margin-bottom:34px;border-bottom:1px solid var(--line);
+  }
+  .track-num{
+    font-family:'Unbounded',sans-serif;font-size:12px;font-weight:600;
+    letter-spacing:3px;color:var(--ac);text-transform:uppercase;
+  }
+  .track-dur{font-size:13px;color:var(--dim);letter-spacing:.4px;}
+  .track-intro{max-width:640px;margin:0;}
+  .lvl{
+    display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:34px;
+    align-items:start;padding:30px 0;border-top:1px solid var(--line-soft);
+  }
+  .lvl:first-of-type{border-top:0;padding-top:6px;}
+  .lvl-art img{
+    width:100%;height:auto;display:block;
+    aspect-ratio:1/1;object-fit:contain;
+    border-radius:16px;border:1px solid var(--line);background:#0a0705;
+  }
+  .badge{
+    display:inline-block;font-family:'Unbounded',sans-serif;
+    font-size:10.5px;letter-spacing:2.2px;text-transform:uppercase;font-weight:600;
+    color:var(--ac);border:1px solid rgba(255,122,26,.38);
+    border-radius:999px;padding:6px 13px;margin-bottom:16px;
+  }
+  .lvl h3{margin:0 0 8px;font-size:clamp(19px,2.3vw,27px);}
+  .lvl-sub{font-size:13.5px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin:0 0 24px;}
+  .lvl-note{font-size:14px;line-height:1.7;color:#9a8f84;margin:18px 0 0;font-style:italic;}
+  .mod{margin-bottom:22px;}
+  .mod-head{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;}
+  .mod-tag{
+    font-family:'Unbounded',sans-serif;font-size:14px;font-weight:600;
+    text-transform:uppercase;letter-spacing:1.2px;color:#fff;
+  }
+  .mod-dur{
+    font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--ac);
+    border:1px solid rgba(255,122,26,.3);border-radius:999px;padding:3px 10px;white-space:nowrap;
+  }
+  .mod-list{list-style:none;padding:0;margin:0;}
+  .mod-list li{
+    font-size:15px;line-height:1.7;color:#c9c0b7;margin:0 0 9px;
+    padding-left:18px;position:relative;
+  }
+  .mod-list li::before{
+    content:"";position:absolute;left:0;top:10px;
+    width:6px;height:6px;border-radius:50%;background:rgba(255,122,26,.55);
+  }
+  .mod-list strong{color:#fff;font-weight:600;}
+  .goal{
+    margin-top:22px;padding:18px 22px;border-radius:14px;
+    background:rgba(255,122,26,.06);border:1px solid rgba(255,122,26,.22);
+  }
+  .goal-label{
+    display:block;font-family:'Unbounded',sans-serif;font-size:10.5px;
+    letter-spacing:2.2px;text-transform:uppercase;color:var(--ac);margin-bottom:7px;
+  }
+  .goal p{margin:0;color:#e2dad2;font-size:15.5px;line-height:1.65;}
+  .pick{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px;}
+  @media (max-width:900px){
+    .lvl{grid-template-columns:1fr;gap:22px;}
+    .lvl-art{max-width:420px;}
+    .pick{grid-template-columns:1fr;}
+  }
+</style>
+
+</head>
+<body>
+<nav class="lxnav">
+  <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
+    <img src="assets/2792c6e0.png" alt="LXAM" class="lxlogo-icon">
+    <div class="lxwordmark">
+      <div class="wm">LXAM</div>
+      <div class="wm-sub">3D ART STUDIO</div>
+    </div>
+  </a>
+  <div class="lxnav-links"><a href="index.html#khoahoc">Khóa học</a><a href="lo-trinh.html" class="is-active">Lộ trình</a><a href="index.html#portfolio">Portfolio</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a></div>
+  <div class="lxnav-actions">
+    <a class="lxcta" href="index.html#dangky">Giữ chỗ</a>
+    <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
+  </div>
+</nav>
+<div class="lxdrawer" id="lxdrawer">
+  <a href="index.html#khoahoc">Khóa học</a><a href="lo-trinh.html">Lộ trình</a><a href="index.html#portfolio">Portfolio</a><a href="cam-nang.html">Cẩm nang</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a>
+  <a class="lxcta" href="index.html#dangky">Giữ chỗ →</a>
+</div>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <p class="eyebrow">◆ Lộ trình học</p>
+      <h1>Hai lộ trình,<br>hai đích đến khác nhau</h1>
+      <p class="lead" style="max-width:740px;">LXAM Academy chia chương trình thành hai khu riêng biệt. Một khu đi sâu vào 3D
+      thương mại tới tận TVC ô tô. Một khu dành cho người cần đưa AI vào quy trình hình ảnh của mình.
+      Chọn theo việc bạn muốn làm được gì, không phải theo cái nào nghe mới hơn.</p>
+    </div>
+  </section>
+
+  <section id="automotive">
+    <div class="wrap">
+      <div class="track-head">
+        <span class="track-num">Khu 01 — 3D Automotive</span>
+        <span class="track-dur">Blender · 3 đến 4 tháng</span>
+      </div>
+      <p class="track-intro">Lộ trình 3D truyền thống, đi từ thao tác đầu tiên trong Blender đến một TVC ô tô
+      hoàn chỉnh. Dành cho người muốn làm nghề bằng chính tay mình — dựng, chiếu sáng, render, dựng phim.</p>
+      <div class="track">
+        
+    <article class="lvl">
+      <div class="lvl-art"><img src="assets/lo-trinh-automotive-beginner.jpg" alt="The Blender Automotive Beginner — lộ trình 3D cơ bản của LXAM Academy" loading="lazy" width="1200" height="1200"></div>
+      <div class="lvl-body">
+        <span class="badge">Basic</span>
+        <h3>The Blender Automotive Beginner</h3>
+        <p class="lvl-sub">3 tháng · Blender từ con số 0</p>
+        <div class="mod"><div class="mod-head"><span class="mod-tag">Modeling</span><span class="mod-dur">2 tháng</span></div><ul class="mod-list"><li><strong>Basic modeling:</strong> extrude, bevel, bridge, boolean…</li><li><strong>Product modeling:</strong> dựng sản phẩm đúng tỉ lệ, đúng form</li></ul></div><div class="mod"><div class="mod-head"><span class="mod-tag">Rendering</span><span class="mod-dur">1 tháng</span></div><ul class="mod-list"><li><strong>Shading:</strong> Geometry Node, PBR materials</li><li><strong>Lighting:</strong> các loại đèn, hướng sáng</li><li><strong>Camera setting:</strong> layout frame, góc máy</li><li><strong>Render setting:</strong> resolution, denoise</li><li><strong>Compositing:</strong> grading, blur, glare</li><li><strong>Scene optimization:</strong> khai thác hết CPU và GPU</li><li><strong>Testing &amp; refinement:</strong> render thử, tinh chỉnh ánh sáng</li></ul></div>
+        <div class="goal"><span class="goal-label">Mục tiêu</span><p>Tự dựng và render được một sản phẩm hoàn chỉnh, đủ đưa vào portfolio.</p></div>
+        
+      </div>
+    </article>
+        
+    <article class="lvl">
+      <div class="lvl-art"><img src="assets/lo-trinh-automotive-masterclass.jpg" alt="The Blender Automotive Masterclass — lộ trình 3D nâng cao của LXAM Academy" loading="lazy" width="1200" height="1200"></div>
+      <div class="lvl-body">
+        <span class="badge">Advance</span>
+        <h3>The Blender Automotive Masterclass</h3>
+        <p class="lvl-sub">4 tháng · đi tới TVC hoàn chỉnh</p>
+        <div class="mod"><div class="mod-head"><span class="mod-tag">Modeling</span><span class="mod-dur">2 tháng</span></div><ul class="mod-list"><li>Bao gồm toàn bộ nội dung bản Basic, cộng thêm:</li><li><strong>Hard-surface modeling:</strong> mức nâng cao</li><li><strong>Car modeling:</strong> dựng Lamborghini Veneno</li></ul></div><div class="mod"><div class="mod-head"><span class="mod-tag">TVC</span><span class="mod-dur">1 tháng</span></div><ul class="mod-list"><li><strong>Concept:</strong> sketch, viết kịch bản, vẽ storyboard</li><li><strong>Rigging:</strong> rig xe bằng LC Addon</li><li><strong>Animation:</strong> keyframe, tư duy điện ảnh, công cụ</li><li><strong>VFX:</strong> khí động học, hiệu ứng ánh sáng</li><li><strong>SFX:</strong> sound effect, nhạc nền</li></ul></div><div class="mod"><div class="mod-head"><span class="mod-tag">Rendering</span><span class="mod-dur">1 tháng</span></div><ul class="mod-list"><li><strong>Shading:</strong> Geometry Node, PBR materials</li><li><strong>Lighting:</strong> các loại đèn, hướng sáng</li><li><strong>Camera setting:</strong> layout frame, góc máy</li><li><strong>Render setting:</strong> resolution, denoise</li><li><strong>Compositing:</strong> grading, blur, glare</li><li><strong>Scene optimization:</strong> khai thác hết CPU và GPU</li><li><strong>Testing &amp; refinement:</strong> render thử, tinh chỉnh ánh sáng</li></ul></div>
+        <div class="goal"><span class="goal-label">Mục tiêu</span><p>Hoàn thành một TVC ô tô từ concept đến bản dựng cuối.</p></div>
+        
+      </div>
+    </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai" style="background:rgba(255,255,255,.014);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="track-head">
+        <span class="track-num">Khu 02 — 3D × A.I</span>
+        <span class="track-dur">Blender + AI · 4 tháng</span>
+      </div>
+      <p class="track-intro">Dành cho người cần AI trong công việc hình ảnh: marketing, thương mại điện tử,
+      content sản phẩm. Vẫn học 3D trước — vì AI chỉ nghe lời người biết mình muốn gì — rồi mới ghép AI vào
+      để nhân sản lượng lên.</p>
+      <div class="track">
+        
+    <article class="lvl">
+      <div class="lvl-art"><img src="assets/lo-trinh-3d-basic-ai.jpg" alt="3D Basic — Blender Foundation, nền tảng 3D trước khi vào AI" loading="lazy" width="1200" height="1200"></div>
+      <div class="lvl-body">
+        <span class="badge">3D Basic</span>
+        <h3>Blender Foundation</h3>
+        <p class="lvl-sub">3 tháng · nền tảng bắt buộc</p>
+        <div class="mod"><div class="mod-head"><span class="mod-tag">Nội dung</span><span class="mod-dur">3 tháng</span></div><ul class="mod-list"><li><strong>Modeling:</strong> hard surface, sản phẩm, form chuẩn</li><li><strong>Material &amp; Lighting:</strong> hiểu vật liệu và ánh sáng để render “ra tiền”</li><li><strong>Rendering:</strong> setup scene sạch, tối ưu workflow</li><li><strong>Tư duy hình ảnh:</strong> bố cục, góc máy, storytelling cơ bản</li></ul></div>
+        <div class="goal"><span class="goal-label">Mục tiêu</span><p>Tự dựng và render được sản phẩm hoàn chỉnh.</p></div>
+        
+      </div>
+    </article>
+        
+    <article class="lvl">
+      <div class="lvl-art"><img src="assets/lo-trinh-ai-advance.jpg" alt="A.I Advance — AI × Visual, khoá AI cho người làm hình ảnh tại LXAM Academy" loading="lazy" width="1200" height="1200"></div>
+      <div class="lvl-body">
+        <span class="badge">A.I Advance</span>
+        <h3>AI × Visual</h3>
+        <p class="lvl-sub">1 tháng · AI từ cơ bản đến nâng cao</p>
+        <div class="mod"><div class="mod-head"><span class="mod-tag">Nội dung</span><span class="mod-dur">1 tháng</span></div><ul class="mod-list"><li><strong>Tư duy Prompt:</strong> cách diễn đạt để AI hiểu đúng ý tưởng</li><li><strong>Góc máy &amp; ánh sáng với AI:</strong> kiểm soát mood, cinematic feel</li><li><strong>Workflow 3D × AI:</strong> kết hợp render và AI để tạo visual mạnh hơn</li><li><strong>Ứng dụng công cụ:</strong> Nano Banana Pro, Seedance, Kling 3.0</li></ul></div>
+        <div class="goal"><span class="goal-label">Mục tiêu</span><p>Biến 1 sản phẩm thành 5–10 biến thể chất lượng cao trong thời gian ngắn.</p></div>
+        <p class="lvl-note">Học phần này nối tiếp 3D Basic. AI thay bạn làm phần lặp lại, không thay phần bạn quyết định — nên nền 3D vẫn là điều kiện đi trước.</p>
+      </div>
+    </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">◆ Chọn khu nào</p>
+      <h2>Câu hỏi quyết định</h2>
+      <div class="pick">
+        <div class="card">
+          <h3>Chọn 3D Automotive nếu…</h3>
+          <ul class="mod-list" style="margin-top:14px;">
+            <li>Bạn muốn <strong>làm nghề 3D</strong>, nhận job dựng và render.</li>
+            <li>Bạn thích kiểm soát từng chi tiết trong khung hình.</li>
+            <li>Bạn nhắm portfolio xin việc studio hoặc nhận khách trực tiếp.</li>
+            <li>Bạn sẵn sàng bỏ 3–4 tháng để có kỹ năng dùng được nhiều năm.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Chọn 3D × A.I nếu…</h3>
+          <ul class="mod-list" style="margin-top:14px;">
+            <li>Bạn đang làm <strong>marketing, bán hàng, content</strong> và cần hình nhanh.</li>
+            <li>Bạn cần nhiều biến thể của cùng một sản phẩm, liên tục.</li>
+            <li>Bạn muốn hiểu AI đủ sâu để nó ra đúng ý, không phải bấm may rủi.</li>
+            <li>Bạn cần kết quả trong vài tháng, không phải vài năm.</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:26px;color:#9a8f84;font-size:15px;">Chưa chắc mình hợp khu nào? Đọc thêm bài
+      <a href="blog-hoc-blender-3d-bao-lau.html" style="color:#ff7a1a;">học Blender bao lâu thì đi làm được</a>,
+      hoặc để lại thông tin bên dưới — tôi xem qua rồi nói thẳng bạn nên vào khu nào.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="card" style="text-align:center;padding:clamp(34px,5vw,62px);border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
+        <h2 style="margin-bottom:14px;">Giữ chỗ lớp gần nhất</h2>
+        <p style="max-width:560px;margin:0 auto 28px;">Mỗi lớp giới hạn số suất để còn sửa bài được cho từng người.
+        Để lại thông tin, tôi liên hệ tư vấn lộ trình phù hợp trước khi bạn quyết định.</p>
+        <a class="lxcta" href="index.html#dangky" style="padding:15px 34px;font-size:15px;">Đăng ký tư vấn</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="lxfooter">
+  <div class="lxfoot">
+    <div>
+      <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
+        <img src="assets/2792c6e0.png" alt="LXAM" style="width:40px;height:40px;">
+        <div class="lxwordmark">
+          <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
+          <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
+        </div>
+      </a>
+      <p>Đào tạo 3D từ con số 0 đến TVC điện ảnh. Coaching 1:1 online, đồng hành trọn 1 năm cùng giảng viên 10 năm kinh nghiệm.</p>
+    </div>
+    <div>
+      <div class="col-head">Điều hướng</div>
+      <div class="links">
+        <a href="index.html#khoahoc">Khóa học</a>
+        <a href="lo-trinh.html">Lộ trình</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="cam-nang.html">Cẩm nang</a>
+        <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="blog.html">Blog</a>
+        <a href="hoc-vien.html">Khu học viên</a>
+      </div>
+    </div>
+    <div>
+      <div class="col-head">Kết nối</div>
+      <div class="links">
+        <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Fanpage Studio ↗</a>
+        <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube @LXAMStudios ↗</a>
+        <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="tel:0942890363">Hotline 0942 890 363</a>
+      </div>
+    </div>
+  </div>
+  <div class="lxfoot-base">
+    <span>© 2026 LXAM Studio. All rights reserved.</span>
+    <span>3D · Modeling · Lighting · Rendering · Animation · TVC · AI</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('lxburger'), d=document.getElementById('lxdrawer');
+  if(!b||!d) return;
+  b.addEventListener('click', function(){
+    var open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open ? '✕' : '≡';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  d.addEventListener('click', function(e){
+    if(e.target.tagName==='A'){ d.classList.remove('open'); b.textContent='≡'; document.body.style.overflow=''; }
+  });
+})();
+</script>
+</body></html>

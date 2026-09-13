@@ -516,7 +516,7 @@
     <div style="display:flex;align-items:center;gap:22px;" class="lxnav-links">
       <a data-cursor="" onclick="{{navHoc}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Khóa học</a>
       <a data-cursor="" onclick="{{navPort}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Portfolio</a>
-      <a data-cursor="" onclick="{{navLo}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Lộ trình</a>
+      <a data-cursor="" href="lo-trinh.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Lộ trình</a>
       <a data-cursor="" onclick="{{navGia}}" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Học phí</a>
       <a data-cursor="" href="cam-nang.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Cẩm nang</a>
       <a data-cursor="" href="ve-chung-toi.html" style="font-size:13px;font-weight:500;letter-spacing:.4px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Về chúng tôi</a>
@@ -532,7 +532,7 @@
   <sc-if value="{{menuOpen}}" hint-placeholder-val="{{false}}">
     <div style="position:fixed;inset:0;z-index:199;background:rgba(8,6,4,.96);backdrop-filter:blur(10px);display:flex;flex-direction:column;justify-content:center;gap:6px;padding:40px;">
       <a data-cursor="" onclick="{{navHoc}}" style="font-family:'Unbounded';font-size:34px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;cursor:pointer;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);">Khóa học</a>
-      <a data-cursor="" onclick="{{navLo}}" style="font-family:'Unbounded';font-size:34px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;cursor:pointer;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);">Lộ trình</a>
+      <a data-cursor="" href="lo-trinh.html" style="font-family:'Unbounded';font-size:34px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;cursor:pointer;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);">Lộ trình</a>
       <a data-cursor="" onclick="{{navPort}}" style="font-family:'Unbounded';font-size:34px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;cursor:pointer;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);">Portfolio</a>
       <a data-cursor="" onclick="{{navGia}}" style="font-family:'Unbounded';font-size:34px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;cursor:pointer;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);">Học phí</a>
       <a data-cursor="" href="cam-nang.html" style="font-family:'Unbounded';font-size:26px;font-weight:600;color:#fff;text-decoration:none;text-transform:uppercase;cursor:pointer;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);">Cẩm nang</a>
@@ -762,6 +762,10 @@
         </div>
       </div>
     </sc-for>
+    <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;border:1px dashed rgba(255,122,26,.32);border-radius:16px;padding:22px 26px;background:rgba(255,122,26,.04);">
+      <span style="font-size:15px;line-height:1.6;color:#d8cfc5;flex:1;min-width:240px;">Có <strong style="color:#fff;">hai lộ trình riêng biệt</strong>: 3D Automotive đi tới TVC ô tô, và 3D &times; A.I dành cho người cần AI trong công việc hình ảnh.</span>
+      <a data-cursor="" href="lo-trinh.html" style="display:inline-flex;align-items:center;justify-content:center;padding:13px 26px;border-radius:999px;background:linear-gradient(135deg,#ff7a1a,#e22d0f);color:#fff;font-size:14px;font-weight:600;letter-spacing:.3px;text-decoration:none;white-space:nowrap;box-shadow:0 8px 26px rgba(226,45,15,.3);">Xem lộ trình đầy đủ →</a>
+    </div>
   </section>
 
   <!-- ============ PRICING ============ -->
@@ -1007,6 +1011,7 @@
           <a data-cursor="" onclick="{{navPort}}" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Portfolio</a>
           <a data-cursor="" onclick="{{navGia}}" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Học phí</a>
           <a data-cursor="" href="cam-nang.html" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Cẩm nang miễn phí</a>
+          <a data-cursor="" href="lo-trinh.html" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Lộ trình</a>
           <a data-cursor="" href="ve-chung-toi.html" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Về chúng tôi</a>
           <a data-cursor="" href="blog.html" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Blog</a>
           <a data-cursor="" href="hoc-vien.html" style="font-size:14px;color:#cfc6bd;text-decoration:none;cursor:pointer;">Khu học viên</a>
