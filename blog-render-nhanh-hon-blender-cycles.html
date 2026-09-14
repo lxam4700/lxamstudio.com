@@ -2,7 +2,7 @@
 <html lang="vi"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy — LXAM Studio</title>
+<title>Cách render nhanh hơn trong Blender Cycles</title>
 <meta name="description" content="Mười cách cắt thời gian render Cycles mà không làm hình xấu đi — noise threshold, denoise, bounce, volumetric, OptiX và những thứ không nên đụng vào.">
 <meta name="theme-color" content="#0e0a07">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -14,7 +14,7 @@
 <meta property="article:published_time" content="2026-09-10">
 <meta property="og:site_name" content="LXAM Studio">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:title" content="Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy — LXAM Studio">
+<meta property="og:title" content="Cách render nhanh hơn trong Blender Cycles">
 <meta property="og:description" content="Mười cách cắt thời gian render Cycles mà không làm hình xấu đi — noise threshold, denoise, bounce, volumetric, OptiX và những thứ không nên đụng vào.">
 <meta property="og:image" content="https://lxamstudio.com/assets/vplas-chi-tiet-cong-sac-render.jpg">
 <meta property="og:url" content="https://lxamstudio.com/blog-render-nhanh-hon-blender-cycles.html">
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://lxamstudio.com/blog-render-nhanh-hon-blender-cycles.html">
 <link rel="stylesheet" href="assets/lx.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy", "description": "Mười cách cắt thời gian render Cycles mà không làm hình xấu đi — noise threshold, denoise, bounce, volumetric, OptiX và những thứ không nên đụng vào.", "image": "https://lxamstudio.com/assets/vplas-chi-tiet-cong-sac-render.jpg", "datePublished": "2026-09-10", "dateModified": "2026-09-10", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-render-nhanh-hon-blender-cycles.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy", "description": "Mười cách cắt thời gian render Cycles mà không làm hình xấu đi — noise threshold, denoise, bounce, volumetric, OptiX và những thứ không nên đụng vào.", "image": "https://lxamstudio.com/assets/vplas-chi-tiet-cong-sac-render.jpg", "datePublished": "2026-09-10", "dateModified": "2026-09-10", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-render-nhanh-hon-blender-cycles.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/logo-lxam.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy", "item": "https://lxamstudio.com/blog-render-nhanh-hon-blender-cycles.html"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Render bằng GPU luôn nhanh hơn CPU đúng không?", "acceptedAnswer": {"@type": "Answer", "text": "Gần như luôn đúng với Cycles, miễn là cảnh nhét vừa VRAM của card. Nếu cảnh vượt VRAM, Cycles phải mượn RAM hệ thống và tốc độ tụt rất mạnh — lúc đó CPU đôi khi lại ổn định hơn."}}, {"@type": "Question", "name": "Denoise có làm mất chi tiết không?", "acceptedAnswer": {"@type": "Answer", "text": "OpenImageDenoise ở các bản Blender mới giữ chi tiết tốt nếu bạn bật thêm pass Albedo và Normal, và nếu ảnh gốc không quá thiếu sample. Vấn đề thường đến từ việc hạ sample quá tay chứ không phải từ denoise."}}, {"@type": "Question", "name": "Nên đặt Max Samples bao nhiêu là hợp lý?", "acceptedAnswer": {"@type": "Answer", "text": "Khi đã bật Adaptive Sampling thì Max Samples chỉ là trần an toàn — để 2000–4096 và điều khiển bằng Noise Threshold. Ngưỡng 0.01 phù hợp cho hầu hết ảnh sản phẩm."}}, {"@type": "Question", "name": "Cảnh có kính và chất lỏng render rất lâu, cắt gì được?", "acceptedAnswer": {"@type": "Answer", "text": "Giữ Transmission bounce cao vì kính cần nó, nhưng hạ Diffuse và Glossy xuống, đặt Filter Glossy 1.0 và clamp indirect. Nếu vẫn nặng, tách vật thể trong suốt sang render layer riêng."}}]}</script>
 
@@ -32,7 +32,7 @@
 <body>
 <nav class="lxnav">
   <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
-    <img src="assets/2792c6e0.png" alt="LXAM" class="lxlogo-icon">
+    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon" width="2048" height="2048">
     <div class="lxwordmark">
       <div class="wm">LXAM</div>
       <div class="wm-sub">3D ART STUDIO</div>
@@ -57,7 +57,7 @@
       <span class="tag">Kỹ thuật</span>
       <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy</h1>
       <p class="post-meta" style="margin-bottom:34px;">10/09/2026 · 9 phút đọc</p>
-      <img src="assets/vplas-chi-tiet-cong-sac-render.jpg" alt="Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:0 0 40px;">
+      <img src="assets/vplas-chi-tiet-cong-sac-render.jpg" alt="Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:0 0 40px;" width="1600" height="900" loading="lazy" decoding="async">
 
 <p class="lead">Render lâu không phải là cái giá bắt buộc của hình đẹp. Phần lớn thời gian bị đốt vào những thứ không hiện lên trong khung hình — và cắt chúng đi thì ảnh không xấu đi chút nào.</p>
 
@@ -161,7 +161,7 @@
   <div class="lxfoot">
     <div>
       <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
-        <img src="assets/2792c6e0.png" alt="LXAM" style="width:40px;height:40px;">
+        <img src="assets/logo-lxam.png" alt="LXAM" style="width:40px;height:40px;" width="2048" height="2048">
         <div class="lxwordmark">
           <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
           <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
