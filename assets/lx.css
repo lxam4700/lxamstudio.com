@@ -4,8 +4,8 @@
   --bg:#0e0a07;
   --ink:#f2ebe4;
   --muted:#9a8f84;
-  --dim:#7d736a;
-  --faint:#6f665d;
+  --dim:#94897e;
+  --faint:#8b8178;
   --line:rgba(255,255,255,.08);
   --line-soft:rgba(255,255,255,.06);
   --ac:#ff7a1a;
@@ -92,7 +92,8 @@ section{padding:clamp(52px,7vw,96px) 0;}
 h1{font-family:'Unbounded',sans-serif;font-size:clamp(28px,4.4vw,52px);max-width:16ch;line-height:1.4;font-weight:700;text-transform:uppercase;color:#fff;margin:0 0 24px;}
 h2{font-family:'Unbounded',sans-serif;font-size:clamp(23px,3.2vw,40px);line-height:1.4;font-weight:700;text-transform:uppercase;color:#fff;margin:0 0 22px;}
 h3{font-family:'Unbounded',sans-serif;font-size:clamp(17px,1.9vw,23px);line-height:1.44;font-weight:600;color:#fff;margin:0 0 12px;}
-.eyebrow{font-family:'Unbounded',sans-serif;}
+.eyebrow{font-family:'Unbounded',sans-serif;display:flex;align-items:center;gap:12px;}
+.eyebrow::before{content:"";flex:0 0 auto;width:28px;height:1px;background:currentColor;opacity:.75;}
 p{font-size:16px;line-height:1.85;color:#c9c0b7;margin:0 0 20px;}
 .lead{font-size:clamp(17px,2vw,20px);line-height:1.75;color:#d8d0c8;}
 .muted{color:var(--muted);}
