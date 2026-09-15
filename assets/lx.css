@@ -80,6 +80,9 @@ a{color:inherit;}
 .lxdrawer .lxcta{margin-top:26px;width:100%;padding:15px 22px;font-size:15px;}
 
 /* ---------- LAYOUT ---------- */
+/* nav cố định che mất tiêu đề khi nhảy tới #anchor */
+[id]{scroll-margin-top:118px;}
+
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad);}
 .wrap-narrow{max-width:780px;margin:0 auto;padding:0 var(--pad);}
 main{padding-top:120px;}
