@@ -205,6 +205,50 @@
     background:linear-gradient(135deg,var(--ac),var(--ac-red));
     box-shadow:0 10px 26px rgba(226,45,15,.32);
   }
+  /* ---- box 2 chang trong goi kem rieng ---- */
+  .tierbox{
+    border:1px solid rgba(255,122,26,.30);border-radius:14px;
+    padding:18px 18px 6px;margin:0 0 20px;background:rgba(255,122,26,.045);
+  }
+  .tierbox-label{
+    display:block;font-family:'Unbounded',sans-serif;font-size:10px;font-weight:600;
+    letter-spacing:1.9px;text-transform:uppercase;color:var(--ac);margin-bottom:14px;
+  }
+  .tier{padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:14px;}
+  .tier:last-child{border-bottom:0;}
+  .tier-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px;}
+  .tier-h strong{
+    font-family:'Unbounded',sans-serif;font-size:12.5px;font-weight:600;
+    letter-spacing:.6px;color:#fff;line-height:1.35;
+  }
+  .tier-p{
+    font-family:'Unbounded',sans-serif;font-size:17px;font-weight:700;
+    color:#fff;white-space:nowrap;line-height:1;
+  }
+  .tier p{margin:0;font-size:13.5px;line-height:1.6;color:#b8afa6;}
+  .tier-sum{
+    background:rgba(255,122,26,.10);border:1px solid rgba(255,122,26,.34);
+    border-radius:11px;padding:13px 14px;margin-bottom:12px;
+  }
+  .tier-sum .tier-h strong,.tier-sum .tier-p{color:var(--ac);}
+
+  /* ---- quyen loi coaching ---- */
+  .benbox{margin:0 0 20px;}
+  .benbox-label{
+    display:block;font-family:'Unbounded',sans-serif;font-size:10px;font-weight:600;
+    letter-spacing:1.9px;text-transform:uppercase;color:var(--ac);margin-bottom:12px;
+  }
+  .benlist{list-style:none;padding:0;margin:0;}
+  .benlist li{
+    position:relative;padding:0 0 12px 24px;margin:0;
+  }
+  .benlist li::before{
+    content:"";position:absolute;left:2px;top:6px;
+    width:9px;height:5px;border-left:1.8px solid var(--ac);border-bottom:1.8px solid var(--ac);
+    transform:rotate(-45deg);
+  }
+  .benlist strong{display:block;font-size:14px;font-weight:600;color:#fff;margin-bottom:3px;line-height:1.45;}
+  .benlist span{display:block;font-size:13.5px;line-height:1.6;color:#b8afa6;}
   .price-note{margin:22px 0 0;font-size:14.5px;line-height:1.7;color:#b8afa6;}
   .price-note strong{color:#fff;}
   .pmore{margin-top:14px;border-top:1px solid var(--line-soft);padding-top:14px;}
