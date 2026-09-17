@@ -2,7 +2,7 @@
 <html lang="vi"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Backrooms trong Blender: dựng không khí bằng 6 node</title>
+<title>Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru — LXAM Studio</title>
 <meta name="description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
 <meta name="theme-color" content="#0e0a07">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -14,34 +14,34 @@
 <meta property="article:published_time" content="2026-09-07">
 <meta property="og:site_name" content="LXAM Studio">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:title" content="Backrooms trong Blender: dựng không khí bằng 6 node">
+<meta property="og:title" content="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru — LXAM Studio">
 <meta property="og:description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
 <meta property="og:image" content="https://lxamstudio.com/assets/2cdbf5f9.jpg">
 <meta property="og:url" content="https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html">
 <link rel="stylesheet" href="assets/lx.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "description": "Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.", "image": "https://lxamstudio.com/assets/2cdbf5f9.jpg", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/logo-lxam.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "description": "Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.", "image": "https://lxamstudio.com/assets/2cdbf5f9.jpg", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "item": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}]}</script>
 
 </head>
 <body>
 <nav class="lxnav">
   <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
-    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon" width="2048" height="2048">
+    <img src="assets/2792c6e0.png" alt="LXAM" class="lxlogo-icon">
     <div class="lxwordmark">
       <div class="wm">LXAM</div>
       <div class="wm-sub">3D ART STUDIO</div>
     </div>
   </a>
-  <div class="lxnav-links"><a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a></div>
+  <div class="lxnav-links"><a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="blog.html" class="is-active">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a></div>
   <div class="lxnav-actions">
     <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ</a>
     <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
   </div>
 </nav>
 <div class="lxdrawer" id="lxdrawer">
-  <a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="cam-nang.html">Cẩm nang</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a><a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+  <a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
   <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ →</a>
 </div>
 
@@ -53,7 +53,7 @@
       <span class="tag">Kỹ thuật</span>
       <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru</h1>
       <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · 6 phút đọc</p>
-      <img src="assets/2cdbf5f9.jpg" alt="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:0 0 40px;" width="1920" height="1080" loading="lazy" decoding="async">
+      <img src="assets/2cdbf5f9.jpg" alt="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:0 0 40px;">
       
 <p class="lead">Andrew Price — Blender Guru — dựng lại cảnh Backrooms và tuyên bố khoảng 90% hiệu ứng đến từ sáu node, không cần model, không cần UV unwrap. Nghe như mẹo vặt, nhưng bên dưới là một nguyên tắc đáng học.</p>
 
@@ -110,7 +110,7 @@
   <div class="lxfoot">
     <div>
       <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
-        <img src="assets/logo-lxam.png" alt="LXAM" style="width:40px;height:40px;" width="2048" height="2048">
+        <img src="assets/2792c6e0.png" alt="LXAM" style="width:40px;height:40px;">
         <div class="lxwordmark">
           <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
           <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
@@ -121,13 +121,14 @@
     <div>
       <div class="col-head">Điều hướng</div>
       <div class="links">
-        <a href="index.html#khoahoc">Khóa học</a>
-        <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
-        <a href="index.html#portfolio">Portfolio</a>
-        <a href="cam-nang.html">Cẩm nang</a>
         <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="du-an-event.html">Dự án Event</a>
+        <a href="du-an-automotive.html">Dự án Automotive</a>
+        <a href="du-an-san-pham.html">Dự án sản phẩm</a>
+        <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
         <a href="blog.html">Blog</a>
-        <a href="hoc-vien.html">Khu học viên</a>
+        <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
       </div>
     </div>
     <div>
