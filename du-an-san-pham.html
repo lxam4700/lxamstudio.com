@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dự án sản phẩm & kỹ thuật — Portfolio 3D | LXAM Studio</title>
+<meta name="description" content="Dự án 3D sản phẩm và kỹ thuật: dựng hình hard-surface, phối cảnh lắp ráp, cắt lớp cấu tạo và animation kỹ thuật bằng Blender.">
+<meta name="theme-color" content="#0e0a07">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LXAM Studio">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Dự án sản phẩm & kỹ thuật — Portfolio 3D | LXAM Studio">
+<meta property="og:description" content="Dự án 3D sản phẩm và kỹ thuật: dựng hình hard-surface, phối cảnh lắp ráp, cắt lớp cấu tạo và animation kỹ thuật bằng Blender.">
+<meta property="og:image" content="https://lxamstudio.com/assets/pf-2afcaceb.webp">
+<meta property="og:url" content="https://lxamstudio.com/du-an-san-pham.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lxamstudio.com/du-an-san-pham.html">
+<link rel="stylesheet" href="assets/lx.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Dự án sản phẩm & kỹ thuật", "description": "Dự án 3D sản phẩm và kỹ thuật: dựng hình hard-surface, phối cảnh lắp ráp, cắt lớp cấu tạo và animation kỹ thuật bằng Blender.", "url": "https://lxamstudio.com/du-an-san-pham.html", "inLanguage": "vi-VN", "isPartOf": {"@id": "https://lxamstudio.com/#studio"}}, {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thiết bị VPLAS · Exploded", "item": "https://lxamstudio.com/du-an-vplas.html"}, {"@type": "ListItem", "position": 2, "name": "JHM Masonry Hanger · TVC", "item": "https://lxamstudio.com/du-an-jhm-masonry-hanger.html"}, {"@type": "ListItem", "position": 3, "name": "Engine · Động cơ", "item": null}, {"@type": "ListItem", "position": 4, "name": "Khoá cửa thông minh", "item": null}, {"@type": "ListItem", "position": 5, "name": "Z113 · Dàn phóng phản lực", "item": null}, {"@type": "ListItem", "position": 6, "name": "Insta360 · Pocket Gimbal", "item": null}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://lxamstudio.com/index.html#portfolio"}, {"@type": "ListItem", "position": 3, "name": "Dự án sản phẩm & kỹ thuật", "item": "https://lxamstudio.com/du-an-san-pham.html"}]}]}</script>
+
+<style>
+  .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;}
+  .pitem{
+    display:block;text-decoration:none;color:inherit;
+    border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0));
+    transition:transform .25s ease,border-color .25s ease;
+  }
+  a.pitem:hover{transform:translateY(-4px);border-color:rgba(255,122,26,.5);}
+  .pthumb{aspect-ratio:16/10;overflow:hidden;background:#0a0705;border-bottom:1px solid var(--line);}
+  .pthumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;}
+  a.pitem:hover .pthumb img{transform:scale(1.04);}
+  .pbody{padding:22px 24px;display:flex;align-items:flex-start;justify-content:space-between;gap:14px;}
+  .pname{
+    font-family:'Unbounded',sans-serif;font-size:16px;font-weight:600;
+    color:#fff;line-height:1.4;margin:0 0 7px;
+  }
+  .ptag{font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ac);margin:0;}
+  .pgo{
+    flex:0 0 auto;font-family:'Unbounded',sans-serif;font-size:10.5px;font-weight:600;
+    letter-spacing:1.4px;text-transform:uppercase;color:var(--ac);white-space:nowrap;padding-top:3px;
+  }
+  .psoon{
+    flex:0 0 auto;font-size:11.5px;letter-spacing:1px;text-transform:uppercase;
+    color:var(--faint);white-space:nowrap;padding-top:4px;
+  }
+  .pthumb-empty{display:flex;align-items:center;justify-content:center;
+    background:repeating-linear-gradient(135deg,rgba(255,255,255,.028) 0 12px,rgba(255,255,255,0) 12px 24px);}
+  .pthumb-empty span{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--faint);}
+  .khu-nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;}
+  .khu-nav a{
+    display:inline-flex;align-items:center;padding:12px 22px;border-radius:999px;
+    border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);
+    color:#cfc6bd;font-size:14px;font-weight:500;text-decoration:none;
+  }
+  .khu-nav a.on{border-color:var(--ac);background:rgba(255,122,26,.12);color:#fff;}
+  .khu-nav a:hover{border-color:rgba(255,122,26,.55);color:#fff;}
+  @media (max-width:760px){ .pgrid{grid-template-columns:1fr;} }
+</style>
+
+</head>
+<body>
+<nav class="lxnav">
+  <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
+    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon">
+    <div class="lxwordmark">
+      <div class="wm">LXAM</div>
+      <div class="wm-sub">3D ART STUDIO</div>
+    </div>
+  </a>
+  <div class="lxnav-links"><a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio" class="is-active">Portfolio</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a></div>
+  <div class="lxnav-actions">
+    <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ</a>
+    <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
+  </div>
+</nav>
+<div class="lxdrawer" id="lxdrawer">
+  <a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="cam-nang.html">Cẩm nang</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a><a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+  <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ →</a>
+</div>
+
+<main>
+  <section style="padding-bottom:0;">
+    <div class="wrap">
+      <p class="eyebrow"><a href="index.html#portfolio" style="color:inherit;text-decoration:none;">Portfolio</a></p>
+      <h1>Dự án sản phẩm &amp; kỹ thuật</h1>
+      <p class="lead" style="max-width:760px;">Nhóm việc studio nhận nhiều nhất: dựng lại sản phẩm đúng tỉ lệ từ bản vẽ kỹ thuật, tách lớp cấu tạo, mô phỏng lắp ráp và vận hành. Khách dùng cho catalogue, hồ sơ kỹ thuật và quảng cáo.</p>
+      <div class="khu-nav"><a href="du-an-event.html">Event &amp; Kích hoạt</a><a href="du-an-automotive.html">Automotive</a><a href="du-an-san-pham.html" class="on">Sản phẩm &amp; Kỹ thuật</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="pgrid"><a class="pitem" href="du-an-vplas.html"><div class="pthumb"><img src="assets/pf-2afcaceb.webp" alt="Thiết bị VPLAS · Exploded — dự án 3D của LXAM Studio" loading="lazy" width="1600" height="1000"></div><div class="pbody"><div><p class="pname">Thiết bị VPLAS · Exploded</p><p class="ptag">Hardsurface · Product</p></div><span class="pgo">Xem dự án →</span></div></a><a class="pitem" href="du-an-jhm-masonry-hanger.html"><div class="pthumb"><img src="assets/pf-jhm.webp" alt="JHM Masonry Hanger · TVC — dự án 3D của LXAM Studio" loading="lazy" width="1600" height="1000"></div><div class="pbody"><div><p class="pname">JHM Masonry Hanger · TVC</p><p class="ptag">Technical · Animation</p></div><span class="pgo">Xem dự án →</span></div></a><div class="pitem"><div class="pthumb"><img src="assets/pf-b64a4cd7.webp" alt="Engine · Động cơ — dự án 3D của LXAM Studio" loading="lazy" width="1600" height="1000"></div><div class="pbody"><div><p class="pname">Engine · Động cơ</p><p class="ptag">Mechanical · Lighting</p></div><span class="psoon">Đang cập nhật</span></div></div><div class="pitem"><div class="pthumb"><img src="assets/khoa-cua-thong-minh-render-blender.jpg" alt="Khoá cửa thông minh — dự án 3D của LXAM Studio" loading="lazy" width="1600" height="1000"></div><div class="pbody"><div><p class="pname">Khoá cửa thông minh</p><p class="ptag">Product · Interior</p></div><span class="psoon">Đang cập nhật</span></div></div><div class="pitem"><div class="pthumb"><img src="assets/z113-dan-phong-phan-luc-render-blender.jpg" alt="Z113 · Dàn phóng phản lực — dự án 3D của LXAM Studio" loading="lazy" width="1600" height="1000"></div><div class="pbody"><div><p class="pname">Z113 · Dàn phóng phản lực</p><p class="ptag">Environment · FX</p></div><span class="psoon">Đang cập nhật</span></div></div><div class="pitem"><div class="pthumb"><img src="assets/insta360-gimbal-hoc-vien-loc.jpg" alt="Insta360 · Pocket Gimbal — dự án 3D của LXAM Studio" loading="lazy" width="1600" height="1000"></div><div class="pbody"><div><p class="pname">Insta360 · Pocket Gimbal</p><p class="ptag">Hardsurface · Bài học viên Lộc</p></div><span class="psoon">Đang cập nhật</span></div></div></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="card" style="text-align:center;padding:clamp(30px,4.5vw,56px);border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
+        <h2 style="margin-bottom:12px;">Cần một dự án như thế này?</h2>
+        <p style="max-width:560px;margin:0 auto 26px;">Gửi brief hoặc bản vẽ, chúng tôi báo lại thời gian và chi phí. Muốn tự làm được thì xem hai hệ đào tạo.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+          <a class="lxcta" href="index.html#lienhe" style="padding:15px 30px;font-size:15px;">Liên hệ báo giá →</a>
+          <a class="lxcta-ghost" href="lo-trinh.html">Xem khoá học</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="lxfooter">
+  <div class="lxfoot">
+    <div>
+      <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
+        <img src="assets/logo-lxam.png" alt="LXAM" style="width:40px;height:40px;">
+        <div class="lxwordmark">
+          <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
+          <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
+        </div>
+      </a>
+      <p>Studio visual 3D tại Việt Nam — TVC, render sản phẩm và animation kỹ thuật bằng Blender. Đồng thời đào tạo Blender 3D từ con số 0.</p>
+    </div>
+    <div>
+      <div class="col-head">Điều hướng</div>
+      <div class="links">
+        <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="du-an-event.html">Dự án Event</a>
+        <a href="du-an-automotive.html">Dự án Automotive</a>
+        <a href="du-an-san-pham.html">Dự án sản phẩm</a>
+        <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+        <a href="blog.html">Blog</a>
+        <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+        <a href="hoc-vien.html">Khu học viên</a>
+      </div>
+    </div>
+    <div>
+      <div class="col-head">Kết nối</div>
+      <div class="links">
+        <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Fanpage Studio ↗</a>
+        <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube @LXAMStudios ↗</a>
+        <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="tel:0942890363">Hotline 0942 890 363</a>
+      </div>
+    </div>
+  </div>
+  <div class="lxfoot-base">
+    <span>&copy; 2026 LXAM Studio. All rights reserved.</span>
+    <span>3D &middot; Modeling &middot; Lighting &middot; Rendering &middot; Animation &middot; TVC &middot; AI</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('lxburger'), d=document.getElementById('lxdrawer');
+  if(!b||!d) return;
+  b.addEventListener('click', function(){
+    var open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open ? '\u2715' : '\u2261';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  d.addEventListener('click', function(e){
+    if(e.target.tagName==='A'){ d.classList.remove('open'); b.textContent='\u2261'; document.body.style.overflow=''; }
+  });
+})();
+</script>
+</body></html>
