@@ -2,8 +2,8 @@
 <html lang="vi"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru — LXAM Studio</title>
-<meta name="description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
+<title>Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru | LXAM Studio</title>
+<meta name="description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV, chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
 <meta name="theme-color" content="#0e0a07">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -14,14 +14,14 @@
 <meta property="article:published_time" content="2026-09-07">
 <meta property="og:site_name" content="LXAM Studio">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:title" content="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru — LXAM Studio">
-<meta property="og:description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
+<meta property="og:title" content="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru | LXAM Studio">
+<meta property="og:description" content="Andrew Price dựng cảnh Backrooms gần như không model, không UV, chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.">
 <meta property="og:image" content="https://lxamstudio.com/assets/2cdbf5f9.jpg">
 <meta property="og:url" content="https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html">
 <link rel="stylesheet" href="assets/lx.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "description": "Andrew Price dựng cảnh Backrooms gần như không model, không UV — chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.", "image": "https://lxamstudio.com/assets/2cdbf5f9.jpg", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "description": "Andrew Price dựng cảnh Backrooms gần như không model, không UV, chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.", "image": "https://lxamstudio.com/assets/2cdbf5f9.jpg", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru", "item": "https://lxamstudio.com/blog-sau-node-va-mot-hanh-lang.html"}]}</script>
 
 </head>
@@ -55,7 +55,7 @@
       <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · 6 phút đọc</p>
       <img src="assets/2cdbf5f9.jpg" alt="Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;margin:0 0 40px;">
       
-<p class="lead">Andrew Price — Blender Guru — dựng lại cảnh Backrooms và tuyên bố khoảng 90% hiệu ứng đến từ sáu node, không cần model, không cần UV unwrap. Nghe như mẹo vặt, nhưng bên dưới là một nguyên tắc đáng học.</p>
+<p class="lead">Andrew Price, tức Blender Guru, dựng lại cảnh Backrooms và tuyên bố khoảng 90% hiệu ứng đến từ sáu node, không cần model, không cần UV unwrap. Nghe như mẹo vặt, nhưng bên dưới là một nguyên tắc đáng học.</p>
 
 <h2>Anh ấy làm gì</h2>
 
@@ -79,7 +79,7 @@
 <h3>Không dùng được</h3>
 <p>Sản phẩm nằm ở tiền cảnh. Nếu khách trả tiền để chai nước hay chiếc điện thoại của họ lên hình, mọi bevel đều bị soi. Không mẹo procedural nào thay được model đúng ở đó.</p>
 
-<p>Nhưng ngay trong job sản phẩm, nguyên tắc vẫn dùng được cho phần nền. Dựng cả một studio chi tiết phía sau chai nước là lãng phí — nền chỉ cần đúng ánh sáng và đúng vệt phản chiếu.</p>
+<p>Nhưng ngay trong job sản phẩm, nguyên tắc vẫn dùng được cho phần nền. Dựng cả một studio chi tiết phía sau chai nước là lãng phí. Nền chỉ cần đúng ánh sáng và đúng vệt phản chiếu.</p>
 
 <h2>Ba chi tiết nhỏ đáng chú ý</h2>
 
@@ -87,16 +87,16 @@
 <p>Với bề mặt phẳng và lặp lại, projection cho kết quả đủ tốt và tiết kiệm hoàn toàn khâu UV. Đây là thứ nhiều người học Blender không biết mình được phép bỏ qua.</p>
 
 <h3>Ngẫu nhiên hoá đèn trần</h3>
-<p>Một vài tấm đèn tắt, một vài tấm sáng yếu hơn. Chi tiết rất nhỏ nhưng là thứ tách cảnh CG khỏi cảnh trông như thật — sự đều tăm tắp là dấu hiệu của máy tính.</p>
+<p>Một vài tấm đèn tắt, một vài tấm sáng yếu hơn. Chi tiết rất nhỏ nhưng là thứ tách cảnh CG khỏi cảnh trông như thật, vì sự đều tăm tắp là dấu hiệu của máy tính.</p>
 
 <h3>Film grain và glare</h3>
-<p>Hai thứ này thêm ở khâu compositing, nhưng chỉ hiệu quả khi ánh sáng bên dưới đã đúng. Nếu bạn thấy mình dựa vào grain để cảnh đỡ giả, vấn đề nằm ở đèn — tôi có viết kỹ hơn trong <a href="blog-5-loi-lighting.html">bài về 5 lỗi lighting</a>.</p>
+<p>Hai thứ này thêm ở khâu compositing, nhưng chỉ hiệu quả khi ánh sáng bên dưới đã đúng. Nếu bạn thấy mình dựa vào grain để cảnh đỡ giả, vấn đề nằm ở đèn. Tôi có viết kỹ hơn trong <a href="blog-5-loi-lighting.html">bài về 5 lỗi lighting</a>.</p>
 
 <h2>Bài tập</h2>
 
 <p>Lấy một không gian bạn từng dựng thủ công và tự hỏi: nếu chỉ được dùng năm node, phần nào của cảnh này thật sự cần thiết? Trả lời được câu đó, bạn tiết kiệm được vài chục giờ cho mọi dự án sau.</p>
 
-      <hr class="hr"><h2 style="font-size:clamp(19px,2.2vw,26px);">Nguồn tham khảo</h2><p style="font-size:14.5px;color:#9a8f84;">Bài viết là phân tích và quan điểm riêng của LXAM Studio, dựa trên thông tin từ các nguồn dưới đây. Bấm vào để đọc bản gốc.</p><ul style="margin-top:14px;"><li><a href="https://80.lv/articles/blender-guru-shares-how-to-create-the-backrooms-using-blender" target="_blank" rel="noopener" style="color:#ff7a1a;">Blender Guru Shares How to Create The Backrooms Using Blender — 80 Level</a></li></ul>
+      <hr class="hr"><h2 style="font-size:clamp(19px,2.2vw,26px);">Nguồn tham khảo</h2><p style="font-size:14.5px;color:#9a8f84;">Bài viết là phân tích và quan điểm riêng của LXAM Studio, dựa trên thông tin từ các nguồn dưới đây. Bấm vào để đọc bản gốc.</p><ul style="margin-top:14px;"><li><a href="https://80.lv/articles/blender-guru-shares-how-to-create-the-backrooms-using-blender" target="_blank" rel="noopener" style="color:#ff7a1a;">Blender Guru Shares How to Create The Backrooms Using Blender (80 Level)</a></li></ul>
       <hr class="hr">
       <div class="card" style="text-align:center;border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
         <h3 style="margin-bottom:12px;">Muốn được sửa bài trực tiếp?</h3>
