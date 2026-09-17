@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercedes G63 TVC 3D | LXAM Studio</title>
+<meta name="description" content="Bộ shot TVC dựng hoàn toàn bằng 3D cho Mercedes-AMG G63: đường hầm, đội kỹ thuật, cận cảnh chi tiết xe và cảnh cháy nổ. Dựng bằng Blender.">
+<meta name="theme-color" content="#0e0a07">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LXAM Studio">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Mercedes G63 TVC 3D | LXAM Studio">
+<meta property="og:description" content="Bộ shot TVC dựng hoàn toàn bằng 3D cho Mercedes-AMG G63: đường hầm, đội kỹ thuật, cận cảnh chi tiết xe và cảnh cháy nổ. Dựng bằng Blender.">
+<meta property="og:image" content="https://lxamstudio.com/assets/mercedes-g63-canh-mo-trong-duong-ham.webp">
+<meta property="og:url" content="https://lxamstudio.com/du-an-mercedes-g63-tvc.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lxamstudio.com/du-an-mercedes-g63-tvc.html">
+<link rel="stylesheet" href="assets/lx.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Mercedes-AMG G63: TVC dựng hoàn toàn bằng 3D", "description": "Bộ shot TVC dựng hoàn toàn bằng 3D cho Mercedes-AMG G63: đường hầm, đội kỹ thuật, cận cảnh chi tiết xe và cảnh cháy nổ. Dựng bằng Blender.", "url": "https://lxamstudio.com/du-an-mercedes-g63-tvc.html", "image": "https://lxamstudio.com/assets/mercedes-g63-canh-mo-trong-duong-ham.webp", "dateCreated": "2024", "inLanguage": "vi-VN", "creator": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "about": "Dự án của studio"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://lxamstudio.com/index.html#portfolio"}, {"@type": "ListItem", "position": 3, "name": "Mercedes-AMG G63: TVC dựng hoàn toàn bằng 3D", "item": "https://lxamstudio.com/du-an-mercedes-g63-tvc.html"}]}</script>
+<style>
+  .pj-hero{position:relative;margin-top:-120px;padding-top:120px;}
+  .pj-hero-img{position:relative;height:min(62vh,560px);overflow:hidden;border-radius:0 0 20px 20px;}
+  .pj-hero-img img{width:100%;height:100%;object-fit:cover;display:block;}
+  .pj-hero-img::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(14,10,7,.55),rgba(14,10,7,.1) 40%,rgba(14,10,7,.92));}
+  .pj-head{max-width:var(--wrap);margin:-90px auto 0;padding:0 var(--pad);position:relative;z-index:2;}
+  .pj-back{display:inline-block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:18px;}
+  .pj-back:hover{color:#fff;}
+  .pj-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;
+    border-top:1px solid var(--line);margin-top:34px;}
+  .meta-row{padding:18px 0;border-bottom:1px solid var(--line-soft);padding-right:22px;}
+  .meta-row dt{font-family:'Unbounded',sans-serif;font-size:10.5px;letter-spacing:2px;
+    text-transform:uppercase;color:var(--ac);margin:0 0 7px;}
+  .meta-row dd{margin:0;font-size:14.5px;line-height:1.6;color:#d8d0c8;}
+  .pj-stats{display:flex;flex-wrap:wrap;gap:44px;margin-top:34px;}
+  .ps-n{display:block;font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.4vw,38px);
+    font-weight:700;color:#fff;line-height:1.1;}
+  .ps-l{display:block;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;
+    color:var(--dim);margin-top:6px;}
+  .shot{margin:0 0 clamp(40px,6vw,72px);}
+  .shot img{width:100%;display:block;border-radius:16px;border:1px solid var(--line);background:#0a0705;}
+  .shot figcaption{margin:14px auto 0;max-width:720px;font-size:14.5px;line-height:1.75;color:#a79d93;}
+  .shot figcaption strong{color:#fff;font-weight:600;}
+  .step{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:24px 0;
+    border-top:1px solid var(--line-soft);align-items:start;}
+  .step-n{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:600;
+    letter-spacing:2px;color:var(--ac);padding-top:5px;}
+  .step h3{margin:0 0 8px;font-size:clamp(16px,1.8vw,21px);}
+  @media (max-width:700px){
+    .pj-hero-img{height:44vh;}
+    .pj-head{margin-top:-60px;}
+    .pj-stats{gap:28px;}
+    .step{grid-template-columns:44px 1fr;gap:14px;}
+  }
+</style>
+</head>
+<body>
+<nav class="lxnav">
+  <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
+    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon" width="256" height="188">
+    <div class="lxwordmark"><div class="wm">LXAM</div><div class="wm-sub">3D ART STUDIO</div></div>
+  </a>
+  <div class="lxnav-links"><a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio" class="is-active">Portfolio</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a></div>
+  <div class="lxnav-actions">
+    <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ</a>
+    <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
+  </div>
+</nav>
+<div class="lxdrawer" id="lxdrawer">
+  <a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="cam-nang.html">Cẩm nang</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a><a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+  <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ →</a>
+</div>
+
+<main>
+  <div class="pj-hero">
+    <div class="pj-hero-img">
+      <img src="assets/mercedes-g63-canh-mo-trong-duong-ham.webp" alt="Mercedes-AMG G63 render trong đường hầm bê tông, dựng bằng Blender" width="1600" height="900">
+    </div>
+    <div class="pj-head">
+      <a class="pj-back" href="du-an-automotive.html">← Khu Automotive</a>
+      <p class="eyebrow">Dự án · Dự án của studio · 2024</p>
+      <h1 style="max-width:20ch;">Mercedes-AMG G63: TVC dựng hoàn toàn bằng 3D</h1>
+      <p class="lead" style="max-width:720px;">Một chiếc G63 trong đường hầm, đội kỹ thuật mặc đồ chiến thuật, rồi khung gầm trần trụi được lắp lại từng mảnh trước khi xe lao ra giữa lửa. Toàn bộ là hình dựng: xe, người, bối cảnh, khói lửa. Không có cảnh quay thật nào trong bộ này.</p>
+      <div class="pj-stats"><div class="ps"><span class="ps-n">11</span><span class="ps-l">Shot hoàn chỉnh</span></div><div class="ps"><span class="ps-n">2</span><span class="ps-l">Tỉ lệ khung</span></div><div class="ps"><span class="ps-n">100%</span><span class="ps-l">Dựng 3D</span></div></div>
+      <dl class="pj-meta"><div class="meta-row"><dt>Thể loại</dt><dd>TVC ô tô dựng 3D</dd></div><div class="meta-row"><dt>Năm</dt><dd>2023 – 2024</dd></div><div class="meta-row"><dt>Vai trò</dt><dd>Concept · Modeling · Lighting · VFX · Dựng phim</dd></div><div class="meta-row"><dt>Công cụ</dt><dd>Blender · After Effects</dd></div><div class="meta-row"><dt>Tỉ lệ khung</dt><dd>16:9 và 9:16</dd></div></dl>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Bài toán</p>
+      <h2>Ba thứ khó nhất</h2>
+      <div class="grid3" style="margin-top:30px;"><div class="card"><h3>Sơn đen trong đường hầm tối</h3><p style="margin:0;">Xe đen trên nền bê tông xám, ánh sáng duy nhất hắt từ miệng hầm. Nếu để sơn tự tối theo bối cảnh thì cả chiếc xe biến thành một khối đen không đọc được hình. Phải dựng riêng nguồn sáng viền để giữ đường nét thân xe.</p></div><div class="card"><h3>Người trong khung hình 3D</h3><p style="margin:0;">Có người thì tỉ lệ xe mới đọc được, nhưng người dựng 3D là thứ dễ lộ giả nhất. Giải pháp là để họ trong bóng tối và trong khói, làm nhiệm vụ cụ thể thay vì đứng tạo dáng.</p></div><div class="card"><h3>Cận cảnh phải chịu được soi</h3><p style="margin:0;">Đèn, lốp, ống xả, logo trên nắp ca-pô đều lên cận. Ở cỡ đó không giấu được gì: khe hở phải đúng, bo cạnh phải bắt sáng, bụi phải có chỗ bám hợp lý.</p></div></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <p class="eyebrow">Hình ảnh</p>
+      <h2 style="margin-bottom:40px;">Từng cảnh, và lý do</h2>
+      <figure class="shot"><img src="assets/mercedes-g63-canh-mo-trong-duong-ham.webp" alt="Mercedes G63 đứng trong đường hầm, đội kỹ thuật hai bên, render bằng Blender" loading="lazy" decoding="async"><figcaption><strong>Cảnh mở.</strong> Xe đứng giữa hầm, hai người hai bên, khói bụi treo trong luồng sáng. Bố cục đối xứng để người xem không phải tìm chủ thể, và để cú cắt sang cảnh động sau đó nặng hơn.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-mat-sau-trong-duong-ham.webp" alt="Mặt sau Mercedes G63 với lốp dự phòng và đèn hậu, render 3D" loading="lazy" decoding="async"><figcaption><strong>Mặt sau.</strong> G63 có mặt sau dễ nhận ra nhất: lốp dự phòng, bản lề nổi, đèn hậu dọc. Shot này để đó, không thêm gì, vì hình dáng đã tự làm việc.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-khung-gam-va-doi-ky-thuat.webp" alt="Khung gầm Mercedes G63 và đội kỹ thuật đang lắp ráp, render 3D" loading="lazy" decoding="async"><figcaption><strong>Khung gầm.</strong> Tháo hết vỏ, chỉ còn khung và bốn bánh. Đây là cảnh trả lời câu hỏi mà mọi TVC xe đều né: bên trong nó có gì.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-lap-rap-khung-gam.webp" alt="Cận cảnh đội kỹ thuật lắp ráp khung gầm Mercedes G63" loading="lazy" decoding="async"><figcaption><strong>Lắp ráp.</strong> Góc thấp, hai người trong khung, sáng hắt từ mặt đường. Chuyển động của tay người là thứ giữ nhịp cho đoạn giữa, vì bản thân khung gầm thì đứng yên.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-cum-den-truoc-can-canh.webp" alt="Cận cảnh cụm đèn trước Mercedes G63 với vòng sáng LED" loading="lazy" decoding="async"><figcaption><strong>Đèn trước.</strong> Vòng LED là chi tiết nhận diện của dòng G. Dựng đúng độ dày vòng sáng và độ nhoè của nó trong khói quan trọng hơn dựng đúng số bóng bên trong.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-den-hau-can-canh.webp" alt="Cận cảnh đèn hậu Mercedes G63 phát sáng đỏ" loading="lazy" decoding="async"><figcaption><strong>Đèn hậu.</strong> Đặt ngay sau shot đèn trước để tạo cặp. Hai cận cảnh cùng ngôn ngữ ánh sáng thì người xem đọc được ngay là cùng một chiếc xe, dù chưa thấy toàn cảnh.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-lop-va-mam-xe.webp" alt="Cận cảnh lốp địa hình và mâm xe Mercedes G63" loading="lazy" decoding="async"><figcaption><strong>Lốp và mâm.</strong> Gai lốp là chỗ dễ nhận ra hàng dựng ẩu nhất. Dựng thật chứ không dán texture, vì camera đi sát tới mức thấy được cạnh gai.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-logo-ngoi-sao-tren-nap-capo.webp" alt="Logo ngôi sao Mercedes trên nắp ca-pô trong luồng sáng bụi" loading="lazy" decoding="async"><figcaption><strong>Logo.</strong> Một khoảng lặng giữa các cảnh động. Bụi bay trong luồng sáng làm nền, logo nằm lệch tâm để khung hình không bị tĩnh hẳn.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-canh-chay-no-mat-truoc.webp" alt="Mercedes G63 lao tới giữa cảnh cháy nổ, render 3D" loading="lazy" decoding="async"><figcaption><strong>Cảnh cháy nổ.</strong> Cao trào. Lửa và tia lửa đặt phía sau xe chứ không phủ lên, để chiếc xe vẫn là thứ sáng nhất trong khung.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-canh-chay-no-phia-sau.webp" alt="Mercedes G63 nhìn từ phía sau khi lao đi giữa lửa" loading="lazy" decoding="async"><figcaption><strong>Lao đi.</strong> Cắt ngay sang góc sau để giữ hướng chuyển động. Đảo hướng ở nhịp này là người xem mất phương hướng, dù từng khung hình vẫn đẹp.</figcaption></figure><figure class="shot"><img src="assets/mercedes-g63-canh-co-khi-va-tia-lua.webp" alt="Cảnh chi tiết cơ khí và tia lửa trừu tượng trong TVC Mercedes G63" loading="lazy" decoding="async"><figcaption><strong>Cảnh kết.</strong> Các chi tiết cơ khí văng ra trong tia lửa. Cảnh trừu tượng đặt cuối để đóng lại bằng cảm giác chứ không bằng thông tin.</figcaption></figure>
+    </div>
+  </section>
+
+  <section style="background:rgba(255,255,255,.014);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <p class="eyebrow">Cách làm</p>
+      <h2>Năm bước</h2>
+      <div style="margin-top:30px;"><div class="step"><span class="step-n">01</span><div><h3>Dựng xe trước, dựng cảnh sau</h3><p style="margin:0;">Chiếc xe phải đứng được dưới một đèn trung tính trước đã. Xong mới mang vào hầm, vào lửa. Làm ngược lại thì mọi lỗi hình khối đều bị bối cảnh che mất cho tới lúc muộn.</p></div></div><div class="step"><span class="step-n">02</span><div><h3>Một sân khấu, nhiều cảnh</h3><p style="margin:0;">Đường hầm dựng một lần rồi dùng lại cho gần hết bộ shot. Nhờ vậy các cảnh cắt vào nhau không lệch tông, và thời gian dồn được vào phần chi tiết.</p></div></div><div class="step"><span class="step-n">03</span><div><h3>Cận cảnh làm riêng</h3><p style="margin:0;">Các shot macro dùng bản dựng chi tiết hơn, chỉ giữ phần lọt khung. Dựng chi tiết cả xe cho một cú cận là cách nhanh nhất để render treo máy.</p></div></div><div class="step"><span class="step-n">04</span><div><h3>Khói và lửa đặt sau chủ thể</h3><p style="margin:0;">Hiệu ứng là nền, không phải nhân vật. Mọi lớp khói lửa đều nằm sau hoặc ngang xe, không bao giờ phủ lên mặt trước.</p></div></div><div class="step"><span class="step-n">05</span><div><h3>Cắt hai tỉ lệ từ cùng một cảnh</h3><p style="margin:0;">Khung 16:9 và 9:16 dựng từ cùng bối cảnh nhưng đặt camera riêng, không cắt cúp lại. Cắt cúp thì bố cục dọc luôn trông như phần thừa của bản ngang.</p></div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card" style="text-align:center;padding:clamp(34px,5vw,62px);
+           border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
+        <h2 style="margin-bottom:14px;">Muốn làm được shot như thế này?</h2>
+        <p style="max-width:560px;margin:0 auto 28px;">Đây là đúng những kỹ năng trong lộ trình
+        LXAM Academy, dựng hình, ánh sáng, render tách lớp, dựng phim. Học bằng dự án thật, có người sửa bài.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+          <a class="lxcta" href="lo-trinh.html" style="padding:15px 30px;font-size:15px;">Xem lộ trình học</a>
+          <a class="lxcta-ghost" href="cam-nang.html?from=du-an-mercedes-g63-tvc">Nhận cẩm nang miễn phí</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="lxfooter">
+  <div class="lxfoot">
+    <div>
+      <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
+        <img src="assets/logo-lxam.png" alt="LXAM" width="40" height="29" style="width:40px;height:auto;">
+        <div class="lxwordmark">
+          <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
+          <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
+        </div>
+      </a>
+      <p>Đào tạo 3D từ con số 0 đến TVC điện ảnh. Coaching 1:1 online, đồng hành trọn 1 năm cùng giảng viên 10 năm kinh nghiệm.</p>
+    </div>
+    <div>
+      <div class="col-head">Điều hướng</div>
+      <div class="links">
+        <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="du-an-event.html">Dự án Event</a>
+        <a href="du-an-automotive.html">Dự án Automotive</a>
+        <a href="du-an-san-pham.html">Dự án sản phẩm</a>
+        <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+        <a href="blog.html">Blog</a>
+        <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+      </div>
+    </div>
+    <div>
+      <div class="col-head">Kết nối</div>
+      <div class="links">
+        <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Fanpage Studio ↗</a>
+        <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube @LXAMStudios ↗</a>
+        <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="tel:0942890363">Hotline 0942 890 363</a>
+      </div>
+    </div>
+  </div>
+  <div class="lxfoot-base">
+    <span>© 2026 LXAM Studio. All rights reserved.</span>
+    <span>3D · Modeling · Lighting · Rendering · Animation · TVC · AI</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('lxburger'), d=document.getElementById('lxdrawer');
+  if(!b||!d) return;
+  b.addEventListener('click', function(){
+    var open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open ? '✕' : '≡';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  d.addEventListener('click', function(e){
+    if(e.target.tagName==='A'){ d.classList.remove('open'); b.textContent='≡'; document.body.style.overflow=''; }
+  });
+})();
+</script>
+<script src="assets/lx-ui.js" defer></script>
+</body></html>

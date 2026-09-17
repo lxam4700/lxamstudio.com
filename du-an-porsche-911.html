@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Porsche 911 render 3D pit lane | LXAM</title>
+<meta name="description" content="Bộ hình 3D chiếc Porsche 911 trong pit lane: toàn cảnh, cận cảnh đèn và cánh gió, nội thất với tay đua. Dựng và render bằng Blender.">
+<meta name="theme-color" content="#0e0a07">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LXAM Studio">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Porsche 911 render 3D pit lane | LXAM">
+<meta property="og:description" content="Bộ hình 3D chiếc Porsche 911 trong pit lane: toàn cảnh, cận cảnh đèn và cánh gió, nội thất với tay đua. Dựng và render bằng Blender.">
+<meta property="og:image" content="https://lxamstudio.com/assets/porsche-911-pit-lane-toan-canh.webp">
+<meta property="og:url" content="https://lxamstudio.com/du-an-porsche-911.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lxamstudio.com/du-an-porsche-911.html">
+<link rel="stylesheet" href="assets/lx.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Porsche 911: bộ hình pit lane", "description": "Bộ hình 3D chiếc Porsche 911 trong pit lane: toàn cảnh, cận cảnh đèn và cánh gió, nội thất với tay đua. Dựng và render bằng Blender.", "url": "https://lxamstudio.com/du-an-porsche-911.html", "image": "https://lxamstudio.com/assets/porsche-911-pit-lane-toan-canh.webp", "dateCreated": "2024", "inLanguage": "vi-VN", "creator": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "about": "Dự án của studio"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://lxamstudio.com/index.html#portfolio"}, {"@type": "ListItem", "position": 3, "name": "Porsche 911: bộ hình pit lane", "item": "https://lxamstudio.com/du-an-porsche-911.html"}]}</script>
+<style>
+  .pj-hero{position:relative;margin-top:-120px;padding-top:120px;}
+  .pj-hero-img{position:relative;height:min(62vh,560px);overflow:hidden;border-radius:0 0 20px 20px;}
+  .pj-hero-img img{width:100%;height:100%;object-fit:cover;display:block;}
+  .pj-hero-img::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(14,10,7,.55),rgba(14,10,7,.1) 40%,rgba(14,10,7,.92));}
+  .pj-head{max-width:var(--wrap);margin:-90px auto 0;padding:0 var(--pad);position:relative;z-index:2;}
+  .pj-back{display:inline-block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:18px;}
+  .pj-back:hover{color:#fff;}
+  .pj-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;
+    border-top:1px solid var(--line);margin-top:34px;}
+  .meta-row{padding:18px 0;border-bottom:1px solid var(--line-soft);padding-right:22px;}
+  .meta-row dt{font-family:'Unbounded',sans-serif;font-size:10.5px;letter-spacing:2px;
+    text-transform:uppercase;color:var(--ac);margin:0 0 7px;}
+  .meta-row dd{margin:0;font-size:14.5px;line-height:1.6;color:#d8d0c8;}
+  .pj-stats{display:flex;flex-wrap:wrap;gap:44px;margin-top:34px;}
+  .ps-n{display:block;font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.4vw,38px);
+    font-weight:700;color:#fff;line-height:1.1;}
+  .ps-l{display:block;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;
+    color:var(--dim);margin-top:6px;}
+  .shot{margin:0 0 clamp(40px,6vw,72px);}
+  .shot img{width:100%;display:block;border-radius:16px;border:1px solid var(--line);background:#0a0705;}
+  .shot figcaption{margin:14px auto 0;max-width:720px;font-size:14.5px;line-height:1.75;color:#a79d93;}
+  .shot figcaption strong{color:#fff;font-weight:600;}
+  .step{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:24px 0;
+    border-top:1px solid var(--line-soft);align-items:start;}
+  .step-n{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:600;
+    letter-spacing:2px;color:var(--ac);padding-top:5px;}
+  .step h3{margin:0 0 8px;font-size:clamp(16px,1.8vw,21px);}
+  @media (max-width:700px){
+    .pj-hero-img{height:44vh;}
+    .pj-head{margin-top:-60px;}
+    .pj-stats{gap:28px;}
+    .step{grid-template-columns:44px 1fr;gap:14px;}
+  }
+</style>
+</head>
+<body>
+<nav class="lxnav">
+  <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
+    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon" width="256" height="188">
+    <div class="lxwordmark"><div class="wm">LXAM</div><div class="wm-sub">3D ART STUDIO</div></div>
+  </a>
+  <div class="lxnav-links"><a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio" class="is-active">Portfolio</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a></div>
+  <div class="lxnav-actions">
+    <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ</a>
+    <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
+  </div>
+</nav>
+<div class="lxdrawer" id="lxdrawer">
+  <a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="cam-nang.html">Cẩm nang</a><a href="blog.html">Blog</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="index.html#khoahoc">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a><a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+  <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ →</a>
+</div>
+
+<main>
+  <div class="pj-hero">
+    <div class="pj-hero-img">
+      <img src="assets/porsche-911-pit-lane-toan-canh.webp" alt="Porsche 911 đứng trong pit lane trường đua, render bằng Blender" width="1600" height="900">
+    </div>
+    <div class="pj-head">
+      <a class="pj-back" href="du-an-automotive.html">← Khu Automotive</a>
+      <p class="eyebrow">Dự án · Dự án của studio · 2024</p>
+      <h1 style="max-width:20ch;">Porsche 911: bộ hình pit lane</h1>
+      <p class="lead" style="max-width:720px;">Một chiếc 911 đứng trong pit lane lúc chiều muộn, chữ PORSCHE chạy dọc bức tường phía sau. Bộ hình đi từ toàn cảnh tới cận cảnh đèn, cánh gió, rồi vào hẳn trong xe. Tất cả dựng và render bằng Blender.</p>
+      <div class="pj-stats"><div class="ps"><span class="ps-n">9</span><span class="ps-l">Bản dựng</span></div><div class="ps"><span class="ps-n">2</span><span class="ps-l">Tỉ lệ khung</span></div><div class="ps"><span class="ps-n">2024</span><span class="ps-l">Năm</span></div></div>
+      <dl class="pj-meta"><div class="meta-row"><dt>Thể loại</dt><dd>Key visual ô tô</dd></div><div class="meta-row"><dt>Năm</dt><dd>2024</dd></div><div class="meta-row"><dt>Vai trò</dt><dd>Modeling · Lighting · Rendering · Hậu kỳ</dd></div><div class="meta-row"><dt>Công cụ</dt><dd>Blender</dd></div><div class="meta-row"><dt>Bàn giao</dt><dd>Bộ hình ngang và dọc</dd></div></dl>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Bài toán</p>
+      <h2>Ba thứ khó nhất</h2>
+      <div class="grid3" style="margin-top:30px;"><div class="card"><h3>Sơn bạc không có gì để bám</h3><p style="margin:0;">Màu bạc gần như không có màu của riêng nó, nó chỉ phản chiếu thứ xung quanh. Bức tường pit, mái che, mặt đường ướt đều phải dựng đúng vị trí, vì chúng chính là thứ vẽ nên thân xe.</p></div><div class="card"><h3>Giờ chiều muộn khó giữ</h3><p style="margin:0;">Ánh sáng xiên đẹp nhưng dải sáng tối rất rộng. Giữ được chi tiết trong bóng gầm mà không làm cháy mảng trời phía sau là phần mất thời gian nhất của bộ này.</p></div><div class="card"><h3>Nội thất phải khớp ngoại thất</h3><p style="margin:0;">Vào trong xe là đổi hoàn toàn hệ ánh sáng. Nếu tông màu trong cabin lệch khỏi tông ngoài thì hai shot cạnh nhau sẽ trông như hai chiếc xe khác nhau.</p></div></div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <p class="eyebrow">Hình ảnh</p>
+      <h2 style="margin-bottom:40px;">Từng cảnh, và lý do</h2>
+      <figure class="shot"><img src="assets/porsche-911-pit-lane-toan-canh.webp" alt="Porsche 911 đứng trong pit lane với bức tường chữ PORSCHE phía sau" loading="lazy" decoding="async"><figcaption><strong>Toàn cảnh pit lane.</strong> Shot mở. Xe đặt lệch trái, bức tường chữ chạy hết chiều ngang để mắt đi từ xe sang bối cảnh rồi quay lại.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-tay-dua-ben-xe.webp" alt="Tay đua mặc đồ đỏ đứng tựa vào Porsche 911 trong pit lane" loading="lazy" decoding="async"><figcaption><strong>Có người trong khung.</strong> Cùng góc máy, thêm tay đua áo đỏ. Một điểm màu nóng duy nhất trong khung hình xám xanh, và người xem lập tức đọc được kích thước thật của chiếc xe.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-den-truoc-va-nap-capo-carbon.webp" alt="Cận cảnh đèn trước Porsche 911 và nắp ca-pô carbon" loading="lazy" decoding="async"><figcaption><strong>Đèn trước.</strong> Cận cảnh cụm đèn tròn và mảng carbon trên nắp ca-pô. Sợi carbon là chi tiết rất dễ làm quá tay, nên để nó chỉ hiện ra ở góc sáng nghiêng.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-duoi-xe-va-canh-gio.webp" alt="Đuôi Porsche 911 với cánh gió lớn và dải đèn sau" loading="lazy" decoding="async"><figcaption><strong>Đuôi xe.</strong> Cánh gió và dải đèn chạy ngang là hai đường thẳng mạnh nhất của chiếc xe. Đặt camera ngang tầm để hai đường đó song song với cạnh khung hình.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-dai-den-sau-can-canh.webp" alt="Cận cảnh dải đèn sau Porsche 911 và biển số LXAM4700" loading="lazy" decoding="async"><figcaption><strong>Dải đèn sau.</strong> Vào sát hơn nữa. Ở cỡ này thấy được cả hạt sáng trong dải đèn, và biển số mang tên studio.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-noi-that-va-vo-lang.webp" alt="Nội thất Porsche 911 nhìn từ ghế lái, tay đua cầm vô lăng" loading="lazy" decoding="async"><figcaption><strong>Trong xe.</strong> Góc nhìn của người lái, hai tay áo đỏ trên vô lăng. Shot duy nhất trong bộ có điểm nhìn chủ quan, nên để ở giữa chứ không để mở đầu.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-goc-cao-canh-gio.webp" alt="Porsche 911 nhìn từ góc cao phía sau, thấy rõ cánh gió" loading="lazy" decoding="async"><figcaption><strong>Góc cao.</strong> Nhìn chéo từ trên xuống để đọc được cả mặt phẳng cánh gió lẫn đường vai xe, thứ mà góc ngang tầm mắt luôn giấu mất.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-key-visual-doc.webp" alt="Key visual dọc Porsche 911 trước toà nhà Porsche" loading="lazy" decoding="async"><figcaption><strong>Bản dọc.</strong> Dựng riêng cho khung dọc, không cắt từ bản ngang. Toà nhà chiếm nửa trên, xe nằm nửa dưới trên nền đường ướt.</figcaption></figure><figure class="shot"><img src="assets/porsche-911-tren-nen-asphalt-uot.webp" alt="Porsche 911 trên mặt đường nhựa ướt, nhìn từ trên cao" loading="lazy" decoding="async"><figcaption><strong>Mặt đường ướt.</strong> Đường ướt là cái cớ hợp lý để có thêm một lớp phản chiếu dưới gầm, thứ giúp chiếc xe không bị trôi khỏi mặt đất.</figcaption></figure>
+    </div>
+  </section>
+
+  <section style="background:rgba(255,255,255,.014);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <p class="eyebrow">Cách làm</p>
+      <h2>Bốn bước</h2>
+      <div style="margin-top:30px;"><div class="step"><span class="step-n">01</span><div><h3>Dựng bối cảnh trước khi chỉnh sơn</h3><p style="margin:0;">Pit lane, mái che, mặt đường dựng xong mới động tới vật liệu thân xe. Với màu bạc, chỉnh sơn trước khi có bối cảnh là chỉnh mò.</p></div></div><div class="step"><span class="step-n">02</span><div><h3>Chốt một giờ trong ngày</h3><p style="margin:0;">Chọn đúng một hướng nắng rồi giữ nguyên cho cả bộ. Mỗi shot đổi giờ một chút là cả bộ hình mất tính liên tục.</p></div></div><div class="step"><span class="step-n">03</span><div><h3>Tách bản cận và bản toàn</h3><p style="margin:0;">Bản dựng chi tiết chỉ dùng cho các shot macro. Bản nhẹ hơn dùng cho toàn cảnh, nơi không ai nhìn thấy đường chỉ trên đèn.</p></div></div><div class="step"><span class="step-n">04</span><div><h3>Dựng khung dọc riêng</h3><p style="margin:0;">Bản dọc đặt lại camera và dựng lại bố cục từ đầu. Nhanh hơn nhiều so với việc cố cứu một bản ngang bị cắt hai bên.</p></div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="card" style="text-align:center;padding:clamp(34px,5vw,62px);
+           border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
+        <h2 style="margin-bottom:14px;">Muốn làm được shot như thế này?</h2>
+        <p style="max-width:560px;margin:0 auto 28px;">Đây là đúng những kỹ năng trong lộ trình
+        LXAM Academy, dựng hình, ánh sáng, render tách lớp, dựng phim. Học bằng dự án thật, có người sửa bài.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+          <a class="lxcta" href="lo-trinh.html" style="padding:15px 30px;font-size:15px;">Xem lộ trình học</a>
+          <a class="lxcta-ghost" href="cam-nang.html?from=du-an-porsche-911">Nhận cẩm nang miễn phí</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="lxfooter">
+  <div class="lxfoot">
+    <div>
+      <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
+        <img src="assets/logo-lxam.png" alt="LXAM" width="40" height="29" style="width:40px;height:auto;">
+        <div class="lxwordmark">
+          <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
+          <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
+        </div>
+      </a>
+      <p>Đào tạo 3D từ con số 0 đến TVC điện ảnh. Coaching 1:1 online, đồng hành trọn 1 năm cùng giảng viên 10 năm kinh nghiệm.</p>
+    </div>
+    <div>
+      <div class="col-head">Điều hướng</div>
+      <div class="links">
+        <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="du-an-event.html">Dự án Event</a>
+        <a href="du-an-automotive.html">Dự án Automotive</a>
+        <a href="du-an-san-pham.html">Dự án sản phẩm</a>
+        <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+        <a href="blog.html">Blog</a>
+        <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+      </div>
+    </div>
+    <div>
+      <div class="col-head">Kết nối</div>
+      <div class="links">
+        <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Fanpage Studio ↗</a>
+        <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube @LXAMStudios ↗</a>
+        <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="tel:0942890363">Hotline 0942 890 363</a>
+      </div>
+    </div>
+  </div>
+  <div class="lxfoot-base">
+    <span>© 2026 LXAM Studio. All rights reserved.</span>
+    <span>3D · Modeling · Lighting · Rendering · Animation · TVC · AI</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('lxburger'), d=document.getElementById('lxdrawer');
+  if(!b||!d) return;
+  b.addEventListener('click', function(){
+    var open=d.classList.toggle('open');
+    b.setAttribute('aria-expanded', open?'true':'false');
+    b.textContent = open ? '✕' : '≡';
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  d.addEventListener('click', function(e){
+    if(e.target.tagName==='A'){ d.classList.remove('open'); b.textContent='≡'; document.body.style.overflow=''; }
+  });
+})();
+</script>
+<script src="assets/lx-ui.js" defer></script>
+</body></html>
