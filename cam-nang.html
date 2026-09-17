@@ -69,7 +69,7 @@
 
           <div id="cn-form-wrap">
             <h3 style="margin-bottom:6px;">Nhận cẩm nang</h3>
-            <p style="font-size:14px;margin:0 0 22px;">Điền tên và email, link tải hiện ngay bên dưới, và một bản được gửi vào hộp thư của bạn.</p>
+            <p style="font-size:14px;margin:0 0 22px;">Điền tên, email và số điện thoại. Link tải hiện ngay bên dưới, và một bản được gửi vào hộp thư của bạn.</p>
 
             <form id="cn-form" novalidate style="display:flex;flex-direction:column;gap:15px;">
               <div>
@@ -81,8 +81,8 @@
                 <input id="cn-email" data-lm="email" type="email" required inputmode="email" autocomplete="email" placeholder="ban@email.com" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
               </div>
               <div>
-                <label for="cn-phone" style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Số điện thoại <span style="text-transform:none;letter-spacing:0;color:#6f665d;">(không bắt buộc)</span></label>
-                <input id="cn-phone" data-lm="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
+                <label for="cn-phone" style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Số điện thoại</label>
+                <input id="cn-phone" data-lm="phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" style="width:100%;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);border-radius:12px;color:#fff;font-size:15px;font-family:inherit;outline:none;">
               </div>
               <div>
                 <label for="cn-level" style="display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#8b8178;margin-bottom:8px;">Bạn đang ở đâu trên lộ trình?</label>
@@ -102,7 +102,7 @@
           <div id="cn-done" hidden style="text-align:center;padding:8px 0;">
             <div style="font-family:'Unbounded',sans-serif;font-size:clamp(24px,3vw,32px);font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:10px;">Xong! ✓</div>
             <p style="margin:0 auto 24px;max-width:400px;">Cẩm nang đã sẵn sàng. Bấm nút bên dưới để mở, và kiểm tra hộp thư, nếu chưa thấy, ngó thêm mục Quảng cáo hoặc Spam.</p>
-            <a id="cn-dl" class="lxcta" href="https://drive.google.com/file/d/1iX52eGYiS4f7BUYRg49WX5Xx-vhs8j2Y/view" target="_blank" rel="noopener" style="width:100%;padding:16px;font-family:'Unbounded',sans-serif;font-size:14px;letter-spacing:1.6px;text-transform:uppercase;">Mở cẩm nang ↗</a>
+            <a id="cn-dl" class="lxcta" href="#" target="_blank" rel="noopener" style="width:100%;padding:16px;font-family:'Unbounded',sans-serif;font-size:14px;letter-spacing:1.6px;text-transform:uppercase;">Mở cẩm nang ↗</a>
             <p style="font-size:12.5px;color:#6f665d;margin:18px 0 0;">Bản PDF nặng khoảng 68MB, nên tải bằng Wi-Fi.</p>
           </div>
 
@@ -258,6 +258,7 @@
 
   // ── lead magnet: gửi lead về Google Apps Script rồi mở link tải ──
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbyxhiWlUEYx4x-grFV-DImPZyea2Ca1iz2JFl3XjcpLXY4abll4eW1Ht0Bn9CstVL3Oww/exec';
+  var DL = 'aHR0cHM6Ly9kcml2ZS5nb29nbGUuY29tL2ZpbGUvZC8xaVg1MmVHWWlTNGY3QlVZUmc0OVdYNVh4LXZoczhqMlkvdmlldw==';
   var form = document.getElementById('cn-form');
   var errEl = document.getElementById('cn-err');
   var wrap = document.getElementById('cn-form-wrap');
@@ -268,16 +269,48 @@
     var el = form.querySelector('[data-lm="'+k+'"]');
     return el ? String(el.value == null ? '' : el.value).trim() : '';
   }
-  function fail(msg){ if(errEl){ errEl.textContent = msg; errEl.style.display='block'; } }
+  function fail(msg, id){
+    if(errEl){ errEl.textContent = msg; errEl.style.display='block'; }
+    var el = id && document.getElementById(id);
+    if(el){
+      el.style.borderColor = '#ff8a6b';
+      el.setAttribute('aria-invalid', 'true');
+      try { el.focus({preventScroll:false}); } catch(e){ el.focus(); }
+      el.addEventListener('input', function once(){
+        el.style.borderColor = 'rgba(255,255,255,.14)';
+        el.removeAttribute('aria-invalid');
+        el.removeEventListener('input', once);
+      });
+    }
+  }
+
+  // chi gan link tai khi form da dien du va hop le
+  function unlock(){
+    var a = document.getElementById('cn-dl');
+    if(a){ a.href = atob(DL); }
+    if(wrap) wrap.hidden = true;
+    if(done) done.hidden = false;
+  }
 
   form.addEventListener('submit', function(ev){
     ev.preventDefault();
     ev.stopPropagation();
     if(errEl) errEl.style.display='none';
 
-    var name = val('name'), email = val('email');
-    if(!name){ return fail('Bạn điền giúp tên nhé.'); }
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ return fail('Email trông chưa đúng, kiểm tra lại giúp mình.'); }
+    var name = val('name'), email = val('email'), phone = val('phone');
+
+    if(name.length < 2){ return fail('Bạn điền giúp họ tên nhé.', 'cn-name'); }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){
+      return fail('Email trông chưa đúng, kiểm tra lại giúp mình.', 'cn-email');
+    }
+
+    // chuan hoa so dien thoai Viet Nam: bo khoang trang, dau cham, gach noi, ngoac
+    var digits = phone.replace(/[\s.\-()]/g, '');
+    if(/^\+?84\d{9}$/.test(digits)){ digits = '0' + digits.replace(/^\+?84/, ''); }
+    if(!/^0\d{9}$/.test(digits)){
+      return fail('Số điện thoại cần đủ 10 số và bắt đầu bằng 0.', 'cn-phone');
+    }
+    phone = digits;
 
     var btn = document.getElementById('cn-submit');
     if(btn){ btn.disabled = true; btn.textContent = 'Đang gửi…'; }
@@ -285,7 +318,7 @@
     var data = new URLSearchParams();
     data.append('name',  name);
     data.append('email', email);
-    data.append('phone', val('phone'));
+    data.append('phone', phone);
     data.append('fb',    '');
     data.append('pkg',   'Cẩm Nang Blender (tải miễn phí) · ' + val('level'));
     data.append('src',   location.href);
@@ -297,18 +330,14 @@
     }
 
     try { localStorage.setItem('lxam_camnang', '1'); } catch(err){}
-    if(wrap) wrap.hidden = true;
-    if(done) done.hidden = false;
+    unlock();
     var box = document.getElementById('cn-box');
     if(box && box.scrollIntoView) box.scrollIntoView({behavior:'smooth', block:'center'});
   }, false);
 
   // đã tải rồi thì lần sau vào không phải điền lại
   try {
-    if(localStorage.getItem('lxam_camnang') === '1'){
-      if(wrap) wrap.hidden = true;
-      if(done) done.hidden = false;
-    }
+    if(localStorage.getItem('lxam_camnang') === '1'){ unlock(); }
   } catch(err){}
 })();
 </script>
