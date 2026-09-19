@@ -45,6 +45,12 @@
   .shot img{width:100%;display:block;border-radius:4px;border:1px solid var(--line);background:#0a0705;}
   .shot figcaption{margin:14px auto 0;max-width:720px;font-size:14.5px;line-height:1.75;color:#a79d93;}
   .shot figcaption strong{color:#fff;font-weight:600;}
+  .shots-grid{display:grid;gap:clamp(18px,2.4vw,32px);align-items:start;}
+  .shots-grid.c2{grid-template-columns:repeat(2,1fr);}
+  .shots-grid.c3{grid-template-columns:repeat(3,1fr);}
+  .shots-grid .shot{margin:0;}
+  .shots-grid .shot figcaption{margin:12px 0 0;font-size:13.5px;}
+  @media (max-width:760px){ .shots-grid.c2,.shots-grid.c3{grid-template-columns:1fr;} }
   .step{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:24px 0;
     border-top:1px solid var(--line-soft);align-items:start;}
   .step-n{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:600;
@@ -113,6 +119,8 @@
       <div style="margin-top:30px;"><div class="step"><span class="step-n">01</span><div><h3>Hành lang sáng</h3><p style="margin:0;">Lối vào trắng, chỉ có tên triển lãm. Reset mắt trước khi vào phòng tối.</p></div></div><div class="step"><span class="step-n">02</span><div><h3>Bảng dẫn nhập</h3><p style="margin:0;">Giải thích khái niệm ngay đầu tuyến, khi khách còn chịu đọc.</p></div></div><div class="step"><span class="step-n">03</span><div><h3>Các khu mùi</h3><p style="margin:0;">Bảy không gian hai bên sảnh, mỗi khu một màu và một chất liệu, nối bằng các hộp đèn mặt tiền.</p></div></div><div class="step"><span class="step-n">04</span><div><h3>Khối trung tâm và tường chiếu</h3><p style="margin:0;">Điểm dừng giữa tuyến: chỗ để đứng lại, và cũng là mốc định hướng cho cả phòng.</p></div></div><div class="step"><span class="step-n">05</span><div><h3>Quầy bar</h3><p style="margin:0;">Kết bằng chỗ ngồi thay vì thêm một hạng mục trưng bày.</p></div></div></div>
     </div>
   </section>
+
+  <section class="qt qt-band" style="min-height:min(78svh,720px);" aria-label="Quan điểm"><div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div><div class="qt-in"><svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg><p class="qt-q">Đừng làm cho xong. Làm cho người ta phải <em>nhìn lại</em>.</p></div><div class="qt-bot"><span>lxamstudio.com</span><a href="index.html#portfolio" style="color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:3px;">Xem dự án khác →</a></div></section>
 
   <section>
     <div class="wrap">

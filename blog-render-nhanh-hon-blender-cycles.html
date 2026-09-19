@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="assets/lx.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy", "description": "Mười cách cắt thời gian render Cycles mà không làm hình xấu đi: noise threshold, denoise, bounce, volumetric, OptiX và những thứ không nên đụng vào.", "image": "https://lxamstudio.com/assets/vplas-chi-tiet-cong-sac-render.jpg", "datePublished": "2026-09-10", "dateModified": "2026-09-10", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-render-nhanh-hon-blender-cycles.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/logo-lxam.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy", "item": "https://lxamstudio.com/blog-render-nhanh-hon-blender-cycles.html"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Render bằng GPU luôn nhanh hơn CPU đúng không?", "acceptedAnswer": {"@type": "Answer", "text": "Gần như luôn đúng với Cycles, miễn là cảnh nhét vừa VRAM của card. Nếu cảnh vượt VRAM, Cycles phải mượn RAM hệ thống và tốc độ tụt rất mạnh, lúc đó CPU đôi khi lại ổn định hơn."}}, {"@type": "Question", "name": "Denoise có làm mất chi tiết không?", "acceptedAnswer": {"@type": "Answer", "text": "OpenImageDenoise ở các bản Blender mới giữ chi tiết tốt nếu bạn bật thêm pass Albedo và Normal, và nếu ảnh gốc không quá thiếu sample. Vấn đề thường đến từ việc hạ sample quá tay chứ không phải từ denoise."}}, {"@type": "Question", "name": "Nên đặt Max Samples bao nhiêu là hợp lý?", "acceptedAnswer": {"@type": "Answer", "text": "Khi đã bật Adaptive Sampling thì Max Samples chỉ là trần an toàn, để 2000–4096 và điều khiển bằng Noise Threshold. Ngưỡng 0.01 phù hợp cho hầu hết ảnh sản phẩm."}}, {"@type": "Question", "name": "Cảnh có kính và chất lỏng render rất lâu, cắt gì được?", "acceptedAnswer": {"@type": "Answer", "text": "Giữ Transmission bounce cao vì kính cần nó, nhưng hạ Diffuse và Glossy xuống, đặt Filter Glossy 1.0 và clamp indirect. Nếu vẫn nặng, tách vật thể trong suốt sang render layer riêng."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Render bằng GPU luôn nhanh hơn CPU đúng không?", "acceptedAnswer": {"@type": "Answer", "text": "Gần như luôn đúng với Cycles, miễn là cảnh nhét vừa VRAM của card. Nếu cảnh vượt VRAM, Cycles phải mượn RAM hệ thống và tốc độ tụt rất mạnh, lúc đó CPU đôi khi lại ổn định hơn."}}, {"@type": "Question", "name": "Denoise có làm mất chi tiết không?", "acceptedAnswer": {"@type": "Answer", "text": "OpenImageDenoise ở các bản Blender mới giữ chi tiết tốt nếu bạn bật thêm pass Albedo và Normal, và nếu ảnh gốc không quá thiếu sample. Vấn đề thường đến từ việc hạ sample quá tay chứ không phải từ denoise."}}, {"@type": "Question", "name": "Nên đặt Max Samples bao nhiêu là hợp lý?", "acceptedAnswer": {"@type": "Answer", "text": "Khi đã bật Adaptive Sampling thì Max Samples chỉ là trần an toàn, để 2000 đến 4096 và điều khiển bằng Noise Threshold. Ngưỡng 0.01 phù hợp cho hầu hết ảnh sản phẩm."}}, {"@type": "Question", "name": "Cảnh có kính và chất lỏng render rất lâu, cắt gì được?", "acceptedAnswer": {"@type": "Answer", "text": "Giữ Transmission bounce cao vì kính cần nó, nhưng hạ Diffuse và Glossy xuống, đặt Filter Glossy 1.0 và clamp indirect. Nếu vẫn nặng, tách vật thể trong suốt sang render layer riêng."}}]}</script>
 
 </head>
 <body>
@@ -65,7 +65,7 @@
 
 <h2>1. Đặt ngưỡng nhiễu, đừng đặt số sample</h2>
 
-<p>Trong <code>Render Properties → Sampling → Render</code>, thứ quyết định thời gian không phải Max Samples mà là <strong style="color:#fff;">Noise Threshold</strong>. Bật Adaptive Sampling, để ngưỡng khoảng <code>0.01</code>, Max Samples để cao (2000–4096) và Min Samples quanh 32.</p>
+<p>Trong <code>Render Properties → Sampling → Render</code>, thứ quyết định thời gian không phải Max Samples mà là <strong style="color:#fff;">Noise Threshold</strong>. Bật Adaptive Sampling, để ngưỡng khoảng <code>0.01</code>, Max Samples để cao (2000 đến 4096) và Min Samples quanh 32.</p>
 
 <p>Cycles sẽ tự dừng ở từng vùng ảnh khi vùng đó đủ sạch. Vùng trời phẳng dừng ở 60 sample, vùng kim loại phản chiếu chạy tiếp tới 800, thay vì cả ảnh phải chạy 800 chỉ vì một góc.</p>
 
@@ -77,7 +77,7 @@
 
 <h2>3. Cắt bounce và clamp ánh sáng gián tiếp</h2>
 
-<p>Ở <code>Light Paths</code>, mặc định Total 12 bounce là thừa cho gần như mọi cảnh sản phẩm. Hạ Total xuống 4–6, Diffuse 2, Glossy 3, Transmission 6 (giữ cao nếu có kính hoặc chất lỏng).</p>
+<p>Ở <code>Light Paths</code>, mặc định Total 12 bounce là thừa cho gần như mọi cảnh sản phẩm. Hạ Total xuống 4 đến 6, Diffuse 2, Glossy 3, Transmission 6 (giữ cao nếu có kính hoặc chất lỏng).</p>
 
 <p>Sau đó đặt <code>Clamp → Indirect</code> khoảng 10. Nó chặn những chấm sáng lẻ (fireflies), thứ khiến bạn phải tăng sample gấp đôi chỉ để dập vài chục pixel.</p>
 
@@ -128,7 +128,7 @@
 <tbody>
 <tr><td>Bật denoise, hạ sample</td><td>Rất cao</td><td>Thấp</td></tr>
 <tr><td>Noise Threshold 0.01</td><td>Cao</td><td>Thấp</td></tr>
-<tr><td>Hạ bounce + clamp indirect</td><td>Cao</td><td>Thấp – trung bình</td></tr>
+<tr><td>Hạ bounce + clamp indirect</td><td>Cao</td><td>Thấp tới trung bình</td></tr>
 <tr><td>Tăng Step Rate cho volume</td><td>Cao (nếu có volume)</td><td>Trung bình</td></tr>
 <tr><td>OptiX / GPU đúng thiết bị</td><td>Cao</td><td>Không</td></tr>
 <tr><td>Hạ texture xuống 2K</td><td>Trung bình</td><td>Thấp</td></tr>

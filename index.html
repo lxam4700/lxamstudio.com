@@ -156,7 +156,7 @@
                padding:18px 0;font-size:15.5px;font-weight:600;color:#fff;}
   .faq summary::-webkit-details-marker{display:none;}
   .faq summary::after{content:"+";color:var(--ac);font-weight:400;font-size:20px;line-height:1;}
-  .faq details[open] summary::after{content:"–";}
+  .faq details[open] summary::after{content:"−";}
   .faq details p{font-size:14.5px;color:#b9b0a7;margin:0 0 18px;max-width:62ch;}
   .spec{display:grid;grid-template-columns:max-content 1fr;gap:6px 22px;margin:0 0 20px;font-size:14px;}
   .spec dt{color:var(--muted);} .spec dd{margin:0;color:#e2dad2;}
@@ -180,6 +180,49 @@
   .soc a{color:#cfc6bd;text-decoration:none;} .soc a:hover{color:#fff;}
   .last{padding-bottom:clamp(64px,9vw,120px);}
 
+
+  /* ---------- SLIDER DU AN ---------- */
+  .sl{position:relative;}
+  .sl-track{display:flex;gap:clamp(12px,1.6vw,22px);overflow-x:auto;overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+    padding:clamp(12px,2vw,24px) calc(50vw - (min(34vw,430px) / 2));cursor:grab;}
+  .sl-track::-webkit-scrollbar{display:none;}
+  .sl-track.drag{cursor:grabbing;scroll-snap-type:none;}
+  .sl-track.drag .sl-card{pointer-events:none;}
+  .sl-card{flex:0 0 min(34vw,430px);aspect-ratio:4/5;scroll-snap-align:center;position:relative;
+    display:block;border-radius:6px;overflow:hidden;text-decoration:none;color:#fff;
+    transform:scale(var(--s,.86));opacity:var(--o,.55);transform-origin:center;
+    will-change:transform,opacity;box-shadow:0 0 0 1px rgba(255,255,255,var(--b,0));}
+  .sl-card:not(.qt){background:#120d09;}
+  .sl-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+    filter:grayscale(var(--g,.35));transition:filter .4s ease;}
+  .sl-card:not(.qt)::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.78) 100%);}
+  .sl-m{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:clamp(16px,2vw,26px);}
+  .sl-t{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(17px,1.9vw,26px);line-height:1.2;margin:0 0 6px;}
+  .sl-c{font-size:12.5px;letter-spacing:.4px;color:rgba(255,255,255,.78);}
+  .sl-go{display:inline-block;margin-top:14px;padding:8px 14px;border-radius:999px;background:#fff;color:#111;
+    font-size:12px;font-weight:600;opacity:var(--o2,0);transform:translateY(calc((1 - var(--o2,0)) * 8px));}
+  .sl-card.qt{display:flex;flex-direction:column;justify-content:space-between;padding:clamp(16px,2vw,26px);cursor:default;}
+  .sl-card.qt .qt-q{font-size:clamp(19px,2.1vw,30px);}
+  .sl-card.qt .qt-mark{width:clamp(40px,4.4vw,64px);}
+  .sl-nav{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:clamp(18px,2.6vw,30px);}
+  .sl-btn{width:44px;height:44px;border-radius:6px;border:0;cursor:pointer;display:flex;align-items:center;
+    justify-content:center;font-size:18px;line-height:1;transition:transform .2s ease,opacity .2s ease;}
+  .sl-btn:hover{transform:translateY(-2px);}
+  .sl-btn[disabled]{opacity:.35;cursor:default;transform:none;}
+  .sl-prev{background:#fff;color:#111;}
+  .sl-next{background:var(--ac);color:#140c06;}
+  .sl-n{min-width:74px;text-align:center;font-size:12.5px;letter-spacing:1.4px;color:var(--muted);}
+  .sl-n b{color:#fff;font-weight:600;}
+  @media (max-width:700px){
+    .sl-track{padding:12px calc(50vw - 36vw);}
+    .sl-card{flex-basis:72vw;}
+  }
+  @media (prefers-reduced-motion:reduce){ .sl-card{transform:none !important;opacity:1 !important;} }
+
+  /* ---------- TRICH DAN CA TRANG ---------- */
+  .qt-band{margin-top:clamp(64px,9vw,128px);}
   :focus-visible{outline:2px solid var(--ac);outline-offset:3px;}
   @media (prefers-reduced-motion:reduce){ *{transition:none !important;} }
 
@@ -268,11 +311,16 @@
   </div>
 </section>
 <section id="portfolio">
-  <div class="wrap">
-    <div class="sh"><div class="sh-n"><span><b>02</b> / Dự án</span><span>LXAM Studio</span></div><h2>Dự án chọn lọc</h2><a class="sh-a" href="du-an-automotive.html">Tất cả dự án →</a></div>
-    <div class="work"><a class="wk w-a" href="du-an-mercedes-g63-tvc.html"><figure><img src="assets/card-mercedes-g63.webp" alt="Mercedes-AMG G63, dự án 3D của LXAM Studio" width="1600" height="1000" loading="lazy" decoding="async"></figure><div class="wk-m"><span class="wk-t">Mercedes-AMG G63</span><span class="wk-c">TVC 3D · VFX</span></div></a><a class="wk w-b" href="du-an-chivas-18.html"><figure><img src="assets/card-chivas18.webp" alt="Chivas Regal 18 × Touliver, dự án 3D của LXAM Studio" width="1600" height="1000" loading="lazy" decoding="async"></figure><div class="wk-m"><span class="wk-t">Chivas Regal 18 × Touliver</span><span class="wk-c">Phối cảnh triển lãm</span></div></a><a class="wk w-b" href="du-an-volvo-s90.html"><figure><img src="assets/card-volvo-s90.webp" alt="Volvo S90, dự án 3D của LXAM Studio" width="1600" height="1000" loading="lazy" decoding="async"></figure><div class="wk-m"><span class="wk-t">Volvo S90</span><span class="wk-c">Bộ hình chiến dịch</span></div></a><a class="wk w-c" href="du-an-vplas.html"><figure><img src="assets/card-vplas.webp" alt="VPLAS, dự án 3D của LXAM Studio" width="1600" height="1000" loading="lazy" decoding="async"></figure><div class="wk-m"><span class="wk-t">VPLAS</span><span class="wk-c">TVC thiết bị plasma</span></div></a><a class="wk w-c" href="du-an-trien-lam-axe.html"><figure><img src="assets/card-axehibition.webp" alt="AXEHIBITION, dự án 3D của LXAM Studio" width="1600" height="1000" loading="lazy" decoding="async"></figure><div class="wk-m"><span class="wk-t">AXEHIBITION</span><span class="wk-c">Triển lãm hương thơm</span></div></a><a class="wk w-c" href="du-an-aston-martin-dbx.html"><figure><img src="assets/card-aston-martin-dbx.webp" alt="Aston Martin DBX, dự án 3D của LXAM Studio" width="1600" height="1000" loading="lazy" decoding="async"></figure><div class="wk-m"><span class="wk-t">Aston Martin DBX</span><span class="wk-c">Key visual</span></div></a></div>
-    <div class="khu"><span>Xem theo khu</span><a class="lnk" href="du-an-event.html">Event &amp; kích hoạt</a> <a class="lnk" href="du-an-automotive.html">Automotive</a> <a class="lnk" href="du-an-san-pham.html">Sản phẩm &amp; kỹ thuật</a></div>
+  <div class="wrap"><div class="sh"><div class="sh-n"><span><b>02</b> / Dự án</span><span>LXAM Studio</span></div><h2>Dự án chọn lọc</h2><a class="sh-a" href="du-an-automotive.html">Tất cả dự án →</a></div></div>
+  <div class="sl" aria-roledescription="carousel" aria-label="Dự án của LXAM Studio">
+    <div class="sl-track" id="sl-track" tabindex="0"><a class="sl-card" href="du-an-chivas-18-chai-xviii.html" role="group" aria-roledescription="slide"><img src="assets/slide-chivas18-chai.webp" alt="Chivas Regal 18, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Chivas Regal 18</p><span class="sl-c">Dựng chai XVIII</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-mercedes-g63-tvc.html" role="group" aria-roledescription="slide"><img src="assets/slide-mercedes-g63.webp" alt="Mercedes-AMG G63, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Mercedes-AMG G63</p><span class="sl-c">TVC 3D · VFX</span><br><span class="sl-go">Xem dự án →</span></div></a><div class="sl-card qt" role="group" aria-roledescription="slide"><div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div><div><svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg><p class="qt-q">Hình đẹp thì nhiều. Hình <em>được nhớ</em> thì hiếm.</p></div><div class="qt-bot"><span>lxamstudio.com</span></div></div><a class="sl-card" href="du-an-chivas-18.html" role="group" aria-roledescription="slide"><img src="assets/slide-chivas18-trien-lam.webp" alt="Chivas 18 × Touliver, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Chivas 18 × Touliver</p><span class="sl-c">Phối cảnh triển lãm</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-chivas-15-trung-bay.html" role="group" aria-roledescription="slide"><img src="assets/slide-chivas15.webp" alt="Chivas Regal 15, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Chivas Regal 15</p><span class="sl-c">Vật phẩm trưng bày</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-volvo-s90.html" role="group" aria-roledescription="slide"><img src="assets/slide-volvo-s90.webp" alt="Volvo S90, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Volvo S90</p><span class="sl-c">Bộ hình chiến dịch</span><br><span class="sl-go">Xem dự án →</span></div></a><div class="sl-card qt" role="group" aria-roledescription="slide"><div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div><div><svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg><p class="qt-q">Đừng làm cho xong. Làm cho người ta phải <em>nhìn lại</em>.</p></div><div class="qt-bot"><span>lxamstudio.com</span></div></div><a class="sl-card" href="du-an-porsche-911.html" role="group" aria-roledescription="slide"><img src="assets/slide-porsche-911.webp" alt="Porsche 911, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Porsche 911</p><span class="sl-c">Key visual pit lane</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-trien-lam-axe.html" role="group" aria-roledescription="slide"><img src="assets/slide-axehibition.webp" alt="AXEHIBITION, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">AXEHIBITION</p><span class="sl-c">Triển lãm hương thơm</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-mclaren-765lt.html" role="group" aria-roledescription="slide"><img src="assets/slide-mclaren.webp" alt="McLaren 765LT, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">McLaren 765LT</p><span class="sl-c">Key visual</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-aston-martin-dbx.html" role="group" aria-roledescription="slide"><img src="assets/slide-aston.webp" alt="Aston Martin DBX, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Aston Martin DBX</p><span class="sl-c">Key visual</span><br><span class="sl-go">Xem dự án →</span></div></a><div class="sl-card qt" role="group" aria-roledescription="slide"><div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div><div><svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg><p class="qt-q">Tiêu chuẩn là thứ bạn giữ khi <em>không ai nhìn</em>.</p></div><div class="qt-bot"><span>lxamstudio.com</span></div></div><a class="sl-card" href="du-an-vplas.html" role="group" aria-roledescription="slide"><img src="assets/slide-vplas.webp" alt="VPLAS, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">VPLAS</p><span class="sl-c">TVC thiết bị plasma</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-jhm-masonry-hanger.html" role="group" aria-roledescription="slide"><img src="assets/slide-jhm.webp" alt="JHM Masonry Hanger, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">JHM Masonry Hanger</p><span class="sl-c">TVC kỹ thuật</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-khoa-cua-thong-minh.html" role="group" aria-roledescription="slide"><img src="assets/slide-khoa-cua.webp" alt="Khoá cửa thông minh, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Khoá cửa thông minh</p><span class="sl-c">Render sản phẩm</span><br><span class="sl-go">Xem dự án →</span></div></a></div>
+    <div class="sl-nav">
+      <button class="sl-btn sl-prev" type="button" aria-label="Dự án trước">‹</button>
+      <span class="sl-n" aria-live="polite"><b id="sl-i">01</b> / 15</span>
+      <button class="sl-btn sl-next" type="button" aria-label="Dự án tiếp theo">›</button>
+    </div>
   </div>
+  <div class="wrap"><div class="khu"><span>Xem theo khu</span><a class="lnk" href="du-an-event.html">Event &amp; kích hoạt</a> <a class="lnk" href="du-an-automotive.html">Automotive</a> <a class="lnk" href="du-an-san-pham.html">Sản phẩm &amp; kỹ thuật</a></div></div>
 </section>
 <section id="showreel">
   <div class="wrap">
@@ -295,6 +343,11 @@
       <a class="lnk" href="mailto:anhminhlexuan@gmail.com?subject=Brief%20du%20an%203D">anhminhlexuan@gmail.com →</a>
     </div>
   </div>
+</section>
+<section class="qt qt-band" aria-label="Quan điểm">
+  <div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div>
+  <div class="qt-in"><svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg><p class="qt-q">Khi ai đó bảo bạn không làm được, họ đang nói về <em>giới hạn</em> của họ, không phải của bạn.</p></div>
+  <div class="qt-bot"><span>LXAM Academy</span><a class="lnk" href="#khoahoc" style="color:#fff;">Bắt đầu học →</a></div>
 </section>
 <section id="khoahoc">
   <div class="wrap">
@@ -408,6 +461,73 @@
     }
   }
 
+
+  // slider du an: cuon ngang bang scroll-snap, the giua phong to theo khoang cach
+  var tr=document.getElementById('sl-track');
+  if(tr){
+    var cards=[].slice.call(tr.querySelectorAll('.sl-card'));
+    var idx=document.getElementById('sl-i');
+    var prev=document.querySelector('.sl-prev'), next=document.querySelector('.sl-next');
+    var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var cur=0, raf=0;
+    function paint(){
+      raf=0;
+      var mid=tr.scrollLeft+tr.clientWidth/2, best=0, bd=1e9;
+      cards.forEach(function(c,i){
+        var cm=c.offsetLeft+c.offsetWidth/2, d=Math.abs(cm-mid), k=Math.min(1,d/(c.offsetWidth*1.1));
+        if(d<bd){bd=d;best=i;}
+        if(!calm){
+          c.style.setProperty('--s',(1-.14*k).toFixed(4));
+          c.style.setProperty('--o',(1-.45*k).toFixed(4));
+          c.style.setProperty('--g',(.35*k).toFixed(3));
+          c.style.setProperty('--b',(.9*(1-k)).toFixed(3));
+          c.style.setProperty('--o2',Math.max(0,1-k*2.2).toFixed(3));
+        }
+      });
+      if(best!==cur||idx.textContent===''){cur=best;}
+      idx.textContent=(cur+1<10?'0':'')+(cur+1);
+      prev.disabled=cur===0; next.disabled=cur===cards.length-1;
+    }
+    function req(){ if(!raf) raf=requestAnimationFrame(paint); }
+    function go(i){
+      i=Math.max(0,Math.min(cards.length-1,i)); var c=cards[i];
+      tr.scrollTo({left:c.offsetLeft+c.offsetWidth/2-tr.clientWidth/2,behavior:calm?'auto':'smooth'});
+    }
+    tr.addEventListener('scroll',req,{passive:true});
+    window.addEventListener('resize',req);
+    prev.addEventListener('click',function(){go(cur-1);});
+    next.addEventListener('click',function(){go(cur+1);});
+    tr.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'){e.preventDefault();go(cur+1);}
+      if(e.key==='ArrowLeft'){e.preventDefault();go(cur-1);}
+    });
+    // bam vao the o ben canh thi keo no vao giua truoc
+    cards.forEach(function(c,i){
+      c.addEventListener('click',function(e){ if(i!==cur){ e.preventDefault(); go(i); } });
+    });
+    // keo bang chuot tren may tinh
+    var down=false,sx=0,sl=0,moved=0;
+    tr.addEventListener('pointerdown',function(e){
+      if(e.pointerType!=='mouse') return;
+      down=true;moved=0;sx=e.clientX;sl=tr.scrollLeft;
+    });
+    window.addEventListener('pointermove',function(e){
+      if(!down) return; var dx=e.clientX-sx;
+      if(Math.abs(dx)>4&&!tr.classList.contains('drag')) tr.classList.add('drag');
+      moved=Math.max(moved,Math.abs(dx)); tr.scrollLeft=sl-dx;
+    });
+    window.addEventListener('pointerup',function(){
+      if(!down) return; down=false;
+      if(tr.classList.contains('drag')){
+        tr.classList.remove('drag');
+        var mid=tr.scrollLeft+tr.clientWidth/2,b=0,bd=1e9;
+        cards.forEach(function(c,i){var d=Math.abs(c.offsetLeft+c.offsetWidth/2-mid); if(d<bd){bd=d;b=i;}});
+        go(b);
+      }
+    });
+    tr.addEventListener('click',function(e){ if(moved>6){ e.preventDefault(); e.stopPropagation(); moved=0; } },true);
+    paint();
+  }
   // showreel va TVC: bam moi tai video
   document.querySelectorAll('.vid[data-src]').forEach(function(btn){
     btn.addEventListener('click',function(){

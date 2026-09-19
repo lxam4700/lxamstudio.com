@@ -45,6 +45,12 @@
   .shot img{width:100%;display:block;border-radius:4px;border:1px solid var(--line);background:#0a0705;}
   .shot figcaption{margin:14px auto 0;max-width:720px;font-size:14.5px;line-height:1.75;color:#a79d93;}
   .shot figcaption strong{color:#fff;font-weight:600;}
+  .shots-grid{display:grid;gap:clamp(18px,2.4vw,32px);align-items:start;}
+  .shots-grid.c2{grid-template-columns:repeat(2,1fr);}
+  .shots-grid.c3{grid-template-columns:repeat(3,1fr);}
+  .shots-grid .shot{margin:0;}
+  .shots-grid .shot figcaption{margin:12px 0 0;font-size:13.5px;}
+  @media (max-width:760px){ .shots-grid.c2,.shots-grid.c3{grid-template-columns:1fr;} }
   .step{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:24px 0;
     border-top:1px solid var(--line-soft);align-items:start;}
   .step-n{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:600;
@@ -113,6 +119,8 @@
       <div style="margin-top:30px;"><div class="step"><span class="step-n">01</span><div><h3>Đọc brief và chốt đường hình</h3><p style="margin:0;">Khách gửi kịch bản kèm thông điệp từng cảnh. Việc đầu tiên là chốt bố cục và góc máy ở dạng khối xám, trước khi đụng tới chi tiết. Duyệt ở bước này mất một ngày, duyệt sau khi render xong mất một tuần.</p></div></div><div class="step"><span class="step-n">02</span><div><h3>Dựng từ file CAD</h3><p style="margin:0;">File STEP của khách nhập vào rồi dựng lại phần vỏ cho sạch topology. CAD cho đúng kích thước nhưng lưới không dùng trực tiếp để render được.</p></div></div><div class="step"><span class="step-n">03</span><div><h3>Ánh sáng trước, vật liệu sau</h3><p style="margin:0;">Toàn bộ cảnh dựng sáng khi vật thể còn là chất xám trung tính. Ánh sáng đúng ở trạng thái xám thì gần như chắc chắn đúng khi có vật liệu.</p></div></div><div class="step"><span class="step-n">04</span><div><h3>Render tách lớp</h3><p style="margin:0;">Mỗi cảnh xuất riêng sản phẩm, nền, bóng đổ, phản chiếu và lớp phát sáng. Khi khách yêu cầu chỉnh nền tối hơn thì sửa trong vài phút thay vì render lại vài tiếng.</p></div></div><div class="step"><span class="step-n">05</span><div><h3>Dựng phim và hoàn thiện</h3><p style="margin:0;">Ghép mười phân cảnh, chỉnh màu tổng thể, thêm nhạc và hiệu ứng âm thanh, xuất đúng tỉ lệ màn LED của địa điểm tổ chức.</p></div></div></div>
     </div>
   </section>
+
+  <section class="qt qt-band" style="min-height:min(78svh,720px);" aria-label="Quan điểm"><div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div><div class="qt-in"><svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg><p class="qt-q">Chi tiết nhỏ là nơi người ta <em>tin</em> hay không tin.</p></div><div class="qt-bot"><span>lxamstudio.com</span><a href="index.html#portfolio" style="color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:3px;">Xem dự án khác →</a></div></section>
 
   <section>
     <div class="wrap">

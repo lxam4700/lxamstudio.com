@@ -45,6 +45,12 @@
   .shot img{width:100%;display:block;border-radius:4px;border:1px solid var(--line);background:#0a0705;}
   .shot figcaption{margin:14px auto 0;max-width:720px;font-size:14.5px;line-height:1.75;color:#a79d93;}
   .shot figcaption strong{color:#fff;font-weight:600;}
+  .shots-grid{display:grid;gap:clamp(18px,2.4vw,32px);align-items:start;}
+  .shots-grid.c2{grid-template-columns:repeat(2,1fr);}
+  .shots-grid.c3{grid-template-columns:repeat(3,1fr);}
+  .shots-grid .shot{margin:0;}
+  .shots-grid .shot figcaption{margin:12px 0 0;font-size:13.5px;}
+  @media (max-width:760px){ .shots-grid.c2,.shots-grid.c3{grid-template-columns:1fr;} }
   .step{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:24px 0;
     border-top:1px solid var(--line-soft);align-items:start;}
   .step-n{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:600;
@@ -113,6 +119,8 @@
       <div style="margin-top:30px;"><div class="step"><span class="step-n">01</span><div><h3>Dựng đúng kích thước trước</h3><p style="margin:0;">Khoá cửa là sản phẩm người ta cầm hằng ngày, sai tỉ lệ vài milimet là nhìn ra ngay dù không đo được. Dựng theo kích thước thật rồi mới làm bề mặt.</p></div></div><div class="step"><span class="step-n">02</span><div><h3>Sân khấu xám, hai đèn viền</h3><p style="margin:0;">Nền xám trung tính, hai nguồn sáng lớn đặt chéo hai bên. Với bề mặt đen nhám thì viền sáng là thứ duy nhất vẽ ra được hình khối.</p></div></div><div class="step"><span class="step-n">03</span><div><h3>Bàn phím làm riêng</h3><p style="margin:0;">Đèn nền của bàn phím tách thành lớp riêng để chỉnh độ sáng ở hậu kỳ, không phải render lại mỗi lần muốn thay đổi.</p></div></div><div class="step"><span class="step-n">04</span><div><h3>Ảnh tách rời sắp theo thứ tự lắp</h3><p style="margin:0;">Sắp linh kiện theo trục lắp ráp thật chứ không theo bố cục cho đẹp. Đẹp mà sai thứ tự thì người kỹ thuật nhìn vào là biết.</p></div></div></div>
     </div>
   </section>
+
+  <section class="qt qt-band" style="min-height:min(78svh,720px);" aria-label="Quan điểm"><div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div><div class="qt-in"><svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg><p class="qt-q">Đừng làm cho xong. Làm cho người ta phải <em>nhìn lại</em>.</p></div><div class="qt-bot"><span>lxamstudio.com</span><a href="index.html#portfolio" style="color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:3px;">Xem dự án khác →</a></div></section>
 
   <section>
     <div class="wrap">
