@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://lxamstudio.com/assets/card-mercedes-g63.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" as="image" href="assets/hero-poster-1600.webp">
-<link rel="stylesheet" href="assets/lx.css">
+<link rel="stylesheet" href="assets/lx.css?v=den2">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["ProfessionalService", "Organization"], "@id": "https://lxamstudio.com/#studio", "name": "LXAM Studio", "alternateName": "LXAM 3D Art Studio", "url": "https://lxamstudio.com/", "logo": "https://lxamstudio.com/icon-512.png", "description": "Studio visual 3D tại Việt Nam, sản xuất TVC 3D, render sản phẩm thương mại và animation kỹ thuật bằng Blender.", "areaServed": {"@type": "Country", "name": "Việt Nam"}, "knowsLanguage": ["vi", "en"], "founder": {"@type": "Person", "name": "Lê Xuân Anh Minh", "jobTitle": "Multimedia Director", "sameAs": "https://www.facebook.com/anhminh.lexuan/"}, "sameAs": ["https://www.facebook.com/lxamstudio/", "https://www.youtube.com/@LXAMStudios", "https://www.instagram.com/lxamstudio/"], "contactPoint": {"@type": "ContactPoint", "telephone": "+84942890363", "contactType": "customer service", "availableLanguage": ["Vietnamese", "English"]}, "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Dịch vụ 3D", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TVC & animation 3D", "description": "Dựng cảnh, rigging, hiệu ứng và dựng phim ra một TVC 3D hoàn chỉnh."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Render sản phẩm thương mại", "description": "Dựng hình hard-surface và render hình ảnh sản phẩm cho quảng cáo, catalogue, website."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Visual kỹ thuật & ô tô", "description": "Phối cảnh lắp ráp, cắt lớp cấu tạo, mô phỏng vận hành cho thiết bị và xe."}}]}, "address": {"@type": "PostalAddress", "addressCountry": "VN"}, "telephone": "+84942890363", "email": "anhminhlexuan@gmail.com", "image": "https://lxamstudio.com/assets/hero-p.webp"}, {"@type": "EducationalOrganization", "@id": "https://lxamstudio.com/#academy", "name": "LXAM Academy", "url": "https://lxamstudio.com/lo-trinh.html", "parentOrganization": {"@id": "https://lxamstudio.com/#studio"}, "description": "Đào tạo Blender 3D từ con số 0 đến TVC hoàn chỉnh, hai hệ: 3D Automotive và 3D × A.I.", "sameAs": ["https://www.facebook.com/lxamstudio/", "https://www.youtube.com/@LXAMStudios", "https://www.instagram.com/lxamstudio/"]}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "LXAM Studio", "url": "https://lxamstudio.com/", "inLanguage": "vi-VN", "publisher": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Hai hệ đào tạo tại LXAM Academy", "itemListElement": [{"@type": "Course", "position": 1, "name": "Hệ 3D Automotive: Blender từ số 0 đến TVC ô tô", "description": "Modeling, lighting, rendering, animation trong Blender. Đầu ra là một TVC ô tô hoàn chỉnh do học viên tự dựng.", "url": "https://lxamstudio.com/lo-trinh-3d-automotive.html", "provider": {"@type": "Organization", "name": "LXAM Academy", "url": "https://lxamstudio.com/"}, "inLanguage": "vi-VN", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P4M"}}, {"@type": "Course", "position": 2, "name": "Hệ 3D × A.I: AI cho người làm hình ảnh", "description": "3 tháng 3D nền tảng cộng 1 tháng A.I Advance: tư duy prompt, góc máy và ánh sáng với AI, workflow 3D × AI.", "url": "https://lxamstudio.com/lo-trinh-3d-ai.html", "provider": {"@type": "Organization", "name": "LXAM Academy", "url": "https://lxamstudio.com/"}, "inLanguage": "vi-VN", "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P4M"}}]}</script>
@@ -182,6 +182,10 @@
 
 
   /* ---------- SLIDER DU AN ---------- */
+  .sl-lead{font-family:'Unbounded',sans-serif;font-weight:600;text-align:center;margin:clamp(10px,2vw,26px) auto clamp(34px,5vw,64px);
+    max-width:24ch;font-size:clamp(24px,3.6vw,52px);line-height:1.18;letter-spacing:-.01em;color:#fff;text-transform:none;}
+  .sl-lead b{font-weight:600;color:var(--ac);}
+  .sl-lead span{color:rgba(255,255,255,.38);}
   .sl{position:relative;}
   .sl-track{display:flex;gap:clamp(12px,1.6vw,22px);overflow-x:auto;overscroll-behavior-x:contain;
     scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;
@@ -190,9 +194,10 @@
   .sl-track.drag{cursor:grabbing;scroll-snap-type:none;}
   .sl-track.drag .sl-card{pointer-events:none;}
   .sl-card{flex:0 0 min(34vw,430px);aspect-ratio:4/5;scroll-snap-align:center;position:relative;
-    display:block;border-radius:6px;overflow:hidden;text-decoration:none;color:#fff;
+    display:block;border-radius:18px;overflow:hidden;text-decoration:none;color:#fff;
+    border:3px solid rgba(255,255,255,var(--b,.78));
     transform:scale(var(--s,.86));opacity:var(--o,.55);transform-origin:center;
-    will-change:transform,opacity;box-shadow:0 0 0 1px rgba(255,255,255,var(--b,0));}
+    will-change:transform,opacity;box-shadow:0 18px 50px rgba(0,0,0,.6);}
   .sl-card:not(.qt){background:#0a0a0a;}
   .sl-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
     filter:grayscale(var(--g,.35));transition:filter .4s ease;}
@@ -317,7 +322,9 @@
   </div>
 </section>
 <section id="portfolio">
-  <div class="wrap"><div class="sh"><div class="sh-n"><span><b>02</b> / Dự án</span><span>LXAM Studio</span></div><h2>Dự án chọn lọc</h2><a class="sh-a" href="du-an-automotive.html">Tất cả dự án →</a></div></div>
+  <div class="wrap"><div class="sh"><div class="sh-n"><span><b>02</b> / Dự án chọn lọc</span><span>LXAM Studio</span></div></div>
+    <h2 class="sl-lead">Chúng tôi kiến tạo một thế hệ <b>tư duy nghệ thuật thực thụ</b>, <span>chứ không phải những cỗ máy biết xài công cụ.</span></h2>
+  </div>
   <div class="sl" aria-roledescription="carousel" aria-label="Dự án của LXAM Studio">
     <div class="sl-track" id="sl-track" tabindex="0"><a class="sl-card" href="du-an-chivas-18-chai-xviii.html" role="group" aria-roledescription="slide"><img src="assets/slide-chivas18-chai.webp" alt="Chivas Regal 18, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Chivas Regal 18</p><span class="sl-c">Dựng chai XVIII</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-mercedes-g63-tvc.html" role="group" aria-roledescription="slide"><img src="assets/slide-mercedes-g63.webp" alt="Mercedes-AMG G63, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Mercedes-AMG G63</p><span class="sl-c">TVC 3D · VFX</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-chivas-18.html" role="group" aria-roledescription="slide"><img src="assets/slide-chivas18-trien-lam.webp" alt="Chivas 18 × Touliver, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Chivas 18 × Touliver</p><span class="sl-c">Phối cảnh triển lãm</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-chivas-15-trung-bay.html" role="group" aria-roledescription="slide"><img src="assets/slide-chivas15.webp" alt="Chivas Regal 15, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Chivas Regal 15</p><span class="sl-c">Vật phẩm trưng bày</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-volvo-s90.html" role="group" aria-roledescription="slide"><img src="assets/slide-volvo-s90.webp" alt="Volvo S90, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Volvo S90</p><span class="sl-c">Bộ hình chiến dịch</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-porsche-911.html" role="group" aria-roledescription="slide"><img src="assets/slide-porsche-911.webp" alt="Porsche 911, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Porsche 911</p><span class="sl-c">Key visual pit lane</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-trien-lam-axe.html" role="group" aria-roledescription="slide"><img src="assets/slide-axehibition.webp" alt="AXEHIBITION, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">AXEHIBITION</p><span class="sl-c">Triển lãm hương thơm</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-mclaren-765lt.html" role="group" aria-roledescription="slide"><img src="assets/slide-mclaren.webp" alt="McLaren 765LT, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">McLaren 765LT</p><span class="sl-c">Key visual</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-aston-martin-dbx.html" role="group" aria-roledescription="slide"><img src="assets/slide-aston.webp" alt="Aston Martin DBX, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Aston Martin DBX</p><span class="sl-c">Key visual</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-vplas.html" role="group" aria-roledescription="slide"><img src="assets/slide-vplas.webp" alt="VPLAS, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">VPLAS</p><span class="sl-c">TVC thiết bị plasma</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-jhm-masonry-hanger.html" role="group" aria-roledescription="slide"><img src="assets/slide-jhm.webp" alt="JHM Masonry Hanger, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">JHM Masonry Hanger</p><span class="sl-c">TVC kỹ thuật</span><br><span class="sl-go">Xem dự án →</span></div></a><a class="sl-card" href="du-an-khoa-cua-thong-minh.html" role="group" aria-roledescription="slide"><img src="assets/slide-khoa-cua.webp" alt="Khoá cửa thông minh, dự án 3D của LXAM Studio" width="900" height="1125" loading="lazy" decoding="async" draggable="false"><div class="sl-m"><p class="sl-t">Khoá cửa thông minh</p><span class="sl-c">Render sản phẩm</span><br><span class="sl-go">Xem dự án →</span></div></a></div>
     <div class="sl-nav">
@@ -326,7 +333,7 @@
       <button class="sl-btn sl-next" type="button" aria-label="Dự án tiếp theo">›</button>
     </div>
   </div>
-  <div class="wrap"><div class="khu"><span>Xem theo khu</span><a class="lnk" href="du-an-event.html">Event &amp; kích hoạt</a> <a class="lnk" href="du-an-automotive.html">Automotive</a> <a class="lnk" href="du-an-san-pham.html">Sản phẩm &amp; kỹ thuật</a></div></div>
+  <div class="wrap"><div class="khu"><span>Xem theo khu</span><a class="lnk" href="du-an-event.html">Event &amp; kích hoạt</a> <a class="lnk" href="du-an-automotive.html">Automotive</a> <a class="lnk" href="du-an-san-pham.html">Sản phẩm &amp; kỹ thuật</a><a class="lnk" href="du-an-automotive.html">Tất cả dự án →</a></div></div>
 </section>
 <section id="showreel">
   <div class="wrap">
@@ -486,9 +493,9 @@
         if(d<bd){bd=d;best=i;}
         if(!calm){
           c.style.setProperty('--s',(1-.14*k).toFixed(4));
-          c.style.setProperty('--o',(1-.45*k).toFixed(4));
+          c.style.setProperty('--o',(1-.2*k).toFixed(4));
           c.style.setProperty('--g',(.35*k).toFixed(3));
-          c.style.setProperty('--b',(.9*(1-k)).toFixed(3));
+          c.style.setProperty('--b',(1-.22*k).toFixed(3));
           c.style.setProperty('--o2',Math.max(0,1-k*2.2).toFixed(3));
         }
       });
@@ -548,5 +555,5 @@
   });
 })();
 </script>
-<script src="assets/lx-ui.js" defer></script>
+<script src="assets/lx-ui.js?v=den2" defer></script>
 </body></html>
