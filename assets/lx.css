@@ -223,13 +223,13 @@ footer.lxfooter{
 .qt{
   position:relative;overflow:hidden;isolation:isolate;
   background:
-    radial-gradient(120% 85% at 88% -5%, rgba(214,210,206,.42), rgba(120,116,112,.12) 38%, transparent 62%),
-    radial-gradient(95% 70% at 18% 112%, rgba(255,86,18,.95), rgba(214,48,8,.45) 38%, transparent 72%),
-    #050403;
+    radial-gradient(70% 55% at 100% 0%, rgba(255,106,26,.16), transparent 70%),
+    radial-gradient(95% 70% at 18% 112%, rgba(255,86,18,.95), rgba(200,42,6,.42) 38%, transparent 72%),
+    #000;
   color:#fff;
 }
 .qt::after{
-  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.22;mix-blend-mode:overlay;
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.14;mix-blend-mode:soft-light;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 .qt-top,.qt-bot{display:flex;justify-content:space-between;align-items:center;gap:16px;
@@ -239,7 +239,7 @@ footer.lxfooter{
 .qt-q{font-family:'Unbounded',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.12;
   letter-spacing:-.01em;margin:0;color:#fff;}
 .qt-q em{font-style:normal;
-  background:linear-gradient(90deg,#ff3a10 0%,#ff5a1e 42%,#ffd6c2 100%);
+  background:linear-gradient(90deg,#ff3a10 0%,#ff6a1a 50%,#ffa55c 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
 /* ban lon, ca trang */
 .qt-band{padding:clamp(28px,4vw,48px) var(--pad);min-height:min(92svh,860px);
