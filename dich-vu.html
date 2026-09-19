@@ -248,6 +248,14 @@
   :focus-visible{outline:2px solid var(--ac);outline-offset:3px;}
 
   /* ---------- BAN TOI GIAN ---------- */
+  .abl{padding:clamp(56px,7vw,96px) 0 0;}
+  .abl-a{display:flex;align-items:center;gap:clamp(16px,3vw,40px);padding:22px 0;text-decoration:none;color:#fff;
+    border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);}
+  .abl-k{font-family:'Unbounded',sans-serif;font-weight:500;font-size:clamp(13px,1.1vw,15px);letter-spacing:3px;text-transform:uppercase;}
+  .abl-t{flex:1;font-size:14px;color:var(--muted);}
+  .abl-a i{font-style:normal;transition:transform .25s ease,color .2s;}
+  .abl-a:hover .abl-k,.abl-a:hover i{color:var(--ac);}
+  .abl-a:hover i{transform:translateX(6px);}
   .mn{padding:clamp(90px,12vw,170px) 0 0;}
   .mn-k{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:var(--muted);margin:0 0 clamp(22px,3vw,36px);}
   .mn-k b{color:var(--ac);font-weight:600;}
