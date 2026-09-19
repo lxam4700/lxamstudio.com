@@ -47,7 +47,7 @@
 <main>
   <section style="padding-bottom:0;">
     <div class="wrap">
-      <p class="eyebrow">◆ Khu học viên</p>
+      <p class="eyebrow">Khu học viên</p>
       <h1>Không gian riêng<br>của học viên LXAM</h1>
       <p class="lead" style="max-width:720px;">Nơi tập trung toàn bộ tài nguyên đi kèm khoá học: bài giảng, file dự án, thư viện asset, lịch buổi kèm và khu nộp bài để được sửa.</p>
       <div style="display:inline-flex;align-items:center;gap:10px;margin-top:6px;padding:11px 20px;border-radius:999px;border:1px dashed rgba(255,122,26,.4);background:rgba(255,122,26,.05);">
@@ -93,7 +93,7 @@
     <div class="wrap">
       <div class="grid2" style="gap:44px;align-items:start;">
         <div>
-          <p class="eyebrow">◆ Truy cập</p>
+          <p class="eyebrow">Truy cập</p>
           <h2>Bạn đang là học viên?</h2>
           <p>Điền form bên cạnh, tôi sẽ gửi lại đường dẫn nhóm kín và toàn bộ tài nguyên của gói bạn đang học, thường trong vòng 24 giờ.</p>
           <p>Chưa học nhưng muốn tìm hiểu? Xem trước <a href="index.html#khoahoc" style="color:#ff7a1a;">các gói khoá học</a> hoặc đọc <a href="blog.html" style="color:#ff7a1a;">blog</a>, phần lớn kiến thức nền tôi để công khai.</p>
@@ -104,14 +104,14 @@
         </div>
         <div class="card">
           <form id="hvform" novalidate>
-            <label style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Họ và tên</label>
-            <input name="name" required placeholder="Nguyễn Văn A" style="width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:18px;">
-            <label style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Email</label>
-            <input name="email" type="email" required placeholder="ban@email.com" style="width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:18px;">
-            <label style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Số điện thoại</label>
-            <input name="phone" required placeholder="09xx xxx xxx" style="width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:18px;">
-            <label style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Bạn đang học gói nào</label>
-            <input name="fb" placeholder="Ví dụ: Cohort 8 tuần / Coaching 1 năm" style="width:100%;padding:13px 15px;border-radius:11px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:24px;">
+            <label for="hv-name" style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Họ và tên</label>
+            <input id="hv-name" name="name" required autocomplete="name" placeholder="Nguyễn Văn A" style="width:100%;padding:13px 15px;border-radius:4px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:18px;">
+            <label for="hv-email" style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Email</label>
+            <input id="hv-email" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="ban@email.com" style="width:100%;padding:13px 15px;border-radius:4px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:18px;">
+            <label for="hv-phone" style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Số điện thoại</label>
+            <input id="hv-phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="09xx xxx xxx" style="width:100%;padding:13px 15px;border-radius:4px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:18px;">
+            <label for="hv-goi" style="display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#9a8f84;margin-bottom:8px;">Bạn đang học gói nào</label>
+            <select id="hv-goi" name="goi" style="width:100%;padding:13px 15px;border-radius:4px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#f2ebe4;font-size:15px;font-family:inherit;margin-bottom:24px;appearance:none;"><option value="" style="background:#161009;">Chọn gói</option><option style="background:#161009;">Tự học có chữa bài</option><option style="background:#161009;">Lớp 8 tuần</option><option style="background:#161009;">Kèm riêng 1:1</option><option style="background:#161009;">Chưa chắc</option></select>
             <button type="submit" class="lxcta" style="width:100%;border:0;padding:15px;font-size:15px;font-family:inherit;cursor:pointer;">Gửi yêu cầu truy cập</button>
             <p id="hvmsg" style="display:none;margin:18px 0 0;font-size:14.5px;color:#ff7a1a;text-align:center;"></p>
           </form>
@@ -135,13 +135,13 @@
     }
     var d=new URLSearchParams();
     d.append('name',g('name')); d.append('email',g('email'));
-    d.append('phone',g('phone')); d.append('fb',g('fb'));
-    d.append('pkg','Yêu cầu truy cập khu học viên');
+    d.append('phone',g('phone')); d.append('fb','');
+    d.append('pkg','Yêu cầu truy cập khu học viên · '+(g('goi')||'chưa chọn gói'));
     d.append('src',location.href);
     var sent=false;
     try{ if(navigator.sendBeacon) sent=navigator.sendBeacon(ENDPOINT,d); }catch(err){}
     if(!sent){ try{ fetch(ENDPOINT,{method:'POST',mode:'no-cors',body:d,keepalive:true}); }catch(err){} }
-    f.querySelectorAll('input').forEach(function(i){ i.value=''; });
+    f.reset();
     msg.style.display='block'; msg.style.color='#ff7a1a';
     msg.textContent='Đã nhận. Mình sẽ gửi đường dẫn qua email trong vòng 24 giờ.';
   });
