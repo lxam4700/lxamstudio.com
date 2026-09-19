@@ -7,7 +7,7 @@
   var CSS = [
     '.lxui-top{position:fixed;right:clamp(14px,2.4vw,26px);bottom:clamp(14px,2.4vw,26px);',
     'width:46px;height:46px;border-radius:50%;z-index:70;display:flex;align-items:center;justify-content:center;',
-    'border:1px solid rgba(255,255,255,.2);background:rgba(18,13,9,.82);color:#ece4db;',
+    'border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.82);color:#ece4db;',
     '-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);cursor:pointer;padding:0;',
     'opacity:0;visibility:hidden;transform:translateY(10px);',
     'transition:opacity .25s ease,transform .25s ease,visibility .25s,border-color .2s ease;}',
@@ -19,7 +19,7 @@
     '.lxui-bar,.lxui-top{font-family:\'Be Vietnam Pro\',system-ui,-apple-system,sans-serif;}',
     '.lxui-bar{position:fixed;left:0;right:0;bottom:0;z-index:69;display:none;',
     'gap:10px;align-items:center;padding:10px clamp(12px,4vw,18px) calc(10px + env(safe-area-inset-bottom));',
-    'background:#0b0805;box-shadow:0 -14px 30px rgba(0,0,0,.55);',
+    'background:#000000;box-shadow:0 -14px 30px rgba(0,0,0,.55);',
     'border-top:1px solid rgba(255,255,255,.12);',
     'transform:translateY(110%);transition:transform .28s ease;}',
     '.lxui-bar.on{transform:none;}',

@@ -1,7 +1,7 @@
 @import url("lx-fonts.css");
 
 :root{
-  --bg:#0e0a07;
+  --bg:#000000;
   --ink:#f2ebe4;
   --muted:#9a8f84;
   --dim:#94897e;
@@ -36,7 +36,7 @@ a{color:inherit;}
   display:flex;align-items:center;justify-content:space-between;
   padding:16px var(--pad);
   backdrop-filter:blur(14px);
-  background:linear-gradient(180deg,rgba(14,10,7,.90),rgba(14,10,7,.42));
+  background:linear-gradient(180deg,rgba(0,0,0,.90),rgba(0,0,0,.42));
   border-bottom:1px solid var(--line-soft);
 }
 .lxlogo{display:flex;align-items:center;gap:11px;text-decoration:none;cursor:pointer;}
@@ -132,7 +132,7 @@ p{font-size:16px;line-height:1.85;color:#c9c0b7;margin:0 0 20px;}
   transition:transform .25s ease,border-color .25s ease;
 }
 .post-card:hover{border-color:rgba(255,255,255,.22);}
-.post-card .thumb{aspect-ratio:16/10;overflow:hidden;background:#161009;}
+.post-card .thumb{aspect-ratio:16/10;overflow:hidden;background:#0d0d0d;}
 .post-card .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;}
 .post-card:hover .thumb img{transform:scale(1.05);}
 .post-card .body{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1;}
