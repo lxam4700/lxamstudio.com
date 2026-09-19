@@ -223,8 +223,9 @@ footer.lxfooter{
 .qt{
   position:relative;overflow:hidden;isolation:isolate;
   background:
+    linear-gradient(180deg, #000 0%, transparent 22%, transparent 72%, #000 100%),
     radial-gradient(70% 55% at 100% 0%, rgba(255,106,26,.16), transparent 70%),
-    radial-gradient(95% 70% at 18% 112%, rgba(255,86,18,.95), rgba(200,42,6,.42) 38%, transparent 72%),
+    radial-gradient(80% 60% at 16% 86%, rgba(255,86,18,.9), rgba(200,42,6,.4) 40%, transparent 74%),
     #000;
   color:#fff;
 }
