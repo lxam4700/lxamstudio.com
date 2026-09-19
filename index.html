@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Studio visual 3D &amp; khoá học Blender | LXAM Studio</title>
 <meta name="description" content="LXAM Studio là studio visual 3D tại Việt Nam làm TVC, key visual, render sản phẩm và phối cảnh sự kiện bằng Blender, đồng thời đào tạo Blender 3D từ con số 0.">
-<meta name="theme-color" content="#0e0a07">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -35,10 +35,10 @@
 
   /* ---------- HERO ---------- */
   .hero{position:relative;min-height:min(100svh,980px);display:flex;flex-direction:column;justify-content:flex-end;
-        overflow:hidden;background:#0a0705;}
+        overflow:hidden;background:#050505;}
   .hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
   .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
-    background:linear-gradient(180deg,rgba(14,10,7,.55) 0%,rgba(14,10,7,.15) 30%,rgba(14,10,7,.72) 68%,var(--bg) 100%);}
+    background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.15) 30%,rgba(0,0,0,.72) 68%,var(--bg) 100%);}
   .hero-in{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;padding:140px var(--pad) 0;}
   .hero-k{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:#fff;margin:0 0 22px;text-shadow:0 1px 12px rgba(0,0,0,.6);}
   .hero h1{font-size:clamp(27px,6vw,84px);line-height:1.14;letter-spacing:-.01em;max-width:none;margin:0 0 24px;}
@@ -90,7 +90,7 @@
   /* ---------- DU AN ---------- */
   .work{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(14px,1.8vw,24px);}
   .wk{display:block;text-decoration:none;color:inherit;}
-  .wk figure{margin:0;overflow:hidden;border-radius:4px;background:#161009;}
+  .wk figure{margin:0;overflow:hidden;border-radius:4px;background:#0d0d0d;}
   .wk img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1);}
   .wk:hover img{transform:scale(1.035);}
   .wk-m{display:flex;justify-content:space-between;gap:14px;padding-top:12px;font-size:13.5px;}
@@ -103,7 +103,7 @@
        padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);}
 
   /* ---------- SHOWREEL ---------- */
-  .vid{position:relative;display:block;width:100%;padding:0;border:0;cursor:pointer;background:#0a0705;
+  .vid{position:relative;display:block;width:100%;padding:0;border:0;cursor:pointer;background:#050505;
        border-radius:4px;overflow:hidden;aspect-ratio:16/9;}
   .vid img,.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
   .vid .pl{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;
@@ -136,7 +136,7 @@
   /* ---------- HOC VIEN ---------- */
   .cs{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.6vw,40px);}
   .co{display:block;text-decoration:none;color:inherit;}
-  .co figure{margin:0 0 20px;aspect-ratio:4/3;overflow:hidden;border-radius:4px;background:#161009;}
+  .co figure{margin:0 0 20px;aspect-ratio:4/3;overflow:hidden;border-radius:4px;background:#0d0d0d;}
   .co img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1);}
   .co:hover img{transform:scale(1.035);}
   .co-k{display:flex;justify-content:space-between;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;
@@ -193,7 +193,7 @@
     display:block;border-radius:6px;overflow:hidden;text-decoration:none;color:#fff;
     transform:scale(var(--s,.86));opacity:var(--o,.55);transform-origin:center;
     will-change:transform,opacity;box-shadow:0 0 0 1px rgba(255,255,255,var(--b,0));}
-  .sl-card:not(.qt){background:#120d09;}
+  .sl-card:not(.qt){background:#0a0a0a;}
   .sl-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
     filter:grayscale(var(--g,.35));transition:filter .4s ease;}
   .sl-card:not(.qt)::after{content:"";position:absolute;inset:0;pointer-events:none;
