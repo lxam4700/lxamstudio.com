@@ -30,7 +30,7 @@
     'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}',
     '.lxui-cta{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;',
     'padding:12px 20px;border-radius:999px;font-size:13.5px;font-weight:600;text-decoration:none;',
-    'color:#fff;background:linear-gradient(120deg,#ff8a1e,#e62b0d);white-space:nowrap;}',
+    'color:#140c06;background:#ff7a1a;white-space:nowrap;}',
     '.lxui-cta:focus-visible{outline:2px solid #fff;outline-offset:2px;}',
 
     '@media (max-width:820px){',
