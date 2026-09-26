@@ -4,7 +4,7 @@
 Chạy:  python3 /home/claude/build/build.py
 Thêm bài blog mới: thêm 1 dict vào POSTS rồi chạy lại."""
 
-import os, html, datetime
+import os, html, datetime, re, unicodedata
 
 SITE = "/home/claude/site"
 YEAR = datetime.date.today().year
@@ -1104,6 +1104,53 @@ POSTS = [
 ]
 
 
+
+# ---------------------------------------------------------------- SEO: muc luc + bai lien quan
+def _slugify(t):
+    t = re.sub(r"<[^>]+>", "", t)
+    t = unicodedata.normalize("NFD", t)
+    t = "".join(c for c in t if unicodedata.category(c) != "Mn")
+    t = t.replace("đ", "d").replace("Đ", "D").lower()
+    t = re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+    return t[:60] or "muc"
+
+
+def with_toc(body):
+    """Them id cho moi h2 va tra ve (body moi, khoi muc luc)."""
+    items, used = [], set()
+    def rep(m):
+        inner = m.group(1)
+        sl = _slugify(inner)
+        n, base = 2, sl
+        while sl in used:
+            sl = "%s-%d" % (base, n); n += 1
+        used.add(sl)
+        items.append((sl, re.sub(r"<[^>]+>", "", inner)))
+        return '<h2 id="%s">%s</h2>' % (sl, inner)
+    body = re.sub(r"<h2>(.*?)</h2>", rep, body, flags=re.S)
+    if len(items) < 3:
+        return body, ""
+    li = "".join('<li><a href="#%s">%s</a></li>' % (sl, html.escape(t)) for sl, t in items)
+    toc = ('<nav class="toc" aria-label="Mục lục bài viết">'
+           '<p class="toc-h">Trong bài này</p><ol>%s</ol></nav>' % li)
+    return body, toc
+
+
+def related_html(p):
+    same = [x for x in POSTS if x is not p and x["tag"] == p["tag"]]
+    other = [x for x in POSTS if x is not p and x["tag"] != p["tag"]]
+    picks = (same + other)[:3]
+    if not picks:
+        return ""
+    cards = "".join(
+        '<a class="rel-c" href="blog-%s.html"><img src="%s" alt="%s" loading="lazy" width="640" height="360">'
+        '<span class="rel-t">%s</span><span class="rel-k">%s</span></a>'
+        % (x["slug"], x["thumb"], html.escape(x["title"]), html.escape(x["title"]), x["read"])
+        for x in picks)
+    return ('<section class="rel" aria-label="Bài viết liên quan">'
+            '<p class="rel-h">Đọc tiếp</p><div class="rel-g">%s</div></section>' % cards)
+
+
 POST_TPL = """
 <main>
   <article class="prose">
@@ -1113,8 +1160,10 @@ POST_TPL = """
       <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">{title}</h1>
       <p class="post-meta" style="margin-bottom:34px;">{date_vn} · {read}</p>
       <img src="{thumb}" alt="{title_plain}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;">
+      {toc}
       {body}
       {sources}
+      {related}
       <hr class="hr">
       <div class="card" style="text-align:center;border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
         <h3 style="margin-bottom:12px;">Muốn được sửa bài trực tiếp?</h3>
@@ -1357,11 +1406,13 @@ def main():
           + blog_index() + FOOTER)
 
     for p in POSTS:
+        body_html_, toc_ = with_toc(p["body"])
         body = POST_TPL.format(
             tag=p["tag"], title=html.escape(p["title"]),
             title_plain=html.escape(p["title"]),
             date_vn=p["date_vn"], read=p["read"],
-            thumb=p["thumb"], body=p["body"],
+            thumb=p["thumb"], body=body_html_, toc=toc_,
+            related=related_html(p),
             sources=sources_html(p.get("sources")),
         )
         write("blog-%s.html" % p["slug"],
