@@ -1,0 +1,154 @@
+[
+ {
+  "@context": "https://schema.org",
+  "@graph": [
+   {
+    "@type": [
+     "ProfessionalService",
+     "Organization"
+    ],
+    "@id": "https://lxamstudio.com/#studio",
+    "name": "LXAM Studio",
+    "alternateName": "LXAM 3D Art Studio",
+    "url": "https://lxamstudio.com/",
+    "logo": "https://lxamstudio.com/icon-512.png",
+    "description": "Studio visual 3D tại Việt Nam, sản xuất TVC 3D, render sản phẩm thương mại và animation kỹ thuật bằng Blender.",
+    "areaServed": {
+     "@type": "Country",
+     "name": "Việt Nam"
+    },
+    "knowsLanguage": [
+     "vi",
+     "en"
+    ],
+    "founder": {
+     "@type": "Person",
+     "name": "Lê Xuân Anh Minh",
+     "jobTitle": "Multimedia Director",
+     "sameAs": "https://www.facebook.com/anhminh.lexuan/"
+    },
+    "sameAs": [
+     "https://www.facebook.com/lxamstudio/",
+     "https://www.youtube.com/@LXAMStudios",
+     "https://www.instagram.com/lxamstudio/"
+    ],
+    "contactPoint": {
+     "@type": "ContactPoint",
+     "telephone": "+84942890363",
+     "contactType": "customer service",
+     "availableLanguage": [
+      "Vietnamese",
+      "English"
+     ]
+    },
+    "hasOfferCatalog": {
+     "@type": "OfferCatalog",
+     "name": "Dịch vụ 3D",
+     "itemListElement": [
+      {
+       "@type": "Offer",
+       "itemOffered": {
+        "@type": "Service",
+        "name": "TVC & animation 3D",
+        "description": "Dựng cảnh, rigging, hiệu ứng và dựng phim ra một TVC 3D hoàn chỉnh."
+       }
+      },
+      {
+       "@type": "Offer",
+       "itemOffered": {
+        "@type": "Service",
+        "name": "Render sản phẩm thương mại",
+        "description": "Dựng hình hard-surface và render hình ảnh sản phẩm cho quảng cáo, catalogue, website."
+       }
+      },
+      {
+       "@type": "Offer",
+       "itemOffered": {
+        "@type": "Service",
+        "name": "Visual kỹ thuật & ô tô",
+        "description": "Phối cảnh lắp ráp, cắt lớp cấu tạo, mô phỏng vận hành cho thiết bị và xe."
+       }
+      }
+     ]
+    },
+    "address": {
+     "@type": "PostalAddress",
+     "addressCountry": "VN"
+    },
+    "telephone": "+84942890363",
+    "email": "anhminhlexuan@gmail.com",
+    "image": "https://lxamstudio.com/assets/hero-p.webp"
+   },
+   {
+    "@type": "EducationalOrganization",
+    "@id": "https://lxamstudio.com/#academy",
+    "name": "LXAM Academy",
+    "url": "https://lxamstudio.com/lo-trinh.html",
+    "parentOrganization": {
+     "@id": "https://lxamstudio.com/#studio"
+    },
+    "description": "Đào tạo Blender 3D từ con số 0 đến TVC hoàn chỉnh, hai hệ: 3D Automotive và 3D × A.I.",
+    "sameAs": [
+     "https://www.facebook.com/lxamstudio/",
+     "https://www.youtube.com/@LXAMStudios",
+     "https://www.instagram.com/lxamstudio/"
+    ]
+   }
+  ]
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "LXAM Studio",
+  "url": "https://lxamstudio.com/",
+  "inLanguage": "vi-VN",
+  "publisher": {
+   "@type": "Organization",
+   "name": "LXAM Studio",
+   "url": "https://lxamstudio.com/"
+  }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Hai hệ đào tạo tại LXAM Academy",
+  "itemListElement": [
+   {
+    "@type": "Course",
+    "position": 1,
+    "name": "Hệ 3D Automotive: Blender từ số 0 đến TVC ô tô",
+    "description": "Modeling, lighting, rendering, animation trong Blender. Đầu ra là một TVC ô tô hoàn chỉnh do học viên tự dựng.",
+    "url": "https://lxamstudio.com/lo-trinh-3d-automotive.html",
+    "provider": {
+     "@type": "Organization",
+     "name": "LXAM Academy",
+     "url": "https://lxamstudio.com/"
+    },
+    "inLanguage": "vi-VN",
+    "hasCourseInstance": {
+     "@type": "CourseInstance",
+     "courseMode": "online",
+     "courseWorkload": "P4M"
+    }
+   },
+   {
+    "@type": "Course",
+    "position": 2,
+    "name": "Hệ 3D × A.I: AI cho người làm hình ảnh",
+    "description": "3 tháng 3D nền tảng cộng 1 tháng A.I Advance: tư duy prompt, góc máy và ánh sáng với AI, workflow 3D × AI.",
+    "url": "https://lxamstudio.com/lo-trinh-3d-ai.html",
+    "provider": {
+     "@type": "Organization",
+     "name": "LXAM Academy",
+     "url": "https://lxamstudio.com/"
+    },
+    "inLanguage": "vi-VN",
+    "hasCourseInstance": {
+     "@type": "CourseInstance",
+     "courseMode": "online",
+     "courseWorkload": "P4M"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,1065 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Trang chủ lxamstudio.com, bản tối giản.
+
+Thay cho bundle x-dc cũ. Dùng chung assets/lx.css với các trang còn lại.
+Thứ tự: Hero (hai cửa) · Về chúng tôi · Dự án · Showreel · Dịch vụ · Học viện · Liên hệ.
+"""
+import io, os, json, datetime, html as H
+
+SITE = "/home/claude/site"
+YEAR = datetime.date.today().year
+URL = "https://lxamstudio.com/"
+esc = lambda t: H.escape(t, quote=True)
+
+NAV_ITEMS = [
+    ("ve-chung-toi.html", "Về chúng tôi"),
+    ("#portfolio", "Portfolio"),
+    ("blog.html", "Blog"),
+    ("hoc-vien.html", "Khu học viên"),
+    ("#lienhe", "Liên hệ"),
+    ("khoa-hoc.html", "Khóa học"),
+    ("nghe-nghiep.html", "Cơ hội nghề nghiệp"),
+]
+DRAWER = NAV_ITEMS[:2] + [("cam-nang.html", "Cẩm nang")] + NAV_ITEMS[2:] + [("lo-trinh.html", "Lộ trình &amp; học phí")]
+
+TITLE = "Studio visual 3D & khoá học Blender | LXAM Studio"
+DESC = ("LXAM Studio là studio visual 3D tại Việt Nam làm TVC, key visual, render sản phẩm và phối cảnh sự kiện "
+        "bằng Blender, đồng thời đào tạo Blender 3D từ con số 0.")
+
+# ------------------------------------------------------------------ DỮ LIỆU
+WORK = [  # (lop, tieu de, the loai, anh, link)
+    ("w-a", "Mercedes-AMG G63", "TVC 3D · VFX", "card-mercedes-g63.webp", "du-an-mercedes-g63-tvc.html"),
+    ("w-b", "Chivas Regal 18 × Touliver", "Phối cảnh triển lãm", "card-chivas18.webp", "du-an-chivas-18.html"),
+    ("w-b", "Volvo S90", "Bộ hình chiến dịch", "card-volvo-s90.webp", "du-an-volvo-s90.html"),
+    ("w-c", "VPLAS", "TVC thiết bị plasma", "card-vplas.webp", "du-an-vplas.html"),
+    ("w-c", "AXEHIBITION", "Triển lãm hương thơm", "card-axehibition.webp", "du-an-trien-lam-axe.html"),
+    ("w-c", "Aston Martin DBX", "Key visual", "card-aston-martin-dbx.webp", "du-an-aston-martin-dbx.html"),
+]
+KHU = [("du-an-event.html", "Event &amp; kích hoạt"),
+       ("du-an-automotive.html", "Automotive"),
+       ("du-an-san-pham.html", "Sản phẩm &amp; kỹ thuật")]
+
+TVC = [  # (video, poster, tieu de, ghi nhan)
+    ("tvc2.mp4", "tvc2-poster.webp", "TVC VPLAS", "LXAM Studio · Phim thương mại"),
+    ("tvc3b.mp4", "tvc3b-poster.webp", "TVC JHM Masonry Hanger", "LXAM Studio · Bài dự tuyển"),
+    ("tvc1.mp4", "tvc1-poster.webp", "TVC Porsche GT3", "Học viên Hyran · Bài tốt nghiệp Masterclass"),
+]
+
+SERVICES = [
+    ("TVC &amp; animation 3D",
+     "Kịch bản hình, dựng cảnh, VFX và dựng phim. Làm được cả khi sản phẩm chưa có để quay."),
+    ("Key visual &amp; render sản phẩm",
+     "Hình cho catalogue, website, mạng xã hội và biển quảng cáo, xuất riêng cho từng tỉ lệ khung."),
+    ("Phối cảnh sự kiện",
+     "Dựng trước sân khấu, gian hàng và triển lãm để duyệt bố cục, luồng khách trước khi thi công."),
+    ("Visual kỹ thuật",
+     "Tách rời linh kiện, cắt lớp cấu tạo, mô phỏng vận hành, dựng từ file CAD của bạn."),
+]
+PROCESS = [
+    ("Brief", "Đọc yêu cầu, hỏi lại chỗ còn thiếu: đăng ở đâu, khung nào, có chữ đè không."),
+    ("Khối thô", "Dựng khối xám, chốt bố cục và góc máy trước khi làm chi tiết."),
+    ("Render", "Ánh sáng, vật liệu, render tách lớp để sửa nhanh khi cần."),
+    ("Bàn giao", "Hậu kỳ nhẹ tay, xuất đủ các tỉ lệ khung bạn dùng."),
+]
+
+PRINCIPLES = [
+    ("I", "Không hạ chuẩn",
+     "Khung hình chưa đạt thì chưa giao. Thị trường trả thấp không phải cái cớ để làm cho xong."),
+    ("II", "Hình trước, phần mềm sau",
+     "Blender chỉ là cái đục. Ánh sáng, bố cục, nhịp và sự tiết chế mới quyết định một shot."),
+    ("III", "Dạy đúng nghề đang làm",
+     "Mọi bài giảng rút ra từ một job đã giao, kèm cả phương án bị khách gạt và lý do."),
+    ("IV", "Đi đường dài",
+     "Không có khoá thần tốc. Chỉ có người ở lại bên cạnh bạn tới lúc bạn tự đứng được."),
+]
+
+COURSES = [
+    {"no": "Hệ 01", "name": "3D Automotive", "len": "3 đến 4 tháng",
+     "img": "lo-trinh-automotive-masterclass-900.webp",
+     "alt": "Hệ 3D Automotive: lộ trình Blender tới TVC ô tô tại LXAM Academy",
+     "line": "Từ thao tác đầu tiên trong Blender tới một TVC ô tô do chính bạn dựng.",
+     "pts": ["Modeling, lighting, rendering, animation",
+             "Hard-surface nâng cao, dựng xe Lamborghini Veneno",
+             "Hợp người muốn nhận job dựng và render"],
+     "href": "lo-trinh-3d-automotive.html"},
+    {"no": "Hệ 02", "name": "3D × A.I", "len": "4 tháng",
+     "img": "lo-trinh-ai-advance-900.webp",
+     "alt": "Hệ 3D × A.I: khoá AI cho người làm hình ảnh tại LXAM Academy",
+     "line": "Ba tháng 3D nền tảng, một tháng ghép AI vào quy trình làm hình.",
+     "pts": ["Tư duy prompt, góc máy và ánh sáng với AI",
+             "Nano Banana Pro, Seedance, Kling",
+             "Hợp người làm marketing, thương mại điện tử, content"],
+     "href": "lo-trinh-3d-ai.html"},
+]
+
+FAQ = [
+    ("Chưa biết gì về 3D, học được không?",
+     "Được. Hệ 3D Automotive bắt đầu từ con số 0, đi từ công cụ dựng hình cơ bản tới bản render sản phẩm "
+     "đầu tiên. Mỗi tuần có người chữa bài, nên bạn không phải tự đoán mình đang sai ở đâu.", None),
+    ("Hình thức học thế nào?",
+     "Chọn hệ trước, rồi chọn một trong ba cách học: tự học với bài giảng quay sẵn và được chữa bài hằng tuần; "
+     "lớp 8 tuần tối đa 10 người, có lịch và deadline; hoặc kèm riêng 1:1, lịch linh hoạt, đồng hành một năm. "
+     "Chi tiết từng cách nằm trong trang của mỗi hệ.", None),
+    ("Học xong có làm được việc không?",
+     "Đầu ra của mỗi hệ là sản phẩm portfolio do bạn tự làm, theo đúng quy trình studio dùng để giao hàng cho "
+     "khách. Nhận được việc hay không phụ thuộc vào chính portfolio đó, nên phần lớn thời gian sửa bài dồn vào "
+     "nó. Các hướng nghề cụ thể có ở trang Cơ hội nghề nghiệp.", None),
+    ("Cần máy cấu hình thế nào?",
+     "Máy chạy Blender mượt ở mức cơ bản là đủ để bắt đầu. Khi lên phần render nặng, đây là cấu hình studio "
+     "khuyên dùng:",
+     [("CPU", "Intel i7-14700K hoặc i9-14900K"), ("GPU", "RTX 3090 24GB"), ("RAM", "64GB DDR5"),
+      ("SSD", "NVMe Gen4 2TB"), ("Nguồn", "1000W Gold"), ("Tản nhiệt", "AIO 360mm")]),
+]
+
+
+MARK = ('<svg class="qt-mark" viewBox="0 0 100 62" aria-hidden="true">'
+        '<polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg>')
+
+QUOTES = {
+    "a": ("Hình đẹp thì nhiều. Hình <em>được nhớ</em> thì hiếm.", "Hình đẹp thì nhiều. Hình được nhớ thì hiếm."),
+    "b": ("Đừng làm cho xong. Làm cho người ta phải <em>nhìn lại</em>.", "Đừng làm cho xong. Làm cho người ta phải nhìn lại."),
+    "c": ("Tiêu chuẩn là thứ bạn giữ khi <em>không ai nhìn</em>.", "Tiêu chuẩn là thứ bạn giữ khi không ai nhìn."),
+}
+TN_QUOTES = [
+    "Hình đẹp thì nhiều. Hình <em>được nhớ</em> thì hiếm.",
+    "Đừng làm cho xong. Làm cho người ta phải <em>nhìn lại</em>.",
+    "Tiêu chuẩn là thứ bạn giữ khi <em>không ai nhìn</em>.",
+    "Chi tiết nhỏ là nơi người ta <em>tin</em> hay không tin.",
+]
+BIG_QUOTE = ("Khi ai đó bảo bạn không làm được, họ đang nói về <em>giới hạn</em> của họ, không phải của bạn.")
+
+SLIDES = [  # ("p", tieu de, the loai, anh, link) hoac ("q", ma quote)
+    ("p", "Chivas Regal 18", "Dựng chai XVIII", "slide-chivas18-chai.webp", "du-an-chivas-18-chai-xviii.html"),
+    ("p", "Mercedes-AMG G63", "TVC 3D · VFX", "slide-mercedes-g63.webp", "du-an-mercedes-g63-tvc.html"),
+    ("p", "Chivas 18 × Touliver", "Phối cảnh triển lãm", "slide-chivas18-trien-lam.webp", "du-an-chivas-18.html"),
+    ("p", "Chivas Regal 15", "Vật phẩm trưng bày", "slide-chivas15.webp", "du-an-chivas-15-trung-bay.html"),
+    ("p", "Volvo S90", "Bộ hình chiến dịch", "slide-volvo-s90.webp", "du-an-volvo-s90.html"),
+    ("p", "Porsche 911", "Key visual pit lane", "slide-porsche-911.webp", "du-an-porsche-911.html"),
+    ("p", "AXEHIBITION", "Triển lãm hương thơm", "slide-axehibition.webp", "du-an-trien-lam-axe.html"),
+    ("p", "McLaren 765LT", "Key visual", "slide-mclaren.webp", "du-an-mclaren-765lt.html"),
+    ("p", "Aston Martin DBX", "Key visual", "slide-aston.webp", "du-an-aston-martin-dbx.html"),
+    ("p", "VPLAS", "TVC thiết bị plasma", "slide-vplas.webp", "du-an-vplas.html"),
+    ("p", "JHM Masonry Hanger", "TVC kỹ thuật", "slide-jhm.webp", "du-an-jhm-masonry-hanger.html"),
+    ("p", "Khoá cửa thông minh", "Render sản phẩm", "slide-khoa-cua.webp", "du-an-khoa-cua-thong-minh.html"),
+]
+
+# ------------------------------------------------------------------ CSS
+CSS = """
+<style>
+  body{background:var(--bg);}
+  main{padding-top:0;}
+  section{padding:clamp(64px,9vw,128px) 0 0;}
+  .skip{position:absolute;left:-9999px;top:10px;z-index:300;background:#fff;color:#000;padding:10px 16px;border-radius:4px;}
+  .skip:focus{left:10px;}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:min(100svh,980px);display:flex;flex-direction:column;justify-content:flex-end;
+        overflow:hidden;background:#050505;}
+  .hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.15) 30%,rgba(0,0,0,.72) 68%,var(--bg) 100%);}
+  .hero-in{position:relative;z-index:2;width:100%;max-width:var(--wrap);margin:0 auto;padding:140px var(--pad) 0;}
+  .hero-k{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:#fff;margin:0 0 22px;text-shadow:0 1px 12px rgba(0,0,0,.6);}
+  .hero h1{font-size:clamp(27px,6vw,84px);line-height:1.14;letter-spacing:-.01em;max-width:none;margin:0 0 24px;}
+  .hero-h{margin:0;max-width:none;}
+  .hero-w{display:block;width:100%;height:auto;filter:drop-shadow(0 10px 40px rgba(0,0,0,.35));}
+  .hero-s{display:flex;justify-content:space-between;gap:20px;margin-top:clamp(16px,2.2vw,28px);
+    font-family:'Be Vietnam Pro',sans-serif;font-weight:500;font-size:clamp(12px,1.05vw,14px);letter-spacing:2.4px;
+    text-transform:uppercase;color:#fff;}
+  .hero-s b{font-weight:500;color:var(--ac);}
+  .hero-l{font-size:clamp(16px,1.6vw,19px);line-height:1.7;color:#e2dad2;max-width:560px;margin:0 0 8px;}
+  .hero-en{font-size:13px;letter-spacing:.3px;color:#8b8178;margin:0;}
+
+  .doors{display:grid;grid-template-columns:1fr 1fr;margin-top:clamp(40px,6vw,76px);
+         border-top:1px solid rgba(255,255,255,.2);}
+  .door{display:block;padding:26px 0 34px;text-decoration:none;color:inherit;}
+  .door + .door{border-left:1px solid rgba(255,255,255,.2);padding-left:clamp(20px,3.2vw,44px);}
+  .door-k{font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--muted);}
+  .door-t{display:flex;align-items:center;justify-content:space-between;gap:16px;
+          font-family:'Unbounded',sans-serif;font-weight:600;text-transform:uppercase;
+          font-size:clamp(17px,2vw,26px);color:#fff;margin:12px 0 10px;padding-right:clamp(0px,3vw,44px);}
+  .door-t i{font-style:normal;font-family:'Be Vietnam Pro',sans-serif;font-weight:400;transition:transform .25s ease;}
+  .door:hover .door-t i{transform:translateX(8px);}
+  .door:hover .door-t{color:var(--ac);}
+  .door-d{font-size:14.5px;line-height:1.65;color:#b9b0a7;margin:0;max-width:42ch;}
+
+  /* ---------- KHUNG TIEU DE KHU ---------- */
+  .sh{display:grid;grid-template-columns:1fr auto;align-items:end;gap:20px 40px;
+      border-top:1px solid var(--line);padding-top:18px;margin-bottom:clamp(30px,4.5vw,56px);}
+  .sh-n{grid-column:1/-1;display:flex;justify-content:space-between;font-size:11px;letter-spacing:2.6px;
+        text-transform:uppercase;color:var(--muted);margin-bottom:clamp(18px,3vw,34px);}
+  .sh-n b{color:var(--ac);font-weight:600;}
+  .sh h2{margin:0;font-size:clamp(26px,4.2vw,56px);line-height:1.14;}
+  .sh-a{font-size:14px;color:#cfc6bd;text-decoration:none;white-space:nowrap;padding-bottom:6px;
+        border-bottom:1px solid rgba(255,255,255,.25);}
+  .sh-a:hover{color:#fff;border-color:var(--ac);}
+
+  .lnk{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:3px;}
+  .lnk:hover{border-color:var(--ac);color:var(--ac);}
+
+  /* ---------- VE CHUNG TOI ---------- */
+  .ab{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,80px);align-items:start;}
+  .ab-lead{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(17px,1.9vw,22px);
+           line-height:1.6;color:#ece4db;margin:0 0 24px;}
+  .pr{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line);}
+  .pr:last-child{border-bottom:1px solid var(--line);}
+  .pr-n{font-family:'Unbounded',sans-serif;font-size:12px;letter-spacing:2px;color:var(--ac);padding-top:3px;}
+  .pr h3{font-size:14.5px;margin:0 0 6px;}
+  .pr p{font-size:14px;line-height:1.7;color:#9a9088;margin:0;}
+  .fd{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-top:34px;}
+  .fd img{width:84px;height:104px;object-fit:cover;object-position:center 30%;border-radius:4px;filter:grayscale(1);}
+  .fd-n{font-family:'Unbounded',sans-serif;font-size:14px;font-weight:600;color:#fff;margin:0 0 4px;}
+  .fd-r{font-size:13px;color:var(--muted);margin:0 0 10px;}
+
+  /* ---------- DU AN ---------- */
+  .work{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(14px,1.8vw,24px);}
+  .wk{display:block;text-decoration:none;color:inherit;}
+  .wk figure{margin:0;overflow:hidden;border-radius:4px;background:#0d0d0d;}
+  .wk img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1);}
+  .wk:hover img{transform:scale(1.035);}
+  .wk-m{display:flex;justify-content:space-between;gap:14px;padding-top:12px;font-size:13.5px;}
+  .wk-t{color:#fff;font-weight:600;}
+  .wk-c{color:var(--muted);text-align:right;}
+  .w-a{grid-column:span 6;} .w-a figure{aspect-ratio:21/9;}
+  .w-b{grid-column:span 3;} .w-b figure{aspect-ratio:16/10;}
+  .w-c{grid-column:span 2;} .w-c figure{aspect-ratio:4/3;}
+  .khu{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:clamp(28px,4vw,44px);
+       padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);}
+
+  /* ---------- SHOWREEL ---------- */
+  .vid{position:relative;display:block;width:100%;padding:0;border:0;cursor:pointer;background:#050505;
+       border-radius:4px;overflow:hidden;aspect-ratio:16/9;}
+  .vid img,.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .vid .pl{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;
+           border:1px solid rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;
+           background:rgba(10,7,5,.35);transition:transform .25s ease,border-color .25s ease;}
+  .vid .pl::after{content:"";margin-left:5px;border-style:solid;border-width:10px 0 10px 16px;
+                  border-color:transparent transparent transparent #fff;}
+  .vid:hover .pl{transform:scale(1.06);border-color:var(--ac);}
+  .vid-l{display:flex;justify-content:space-between;gap:14px;padding-top:12px;font-size:13.5px;}
+  .tvc{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,24px);margin-top:clamp(20px,3vw,34px);}
+  .tvc .pl{width:52px;height:52px;margin:-26px 0 0 -26px;}
+  .tvc .pl::after{border-width:7px 0 7px 12px;margin-left:4px;}
+
+  /* ---------- DICH VU ---------- */
+  .sv{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,34px);}
+  .sv > div{border-top:1px solid var(--line);padding-top:18px;}
+  .sv-n{font-size:11px;letter-spacing:2px;color:var(--ac);margin:0 0 14px;}
+  .sv h3{font-size:15.5px;line-height:1.45;margin:0 0 10px;}
+  .sv p{font-size:14px;line-height:1.7;color:#9a9088;margin:0;}
+  .ps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(40px,5vw,64px);
+      border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .ps > div{padding:20px 20px 22px 0;}
+  .ps > div + div{padding-left:20px;border-left:1px solid var(--line);}
+  .ps b{display:block;font-family:'Unbounded',sans-serif;font-size:12px;letter-spacing:1.6px;
+        text-transform:uppercase;color:#fff;font-weight:600;margin-bottom:8px;}
+  .ps span{font-size:13.5px;line-height:1.65;color:#9a9088;}
+  .brief{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:14px 30px;
+         margin-top:clamp(26px,3.4vw,40px);font-size:15px;color:#c9c0b7;}
+
+  /* ---------- HOC VIEN ---------- */
+  .cs{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.6vw,40px);}
+  .co{display:block;text-decoration:none;color:inherit;}
+  .co figure{margin:0 0 20px;aspect-ratio:4/3;overflow:hidden;border-radius:4px;background:#0d0d0d;}
+  .co img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1);}
+  .co:hover img{transform:scale(1.035);}
+  .co-k{display:flex;justify-content:space-between;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;
+        color:var(--muted);margin-bottom:10px;}
+  .co h3{font-size:clamp(20px,2.4vw,30px);text-transform:uppercase;margin:0 0 10px;}
+  .co > p{font-size:15px;color:#c9c0b7;margin:0 0 16px;}
+  .co ul{list-style:none;padding:0;margin:0 0 20px;border-top:1px solid var(--line);}
+  .co li{font-size:14px;line-height:1.6;color:#b9b0a7;padding:11px 0;border-bottom:1px solid var(--line);}
+  .co-go{font-size:14px;color:#fff;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:3px;}
+  .co:hover .co-go{border-color:var(--ac);color:var(--ac);}
+
+  .faq{margin-top:clamp(48px,6vw,80px);display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,60px);}
+  .faq h3{font-size:clamp(17px,1.8vw,22px);text-transform:uppercase;}
+  .faq details{border-top:1px solid var(--line);}
+  .faq details:last-child{border-bottom:1px solid var(--line);}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;
+               padding:18px 0;font-size:15.5px;font-weight:600;color:#fff;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";color:var(--ac);font-weight:400;font-size:20px;line-height:1;}
+  .faq details[open] summary::after{content:"−";}
+  .faq details p{font-size:14.5px;color:#b9b0a7;margin:0 0 18px;max-width:62ch;}
+  .spec{display:grid;grid-template-columns:max-content 1fr;gap:6px 22px;margin:0 0 20px;font-size:14px;}
+  .spec dt{color:var(--muted);} .spec dd{margin:0;color:#e2dad2;}
+
+  .lm{display:grid;grid-template-columns:1fr auto;gap:20px 40px;align-items:center;
+      margin-top:clamp(40px,5vw,64px);padding:clamp(24px,3vw,36px) 0;
+      border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .lm h3{font-size:clamp(16px,1.7vw,20px);text-transform:uppercase;margin:0 0 6px;}
+  .lm p{font-size:14px;color:#9a9088;margin:0;}
+
+  /* ---------- LIEN HE ---------- */
+  .ct{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);}
+  .ct > div{padding:26px 0 30px;}
+  .ct > div + div{border-left:1px solid var(--line);padding-left:clamp(20px,3.2vw,44px);}
+  .ct-k{font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--muted);margin:0 0 12px;}
+  .ct h3{font-size:clamp(17px,2vw,24px);text-transform:uppercase;margin:0 0 12px;}
+  .ct p{font-size:14.5px;color:#b9b0a7;margin:0 0 18px;max-width:40ch;}
+  .ct-l{display:flex;flex-direction:column;align-items:flex-start;gap:10px;font-size:15px;}
+  .soc{display:flex;flex-wrap:wrap;gap:10px 28px;padding:20px 0;border-top:1px solid var(--line);
+       border-bottom:1px solid var(--line);font-size:14px;}
+  .soc a{color:#cfc6bd;text-decoration:none;} .soc a:hover{color:#fff;}
+  .last{padding-bottom:clamp(64px,9vw,120px);}
+
+
+  /* ---------- SLIDER DU AN ---------- */
+  .sl-lead{font-family:'Unbounded',sans-serif;font-weight:600;text-align:center;margin:clamp(10px,2vw,26px) auto clamp(34px,5vw,64px);
+    max-width:24ch;font-size:clamp(24px,3.6vw,52px);line-height:1.18;letter-spacing:-.01em;color:#fff;text-transform:none;}
+  .sl-lead b{font-weight:600;color:var(--ac);display:block;margin-top:.12em;}
+  .slq{position:relative;max-width:1060px;margin:clamp(20px,3vw,40px) auto clamp(44px,6vw,80px);
+    padding:clamp(52px,6vw,96px) clamp(26px,7vw,120px) clamp(40px,5vw,70px);text-align:center;}
+  .slq .sl-lead{margin:0 auto;}
+  .slq-m{position:absolute;width:clamp(46px,6.4vw,104px);height:auto;fill:var(--ac);}
+  .slq-o{top:0;left:0;}
+  .slq-c{right:0;bottom:clamp(30px,3.6vw,52px);transform:rotate(180deg);fill:#fff;opacity:.9;}
+  .slq-by{margin-top:clamp(26px,3vw,40px);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
+  .slq-by::before{content:"";display:inline-block;width:34px;height:1px;background:var(--ac);vertical-align:middle;margin-right:14px;}
+  .sl-lead span{color:rgba(255,255,255,.38);}
+  .sl{position:relative;}
+  .sl-track{display:flex;gap:clamp(12px,1.6vw,22px);overflow-x:auto;overscroll-behavior-x:contain;
+    scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+    padding:clamp(12px,2vw,24px) calc(50vw - (min(58vw,780px) / 2));cursor:grab;}
+  .sl-track::-webkit-scrollbar{display:none;}
+  .sl-track.drag{cursor:grabbing;scroll-snap-type:none;}
+  .sl-track.drag .sl-card{pointer-events:none;}
+  .sl-card{flex:0 0 min(58vw,780px);aspect-ratio:16/10;scroll-snap-align:center;position:relative;
+    display:block;border-radius:18px;overflow:hidden;text-decoration:none;color:#fff;
+    border:3px solid rgba(255,255,255,var(--b,.78));
+    transform:scale(var(--s,.86));opacity:var(--o,.55);transform-origin:center;
+    will-change:transform,opacity;box-shadow:0 18px 50px rgba(0,0,0,.6);}
+  .sl-card:not(.qt){background:#0a0a0a;}
+  .sl-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;
+    filter:grayscale(var(--g,.35));transition:filter .4s ease;}
+  .sl-card:not(.qt)::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.78) 100%);}
+  .sl-m{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:clamp(16px,2vw,26px);}
+  .sl-t{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(17px,1.9vw,26px);line-height:1.2;margin:0 0 6px;}
+  .sl-c{font-size:12.5px;letter-spacing:.4px;color:rgba(255,255,255,.78);}
+  .sl-go{display:inline-block;margin-top:14px;padding:8px 14px;border-radius:999px;background:#fff;color:#111;
+    font-size:12px;font-weight:600;opacity:var(--o2,0);transform:translateY(calc((1 - var(--o2,0)) * 8px));}
+  .sl-card.qt{display:flex;flex-direction:column;justify-content:space-between;padding:clamp(16px,2vw,26px);cursor:default;}
+  .sl-card.qt .qt-q{font-size:clamp(19px,2.1vw,30px);}
+  .sl-card.qt .qt-mark{width:clamp(40px,4.4vw,64px);}
+  .sl-nav{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:clamp(18px,2.6vw,30px);}
+  .sl-btn{width:44px;height:44px;border-radius:6px;border:0;cursor:pointer;display:flex;align-items:center;
+    justify-content:center;font-size:18px;line-height:1;transition:transform .2s ease,opacity .2s ease;}
+  .sl-btn:hover{transform:translateY(-2px);}
+  .sl-btn[disabled]{opacity:.35;cursor:default;transform:none;}
+  .sl-prev{background:#fff;color:#111;}
+  .sl-next{background:var(--ac);color:#140c06;}
+  .sl-n{min-width:74px;text-align:center;font-size:12.5px;letter-spacing:1.4px;color:var(--muted);}
+  .sl-n b{color:#fff;font-weight:600;}
+  @media (max-width:700px){
+    .sl-track{padding:12px calc(50vw - 43vw);}
+    .sl-card{flex-basis:86vw;}
+  }
+  @media (prefers-reduced-motion:reduce){ .sl-card{transform:none !important;opacity:1 !important;} }
+
+  /* ---------- TRICH DAN CA TRANG ---------- */
+  .tn{margin-top:clamp(64px,9vw,128px);padding:0;}
+  .tn-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,106,26,.22);}
+  .tn-card{min-height:clamp(300px,34vw,480px);display:flex;flex-direction:column;justify-content:space-between;
+    padding:clamp(22px,3vw,44px);}
+  .tn-card .qt-q{font-size:clamp(22px,2.9vw,42px);max-width:16ch;}
+  .tn-card .qt-mark{width:clamp(40px,4.4vw,70px);}
+  @media (max-width:700px){ .tn-grid{grid-template-columns:1fr;} .tn-card{min-height:280px;} }
+  :focus-visible{outline:2px solid var(--ac);outline-offset:3px;}
+
+  /* ---------- BAN TOI GIAN ---------- */
+  .abl{padding:clamp(56px,7vw,96px) 0 0;}
+  .abl-a{display:flex;align-items:center;gap:clamp(16px,3vw,40px);padding:22px 0;text-decoration:none;color:#fff;
+    border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);}
+  .abl-k{font-family:'Unbounded',sans-serif;font-weight:500;font-size:clamp(13px,1.1vw,15px);letter-spacing:3px;text-transform:uppercase;}
+  .abl-t{flex:1;font-size:14px;color:var(--muted);}
+  .abl-a i{font-style:normal;transition:transform .25s ease,color .2s;}
+  .abl-a:hover .abl-k,.abl-a:hover i{color:var(--ac);}
+  .abl-a:hover i{transform:translateX(6px);}
+  .mn{padding:clamp(90px,12vw,170px) 0 0;}
+  .mn-k{font-size:11px;letter-spacing:2.6px;text-transform:uppercase;color:var(--muted);margin:0 0 clamp(22px,3vw,36px);}
+  .mn-k b{color:var(--ac);font-weight:600;}
+  .mn-big{font-family:'Unbounded',sans-serif;font-weight:600;text-transform:none;letter-spacing:-.02em;
+    font-size:clamp(34px,6.4vw,96px);line-height:1.04;margin:0;max-width:15ch;color:#fff;}
+  .mn-big em{font-style:normal;color:var(--ac);}
+  .mn-h{font-family:'Unbounded',sans-serif;font-weight:600;text-transform:none;font-size:clamp(28px,3.6vw,52px);line-height:1.08;margin:0;}
+  .mn-more{display:inline-flex;align-items:center;gap:12px;margin-top:clamp(26px,3.4vw,44px);font-size:14px;letter-spacing:.3px;
+    color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:6px;transition:color .2s,border-color .2s;}
+  .mn-more i{font-style:normal;transition:transform .25s ease;}
+  .mn-more:hover{color:var(--ac);border-color:var(--ac);}
+  .mn-more:hover i{transform:translateX(6px);}
+  .mn-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(28px,4vw,52px);}
+  .mn-row .mn-more{margin-top:0;}
+  .sg{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);}
+  .sg-c{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:clamp(200px,22vw,320px);
+    padding:clamp(18px,2vw,28px);background:#000;color:#fff;text-decoration:none;overflow:hidden;isolation:isolate;}
+  .sg-c{min-height:clamp(260px,30vw,440px);}
+  .sg-i{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;opacity:.42;
+    filter:grayscale(.55) contrast(1.05);transform:scale(1.04);transition:opacity .6s ease,filter .6s ease,transform 1.2s cubic-bezier(.2,.7,.2,1);}
+  .sg-c::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.05) 38%,rgba(0,0,0,.2) 62%,rgba(0,0,0,.92) 100%);}
+  .sg-c::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .5s ease;mix-blend-mode:screen;
+    background:radial-gradient(90% 70% at 15% 110%,rgba(255,86,18,.7),rgba(200,42,6,.2) 45%,transparent 75%);}
+  .sg-c:hover .sg-i,.sg-c:focus-visible .sg-i{opacity:.85;filter:grayscale(0) contrast(1.05);transform:scale(1.1);}
+  .sg-c:hover::before{opacity:1;}
+  .sg-n{font-family:'Unbounded',sans-serif;font-weight:300;font-size:clamp(40px,4.6vw,72px);line-height:1;color:var(--ac);}
+  .sg-t{font-family:'Unbounded',sans-serif;font-weight:500;font-size:clamp(15px,1.3vw,19px);line-height:1.3;max-width:14ch;}
+  .vid-big{border-radius:6px;overflow:hidden;}
+  .ac{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(24px,4vw,60px);align-items:end;border-radius:6px;overflow:hidden;
+    padding:clamp(28px,5vw,72px);color:#140c06;
+    background:radial-gradient(80% 120% at 100% 0%,#ffb070 0%,transparent 55%),linear-gradient(135deg,#ff7a1a 0%,#e5400c 100%);}
+  .ac{position:relative;isolation:isolate;}
+  .ac-bg{position:absolute;z-index:-1;right:0;top:0;height:100%;width:62%;object-fit:cover;object-position:75% 30%;
+    filter:grayscale(1) contrast(1.15) blur(.6px);mix-blend-mode:multiply;opacity:.9;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 55%);mask-image:linear-gradient(90deg,transparent 0%,#000 55%);}
+  .ac-in,.ac-go{position:relative;}
+  @media (max-width:980px){ .ac-bg{width:100%;opacity:.45;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 70%);mask-image:linear-gradient(180deg,transparent 0%,#000 70%);} }
+  .ac-h{font-family:'Unbounded',sans-serif;font-weight:600;text-transform:none;font-size:clamp(28px,4.2vw,62px);line-height:1.06;
+    margin:0;color:#140c06;letter-spacing:-.02em;}
+  .ac-go{display:flex;flex-direction:column;align-items:flex-start;gap:16px;}
+  .ac-b{display:inline-flex;align-items:center;gap:12px;padding:16px 26px;border-radius:999px;background:#000;color:#fff;
+    text-decoration:none;font-weight:600;font-size:15px;transition:transform .2s ease;}
+  .ac-b:hover{transform:translateY(-2px);}
+  .ac-b i{font-style:normal;}
+  .ac-l{color:#fff;font-size:14px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:4px;}
+  .ct2{display:flex;flex-wrap:wrap;gap:clamp(14px,3vw,48px);margin-top:clamp(30px,4vw,54px);}
+  .ct2 a{font-family:'Unbounded',sans-serif;font-weight:500;font-size:clamp(17px,2.2vw,30px);color:#fff;text-decoration:none;
+    border-bottom:2px solid rgba(255,255,255,.25);padding-bottom:6px;transition:color .2s,border-color .2s;}
+  .ct2 a:hover{color:var(--ac);border-color:var(--ac);}
+  .bandw{margin-top:clamp(80px,10vw,140px);padding:clamp(20px,3vw,40px) var(--pad);
+    background:linear-gradient(90deg,#ff7a1a 0%,#e5400c 55%,#6d1a04 100%);}
+  .bandw img{display:block;width:100%;max-width:var(--wrap);height:auto;margin:0 auto;}
+  #lienhe.last{padding-bottom:0;}
+  .subh{padding:clamp(140px,16vw,220px) 0 clamp(20px,3vw,40px);}
+  .subh .mn-big{max-width:16ch;}
+  .subh-l{font-size:clamp(16px,1.5vw,19px);line-height:1.7;color:#cfc6bd;max-width:560px;margin:clamp(22px,3vw,34px) 0 0;}
+  @media (max-width:980px){ .sg{grid-template-columns:1fr 1fr;} .ac{grid-template-columns:1fr;} }
+  @media (prefers-reduced-motion:reduce){ *{transition:none !important;} }
+
+  @media (max-width:700px){
+    .hero-s{flex-direction:column;gap:6px;letter-spacing:1.8px;}
+    .hero .doors{grid-template-columns:1fr 1fr;}
+    .hero .door + .door{border-top:0;border-left:1px solid rgba(255,255,255,.2);padding-left:16px;}
+    .hero .door{padding:20px 0 26px;}
+    .hero .door-t{font-size:12.5px;padding-right:0;white-space:nowrap;gap:8px;}
+  }
+  @media (max-width:980px){
+    .ab,.faq{grid-template-columns:1fr;}
+    .sv{grid-template-columns:1fr 1fr;row-gap:30px;}
+    .w-c{grid-column:span 3;}
+  }
+  @media (max-width:700px){
+    .doors,.ct,.cs{grid-template-columns:1fr;}
+    .door + .door,.ct > div + div{border-left:0;padding-left:0;border-top:1px solid rgba(255,255,255,.2);}
+    .w-a,.w-b,.w-c{grid-column:span 6;}
+    .w-a figure,.w-b figure,.w-c figure{aspect-ratio:4/3;}
+    .tvc{grid-template-columns:1fr;}
+    .sv{grid-template-columns:1fr;}
+    .ps{grid-template-columns:1fr 1fr;}
+    .ps > div:nth-child(3){padding-left:0;border-left:0;}
+    .ps > div:nth-child(n+3){border-top:1px solid var(--line);}
+    .sh{grid-template-columns:1fr;}
+    .lm{grid-template-columns:1fr;}
+    .hero-in{padding-top:120px;}
+  }
+</style>
+"""
+
+# ------------------------------------------------------------------ KHỐI HTML
+def section_head(no, label, title, link=None):
+    a = '<a class="sh-a" href="%s">%s →</a>' % link if link else ""
+    return ('<div class="sh"><div class="sh-n"><span><b>%s</b> / %s</span><span>LXAM Studio</span></div>'
+            '<h2>%s</h2>%s</div>' % (no, label, title, a))
+
+
+def hero():
+    return """
+<header class="hero" id="hero">
+  <video class="hero-media" id="hero-v" muted loop playsinline preload="none"
+         poster="assets/hero-poster-1600.webp" aria-hidden="true"
+         data-d="assets/hero-d.mp4" data-m="assets/hero-m.mp4"></video>
+  <div class="hero-in">
+    <h1 class="hero-h"><img class="hero-w" src="assets/lxam-studio-wordmark.webp" alt="LXAM Studio" width="1800" height="502" fetchpriority="high"><span class="hero-s"><span>Studio visual 3D <b>&amp; khoá học Blender</b></span><span>Việt Nam</span></span></h1>
+    <nav class="doors" aria-label="Chọn lối vào">
+      <a class="door" href="#portfolio">
+        <span class="door-k">Cho doanh nghiệp</span>
+        <span class="door-t">Thuê studio <i>→</i></span>
+      </a>
+      <a class="door" href="#khoahoc">
+        <span class="door-k">Cho học viên</span>
+        <span class="door-t">Học Blender 3D <i>→</i></span>
+      </a>
+    </nav>
+  </div>
+</header>"""
+
+
+def about():
+    pr = "".join('<div class="pr"><span class="pr-n">%s</span><div><h3>%s</h3><p>%s</p></div></div>' % x
+                 for x in PRINCIPLES)
+    return """
+<section id="ve-chung-toi">
+  <div class="wrap">
+    %s
+    <div class="ab">
+      <div>
+        <p class="ab-lead">Việt Nam không thiếu người có mắt. Thiếu là một chỗ để luyện con mắt đó thành nghề, và đủ lì để không hạ chuẩn khi thị trường trả giá thấp.</p>
+        <p>LXAM Studio bắt đầu từ một cái máy vừa đủ chạy Blender và một quyết định nhỏ: không nhận việc mà mình không dám ký tên. Chúng tôi gọi việc mình làm là nghệ thuật thị giác, không phải “làm 3D”. Phần mềm chỉ là cái đục; thứ quyết định một khung hình đứng được là ánh sáng, nhịp, khoảng lặng, và biết dừng lại đúng lúc.</p>
+        <p>Mục tiêu dài hạn chỉ có một: một ngày nào đó có người ở Paris, Tokyo hay New York mở một shot lên và hỏi ai làm cái này, câu trả lời sẽ là một cái tên Việt Nam.</p>
+        <div class="fd">
+          <img src="assets/703f67b4.webp" alt="Lê Xuân Anh Minh, người sáng lập LXAM Studio" width="900" height="1125" loading="lazy" decoding="async">
+          <div>
+            <p class="fd-n">Lê Xuân Anh Minh</p>
+            <p class="fd-r">Người sáng lập · Multimedia Director · 10 năm làm 3D</p>
+            <a class="lnk" href="ve-chung-toi.html">Câu chuyện đầy đủ →</a>
+          </div>
+        </div>
+      </div>
+      <div>%s</div>
+    </div>
+  </div>
+</section>""" % (section_head("01", "Về chúng tôi", "Đưa Việt Nam lên bản đồ<br>3D motion art thế giới"), pr)
+
+
+def work():
+    items = "".join(
+        '<a class="wk %s" href="%s"><figure><img src="assets/%s" alt="%s, dự án 3D của LXAM Studio" '
+        'width="1600" height="1000" loading="lazy" decoding="async"></figure>'
+        '<div class="wk-m"><span class="wk-t">%s</span><span class="wk-c">%s</span></div></a>'
+        % (c, href, img, esc(t), t, tag) for c, t, tag, img, href in WORK)
+    khu = " ".join('<a class="lnk" href="%s">%s</a>' % k for k in KHU)
+    return """
+<section id="portfolio">
+  <div class="wrap">
+    %s
+    <div class="work">%s</div>
+    <div class="khu"><span>Xem theo khu</span>%s</div>
+  </div>
+</section>""" % (section_head("02", "Dự án", "Dự án chọn lọc", ("du-an-automotive.html", "Tất cả dự án")), items, khu)
+
+
+
+def slider():
+    cards = []
+    for sd in SLIDES:
+        if sd[0] == "q":
+            html_q, _ = QUOTES[sd[1]]
+            cards.append('<div class="sl-card qt" role="group" aria-roledescription="slide">'
+                         '<div class="qt-top"><span>Quan điểm</span><span>LXAM Studio</span></div>'
+                         '<div>%s<p class="qt-q">%s</p></div>'
+                         '<div class="qt-bot"><span>lxamstudio.com</span></div></div>' % (MARK, html_q))
+        else:
+            _, t, tag, img, href = sd
+            cards.append('<a class="sl-card" href="%s" role="group" aria-roledescription="slide">'
+                         '<img src="assets/%s" alt="%s, dự án 3D của LXAM Studio" width="1440" height="900" '
+                         'loading="lazy" decoding="async" draggable="false">'
+                         '<div class="sl-m"><p class="sl-t">%s</p><span class="sl-c">%s</span><br>'
+                         '<span class="sl-go">Xem dự án →</span></div></a>' % (href, img, esc(t), t, tag))
+    khu = " ".join('<a class="lnk" href="%s">%s</a>' % k for k in KHU)
+    n = len(SLIDES)
+    return """
+<section id="portfolio">
+  <div class="wrap"><div class="sh"><div class="sh-n"><span><b>01</b> / Dự án chọn lọc</span><span>LXAM Studio</span></div></div>
+    <figure class="slq">
+      <svg class="slq-m slq-o" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg>
+      <h2 class="sl-lead">Nghệ sĩ không thuộc về một thời đại.<b>Họ đi xuyên qua nó.</b></h2>
+      <svg class="slq-m slq-c" viewBox="0 0 100 62" aria-hidden="true"><polygon points="20,0 46,0 32,62 0,62"/><polygon points="72,0 98,0 84,62 52,62"/></svg>
+      <figcaption class="slq-by">LXAM Studio</figcaption>
+    </figure>
+  </div>
+  <div class="sl" aria-roledescription="carousel" aria-label="Dự án của LXAM Studio">
+    <div class="sl-track" id="sl-track" tabindex="0">%s</div>
+    <div class="sl-nav">
+      <button class="sl-btn sl-prev" type="button" aria-label="Dự án trước">‹</button>
+      <span class="sl-n" aria-live="polite"><b id="sl-i">01</b> / %02d</span>
+      <button class="sl-btn sl-next" type="button" aria-label="Dự án tiếp theo">›</button>
+    </div>
+  </div>
+  <div class="wrap"><div class="khu"><span>Xem theo khu</span>%s<a class="lnk" href="du-an-automotive.html">Tất cả dự án →</a></div></div>
+</section>""" % ("".join(cards), n, khu)
+
+
+def quote_band():
+    tiles = "".join(
+        '<article class="qt tn-card"><div class="qt-top"><span>%02d</span><span>LXAM Studio</span></div>'
+        '<div>%s<p class="qt-q">%s</p></div></article>' % (i + 2, MARK, q)
+        for i, q in enumerate(TN_QUOTES))
+    return """
+<section id="tuyen-ngon" class="tn" aria-label="Tuyên ngôn LXAM Studio">
+  <div class="qt qt-band">
+    <div class="qt-top"><span>Tuyên ngôn</span><span></span></div>
+    <div class="qt-in">%s<p class="qt-q">%s</p></div>
+    <div class="qt-bot"><span>LXAM Studio</span><span>Điều chúng tôi tin</span></div>
+  </div>
+</section>""" % (MARK, BIG_QUOTE)
+
+
+def showreel():
+    tv = "".join(
+        '<div><button class="vid" type="button" data-src="assets/%s" aria-label="Phát %s">'
+        '<img src="assets/%s" alt="" width="1280" height="720" loading="lazy" decoding="async"><span class="pl"></span></button>'
+        '<div class="vid-l"><span class="wk-t">%s</span><span class="wk-c">%s</span></div></div>'
+        % (v, esc(t), p, t, c) for v, p, t, c in TVC)
+    return """
+<section id="showreel">
+  <div class="wrap">
+    %s
+    <button class="vid" type="button" data-src="assets/reel.mp4" aria-label="Phát showreel LXAM Studio">
+      <img src="assets/reel-poster.webp" alt="" width="1280" height="541" loading="lazy" decoding="async">
+      <span class="pl"></span>
+    </button>
+    <div class="vid-l"><span class="wk-t">Showreel</span><span class="wk-c">2 phút 08 giây</span></div>
+    <div class="tvc">%s</div>
+  </div>
+</section>""" % (section_head("03", "Showreel", "Hình động"), tv)
+
+
+def services():
+    sv = "".join('<div id="dv-%d"><p class="sv-n">0%d</p><h3>%s</h3><p>%s</p></div>' % (i + 1, i + 1, t, d)
+                 for i, (t, d) in enumerate(SERVICES))
+    ps = "".join('<div><b>%s</b><span>%s</span></div>' % x for x in PROCESS)
+    return """
+<section id="dv">
+  <div class="wrap">
+    %s
+    <div class="sv">%s</div>
+    <div class="ps">%s</div>
+    <div class="brief">
+      <span>Gửi brief hoặc bản vẽ, chúng tôi báo lại thời gian và chi phí trong 24 giờ.</span>
+      <a class="lnk" href="mailto:anhminhlexuan@gmail.com?subject=Brief%%20du%%20an%%203D">anhminhlexuan@gmail.com →</a>
+    </div>
+  </div>
+</section>""" % (section_head("01", "Dịch vụ", "Bốn mảng chính"), sv, ps)
+
+
+def academy():
+    cs = ""
+    for c in COURSES:
+        li = "".join("<li>%s</li>" % p for p in c["pts"])
+        cs += ('<a class="co" href="%s"><figure><img src="assets/%s" alt="%s" width="900" height="900" '
+               'loading="lazy" decoding="async"></figure>'
+               '<div class="co-k"><span>%s</span><span>%s</span></div><h3>%s</h3><p>%s</p><ul>%s</ul>'
+               '<span class="co-go">Nội dung và học phí →</span></a>'
+               % (c["href"], c["img"], esc(c["alt"]), c["no"], c["len"], c["name"], c["line"], li))
+    fq = ""
+    for q, a, spec in FAQ:
+        sp = ""
+        if spec:
+            sp = '<dl class="spec">%s</dl>' % "".join("<dt>%s</dt><dd>%s</dd>" % x for x in spec)
+        fq += "<details><summary>%s</summary><p>%s</p>%s</details>" % (q, a, sp)
+    return """
+<section id="kh">
+  <div class="wrap">
+    %s
+    <div class="cs" id="lotrinh">%s</div>
+    <div class="faq">
+      <div><h3>Câu hỏi thường gặp</h3><p class="muted" style="font-size:14px;">Chưa chắc nên vào hệ nào? <a class="lnk" href="lo-trinh.html#dangky">Để lại thông tin</a>, chúng tôi gọi tư vấn trước khi bạn đóng bất kỳ khoản nào.</p></div>
+      <div>%s</div>
+    </div>
+    <div class="lm" id="camnang">
+      <div>
+        <h3>Cẩm nang Blender 3D, miễn phí</h3>
+        <p>Hơn 100 trang tiếng Việt, bảy kỹ năng theo đúng thứ tự nên học. Điền tên, email và số điện thoại để nhận link.</p>
+      </div>
+      <a class="lnk" href="cam-nang.html">Nhận cẩm nang →</a>
+    </div>
+    <p style="margin:22px 0 0;font-size:14px;color:var(--muted);">Học xong làm nghề gì? Xem <a class="lnk" href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>.</p>
+  </div>
+</section>""" % (section_head("01", "LXAM Academy", "Hai hệ đào tạo", ("lo-trinh.html", "So sánh hai hệ")), cs, fq)
+
+
+def contact():
+    return """
+<section id="lienhe" class="last">
+  <div class="wrap">
+    %s
+    <div class="ct">
+      <div>
+        <p class="ct-k">Doanh nghiệp</p>
+        <h3>Gửi brief</h3>
+        <p>Mô tả sản phẩm, nơi hình sẽ được dùng và thời hạn. Có file CAD hoặc ảnh mẫu thì gửi kèm.</p>
+        <div class="ct-l">
+          <a class="lnk" href="mailto:anhminhlexuan@gmail.com">anhminhlexuan@gmail.com</a>
+          <a class="lnk" href="tel:0942890363">0942 890 363</a>
+        </div>
+      </div>
+      <div>
+        <p class="ct-k">Học viên</p>
+        <h3>Tư vấn chọn hệ</h3>
+        <p>Nói cho chúng tôi biết bạn đang ở đâu, chúng tôi nói thẳng nên bắt đầu từ đâu, kể cả khi câu trả lời là chưa cần học vội.</p>
+        <div class="ct-l">
+          <a class="lnk" href="lo-trinh.html#dangky">Đăng ký tư vấn →</a>
+          <a class="lnk" href="tel:0942890363">0942 890 363</a>
+        </div>
+      </div>
+    </div>
+    <div class="soc">
+      <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Facebook ↗</a>
+      <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube ↗</a>
+    </div>
+  </div>
+</section>""" % section_head("06", "Liên hệ", "Bắt đầu một dự án")
+
+
+# ------------------------------------------------------------------ BAN TOI GIAN
+def about_line():
+    return """
+<section id="ve-chung-toi" class="abl">
+  <div class="wrap">
+    <a class="abl-a" href="ve-chung-toi.html">
+      <span class="abl-k">About Us</span>
+      <span class="abl-t">Studio visual 3D tại Việt Nam</span>
+      <i>→</i>
+    </a>
+  </div>
+</section>"""
+
+
+def about_min():
+    return """
+<section id="ve-chung-toi" class="mn">
+  <div class="wrap">
+    <p class="mn-k"><b>01</b> / Về chúng tôi</p>
+    <h2 class="mn-big">Đưa Việt Nam lên bản đồ <em>3D motion art</em> thế giới.</h2>
+    <a class="mn-more" href="ve-chung-toi.html">Câu chuyện của chúng tôi <i>→</i></a>
+  </div>
+</section>"""
+
+
+def services_min():
+    imgs = ["svc-mercedes-g63.webp", "svc-chivas18-chai.webp", "svc-chivas18-trien-lam.webp", "svc-jhm.webp"]
+    tiles = "".join(
+        '<a class="sg-c" href="dich-vu.html#dv-%d"><img class="sg-i" src="assets/%s" alt="" width="900" height="1125" '
+        'loading="lazy" decoding="async"><span class="sg-n">%d</span><span class="sg-t">%s</span></a>'
+        % (i + 1, imgs[i], i + 1, t) for i, (t, d) in enumerate(SERVICES))
+    return """
+<section id="dich-vu" class="mn">
+  <div class="wrap">
+    <div class="mn-row">
+      <div>
+        <p class="mn-k"><b>02</b> / Dịch vụ</p>
+        <h2 class="mn-h">Studio nhận làm</h2>
+      </div>
+      <a class="mn-more" href="dich-vu.html">Chi tiết và quy trình <i>→</i></a>
+    </div>
+    <div class="sg">%s</div>
+  </div>
+</section>""" % tiles
+
+
+def showreel_min():
+    return """
+<section id="showreel" class="mn">
+  <div class="wrap">
+    <p class="mn-k"><b>03</b> / Showreel</p>
+    <button class="vid vid-big" type="button" data-src="assets/reel.mp4" aria-label="Phát showreel LXAM Studio">
+      <img src="assets/reel-poster.webp" alt="" width="1280" height="541" loading="lazy" decoding="async">
+      <span class="pl"></span>
+    </button>
+  </div>
+</section>"""
+
+
+def academy_min():
+    return """
+<section id="khoahoc" class="mn">
+  <div class="wrap">
+    <div class="ac">
+      <img class="ac-bg" src="assets/ac-bg.webp" alt="" width="1392" height="936" loading="lazy" decoding="async">
+      <div class="ac-in">
+        <p class="mn-k" style="color:#140c06;"><b style="color:#140c06;">04</b> / LXAM Academy</p>
+        <h2 class="ac-h">Học Blender 3D<br>theo cách studio làm nghề.</h2>
+      </div>
+      <div class="ac-go">
+        <a class="ac-b" href="khoa-hoc.html">Xem khoá học <i>→</i></a>
+        <a class="ac-l" href="cam-nang.html">Nhận cẩm nang miễn phí</a>
+      </div>
+    </div>
+  </div>
+</section>"""
+
+
+def contact_min(no="05", head="Bắt đầu một <em>dự án</em>.", mail_subject="Brief%20du%20an%203D"):
+    return """
+<section id="lienhe" class="mn last">
+  <div class="wrap">
+    <p class="mn-k"><b>%s</b> / Liên hệ</p>
+    <h2 class="mn-big">%s</h2>
+    <div class="ct2">
+      <a href="mailto:anhminhlexuan@gmail.com?subject=%s">anhminhlexuan@gmail.com</a>
+      <a href="tel:0942890363">0942 890 363</a>
+    </div>
+    <div class="soc">
+      <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Facebook ↗</a>
+      <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube ↗</a>
+    </div>
+  </div>
+  <div class="bandw"><img src="assets/lxam-studio-wordmark.webp" alt="" width="1800" height="502" loading="lazy" decoding="async"></div>
+</section>""" % (no, head, mail_subject)
+
+
+def sub_hero(k, title, lead):
+    return """
+<header class="subh">
+  <div class="wrap">
+    <p class="mn-k">%s</p>
+    <h1 class="mn-big">%s</h1>
+    <p class="subh-l">%s</p>
+  </div>
+</header>""" % (k, title, lead)
+
+
+def tvc_grid():
+    tv = "".join(
+        '<div><button class="vid" type="button" data-src="assets/%s" aria-label="Phát %s">'
+        '<img src="assets/%s" alt="" width="1280" height="720" loading="lazy" decoding="async"><span class="pl"></span></button>'
+        '<div class="vid-l"><span class="wk-t">%s</span><span class="wk-c">%s</span></div></div>'
+        % (v, esc(t), p, t, c) for v, p, t, c in TVC)
+    return """
+<section id="tvc">
+  <div class="wrap">
+    %s
+    <div class="tvc">%s</div>
+  </div>
+</section>""" % (section_head("02", "Phim", "TVC đã làm"), tv)
+
+
+
+# ------------------------------------------------------------------ KHUNG TRANG
+def jsonld(with_faq=False):
+    blocks = json.load(io.open(os.path.join(os.path.dirname(__file__), "home_ld.json"), encoding="utf-8"))
+    faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q,
+         "acceptedAnswer": {"@type": "Answer",
+                            "text": a + ((" " + "; ".join("%s: %s" % x for x in sp)) if sp else "")}}
+        for q, a, sp in FAQ]}
+    return "\n".join('<script type="application/ld+json">%s</script>' % json.dumps(b, ensure_ascii=False)
+                     for b in (blocks + [faq] if with_faq else blocks))
+
+
+def page(body_html, title=TITLE, desc=DESC, url=URL, faq=False, home=True):
+    links = "".join('<a href="%s">%s</a>' % x for x in NAV_ITEMS)
+    drawer = "".join('<a href="%s">%s</a>' % x for x in DRAWER)
+    head = f"""<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)}</title>
+<meta name="description" content="{esc(desc)}">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LXAM Studio">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{URL}assets/card-mercedes-g63.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero-poster-1600.webp">
+<link rel="stylesheet" href="assets/lx.css?v=den2">
+{jsonld(faq)}
+{CSS}
+</head>
+<body>
+<a class="skip" href="#main">Bỏ qua tới nội dung</a>
+<nav class="lxnav">
+  <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
+    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon" width="256" height="256">
+    <div class="lxwordmark"><div class="wm">LXAM</div><div class="wm-sub">3D ART STUDIO</div></div>
+  </a>
+  <div class="lxnav-links">{links}</div>
+  <div class="lxnav-actions">
+    <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ</a>
+    <button class="lxburger" id="lxburger" aria-label="Menu" aria-expanded="false">≡</button>
+  </div>
+</nav>
+<div class="lxdrawer" id="lxdrawer">
+  {drawer}
+  <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ →</a>
+</div>
+"""
+    body = '<main id="main">' + body_html + "\n</main>\n"
+    foot = f"""<footer class="lxfooter">
+  <div class="lxfoot">
+    <div>
+      <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
+        <img src="assets/logo-lxam.png" alt="LXAM" width="40" height="40" style="width:40px;height:40px;">
+        <div class="lxwordmark">
+          <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
+          <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
+        </div>
+      </a>
+      <p>Studio visual 3D tại Việt Nam, làm TVC, render sản phẩm và animation kỹ thuật bằng Blender. Đồng thời đào tạo Blender 3D từ con số 0.</p>
+    </div>
+    <div>
+      <div class="col-head">Điều hướng</div>
+      <div class="links">
+        <a href="ve-chung-toi.html">Về chúng tôi</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="dich-vu.html">Dịch vụ</a>
+        <a href="khoa-hoc.html">Khoá học</a>
+        <a href="du-an-event.html">Dự án Event</a>
+        <a href="du-an-automotive.html">Dự án Automotive</a>
+        <a href="du-an-san-pham.html">Dự án sản phẩm</a>
+        <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
+        <a href="blog.html">Blog</a>
+        <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+      </div>
+    </div>
+    <div>
+      <div class="col-head">Kết nối</div>
+      <div class="links">
+        <a href="https://www.facebook.com/lxamstudio/" target="_blank" rel="noopener">Fanpage Studio ↗</a>
+        <a href="https://www.youtube.com/@LXAMStudios" target="_blank" rel="noopener">YouTube @LXAMStudios ↗</a>
+        <a href="https://www.instagram.com/lxamstudio/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="tel:0942890363">Hotline 0942 890 363</a>
+      </div>
+    </div>
+  </div>
+  <div class="lxfoot-base">
+    <span>&copy; {YEAR} LXAM Studio. All rights reserved.</span>
+    <span>3D · Modeling · Lighting · Rendering · Animation · TVC</span>
+  </div>
+</footer>
+<script>
+(function(){{
+  // menu di dong
+  var b=document.getElementById('lxburger'), d=document.getElementById('lxdrawer');
+  if(b&&d){{
+    b.addEventListener('click',function(){{
+      var o=d.classList.toggle('open'); b.setAttribute('aria-expanded',o?'true':'false');
+      b.textContent=o?'\\u2715':'\\u2261'; document.body.style.overflow=o?'hidden':'';
+    }});
+    d.addEventListener('click',function(e){{ if(e.target.tagName==='A'){{ d.classList.remove('open'); b.textContent='\\u2261'; document.body.style.overflow=''; }} }});
+  }}
+
+  // video nen hero: chon mot nguon theo man hinh, chi tai mot lan
+  var v=document.getElementById('hero-v');
+  if(v){{
+    var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var save=navigator.connection&&navigator.connection.saveData;
+    if(!calm&&!save){{
+      v.src=(window.innerWidth<700)?v.dataset.m:v.dataset.d;
+      v.play&&v.play().catch(function(){{}});
+    }}
+  }}
+
+
+  // slider du an: cuon ngang bang scroll-snap, the giua phong to theo khoang cach
+  var tr=document.getElementById('sl-track');
+  if(tr){{
+    var cards=[].slice.call(tr.querySelectorAll('.sl-card'));
+    var idx=document.getElementById('sl-i');
+    var prev=document.querySelector('.sl-prev'), next=document.querySelector('.sl-next');
+    var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var cur=0, raf=0;
+    function paint(){{
+      raf=0;
+      var mid=tr.scrollLeft+tr.clientWidth/2, best=0, bd=1e9;
+      cards.forEach(function(c,i){{
+        var cm=c.offsetLeft+c.offsetWidth/2, d=Math.abs(cm-mid), k=Math.min(1,d/(c.offsetWidth*1.1));
+        if(d<bd){{bd=d;best=i;}}
+        if(!calm){{
+          c.style.setProperty('--s',(1-.14*k).toFixed(4));
+          c.style.setProperty('--o',(1-.2*k).toFixed(4));
+          c.style.setProperty('--g',(.35*k).toFixed(3));
+          c.style.setProperty('--b',(1-.22*k).toFixed(3));
+          c.style.setProperty('--o2',Math.max(0,1-k*2.2).toFixed(3));
+        }}
+      }});
+      if(best!==cur||idx.textContent===''){{cur=best;}}
+      idx.textContent=(cur+1<10?'0':'')+(cur+1);
+      prev.disabled=cur===0; next.disabled=cur===cards.length-1;
+    }}
+    function req(){{ if(!raf) raf=requestAnimationFrame(paint); }}
+    function go(i){{
+      i=Math.max(0,Math.min(cards.length-1,i)); var c=cards[i];
+      tr.scrollTo({{left:c.offsetLeft+c.offsetWidth/2-tr.clientWidth/2,behavior:calm?'auto':'smooth'}});
+    }}
+    tr.addEventListener('scroll',req,{{passive:true}});
+    window.addEventListener('resize',req);
+    prev.addEventListener('click',function(){{go(cur-1);}});
+    next.addEventListener('click',function(){{go(cur+1);}});
+    tr.addEventListener('keydown',function(e){{
+      if(e.key==='ArrowRight'){{e.preventDefault();go(cur+1);}}
+      if(e.key==='ArrowLeft'){{e.preventDefault();go(cur-1);}}
+    }});
+    // bam vao the o ben canh thi keo no vao giua truoc
+    cards.forEach(function(c,i){{
+      c.addEventListener('click',function(e){{ if(i!==cur){{ e.preventDefault(); go(i); }} }});
+    }});
+    // keo bang chuot tren may tinh
+    var down=false,sx=0,sl=0,moved=0;
+    tr.addEventListener('pointerdown',function(e){{
+      if(e.pointerType!=='mouse') return;
+      down=true;moved=0;sx=e.clientX;sl=tr.scrollLeft;
+    }});
+    window.addEventListener('pointermove',function(e){{
+      if(!down) return; var dx=e.clientX-sx;
+      if(Math.abs(dx)>4&&!tr.classList.contains('drag')) tr.classList.add('drag');
+      moved=Math.max(moved,Math.abs(dx)); tr.scrollLeft=sl-dx;
+    }});
+    window.addEventListener('pointerup',function(){{
+      if(!down) return; down=false;
+      if(tr.classList.contains('drag')){{
+        tr.classList.remove('drag');
+        var mid=tr.scrollLeft+tr.clientWidth/2,b=0,bd=1e9;
+        cards.forEach(function(c,i){{var d=Math.abs(c.offsetLeft+c.offsetWidth/2-mid); if(d<bd){{bd=d;b=i;}}}});
+        go(b);
+      }}
+    }});
+    tr.addEventListener('click',function(e){{ if(moved>6){{ e.preventDefault(); e.stopPropagation(); moved=0; }} }},true);
+    paint();
+  }}
+  // showreel va TVC: bam moi tai video
+  document.querySelectorAll('.vid[data-src]').forEach(function(btn){{
+    btn.addEventListener('click',function(){{
+      if(btn.querySelector('video')) return;
+      var x=document.createElement('video');
+      x.src=btn.dataset.src; x.controls=true; x.playsInline=true; x.autoplay=true;
+      btn.appendChild(x); var p=btn.querySelector('.pl'); if(p) p.remove();
+      x.play&&x.play().catch(function(){{}});
+    }});
+  }});
+}})();
+</script>
+<script src="assets/lx-ui.js?v=den2" defer></script>
+</body></html>
+"""
+    out = head + body + foot
+    if not home:
+        out = out.replace('href="#portfolio"', 'href="index.html#portfolio"').replace('href="#lienhe"', 'href="index.html#lienhe"')
+        out = out.replace('<link rel="preload" as="image" href="assets/hero-poster-1600.webp">\n', '')
+    return out
+
+
+if __name__ == "__main__":
+    pages = [
+        ("index.html", page(hero() + about_line() + slider() + services_min() + showreel_min() + quote_band()
+                            + academy_min() + contact_min())),
+        ("dich-vu.html", page(sub_hero("LXAM Studio / Dịch vụ", "Dịch vụ <em>3D visual</em>",
+                                       "TVC, key visual, phối cảnh sự kiện và visual kỹ thuật. Gửi brief, chúng tôi báo thời gian và chi phí trong 24 giờ.")
+                              + services() + tvc_grid() + contact_min("03"),
+                              title="Dịch vụ 3D visual: TVC, key visual, phối cảnh | LXAM Studio",
+                              desc="Dịch vụ của LXAM Studio: TVC và animation 3D, key visual và render sản phẩm, phối cảnh sự kiện, visual kỹ thuật dựng từ file CAD.",
+                              url=URL + "dich-vu.html", home=False)),
+        ("khoa-hoc.html", page(sub_hero("LXAM Academy / Khoá học", "Khoá học <em>Blender 3D</em>",
+                                        "Hai hệ đào tạo theo đúng quy trình studio làm nghề, từ con số 0 tới TVC hoàn chỉnh.")
+                               + academy() + contact_min("02", "Chưa biết bắt đầu <em>từ đâu</em>?", "Tu%20van%20khoa%20hoc%20Blender"),
+                               title="Khoá học Blender 3D từ con số 0 | LXAM Academy",
+                               desc="Khoá học Blender 3D của LXAM Academy: hai hệ đào tạo theo quy trình studio, có người chữa bài hằng tuần, kèm cẩm nang miễn phí.",
+                               url=URL + "khoa-hoc.html", faq=True, home=False)),
+    ]
+    for fn, out in pages:
+        io.open(os.path.join(SITE, fn), "w", encoding="utf-8").write(out)
+        print("wrote", fn, len(out.encode("utf-8")), "bytes | gach ngang:", out.count("—") + out.count("–"))
