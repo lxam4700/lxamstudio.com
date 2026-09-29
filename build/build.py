@@ -856,7 +856,7 @@ POSTS = [
 <li><strong style="color:#fff;">Kết thúc khoá tôi cầm về cái gì?</strong> Câu trả lời tốt là một danh sách sản phẩm cụ thể, không phải một danh sách bài giảng.</li>
 </ol>
 
-<p>Ba câu này áp dụng cho mọi khoá học, kể cả của tôi. Nếu ai không trả lời được rõ ràng, đó là câu trả lời rồi.</p>
+<p>Ba câu này áp dụng cho mọi khoá học, kể cả của tôi. Nếu ai không trả lời được rõ ràng, đó là câu trả lời rồi. Bộ tiêu chí đầy đủ hơn nằm ở bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>, gồm cả cách bóc học phí thành từng khoản để so cho công bằng.</p>
 
 <hr class="hr">
 
@@ -865,35 +865,48 @@ POSTS = [
     },
     {
         "slug": "khoa-hoc-blender-3d-o-viet-nam",
-        "title": "Khoá học Blender 3D ở Việt Nam: chọn thế nào để không mất tiền oan",
-        "desc": "Chọn khoá học Blender 3D tại Việt Nam: các loại khoá đang có, mức học phí thường gặp, bảy câu nên hỏi trước khi đóng tiền và lời quảng cáo nên bỏ qua.",
+        "title": "Khoá học Blender 3D ở Việt Nam: chọn sao cho khỏi phí tiền",
+        "desc": "Chọn khoá học Blender 3D ở Việt Nam: bốn loại khoá đang có, học phí gồm những khoản nào, bảy câu nên hỏi trước khi đóng tiền và quảng cáo nên bỏ qua.",
         "tag": "Định hướng",
         "date": "2026-09-26",
         "date_vn": "26/09/2026",
-        "read": "9 phút đọc",
+        "read": "12 phút đọc",
         "thumb": "assets/mercedes-g63-canh-chay-no-phia-sau.webp",
+        "faq": [
+            ("Học phí khoá học Blender ở Việt Nam khoảng bao nhiêu?",
+             "Theo quan sát của chúng tôi, khoá quay sẵn thường ở mức vài triệu đồng, lớp nhóm có chữa bài hằng tuần ở mức vài chục triệu cho một chương trình dài, kèm riêng tính theo giờ và đắt nhất. Đây là ước lượng mặt bằng chung, mỗi nơi công bố một kiểu nên hãy hỏi số buổi và số lần chữa bài rồi chia ra để so sánh."),
+            ("Khoá học 3D online có kém hơn học trực tiếp tại TPHCM không?",
+             "Với 3D thì không, vì toàn bộ công việc diễn ra trên màn hình và buổi học online có thể ghi hình lại để xem lại đoạn giảng viên sửa file của bạn. Học trực tiếp chỉ hơn ở chỗ bạn khó bỏ buổi khi có người ngồi cạnh."),
+            ("Nên học khoá tổng hợp hay khoá chuyên về render, modeling?",
+             "Người mới nên học khoá tổng hợp đi hết một quy trình từ dựng hình tới render, vì chưa đủ dữ kiện để biết mình hợp mảng nào. Khoá chuyên sâu về render hay modeling chỉ đáng tiền khi bạn đã làm xong vài shot và biết rõ mình đang yếu ở đâu."),
+            ("Chưa biết gì về 3D thì có nên đóng tiền học ngay không?",
+             "Nên dành một tháng tự học bằng tài liệu miễn phí trước. Sau một tháng bạn biết mình có chịu được việc ngồi hàng giờ chỉnh một khung hình hay không, và biết mình đang mắc ở đâu, lúc đó học phí mới mua được thứ đáng mua."),
+        ],
         "body": """
-<p class="lead">Gõ "khoá học Blender 3D" bây giờ ra vài chục kết quả, cái nào cũng hứa đi làm được sau ba tháng. Bài này không kể tên ai. Nó đưa bạn bộ tiêu chí để tự chấm, và nói thẳng khi nào bạn chưa cần đóng tiền cho ai cả.</p>
+<p class="lead">Gõ "khoá học Blender 3D" bây giờ ra vài chục kết quả, cái nào cũng hứa đi làm được sau ba tháng. Câu trả lời ngắn: ở Việt Nam đang có bốn loại khoá, giá chênh nhau hàng chục lần, và thứ duy nhất đáng so sánh là số lần bài của bạn được người có nghề ngồi sửa. Bài này không kể tên ai. Nó đưa bạn bộ tiêu chí để tự chấm, và nói thẳng khi nào bạn chưa cần đóng tiền cho ai cả.</p>
 
 <h2>Ở Việt Nam đang có mấy loại khoá</h2>
 
-<p>Gom lại thì chỉ có bốn nhóm, và mỗi nhóm giải quyết một vấn đề khác nhau.</p>
+<p>Gom lại thì chỉ có bốn nhóm, và mỗi nhóm giải quyết một vấn đề khác nhau. Chọn sai nhóm là lý do phổ biến nhất khiến người học thấy tiền bỏ ra không đổi được gì.</p>
 
 <h3>Khoá quay sẵn, học theo video</h3>
-<p>Rẻ nhất, học lúc nào cũng được. Điểm yếu nằm ở chỗ không ai nhìn bài của bạn. Nhóm này hợp với người đã biết tự đánh giá tác phẩm của mình, hoặc chỉ cần bổ một mảng kỹ thuật cụ thể.</p>
+<p>Rẻ nhất, học lúc nào cũng được. Điểm yếu nằm ở chỗ không ai nhìn bài của bạn. Bạn xem giảng viên làm một cảnh đẹp, làm theo ra cảnh gần giống, rồi tự mở một dự án của riêng mình và bế tắc, vì phần khó không nằm ở thao tác mà ở quyết định.</p>
+<p>Nhóm này hợp với người đã biết tự đánh giá tác phẩm của mình, hoặc chỉ cần bổ một mảng cụ thể như khoá học render hay khoá học modeling 3D.</p>
 
 <h3>Lớp theo nhóm, có buổi chữa bài</h3>
-<p>Phổ biến nhất. Có lịch cố định nên bạn khó bỏ giữa chừng, có bạn học để so sánh tiến độ. Chất lượng phụ thuộc gần như hoàn toàn vào việc giảng viên dành bao nhiêu thời gian cho từng bài nộp. Nếu bạn xuất phát từ con số 0, xem thêm một <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> cần đạt tới đâu sau tám tuần.</p>
+<p>Phổ biến nhất và cũng là lựa chọn hợp lý cho đa số người mới. Có lịch cố định nên bạn khó bỏ giữa chừng, có bạn học để so sánh tiến độ. Chất lượng phụ thuộc gần như hoàn toàn vào việc giảng viên dành bao nhiêu thời gian cho từng bài nộp. Nếu bạn xuất phát từ con số 0, xem thêm một <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> cần đạt tới đâu sau tám tuần.</p>
 
 <h3>Kèm riêng một kèm một</h3>
-<p>Đắt nhất trên mỗi giờ, nhưng đi nhanh nhất nếu bạn đã có nền và đang mắc ở một chỗ cụ thể. Mình viết riêng một bài về <a href="blog-hoc-blender-kem-1-1.html">học kèm một kèm một</a>, khi nào đáng tiền và khi nào phí.</p>
+<p>Đắt nhất trên mỗi giờ, nhưng đi nhanh nhất nếu bạn đã có nền và đang mắc ở một chỗ cụ thể. Người kèm nhìn thẳng vào file của bạn, thấy cái sai trong ba phút thay vì để bạn mò ba tuần. Chúng tôi viết riêng một bài về <a href="blog-hoc-blender-kem-1-1.html">học kèm một kèm một</a>, khi nào đáng tiền và khi nào phí.</p>
 
 <h3>Trung tâm đa ngành</h3>
-<p>Dạy đủ thứ từ photoshop tới dựng phim, 3D chỉ là một môn trong danh mục. Được cái có cơ sở vật chất và giấy chứng nhận. Điểm cần hỏi kỹ là người đứng lớp có đang làm dự án thương mại hay không.</p>
+<p>Dạy đủ thứ từ photoshop tới dựng phim, 3D chỉ là một môn trong danh mục. Được cái có cơ sở vật chất và giấy chứng nhận, tiện cho người cần bằng cấp để nộp hồ sơ. Điểm cần hỏi kỹ là người đứng lớp có đang làm dự án thương mại hay không, vì giáo trình đa ngành thường cập nhật chậm hơn tốc độ đổi của phần mềm.</p>
 
-<h2>Học phí thường thấy và điều nó nói lên</h2>
+<h2>Học phí khoá học Blender gồm những khoản nào</h2>
 
-<p>Mặt bằng chung ở Việt Nam hiện nay trải từ vài triệu cho khoá quay sẵn, tới vài chục triệu cho chương trình dài kèm chữa bài hằng tuần. Giá không nói lên chất lượng, nhưng cách người bán giải thích giá thì có.</p>
+<p>Mặt bằng chung ở Việt Nam hiện nay trải từ vài triệu cho khoá quay sẵn, tới vài chục triệu cho chương trình dài kèm chữa bài hằng tuần. Đây là ước lượng theo quan sát, không phải bảng giá, vì mỗi nơi gói nội dung một kiểu.</p>
+
+<p>Cách so sánh công bằng nhất là bỏ qua con số tổng và tách học phí thành bốn khoản: giờ giảng, số lần bài được chữa, tài nguyên đi kèm và hỗ trợ sau khoá. Hai nơi cùng báo một mức giá có thể chênh nhau nhiều lần ở khoản thứ hai.</p>
 
 <div class="table-wrap">
 <table>
@@ -903,6 +916,7 @@ POSTS = [
 <tr><td>Chỉ nhấn mạnh "ưu đãi hôm nay", giục chốt</td><td>Giá được đặt theo tâm lý, không theo nội dung</td></tr>
 <tr><td>Không công bố giá, phải để lại số mới biết</td><td>Giá sẽ thay đổi theo mức độ bạn tỏ ra muốn mua</td></tr>
 <tr><td>Cam kết việc làm kèm điều kiện mập mờ</td><td>Đọc kỹ phần điều kiện trước khi tin phần cam kết</td></tr>
+<tr><td>Tính theo số giờ video, không nhắc tới bài nộp</td><td>Bạn đang mua một thư viện, không phải một lớp học</td></tr>
 </tbody>
 </table>
 </div>
@@ -920,9 +934,24 @@ POSTS = [
 <li><strong style="color:#fff;">Chữa bài bằng hình thức nào?</strong> Nhận xét bằng chữ, vẽ đè lên hình, hay ngồi sửa trực tiếp trong file.</li>
 <li><strong style="color:#fff;">Học xong tôi cầm về sản phẩm gì?</strong> Nên là danh sách shot cụ thể, đủ để dựng portfolio.</li>
 <li><strong style="color:#fff;">Lớp bao nhiêu người?</strong> Trên hai mươi người mà một giảng viên thì phần chữa bài sẽ mỏng.</li>
-<li><strong style="color:#fff;">Có được xem lại bài giảng không, trong bao lâu?</strong></li>
+<li><strong style="color:#fff;">Có được xem lại bài giảng không, trong bao lâu?</strong> Hỏi luôn là bản ghi buổi chữa bài của chính mình có được giữ không.</li>
 <li><strong style="color:#fff;">Học viên cũ giờ đang làm gì?</strong> Xin liên hệ một hai người để hỏi trực tiếp, nơi tử tế sẽ không ngại.</li>
 </ol>
+
+<h2>Danh sách kiểm tra trước khi chuyển khoản</h2>
+
+<p>In ra hoặc chép vào ghi chú, đánh dấu từng dòng. Thiếu quá hai dòng thì hoãn lại một tuần, không mất gì cả.</p>
+
+<ul>
+<li>Đã xem ít nhất ba tác phẩm gần đây của chính người sẽ đứng lớp, không phải của trung tâm.</li>
+<li>Đã biết số buổi, thời lượng mỗi buổi và tổng số bài mình phải nộp.</li>
+<li>Đã biết ai chữa bài và chữa bằng cách nào.</li>
+<li>Đã xem thử một bản ghi buổi học hoặc một buổi học thử.</li>
+<li>Đã đọc điều khoản hoàn tiền và điều kiện của mọi lời cam kết việc làm.</li>
+<li>Đã tự chạy Blender ít nhất vài buổi và biết mình đang thiếu gì.</li>
+<li>Đã tính được học phí chia cho số lần bài được chữa, và thấy con số đó chấp nhận được.</li>
+<li>Không bị hối phải chốt trong hôm nay.</li>
+</ul>
 
 <blockquote><p>Một khoá học tốt không bán cho bạn kiến thức. Kiến thức nằm đầy trên mạng và miễn phí. Thứ bạn trả tiền là người chịu ngồi nhìn bài của bạn và nói đúng chỗ sai.</p></blockquote>
 
@@ -932,21 +961,63 @@ POSTS = [
 <li><strong style="color:#fff;">"Không cần năng khiếu, ai cũng học được."</strong> Đúng một nửa. Ai cũng học được phần thao tác, nhưng mắt nhìn thì phải luyện, và luyện thì mất thời gian.</li>
 <li><strong style="color:#fff;">"Ra trường thu nhập trăm triệu."</strong> Có người đạt được, nhưng sau nhiều năm và thường nhờ nhận dự án trực tiếp chứ không phải nhờ khoá học.</li>
 <li><strong style="color:#fff;">"Trọn bộ hai trăm giờ video."</strong> Số giờ video là thước đo tệ. Không ai xem hết, và xem hết cũng không đồng nghĩa làm được.</li>
+<li><strong style="color:#fff;">"Cam kết đầu ra, không có việc hoàn tiền."</strong> Đọc phần điều kiện đi kèm. Thường có ràng buộc về số buổi vắng, điểm bài tập và thời hạn nộp hồ sơ, đủ để lời cam kết gần như không bao giờ phải thực hiện.</li>
 </ul>
 
-<h2>Học online hay học trực tiếp</h2>
+<h2>Khoá học 3D online hay khoá học 3D tại TPHCM</h2>
 
-<p>Với 3D, online không thua trực tiếp, vì mọi thứ đều diễn ra trên màn hình. Chia sẻ màn hình cộng với ghi hình buổi học thậm chí tiện hơn: bạn xem lại được đoạn giảng viên sửa file của chính mình. Học trực tiếp chỉ thật sự hơn ở một điểm là bạn khó lười khi có người ngồi cạnh.</p>
+<p>Với 3D, online không thua trực tiếp, vì mọi thứ đều diễn ra trên màn hình. Chia sẻ màn hình cộng với ghi hình buổi học thậm chí tiện hơn: bạn xem lại được đoạn giảng viên sửa file của chính mình, đoạn đó mới là phần đắt nhất của buổi học.</p>
 
-<h2>Tự học trước, rồi hãy tính</h2>
+<p>Học trực tiếp hơn ở hai điểm: bạn khó lười khi có người ngồi cạnh, và ở TPHCM bạn gặp được người cùng nghề ngoài đời, nơi phần lớn job đầu tiên xuất hiện. Nếu nhà bạn cách lớp hơn một tiếng chạy xe, hãy trừ thẳng thời gian đó vào giờ luyện tập rồi mới quyết.</p>
 
-<p>Nếu bạn chưa mở Blender bao giờ, đừng đóng tiền vội. Dành một tháng làm theo tài liệu miễn phí, xem mình có thật sự thích ngồi hàng giờ chỉnh một khung hình hay không. Bên mình để sẵn <a href="cam-nang.html">cẩm nang Blender 3D miễn phí</a> và <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình bảy kỹ năng</a> để bạn thử trước.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Khoá học 3D online</th><th>Học trực tiếp tại TPHCM</th></tr></thead>
+<tbody>
+<tr><td>Xem lại buổi học</td><td>Gần như luôn có bản ghi</td><td>Tuỳ nơi, nhiều chỗ không ghi</td></tr>
+<tr><td>Thời gian di chuyển</td><td>Không</td><td>Đáng kể nếu ở xa</td></tr>
+<tr><td>Kỷ luật</td><td>Phải tự giữ</td><td>Dễ hơn vì có lịch và có người</td></tr>
+<tr><td>Quan hệ nghề nghiệp</td><td>Chậm hơn, qua nhóm chat</td><td>Nhanh hơn, gặp mặt trực tiếp</td></tr>
+<tr><td>Máy móc</td><td>Dùng máy của bạn</td><td>Có thể dùng máy phòng học</td></tr>
+</tbody>
+</table>
+</div>
 
-<p>Sau một tháng đó, nếu bạn vẫn muốn đi tiếp mà thấy mình đang loay hoay, lúc đó tiền học mới đáng, vì bạn đã biết mình cần gì.</p>
+<h2>Khoá tổng hợp, khoá render hay khoá modeling</h2>
+
+<p>Người mới hay bị hút vào khoá chuyên sâu vì tên nghe chuyên nghiệp. Nhưng khi chưa đi hết một quy trình từ dựng hình, vật liệu, ánh sáng tới render và hậu kỳ, bạn không có dữ kiện để biết mình yếu ở đâu, nên tiền bỏ vào một khoá học render riêng thường bị phí.</p>
+
+<p>Thứ tự hợp lý là học một khoá tổng hợp đưa bạn qua trọn một shot, làm thêm hai ba shot của riêng mình, rồi mới chọn mảng để đào sâu. Bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> mô tả thứ tự bảy kỹ năng, và bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu thì nhận job đầu tiên</a> cho bạn mốc thời gian để đối chiếu xem mình đang nhanh hay chậm.</p>
+
+<h2>Tự học một tháng trước khi đóng tiền</h2>
+
+<p>Nếu bạn chưa mở Blender bao giờ, đừng đóng tiền vội. Dành một tháng làm theo tài liệu miễn phí, xem mình có thật sự thích ngồi hàng giờ chỉnh một khung hình hay không. Bên mình để sẵn <a href="cam-nang.html">cẩm nang Blender 3D miễn phí</a> và bài <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a> để bạn thử trước.</p>
+
+<p>Sau một tháng đó, nếu bạn vẫn muốn đi tiếp mà thấy mình đang loay hoay, lúc đó tiền học mới đáng, vì bạn đã biết mình cần gì. Nếu còn phân vân giữa hai hướng, bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học khoá có người kèm</a> phân tích kỹ hơn từng trường hợp.</p>
+
+<h2>Sau khoá học, cái gì thật sự quyết định bạn có việc</h2>
+
+<p>Không phải chứng chỉ. Người thuê nhìn ba thứ: portfolio có đủ shot hoàn chỉnh hay không, bạn có tự đi hết một dự án mà không cần cầm tay hay không, và bạn có giao đúng hạn hay không. Khoá học chỉ rút ngắn giai đoạn đầu.</p>
+
+<p>Vì vậy, khi so hai khoá ngang giá, hãy chọn khoá buộc bạn nộp nhiều bài hơn, kể cả khi nghe có vẻ mệt hơn. Muốn biết mức hoàn thiện mà thị trường đang trả tiền, xem phần <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> rồi lấy các shot ở đó làm chuẩn tự chấm bài mình.</p>
+
+<h2>Vài câu hỏi hay gặp</h2>
+
+<p class="faq-q">Học phí khoá học Blender ở Việt Nam khoảng bao nhiêu?</p>
+<p>Theo quan sát của chúng tôi: khoá quay sẵn vài triệu, lớp nhóm có chữa bài vài chục triệu cho chương trình dài, kèm riêng tính theo giờ và đắt nhất. Đây là ước lượng. Hãy hỏi số buổi và số lần chữa bài rồi chia ra, con số đó mới so sánh được.</p>
+
+<p class="faq-q">Khoá học 3D online có kém hơn học trực tiếp không?</p>
+<p>Với 3D thì không. Toàn bộ công việc diễn ra trên màn hình, và buổi học online ghi hình lại được. Học trực tiếp hơn ở kỷ luật và quan hệ nghề nghiệp, không hơn ở chất lượng dạy.</p>
+
+<p class="faq-q">Máy yếu có nên đợi nâng cấp rồi mới học?</p>
+<p>Không cần. Giai đoạn đầu bạn làm cảnh nhỏ, máy phổ thông chạy được. Chúng tôi có bài riêng về <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> và mốc nào thì nâng cấp mới đáng.</p>
+
+<p class="faq-q">Học xong một khoá là đủ để nhận job chưa?</p>
+<p>Thường là chưa. Khoá học đưa bạn tới chỗ làm xong một shot có hướng dẫn. Job đầu tiên thường tới sau vài shot bạn tự làm từ đầu tới cuối, và sau khi bạn đã sửa lại chúng vài lần theo góp ý.</p>
 
 <hr class="hr">
 
-<p>LXAM Academy có hai hệ đào tạo, nội dung và học phí công khai ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>. Muốn xem chúng tôi làm nghề thế nào trước khi tin lời dạy, phần <a href="index.html#portfolio">dự án</a> là nơi thẳng thắn nhất.</p>
+<p>LXAM Academy có hai hệ đào tạo, nội dung và học phí công khai ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>. Bước tiếp theo gọn nhất: mở trang đó so hai hệ, rồi tải cẩm nang và làm hết bài tập trong ba tuần. Sau đó bạn sẽ tự biết mình cần khoá học hay chỉ cần thêm kỷ luật.</p>
 """,
     },
     {
@@ -1016,7 +1087,7 @@ POSTS = [
 
 <p>Đừng so kèm riêng với lớp nhóm theo giá mỗi giờ, vì hai thứ giải quyết hai việc khác nhau. Cách tính đúng hơn là hỏi: nếu tự mò, bạn mất bao nhiêu tháng để nhận ra cùng một điều, và mấy tháng đó đáng bao nhiêu với bạn. Với người đang cần portfolio để đổi việc, vài tháng rút ngắn thường đáng hơn khoản học phí.</p>
 
-<p>Một cách tiết kiệm mà vẫn hiệu quả là học nền bằng tài liệu miễn phí hoặc lớp nhóm, rồi dùng kèm riêng cho giai đoạn hoàn thiện portfolio, lúc mỗi nhận xét đều đắt giá.</p>
+<p>Một cách tiết kiệm mà vẫn hiệu quả là học nền bằng tài liệu miễn phí hoặc lớp nhóm, rồi dùng kèm riêng cho giai đoạn hoàn thiện portfolio, lúc mỗi nhận xét đều đắt giá. Nếu bạn đang so lớp nhóm với kèm riêng, bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a> có bảng đối chiếu bốn loại khoá và mức học phí thường gặp.</p>
 
 <hr class="hr">
 
