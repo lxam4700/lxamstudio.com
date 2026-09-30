@@ -889,7 +889,7 @@ POSTS = [
 
 <h2>Ở Việt Nam đang có mấy loại khoá</h2>
 
-<p>Gom lại thì chỉ có bốn nhóm, và mỗi nhóm giải quyết một vấn đề khác nhau. Chọn sai nhóm là lý do phổ biến nhất khiến người học thấy tiền bỏ ra không đổi được gì.</p>
+<p>Gom lại thì chỉ có bốn nhóm, và mỗi nhóm giải quyết một vấn đề khác nhau. Chọn sai nhóm là lý do phổ biến nhất khiến người học thấy tiền bỏ ra không đổi được gì. Bảng đối chiếu nhanh bốn nhóm này, kèm gợi ý nên đọc tiếp bài nào, nằm ở trang tổng hợp <a href="blog-khoa-hoc-3d-blender.html">khoá học 3D Blender</a>.</p>
 
 <h3>Khoá quay sẵn, học theo video</h3>
 <p>Rẻ nhất, học lúc nào cũng được. Điểm yếu nằm ở chỗ không ai nhìn bài của bạn. Bạn xem giảng viên làm một cảnh đẹp, làm theo ra cảnh gần giống, rồi tự mở một dự án của riêng mình và bế tắc, vì phần khó không nằm ở thao tác mà ở quyết định.</p>
@@ -1196,7 +1196,7 @@ POSTS = [
         "body": """
 <p class="lead">Một khoá học Blender 3D cho người mới tử tế hay không, bạn biết được sau hai tuần. Nếu tới cuối tuần thứ hai bạn đã render xong một vật thật và nói được vì sao nó trông như vậy, khoá đó ổn. Còn nếu hai tuần đầu vẫn đang giới thiệu giao diện, bạn đang trả tiền cho phần YouTube cho không.</p>
 
-<p>Bài này là bộ tiêu chí để soi một khoá học trước khi đóng tiền, viết từ chỗ đã ngồi sửa bài cho khá nhiều người bắt đầu từ con số 0. Nó không nói khoá nào tốt nhất, vì việc đó tuỳ mục tiêu của bạn. Nó chỉ giúp bạn hỏi đúng câu.</p>
+<p>Bài này là bộ tiêu chí để soi một khoá học trước khi đóng tiền, viết từ chỗ đã ngồi sửa bài cho khá nhiều người bắt đầu từ con số 0. Nó không nói khoá nào tốt nhất, vì việc đó tuỳ mục tiêu của bạn. Nó chỉ giúp bạn hỏi đúng câu. Nếu bạn muốn xem bức tranh rộng hơn trước, bài tổng hợp <a href="blog-khoa-hoc-3d-blender.html">khoá học 3D Blender</a> đối chiếu cả bốn kiểu khoá và dẫn tới đúng bài hướng dẫn theo tình trạng của bạn.</p>
 
 <h2>Khoá cho người mới khác khoá nâng cao ở chỗ nào</h2>
 
@@ -1389,7 +1389,7 @@ POSTS = [
 </table>
 </div>
 
-<p>Bốn phần này áp dụng cho cả khoá học dựng hình sản phẩm lẫn khoá kiến trúc hay automotive, chỉ khác ở loại cảnh đem ra luyện. Nếu bạn còn đang ở giai đoạn trước đó, nghĩa là chưa dựng được vật để render, thì bắt đầu từ <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> hợp lý hơn là nhảy thẳng vào render.</p>
+<p>Bốn phần này áp dụng cho cả khoá học dựng hình sản phẩm lẫn khoá kiến trúc hay automotive, chỉ khác ở loại cảnh đem ra luyện. Nếu bạn còn đang phân vân giữa các kiểu lớp, bài tổng hợp <a href="blog-khoa-hoc-3d-blender.html">khoá học 3D Blender</a> đối chiếu bốn kiểu khoá đang có và nói rõ kiểu nào hợp với ai. Nếu bạn còn đang ở giai đoạn trước đó, nghĩa là chưa dựng được vật để render, thì bắt đầu từ <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> hợp lý hơn là nhảy thẳng vào render.</p>
 
 <h2>Học phí khoá học Blender phần render gồm những khoản nào</h2>
 
@@ -1448,6 +1448,138 @@ POSTS = [
 """,
     },
 
+    {
+        "slug": "khoa-hoc-3d-blender",
+        "title": "Khoá học 3D Blender: chọn hệ nào, học ở đâu, tốn gì",
+        "desc": "Khoá học 3D Blender có mấy loại, nên học online hay tại TPHCM, học phí gồm những khoản nào, và ba bài hướng dẫn chi tiết cho từng nhóm người học.",
+        "tag": "Định hướng",
+        "date": "2026-09-30",
+        "date_vn": "30/09/2026",
+        "read": "10 phút đọc",
+        "thumb": "assets/vplas-render-san-pham-blender.jpg",
+        "faq": [
+            ("Khoá học 3D Blender phù hợp với ai?",
+             "Phù hợp với người muốn làm hình sản phẩm, quảng cáo, kiến trúc hoặc sự kiện và cần một lịch học có người sửa bài. Người chỉ muốn nghịch cho vui thì tài liệu miễn phí đã đủ, không cần đóng tiền."),
+            ("Nên chọn khoá học 3D online hay học trực tiếp tại TPHCM?",
+             "Online hợp với người đã có máy và biết tự ngồi vào bàn, vì bài nộp là file và ảnh nên gửi đi rất nhanh. Học trực tiếp hợp với người dễ bỏ giữa chừng và cần bị nhìn thấy mỗi tuần. Yếu tố quyết định là số lần bài của bạn được sửa, không phải hình thức lớp."),
+            ("Học phí khoá học Blender thường gồm những khoản gì?",
+             "Thường gồm buổi học, tài liệu và file mẫu, số lần sửa bài, và thời gian được hỏi sau khoá. Khoản dễ bị bỏ ngoài báo giá nhất là số vòng sửa trên cùng một bài, trong khi đó mới là phần quyết định bạn tiến bộ hay không."),
+            ("Chưa có máy mạnh thì có nên đăng ký khoá học 3D Blender không?",
+             "Nên, nếu bạn bắt đầu từ dựng hình và bố cục. Hai phần đó chạy tốt trên máy phổ thông. Máy chỉ trở thành rào cản khi bạn render cảnh nặng hoặc làm hoạt hình, và lúc đó bạn đã đủ hiểu để biết cần nâng cấp cái gì."),
+            ("Học khoá 3D Blender bao lâu thì làm được việc?",
+             "Ước lượng từ các nhóm học viên đã đi qua, khoảng ba tới sáu tháng học đều để có bộ ảnh đủ đi xin việc hoặc nhận job nhỏ. Con số này phụ thuộc số giờ bạn thật sự ngồi làm mỗi tuần nhiều hơn là phụ thuộc khoá học."),
+        ],
+        "body": """
+<p class="lead">Khoá học 3D Blender ở Việt Nam hiện chia làm bốn kiểu, và chúng khác nhau ở một điểm duy nhất đáng quan tâm: bài của bạn được người trong nghề xem bao nhiêu lần. Mọi thứ còn lại, từ số buổi tới tên gọi lộ trình, đều là chi tiết phụ. Bài này là trang tổng hợp, dẫn bạn tới đúng bài hướng dẫn chi tiết theo tình trạng hiện tại của bạn.</p>
+
+<p>Viết từ chỗ ngồi sửa bài cho người học và làm hình thương mại mỗi tuần. Không có tên nơi nào tốt nhất trong bài, chỉ có bộ tiêu chí và ba bài đọc sâu để bạn tự quyết định.</p>
+
+<h2>Khoá học 3D Blender đang có mấy loại</h2>
+
+<p>Bốn kiểu dưới đây bao gần hết thị trường. Chúng không xếp theo tốt xấu, mà theo việc chúng hợp với ai.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Kiểu</th><th>Hợp với ai</th><th>Rủi ro lớn nhất</th></tr></thead>
+<tbody>
+<tr><td>Khoá quay sẵn, học theo video</td><td>Người kỷ luật, đã biết mình cần gì</td><td>Không ai nói bài bạn sai chỗ nào</td></tr>
+<tr><td>Lớp nhóm theo lịch cố định</td><td>Người mới, cần nhịp và bạn học</td><td>Sĩ số đông thì mỗi bài chỉ được nhìn lướt</td></tr>
+<tr><td>Kèm riêng một kèm một</td><td>Người đi làm, ít thời gian, có mục tiêu rõ</td><td>Đắt, và phụ thuộc hoàn toàn vào người kèm</td></tr>
+<tr><td>Khoá chuyên mảng: sản phẩm, kiến trúc, automotive</td><td>Người đã dựng được hình, muốn đi sâu</td><td>Vào sớm quá thì không theo nổi</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nếu bạn chưa mở Blender bao giờ, ba kiểu đầu đều dùng được, kiểu thứ tư thì chưa. Còn nếu bạn đã dựng được vài vật nhưng ảnh ra vẫn nhìn rẻ tiền, vấn đề của bạn nằm ở ánh sáng và vật liệu chứ không nằm ở dựng hình, và một <a href="blog-khoa-hoc-render.html">khoá học render</a> đúng nghĩa sẽ hiệu quả hơn là học lại từ đầu.</p>
+
+<h2>Khoá học 3D online hay khoá học 3D tại TPHCM</h2>
+
+<p>Câu hỏi này bị hỏi nhiều hơn mức nó đáng. Hình thức lớp không quyết định bạn giỏi hay không. Thứ quyết định là số vòng bài của bạn được sửa và mức độ thẳng thắn của người sửa.</p>
+
+<h3>Khi nào online là lựa chọn tốt hơn</h3>
+<p>Bài nộp trong nghề này là file và ảnh, gửi đi trong vài giây. Người sửa mở file của bạn ra là thấy ngay bạn dựng sai ở đâu, không cần ngồi cạnh. Nếu bạn đã có máy chạy được và tự ngồi vào bàn được, khoá học 3D online tiết kiệm cho bạn hàng giờ đi lại mỗi tuần, và thời gian đó đổ vào luyện tập thì có lợi hơn nhiều.</p>
+
+<h3>Khi nào nên chịu khó tới lớp</h3>
+<p>Nếu bạn từng mua hai ba khoá online rồi bỏ dở, đừng mua khoá thứ tư. Vấn đề của bạn không phải nội dung mà là sự có mặt. Một lớp có địa điểm cụ thể ở TPHCM, có giờ cố định và có người nhìn thấy bạn vắng, giải quyết đúng chỗ đó. Đây là lý do duy nhất đáng để chọn học trực tiếp, và nó là lý do chính đáng.</p>
+
+<figure>
+  <img src="assets/mercedes-g63-khung-gam-va-doi-ky-thuat.webp" alt="Khung gầm xe Mercedes G63 dựng 3D bằng Blender với nhóm kỹ thuật viên đứng quanh trong xưởng, một cảnh trích từ dự án TVC" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một cảnh trong dự án TVC dựng bằng Blender.</strong> Phần khó của cảnh này không nằm ở nút bấm mà ở việc sắp xếp thứ tự công việc: dựng khối, chia vật liệu, đặt sáng, rồi mới tới render. Một khoá học 3D Blender tử tế dạy đúng cái thứ tự đó.</figcaption>
+</figure>
+
+<h2>Học phí khoá học Blender gồm những khoản nào</h2>
+
+<p>Mình không nêu con số vì giá mỗi nơi mỗi khác và thay đổi theo thời gian. Thứ nên soi là báo giá đó gồm gì. Bốn khoản dưới hay bị nói lướt qua.</p>
+
+<ul>
+<li><strong style="color:#fff;">Số vòng sửa trên cùng một bài.</strong> Được nhận xét một lần rồi thôi khác hẳn nhận xét, sửa, rồi nhận xét lại. Đây là khoản có giá trị thật nhất và cũng hay bị để mờ nhất.</li>
+<li><strong style="color:#fff;">Ai là người sửa bài.</strong> Người đứng lớp và người chấm bài nhiều khi không phải một người. Nên hỏi thẳng.</li>
+<li><strong style="color:#fff;">File gốc và tài liệu.</strong> Có nơi giao file cảnh để bạn mổ xẻ, có nơi chỉ cho xem. Mổ được file của người có nghề tiết kiệm cho bạn hàng tuần mò mẫm.</li>
+<li><strong style="color:#fff;">Thời gian được hỏi sau khoá.</strong> Phần lớn vướng mắc thật xuất hiện sau khi khoá kết thúc, lúc bạn làm dự án của riêng mình.</li>
+</ul>
+
+<p>Một cách so sánh công bằng hơn giá mỗi buổi: lấy học phí chia cho số lần bài của bạn được người trong nghề xem tận nơi. Cách đọc các kiểu nói về học phí, kể cả những lời hứa nên bỏ qua, mình viết kỹ trong bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>.</p>
+
+<blockquote><p>Bạn không mua số buổi học. Bạn mua số lần có người nhìn vào bài của bạn và nói thẳng nó sai ở đâu. Mọi con số khác trên tờ báo giá đều là phụ.</p></blockquote>
+
+<h2>Ba bài nên đọc trước khi chọn khoá học 3D Blender</h2>
+
+<p>Tuỳ bạn đang đứng ở đâu, một trong ba bài dưới sẽ hợp hơn hai bài còn lại. Đọc đúng bài rồi hãy quyết định.</p>
+
+<h3>Nếu bạn chưa từng mở Blender</h3>
+<p>Đọc <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a>. Bài đó mô tả tám tuần đầu nên dạy gì, tuần nào nộp bài gì, và sáu câu nên hỏi trước khi đóng tiền. Nó cũng nói rõ những thứ một khoá cho người mới không nên nhồi vào, ví dụ hoạt hình nhân vật hay mô phỏng vải, vì đưa vào sớm chỉ làm bạn rối.</p>
+
+<h3>Nếu bạn dựng được hình nhưng ảnh chưa đẹp</h3>
+<p>Đọc <a href="blog-khoa-hoc-render.html">khoá học render</a>. Bài đó phân tích một khoá render phải có bốn phần nào, nên học Cycles hay Eevee trước, và năm dấu hiệu nhận ra một khoá chỉ dạy thao tác chứ không dạy cách chẩn đoán. Đây là giai đoạn nhiều người kẹt lâu nhất mà lại hay chọn sai khoá nhất.</p>
+
+<h3>Nếu bạn đang so nhiều nơi và sợ mất tiền oan</h3>
+<p>Đọc <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>. Bài đó chia thị trường thành bốn loại, dịch các cách nói về học phí sang nghĩa thật, và đưa bảy câu hỏi mà một nơi làm ăn tử tế sẽ trả lời được ngay.</p>
+
+<p>Ngoài ba bài trên, nếu bạn còn phân vân giữa việc bỏ tiền và tự mò, bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a> so sánh thẳng hai con đường, kể cả trường hợp tự học là lựa chọn đúng.</p>
+
+<h2>Danh sách kiểm tra trước khi đóng tiền</h2>
+
+<ol>
+<li><strong style="color:#fff;">Xem bài của học viên, không xem bài của giảng viên.</strong> Bài học viên cho biết khoá dạy được gì, bài giảng viên chỉ cho biết người đó giỏi gì.</li>
+<li><strong style="color:#fff;">Hỏi tuần đầu tiên nộp gì.</strong> Không trả lời cụ thể được nghĩa là chưa có lịch bài nộp.</li>
+<li><strong style="color:#fff;">Hỏi một bài được nhận xét mấy vòng.</strong> Dưới hai vòng thì bạn gần như chỉ nghe giảng.</li>
+<li><strong style="color:#fff;">Hỏi ai chấm bài và người đó đang làm nghề gì.</strong> Người còn làm job thật sẽ sửa khác người chỉ đi dạy.</li>
+<li><strong style="color:#fff;">Đưa cấu hình máy của bạn và hỏi thẳng.</strong> Câu trả lời tử tế sẽ nói rõ phần nào chạy được, phần nào phải giảm chất lượng khi luyện.</li>
+<li><strong style="color:#fff;">Hỏi khoá đi theo mảng nào.</strong> Sản phẩm, kiến trúc và automotive đòi hỏi cách làm khác nhau, khoá dạy chung chung thường không đi sâu được mảng nào.</li>
+<li><strong style="color:#fff;">Hỏi sau khoá còn được hỏi bài không, trong bao lâu.</strong> Đây là khoản chênh lệch lớn giữa các nơi mà ít ai để ý.</li>
+</ol>
+
+<p>Nếu câu hỏi số năm làm bạn lo, đọc <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> trước. Trong đó có mốc cụ thể cho biết khi nào nâng cấp máy mới thật sự có nghĩa, và vì sao máy yếu hiếm khi là thứ đang cản bạn ở giai đoạn đầu.</p>
+
+<h2>Khoá học không làm thay bạn những gì</h2>
+
+<p>Phần này nói mặt bất lợi, vì gần như không nơi nào tự nói ra.</p>
+
+<p>Khoá học rút ngắn thời gian mò mẫm, nó không rút ngắn thời gian luyện tay. Số giờ bạn ngồi làm vẫn phải đủ, và không ai làm hộ được. Một người học khoá tốt nhưng mỗi tuần chỉ động vào Blender một buổi sẽ đi chậm hơn người tự học mà làm đều bốn buổi.</p>
+
+<p>Khoá học cũng không tạo ra portfolio cho bạn. Bài tập trong khoá là bài tập, người tuyển dụng nhìn ra ngay. Bộ hình đi xin việc phải có ít nhất vài dự án bạn tự đặt đề bài và tự làm trọn, kể cả phần chán như dọn file và xuất nhiều tỉ lệ khung.</p>
+
+<p>Và khoá học không thay được việc chọn hướng. Sớm hay muộn bạn phải quyết định mình đi theo sản phẩm, kiến trúc, automotive hay sự kiện. Muốn biết mỗi hướng dẫn tới công việc gì, xem qua vài shot bên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>, đó là mức hoàn thiện khách thường yêu cầu.</p>
+
+<h2>Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Khoá học 3D Blender có cần biết vẽ không?</p>
+<p>Không, với mảng sản phẩm, hard-surface và kiến trúc. Vẽ tay chỉ thành lợi thế rõ rệt khi bạn làm nhân vật hoặc tạo hình sáng tạo. Phần lớn công việc thương mại ở Việt Nam hiện nay không đòi hỏi kỹ năng đó.</p>
+
+<p class="faq-q">Đang đi làm trái ngành, mỗi tuần được khoảng sáu tiếng, có theo nổi không?</p>
+<p>Theo nổi, nhưng phải chấp nhận tiến độ chậm hơn lịch chuẩn. Sáu tiếng một tuần đủ để hoàn thành một bài nhỏ, không đủ để vừa học vừa làm dự án lớn. Nhóm này thường hợp với hình thức kèm riêng hơn, vì lịch linh hoạt và mỗi buổi đi thẳng vào bài của bạn, chi tiết trong bài <a href="blog-hoc-blender-kem-1-1.html">học Blender kèm một kèm một</a>.</p>
+
+<p class="faq-q">Học xong khoá là nhận được job luôn chứ?</p>
+<p>Không nên kỳ vọng như vậy. Mốc thực tế là sau khoá bạn có quy trình làm việc và vài bài đủ tốt, rồi cần thêm một giai đoạn làm dự án tự đặt đề bài trước khi có khách trả tiền. Các mốc thời gian cụ thể mình viết trong bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu thì nhận được job đầu tiên</a>.</p>
+
+<p class="faq-q">Có nên học nhiều phần mềm cùng lúc cho chắc không?</p>
+<p>Không. Học một phần mềm tới mức làm được việc rồi mới tính chuyện thứ hai. Người rải đều ba phần mềm trong năm đầu thường không dùng tốt cái nào, và thị trường tuyển người làm được việc chứ không tuyển người biết nhiều tên phần mềm.</p>
+
+<hr class="hr">
+
+<p>Nếu sau khi đọc bạn đã biết mình thuộc nhóm nào, xem trước hai hệ đào tạo ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>, trong đó ghi rõ lịch nộp bài và cách sửa bài. Còn nếu muốn tự thử trước khi quyết định, tải <a href="cam-nang.html">cẩm nang miễn phí</a> và làm hết phần bài tập trong đó. Ba tuần sau bạn sẽ tự biết mình cần một khoá học 3D Blender, hay chỉ cần thêm kỷ luật.</p>
+""",
+    },
 ]
 
 

@@ -666,7 +666,7 @@ def academy():
       <a class="lnk" href="cam-nang.html">Nhận cẩm nang →</a>
     </div>
     <p style="margin:22px 0 0;font-size:14px;color:var(--muted);">Học xong làm nghề gì? Xem <a class="lnk" href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>.</p>
-    <p style="margin:10px 0 0;font-size:14px;color:var(--muted);">Đang so nhiều nơi? Đọc cách chọn <a class="lnk" href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a> và <a class="lnk" href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> nên có những gì.</p>
+    <p style="margin:10px 0 0;font-size:14px;color:var(--muted);">Đang so nhiều nơi? Bắt đầu từ bài tổng hợp <a class="lnk" href="blog-khoa-hoc-3d-blender.html">khoá học 3D Blender</a>, rồi đọc sâu về <a class="lnk" href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>, <a class="lnk" href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> và <a class="lnk" href="blog-khoa-hoc-render.html">khoá học render</a>.</p>
   </div>
 </section>""" % (section_head("01", "LXAM Academy", "Hai hệ đào tạo", ("lo-trinh.html", "So sánh hai hệ")), cs, fq)
 
