@@ -43,6 +43,24 @@ KHU = {
             {"slug": "volvo-s90-recharge", "ten": "Volvo S90 · Recharge", "anh": []},
         ],
     },
+    "jewelry": {
+        "ten": "Jewelry Branding",
+        "slug": "jewelry",
+        "mo_ta": ("Key visual và bộ hình chiến dịch cho thương hiệu trang sức: khúc xạ đá quý, "
+                  "phản chiếu kim loại và ánh sáng macro ở cự ly rất gần."),
+        "du_an": [
+            {"slug": "nhan-kim-cuong", "ten": "Nhẫn kim cương · Key visual",
+             "khach": None, "nam": None, "vai_tro": None, "dung_de": None, "anh": []},
+            {"slug": "day-chuyen-mat-day", "ten": "Dây chuyền & mặt dây",
+             "khach": None, "nam": None, "vai_tro": None, "dung_de": None, "anh": []},
+            {"slug": "dong-ho-cao-cap", "ten": "Đồng hồ cao cấp",
+             "khach": None, "nam": None, "vai_tro": None, "dung_de": None, "anh": []},
+            {"slug": "bo-suu-tap-lookbook", "ten": "Bộ sưu tập · Lookbook 3D",
+             "khach": None, "nam": None, "vai_tro": None, "dung_de": None, "anh": []},
+            {"slug": "da-mau-che-tac", "ten": "Đá màu & chế tác",
+             "khach": None, "nam": None, "vai_tro": None, "dung_de": None, "anh": []},
+        ],
+    },
     "san-pham": {
         "ten": "Sản phẩm &amp; Kỹ thuật",
         "slug": "san-pham",

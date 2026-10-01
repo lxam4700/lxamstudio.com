@@ -2000,7 +2000,7 @@ def main():
           "du-an-automotive.html", "du-an-mercedes-g63-tvc.html", "du-an-porsche-911.html",
           "du-an-mclaren-765lt.html", "du-an-aston-martin-dbx.html", "du-an-volvo-s90.html",
           "du-an-san-pham.html", "du-an-vplas.html", "du-an-jhm-masonry-hanger.html",
-          "du-an-khoa-cua-thong-minh.html",
+          "du-an-khoa-cua-thong-minh.html", "du-an-jewelry.html", "du-an-locphuc-10-nam.html",
           "nghe-nghiep.html", "ve-chung-toi.html", "blog.html"]
     urls = [""] + P9 + P8 + ["hoc-vien.html"] + ["blog-%s.html" % p["slug"] for p in POSTS] \
            + ["blog-render-nhanh-hon-blender-cycles.html", "blog-blender-hay-3dsmax-c4d.html"]

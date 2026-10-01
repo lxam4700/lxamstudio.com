@@ -96,6 +96,28 @@ KHU = [
             ("Insta360 · Pocket Gimbal", "Hardsurface · Bài học viên Lộc", "insta360-gimbal-hoc-vien-loc.jpg", None),
         ],
     },
+    {
+        "slug": "jewelry",
+        "ten": "Jewelry Branding",
+        "tieu_de": "Dự án Jewelry Branding",
+        "desc_meta": ("Dự án Jewelry Branding của LXAM Studio: key visual và bộ hình chiến dịch cho "
+                      "thương hiệu trang sức, dựng bằng 3D để kiểm soát ánh sáng và chất liệu."),
+        "lead": ("Một thương hiệu trang sức bán bằng hình trước khi bán bằng món hàng. Khu này là phần hình đó: "
+                 "key visual, phối cảnh triển lãm và bộ hình chiến dịch dựng bằng 3D, để cả bộ giữ được một chất ánh sáng "
+                 "và một chất kim loại duy nhất, thay vì mỗi buổi chụp ra một kiểu. Trang sức bị soi ở cự ly rất gần, "
+                 "nên sai sót về khúc xạ đá hay độ bóng kim loại lộ ngay."),
+        "title_seo": "Dự án Jewelry Branding | Portfolio LXAM",
+        "og": "card-locphuc-10-nam.webp",
+        "items": [
+            ("Lộc Phúc Fine Jewelry · Triển lãm 10 năm", "Phối cảnh 3D · Duyệt trước thi công",
+             "card-locphuc-10-nam.webp", "du-an-locphuc-10-nam.html"),
+            ("Nhẫn kim cương · Key visual", "Macro · Khúc xạ &amp; caustics", None, None),
+            ("Dây chuyền &amp; mặt dây", "Studio light · Kim loại quý", None, None),
+            ("Đồng hồ cao cấp", "Hardsurface · Macro", None, None),
+            ("Bộ sưu tập · Lookbook 3D", "Chiến dịch · Đồng bộ bộ hình", None, None),
+            ("Đá màu &amp; chế tác", "Vật liệu · Cắt lớp", None, None),
+        ],
+    },
 ]
 
 PAGE_CSS = """
@@ -142,7 +164,8 @@ PAGE_CSS = """
 
 ALL = [("Event &amp; Kích hoạt", "du-an-event.html"),
        ("Automotive", "du-an-automotive.html"),
-       ("Sản phẩm &amp; Kỹ thuật", "du-an-san-pham.html")]
+       ("Sản phẩm &amp; Kỹ thuật", "du-an-san-pham.html"),
+       ("Jewelry Branding", "du-an-jewelry.html")]
 
 
 def khu_nav(cur):

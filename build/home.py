@@ -38,7 +38,8 @@ WORK = [  # (lop, tieu de, the loai, anh, link)
 ]
 KHU = [("du-an-event.html", "Event &amp; kích hoạt"),
        ("du-an-automotive.html", "Automotive"),
-       ("du-an-san-pham.html", "Sản phẩm &amp; kỹ thuật")]
+       ("du-an-san-pham.html", "Sản phẩm &amp; kỹ thuật"),
+       ("du-an-jewelry.html", "Jewelry Branding")]
 
 TVC = [  # (video, poster, tieu de, ghi nhan)
     ("tvc2.mp4", "tvc2-poster.webp", "TVC VPLAS", "LXAM Studio · Phim thương mại"),
@@ -912,6 +913,7 @@ def page(body_html, title=TITLE, desc=DESC, url=URL, faq=False, home=True):
         <a href="du-an-event.html">Dự án Event</a>
         <a href="du-an-automotive.html">Dự án Automotive</a>
         <a href="du-an-san-pham.html">Dự án sản phẩm</a>
+        <a href="du-an-jewelry.html">Dự án Jewelry Branding</a>
         <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
         <a href="blog.html">Blog</a>
         <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
