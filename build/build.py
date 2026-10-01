@@ -337,6 +337,8 @@ POSTS = [
 
 <p>Câu trả lời thành thật: tuỳ vào việc bạn có được sửa bài hay không. Tự học, phần lớn người ta mất một đến hai năm để đi hết bảy bước này, và đa số dừng ở bước ba. Có người sửa bài đều đặn, quãng đường đó rút xuống đáng kể, không phải vì bạn học nhanh hơn, mà vì bạn không mất sáu tháng đi sai đường rồi mới phát hiện.</p>
 
+<p>Nếu bạn đã đi được tới bước ba rồi đứng yên, đó đúng là lúc hình thức <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> phát huy, vì cái bạn thiếu không còn là bài giảng mà là người chẩn đoán đúng chỗ kẹt.</p>
+
 <p>Nếu bạn đang tự học và thấy mình mắc kẹt ở đâu đó trong bảy bước trên, cứ nhắn cho tôi mô tả chỗ kẹt. Tôi trả lời được thì trả lời, không thì chỉ bạn chỗ tìm. Không cần đăng ký gì cả.</p>
 """,
     },
@@ -1024,49 +1026,85 @@ POSTS = [
     },
     {
         "slug": "hoc-blender-kem-1-1",
-        "title": "Học Blender kèm một kèm một: khi nào đáng tiền, khi nào phí",
-        "desc": "Học Blender kèm riêng một kèm một đắt hơn lớp nhóm nhiều lần. Ai thật sự hợp, một buổi kèm tử tế diễn ra thế nào và cách kiểm tra người kèm trước khi trả tiền.",
+        "title": "Học kèm 1 kèm 1 Blender: khi nào đáng tiền, khi nào phí",
+        "desc": "Học kèm 1 kèm 1 Blender đắt hơn lớp nhóm nhiều lần. Ai thật sự hợp, một buổi kèm tử tế diễn ra thế nào và cách thử người kèm trước khi trả tiền.",
         "tag": "Định hướng",
         "date": "2026-09-26",
         "date_vn": "26/09/2026",
-        "read": "8 phút đọc",
+        "read": "10 phút đọc",
         "thumb": "assets/porsche-911-pit-lane-toan-canh.webp",
+        "faq": [
+            ("Học kèm 1 kèm 1 Blender giá khoảng bao nhiêu?",
+             "Chúng tôi không nêu một con số cố định vì nó phụ thuộc số buổi, thời lượng và mức người kèm. Cách đọc giá hợp lý hơn là hỏi mỗi buổi gồm bao nhiêu phút sửa bài trực tiếp, có ghi hình buổi học không và có được nhận xét giữa hai buổi không. Hai lớp cùng giá mà khác ba điểm đó thì giá trị thật khác nhau rất xa."),
+            ("Người chưa từng mở Blender có nên học kèm 1 kèm 1 luôn không?",
+             "Thường là không nên. Giai đoạn làm quen giao diện và phím tắt thì video miễn phí dạy tốt và rẻ hơn, kèm riêng sẽ trôi vào việc chỉ nút bấm. Hợp hơn là học nền bằng một khoá cho người mới hoặc lớp nhóm, rồi dùng kèm riêng khi đã có bài nộp và bắt đầu bị mắc kẹt."),
+            ("Học kèm 1 kèm 1 online có kém hơn ngồi cạnh nhau không?",
+             "Với đồ hoạ 3D thì khác biệt nhỏ, vì bài nộp là file và ảnh, gửi đi rất nhanh. Phần quan trọng là người kèm có mở được file của bạn và sửa trực tiếp trong đó hay không, cùng với việc buổi học có được ghi hình để bạn xem lại. Hình thức online còn tiện hơn ở chỗ bạn giữ lại được bản ghi."),
+            ("Cần bao nhiêu buổi kèm riêng thì thấy tiến bộ?",
+             "Ước lượng từ các nhóm học viên đã đi qua, khoảng bốn tới sáu buổi là đủ để thấy khác biệt, với điều kiện giữa hai buổi bạn có làm bài mới. Nếu sau sáu buổi mà bạn vẫn không tự chẩn đoán được lỗi của chính mình, vấn đề nằm ở cách dạy hoặc ở lượng bài bạn làm, không nằm ở số buổi."),
+            ("Kèm riêng có giúp làm portfolio 3D nhanh hơn không?",
+             "Có, và đây là chặng kèm riêng phát huy rõ nhất. Ở giai đoạn hoàn thiện portfolio, mỗi nhận xét đều đắt giá vì nó quyết định một shot được giữ hay bị bỏ. Nhưng người kèm chỉ nên chỉ ra vấn đề, không làm hộ, vì portfolio có bàn tay người khác trong đó sẽ lộ ngay ở buổi phỏng vấn."),
+        ],
         "body": """
-<p class="lead">Kèm riêng là hình thức đắt nhất tính trên mỗi giờ học. Nó xứng đáng với một số người và lãng phí với số còn lại. Phần khó là biết mình thuộc nhóm nào trước khi trả tiền.</p>
+<p class="lead">Học kèm 1 kèm 1 là hình thức đắt nhất tính trên mỗi giờ học, và nó chỉ xứng đáng với một nhóm người khá hẹp: người đã có nền, có bài nộp đều và đang mắc kẹt ở một chỗ mà tự mò không ra. Nếu bạn chưa từng mở Blender, kèm riêng gần như chắc chắn là lãng phí. Phần khó là biết mình thuộc nhóm nào trước khi trả tiền.</p>
 
-<h2>Kèm riêng thật ra mua cái gì</h2>
+<p>Bài này đưa bộ tiêu chí để bạn tự soi: kèm riêng mua cái gì, so với lớp nhóm khác ở đâu, một buổi tử tế diễn ra thế nào và làm sao thử một gia sư Blender trước khi cam kết cả khoá.</p>
+
+<h2>Học kèm 1 kèm 1 thật ra mua cái gì</h2>
 
 <p>Bạn không mua thêm kiến thức. Kiến thức trong một buổi kèm không nhiều hơn một video hướng dẫn tốt. Cái bạn mua là ba thứ khó kiếm ở chỗ khác.</p>
 
 <h3>Chẩn đoán đúng chỗ đang kẹt</h3>
-<p>Người có nghề nhìn render của bạn vài giây là chỉ ra được vấn đề nằm ở ánh sáng, ở vật liệu hay ở bố cục. Bạn tự mò chỗ này có khi mất vài tháng.</p>
+<p>Người có nghề nhìn render của bạn vài giây là chỉ ra được vấn đề nằm ở ánh sáng, ở vật liệu hay ở bố cục. Bạn tự mò chỗ này có khi mất vài tháng, và cái mất lớn nhất không phải thời gian mà là việc bạn tập được một thói quen sai rồi khó sửa.</p>
 
 <h3>Thứ tự ưu tiên</h3>
-<p>Một bài có thể sai mười chỗ. Sửa chín chỗ nhỏ không làm hình khá hơn, sửa đúng một chỗ lớn thì khác hẳn. Người kèm giúp bạn biết sửa cái nào trước.</p>
+<p>Một bài có thể sai mười chỗ. Sửa chín chỗ nhỏ không làm hình khá hơn, sửa đúng một chỗ lớn thì khác hẳn. Người kèm giúp bạn biết sửa cái nào trước, và quan trọng hơn là giải thích vì sao chỗ đó lớn hơn, để lần sau bạn tự xếp được thứ tự.</p>
 
 <h3>Phần nghề nằm ngoài phần mềm</h3>
-<p>Báo giá ra sao, nhận brief thế nào, chia file để sửa nhanh, trình bày một shot cho người duyệt hiểu ngay. Mấy thứ này không có trong giáo trình vì chúng đến từ việc đi làm.</p>
+<p>Báo giá ra sao, nhận brief thế nào, chia file để sửa nhanh, trình bày một shot cho người duyệt hiểu ngay. Mấy thứ này không có trong giáo trình vì chúng đến từ việc đi làm, và chúng thường là lý do thật khiến một người tự học mãi không chuyển được sang làm có tiền.</p>
 
 <figure>
   <img src="assets/porsche-911-pit-lane-toan-canh.webp" alt="Cảnh xe Porsche 911 trong pit lane dựng 3D bằng Blender, ánh sáng chiều và mặt đường ướt" loading="lazy" width="1800" height="1013">
   <figcaption><strong>Một cảnh automotive dựng bằng Blender.</strong> Người mới thường nghĩ khó ở model xe. Thực tế phần quyết định là hướng đèn, phản chiếu trên thân và độ ướt của mặt đường, và đó là những thứ dễ chỉ nhất khi ngồi cạnh nhau.</figcaption>
 </figure>
 
-<h2>Ai hợp với kèm riêng</h2>
+<h2>Học kèm 1 kèm 1 so với lớp nhóm và tự học</h2>
+
+<p>Ba hình thức này không thay thế nhau, chúng giải quyết ba việc khác nhau. Bảng dưới đối chiếu theo những tiêu chí mà người học thường quên hỏi.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th></th><th>Tự học</th><th>Lớp nhóm</th><th>Kèm 1 kèm 1</th></tr></thead>
+<tbody>
+<tr><td>Chi phí mỗi giờ</td><td>Gần như không</td><td>Thấp</td><td>Cao nhất</td></tr>
+<tr><td>Nhịp sửa bài</td><td>Không có</td><td>Theo lịch lớp, chia cho nhiều người</td><td>Toàn bộ buổi dành cho bài của bạn</td></tr>
+<tr><td>Linh hoạt giờ học</td><td>Hoàn toàn</td><td>Lịch cố định</td><td>Thoả thuận theo tuần</td></tr>
+<tr><td>Nội dung</td><td>Bạn tự chọn, dễ chọn sai</td><td>Giáo trình chung</td><td>Cắt theo mục tiêu của bạn</td></tr>
+<tr><td>Rủi ro lớn nhất</td><td>Đi sai hướng nhiều tháng mà không biết</td><td>Bị bỏ lại khi lớp đi nhanh hơn mình</td><td>Trả giá cao cho giai đoạn chưa cần</td></tr>
+<tr><td>Hợp nhất với</td><td>Giai đoạn làm quen công cụ</td><td>Giai đoạn xây nền có hệ thống</td><td>Giai đoạn phá vỡ bế tắc và hoàn thiện portfolio</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Đọc bảng này theo chặng sẽ đúng hơn là theo giá. Nếu bạn đang ở chặng đầu, một <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> có lịch nộp bài sẽ cho bạn nhiều hơn với cùng số tiền. Nếu bạn muốn nhìn toàn bộ các loại khoá trước khi chọn, bài <a href="blog-khoa-hoc-3d-blender.html">khoá học 3D Blender</a> tập hợp đủ các hướng kèm tiêu chí so sánh.</p>
+
+<h2>Ai hợp với học kèm 1 kèm 1</h2>
 
 <ul>
 <li><strong style="color:#fff;">Người đã tự học vài tháng và đang đứng yên.</strong> Có nền, có bài nộp, chỉ thiếu người soi.</li>
 <li><strong style="color:#fff;">Người đi làm, giờ giấc thất thường.</strong> Lớp nhóm có lịch cố định thường bị bỏ giữa chừng vì công việc.</li>
 <li><strong style="color:#fff;">Người có đích cụ thể.</strong> Cần portfolio automotive để ứng tuyển, cần làm được một dạng shot cho công ty đang làm.</li>
 <li><strong style="color:#fff;">Người đã đi làm ngành khác muốn chuyển sang.</strong> Cần lộ trình rút gọn, bỏ hết phần không phục vụ mục tiêu.</li>
+<li><strong style="color:#fff;">Người cần sửa một kỹ năng hẹp.</strong> Dựng hình thì ổn nhưng ánh sáng mãi không lên, hoặc ngược lại. Trường hợp này kèm riêng vài buổi rẻ hơn học lại cả khoá.</li>
 </ul>
 
 <h2>Ai chưa nên</h2>
 
 <ul>
-<li><strong style="color:#fff;">Người chưa từng mở Blender.</strong> Buổi kèm sẽ trôi vào việc chỉ nút bấm, phần đó video miễn phí làm tốt hơn và rẻ hơn. Giai đoạn này hợp với một <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> có lịch nộp bài.</li>
+<li><strong style="color:#fff;">Người chưa từng mở Blender.</strong> Buổi kèm sẽ trôi vào việc chỉ nút bấm, phần đó video miễn phí làm tốt hơn và rẻ hơn.</li>
 <li><strong style="color:#fff;">Người không có thời gian làm bài giữa các buổi.</strong> Kèm riêng chỉ có tác dụng khi bạn mang bài mới tới mỗi lần gặp.</li>
 <li><strong style="color:#fff;">Người kỳ vọng người kèm làm hộ.</strong> Sửa hộ thì hình đẹp lên, còn bạn thì không.</li>
+<li><strong style="color:#fff;">Người chưa biết mình muốn làm dòng hình nào.</strong> Kèm riêng là dao mổ, không phải bản đồ. Chưa có đích thì nên đi qua một lộ trình chung trước, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> để chọn hướng.</li>
 </ul>
 
 <h2>Một buổi kèm tử tế diễn ra thế nào</h2>
@@ -1081,19 +1119,61 @@ POSTS = [
 
 <blockquote><p>Nếu buổi kèm nào cũng bắt đầu bằng việc thầy mở slide, bạn đang trả giá lớp riêng để nghe một bài giảng chung.</p></blockquote>
 
-<h2>Cách kiểm tra người kèm trước khi bắt đầu</h2>
+<h2>Kèm 1 kèm 1 làm portfolio 3D: dùng đúng chặng</h2>
 
-<p>Xin một buổi thử, mang theo một bài bạn làm và đang không ưng. Trong buổi đó hãy chú ý ba điều: người kèm có chỉ ra được vấn đề mà bạn chưa tự nhìn thấy không, giải thích có dựa trên nguyên lý hay chỉ nói theo cảm tính, và họ có dám nói thẳng bài bạn chưa được không. Người chỉ khen là người dễ chịu, không phải người giúp bạn khá lên.</p>
+<p>Đây là chặng kèm riêng đáng tiền nhất, vì mỗi nhận xét ở đây quyết định một shot được giữ hay bị bỏ. Một portfolio sáu shot đều tay thắng một portfolio mười hai shot lệch chất lượng, và người ngoài nhìn ra chỗ lệch nhanh hơn bạn rất nhiều.</p>
+
+<p>Việc của người kèm ở chặng này gồm bốn phần: bỏ những shot kéo mặt bằng xuống, chỉ ra shot nào còn cứu được và cứu bằng cách nào, xếp thứ tự để shot mạnh nhất đứng đầu, và soát phần kỹ thuật như độ phân giải, tỷ lệ khung và cách xuất file cho từng kênh. Phần ánh sáng chiếm nhiều thời gian nhất, nên đọc trước <a href="blog-khoa-hoc-render.html">khoá học render</a> để biết những gì sẽ bị soi.</p>
+
+<p>Một giới hạn cần nói thẳng: người kèm không được làm hộ. Portfolio có bàn tay người khác trong đó sẽ lộ ngay khi bạn phải mở file ra giải thích ở buổi phỏng vấn hoặc khi khách yêu cầu sửa.</p>
+
+<h2>Cách thử một gia sư Blender trước khi trả tiền</h2>
+
+<p>Xin một buổi thử, mang theo một bài bạn làm và đang không ưng. Đừng hỏi họ dạy gì, hãy đưa bài và xem họ phản ứng thế nào. Danh sách dưới là những thứ cần kiểm trong đúng buổi đó.</p>
+
+<ul>
+<li><strong style="color:#fff;">Họ chỉ ra được vấn đề bạn chưa tự thấy.</strong> Nếu họ chỉ nhắc lại những lỗi bạn đã biết, buổi học sẽ không đưa bạn đi đâu.</li>
+<li><strong style="color:#fff;">Giải thích dựa trên nguyên lý, không phải cảm tính.</strong> Nghe được câu vì sao, không chỉ câu hãy kéo thông số này lên.</li>
+<li><strong style="color:#fff;">Dám nói bài bạn chưa được.</strong> Người chỉ khen là người dễ chịu, không phải người giúp bạn khá lên.</li>
+<li><strong style="color:#fff;">Có mở file của bạn và sửa trực tiếp.</strong> Người chỉ nhìn ảnh rồi mô tả bằng lời thường không nắm được phần quy trình.</li>
+<li><strong style="color:#fff;">Cho xem bài của học viên cũ, không chỉ bài của chính họ.</strong> Người làm giỏi và người dạy giỏi là hai việc khác nhau.</li>
+<li><strong style="color:#fff;">Nói rõ số buổi, thời lượng, có ghi hình hay không, có nhận xét giữa hai buổi hay không.</strong> Bốn điểm này quyết định giá trị thật của cùng một mức học phí.</li>
+</ul>
 
 <h2>Chi phí và cách tính cho hợp lý</h2>
 
 <p>Đừng so kèm riêng với lớp nhóm theo giá mỗi giờ, vì hai thứ giải quyết hai việc khác nhau. Cách tính đúng hơn là hỏi: nếu tự mò, bạn mất bao nhiêu tháng để nhận ra cùng một điều, và mấy tháng đó đáng bao nhiêu với bạn. Với người đang cần portfolio để đổi việc, vài tháng rút ngắn thường đáng hơn khoản học phí.</p>
 
-<p>Một cách tiết kiệm mà vẫn hiệu quả là học nền bằng tài liệu miễn phí hoặc lớp nhóm, rồi dùng kèm riêng cho giai đoạn hoàn thiện portfolio, lúc mỗi nhận xét đều đắt giá. Nếu bạn đang so lớp nhóm với kèm riêng, bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a> có bảng đối chiếu bốn loại khoá và mức học phí thường gặp.</p>
+<p>Một cách tiết kiệm mà vẫn hiệu quả là học nền bằng tài liệu miễn phí hoặc lớp nhóm, rồi dùng kèm riêng cho giai đoạn hoàn thiện portfolio, lúc mỗi nhận xét đều đắt giá. Nếu bạn đang so lớp nhóm với kèm riêng theo mức tiền, bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a> có bảng đối chiếu bốn loại khoá và các khoản học phí thường gặp.</p>
+
+<h2>Mặt bất lợi của học kèm 1 kèm 1</h2>
+
+<p>Phần này ít ai nói nên nói ở đây. Thứ nhất, kèm riêng không có bạn học, mà nhìn bài của người cùng trình độ là một kênh học rất mạnh, nhất là để biết mình đang ở đâu. Thứ hai, nó dễ tạo thói quen dựa dẫm: có người soi sẵn thì bạn bớt tập kỹ năng tự chẩn đoán, và kỹ năng đó mới là thứ theo bạn đi làm.</p>
+
+<p>Thứ ba, chất lượng phụ thuộc gần như hoàn toàn vào một người: chọn nhầm thì mất cả tiền và cả hướng. Thứ tư, chi phí khiến phần lớn người học chỉ đi được vài chặng ngắn, và không có lộ trình rõ thì mấy chặng đó rời rạc.</p>
+
+<p>Cách giảm bốn nhược điểm này khá đơn giản: dùng kèm riêng theo từng chặng có mục tiêu đóng, giữa các chặng tự làm bài một mình để tập chẩn đoán, và vẫn tham gia một nhóm nào đó để có người cùng trình độ mà đối chiếu. Nếu bạn còn phân vân ngay ở bước đầu, bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học hay học kèm</a> đi sâu hơn vào lựa chọn này.</p>
+
+<h2>Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Học kèm 1 kèm 1 Blender giá khoảng bao nhiêu?</p>
+<p>Chúng tôi không nêu một con số cố định vì nó phụ thuộc số buổi, thời lượng và mức người kèm. Cách đọc giá hợp lý hơn là hỏi mỗi buổi gồm bao nhiêu phút sửa bài trực tiếp, có ghi hình buổi học không và có được nhận xét giữa hai buổi không. Hai lớp cùng giá mà khác ba điểm đó thì giá trị thật khác nhau rất xa.</p>
+
+<p class="faq-q">Người chưa từng mở Blender có nên học kèm 1 kèm 1 luôn không?</p>
+<p>Thường là không nên. Giai đoạn làm quen giao diện và phím tắt thì video miễn phí dạy tốt và rẻ hơn. Hợp hơn là học nền bằng một khoá cho người mới hoặc lớp nhóm, rồi dùng kèm riêng khi đã có bài nộp và bắt đầu bị mắc kẹt.</p>
+
+<p class="faq-q">Học kèm 1 kèm 1 online có kém hơn ngồi cạnh nhau không?</p>
+<p>Với đồ hoạ 3D thì khác biệt nhỏ, vì bài nộp là file và ảnh, gửi đi rất nhanh. Phần quan trọng là người kèm có mở được file của bạn và sửa trực tiếp trong đó hay không, cùng với việc buổi học có được ghi hình để bạn xem lại.</p>
+
+<p class="faq-q">Cần bao nhiêu buổi kèm riêng thì thấy tiến bộ?</p>
+<p>Ước lượng khoảng bốn tới sáu buổi là đủ để thấy khác biệt, với điều kiện giữa hai buổi bạn có làm bài mới. Nếu sau sáu buổi mà bạn vẫn không tự chẩn đoán được lỗi của chính mình, vấn đề nằm ở cách dạy hoặc ở lượng bài bạn làm, không nằm ở số buổi.</p>
+
+<p class="faq-q">Kèm riêng có giúp làm portfolio 3D nhanh hơn không?</p>
+<p>Có, và đây là chặng kèm riêng phát huy rõ nhất. Nhưng người kèm chỉ nên chỉ ra vấn đề, không làm hộ, vì portfolio có bàn tay người khác trong đó sẽ lộ ngay ở buổi phỏng vấn. Muốn thấy mức hoàn thiện mà khách thường yêu cầu, xem vài shot thật ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>.</p>
 
 <hr class="hr">
 
-<p>Bên mình nhận kèm riêng theo từng chặng, nội dung tuỳ mục tiêu của bạn. Xem trước hai hệ đào tạo ở trang <a href="khoa-hoc.html">khoá học</a>, hoặc đọc bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học hay học kèm</a> nếu bạn còn phân vân ở bước đầu.</p>
+<p>Bên mình nhận kèm riêng theo từng chặng, nội dung tuỳ mục tiêu của bạn. Xem trước hai hệ đào tạo ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>. Còn nếu muốn tự thử trước khi quyết định, tải <a href="cam-nang.html">cẩm nang miễn phí</a>, chọn một bài cũ của bạn và tự soi nó theo danh sách sáu điểm phía trên, bạn sẽ biết mình cần người kèm ở chặng nào.</p>
 """,
     },
     {
@@ -1168,6 +1248,8 @@ POSTS = [
 <p>Sau ba tháng, bạn nên nhìn lại bài tháng đầu và thấy nó xấu. Đó là dấu hiệu tốt nhất, vì mắt bạn đã đi trước tay. Ngược lại, nếu bài cũ vẫn thấy ổn, nhiều khả năng bạn đang xem nhiều mà làm ít.</p>
 
 <p>Dấu hiệu tốt thứ hai là bạn bắt đầu nhìn ánh sáng ngoài đời theo kiểu khác: để ý nguồn sáng trong quán cà phê, bóng đổ trên vỉa hè. Nghề này bắt đầu từ chỗ đó.</p>
+
+<p>Đến lúc bạn có vài bài nộp mà vẫn không tự biết bài nào yếu ở đâu, hình thức <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> là bước hợp lý tiếp theo, vì giai đoạn này cái thiếu là người chẩn đoán chứ không phải thêm bài giảng.</p>
 
 <hr class="hr">
 
