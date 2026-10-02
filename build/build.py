@@ -1385,7 +1385,7 @@ POSTS = [
 <p>Không sao. Mảng 3D sản phẩm, hard-surface và kiến trúc không đòi hỏi vẽ tay. Nếu tò mò công việc thật trông thế nào, xem qua vài shot bên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> để hình dung đích đến.</p>
 
 <p class="faq-q">Học xong khoá cho người mới thì bước tiếp theo là gì?</p>
-<p>Làm trọn một dự án cá nhân từ đầu tới cuối, rồi mới tính chuyện chuyên sâu theo hướng sản phẩm, automotive hay sự kiện. Chọn hướng quá sớm khi chưa hoàn thành cái gì trọn vẹn là lỗi phổ biến nhất ở giai đoạn này.</p>
+<p>Làm trọn một dự án cá nhân từ đầu tới cuối, rồi mới tính chuyện chuyên sâu theo hướng sản phẩm, automotive hay sự kiện. Chọn hướng quá sớm khi chưa hoàn thành cái gì trọn vẹn là lỗi phổ biến nhất ở giai đoạn này. Nếu phần bạn còn yếu là dựng hình chứ không phải ánh sáng, bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> mô tả ba giai đoạn nên đi qua theo đúng thứ tự.</p>
 
 <hr class="hr">
 
@@ -1496,7 +1496,7 @@ POSTS = [
 <li><strong style="color:#fff;">Hỏi khoá dạy theo mảng nào.</strong> Sản phẩm, kiến trúc và automotive đòi hỏi cách sáng khác nhau, khoá dạy chung chung thường không đi sâu được mảng nào.</li>
 </ol>
 
-<p>Nếu bạn lo máy mình không theo nổi phần luyện render, đọc <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> trước, trong đó có mốc cụ thể cho biết khi nào nâng cấp mới thật sự có nghĩa.</p>
+<p>Nếu bạn lo máy mình không theo nổi phần luyện render, đọc <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> trước, trong đó có mốc cụ thể cho biết khi nào nâng cấp mới thật sự có nghĩa. Còn nếu cảnh của bạn trông sai ngay từ khối chứ không phải từ ánh sáng, nên quay lại phần dựng hình trước đã, bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> chỉ ra ba giai đoạn và chỗ người học hay kẹt lâu nhất.</p>
 
 <h2>Năm dấu hiệu một khoá học render chỉ dạy nút bấm</h2>
 
@@ -1614,6 +1614,9 @@ POSTS = [
 <h3>Nếu bạn dựng được hình nhưng ảnh chưa đẹp</h3>
 <p>Đọc <a href="blog-khoa-hoc-render.html">khoá học render</a>. Bài đó phân tích một khoá render phải có bốn phần nào, nên học Cycles hay Eevee trước, và năm dấu hiệu nhận ra một khoá chỉ dạy thao tác chứ không dạy cách chẩn đoán. Đây là giai đoạn nhiều người kẹt lâu nhất mà lại hay chọn sai khoá nhất.</p>
 
+<h3>Nếu bạn muốn chắc phần dựng hình trước đã</h3>
+<p>Đọc <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a>. Bài đó nêu bốn phần một khoá dựng hình phải có, thứ tự ba giai đoạn nên đi qua, và sáu dấu hiệu nhận ra một khoá dựng hình sản phẩm làm được việc. Phù hợp với người thấy mình bấm được nút nhưng gặp món đồ mới là tắc.</p>
+
 <h3>Nếu bạn đang so nhiều nơi và sợ mất tiền oan</h3>
 <p>Đọc <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>. Bài đó chia thị trường thành bốn loại, dịch các cách nói về học phí sang nghĩa thật, và đưa bảy câu hỏi mà một nơi làm ăn tử tế sẽ trả lời được ngay.</p>
 
@@ -1660,6 +1663,126 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu sau khi đọc bạn đã biết mình thuộc nhóm nào, xem trước hai hệ đào tạo ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>, trong đó ghi rõ lịch nộp bài và cách sửa bài. Còn nếu muốn tự thử trước khi quyết định, tải <a href="cam-nang.html">cẩm nang miễn phí</a> và làm hết phần bài tập trong đó. Ba tuần sau bạn sẽ tự biết mình cần một khoá học 3D Blender, hay chỉ cần thêm kỷ luật.</p>
+""",
+    },
+    {
+        "slug": "khoa-hoc-modeling-3d",
+        "title": "Khoá học modeling 3D: học gì, theo thứ tự nào",
+        "desc": "Khoá học modeling 3D nên dạy gì, học theo thứ tự nào, và sáu dấu hiệu nhận ra một khoá dựng hình sản phẩm làm được việc thay vì chỉ dạy nút bấm.",
+        "tag": "Định hướng",
+        "date": "2026-10-02",
+        "date_vn": "02/10/2026",
+        "read": "9 phút đọc",
+        "thumb": "assets/vplas-ban-ve-kich-thuoc-3d.jpg",
+        "faq": [
+            ("Khoá học modeling 3D có cần biết vẽ tay không?",
+             "Không, với mảng sản phẩm và hard surface. Thứ cần là khả năng nhìn ra khối và đọc tỉ lệ, hai thứ này luyện bằng cách đo và dựng chứ không phải bằng bút chì. Vẽ tay chỉ thành lợi thế rõ khi bạn làm nhân vật hoặc tạo hình sáng tạo."),
+            ("Máy cấu hình phổ thông có học modeling được không?",
+             "Được, và đây là giai đoạn dễ chịu nhất với máy yếu. Dựng khối và chỉnh lưới gần như không dùng tới card đồ hoạ mạnh. Máy chỉ thành rào cản ở bước render cảnh nặng, lúc đó bạn đã đủ hiểu để biết nên nâng cấp cái gì."),
+            ("Học modeling bao lâu thì dựng được món đồ phức tạp?",
+             "Ước lượng từ các nhóm học viên đã đi qua, khoảng hai tới bốn tháng làm đều để dựng gọn một món đồ gia dụng nhiều chi tiết. Con số này phụ thuộc số giờ thật sự ngồi dựng mỗi tuần nhiều hơn phụ thuộc khoá học."),
+            ("Nên học modeling trước hay học render trước?",
+             "Modeling trước, vì không có hình thì không có gì để chiếu sáng. Nhưng đừng đợi dựng thật giỏi mới học render. Khi bạn dựng xong được ba bốn món đồ đơn giản mà tỉ lệ đúng, đó là lúc hợp lý để bắt đầu học ánh sáng song song."),
+        ],
+        "body": """
+<p class="lead">Một khoá học modeling 3D làm được việc dạy bạn thứ tự dựng hình trước khi dạy nút bấm: đọc khối lớn của vật thật, dựng khối đó cho đúng tỉ lệ, rồi mới cắt chi tiết và chỉ chia nhỏ lưới ở chỗ bắt buộc. Khoá nào mở đầu bằng danh sách công cụ, bạn sẽ thuộc thao tác mà vẫn đứng hình khi gặp một món đồ chưa ai dựng mẫu sẵn.</p>
+
+<p>Bài này viết từ chỗ ngồi dựng hình sản phẩm cho khách và sửa bài cho người học mỗi tuần. Không có tên nơi nào tốt nhất, chỉ có nội dung một khoá dựng hình nên có, thứ tự học hợp lý, và những chỗ các khoá hay cắt bớt vì khó quay thành video đẹp.</p>
+
+<h2>Khoá học modeling 3D thật ra dạy cái gì</h2>
+
+<p>Modeling là việc biến một vật có thật, hoặc một bản vẽ, thành khối ba chiều có tỉ lệ đúng và bề mặt sạch. Nghe đơn giản nhưng phần lớn người mới hiểu sai trọng tâm: họ nghĩ mình đang học phần mềm, trong khi thứ phải học là cách nhìn.</p>
+
+<p>Trước khi chạm chuột, người dựng hình giỏi đã tách được món đồ trước mặt thành bốn tới bảy khối cơ bản, biết khối nào là gốc và khối nào chỉ là chi tiết gắn thêm. Kỹ năng đó không nằm trong bất kỳ phím tắt nào, và nó là thứ phân biệt người dựng được mọi món đồ với người chỉ làm lại được bài giảng.</p>
+
+<p>Nội dung tối thiểu của một khoá dựng hình nghiêm túc gồm bốn phần: đọc hình và chia khối, dựng khối chuẩn tỉ lệ, kiểm soát lưới và dòng cạnh, và dọn file để giao cho người khác dùng tiếp. Phần thứ tư hay bị bỏ, và nó là phần khiến bài của bạn bị trả lại khi đi làm thật.</p>
+
+<h2>Học modeling từ đâu cho đỡ mất thời gian</h2>
+
+<p>Thứ tự dưới đây là thứ tự mình thấy ít gây tắc nhất. Nó không phải thứ tự duy nhất đúng, nhưng nó tránh được cái bẫy phổ biến nhất là nhảy vào chi tiết khi khối còn sai.</p>
+
+<h3>Giai đoạn một, dựng khối và tỉ lệ</h3>
+<p>Hai tới ba tuần đầu nên chỉ làm việc với khối hộp, khối trụ và vài phép cắt cơ bản. Đề bài tốt ở giai đoạn này là những món đồ bạn cầm được trong tay: hộp đựng, cái cốc, remote điều hoà, ổ cắm. Mục tiêu không phải đẹp, mà là tỉ lệ đo được và đúng.</p>
+
+<p>Nếu bạn đang bắt đầu từ con số không và chưa chắc nên học gì trước, bài <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> mô tả tám tuần đầu tiên nên dạy gì và tuần nào nộp bài gì, đọc trước sẽ đỡ chọn nhầm lớp.</p>
+
+<h3>Giai đoạn hai, dòng cạnh và bề mặt sạch</h3>
+<p>Đây là chỗ nhiều người kẹt lâu nhất. Một khối trông ổn trong chế độ xem nhanh có thể vỡ hoàn toàn khi bật làm mịn, vì các cạnh chạy sai hướng. Giai đoạn này phải học cách đặt cạnh đỡ, xử lý giao tuyến giữa hai khối, và chấp nhận dựng lại từ đầu khi lưới đã rối quá mức cứu chữa.</p>
+
+<h3>Giai đoạn ba, chi tiết và quy trình nhanh</h3>
+<p>Khi khối và lưới đã chắc, lúc đó mới nói chuyện công cụ hỗ trợ. Các bộ add-on cho hard surface tiết kiệm được nhiều giờ, nhưng chúng khuếch đại cả cái đúng lẫn cái sai. Mình viết riêng về chuyện chọn và dùng chúng trong bài <a href="blog-add-on-hard-surface-blender.html">add-on hard surface cho Blender</a>, kèm cả mặt trái của việc lệ thuộc quá sớm.</p>
+
+<figure>
+  <img src="assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp" alt="Hình tách rời các linh kiện của ổ khoá cửa thông minh dựng bằng Blender, từng chi tiết bung ra theo trục thẳng đứng trên nền tối" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một hình tách rời linh kiện từ dự án khoá cửa thông minh.</strong> Kiểu hình này chỉ làm được khi từng bộ phận được dựng rời và đặt gốc toạ độ đúng ngay từ đầu. Dựng dính liền một khối thì tới bước này phải làm lại toàn bộ, và đó là lý do phần dọn file nên được dạy từ sớm chứ không để cuối khoá.</figcaption>
+</figure>
+
+<h2>Bốn kiểu khoá học modeling 3D trên thị trường</h2>
+
+<p>Chúng khác nhau chủ yếu ở chỗ bài của bạn được nhìn kỹ bao nhiêu lần, không phải ở số buổi.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Kiểu</th><th>Mạnh ở</th><th>Yếu ở</th></tr></thead>
+<tbody>
+<tr><td>Video quay sẵn theo bài mẫu</td><td>Rẻ, học lại được nhiều lần</td><td>Làm theo thì ra, đổi đề bài là tắc</td></tr>
+<tr><td>Lớp nhóm có bài nộp hàng tuần</td><td>Có nhịp, thấy bài người khác để so</td><td>Lớp đông thì lưới của bạn không ai soi kỹ</td></tr>
+<tr><td>Kèm riêng theo dự án của bạn</td><td>Sửa đúng lỗi của bạn, đi rất nhanh</td><td>Chi phí cao, phụ thuộc người kèm</td></tr>
+<tr><td>Khoá chuyên dựng hình sản phẩm</td><td>Sát việc thật, có chuẩn giao file</td><td>Vào khi chưa vững khối thì đuối</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Người đi làm trái ngành, mỗi tuần được vài tiếng, thường hợp kiểu thứ ba hơn cả, vì mỗi buổi đi thẳng vào bài đang làm dở. Cách thức và những trường hợp không nên chọn hình thức này, mình nói kỹ trong bài <a href="blog-hoc-blender-kem-1-1.html">học Blender kèm một kèm một</a>.</p>
+
+<blockquote><p>Dựng hình không khó vì phần mềm phức tạp. Nó khó vì bạn phải quyết định bỏ bớt cái gì. Một khoá học modeling 3D tốt dạy bạn cách quyết định đó, chứ không dạy bạn làm cho đủ mọi chi tiết.</p></blockquote>
+
+<h2>Dấu hiệu một khoá học dựng hình sản phẩm làm được việc</h2>
+
+<p>Danh sách này dùng để soi trước khi đóng tiền. Không cần đủ hết, nhưng thiếu quá ba mục thì nên cân nhắc lại.</p>
+
+<ul>
+<li><strong style="color:#fff;">Có bài dựng từ ảnh tham chiếu thật, không chỉ từ bản vẽ sạch.</strong> Việc thật hiếm khi có bản vẽ kỹ thuật, phần lớn chỉ có vài tấm ảnh chụp lệch góc.</li>
+<li><strong style="color:#fff;">Có dạy đo và khớp tỉ lệ theo đơn vị thật.</strong> Hình sai kích thước thì mọi thứ phía sau đều sai, kể cả ánh sáng.</li>
+<li><strong style="color:#fff;">Có buổi riêng về dòng cạnh và làm mịn.</strong> Nếu không có, khoá đó chỉ dạy tới mức nhìn xa thì ổn.</li>
+<li><strong style="color:#fff;">Có chuẩn đặt tên, gom nhóm và đặt gốc toạ độ.</strong> Đây là phần khiến file của bạn dùng được cho người khác.</li>
+<li><strong style="color:#fff;">Bài được sửa nhiều vòng trên cùng một file.</strong> Nhận xét một lần rồi chuyển bài mới là cách học chậm nhất.</li>
+<li><strong style="color:#fff;">Người sửa bài có hình thương mại để bạn xem.</strong> Không phải để khoe, mà để bạn biết chuẩn họ đang nhắm tới là gì.</li>
+</ul>
+
+<p>Mục cuối đáng được nhấn thêm. Bạn có quyền xem sản phẩm của nơi dạy trước khi học, giống như xem vài shot bên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> để biết mức hoàn thiện mà khách hàng thường yêu cầu, rồi tự đối chiếu với bài mẫu trong khoá.</p>
+
+<h2>Modeling xong rồi thì sao</h2>
+
+<p>Dựng hình chỉ là chặng đầu. Rất nhiều người dựng khá nhưng ảnh xuất ra vẫn nhìn rẻ, và họ tưởng mình cần học dựng thêm. Thực ra vấn đề đã chuyển sang ánh sáng, vật liệu và cách xử lý ảnh cuối.</p>
+
+<p>Nếu bạn đang ở đúng chỗ đó, học thêm modeling là phí thời gian. Bài <a href="blog-khoa-hoc-render.html">khoá học render</a> phân tích bốn phần một khoá render phải có và năm dấu hiệu nhận ra khoá chỉ dạy thao tác. Còn nếu bạn muốn nhìn toàn cảnh các loại khoá trước khi chọn, bài tổng hợp <a href="blog-khoa-hoc-3d-blender.html">khoá học 3D Blender</a> chia thị trường thành bốn nhóm và chỉ ra nhóm nào hợp với tình trạng nào.</p>
+
+<h2>Những thứ khoá học modeling 3D không làm thay bạn</h2>
+
+<p>Khoá học rút ngắn thời gian mò mẫm, không rút ngắn thời gian luyện tay. Số giờ ngồi dựng vẫn phải đủ. Một người học khoá tốt mà mỗi tuần chỉ mở máy một buổi sẽ đi chậm hơn người tự học nhưng làm đều.</p>
+
+<p>Khoá học cũng không tạo portfolio cho bạn. Bài trong khoá là bài tập, người tuyển dụng nhận ra ngay vì ai học cùng khoá cũng nộp món đồ đó. Bộ hình đi xin việc cần vài món bạn tự chọn, tự đo, tự dựng trọn, kể cả phần chán như dọn lưới và xuất nhiều tỉ lệ khung.</p>
+
+<p>Và khoá học không chọn hướng hộ bạn. Dựng hình sản phẩm, kiến trúc, automotive hay sự kiện đòi hỏi những thói quen khác nhau. Nếu chưa rõ mình hợp hướng nào, <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> mô tả từng nhánh và các mốc kiểm tra để bạn tự đo tiến độ.</p>
+
+<h2>Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Khoá học modeling 3D có cần biết vẽ tay không?</p>
+<p>Không, với mảng sản phẩm và hard surface. Thứ cần là khả năng nhìn ra khối và đọc tỉ lệ, hai thứ này luyện bằng cách đo và dựng chứ không phải bằng bút chì. Vẽ tay chỉ thành lợi thế rõ khi bạn làm nhân vật hoặc tạo hình sáng tạo.</p>
+
+<p class="faq-q">Máy cấu hình phổ thông có học modeling được không?</p>
+<p>Được, và đây là giai đoạn dễ chịu nhất với máy yếu. Dựng khối và chỉnh lưới gần như không dùng tới card đồ hoạ mạnh. Máy chỉ thành rào cản ở bước render cảnh nặng, lúc đó bạn đã đủ hiểu để biết nên nâng cấp cái gì, chi tiết trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<p class="faq-q">Học modeling bao lâu thì dựng được món đồ phức tạp?</p>
+<p>Ước lượng từ các nhóm học viên đã đi qua, khoảng hai tới bốn tháng làm đều để dựng gọn một món đồ gia dụng nhiều chi tiết. Con số này phụ thuộc số giờ thật sự ngồi dựng mỗi tuần nhiều hơn phụ thuộc khoá học.</p>
+
+<p class="faq-q">Nên học modeling trước hay học render trước?</p>
+<p>Modeling trước, vì không có hình thì không có gì để chiếu sáng. Nhưng đừng đợi dựng thật giỏi mới học render. Khi bạn dựng xong được ba bốn món đồ đơn giản mà tỉ lệ đúng, đó là lúc hợp lý để bắt đầu học ánh sáng song song.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đã xác định được mình đang ở giai đoạn nào trong ba giai đoạn phía trên, xem trước hai hệ đào tạo ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>, trong đó ghi rõ bài nộp từng tuần và cách sửa bài. Còn nếu muốn tự kiểm tra trước khi quyết định, tải <a href="cam-nang.html">cẩm nang miễn phí</a> và dựng hết phần bài tập trong đó. Làm xong bạn sẽ tự biết mình cần một khoá học modeling 3D, hay chỉ cần ngồi vào bàn đều hơn.</p>
 """,
     },
 ]
