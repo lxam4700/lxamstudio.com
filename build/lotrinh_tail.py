@@ -562,15 +562,15 @@ JSONLD_HUB = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
 OUT = [
     (PAGES["hub"],
      "Lộ trình học — LXAM Studio",
-     "Hai hệ đào tạo riêng tại LXAM Academy: 3D Automotive (Blender tới TVC ô tô) và 3D × A.I cho người cần AI trong công việc hình ảnh.",
+     "Hai hệ đào tạo riêng tại LXAM Academy: 3D Automotive đi từ Blender tới TVC ô tô, và 3D × A.I cho người cần AI trong công việc hình ảnh. Kèm học phí từng hệ.",
      JSONLD_HUB, "lo-trinh-automotive-masterclass.jpg", BODY_HUB, "hub"),
     (PAGES["auto"],
      "Hệ 3D Automotive — Học phí & lộ trình | LXAM",
-     "Lộ trình Blender từ con số 0 tới TVC ô tô hoàn chỉnh. Nội dung từng tháng, ba cách học và học phí từ 2,5tr.",
+     "Lộ trình 3D Automotive đi từ Blender con số 0 tới một TVC ô tô hoàn chỉnh: nội dung từng tháng, ba cách học, số vòng sửa bài và học phí của từng hình thức.",
      JSONLD_AUTO, "lo-trinh-automotive-masterclass.jpg", BODY_AUTO, "auto"),
     (PAGES["ai"],
      "Hệ 3D × A.I — Học phí & lộ trình | LXAM",
-     "3 tháng 3D nền tảng cộng 1 tháng A.I Advance: prompt, ánh sáng với AI, workflow 3D × AI. Học phí từ 2,5tr.",
+     "Lộ trình 3D × A.I: 3 tháng 3D nền tảng cộng 1 tháng A.I Advance với prompt, ánh sáng cùng AI và workflow kết hợp 3D với AI. Nội dung từng tháng và học phí.",
      JSONLD_AI, "lo-trinh-ai-advance.jpg", BODY_AI, "ai"),
 ]
 

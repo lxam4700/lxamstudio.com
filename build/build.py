@@ -66,7 +66,7 @@ def nav(active):
     )
     return f"""<nav class="lxnav">
   <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
-    <img src="assets/2792c6e0.png" alt="LXAM" class="lxlogo-icon">
+    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon" width="256" height="256" decoding="async">
     <div class="lxwordmark">
       <div class="wm">LXAM</div>
       <div class="wm-sub">3D ART STUDIO</div>
@@ -89,7 +89,7 @@ FOOTER = f"""<footer class="lxfooter">
   <div class="lxfoot">
     <div>
       <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
-        <img src="assets/2792c6e0.png" alt="LXAM" style="width:40px;height:40px;">
+        <img src="assets/logo-lxam.png" alt="LXAM" width="40" height="40" loading="lazy" decoding="async" style="width:40px;height:40px;">
         <div class="lxwordmark">
           <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
           <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
@@ -288,8 +288,8 @@ ABOUT_BODY = """
 POSTS = [
     {
         "slug": "lo-trinh-tu-hoc-blender",
-        "title": "Lộ trình tự học Blender: 7 kỹ năng, và thứ tự bạn không nên đảo",
-        "desc": "Phần lớn người mới bỏ Blender không phải vì khó, mà vì học sai thứ tự. Đây là trình tự 7 kỹ năng và lý do từng bước phải đứng ở vị trí đó.",
+        "title": "Lộ trình tự học Blender: 7 kỹ năng, đúng thứ tự",
+        "desc": "Phần lớn người mới bỏ Blender không vì khó, mà vì học sai thứ tự. Lộ trình tự học Blender gồm 7 kỹ năng, kèm lý do từng bước phải đứng đúng chỗ.",
         "tag": "Lộ trình",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
@@ -345,7 +345,7 @@ POSTS = [
     {
         "slug": "5-loi-lighting",
         "title": "5 lỗi lighting khiến render của bạn trông rẻ tiền",
-        "desc": "Không phải do máy yếu hay thiếu plugin. Năm lỗi ánh sáng dưới đây gặp ở gần như mọi bài tự học, và cái nào cũng sửa được trong một buổi.",
+        "desc": "Không phải do máy yếu hay thiếu plugin. Năm lỗi lighting dưới đây gặp ở gần như mọi bài tự học Blender, và cái nào cũng sửa được trong một buổi.",
         "tag": "Kỹ thuật",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
@@ -399,7 +399,7 @@ POSTS = [
     },
     {
         "slug": "quy-trinh-mot-shot-tvc",
-        "title": "Từ file Blender đến TVC: quy trình một shot sản phẩm chạy thật",
+        "title": "Quy trình một shot TVC 3D từ file Blender",
         "desc": "Toàn bộ các bước một shot sản phẩm đi qua trong dự án thương mại, kể cả những khâu không ai quay video hướng dẫn: brief, duyệt, và sửa theo ý khách.",
         "tag": "Nghề",
         "date": "2026-09-07",
@@ -454,7 +454,7 @@ POSTS = [
     },
     {
         "slug": "kho-hau-truong-overgrown-blender-studio",
-        "title": "Blender Studio mở kho hậu trường OVERGROWN: file production thật, học được gì từ đó",
+        "title": "Kho hậu trường OVERGROWN của Blender Studio",
         "desc": "Blender Studio mở miễn phí nhật ký sản xuất phim OVERGROWN: rigging, lông, shading, ánh sáng, nước, compositing. Đây là cách khai thác nó cho ra kỹ năng thật.",
         "tag": "Tài nguyên",
         "date": "2026-09-07",
@@ -505,7 +505,7 @@ POSTS = [
     },
     {
         "slug": "add-on-hard-surface-blender",
-        "title": "Add-on hard-surface cho Blender: cái nào đáng cài, cái nào bỏ qua",
+        "title": "Add-on hard-surface Blender: nên cài những gì",
         "desc": "Danh sách add-on hard-surface mà artist tại CD Projekt Red dùng, và đánh giá thẳng thắn cái nào thật sự cần khi bạn làm sản phẩm thương mại.",
         "tag": "Công cụ",
         "date": "2026-09-07",
@@ -566,7 +566,7 @@ POSTS = [
     },
     {
         "slug": "sau-node-va-mot-hanh-lang",
-        "title": "Sáu node và một hành lang: bài học dựng không khí từ Backrooms của Blender Guru",
+        "title": "Sáu node và một hành lang: dựng không khí",
         "desc": "Andrew Price dựng cảnh Backrooms gần như không model, không UV, chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.",
         "tag": "Kỹ thuật",
         "date": "2026-09-07",
@@ -689,7 +689,7 @@ POSTS = [
 <p>Được. 3D thương mại, từ sản phẩm, hard-surface tới kiến trúc, không đòi hỏi kỹ năng vẽ tay. Mảng cần vẽ là character và concept stylized, không phải hướng duy nhất của nghề.</p>
 
 <p class="faq-q">Học Blender rồi có phải học thêm 3ds Max hay Maya?</p>
-<p>Không, trừ khi bạn nhắm vào một studio bắt buộc dùng phần mềm đó. Blender làm được trọn pipeline sản phẩm và TVC. Nắm chắc một công cụ hơn là biết lõm bõm ba cái.</p>
+<p>Không, trừ khi bạn nhắm vào một studio bắt buộc dùng phần mềm đó. Blender làm được trọn pipeline sản phẩm và TVC. Nắm chắc một công cụ hơn là biết lõm bõm ba cái. Nếu vẫn đang cân nhắc, bài <a href="blog-blender-hay-3dsmax-c4d.html">so sánh Blender với 3ds Max và C4D</a> nói rõ phần kỹ năng nào chuyển được giữa các phần mềm.</p>
 
 <p class="faq-q">Trên 30 tuổi bắt đầu có muộn không?</p>
 <p>Không. Khách hàng nhìn portfolio, không nhìn tuổi. Người đi làm chuyển ngành thường còn có lợi thế: đã quen deadline và làm việc với khách, hai thứ dân mới ra trường phải học lại từ đầu.</p>
@@ -704,8 +704,8 @@ POSTS = [
     },
     {
         "slug": "cau-hinh-may-hoc-blender",
-        "title": "Cấu hình máy tính học Blender 3D: mua gì, và khi nào chưa cần nâng cấp",
-        "desc": "Hướng dẫn chọn cấu hình máy học Blender theo từng giai đoạn: CPU, GPU, RAM, SSD, và lý do máy yếu không phải thứ đang cản bạn.",
+        "title": "Cấu hình máy học Blender 3D theo từng giai đoạn",
+        "desc": "Chọn cấu hình máy học Blender 3D theo từng giai đoạn: CPU, GPU, RAM, SSD, mốc nào nên nâng cấp, và lý do máy yếu thường không phải thứ cản bạn.",
         "tag": "Thiết bị",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
@@ -785,7 +785,7 @@ POSTS = [
     },
     {
         "slug": "tu-hoc-blender-hay-hoc-kem",
-        "title": "Tự học Blender hay học khoá có người kèm? So sánh thẳng thắn",
+        "title": "Tự học Blender hay học kèm? So sánh thẳng thắn",
         "desc": "Tự học Blender hoàn toàn miễn phí và nhiều người thành công. Vậy khi nào bỏ tiền học kèm là hợp lý, khi nào là lãng phí, phân tích từ người đang dạy.",
         "tag": "Định hướng",
         "date": "2026-09-07",
@@ -869,7 +869,7 @@ POSTS = [
     },
     {
         "slug": "khoa-hoc-blender-3d-o-viet-nam",
-        "title": "Khoá học Blender 3D ở Việt Nam: chọn sao cho khỏi phí tiền",
+        "title": "Khoá học Blender 3D ở Việt Nam: chọn sao cho đúng",
         "desc": "Chọn khoá học Blender 3D ở Việt Nam: bốn loại khoá đang có, học phí gồm những khoản nào, bảy câu nên hỏi trước khi đóng tiền và quảng cáo nên bỏ qua.",
         "tag": "Định hướng",
         "date": "2026-09-26",
@@ -1026,7 +1026,7 @@ POSTS = [
     },
     {
         "slug": "hoc-blender-kem-1-1",
-        "title": "Học kèm 1 kèm 1 Blender: khi nào đáng tiền, khi nào phí",
+        "title": "Học kèm 1 kèm 1 Blender: khi nào đáng tiền",
         "desc": "Học kèm 1 kèm 1 Blender đắt hơn lớp nhóm nhiều lần. Ai thật sự hợp, một buổi kèm tử tế diễn ra thế nào và cách thử người kèm trước khi trả tiền.",
         "tag": "Định hướng",
         "date": "2026-09-26",
@@ -1646,6 +1646,8 @@ POSTS = [
 
 <p>Và khoá học không thay được việc chọn hướng. Sớm hay muộn bạn phải quyết định mình đi theo sản phẩm, kiến trúc, automotive hay sự kiện. Muốn biết mỗi hướng dẫn tới công việc gì, xem qua vài shot bên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>, đó là mức hoàn thiện khách thường yêu cầu.</p>
 
+<p>Còn nếu bạn chưa chắc nên gắn với Blender hay một phần mềm khác, đọc phần <a href="blog-blender-hay-3dsmax-c4d.html">so sánh Blender, 3ds Max và Cinema 4D</a> trước khi đóng tiền bất cứ khoá nào, vì chọn sai công cụ tốn nhiều thời gian hơn chọn sai khoá.</p>
+
 <h2>Hỏi đáp nhanh</h2>
 
 <p class="faq-q">Khoá học 3D Blender có cần biết vẽ không?</p>
@@ -1820,6 +1822,40 @@ def with_toc(body):
     return body, toc
 
 
+# Hai bai viet tay khong sinh tu POSTS. Khai bao o day de chung xuat hien
+# trong danh sach blog.html va sitemap, tranh thanh trang mo coi.
+EXTRA_POSTS = [
+    {
+        "slug": "render-nhanh-hon-blender-cycles",
+        "title": "Cách render nhanh hơn trong Blender Cycles",
+        "desc": "Mười cách cắt thời gian render Cycles mà không làm hình xấu đi: noise threshold, denoise, bounce, volumetric, OptiX và những thứ không nên đụng vào.",
+        "tag": "Kỹ thuật",
+        "date": "2026-09-10",
+        "date_vn": "10/09/2026",
+        "read": "9 phút đọc",
+        "thumb": "assets/vplas-chi-tiet-cong-sac-render.jpg",
+    },
+    {
+        "slug": "blender-hay-3dsmax-c4d",
+        "title": "Blender hay 3ds Max, C4D? So sánh cho người mới",
+        "desc": "So sánh Blender, 3ds Max, Cinema 4D và Maya theo mục tiêu nghề nghiệp tại Việt Nam, phần kỹ năng chuyển được giữa các phần mềm và cách chọn đỡ mất thời gian.",
+        "tag": "Định hướng",
+        "date": "2026-09-10",
+        "date_vn": "10/09/2026",
+        "read": "8 phút đọc",
+        "thumb": "assets/hero-poster.jpg",
+    },
+]
+
+
+def brand_title(t):
+    """Giu the title duoi 60 ky tu: du cho thi gan thuong hieu day, khong du thi gan ngan hoac bo."""
+    for suf in (" | LXAM Studio", " | LXAM"):
+        if len(t) + len(suf) <= 60:
+            return t + suf
+    return t
+
+
 def related_html(p):
     same = [x for x in POSTS if x is not p and x["tag"] == p["tag"]]
     other = [x for x in POSTS if x is not p and x["tag"] != p["tag"]]
@@ -1843,7 +1879,7 @@ POST_TPL = """
       <span class="tag">{tag}</span>
       <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">{title}</h1>
       <p class="post-meta" style="margin-bottom:34px;">{date_vn} · {read}</p>
-      <img src="{thumb}" alt="{title_plain}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;">
+      <img src="{thumb}" alt="{title_plain}" width="1280" height="720" fetchpriority="high" decoding="async" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;">
       {toc}
       {body}
       {sources}
@@ -1862,9 +1898,10 @@ POST_TPL = """
 
 def blog_index():
     cards = []
-    for p in POSTS:
+    allp = sorted(POSTS + EXTRA_POSTS, key=lambda x: x["date"], reverse=True)
+    for p in allp:
         cards.append(f"""      <a class="post-card" href="blog-{p['slug']}.html">
-        <div class="thumb"><img src="{p['thumb']}" alt="{html.escape(p['title'])}"></div>
+        <div class="thumb"><img src="{p['thumb']}" alt="{html.escape(p['title'])}" width="640" height="360" loading="lazy" decoding="async"></div>
         <div class="body">
           <span class="tag" style="align-self:flex-start;">{p['tag']}</span>
           <h3 style="margin:6px 0 0;">{html.escape(p['title'])}</h3>
@@ -2079,8 +2116,8 @@ def main():
           + ABOUT_BODY + FOOTER)
 
     write("blog.html",
-          head("Blog | LXAM Studio",
-               "Ghi chép về Blender, lighting, render và nghề 3D thương mại từ bàn làm việc của LXAM Studio.",
+          head("Blog 3D và Blender | LXAM Studio",
+               "Ghi chép về Blender, lighting, render và nghề 3D thương mại từ bàn làm việc LXAM Studio: lộ trình học, lỗi thường gặp và quy trình job thật.",
                "blog",
                canonical="blog.html",
                og_image=POSTS[0]["thumb"],
@@ -2100,7 +2137,7 @@ def main():
             sources=sources_html(p.get("sources")),
         )
         write("blog-%s.html" % p["slug"],
-              head(p["title"] + " | LXAM Studio", p["desc"], "blog",
+              head(brand_title(p["title"]), p["desc"], "blog",
                    canonical="blog-%s.html" % p["slug"],
                    og_image=p["thumb"],
                    og_type="article", published=p["date"],
@@ -2109,7 +2146,7 @@ def main():
 
     write("hoc-vien.html",
           head("Khu học viên | LXAM Studio",
-               "Không gian riêng của học viên LXAM Studio: bài giảng, file dự án, thư viện asset, nộp bài và lịch buổi kèm 1:1.",
+               "Khu học viên LXAM Studio: bài giảng đã ghi, file .blend dự án gốc, thư viện asset dùng được cho job thật, khu nộp bài để được sửa và lịch buổi kèm 1 kèm 1.",
                "hocvien",
                canonical="hoc-vien.html",
                jsonld=jsonld_simple("WebPage", "Khu học viên LXAM Studio",
@@ -2126,7 +2163,7 @@ def main():
           "du-an-khoa-cua-thong-minh.html", "du-an-jewelry.html", "du-an-locphuc-10-nam.html",
           "nghe-nghiep.html", "ve-chung-toi.html", "blog.html"]
     urls = [""] + P9 + P8 + ["hoc-vien.html"] + ["blog-%s.html" % p["slug"] for p in POSTS] \
-           + ["blog-render-nhanh-hon-blender-cycles.html", "blog-blender-hay-3dsmax-c4d.html"]
+           + ["blog-%s.html" % p["slug"] for p in EXTRA_POSTS]
     rows = []
     for u in urls:
         pri = "1.0" if u == "" else ("0.9" if u in P9 else ("0.8" if u in P8 else "0.7"))

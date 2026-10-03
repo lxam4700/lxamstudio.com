@@ -600,9 +600,9 @@ def quote_band():
 def showreel():
     tv = "".join(
         '<div><button class="vid" type="button" data-src="assets/%s" aria-label="Phát %s">'
-        '<img src="assets/%s" alt="" width="1280" height="720" loading="lazy" decoding="async"><span class="pl"></span></button>'
+        '<img src="assets/%s" alt="Khung hình mở đầu %s, dựng và render 3D bằng Blender" width="1280" height="720" loading="lazy" decoding="async"><span class="pl"></span></button>'
         '<div class="vid-l"><span class="wk-t">%s</span><span class="wk-c">%s</span></div></div>'
-        % (v, esc(t), p, t, c) for v, p, t, c in TVC)
+        % (v, esc(t), p, esc(t), t, c) for v, p, t, c in TVC)
     return """
 <section id="showreel">
   <div class="wrap">
@@ -734,9 +734,9 @@ def about_min():
 def services_min():
     imgs = ["svc-mercedes-g63.webp", "svc-chivas18-chai.webp", "svc-chivas18-trien-lam.webp", "svc-jhm.webp"]
     tiles = "".join(
-        '<a class="sg-c" href="dich-vu.html#dv-%d"><img class="sg-i" src="assets/%s" alt="" width="900" height="1125" '
+        '<a class="sg-c" href="dich-vu.html#dv-%d"><img class="sg-i" src="assets/%s" alt="Hình 3D dự án LXAM Studio minh hoạ dịch vụ %s" width="900" height="1125" '
         'loading="lazy" decoding="async"><span class="sg-n">%d</span><span class="sg-t">%s</span></a>'
-        % (i + 1, imgs[i], i + 1, t) for i, (t, d) in enumerate(SERVICES))
+        % (i + 1, imgs[i], esc(t), i + 1, t) for i, (t, d) in enumerate(SERVICES))
     return """
 <section id="dich-vu" class="mn">
   <div class="wrap">
@@ -818,9 +818,9 @@ def sub_hero(k, title, lead):
 def tvc_grid():
     tv = "".join(
         '<div><button class="vid" type="button" data-src="assets/%s" aria-label="Phát %s">'
-        '<img src="assets/%s" alt="" width="1280" height="720" loading="lazy" decoding="async"><span class="pl"></span></button>'
+        '<img src="assets/%s" alt="Khung hình mở đầu %s, dựng và render 3D bằng Blender" width="1280" height="720" loading="lazy" decoding="async"><span class="pl"></span></button>'
         '<div class="vid-l"><span class="wk-t">%s</span><span class="wk-c">%s</span></div></div>'
-        % (v, esc(t), p, t, c) for v, p, t, c in TVC)
+        % (v, esc(t), p, esc(t), t, c) for v, p, t, c in TVC)
     return """
 <section id="tvc">
   <div class="wrap">
@@ -1054,13 +1054,13 @@ if __name__ == "__main__":
                                        "TVC, key visual, phối cảnh sự kiện và visual kỹ thuật. Gửi brief, chúng tôi báo thời gian và chi phí trong 24 giờ.")
                               + services() + tvc_grid() + contact_min("03"),
                               title="Dịch vụ 3D visual: TVC, key visual, phối cảnh | LXAM Studio",
-                              desc="Dịch vụ của LXAM Studio: TVC và animation 3D, key visual và render sản phẩm, phối cảnh sự kiện, visual kỹ thuật dựng từ file CAD.",
+                              desc="Dịch vụ của studio 3D tại Việt Nam: TVC và animation 3D, key visual và render sản phẩm, phối cảnh sự kiện dựng trước, visual kỹ thuật từ file CAD.",
                               url=URL + "dich-vu.html", home=False)),
         ("khoa-hoc.html", page(sub_hero("LXAM Academy / Khoá học", "Khoá học <em>Blender 3D</em>",
                                         "Hai hệ đào tạo theo đúng quy trình studio làm nghề, từ con số 0 tới TVC hoàn chỉnh.")
                                + academy() + contact_min("02", "Chưa biết bắt đầu <em>từ đâu</em>?", "Tu%20van%20khoa%20hoc%20Blender"),
                                title="Khoá học Blender 3D từ con số 0 | LXAM Academy",
-                               desc="Khoá học Blender 3D của LXAM Academy: hai hệ đào tạo theo quy trình studio, có người chữa bài hằng tuần, kèm cẩm nang miễn phí.",
+                               desc="Khoá học 3D Blender của LXAM Academy: hai hệ đào tạo đi theo quy trình studio, có người chữa bài hằng tuần, học online hoặc tại TPHCM, kèm cẩm nang.",
                                url=URL + "khoa-hoc.html", faq=True, home=False)),
     ]
     for fn, out in pages:

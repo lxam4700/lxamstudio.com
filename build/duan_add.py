@@ -14,8 +14,7 @@ NEW_PROJECTS = [
         "back": "du-an-jewelry.html",
         "back_label": "Khu Jewelry Branding",
         "shot_cols": 2,
-        "desc": ("Phối cảnh 3D triển lãm 10 năm Lộc Phúc Fine Jewelry tại Saigon Centre: cổng chào, sân khấu, "
-                 "Historic Path và ba khu concept Store, Wedding, Family, dựng để duyệt trước khi thi công."),
+        "desc": ("Phối cảnh 3D triển lãm 10 năm Lộc Phúc Fine Jewelry tại Saigon Centre: cổng chào, sân khấu, Historic Path và ba khu concept, dựng để duyệt trước thi công."),
         "hero": "assets/locphuc-10-nam-goc-nhin-khach-tham-quan.webp",
         "hero_alt": "Góc nhìn khách tham quan gian hàng triển lãm 10 năm Lộc Phúc Fine Jewelry, khung xanh ô liu và tủ kính trưng bày, phối cảnh 3D",
         "intro": (
@@ -130,8 +129,7 @@ NEW_PROJECTS = [
         "deliver": "Bộ shot TVC 16:9 và 9:16",
         "back": "du-an-automotive.html",
         "back_label": "Khu Automotive",
-        "desc": ("Bộ shot TVC dựng hoàn toàn bằng 3D cho Mercedes-AMG G63: đường hầm, đội kỹ thuật, "
-                 "cận cảnh chi tiết xe và cảnh cháy nổ. Dựng bằng Blender."),
+        "desc": ("Bộ shot TVC dựng hoàn toàn bằng 3D cho Mercedes-AMG G63: cảnh đường hầm, đội kỹ thuật, cận cảnh chi tiết xe và phân cảnh cháy nổ. Dựng bằng Blender."),
         "hero": "assets/mercedes-g63-canh-mo-trong-duong-ham.webp",
         "hero_alt": "Mercedes-AMG G63 render trong đường hầm bê tông, dựng bằng Blender",
         "intro": (
@@ -252,8 +250,7 @@ NEW_PROJECTS = [
         "deliver": "Bộ key visual ngang và dọc",
         "back": "du-an-automotive.html",
         "back_label": "Khu Automotive",
-        "desc": ("Bộ hình 3D chiếc Porsche 911 trong pit lane: toàn cảnh, cận cảnh đèn và cánh gió, "
-                 "nội thất với tay đua. Dựng và render bằng Blender."),
+        "desc": ("Bộ hình 3D chiếc Porsche 911 trong pit lane trường đua: toàn cảnh, cận cảnh đèn và cánh gió, nội thất cùng tay đua. Dựng và render toàn bộ bằng Blender."),
         "hero": "assets/porsche-911-pit-lane-toan-canh.webp",
         "hero_alt": "Porsche 911 đứng trong pit lane trường đua, render bằng Blender",
         "intro": (
@@ -359,8 +356,7 @@ NEW_PROJECTS = [
         "deliver": "Bộ bảy bản dựng",
         "back": "du-an-automotive.html",
         "back_label": "Khu Automotive",
-        "desc": ("Bộ hình 3D McLaren 765LT trên mặt nước phẳng lúc hoàng hôn: ba xe ba màu, cận cảnh "
-                 "đèn, mâm và cánh gió. Dựng bằng Blender."),
+        "desc": ("Bộ hình 3D McLaren 765LT trên mặt nước phẳng lúc hoàng hôn: ba xe ba màu, cận cảnh cụm đèn, mâm và cánh gió sau. Dựng và render toàn bộ bằng Blender."),
         "hero": "assets/mclaren-765lt-goc-truoc-ba-phan-tu.webp",
         "hero_alt": "McLaren 765LT màu đỏ trên mặt nước phẳng lúc hoàng hôn, render bằng Blender",
         "intro": (
@@ -456,8 +452,7 @@ NEW_PROJECTS = [
         "deliver": "Bốn key visual, kèm bản chưa gắn chữ",
         "back": "du-an-automotive.html",
         "back_label": "Khu Automotive",
-        "desc": ("Key visual 3D cho Aston Martin DBX dựng trong bối cảnh dải sáng xanh ngọc, kèm cả "
-                 "bản sạch chưa gắn chữ. Dựng bằng Blender."),
+        "desc": ("Key visual 3D cho Aston Martin DBX dựng trong bối cảnh dải sáng xanh ngọc, kèm bản sạch chưa gắn chữ để đội thiết kế tự đặt layout. Dựng bằng Blender."),
         "hero": "assets/aston-dbx-goc-cao-key-visual.webp",
         "hero_alt": "Aston Martin DBX màu xanh ngọc trong bối cảnh dải sáng, render bằng Blender",
         "intro": (
@@ -544,8 +539,7 @@ NEW_PROJECTS = [
         "deliver": "Key visual, bộ cận cảnh và cảnh phố",
         "back": "du-an-automotive.html",
         "back_label": "Khu Automotive",
-        "desc": ("Bộ hình 3D cho chiến dịch Volvo S90: key visual đường chân trời, cận cảnh đèn và mâm, "
-                 "cùng các cảnh xe chạy trong phố. Dựng bằng Blender."),
+        "desc": ("Bộ hình 3D cho chiến dịch Volvo S90: key visual đường chân trời thành phố, cận cảnh cụm đèn và mâm, cùng các cảnh xe chạy trong phố. Dựng bằng Blender."),
         "hero": "assets/volvo-s90-goc-ben-hoang-hon.webp",
         "hero_alt": "Volvo S90 màu trắng trên nền phẳng phản chiếu lúc hoàng hôn, render bằng Blender",
         "intro": (

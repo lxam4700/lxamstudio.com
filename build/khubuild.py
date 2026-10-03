@@ -35,8 +35,7 @@ KHU = [
         "slug": "event",
         "ten": "Event &amp; Kích hoạt thương hiệu",
         "tieu_de": "Dự án Event &amp; kích hoạt thương hiệu",
-        "desc_meta": ("Dự án event của LXAM Studio: phối cảnh 3D dựng trước để duyệt, và ảnh ghi nhận "
-                      "triển lãm sau khi thi công: Chivas Regal 18, AXEHIBITION."),
+        "desc_meta": ("Dự án event của LXAM Studio: phối cảnh sự kiện 3D dựng trước để duyệt, kèm ảnh ghi nhận triển lãm sau khi thi công, gồm Chivas Regal 18 và AXEHIBITION."),
         "lead": ("Việc của khu này có hai nửa. Nửa trước là phối cảnh 3D dựng khi mặt bằng còn trống, "
                  "để bên thương hiệu duyệt và bên thi công đo. Nửa sau là ảnh chụp lại khi mọi thứ đã "
                  "đứng thật, thứ duy nhất chứng minh bản dựng có ra được đời thực hay không."),
@@ -58,8 +57,7 @@ KHU = [
         "slug": "automotive",
         "ten": "Automotive",
         "tieu_de": "Dự án Automotive",
-        "desc_meta": ("Dự án 3D automotive của LXAM Studio: dựng và render xe ở chuẩn quảng cáo "
-                      "bằng Blender: sơn, phản chiếu, kính, bối cảnh."),
+        "desc_meta": ("Dự án 3D automotive của LXAM Studio: dựng và render xe ở chuẩn quảng cáo bằng Blender, từ lớp sơn, phản chiếu, kính tới bối cảnh và cách đánh sáng từng shot."),
         "lead": ("Mảng khó nhất trong hình tĩnh: bề mặt sơn phải đúng, phản chiếu phải hợp lý, "
                  "và chiếc xe phải đứng được trong bối cảnh mà không lộ ghép. Đây là những dự án "
                  "xe LXAM Studio đã dựng và render bằng Blender."),
@@ -81,8 +79,7 @@ KHU = [
         "slug": "san-pham",
         "ten": "Sản phẩm &amp; Kỹ thuật",
         "tieu_de": "Dự án sản phẩm &amp; kỹ thuật",
-        "desc_meta": ("Dự án 3D sản phẩm và kỹ thuật: dựng hình hard-surface, phối cảnh lắp ráp, "
-                      "cắt lớp cấu tạo và animation kỹ thuật bằng Blender."),
+        "desc_meta": ("Dự án 3D sản phẩm và kỹ thuật của LXAM Studio: dựng hình hard-surface, phối cảnh lắp ráp, ảnh cắt lớp cấu tạo và animation kỹ thuật, làm bằng Blender."),
         "lead": ("Nhóm việc studio nhận nhiều nhất: dựng lại sản phẩm đúng tỉ lệ từ bản vẽ kỹ thuật, "
                  "tách lớp cấu tạo, mô phỏng lắp ráp và vận hành. Khách dùng cho catalogue, "
                  "hồ sơ kỹ thuật và quảng cáo."),

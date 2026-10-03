@@ -228,8 +228,7 @@ PROJECTS = [
         "back": "du-an-event.html",
         "back_label": "Khu Event",
         "title_seo": "Chivas Regal 18 × Touliver: Phối cảnh 3D | LXAM",
-        "desc": ("Phối cảnh 3D dựng trước cho triển lãm Chivas Regal 18 × Touliver "
-                 "\u201cTransformed to Rise\u201d: toàn cảnh sảnh, màn LED chính và ba bản mặt bằng."),
+        "desc": ("Phối cảnh 3D dựng trước cho triển lãm Chivas Regal 18 × Touliver “Transformed to Rise”: toàn cảnh sảnh, màn LED chính và ba bản mặt bằng để duyệt sớm."),
         "hero": "assets/chivas18-phoi-canh-tong-the-man-led.webp",
         "hero_alt": "Phối cảnh 3D sảnh triển lãm Chivas Regal 18 với màn LED lớn và các khối ghế xanh",
         "intro": (
