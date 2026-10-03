@@ -477,6 +477,8 @@ def build(p):
     slug = p["slug"]
     url = "du-an-%s.html" % slug
     title = p.get("title_seo") or ("%s | LXAM Studio" % p["title"])
+    # vi tri cat anh bia, dung khi anh ngang bi cat lech o man hinh hep
+    hero_pos = (' style="object-position:%s"' % p["hero_pos"]) if p.get("hero_pos") else ""
 
     ld = json.dumps({
         "@context": "https://schema.org", "@type": "CreativeWork",
@@ -611,7 +613,7 @@ def build(p):
 <main>
   <div class="pj-hero">
     <div class="pj-hero-img">
-      <img src="{p['hero']}" alt="{esc(p['hero_alt'])}" width="1600" height="900">
+      <img src="{p['hero']}" alt="{esc(p['hero_alt'])}" width="1600" height="900"{hero_pos}>
     </div>
     <div class="pj-head">
       <a class="pj-back" href="{p.get('back','index.html#portfolio')}">← {esc(p.get('back_label','Tất cả dự án'))}</a>
