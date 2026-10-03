@@ -16,8 +16,8 @@ NEW_PROJECTS = [
         "back_label": "Khu Jewelry Branding",
         "shot_cols": 2,
         "desc": ("Key visual mười một bộ sưu tập trang sức cưới và dạ hội của Lộc Phúc Fine Jewelry, từ Corvela, Cascara, Solara tới Golden Betel, cùng loạt hình concept."),
-        "hero": "assets/locphuc-bst-corvela.webp",
-        "hero_alt": "Key visual bộ sưu tập trang sức cưới Corvela của Lộc Phúc Fine Jewelry, cô dâu đeo vòng cổ kim cương trên nền đồi oải hương",
+        "hero": "assets/locphuc-bst-flora.webp",
+        "hero_alt": "Key visual bộ sưu tập trang sức dạ hội Flora của Lộc Phúc Fine Jewelry, vòng cổ và bông tai kim cương hoạ tiết hoa lá trên nền vườn xanh",
         "intro": (
             "Một thương hiệu trang sức ra bộ sưu tập mới gần như mỗi tháng. Mỗi bộ có một cái tên, một câu "
             "định danh và một thế giới riêng, nhưng tất cả vẫn phải đứng chung dưới một logo. Đây là phần hình "
