@@ -108,7 +108,8 @@ KHU = [
         "items": [
             ("Lộc Phúc Fine Jewelry · Triển lãm 10 năm", "Phối cảnh 3D · Duyệt trước thi công",
              "card-locphuc-10-nam.webp", "du-an-locphuc-10-nam.html"),
-            ("Nhẫn kim cương · Key visual", "Macro · Khúc xạ &amp; caustics", None, None),
+            ("Lộc Phúc Fine Jewelry · 11 bộ sưu tập", "Key visual · Chiến dịch cưới &amp; dạ hội",
+             "card-locphuc-bo-suu-tap.webp", "du-an-locphuc-bo-suu-tap.html"),
             ("Dây chuyền &amp; mặt dây", "Studio light · Kim loại quý", None, None),
             ("Đồng hồ cao cấp", "Hardsurface · Macro", None, None),
             ("Bộ sưu tập · Lookbook 3D", "Chiến dịch · Đồng bộ bộ hình", None, None),

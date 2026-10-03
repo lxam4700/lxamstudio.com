@@ -2,6 +2,172 @@
 """Sáu dự án bổ sung, chèn vào PROJECTS của duan.py."""
 
 NEW_PROJECTS = [
+    # -------------------------------------------------- LOC PHUC BO SUU TAP
+    {
+        "slug": "locphuc-bo-suu-tap",
+        "title": "Lộc Phúc Fine Jewelry: mười một bộ sưu tập",
+        "title_seo": "Lộc Phúc · Key visual bộ sưu tập | LXAM",
+        "client": "Lộc Phúc Fine Jewelry",
+        "year": "2025 · 2026",
+        "role": "Key visual bộ sưu tập · Bộ hình chiến dịch · Hình social",
+        "tools": "Photoshop · Illustrator",
+        "deliver": "Key visual và bộ hình đăng cho từng bộ sưu tập cưới và dạ hội",
+        "back": "du-an-jewelry.html",
+        "back_label": "Khu Jewelry Branding",
+        "shot_cols": 2,
+        "desc": ("Key visual mười một bộ sưu tập trang sức cưới và dạ hội của Lộc Phúc Fine Jewelry, từ Corvela, Cascara, Solara tới Golden Betel, cùng loạt hình concept."),
+        "hero": "assets/locphuc-bst-corvela.webp",
+        "hero_alt": "Key visual bộ sưu tập trang sức cưới Corvela của Lộc Phúc Fine Jewelry, cô dâu đeo vòng cổ kim cương trên nền đồi oải hương",
+        "intro": (
+            "Một thương hiệu trang sức ra bộ sưu tập mới gần như mỗi tháng. Mỗi bộ có một cái tên, một câu "
+            "định danh và một thế giới riêng, nhưng tất cả vẫn phải đứng chung dưới một logo. Đây là phần hình "
+            "của mười một bộ sưu tập cưới và dạ hội Lộc Phúc Fine Jewelry, cộng thêm loạt hình concept chạy "
+            "trên kênh social. Việc khó không nằm ở bộ nào đẹp nhất, mà ở chỗ xếp mười một bộ cạnh nhau vẫn "
+            "nhận ra cùng một nhà."
+        ),
+        "meta_rows": [
+            ("Thương hiệu", "Lộc Phúc Fine Jewelry"),
+            ("Phạm vi", "Bộ sưu tập cưới và dạ hội"),
+            ("Số bộ", "11 bộ sưu tập"),
+            ("Đầu ra", "Key visual, hình sản phẩm, hình social"),
+            ("Nguyên tắc", "Mỗi bộ một thế giới, chung một bộ khung"),
+        ],
+        "challenge_h": "Bài toán",
+        "chal_title": "Mười một thế giới, một thương hiệu",
+        "challenge": [
+            ("Tên bộ phải nghe ra chất trước khi nhìn thấy hàng",
+             "Corvela, Cascara, Solara, Lerina, Vespera. Tên đặt theo âm Latin mở, dễ đọc với người Việt và "
+             "không đụng tên bộ của hãng khác. Mỗi tên đi kèm một câu định danh ngắn bằng tiếng Việt, đặt "
+             "ngay dưới tên, để người lướt qua hiểu bộ này nói về cái gì mà không cần đọc mô tả."),
+            ("Màu của bộ và màu của thương hiệu",
+             "Cascara đi xanh sapphire trong hang tối, Solara đi vàng champagne, Skya đi xanh trời nhạt, "
+             "Golden Betel đi nâu trầm. Bốn bảng màu này rất dễ thành bốn thương hiệu. Thứ giữ chúng lại là "
+             "cùng một vị trí logo, cùng một kiểu chữ tên bộ và cùng một cách đặt câu định danh."),
+            ("Trang sức nhỏ, khung hình lớn",
+             "Món hàng bé bằng đốt ngón tay nhưng khung hình chạy trên màn hình lớn và bảng cửa hàng. "
+             "Nên mỗi bộ đều có hai lớp: một lớp đời sống có người mẫu để tạo cảm xúc, một lớp cận cảnh "
+             "để thấy rõ chấu, thấy rõ mắt đá. Thiếu lớp nào thì bộ hình cũng hụt."),
+        ],
+        "shots_title": "Đi qua từng bộ sưu tập",
+        "gallery": [
+            ("assets/locphuc-bst-corvela.webp",
+             "Key visual bộ sưu tập trang sức cưới Corvela, cô dâu đeo vòng cổ và bông tai kim cương, nền đồi oải hương",
+             "Corvela · Vương miện của kiêu hãnh",
+             "Bộ cưới mở đầu bằng một nụ cười chứ không phải một món hàng. Ren của áo, ren của voan và cấu trúc "
+             "vòng cổ cùng một ngôn ngữ, nên khi nhìn thoáng qua người xem thấy một tổng thể, không thấy món "
+             "trang sức bị dán lên người. Nền đồi oải hương và dinh thự giữ tông lạnh, để kim cương là chỗ sáng nhất khung."),
+            ("assets/locphuc-bst-blossa.webp",
+             "Key visual bộ sưu tập dạ hội Blossa của Lộc Phúc, vòng cổ và bông tai hình cánh hoa trên nền rừng cây",
+             "Blossa · Vũ điệu thiên nhiên",
+             "Cánh hoa và giọt nước lặp lại từ bông tai sang mặt dây, nên bộ nhìn ra ngay là một bộ. Nền rừng "
+             "nắng xuyên tán làm nền xanh ấm, đủ tương phản để các mắt đá tách ra mà không phải tăng độ sáng, "
+             "thứ dễ làm kim cương trông như thuỷ tinh."),
+            ("assets/locphuc-bst-cascara.webp",
+             "Key visual bộ sưu tập dạ hội Cascara, vòng cổ chữ V đá sapphire xanh trên nền hang tối và thác nước",
+             "Cascara · Dòng chảy lấp lánh",
+             "Bộ tối nhất trong cả loạt. Vòng cổ hình chữ V kéo mắt đi xuống đúng như một dòng nước, và nền hang "
+             "được giữ gần như đen để màu sapphire không bị nền tranh. Ba khung người mẫu phía dưới dùng đầm đen, "
+             "cùng một lý do."),
+            ("assets/locphuc-bst-riva.webp",
+             "Key visual bộ sưu tập trang sức cưới Riva, cô dâu áo tay phồng và bộ vòng cổ kim cương điểm sapphire",
+             "Riva · Dải lụa xanh bên bờ nước",
+             "Bộ cưới duy nhất trong loạt dám đưa màu xanh vào giữa một đám cưới trắng. Xanh chỉ xuất hiện ở mắt "
+             "đá và ở nền phía sau, không lan ra áo, nên vẫn là một bộ hình cưới chứ không thành hình dạ tiệc."),
+            ("assets/locphuc-bst-flora.webp",
+             "Key visual bộ sưu tập dạ hội Flora, vòng cổ kim cương hoạ tiết hoa lá trên nền vườn xanh đậm",
+             "Flora · Hoa trong dáng ngọc",
+             "Hoạ tiết hoa lá kết dày, nên nền phải tối và tĩnh để mắt không bị loạn. Khung dưới chuyển hẳn sang "
+             "cận cảnh tai và bàn tay: với một bộ nhiều chi tiết, người mua muốn biết đeo lên trông ra sao hơn là "
+             "ngắm nó nằm trên nền."),
+            ("assets/locphuc-bst-solara.webp",
+             "Key visual bộ sưu tập dạ hội Solara, người mẫu mặc đầm vàng champagne và bộ trang sức kim cương",
+             "Solara · Ánh sáng đỉnh cao",
+             "Cả khung chỉ có một dải màu, từ vàng champagne của đầm tới vàng nhạt của nền. Một khung đơn sắc như "
+             "vậy rất dễ chìm, nên kim cương được giữ trắng lạnh, thành đường sáng duy nhất cắt ngang sắc vàng."),
+            ("assets/locphuc-bst-skya.webp",
+             "Key visual bộ sưu tập dạ hội Skya, vòng cổ đá topaz xanh trên nền trời và mây trắng",
+             "Skya · Ánh sáng của bầu trời",
+             "Topaz xanh nhạt là loại đá dễ bị nhạt đi khi đặt trên nền sáng. Giải pháp ở đây là cho da và vải "
+             "cùng tông kem ấm, đẩy sắc xanh thành thứ duy nhất lạnh trong khung. Ba khung sản phẩm phía dưới "
+             "để trên nền mây, giữ mạch câu chuyện bầu trời."),
+            ("assets/locphuc-bst-rovana.webp",
+             "Key visual bộ sưu tập trang sức cưới Rovana, vòng cổ vàng hoạ tiết lá và hoa hồng vàng hồng",
+             "Rovana · Đoá hồng giữa ánh sao",
+             "Bộ duy nhất dùng ba màu vàng cùng lúc: vàng trắng cho lá, vàng hồng cho đoá hồng ở giữa, vàng ta cho "
+             "viền. Ba sắc vàng đứng cạnh nhau rất dễ đục, nên nền chọn nâu trầm và cửa sổ mở ra vườn, đủ sáng "
+             "để tách từng lớp kim loại."),
+            ("assets/locphuc-bst-lerina.webp",
+             "Key visual bộ sưu tập trang sức cưới Lerina, vòng ngọc trai và dây kim cương có khoá hình nơ",
+             "Lerina · Vũ khúc của thanh lịch",
+             "Ngọc trai không lấp lánh như kim cương, nó ăn ở bề mặt mịn. Nên nền nhung vàng và vòm nắng Địa Trung "
+             "Hải được giữ mềm, không có nguồn sáng gắt. Chiếc nơ kim cương là điểm nhấn duy nhất, và nó đủ."),
+            ("assets/locphuc-bst-vespera.webp",
+             "Key visual bộ sưu tập trang sức cưới Vespera, cô dâu đeo mặt dây kim cương trên nền hoàng hôn vàng",
+             "Vespera · Ánh sáng của hoàng hôn",
+             "Khung dọc, dành cho điện thoại. Hoàng hôn, lá cọ và bướm đẩy cả khung về vàng cam, một tông rất khó "
+             "cho kim cương vì đá sẽ ngả màu. Bộ này giải bằng cách để mặt dây nằm trên vùng da và vải trắng, "
+             "tạo một ô trung tính ngay giữa khung ấm."),
+            ("assets/locphuc-bst-golden-betel.webp",
+             "Key visual bộ sưu tập trang sức cưới Golden Betel, vòng cổ lá trầu vàng và hoa kim cương trên nền tranh xưa",
+             "Golden Betel · Lá trầu vàng",
+             "Bộ Việt nhất trong loạt. Lá trầu là thứ có trong mọi đám cưới Việt, đưa vào trang sức thì phải cẩn "
+             "thận để không thành đồ lưu niệm. Ở đây lá được dát mỏng và xếp thưa, xen hoa kim cương, còn nền "
+             "dùng tranh lụa xưa tông nâu để nói thẳng gốc gác mà không cần một chữ nào."),
+            ("assets/locphuc-concept-our-yes.webp",
+             "Bộ hình concept Our Yes của Lộc Phúc, các khung ảnh đôi lứa và hộp nhẫn cầu hôn màu xanh lục",
+             "Our Yes · Khởi đầu của mãi mãi",
+             "Hình cho mùa cầu hôn. Bố cục collage nhiều khung nhỏ thay vì một khung lớn, vì thứ cần bán ở đây là "
+             "một chuỗi khoảnh khắc chứ không phải một món hàng. Hộp nhẫn xanh lục của thương hiệu được đặt ở ô "
+             "sáng nhất, thành điểm dừng mắt cuối cùng."),
+            ("assets/locphuc-concept-eternal-love.webp",
+             "Hình concept nhẫn cưới Eternal Love của Lộc Phúc, cặp nhẫn vô cực trên nền hồng phấn và hoa anh đào",
+             "Eternal Love · Tình yêu vĩnh cửu",
+             "Hai chiếc nhẫn, không người mẫu, không đạo cụ thừa. Ký hiệu vô cực nằm sẵn trong dáng nhẫn nên chữ "
+             "không phải giải thích thêm. Nền hồng phấn và cánh anh đào mờ giữ cả khung ở một độ sáng, để đường "
+             "kim loại là nét cứng duy nhất."),
+            ("assets/locphuc-concept-nguoi-thuong.webp",
+             "Hình concept nhẫn cầu hôn Người Thương của Lộc Phúc, nhẫn halo kim cương trên nền xanh ô liu và tre",
+             "Người Thương · Nhẫn cầu hôn",
+             "Cùng một chiếc nhẫn halo nhưng tên gọi được Việt hoá hẳn. Nền xanh ô liu, tre và khung cửa gỗ kéo "
+             "câu chuyện về nhà chứ không về châu Âu. Ba khung nhỏ phía dưới là ba dáng nhẫn khác nhau, đặt cạnh "
+             "nhau để người xem so dáng ngay trong một tấm."),
+            ("assets/locphuc-concept-cherry-ladies.webp",
+             "Hình concept Cherry Ladies của Lộc Phúc, nhẫn kim cương đặt trên quả cherry và ly cocktail nền đỏ",
+             "Cherry Ladies · Toả sáng như ánh sao đêm",
+             "Bộ hình táo bạo nhất. Trang sức được đặt lên quả cherry ướt và miệng ly, một kiểu dàn cảnh của ảnh "
+             "ẩm thực hơn là ảnh nữ trang. Nó hoạt động vì tông đỏ rượu phủ kín nền, biến kim cương thành thứ "
+             "duy nhất phản sáng trong khung."),
+            ("assets/locphuc-concept-golden-radiance.webp",
+             "Hình concept Golden Radiance của Lộc Phúc, nhẫn hoa đá sapphire vàng trên nền xanh lục khói",
+             "Golden Radiance · Vẻ đẹp rực rỡ",
+             "Sapphire vàng xếp thành đoá hoa, đặt trên nền xanh lục có khói. Xanh lục và vàng là cặp màu đối "
+             "nhau, nên đá bật lên mà không cần đẩy độ bão hoà. Khung vuông, chừa khoảng trống bên trái cho chữ, "
+             "đúng tỉ lệ đăng mạng xã hội."),
+            ("assets/locphuc-concept-bracelet-treat.webp",
+             "Hình concept Bracelet Treat của Lộc Phúc, ba vòng tay vàng trắng, vàng hồng và vàng ta trên bệ bê tông",
+             "Bracelet Treat · Vòng tay thời trang",
+             "Dòng đeo hằng ngày nên cách bày cũng đời hơn: bệ bê tông thô, nền trời thật, không nhung không hộp. "
+             "Ba sắc vàng đứng thành ba lớp sâu khác nhau để người xem thấy ngay là có ba lựa chọn."),
+        ],
+        "process_h": "Cách làm",
+        "proc_title": "Một bộ khung chạy cho mọi bộ sưu tập",
+        "process": [
+            ("01", "Chốt tên và câu định danh",
+             "Trước khi dựng khung hình, tên bộ và câu tiếng Việt đi kèm phải xong. Cả bộ hình sau đó bám theo "
+             "hai thứ này, nên sửa tên ở giữa đường là làm lại từ đầu."),
+            ("02", "Chọn một thế giới cho bộ",
+             "Mỗi bộ được gán một bối cảnh và một bảng màu riêng, chọn theo chất đá chứ không theo mùa. Đá xanh "
+             "đi nền tối, đá vàng đi nền xanh lục, ngọc trai đi nền ấm mịn."),
+            ("03", "Dựng khung chính rồi mới cắt ra các khung phụ",
+             "Khung key visual làm trước và làm kỹ. Các khung vuông, khung dọc cho social được dựng lại từ cùng "
+             "bối cảnh, không phải cắt thẳng từ khung chính, để chữ và sản phẩm không bị ép."),
+            ("04", "Khoá lại phần không được đổi",
+             "Vị trí logo, kiểu chữ tên bộ, vị trí câu định danh và dải thông tin liên hệ cuối khung được giữ "
+             "nguyên qua cả mười một bộ. Đây là phần làm cho loạt hình nhìn ra một thương hiệu."),
+        ],
+        "stats": [("11", "Bộ sưu tập"), ("6", "Bộ hình concept"), ("1", "Bộ khung chung")],
+    },
+
     {
         "slug": "locphuc-10-nam",
         "title": "Lộc Phúc Fine Jewelry: Jewelry Exhibition 10 năm",

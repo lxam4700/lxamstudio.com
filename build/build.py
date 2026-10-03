@@ -2161,6 +2161,7 @@ def main():
           "du-an-mclaren-765lt.html", "du-an-aston-martin-dbx.html", "du-an-volvo-s90.html",
           "du-an-san-pham.html", "du-an-vplas.html", "du-an-jhm-masonry-hanger.html",
           "du-an-khoa-cua-thong-minh.html", "du-an-jewelry.html", "du-an-locphuc-10-nam.html",
+          "du-an-locphuc-bo-suu-tap.html",
           "nghe-nghiep.html", "ve-chung-toi.html", "blog.html"]
     urls = [""] + P9 + P8 + ["hoc-vien.html"] + ["blog-%s.html" % p["slug"] for p in POSTS] \
            + ["blog-%s.html" % p["slug"] for p in EXTRA_POSTS]
