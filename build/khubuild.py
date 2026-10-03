@@ -97,12 +97,11 @@ KHU = [
         "slug": "jewelry",
         "ten": "Jewelry Branding",
         "tieu_de": "Dự án Jewelry Branding",
-        "desc_meta": ("Dự án Jewelry Branding của LXAM Studio: key visual và bộ hình chiến dịch cho "
-                      "thương hiệu trang sức, dựng bằng 3D để kiểm soát ánh sáng và chất liệu."),
+        "desc_meta": ("Dự án Jewelry Branding của LXAM Studio cho Lộc Phúc Fine Jewelry: key visual mười một bộ sưu tập cưới và dạ hội, cùng phối cảnh 3D triển lãm 10 năm."),
         "lead": ("Một thương hiệu trang sức bán bằng hình trước khi bán bằng món hàng. Khu này là phần hình đó: "
-                 "key visual, phối cảnh triển lãm và bộ hình chiến dịch dựng bằng 3D, để cả bộ giữ được một chất ánh sáng "
-                 "và một chất kim loại duy nhất, thay vì mỗi buổi chụp ra một kiểu. Trang sức bị soi ở cự ly rất gần, "
-                 "nên sai sót về khúc xạ đá hay độ bóng kim loại lộ ngay."),
+                 "key visual bộ sưu tập, phối cảnh triển lãm dựng 3D và bộ hình chiến dịch. Điểm chung là cả loạt phải "
+                 "giữ một chất ánh sáng và một chất kim loại duy nhất, thay vì mỗi đợt ra một kiểu. Trang sức bị soi ở "
+                 "cự ly rất gần, nên sai sót về khúc xạ đá hay độ bóng kim loại lộ ngay."),
         "title_seo": "Dự án Jewelry Branding | Portfolio LXAM",
         "og": "card-locphuc-10-nam.webp",
         "items": [
@@ -110,10 +109,6 @@ KHU = [
              "card-locphuc-10-nam.webp", "du-an-locphuc-10-nam.html"),
             ("Lộc Phúc Fine Jewelry · 11 bộ sưu tập", "Key visual · Chiến dịch cưới &amp; dạ hội",
              "card-locphuc-bo-suu-tap.webp", "du-an-locphuc-bo-suu-tap.html"),
-            ("Dây chuyền &amp; mặt dây", "Studio light · Kim loại quý", None, None),
-            ("Đồng hồ cao cấp", "Hardsurface · Macro", None, None),
-            ("Bộ sưu tập · Lookbook 3D", "Chiến dịch · Đồng bộ bộ hình", None, None),
-            ("Đá màu &amp; chế tác", "Vật liệu · Cắt lớp", None, None),
         ],
     },
 ]
