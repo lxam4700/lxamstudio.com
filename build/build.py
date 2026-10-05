@@ -987,6 +987,8 @@ POSTS = [
 </table>
 </div>
 
+<p>Nếu bạn đang ở Sài Gòn và cần so sánh chi tiết hơn về học phí, thời gian đi lại và cách kiểm tra một lớp, bài <a href="blog-khoa-hoc-3d-tai-tphcm.html">khoá học 3D tại TPHCM</a> đi sâu vào riêng phần chọn giữa offline và online.</p>
+
 <h2>Khoá tổng hợp, khoá render hay khoá modeling</h2>
 
 <p>Người mới hay bị hút vào khoá chuyên sâu vì tên nghe chuyên nghiệp. Nhưng khi chưa đi hết một quy trình từ dựng hình, vật liệu, ánh sáng tới render và hậu kỳ, bạn không có dữ kiện để biết mình yếu ở đâu, nên tiền bỏ vào một <a href="blog-khoa-hoc-render.html">khoá học render</a> riêng thường bị phí ở giai đoạn này.</p>
@@ -1584,6 +1586,8 @@ POSTS = [
 <h3>Khi nào nên chịu khó tới lớp</h3>
 <p>Nếu bạn từng mua hai ba khoá online rồi bỏ dở, đừng mua khoá thứ tư. Vấn đề của bạn không phải nội dung mà là sự có mặt. Một lớp có địa điểm cụ thể ở TPHCM, có giờ cố định và có người nhìn thấy bạn vắng, giải quyết đúng chỗ đó. Đây là lý do duy nhất đáng để chọn học trực tiếp, và nó là lý do chính đáng.</p>
 
+<p>Phần so sánh đầy đủ giữa hai hình thức, gồm cả chi phí đi lại và bảy câu nên hỏi, nằm trong bài <a href="blog-khoa-hoc-3d-tai-tphcm.html">khoá học 3D tại TPHCM</a>.</p>
+
 <figure>
   <img src="assets/mercedes-g63-khung-gam-va-doi-ky-thuat.webp" alt="Khung gầm xe Mercedes G63 dựng 3D bằng Blender với nhóm kỹ thuật viên đứng quanh trong xưởng, một cảnh trích từ dự án TVC" loading="lazy" width="1800" height="1013">
   <figcaption><strong>Một cảnh trong dự án TVC dựng bằng Blender.</strong> Phần khó của cảnh này không nằm ở nút bấm mà ở việc sắp xếp thứ tự công việc: dựng khối, chia vật liệu, đặt sáng, rồi mới tới render. Một khoá học 3D Blender tử tế dạy đúng cái thứ tự đó.</figcaption>
@@ -1604,9 +1608,9 @@ POSTS = [
 
 <blockquote><p>Bạn không mua số buổi học. Bạn mua số lần có người nhìn vào bài của bạn và nói thẳng nó sai ở đâu. Mọi con số khác trên tờ báo giá đều là phụ.</p></blockquote>
 
-<h2>Ba bài nên đọc trước khi chọn khoá học 3D Blender</h2>
+<h2>Bốn bài nên đọc trước khi chọn khoá học 3D Blender</h2>
 
-<p>Tuỳ bạn đang đứng ở đâu, một trong ba bài dưới sẽ hợp hơn hai bài còn lại. Đọc đúng bài rồi hãy quyết định.</p>
+<p>Tuỳ bạn đang đứng ở đâu, một trong bốn bài dưới sẽ hợp hơn ba bài còn lại. Đọc đúng bài rồi hãy quyết định.</p>
 
 <h3>Nếu bạn chưa từng mở Blender</h3>
 <p>Đọc <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a>. Bài đó mô tả tám tuần đầu nên dạy gì, tuần nào nộp bài gì, và sáu câu nên hỏi trước khi đóng tiền. Nó cũng nói rõ những thứ một khoá cho người mới không nên nhồi vào, ví dụ hoạt hình nhân vật hay mô phỏng vải, vì đưa vào sớm chỉ làm bạn rối.</p>
@@ -1616,6 +1620,9 @@ POSTS = [
 
 <h3>Nếu bạn muốn chắc phần dựng hình trước đã</h3>
 <p>Đọc <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a>. Bài đó nêu bốn phần một khoá dựng hình phải có, thứ tự ba giai đoạn nên đi qua, và sáu dấu hiệu nhận ra một khoá dựng hình sản phẩm làm được việc. Phù hợp với người thấy mình bấm được nút nhưng gặp món đồ mới là tắc.</p>
+
+<h3>Nếu bạn ở TPHCM và chưa chốt được hình thức học</h3>
+<p>Đọc <a href="blog-khoa-hoc-3d-tai-tphcm.html">khoá học 3D tại TPHCM</a>. Bài đó so sánh học trực tiếp và học online theo độ trễ khi gặp lỗi, thời gian di chuyển và các khoản nằm ngoài học phí, kèm bảy câu nên hỏi trước khi chuyển khoản. Phù hợp với người đã biết mình muốn học gì nhưng còn do dự giữa hai hình thức.</p>
 
 <h3>Nếu bạn đang so nhiều nơi và sợ mất tiền oan</h3>
 <p>Đọc <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>. Bài đó chia thị trường thành bốn loại, dịch các cách nói về học phí sang nghĩa thật, và đưa bảy câu hỏi mà một nơi làm ăn tử tế sẽ trả lời được ngay.</p>
@@ -1785,6 +1792,142 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đã xác định được mình đang ở giai đoạn nào trong ba giai đoạn phía trên, xem trước hai hệ đào tạo ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>, trong đó ghi rõ bài nộp từng tuần và cách sửa bài. Còn nếu muốn tự kiểm tra trước khi quyết định, tải <a href="cam-nang.html">cẩm nang miễn phí</a> và dựng hết phần bài tập trong đó. Làm xong bạn sẽ tự biết mình cần một khoá học modeling 3D, hay chỉ cần ngồi vào bàn đều hơn.</p>
+""",
+    },
+    {
+        "slug": "khoa-hoc-3d-tai-tphcm",
+        "title": "Khoá học 3D tại TPHCM: chọn offline hay online",
+        "desc": "Khoá học 3D tại TPHCM học trực tiếp có thật sự hơn học online? So sánh thời gian đi lại, tốc độ sửa bài, học phí và cách kiểm tra một lớp trước khi đóng tiền.",
+        "tag": "Định hướng",
+        "date": "2026-10-05",
+        "date_vn": "05/10/2026",
+        "read": "9 phút đọc",
+        "thumb": "assets/volvo-s90-goc-ben-hoang-hon.webp",
+        "body": """
+<p class="lead">Nếu bạn đang tìm khoá học 3D tại TPHCM, câu hỏi thật sự không phải trung tâm nào nổi tiếng hơn, mà là bạn có cần ngồi cùng phòng với người sửa bài hay không. Với phần lớn người mới, học trực tiếp giúp ba tháng đầu đỡ hoang mang. Từ tháng thứ tư trở đi, cái quyết định tiến độ là tần suất bài được chữa, không phải chỗ ngồi.</p>
+
+<p>Bài này không xếp hạng trung tâm. Nó mô tả những khác biệt thật giữa hai hình thức, các khoản tiền và thời gian ít ai tính trước, và một danh sách câu hỏi bạn nên hỏi trước khi chuyển khoản. Ở LXAM Studio, chúng tôi dạy cả hai hình thức, nên bài viết cố gắng nói cả mặt bất lợi của từng bên.</p>
+
+<h2>Khoá học 3D tại TPHCM: học trực tiếp được gì</h2>
+
+<p>Lợi thế lớn nhất của một lớp 3D offline ở Sài Gòn không phải máy phòng lab, mà là độ trễ khi bạn gặp lỗi. Người mới thường kẹt ở những chỗ rất nhỏ: một modifier bật sai thứ tự, một scale chưa apply, một đèn đặt ngoài vùng ảnh hưởng. Tự tìm có thể mất một buổi. Người ngồi cạnh nhìn màn hình thì mất ba mươi giây.</p>
+
+<h3>Thứ hai: nhịp học bị ép</h3>
+<p>Có lịch tới lớp nghĩa là mỗi tuần bạn buộc phải mở Blender ít nhất một lần, dù tuần đó công việc có bận. Nghe đơn giản nhưng đây mới là lý do nhiều người học offline đi xa hơn người học online, chứ không phải vì bài giảng hay hơn.</p>
+
+<h3>Thứ ba: thấy người khác làm</h3>
+<p>Ngồi trong lớp, bạn thấy cách bạn bên cạnh xoay viewport, gán vật liệu, sửa topology. Những thao tác đó không ai dạy thành bài, nhưng chúng là phần lớn tốc độ làm việc về sau.</p>
+
+<h2>Học online được gì mà offline không có</h2>
+
+<p>Mặt ngược lại cũng thật. Một khoá học 3D online chấm bài đều đặn có ba thứ mà lớp trực tiếp khó bù.</p>
+
+<p><strong style="color:#fff;">Bạn học trên máy của mình.</strong> Đây là điểm bị coi nhẹ nhất. Học trên máy phòng lab rồi về nhà mở máy yếu hơn là lúc nhiều người bỏ cuộc, vì cảnh render ở lớp mượt mà ở nhà thì treo. Nếu chưa rõ máy mình đủ hay không, xem trước phần <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> rồi hãy tính chuyện đăng ký.</p>
+
+<p><strong style="color:#fff;">Bạn xem lại được.</strong> Lighting và render là hai khâu phải nghe lại nhiều lần mới ngấm. Lớp trực tiếp giảng một lần, bạn ghi được bao nhiêu thì còn bấy nhiêu.</p>
+
+<p><strong style="color:#fff;">Bạn không mất thời gian đi lại.</strong> Ở TPHCM, hai buổi mỗi tuần vào giờ tan tầm thường tốn một tiếng rưỡi tới hai tiếng di chuyển cho mỗi buổi. Một khoá bốn tháng là khoảng năm mươi tới sáu mươi giờ ngồi xe. Số giờ đó, nếu đổ vào dựng hình, đủ để làm xong hai ba món trong portfolio.</p>
+
+<blockquote><p>Lớp trực tiếp bán cho bạn sự tập trung. Lớp online bán cho bạn thời gian. Cái nào đáng hơn phụ thuộc vào thứ bạn đang thiếu.</p></blockquote>
+
+<h2>Bảng so sánh hai hình thức</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Học trực tiếp tại TPHCM</th><th>Học online có chữa bài</th></tr></thead>
+<tbody>
+<tr><td>Độ trễ khi gặp lỗi</td><td>Gần như tức thì trong buổi học</td><td>Vài giờ tới một ngày, tuỳ cam kết của lớp</td></tr>
+<tr><td>Thời gian di chuyển</td><td>Ước lượng 50 đến 60 giờ cho khoá 4 tháng</td><td>Không</td></tr>
+<tr><td>Máy thực hành</td><td>Máy lớp, có thể khác máy ở nhà</td><td>Máy của bạn, đúng điều kiện thật</td></tr>
+<tr><td>Xem lại bài</td><td>Phụ thuộc ghi chú của bạn</td><td>Xem lại không giới hạn nếu có bản ghi</td></tr>
+<tr><td>Nhịp học</td><td>Bị ép theo lịch, dễ giữ đều</td><td>Tự giữ, dễ trôi nếu không có deadline nộp bài</td></tr>
+<tr><td>Chi phí ngoài học phí</td><td>Đi lại, ăn uống, đôi khi gửi xe</td><td>Internet, có thể phải nâng cấp máy</td></tr>
+<tr><td>Phù hợp nhất với</td><td>Người mới hoàn toàn, người khó tự kỷ luật</td><td>Người đi làm, người ở xa, người đã biết cơ bản</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nhìn bảng này sẽ thấy hai hình thức không hơn kém nhau tuyệt đối. Chúng phục vụ hai loại vấn đề khác nhau. Nếu bạn còn chưa chắc mình thuộc loại nào, bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a> mô tả dấu hiệu nhận biết cụ thể hơn.</p>
+
+<figure>
+  <img src="assets/mercedes-g63-khung-gam-va-doi-ky-thuat.webp" alt="Khung gầm và cụm chi tiết kỹ thuật xe Mercedes G63 dựng bằng Blender, hiển thị dạng wireframe trên nền tối" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một cụm kỹ thuật trong dự án Mercedes G63 của LXAM Studio.</strong> Những bài như thế này là lúc khác biệt giữa có người chữa bài và không có hiện rõ nhất, vì lỗi nằm ở cách tổ chức khối chứ không ở thao tác.</figcaption>
+</figure>
+
+<h2>Học phí và những khoản ít ai tính trước</h2>
+
+<p>Chúng tôi không nêu con số cụ thể của các đơn vị khác, vì học phí thay đổi theo thời điểm và theo việc lớp có chữa bài hay không. Thay vào đây là cách tính cho đủ, để bạn so sánh táo với táo.</p>
+
+<p>Khi hỏi học phí khoá học Blender, hãy quy về ba con số: tổng tiền, số buổi có người sửa bài trực tiếp cho bài của bạn, và số bài bạn phải nộp. Một khoá rẻ mà chỉ chiếu video rồi hỏi đáp chung thì đơn giá mỗi lần được chữa bài cao hơn nhiều so với một khoá đắt hơn nhưng sửa bài hằng tuần.</p>
+
+<h3>Các khoản nằm ngoài hoá đơn</h3>
+<ul>
+<li>Thời gian đi lại, nếu học offline. Quy ra giờ rồi tự định giá giờ của bạn.</li>
+<li>Nâng cấp máy, nếu cấu hình hiện tại không kham được khâu render.</li>
+<li>Ổ cứng và sao lưu. File 3D phình nhanh hơn người mới tưởng.</li>
+<li>Thời gian làm bài ở nhà. Phần này luôn lớn hơn số giờ trên lớp, bất kể hình thức nào.</li>
+</ul>
+
+<p>Nếu bạn muốn tự ước lượng trước khi tốn tiền, tải <a href="cam-nang.html">cẩm nang Blender miễn phí</a> và làm hết phần bài tập trong đó. Làm xong, bạn sẽ biết mình thiếu bài giảng hay chỉ thiếu thời gian ngồi vào bàn. Hai thứ đó cần hai giải pháp khác nhau.</p>
+
+<h2>Danh sách kiểm tra trước khi đóng tiền</h2>
+
+<p>Dùng được cho cả lớp offline ở TPHCM và lớp online. Hỏi thẳng, nơi dạy tử tế sẽ trả lời thẳng.</p>
+
+<ul>
+<li>Mỗi tuần tôi nộp mấy bài, và bài của tôi được chữa riêng hay nhận xét chung cho cả lớp?</li>
+<li>Người chữa bài có đang làm dự án thật không, và tôi xem được dự án đó ở đâu?</li>
+<li>Kết thúc khoá, tôi có bao nhiêu món hoàn chỉnh đủ đưa vào portfolio?</li>
+<li>Nếu nghỉ một buổi thì học bù thế nào, có bản ghi hay không?</li>
+<li>Lớp dạy cả khâu render và hậu kỳ, hay dừng ở dựng hình?</li>
+<li>Có yêu cầu cấu hình máy tối thiểu nào không?</li>
+<li>Xem được một bài đã chữa của học viên cũ không, kèm phần nhận xét?</li>
+</ul>
+
+<p>Câu cuối là câu lọc mạnh nhất. Một nơi có chữa bài thật thì luôn có sẵn ví dụ để đưa bạn xem. Trang <a href="hoc-vien.html">bài tập học viên</a> của chúng tôi là ví dụ về dạng bằng chứng bạn nên đòi ở bất cứ đâu bạn định học.</p>
+
+<h2>Ai nên học offline, ai nên học online</h2>
+
+<p>Chọn lớp trực tiếp nếu bạn chưa từng mở Blender, nếu bạn biết rõ mình hay bỏ giữa đường khi không có lịch, hoặc nếu bạn ở trong bán kính di chuyển dưới bốn mươi phút. Ba tháng đầu, việc có người ngồi cạnh tiết kiệm rất nhiều buổi loay hoay vô ích.</p>
+
+<p>Chọn lớp online nếu bạn đang đi làm với giờ không cố định, nếu bạn ở xa trung tâm, hoặc nếu bạn đã dựng được vài món và cái đang thiếu là người chẩn đoán chỗ kẹt. Giai đoạn này, hình thức <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> thường hiệu quả hơn cả lớp đông, dù online hay offline.</p>
+
+<p>Và một lựa chọn ít người nghĩ tới: học trực tiếp giai đoạn đầu để lấy nền và nhịp, rồi chuyển sang online khi đã tự đi được. Cách này giữ được ưu điểm của cả hai mà không phải trả giá cho nhược điểm của bên nào quá lâu.</p>
+
+<h2>Lộ trình gợi ý nếu bạn đang ở TPHCM</h2>
+
+<p>Bốn bước, theo đúng thứ tự này.</p>
+
+<p><strong style="color:#fff;">Một.</strong> Xác định mục tiêu nghề trước khi chọn lớp. Dựng hình sản phẩm, phối cảnh sự kiện và TVC ô tô đòi ba bộ kỹ năng khác nhau. Chọn lớp trước khi chọn mục tiêu là cách chắc chắn nhất để học xong vẫn không biết nộp portfolio đi đâu.</p>
+
+<p><strong style="color:#fff;">Hai.</strong> Làm hết phần bài tập trong cẩm nang. Mất một đến hai tuần, và nó loại bỏ phần lớn rủi ro chọn sai.</p>
+
+<p><strong style="color:#fff;">Ba.</strong> Đi qua danh sách bảy câu hỏi ở trên với hai hoặc ba nơi bạn đang nhắm. So tổng tiền chia cho số lần được chữa bài, không so học phí thuần.</p>
+
+<p><strong style="color:#fff;">Bốn.</strong> Chốt hình thức theo hoàn cảnh thật của bạn, không theo lời khuyên chung. Người ở Thủ Đức đi học ở quận 1 vào giờ cao điểm sẽ bỏ lớp sau tháng thứ hai, bất kể lớp đó tốt cỡ nào.</p>
+
+<p>Nếu bạn muốn xem một ví dụ cụ thể về cách một chương trình được chia theo tuần, xem hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>, trong đó ghi rõ bài nộp từng tuần và cách chữa bài. Còn nếu bạn đang nhắm khâu kết xuất là điểm yếu lớn nhất, đọc thêm bài <a href="blog-khoa-hoc-render.html">khoá học render</a> trước khi quyết định.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Khoá học 3D tại TPHCM có bắt buộc phải học trực tiếp không?</p>
+<p>Không. Nhiều nơi, gồm cả LXAM Academy, dạy cả online và trực tiếp tại TPHCM với cùng nội dung. Điều cần hỏi là lớp online có chữa bài riêng hay chỉ phát video, vì đó mới là phần tạo ra khác biệt.</p>
+
+<p class="faq-q">Người đi làm toàn thời gian học được không?</p>
+<p>Được, nhưng phải tính thật số giờ rảnh mỗi tuần. Ước lượng từ các nhóm đã đi qua, cần khoảng sáu tới mười giờ mỗi tuần để theo kịp một chương trình có nộp bài. Dưới mức đó, nên chọn lớp cho phép giãn tiến độ thay vì lớp có lịch cứng.</p>
+
+<p class="faq-q">Chưa biết vẽ thì học khoá 3D được không?</p>
+<p>Được. Dựng hình sản phẩm và phối cảnh dựa vào quan sát tỉ lệ và hình khối, không dựa vào kỹ năng vẽ tay. Bài <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> nói rõ phần nền tối thiểu thật sự cần.</p>
+
+<p class="faq-q">Học bao lâu thì nhận được việc?</p>
+<p>Tuỳ vào việc bạn có được sửa bài đều hay không, và tuỳ mảng bạn nhắm. Khoảng ước lượng cùng các mốc cụ thể nằm trong bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a>, kèm phần nói thẳng về những trường hợp lâu hơn trung bình.</p>
+
+<p class="faq-q">Học phí chênh nhau nhiều thì nên chọn rẻ hay đắt?</p>
+<p>Chọn theo đơn giá mỗi lần bài của bạn được chữa, không theo tổng học phí. Một khoá đắt gấp đôi nhưng chữa bài hằng tuần thường rẻ hơn tính theo giá trị thật so với một khoá rẻ chỉ phát video.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang ở TPHCM và chưa chốt được hình thức, cứ nhắn mô tả hoàn cảnh của bạn: giờ rảnh mỗi tuần, khoảng cách di chuyển, máy đang dùng và mảng bạn nhắm. Chúng tôi nói thẳng là nên học trực tiếp, học online, hay chưa nên đóng tiền cho khoá nào cả mà cứ tải <a href="cam-nang.html">cẩm nang</a> làm trước một tháng. Không cần đăng ký gì.</p>
 """,
     },
 ]
