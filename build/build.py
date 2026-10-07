@@ -987,7 +987,7 @@ POSTS = [
 
 <p>Mặt bằng chung ở Việt Nam hiện nay trải từ vài triệu cho khoá quay sẵn, tới vài chục triệu cho chương trình dài kèm chữa bài hằng tuần. Đây là ước lượng theo quan sát, không phải bảng giá, vì mỗi nơi gói nội dung một kiểu.</p>
 
-<p>Cách so sánh công bằng nhất là bỏ qua con số tổng và tách học phí thành bốn khoản: giờ giảng, số lần bài được chữa, tài nguyên đi kèm và hỗ trợ sau khoá. Hai nơi cùng báo một mức giá có thể chênh nhau nhiều lần ở khoản thứ hai.</p>
+<p>Cách so sánh công bằng nhất là bỏ qua con số tổng và tách học phí thành bốn khoản: giờ giảng, số lần bài được chữa, tài nguyên đi kèm và hỗ trợ sau khoá. Hai nơi cùng báo một mức giá có thể chênh nhau nhiều lần ở khoản thứ hai. Phần tính chi tiết theo đơn giá mỗi lần được chữa bài nằm trong bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>.</p>
 
 <div class="table-wrap">
 <table>
@@ -1427,7 +1427,7 @@ POSTS = [
 <li><strong style="color:#fff;">Hỗ trợ sau khoá.</strong> Lúc bạn nhận job đầu tiên mới là lúc câu hỏi khó nhất xuất hiện, thường là vài tháng sau khi lớp kết thúc.</li>
 </ul>
 
-<p>Một cách so sánh công bằng hơn giá mỗi buổi: lấy học phí chia cho số lần bài của bạn được người có nghề xem tận nơi. Con số đó mới phản ánh thứ bạn thật sự mua. Bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">chọn khoá học Blender 3D ở Việt Nam</a> có bảng dịch các kiểu nói về học phí sang nghĩa thật của chúng.</p>
+<p>Một cách so sánh công bằng hơn giá mỗi buổi: lấy học phí chia cho số lần bài của bạn được người có nghề xem tận nơi. Con số đó mới phản ánh thứ bạn thật sự mua. Bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">chọn khoá học Blender 3D ở Việt Nam</a> có bảng dịch các kiểu nói về học phí sang nghĩa thật của chúng, và bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a> có đủ bốn khoản phát sinh nằm ngoài hoá đơn.</p>
 
 <h2>Sáu câu nên hỏi trước khi đóng tiền</h2>
 
@@ -1562,7 +1562,7 @@ POSTS = [
 <li><strong style="color:#fff;">Hỗ trợ khi máy không kham nổi.</strong> Lớp render dễ vướng giới hạn phần cứng hơn lớp modeling. Nên hỏi trước nơi đó xử lý ra sao với máy cấu hình thấp.</li>
 </ul>
 
-<p>Một cách so sánh công bằng hơn giá mỗi buổi: lấy học phí chia cho số lần bài của bạn được người trong nghề xem tận nơi. Bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">chọn khoá học Blender 3D ở Việt Nam</a> có bảng dịch các kiểu nói về học phí sang nghĩa thật của chúng, dùng lại được cho khoá render.</p>
+<p>Một cách so sánh công bằng hơn giá mỗi buổi: lấy học phí chia cho số lần bài của bạn được người trong nghề xem tận nơi. Bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">chọn khoá học Blender 3D ở Việt Nam</a> có bảng dịch các kiểu nói về học phí sang nghĩa thật của chúng, dùng lại được cho khoá render. Cách quy báo giá về đơn giá phản hồi nằm trong bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>.</p>
 
 <h2>Danh sách kiểm tra trước khi đóng tiền</h2>
 
@@ -1681,7 +1681,7 @@ POSTS = [
 <li><strong style="color:#fff;">Thời gian được hỏi sau khoá.</strong> Phần lớn vướng mắc thật xuất hiện sau khi khoá kết thúc, lúc bạn làm dự án của riêng mình.</li>
 </ul>
 
-<p>Một cách so sánh công bằng hơn giá mỗi buổi: lấy học phí chia cho số lần bài của bạn được người trong nghề xem tận nơi. Cách đọc các kiểu nói về học phí, kể cả những lời hứa nên bỏ qua, mình viết kỹ trong bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>.</p>
+<p>Một cách so sánh công bằng hơn giá mỗi buổi: lấy học phí chia cho số lần bài của bạn được người trong nghề xem tận nơi. Cách đọc các kiểu nói về học phí, kể cả những lời hứa nên bỏ qua, mình viết kỹ trong bài <a href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>, còn cách quy mọi báo giá về một con số so được thì nằm trong bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>.</p>
 
 <blockquote><p>Bạn không mua số buổi học. Bạn mua số lần có người nhìn vào bài của bạn và nói thẳng nó sai ở đâu. Mọi con số khác trên tờ báo giá đều là phụ.</p></blockquote>
 
@@ -1935,7 +1935,7 @@ POSTS = [
 
 <p>Chúng tôi không nêu con số cụ thể của các đơn vị khác, vì học phí thay đổi theo thời điểm và theo việc lớp có chữa bài hay không. Thay vào đây là cách tính cho đủ, để bạn so sánh táo với táo.</p>
 
-<p>Khi hỏi học phí khoá học Blender, hãy quy về ba con số: tổng tiền, số buổi có người sửa bài trực tiếp cho bài của bạn, và số bài bạn phải nộp. Một khoá rẻ mà chỉ chiếu video rồi hỏi đáp chung thì đơn giá mỗi lần được chữa bài cao hơn nhiều so với một khoá đắt hơn nhưng sửa bài hằng tuần.</p>
+<p>Cách tính đầy đủ, kèm bốn khoản nằm ngoài hoá đơn, mình viết riêng trong bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>. Rút gọn lại: khi hỏi học phí, hãy quy về ba con số: tổng tiền, số buổi có người sửa bài trực tiếp cho bài của bạn, và số bài bạn phải nộp. Một khoá rẻ mà chỉ chiếu video rồi hỏi đáp chung thì đơn giá mỗi lần được chữa bài cao hơn nhiều so với một khoá đắt hơn nhưng sửa bài hằng tuần.</p>
 
 <h3>Các khoản nằm ngoài hoá đơn</h3>
 <ul>
@@ -2005,6 +2005,136 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đang ở TPHCM và chưa chốt được hình thức, cứ nhắn mô tả hoàn cảnh của bạn: giờ rảnh mỗi tuần, khoảng cách di chuyển, máy đang dùng và mảng bạn nhắm. Chúng tôi nói thẳng là nên học trực tiếp, học online, hay chưa nên đóng tiền cho khoá nào cả mà cứ tải <a href="cam-nang.html">cẩm nang</a> làm trước một tháng. Không cần đăng ký gì.</p>
+""",
+    },
+    {
+        "slug": "hoc-phi-khoa-hoc-blender",
+        "title": "Học phí khoá học Blender: tính sao cho đúng",
+        "desc": "Học phí khoá học Blender chênh nhau rất xa. Cách quy mọi báo giá về đơn giá mỗi lần được chữa bài, bốn khoản nằm ngoài hoá đơn và câu hỏi lọc lớp kém.",
+        "tag": "Định hướng",
+        "date": "2026-10-07",
+        "date_vn": "07/10/2026",
+        "read": "9 phút đọc",
+        "thumb": "assets/jhm-chu-thich-lo-vua.webp",
+        "body": """
+<p class="lead">Học phí khoá học Blender ở Việt Nam chênh nhau tới vài lần cho những lớp nghe mô tả gần giống nhau, nên so tổng tiền là cách so sai. Con số đáng nhìn là đơn giá mỗi lần bài của bạn được chữa riêng, cộng với số món hoàn chỉnh bạn mang ra khỏi khoá. Tính theo hai chỉ số đó, một lớp đắt gấp đôi thường lại rẻ hơn.</p>
+
+<p>Bài này không nêu học phí của bất kỳ đơn vị nào, kể cả của chúng tôi, vì giá thay đổi theo thời điểm và theo việc lớp có chữa bài hay không. Thứ bài viết cung cấp là một cách tính bạn có thể áp lên mọi báo giá bạn nhận được, kèm bốn khoản chi phí hầu như không ai nhắc trước khi bạn chuyển khoản.</p>
+
+<h2>Vì sao học phí khoá học Blender chênh nhau quá xa</h2>
+
+<p>Blender miễn phí, nên toàn bộ tiền bạn trả là tiền mua thời gian của người dạy và cơ chế phản hồi. Ba mô hình dưới đây có cấu trúc chi phí hoàn toàn khác nhau, và đó là nguồn gốc của mọi khoảng cách giá.</p>
+
+<h3>Lớp phát video, hỏi đáp chung</h3>
+<p>Chi phí biên gần như bằng không, thêm một học viên không làm người dạy mất thêm giờ nào. Giá rẻ là hợp lý. Đổi lại, không ai xem cụ thể file của bạn.</p>
+
+<h3>Lớp đông có chữa bài theo nhóm</h3>
+<p>Người dạy phải mở bài thật, nhưng nhận xét được phát cho cả lớp. Giá trung bình. Phần bạn nhận được phụ thuộc vào việc bài của bạn có được chọn làm ví dụ hay không.</p>
+
+<h3>Kèm riêng hoặc lớp rất nhỏ</h3>
+<p>Mỗi giờ của người dạy chỉ phục vụ một hoặc vài người, nên giá cao nhất và đó là mức giá đúng. Mô hình này giải quyết được chỗ kẹt riêng của bạn, thứ mà video không bao giờ chạm tới. Phần so sánh chi tiết nằm trong bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a>.</p>
+
+<blockquote><p>Bạn không mua bài giảng. Bài giảng về Blender trên mạng đã đủ nhiều và phần lớn là miễn phí. Bạn mua việc có người nhìn vào file của bạn và nói đúng chỗ sai.</p></blockquote>
+
+<h2>Cách quy mọi báo giá về một con số so được</h2>
+
+<p>Khi nhận báo giá, đừng ghi lại tổng tiền. Ghi lại bốn thứ: tổng học phí, số lần bài của chính bạn được chữa riêng trong cả khoá, số bài bắt buộc phải nộp, và số món hoàn chỉnh dự kiến có sau khoá. Rồi lấy tổng học phí chia cho số lần được chữa bài.</p>
+
+<p>Con số đó là đơn giá phản hồi. Nó cho thấy vì sao hai lớp cùng giá có thể khác nhau hoàn toàn: một lớp mười hai tuần chữa bài hằng tuần cho đơn giá bằng một phần sáu so với một lớp cùng giá chỉ chữa bài hai lần ở giữa và cuối khoá.</p>
+
+<h3>Chỉ số thứ hai: số món hoàn chỉnh</h3>
+<p>Thứ xin việc được là portfolio, không phải chứng chỉ. Một khoá cho ra ba món hoàn chỉnh đủ đăng, kể cả khi đắt hơn, vẫn đáng hơn một khoá cho ra mười hai bài tập dở dang. Hỏi thẳng câu này trước khi đóng tiền, và đòi xem ví dụ thật. Trang <a href="hoc-vien.html">bài tập học viên</a> của chúng tôi là dạng bằng chứng bạn nên yêu cầu ở bất cứ nơi nào bạn định học.</p>
+
+<h2>Bảng so sánh ba mô hình theo chi phí thật</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Khoá video, hỏi đáp chung</th><th>Lớp đông có chữa bài nhóm</th><th>Kèm riêng hoặc lớp rất nhỏ</th></tr></thead>
+<tbody>
+<tr><td>Mức học phí tương đối</td><td>Thấp nhất</td><td>Trung bình</td><td>Cao nhất</td></tr>
+<tr><td>Bài của bạn được xem riêng</td><td>Không, hoặc rất hạn chế</td><td>Có, nhưng nhận xét chung cho lớp</td><td>Có, từng bài</td></tr>
+<tr><td>Đơn giá mỗi lần được chữa bài</td><td>Rất cao vì số lần gần bằng không</td><td>Trung bình</td><td>Thường thấp nhất tính theo giá trị</td></tr>
+<tr><td>Rủi ro bỏ giữa đường</td><td>Cao nhất, không ai nhắc bạn nộp bài</td><td>Trung bình</td><td>Thấp nhất</td></tr>
+<tr><td>Phù hợp khi</td><td>Bạn đã có nền và chỉ cần tài liệu</td><td>Bạn mới bắt đầu, cần nhịp và bạn học</td><td>Bạn đang kẹt ở một khâu cụ thể</td></tr>
+<tr><td>Thứ thường thiếu</td><td>Chẩn đoán chỗ sai của riêng bạn</td><td>Thời lượng dành riêng cho bạn</td><td>Môi trường có người cùng học</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không nói mô hình nào tốt nhất. Nó nói rằng mức giá phản ánh thứ bạn nhận được, và sai lầm phổ biến nhất là trả tiền cho mô hình rẻ khi vấn đề của bạn chỉ mô hình đắt mới giải được. Nếu bạn còn chưa rõ mình đang thiếu gì, hai bài <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> và <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> mô tả cụ thể phần nền và thứ tự học tối thiểu.</p>
+
+<figure>
+  <img src="assets/jhm-chu-thich-thep-ma-kem.webp" alt="Render kỹ thuật chi tiết giá treo xây dựng JHM với các đường chú thích mô tả lớp thép mạ kẽm" loading="lazy" width="1800" height="1012">
+  <figcaption><strong>Một bản chú thích kỹ thuật trong dự án JHM của LXAM Studio.</strong> Dạng bài này là lý do học phí có người chữa bài khác học phí xem video: lỗi nằm ở cách đọc bản vẽ và tổ chức khối, không ở thao tác nào có thể chiếu lên màn hình.</figcaption>
+</figure>
+
+<h2>Bốn khoản nằm ngoài hoá đơn</h2>
+
+<p>Đây là phần làm vỡ ngân sách của nhiều người, vì không nơi nào ghi vào báo giá.</p>
+
+<p><strong style="color:#fff;">Máy tính.</strong> Khoản lớn nhất và dễ bị bỏ sót nhất. Nếu máy hiện tại không kham được khâu kết xuất, bạn sẽ phải nâng cấp giữa khoá, đúng lúc đang tốn học phí. Kiểm tra trước bằng bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>, trong đó có phần nói rõ mức nào đủ và mức nào chỉ là mong muốn.</p>
+
+<p><strong style="color:#fff;">Thời gian của bạn.</strong> Số giờ làm bài ở nhà luôn lớn hơn số giờ trên lớp. Ước lượng từ các nhóm đã đi qua là khoảng sáu tới mười giờ mỗi tuần để theo kịp một chương trình có nộp bài. Quy số giờ đó ra giá trị giờ của bạn rồi cộng vào, bạn sẽ thấy học phí thường là phần nhỏ trong tổng đầu tư.</p>
+
+<p><strong style="color:#fff;">Lưu trữ và sao lưu.</strong> File 3D phình nhanh. Một dự án sản phẩm có texture độ phân giải cao dễ chiếm vài chục gigabyte. Mất file giữa khoá là mất cả tiền và tinh thần.</p>
+
+<p><strong style="color:#fff;">Chi phí đi lại, nếu học trực tiếp.</strong> Ở TPHCM, hai buổi mỗi tuần vào giờ tan tầm là khoảng năm mươi tới sáu mươi giờ ngồi xe cho một khoá bốn tháng. Phần tính chi tiết nằm trong bài <a href="blog-khoa-hoc-3d-tai-tphcm.html">khoá học 3D tại TPHCM</a>.</p>
+
+<h2>Danh sách kiểm tra trước khi chuyển khoản</h2>
+
+<p>Mười câu, dùng được cho mọi mức giá. Nơi dạy tử tế trả lời thẳng cả những câu bất lợi cho họ.</p>
+
+<ul>
+<li>Tổng học phí gồm những gì, có khoản nào phát sinh sau không?</li>
+<li>Trong cả khoá, bài của riêng tôi được chữa bao nhiêu lần?</li>
+<li>Chữa bài là nhận xét riêng cho file của tôi, hay nhận xét chung trước lớp?</li>
+<li>Kết thúc khoá tôi có bao nhiêu món hoàn chỉnh đủ đưa vào portfolio?</li>
+<li>Người chữa bài có đang làm dự án thật không, xem dự án đó ở đâu?</li>
+<li>Lớp có bao nhiêu người, và tỉ lệ một người dạy trên bao nhiêu học viên?</li>
+<li>Nghỉ một buổi thì học bù thế nào, có bản ghi hay không?</li>
+<li>Khoá dạy tới đâu: dừng ở dựng hình, hay có cả vật liệu, ánh sáng và kết xuất?</li>
+<li>Yêu cầu cấu hình máy tối thiểu là gì?</li>
+<li>Có chính sách hoàn tiền hoặc đổi lớp nếu tôi thấy không phù hợp sau vài buổi đầu không?</li>
+</ul>
+
+<p>Câu thứ tư và câu thứ năm là hai câu lọc mạnh nhất. Một nơi dạy có kết quả thật thì luôn sẵn ví dụ để đưa bạn xem, cả bài tốt lẫn bài còn yếu kèm phần nhận xét.</p>
+
+<h2>Khi nào chưa nên đóng học phí cho bất kỳ khoá nào</h2>
+
+<p>Nói thẳng, có những trường hợp đóng tiền lúc này là lãng phí.</p>
+
+<p>Nếu bạn chưa mở Blender lần nào và chưa chắc mình thật sự thích công việc này, hãy tải <a href="cam-nang.html">cẩm nang Blender miễn phí</a> và làm hết phần bài tập trong đó trước. Mất một đến hai tuần, không tốn đồng nào, và nó loại bỏ phần lớn rủi ro chọn sai khoá.</p>
+
+<p>Nếu bạn đã dựng được vài món nhưng không biết chúng yếu ở đâu, vấn đề của bạn là chẩn đoán, không phải bài giảng. Một khoá đại trà sẽ dạy lại thứ bạn đã biết. Hình thức <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> hợp hơn, và tính theo đơn giá phản hồi thì thường còn rẻ hơn.</p>
+
+<p>Nếu tuần nào bạn cũng chỉ còn dưới ba giờ rảnh, hãy để dành tiền. Không có mức học phí nào bù được việc không ngồi vào bàn. Đợi tới giai đoạn đời sống cho phép sáu tới mười giờ mỗi tuần rồi hãy đăng ký.</p>
+
+<h2>Học phí khoá học Blender nên được nhìn như một khoản đầu tư có kỳ hạn</h2>
+
+<p>Cách lành mạnh nhất để quyết định là đặt câu hỏi ngược: sau sáu tháng, thứ gì chứng minh khoản tiền này đáng. Nếu câu trả lời là một tấm chứng chỉ, bạn đang trả tiền cho thứ thị trường không chấm. Nếu câu trả lời là ba món trong portfolio, một quy trình làm việc lặp lại được và khả năng tự chẩn đoán lỗi, thì mức học phí cao hơn hoàn toàn chính đáng.</p>
+
+<p>Mức lương và nhu cầu tuyển của mảng này ở Việt Nam được mô tả theo khoảng trong trang <a href="nghe-nghiep.html">nghề 3D artist</a>, kèm phần nói rõ đó là ước lượng chứ không phải số liệu chính thức. Đọc trang đó cùng với bài này sẽ cho bạn một bài toán hoàn chỉnh hơn, thay vì chỉ nhìn con số học phí trần trụi.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Học phí khoá học Blender khoảng bao nhiêu là hợp lý?</p>
+<p>Không có mức chung, vì một khoá phát video và một khoá chữa bài hằng tuần là hai sản phẩm khác nhau. Thay vì tìm mức hợp lý, hãy lấy tổng học phí chia cho số lần bài của bạn được chữa riêng, rồi so các báo giá bằng con số đó.</p>
+
+<p class="faq-q">Blender miễn phí thì sao vẫn phải trả học phí?</p>
+<p>Vì bạn trả cho thời gian của người chữa bài và cho cơ chế buộc bạn nộp bài đều, không trả cho phần mềm. Nếu bạn đã có khả năng tự kỷ luật và tự chẩn đoán lỗi, tài liệu miễn phí hoàn toàn đủ.</p>
+
+<p class="faq-q">Khoá đắt có chắc tốt hơn khoá rẻ không?</p>
+<p>Không chắc. Giá cao chỉ hợp lý khi nó mua được thời lượng dành riêng cho bạn. Một khoá đắt mà vẫn bốn mươi người một lớp và nhận xét chung thì chỉ là khoá rẻ bán giá cao.</p>
+
+<p class="faq-q">Có nên trả góp hoặc đóng theo từng phần?</p>
+<p>Nếu nơi dạy cho đóng theo chặng, đó thường là dấu hiệu tốt vì họ chịu rủi ro cùng bạn. Hỏi rõ điều kiện dừng giữa khoá trước khi ký, và đọc kỹ phần hoàn tiền.</p>
+
+<p class="faq-q">Học xong khoá là làm được việc ngay chứ?</p>
+<p>Thường là không ngay. Khoảng thời gian thực tế tới mức nhận được việc, cùng các mốc cụ thể, nằm trong bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a>. Bất cứ nơi nào cam kết có việc ngay sau khoá đều nên bị hỏi lại rất kỹ.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang cầm hai ba báo giá và không biết chọn cái nào, cứ gửi cho chúng tôi mô tả từng lớp: số buổi, số người, số lần chữa bài và số bài nộp. Chúng tôi sẽ nói thẳng cái nào có đơn giá phản hồi tốt hơn, kể cả khi câu trả lời là không nên học ở đâu cả mà cứ tải <a href="cam-nang.html">cẩm nang</a> làm trước một tháng. Muốn xem cách một chương trình chia bài theo tuần trông thế nào, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ bài nộp và cách chữa bài từng tuần.</p>
 """,
     },
 ]
