@@ -289,20 +289,36 @@ POSTS = [
     {
         "slug": "lo-trinh-tu-hoc-blender",
         "title": "Lộ trình tự học Blender: 7 kỹ năng, đúng thứ tự",
-        "desc": "Phần lớn người mới bỏ Blender không vì khó, mà vì học sai thứ tự. Lộ trình tự học Blender gồm 7 kỹ năng, kèm lý do từng bước phải đứng đúng chỗ.",
+        "desc": "Lộ trình tự học Blender gồm bảy kỹ năng theo đúng thứ tự, kèm mốc thời gian ước lượng, dấu hiệu đã qua từng bước và chỗ phần lớn người mới bỏ cuộc.",
         "tag": "Lộ trình",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "read": "8 phút đọc",
+        "updated": "2026-10-08",
+        "updated_vn": "08/10/2026",
+        "read": "12 phút đọc",
         "thumb": "assets/2cdbf5f9.jpg",
+        "faq": [
+            ("Lộ trình tự học Blender mất bao lâu nếu học một mình?",
+             "Ước lượng từ người học quanh LXAM Studio: đi hết bảy bước thường mất một tới hai năm nếu tự học hoàn toàn và học ngắt quãng, khoảng tám tới mười hai tháng nếu học đều mười giờ mỗi tuần và có người sửa bài. Phần lâu nhất không phải học thao tác mà là tự phát hiện bài mình sai ở đâu."),
+            ("Nên học modeling trước hay lighting trước?",
+             "Modeling trước. Ánh sáng chỉ đánh giá được khi hình khối đã đúng tỉ lệ. Chỉnh đèn trên một model sai tỉ lệ là sửa triệu chứng, càng chỉnh càng rối."),
+            ("Tự học Blender có cần máy mạnh ngay không?",
+             "Không trong sáu tháng đầu. Ba bước đầu của lộ trình gần như không phụ thuộc cấu hình. Máy chỉ thành nút thắt từ bước render trở đi, nhất là khi cảnh có volumetric hoặc nhiều ánh sáng gián tiếp."),
+            ("Học xong bảy bước là đi làm được chưa?",
+             "Chưa chắc. Bảy bước cho bạn kỹ năng, nhà tuyển dụng xem portfolio. Thường cần thêm ba tới năm bài hoàn chỉnh làm theo brief thật, có giới hạn thời gian và có người nhận xét, trước khi hồ sơ đủ sức thuyết phục."),
+            ("Có nên học Blender song song với 3ds Max không?",
+             "Không nên trong năm đầu. Hai phần mềm chia nhỏ thời gian luyện tập mà kỹ năng cốt lõi thì giống nhau. Học chắc một cái rồi chuyển sang cái kia sẽ nhanh hơn nhiều."),
+        ],
         "body": """
-<p class="lead">Tôi gặp câu hỏi này gần như mỗi tuần: "Em nên học gì trước?". Câu trả lời ngắn là modeling. Câu trả lời dài, và hữu ích hơn, là vì sao thứ tự lại quan trọng đến thế.</p>
+<p class="lead">Thứ tự đúng của một lộ trình tự học Blender là: modeling, vật liệu, ánh sáng, render, hard-surface, chuyển động, hậu kỳ. Học đảo thứ tự là lý do phổ biến nhất khiến người mới dừng lại ở tháng thứ ba, chứ không phải vì phần mềm khó. Dưới đây là đủ bảy bước, kèm mốc thời gian ước lượng và dấu hiệu để tự biết mình đã qua bước nào.</p>
 
-<p>Blender là phần mềm hiếm hoi làm được gần như mọi khâu trong một pipeline 3D. Đó vừa là điểm mạnh vừa là cái bẫy: người mới mở lên, thấy hai chục tab, và bắt đầu học theo thứ tự ngẫu nhiên của video YouTube được đề xuất. Ba tháng sau họ biết dựng một cái ghế, biết bấm nút render, nhưng không giải thích được vì sao ảnh của mình trông rẻ tiền.</p>
+<p>Blender là phần mềm hiếm hoi làm được gần như mọi khâu trong một pipeline 3D. Đó vừa là điểm mạnh vừa là cái bẫy: người mới mở lên, thấy hai chục tab, và bắt đầu học theo thứ tự ngẫu nhiên của video được đề xuất. Ba tháng sau họ biết dựng một cái ghế, biết bấm nút render, nhưng không giải thích được vì sao ảnh của mình trông rẻ tiền.</p>
 
 <h2>Vì sao thứ tự quan trọng</h2>
 
 <p>Mỗi kỹ năng trong 3D đều đứng trên vai kỹ năng trước nó. Bạn không thể đánh giá vật liệu của mình đúng hay sai nếu ánh sáng đang sai. Bạn không thể sửa ánh sáng nếu hình khối đã lệch. Học đảo thứ tự nghĩa là bạn liên tục sửa triệu chứng thay vì sửa nguyên nhân, và đó là lý do người ta bỏ cuộc, chứ không phải vì Blender khó.</p>
+
+<p>Có một cách kiểm chứng rất nhanh. Mở lại bài render gần nhất của bạn và hỏi: nếu bây giờ tắt hết đèn rồi bật lại một đèn duy nhất, hình khối này còn đọc được không? Nếu câu trả lời là không, vấn đề nằm ở bước một chứ không nằm ở bước ba, và mọi giờ bạn đổ vào việc chỉnh đèn tuần này đều là giờ mất trắng.</p>
 
 <blockquote><p>Một cái model sai tỉ lệ, lighting đẹp cỡ nào cũng không cứu được. Nhưng một cái model đúng, chỉ cần một nguồn sáng tử tế là đã dùng được.</p></blockquote>
 
@@ -310,36 +326,147 @@ POSTS = [
 
 <h3>1. Modeling: dựng hình</h3>
 <p>Đây là nền. Không phải để bạn dựng được thứ phức tạp, mà để bạn đọc được hình khối: tỉ lệ, topology, đâu là bề mặt cong thật và đâu là cong giả. Người dựng hình tốt tiết kiệm được hàng giờ ở mọi khâu phía sau.</p>
+<p>Nếu bạn đang phân vân nên bắt đầu dựng hình từ bài tập nào, phần đầu của bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> có liệt kê thứ tự bài tập mà người mới nên đi qua, dùng được cả khi bạn tự học.</p>
 <p><strong style="color:#fff;">Dấu hiệu bạn đã qua bước này:</strong> nhìn một vật thể ngoài đời, bạn phác được trong đầu nó gồm mấy khối cơ bản và nối với nhau ra sao.</p>
 
 <h3>2. Materials: vật liệu</h3>
 <p>Vật liệu là nơi người mới hay đốt thời gian nhất mà thu về ít nhất, vì họ chỉnh nó dưới ánh sáng sai. Học đủ để hiểu ba thông số thật sự quan trọng là base color, roughness và metallic, rồi đi tiếp. Phần còn lại quay lại sau khi biết lighting.</p>
+<p><strong style="color:#fff;">Dấu hiệu bạn đã qua bước này:</strong> bạn phân biệt được khi nào một bề mặt trông sai vì sai thông số vật liệu, và khi nào nó sai vì thiếu một nguồn sáng để phản chiếu.</p>
 
 <h3>3. Lighting: ánh sáng</h3>
 <p>Đây là bước tạo ra khác biệt lớn nhất giữa ảnh nghiệp dư và ảnh thương mại, và cũng là bước bị bỏ qua nhiều nhất. Ánh sáng quyết định người xem nhìn vào đâu, cảm thấy gì, và tin sản phẩm đó đắt hay rẻ.</p>
-<p>Nếu bạn chỉ có thời gian để giỏi một kỹ năng duy nhất trong bảy cái này, chọn cái này.</p>
+<p>Nếu bạn chỉ có thời gian để giỏi một kỹ năng duy nhất trong bảy cái này, chọn cái này. Trước khi học thêm kỹ thuật mới, nên đọc qua năm <a href="blog-5-loi-lighting.html">lỗi lighting khiến render trông rẻ tiền</a>, vì phần lớn bài của người tự học mắc ít nhất hai trong số đó.</p>
+
+<figure>
+  <img src="assets/chivas15-glorifier-logo-anh-sang.webp" alt="Mô hình glorifier trưng bày Chivas Regal XV dựng bằng Blender, chai vàng kim loại và viền chữ phát sáng trên nền đen" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Glorifier trưng bày trong dự án Chivas 15 của LXAM Studio.</strong> Gần như toàn bộ sức nặng của hình này đến từ ánh sáng và chất liệu phản chiếu, hình khối bên dưới thực ra rất đơn giản. Đó là lý do bước ba đáng đầu tư hơn bước một về lâu dài.</figcaption>
+</figure>
 
 <h3>4. Rendering: kết xuất</h3>
 <p>Không phải học bấm nút render, mà học đọc kết quả: nhiễu đến từ đâu, vì sao cảnh này lâu bất thường, khi nào nên dùng Cycles và khi nào EEVEE là đủ. Hiểu render giúp bạn tiết kiệm hàng chục giờ chờ máy mỗi tháng.</p>
+<p>Đây cũng là bước đầu tiên mà cấu hình máy thật sự thành nút thắt. Trước đó bạn học được trên gần như mọi máy, nên đừng vội nâng cấp sớm; bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> có bảng tham khảo theo giai đoạn để bạn không mua thừa.</p>
 
 <h3>5. Hard-surface: bề mặt cứng</h3>
 <p>Đến đây bạn mới nên đụng vào sản phẩm công nghiệp: máy móc, thiết bị, xe cộ. Hard-surface đòi hỏi kỷ luật về topology và bevel mà ba bước đầu đã rèn cho bạn. Vào sớm hơn, bạn sẽ chỉ tạo ra những khối méo mà không biết vì sao nó méo.</p>
 
+<figure>
+  <img src="assets/jhm-khoi-kinh-ky-thuat.webp" alt="Chi tiết giá treo kim loại JHM dựng hard-surface bằng Blender, đặt trong khối kính trong suốt trên nền lưới kỹ thuật tối màu" loading="lazy" width="1800" height="1012">
+  <figcaption><strong>Chi tiết giá treo kim loại trong dự án JHM.</strong> Một chi tiết cơ khí nhỏ như thế này là bài kiểm tra thẳng thắn cho bước năm: bevel sai một chút là ánh sáng trượt trên cạnh và mắt người xem nhận ra ngay, dù họ không gọi được tên lỗi.</figcaption>
+</figure>
+
 <h3>6. Animation: chuyển động</h3>
 <p>Chuyển động là ngôn ngữ riêng, không phải phần mở rộng của dựng hình. Timing, easing, và quan trọng nhất là biết khi nào <em>không</em> nên cho vật thể chuyển động. Một shot sản phẩm đứng yên với camera trôi chậm thường thuyết phục hơn một shot mọi thứ đều quay.</p>
 
-<h3>7. VFX &amp; hậu kỳ</h3>
-<p>Bước cuối, và là bước dễ bị lạm dụng nhất. Hậu kỳ để nâng một shot đã tốt lên, không phải để cứu một shot hỏng. Nếu bạn thấy mình đang kéo curve rất nhiều để ảnh "đỡ tệ", vấn đề nằm ở khâu ba hoặc khâu một.</p>
+<h3>7. VFX và hậu kỳ</h3>
+<p>Bước cuối, và là bước dễ bị lạm dụng nhất. Hậu kỳ để nâng một shot đã tốt lên, không phải để cứu một shot hỏng. Nếu bạn thấy mình đang kéo curve rất nhiều để ảnh đỡ tệ, vấn đề nằm ở khâu ba hoặc khâu một.</p>
+
+<h2>Bảng lộ trình: mốc thời gian và dấu hiệu đã qua</h2>
+
+<p>Các con số dưới đây là ước lượng, dựa trên người học quanh studio và giả định bạn bỏ ra khoảng tám tới mười hai giờ mỗi tuần. Học ít hơn thì kéo dài ra theo tỉ lệ, học nhiều hơn không rút ngắn được tương ứng vì mắt nhìn cần thời gian chứ không chỉ cần số giờ.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Bước</th><th>Thời gian ước lượng</th><th>Dấu hiệu đã qua</th></tr></thead>
+<tbody>
+<tr><td>1. Modeling</td><td>6 đến 10 tuần</td><td>Phác được vật thể thành các khối cơ bản</td></tr>
+<tr><td>2. Vật liệu</td><td>2 đến 3 tuần</td><td>Đọc được roughness và metallic qua mắt</td></tr>
+<tr><td>3. Ánh sáng</td><td>8 đến 12 tuần</td><td>Nói được vì sao đặt đèn ở đúng chỗ đó</td></tr>
+<tr><td>4. Render</td><td>2 đến 4 tuần</td><td>Chẩn đoán được nguồn gốc của nhiễu</td></tr>
+<tr><td>5. Hard-surface</td><td>8 đến 14 tuần</td><td>Giữ được cạnh sạch khi lên subdivision</td></tr>
+<tr><td>6. Chuyển động</td><td>6 đến 10 tuần</td><td>Nhận ra timing sai khi xem lại bản nháp</td></tr>
+<tr><td>7. Hậu kỳ</td><td>3 đến 5 tuần</td><td>Dừng lại đúng lúc, không chỉnh quá tay</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Mỗi bước có một kiểu đi sai riêng. Đây là những cái hay gặp nhất:</p>
+
+<ul>
+<li><strong style="color:#fff;">Bước 1:</strong> nhảy ngay vào model phức tạp thay vì luyện đọc khối cơ bản.</li>
+<li><strong style="color:#fff;">Bước 2:</strong> tải bừa thư viện material rồi dừng ở đó, không hiểu thông số.</li>
+<li><strong style="color:#fff;">Bước 3:</strong> thêm đèn để cứu hình, trong khi cách đúng thường là bớt đèn đi.</li>
+<li><strong style="color:#fff;">Bước 4:</strong> tăng sample cho hết nhiễu thay vì tìm nguồn gốc của nhiễu.</li>
+<li><strong style="color:#fff;">Bước 5:</strong> vào hard-surface khi bước 1 chưa vững, rồi bế tắc với topology.</li>
+<li><strong style="color:#fff;">Bước 6:</strong> cho mọi thứ trong khung hình cùng chuyển động một lúc.</li>
+<li><strong style="color:#fff;">Bước 7:</strong> dùng hậu kỳ để cứu một shot vốn đã hỏng từ khâu ánh sáng.</li>
+</ul>
+
+<p>Cộng lại khoảng tám tới mười hai tháng nếu mọi thứ suôn sẻ. Thực tế thì ít ai suôn sẻ, nên con số một tới hai năm cho người tự học hoàn toàn là hợp lý. Bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a> tách riêng hai trường hợp này kỹ hơn.</p>
+
+<h2>Ba chỗ người tự học hay kẹt lại</h2>
+
+<p><strong style="color:#fff;">Kẹt ở bước ba.</strong> Đây là chỗ đông người dừng nhất. Lý do là ánh sáng không có đáp án đúng sai rõ ràng như modeling, nên không có người nhận xét thì bạn không biết mình tiến hay lùi. Cách tự cứu rẻ nhất: chọn một ảnh tham chiếu thật, dựng lại bằng một đèn duy nhất, so sánh, lặp lại trong bốn tuần.</p>
+
+<p><strong style="color:#fff;">Kẹt vì học quá nhiều nguồn.</strong> Mỗi người dạy một quy trình khác nhau, và người mới chưa đủ nền để biết quy trình nào hợp với mình. Kết quả là bạn có mười cách làm nửa vời thay vì một cách làm được. Trong ba tháng đầu, chọn một nguồn và đi hết nó.</p>
+
+<p><strong style="color:#fff;">Kẹt vì không bao giờ hoàn thành bài.</strong> Bỏ dở ở phút thứ tám mươi là thói quen tốn kém nhất, vì mọi kỹ năng khó đều nằm ở hai mươi phần trăm cuối. Thà làm ba bài nhỏ xong hẳn còn hơn mười bài dang dở.</p>
+
+<h2>Tự học hết bảy bước, hay học có người sửa bài</h2>
+
+<p>Cả hai đường đều tới đích. Khác nhau ở chi phí: tự học rẻ tiền nhưng đắt thời gian, học kèm ngược lại. Thứ bạn thật sự mua khi trả học phí không phải bài giảng, vì bài giảng miễn phí đầy trên mạng, mà là người ngồi nhìn file của bạn và nói đúng chỗ sai.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Tự học hoàn toàn</th><th>Có người sửa bài</th></tr></thead>
+<tbody>
+<tr><td>Chi phí tiền</td><td>Gần như bằng không</td><td>Đáng kể, cần tính kỹ</td></tr>
+<tr><td>Thời gian tới portfolio</td><td>Thường gấp hai tới gấp ba</td><td>Ngắn hơn rõ rệt</td></tr>
+<tr><td>Rủi ro đi sai đường</td><td>Cao, phát hiện muộn</td><td>Thấp, phát hiện trong tuần</td></tr>
+<tr><td>Tính kỷ luật đòi hỏi</td><td>Rất cao</td><td>Vừa phải vì có lịch</td></tr>
+<tr><td>Hợp với ai</td><td>Người có nhiều thời gian rảnh</td><td>Người đang đi làm, ít thời gian</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nếu bạn đã đi được tới bước ba rồi đứng yên, đó đúng là lúc hình thức <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> phát huy, vì cái bạn thiếu không còn là bài giảng mà là người chẩn đoán đúng chỗ kẹt. Còn nếu bạn mới ở bước một và chưa chắc có theo nghề hay không, một <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> hoặc đơn giản là ba tháng tự học nữa đều hợp lý hơn.</p>
+
+<p>Trước khi quyết định đóng tiền ở bất kỳ đâu, nên xem qua cách bóc tách <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a> theo số lần được chữa bài. Con số đó nói nhiều hơn tổng học phí.</p>
+
+<h2>Danh sách kiểm tra mỗi tháng một lần</h2>
+
+<p>Tự học thiếu nhất là cơ chế phản hồi. Dùng danh sách này mỗi tháng, đánh dấu từng dòng. Thiếu quá ba dòng nghĩa là tháng vừa rồi bạn bận rộn chứ không tiến bộ.</p>
+
+<ul>
+<li>Tháng này có ít nhất một bài hoàn thành tới khâu cuối, không bỏ dở.</li>
+<li>Nói được bằng một câu mình đang ở bước nào trong bảy bước.</li>
+<li>Có ít nhất một bài được người khác nhận xét, dù chỉ là bạn cùng học.</li>
+<li>Xem lại bài của tháng trước và chỉ ra được ít nhất hai lỗi.</li>
+<li>Không dành quá một phần tư thời gian cho việc xem video mà không mở Blender.</li>
+<li>Không nâng cấp phần cứng hoặc mua add-on mới nào trong tháng trừ khi đã chạm trần thật sự.</li>
+<li>Có một ảnh tham chiếu thật cho mỗi bài, không dựng theo trí nhớ.</li>
+<li>File đặt tên và sắp xếp sao cho mở lại sau ba tháng vẫn hiểu.</li>
+</ul>
+
+<h2>Sau bảy bước thì rẽ đi đâu</h2>
+
+<p>Hết bảy bước, bạn có nền chung. Việc tiếp theo là chọn một mảng để đào sâu, vì thị trường trả tiền cho người chuyên chứ không trả cho người biết đều. Ba hướng phổ biến ở Việt Nam là hình ảnh sản phẩm, phối cảnh sự kiện và triển lãm, và automotive hoặc TVC.</p>
+
+<p>Cách chọn đơn giản nhất là nhìn vào loại công việc thật đang có trên thị trường. Phần <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> của studio liệt kê các dạng đầu việc thường gặp, đọc qua là hình dung được mảng nào hợp với mình. Nếu muốn đi theo đường có lộ trình sẵn thay vì tự ghép, hai hệ trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> được dựng đúng theo thứ tự bảy bước ở trên, chỉ khác là có người chữa bài ở mỗi mốc.</p>
+
+<p>Dù chọn đường nào, nên tải <a href="cam-nang.html">cẩm nang Blender</a> để có sẵn checklist lighting và quy trình render dùng khi làm việc thật. Có bảng tra cứu bên cạnh thì bớt được kha khá thời gian mò mẫm ở bước ba và bước bốn.</p>
+
+<h2>Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Lộ trình tự học Blender mất bao lâu nếu học một mình?</p>
+<p>Ước lượng từ người học quanh LXAM Studio: đi hết bảy bước thường mất một tới hai năm nếu tự học hoàn toàn và học ngắt quãng, khoảng tám tới mười hai tháng nếu học đều mười giờ mỗi tuần và có người sửa bài. Phần lâu nhất không phải học thao tác mà là tự phát hiện bài mình sai ở đâu.</p>
+
+<p class="faq-q">Nên học modeling trước hay lighting trước?</p>
+<p>Modeling trước. Ánh sáng chỉ đánh giá được khi hình khối đã đúng tỉ lệ. Chỉnh đèn trên một model sai tỉ lệ là sửa triệu chứng, càng chỉnh càng rối.</p>
+
+<p class="faq-q">Tự học Blender có cần máy mạnh ngay không?</p>
+<p>Không trong sáu tháng đầu. Ba bước đầu của lộ trình gần như không phụ thuộc cấu hình. Máy chỉ thành nút thắt từ bước render trở đi, nhất là khi cảnh có volumetric hoặc nhiều ánh sáng gián tiếp.</p>
+
+<p class="faq-q">Học xong bảy bước là đi làm được chưa?</p>
+<p>Chưa chắc. Bảy bước cho bạn kỹ năng, nhà tuyển dụng xem portfolio. Thường cần thêm ba tới năm bài hoàn chỉnh làm theo brief thật, có giới hạn thời gian và có người nhận xét, trước khi hồ sơ đủ sức thuyết phục.</p>
+
+<p class="faq-q">Có nên học Blender song song với 3ds Max không?</p>
+<p>Không nên trong năm đầu. Hai phần mềm chia nhỏ thời gian luyện tập mà kỹ năng cốt lõi thì giống nhau. Học chắc một cái rồi chuyển sang cái kia sẽ nhanh hơn nhiều.</p>
 
 <hr class="hr">
 
-<h2>Mất bao lâu?</h2>
+<p>Tóm lại, một lộ trình tự học Blender hiệu quả không nằm ở việc biết thêm thủ thuật, mà ở việc đứng đúng bước và không nhảy cóc. Bảy bước ở trên có thể đi một mình, chỉ là chậm hơn và cần kỷ luật hơn.</p>
 
-<p>Câu trả lời thành thật: tuỳ vào việc bạn có được sửa bài hay không. Tự học, phần lớn người ta mất một đến hai năm để đi hết bảy bước này, và đa số dừng ở bước ba. Có người sửa bài đều đặn, quãng đường đó rút xuống đáng kể, không phải vì bạn học nhanh hơn, mà vì bạn không mất sáu tháng đi sai đường rồi mới phát hiện.</p>
-
-<p>Nếu bạn đã đi được tới bước ba rồi đứng yên, đó đúng là lúc hình thức <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> phát huy, vì cái bạn thiếu không còn là bài giảng mà là người chẩn đoán đúng chỗ kẹt.</p>
-
-<p>Nếu bạn đang tự học và thấy mình mắc kẹt ở đâu đó trong bảy bước trên, cứ nhắn cho tôi mô tả chỗ kẹt. Tôi trả lời được thì trả lời, không thì chỉ bạn chỗ tìm. Không cần đăng ký gì cả.</p>
+<p>Nếu bạn đang tự học và thấy mình mắc kẹt ở đâu đó trong bảy bước, cứ nhắn cho tôi mô tả chỗ kẹt. Tôi trả lời được thì trả lời, không thì chỉ bạn chỗ tìm. Không cần đăng ký gì cả. Muốn đi theo đường có người chữa bài ở từng mốc, xem lộ trình hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>.</p>
 """,
     },
     {
@@ -678,7 +805,10 @@ POSTS = [
 <h3>2. Làm dự án hay làm bài tập</h3>
 <p>Bài tập có đáp án sẵn, làm xong thấy vui rồi thôi. Dự án có ràng buộc thật: deadline, yêu cầu, người duyệt, và ép bạn giải quyết vấn đề chưa ai dạy. Một dự án hoàn chỉnh dạy nhiều hơn hai mươi bài tập.</p>
 
-<h3>3. Đều đặn hơn là dồn dập</h3>
+<h3>3. Đi đúng thứ tự kỹ năng</h3>
+<p>Học đúng nội dung nhưng sai thứ tự vẫn chậm, vì mỗi bước cần bước trước làm nền. Bảng <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> chia bảy bước kèm mốc thời gian ước lượng, dùng để tự kiểm tra xem mình có đang nhảy cóc hay không.</p>
+
+<h3>4. Đều đặn hơn là dồn dập</h3>
 <p>10 giờ mỗi tuần trong sáu tháng ăn đứt 40 giờ một tuần rồi nghỉ hai tháng. Kỹ năng 3D là kỹ năng vận động, mắt và tay cần lặp lại thường xuyên mới giữ được.</p>
 
 <blockquote><p>Thứ khiến người ta bỏ Blender hiếm khi là độ khó. Thường là sáu tháng không thấy mình tiến bộ, vì không ai nói cho họ biết họ đang sai ở đâu.</p></blockquote>
@@ -1380,6 +1510,8 @@ POSTS = [
 <h2>Tám tuần đầu của một khoá học Blender 3D tử tế</h2>
 
 <p>Đây không phải giáo trình chuẩn, mỗi nơi sắp xếp một kiểu. Nhưng nếu một khoá học cho người mới thiếu hẳn một trong các mốc dưới đây, bạn nên hỏi lại lý do.</p>
+
+<p>Thứ tự tám tuần này bám theo đúng <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước: dựng hình trước, vật liệu và ánh sáng sau, render sau nữa. Khoá nào đảo thứ tự đó, hãy hỏi vì sao.</p>
 
 <div class="table-wrap">
 <table>
@@ -2107,6 +2239,8 @@ POSTS = [
 
 <p>Nếu bạn đã dựng được vài món nhưng không biết chúng yếu ở đâu, vấn đề của bạn là chẩn đoán, không phải bài giảng. Một khoá đại trà sẽ dạy lại thứ bạn đã biết. Hình thức <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> hợp hơn, và tính theo đơn giá phản hồi thì thường còn rẻ hơn.</p>
 
+<p>Nếu bạn chưa biết mình đang đứng ở đâu trong chuỗi kỹ năng, soi lại <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước trước đã. Biết mình kẹt ở bước nào thì mới chọn đúng loại khoá, và đôi khi hoá ra bạn chỉ cần thêm một tháng tự luyện chứ chưa cần đóng tiền.</p>
+
 <p>Nếu tuần nào bạn cũng chỉ còn dưới ba giờ rảnh, hãy để dành tiền. Không có mức học phí nào bù được việc không ngồi vào bàn. Đợi tới giai đoạn đời sống cho phép sáu tới mười giờ mỗi tuần rồi hãy đăng ký.</p>
 
 <h2>Học phí khoá học Blender nên được nhìn như một khoản đầu tư có kỳ hạn</h2>
@@ -2410,7 +2544,7 @@ def jsonld_post(p):
         "description": p["desc"],
         "image": "https://lxamstudio.com/" + p["thumb"],
         "datePublished": p["date"],
-        "dateModified": p["date"],
+        "dateModified": p.get("updated", p["date"]),
         "inLanguage": "vi-VN",
         "mainEntityOfPage": {"@type": "WebPage",
                              "@id": "https://lxamstudio.com/blog-%s.html" % p["slug"]},
@@ -2481,7 +2615,8 @@ def main():
         body = POST_TPL.format(
             tag=p["tag"], title=html.escape(p["title"]),
             title_plain=html.escape(p["title"]),
-            date_vn=p["date_vn"], read=p["read"],
+            date_vn=(p["date_vn"] + " · Cập nhật " + p["updated_vn"]) if p.get("updated_vn") else p["date_vn"],
+            read=p["read"],
             thumb=p["thumb"], body=body_html_, toc=toc_,
             related=related_html(p),
             sources=sources_html(p.get("sources")),
