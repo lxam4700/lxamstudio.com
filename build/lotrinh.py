@@ -4,6 +4,69 @@
 
 import os, json, datetime
 
+# --- auto width/height cho ảnh, doc header anh bang pure python ---
+import struct as _struct, os as _os
+_DIM_CACHE = {}
+
+def imgdim(src):
+    """Tra ve chuoi ' width="W" height="H"' doc tu header file anh, rong neu khong doc duoc."""
+    if src in _DIM_CACHE:
+        return _DIM_CACHE[src]
+    out = ""
+    for base in (".", "..", _os.path.join(_os.path.dirname(__file__), "..")):
+        path = _os.path.join(base, src)
+        if _os.path.isfile(path):
+            wh = _read_wh(path)
+            if wh:
+                out = ' width="%d" height="%d"' % wh
+            break
+    _DIM_CACHE[src] = out
+    return out
+
+def _read_wh(path):
+    try:
+        with open(path, "rb") as f:
+            head = f.read(32)
+            if head[:8] == b"\x89PNG\r\n\x1a\n":
+                return _struct.unpack(">II", head[16:24])
+            if head[:4] == b"RIFF" and head[8:12] == b"WEBP":
+                ck = head[12:16]
+                if ck == b"VP8 ":
+                    return (_struct.unpack("<H", head[26:28])[0] & 0x3FFF,
+                            _struct.unpack("<H", head[28:30])[0] & 0x3FFF)
+                if ck == b"VP8L":
+                    b = _struct.unpack("<I", head[21:25])[0]
+                    return ((b & 0x3FFF) + 1, ((b >> 14) & 0x3FFF) + 1)
+                if ck == b"VP8X":
+                    w = head[24] | head[25] << 8 | head[26] << 16
+                    h = head[27] | head[28] << 8 | head[29] << 16
+                    return (w + 1, h + 1)
+                return None
+            if head[:2] == b"\xff\xd8":
+                f.seek(2)
+                while True:
+                    b = f.read(1)
+                    if not b:
+                        return None
+                    if b != b"\xff":
+                        continue
+                    while b == b"\xff":
+                        b = f.read(1)
+                    m = b[0]
+                    if m in (0xD8, 0xD9) or 0xD0 <= m <= 0xD7:
+                        continue
+                    ln = _struct.unpack(">H", f.read(2))[0]
+                    if 0xC0 <= m <= 0xCF and m not in (0xC4, 0xC8, 0xCC):
+                        d = f.read(5)
+                        return (_struct.unpack(">H", d[3:5])[0],
+                                _struct.unpack(">H", d[1:3])[0])
+                    f.seek(ln - 2, 1)
+    except Exception:
+        return None
+    return None
+# --- het khoi auto width/height ---
+
+
 SITE = "/home/claude/site"
 YEAR = datetime.date.today().year
 
@@ -753,7 +816,7 @@ def head(title, desc, canonical, jsonld, og_image, active):
 <body>
 <nav class="lxnav">
   <a class="lxlogo" href="index.html" aria-label="LXAM Studio">
-    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon">
+    <img src="assets/logo-lxam.png" alt="LXAM" class="lxlogo-icon" width="256" height="256">
     <div class="lxwordmark">
       <div class="wm">LXAM</div>
       <div class="wm-sub">3D ART STUDIO</div>
@@ -1151,7 +1214,7 @@ FOOTER = """<footer class="lxfooter">
   <div class="lxfoot">
     <div>
       <a class="lxlogo" href="index.html" style="margin-bottom:18px;">
-        <img src="assets/logo-lxam.png" alt="LXAM" style="width:40px;height:40px;">
+        <img src="assets/logo-lxam.png" alt="LXAM" width="40" height="40" style="width:40px;height:40px;">
         <div class="lxwordmark">
           <div class="wm" style="font-size:26px;letter-spacing:9px;">LXAM</div>
           <div class="wm-sub" style="font-size:9px;letter-spacing:4.3px;">3D ART STUDIO</div>
