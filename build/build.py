@@ -509,6 +509,8 @@ POSTS = [
 
 <p><strong style="color:#fff;">Sửa:</strong> tắt hết đèn phụ, chỉ để nguồn chính. Nhìn kỹ. Rồi thêm lại từng đèn một, mỗi lần tự hỏi "đèn này đang giải quyết vấn đề gì?". Đèn nào không trả lời được thì xoá.</p>
 
+<p>Một ví dụ đi ngược cả bốn lỗi trên: <a href="du-an-volvo-s90.html">bộ hình Volvo S90 dựng và render bằng Blender</a>, đèn lớn, có vật để phản chiếu, và vùng tối được giữ nguyên thay vì kéo sáng cho đều.</p>
+
 <h2>5. Chỉnh màu ở khâu hậu kỳ để cứu ánh sáng sai</h2>
 
 <p>Kéo contrast và saturation trong Compositor cho tới khi ảnh "đỡ tệ" là dấu hiệu bạn đang vá triệu chứng. Hậu kỳ nên là bước tinh chỉnh cuối, không phải bước cứu hộ. Nếu bạn phải kéo mạnh tay, quay lại sửa đèn, nhanh hơn nhiều.</p>
@@ -557,6 +559,8 @@ POSTS = [
 <h2>Bước 4: Vật liệu, và kiềm chế</h2>
 
 <p>Sản phẩm thương mại thường đơn giản hơn người ta tưởng: vài chất liệu sạch, đúng độ nhám, đúng màu thương hiệu. Cám dỗ lớn nhất là thêm trầy xước, bụi, vân tay cho "thật". Với sản phẩm bán hàng, những thứ đó thường làm hại, khách muốn hàng mới tinh.</p>
+
+<p>Toàn bộ năm bước trên chạy trọn một lần trong <a href="du-an-mercedes-g63-tvc.html">dự án dựng TVC 3D Mercedes G63</a>: từ khối thô chốt góc máy, tới lighting, vật liệu rồi tách lớp render. Xem bản hoàn chỉnh dễ hình dung hơn là đọc mô tả quy trình.</p>
 
 <h2>Bước 5: Render theo lớp, không render một cục</h2>
 
@@ -1648,6 +1652,8 @@ POSTS = [
   <figcaption><strong>Một key visual automotive dựng hoàn toàn bằng Blender.</strong> Thứ làm tấm này đứng được không phải model xe, mà là dải sáng chạy dọc thân và khoảng tối giữ cho nền không giành mất chú ý. Đó chính là phần một khoá học render phải dạy.</figcaption>
 </figure>
 
+<p>Nếu muốn xem tiêu chuẩn này trông thế nào trên bài thật, hai bộ hình xe dưới đây là ví dụ sát nhất: <a href="du-an-porsche-911.html">bộ hình Porsche 911 dựng bằng Blender</a> cho thấy cách xử lý sơn bóng và phản chiếu môi trường, còn <a href="du-an-volvo-s90.html">bộ hình Volvo S90 render trong Blender</a> cho thấy cách giữ chi tiết ở vùng tối mà không kéo sáng cả khung.</p>
+
 <h2>Cycles hay Eevee: khoá học render nên bắt đầu từ đâu</h2>
 
 <p>Câu hỏi này gần như luôn xuất hiện ở buổi đầu. Câu trả lời ngắn là học Cycles trước, nhưng lý do mới là phần đáng nhớ.</p>
@@ -1920,6 +1926,8 @@ POSTS = [
 
 <p>Nội dung tối thiểu của một khoá dựng hình nghiêm túc gồm bốn phần: đọc hình và chia khối, dựng khối chuẩn tỉ lệ, kiểm soát lưới và dòng cạnh, và dọn file để giao cho người khác dùng tiếp. Phần thứ tư hay bị bỏ, và nó là phần khiến bài của bạn bị trả lại khi đi làm thật.</p>
 
+<p>Hai dự án sau cho thấy mức độ sạch của lưới mà một bài giao khách cần: <a href="du-an-vplas.html">dựng hình sản phẩm VPlas bằng Blender</a> với bản vẽ kỹ thuật làm gốc, và <a href="du-an-khoa-cua-thong-minh.html">bộ hình khoá cửa thông minh tách rời linh kiện</a>, nơi mỗi chi tiết bên trong đều phải dựng đủ vì ảnh tách rời không giấu được gì.</p>
+
 <h2>Học modeling từ đâu cho đỡ mất thời gian</h2>
 
 <p>Thứ tự dưới đây là thứ tự mình thấy ít gây tắc nhất. Nó không phải thứ tự duy nhất đúng, nhưng nó tránh được cái bẫy phổ biến nhất là nhảy vào chi tiết khi khối còn sai.</p>
@@ -2031,6 +2039,8 @@ POSTS = [
 
 <h3>Thứ ba: thấy người khác làm</h3>
 <p>Ngồi trong lớp, bạn thấy cách bạn bên cạnh xoay viewport, gán vật liệu, sửa topology. Những thao tác đó không ai dạy thành bài, nhưng chúng là phần lớn tốc độ làm việc về sau.</p>
+
+<p>Phần lớn job 3D ở TPHCM đi theo mùa sự kiện và mùa ra mắt sản phẩm. <a href="du-an-chivas-15-trung-bay.html">Bộ phối cảnh kệ trưng bày Chivas 15</a> là dạng việc hay gặp nhất: dựng nhiều phương án cho cùng một hạng mục để bên thi công chọn, chứ không phải một tấm hình đẹp duy nhất.</p>
 
 <h2>Học online được gì mà offline không có</h2>
 
