@@ -692,7 +692,7 @@ POSTS = [
 
 <p>Với người học hard-surface để làm sản phẩm thương mại, tôi chọn: <strong style="color:#fff;">Hard Ops, Boxcutter, MESHMachine</strong>, và chỉ sau khi đã dựng tay được vài món tử tế. Số tiền còn lại để dành mua tham chiếu tốt hoặc một khoá học có người sửa bài, giá trị cao hơn.</p>
 
-<p>Muốn biết hard-surface nằm ở đâu trong lộ trình học, xem <a href="blog-lo-trinh-tu-hoc-blender.html">bài về 7 kỹ năng</a>. Nó là bước thứ năm, và có lý do nó không đứng sớm hơn.</p>
+<p>Muốn biết hard-surface nằm ở đâu trong lộ trình học, xem <a href="blog-lo-trinh-tu-hoc-blender.html">bài về 7 kỹ năng</a>. Nó là bước thứ năm, và có lý do nó không đứng sớm hơn. Còn nếu bạn đang nhắm hẳn vào mảng hàng tiêu dùng và thiết bị, bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> nói rõ bốn kỹ năng một lớp dạng này phải dạy và chỗ các lớp hay cắt bớt.</p>
 """,
     },
     {
@@ -1838,6 +1838,9 @@ POSTS = [
 <h3>Nếu bạn muốn chắc phần dựng hình trước đã</h3>
 <p>Đọc <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a>. Bài đó nêu bốn phần một khoá dựng hình phải có, thứ tự ba giai đoạn nên đi qua, và sáu dấu hiệu nhận ra một khoá dựng hình sản phẩm làm được việc. Phù hợp với người thấy mình bấm được nút nhưng gặp món đồ mới là tắc.</p>
 
+<h3>Nếu bạn đã chắc muốn làm mảng hàng hoá và thiết bị</h3>
+<p>Đọc <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>. Bài đó nói rõ mảng này khác lớp modeling chung ở chỗ nào, bốn kỹ năng bắt buộc, lộ trình tám tuần và bảy câu hỏi lọc lớp. Hợp với người muốn đi thẳng vào nhánh dễ nhận việc nhất của 3D tại Việt Nam.</p>
+
 <h3>Nếu bạn ở TPHCM và chưa chốt được hình thức học</h3>
 <p>Đọc <a href="blog-khoa-hoc-3d-tai-tphcm.html">khoá học 3D tại TPHCM</a>. Bài đó so sánh học trực tiếp và học online theo độ trễ khi gặp lỗi, thời gian di chuyển và các khoản nằm ngoài học phí, kèm bảy câu nên hỏi trước khi chuyển khoản. Phù hợp với người đã biết mình muốn học gì nhưng còn do dự giữa hai hình thức.</p>
 
@@ -1970,7 +1973,7 @@ POSTS = [
 
 <h2>Dấu hiệu một khoá học dựng hình sản phẩm làm được việc</h2>
 
-<p>Danh sách này dùng để soi trước khi đóng tiền. Không cần đủ hết, nhưng thiếu quá ba mục thì nên cân nhắc lại.</p>
+<p>Danh sách này dùng để soi trước khi đóng tiền. Không cần đủ hết, nhưng thiếu quá ba mục thì nên cân nhắc lại. Phần lộ trình tám tuần và bảy câu hỏi lọc lớp nằm riêng trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
 
 <ul>
 <li><strong style="color:#fff;">Có bài dựng từ ảnh tham chiếu thật, không chỉ từ bản vẽ sạch.</strong> Việc thật hiếm khi có bản vẽ kỹ thuật, phần lớn chỉ có vài tấm ảnh chụp lệch góc.</li>
@@ -2426,6 +2429,157 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đang phân vân giữa vài khoá từ xa, gửi cho chúng tôi mô tả từng lớp: số buổi, số người, số lần chữa bài và số bài nộp. Chúng tôi sẽ nói thẳng cái nào giữ chân bạn tốt hơn, kể cả khi câu trả lời là chưa nên học ở đâu cả. Muốn xem trước cách một chương trình chia bài theo tuần trông thế nào, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>, còn nếu bạn tới đây vì cần làm hình cho sản phẩm chứ không phải để học, phần <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> mô tả cách chúng tôi nhận việc.</p>
+""",
+    },
+    {
+    "slug": "khoa-hoc-dung-hinh-san-pham",
+    "title": "Khoá học dựng hình sản phẩm: học gì để nhận việc",
+    "desc": "Khoá học dựng hình sản phẩm nên dạy gì, khác lớp modeling chung ở đâu, và bảy câu lọc lớp trước khi đóng tiền. Kèm bảng so sánh và lộ trình tám tuần.",
+    "tag": "Định hướng",
+    "date": "2026-10-12",
+    "date_vn": "12/10/2026",
+    "read": "10 phút đọc",
+    "thumb": "assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp",
+    "faq": [
+        ("Khoá học dựng hình sản phẩm có cần biết phần mềm CAD không?",
+         "Không bắt buộc. Phần lớn việc thương mại bắt đầu từ ảnh chụp, bản vẽ kích thước hoặc mẫu thật, và bạn dựng lại trong Blender. Biết mở được file bước từ bên kỹ thuật là lợi thế, nhưng đó là kỹ năng thêm chứ không phải điều kiện vào nghề."),
+        ("Học dựng hình sản phẩm bao lâu thì dựng được một món hoàn chỉnh?",
+         "Ước lượng từ các nhóm chúng tôi đã kèm là khoảng sáu tới mười tuần với nhịp sáu tới mười giờ mỗi tuần, để dựng xong một món vừa phải và render ra ảnh đăng được. Con số này dao động mạnh theo độ phức tạp của món bạn chọn."),
+        ("Máy yếu có học dựng hình sản phẩm được không?",
+         "Được, vì khâu dựng khối và chỉnh lưới gần như không cần card đồ hoạ mạnh. Máy chỉ thành rào cản ở bước kết xuất. Nên kiểm tra cấu hình trước khi vào khoá thay vì nâng cấp giữa chừng."),
+        ("Dựng hình sản phẩm và dựng hình nhân vật khác nhau nhiều không?",
+         "Khác gần như toàn bộ phần kỹ thuật. Sản phẩm đòi bề mặt cứng, cạnh sắc, tỉ lệ đúng tới milimet và lưới sạch để đổ bóng không gợn. Nhân vật đòi lưới chảy theo chuyển động và kỹ năng điêu khắc. Chọn một hướng trước, học chéo sau."),
+        ("Khoá học dựng hình sản phẩm có dạy luôn render không?",
+         "Tuỳ nơi, và đây là chỗ nên hỏi kỹ. Một khoá chỉ dừng ở lưới sẽ để bạn cầm file không ai nhìn ra là đẹp hay xấu. Tối thiểu khoá nên dạy tới mức vật liệu cơ bản, một bộ đèn studio và một bản kết xuất đủ sạch để đưa vào portfolio."),
+    ],
+    "body": """
+<p class="lead">Khoá học dựng hình sản phẩm khác lớp modeling chung ở một điểm quyết định: nó dạy bạn dựng theo một bản vẽ có kích thước thật, với sai số nhìn thấy được, chứ không phải dựng cho giống ảnh tham khảo. Đây là mảng dễ nhận việc nhất trong 3D tại Việt Nam, vì nhãn hàng nào cũng cần hình sản phẩm, và cũng là mảng bị dạy hời hợt nhiều nhất.</p>
+
+<p>Bài này mô tả thứ một khoá dựng hình sản phẩm cần dạy, thứ tự học hợp lý, và cách hỏi để biết lớp bạn đang nhắm tới có làm được việc hay không. Chúng tôi nói cả phần bất lợi, kể cả phần bất lợi của mảng mà chính studio này đang làm.</p>
+
+<h2>Khoá học dựng hình sản phẩm khác lớp modeling chung ở chỗ nào</h2>
+
+<p>Nhiều người đăng ký một lớp modeling tổng quát rồi nhận ra nó không phục vụ được việc mình muốn làm. Khác biệt nằm ở ba chỗ, và cả ba đều là chỗ khách hàng soi.</p>
+
+<h3>Tỉ lệ phải đúng, không phải trông giống</h3>
+<p>Khi dựng một chai rượu hay một thiết bị điện tử, bạn đang dựng lại một vật đã tồn tại. Khách có món thật trong tay. Lệch tỉ lệ nắp, lệch độ dày vỏ, sai bán kính bo góc, tất cả đều bị phát hiện ngay trong vòng duyệt đầu tiên. Lớp modeling chung ít khi đặt bạn vào tình huống này vì bài tập của họ thường là vật tự nghĩ ra.</p>
+
+<h3>Lưới phải sạch vì ánh sáng sẽ tố cáo</h3>
+<p>Bề mặt cứng phản xạ gần như toàn bộ môi trường quanh nó. Một đoạn lưới xấu không lộ ra ở chế độ xem thường, nhưng lộ rõ thành vệt gợn khi bạn bật kết xuất và đặt một dải đèn dài. Đây là lý do phần lớn bài tập dựng hình sản phẩm của người mới trông sai mà không chỉ ra được sai ở đâu.</p>
+
+<h3>Đầu ra là ảnh, không phải file</h3>
+<p>Khách không mua file blend. Họ mua một tấm hình dùng được cho bao bì, sàn thương mại điện tử hoặc quảng cáo. Nghĩa là khoá nào dừng lại ở lúc lưới xong thì mới đi được nửa đường. Phần còn lại nằm ở vật liệu, đèn và kết xuất, và bạn có thể đối chiếu yêu cầu đó với bài <a href="blog-khoa-hoc-render.html">khoá học render</a>.</p>
+
+<blockquote><p>Dựng hình sản phẩm không khó vì nó phức tạp. Nó khó vì sai số được nhìn thấy, và người nhìn là người đã cầm món đồ đó hằng ngày.</p></blockquote>
+
+<h2>Bốn kỹ năng một khoá học dựng hình sản phẩm phải dạy</h2>
+
+<p>Nếu chương trình thiếu một trong bốn phần này, bạn sẽ phải tự học bù sau khi đóng tiền.</p>
+
+<h3>Một, đọc bản vẽ và dựng theo số đo</h3>
+<p>Phần này nghe chán nhưng là phần phân biệt người làm được việc với người làm cho vui. Bạn cần quen với việc nhận một bản vẽ kích thước hoặc một bộ ảnh chụp sáu mặt, rồi dựng lại đúng tỉ lệ. Khoá tốt bắt bạn đo và đối chiếu, khoá yếu đưa sẵn ảnh tham chiếu đã căn chỉnh.</p>
+
+<h3>Hai, topology cho bề mặt cứng</h3>
+<p>Trọng tâm là kiểm soát cạnh và đổ bóng: khi nào dùng bộ chia mặt, khi nào bo cạnh thẳng, cách xử lý chỗ ba cạnh gặp nhau, cách tránh vệt gợn trên mặt cong. Đây là phần kỹ thuật dày nhất của mảng này. Một số công cụ rút ngắn được thao tác, xem phần đánh giá trong bài <a href="blog-add-on-hard-surface-blender.html">add-on hard surface cho Blender</a>, nhưng công cụ chỉ nhanh hơn khi bạn đã hiểu nguyên tắc bên dưới.</p>
+
+<h3>Ba, chuẩn bị file để chịu được ánh sáng</h3>
+<p>Gồm đặt gốc toạ độ, chuẩn tỉ lệ theo đơn vị thật, tách nhóm theo vật liệu, đặt tên có quy ước. Nghe như việc hành chính, nhưng chính nó quyết định bạn sửa một yêu cầu của khách trong mười phút hay trong ba tiếng.</p>
+
+<h3>Bốn, một quy trình ra ảnh tối thiểu</h3>
+<p>Vật liệu cơ bản, một bộ đèn studio ba nguồn, một góc máy chuẩn và một bản kết xuất sạch. Không cần dạy sâu, nhưng phải dạy tới mức bạn tự ra được tấm hình để người khác đánh giá. Cách các khâu này nối vào nhau có mô tả trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> theo từng tuần.</p>
+
+<h2>Bảng so sánh ba kiểu lớp dạy dựng hình sản phẩm</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Lớp modeling tổng quát</th><th>Khoá dựng hình sản phẩm chuyên sâu</th><th>Kèm riêng theo một món</th></tr></thead>
+<tbody>
+<tr><td>Bài tập dựa trên</td><td>Vật tự chọn, không có số đo</td><td>Bản vẽ và ảnh sản phẩm thật</td><td>Món bạn đang cần cho portfolio</td></tr>
+<tr><td>Dạy topology bề mặt cứng</td><td>Chạm qua</td><td>Dạy thành chương riêng</td><td>Dạy đúng chỗ bạn đang sai</td></tr>
+<tr><td>Có dạy tới bản kết xuất</td><td>Thường không</td><td>Có, ở mức tối thiểu dùng được</td><td>Có, theo yêu cầu của bạn</td></tr>
+<tr><td>Số lần bài của bạn được chữa</td><td>Thấp, thường theo lượt</td><td>Trung bình, theo tuần</td><td>Cao nhất, mỗi buổi</td></tr>
+<tr><td>Thời gian tới món hoàn chỉnh đầu tiên</td><td>Khó ước lượng</td><td>Khoảng sáu tới mười tuần</td><td>Khoảng ba tới sáu tuần</td></tr>
+<tr><td>Chi phí tương đối</td><td>Thấp</td><td>Trung bình</td><td>Cao</td></tr>
+<tr><td>Hợp với ai</td><td>Người chưa chọn hướng</td><td>Người đã chắc muốn làm sản phẩm</td><td>Người đang kẹt ở một khâu cụ thể</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không nói kiểu nào tốt hơn. Nó chỉ ra lỗi chọn lớp phổ biến nhất: đăng ký một lớp tổng quát trong khi mục tiêu thật là đi làm mảng sản phẩm, rồi mất thêm vài tháng học bù. Nếu bạn còn đang phân vân giữa các hướng, bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> mô tả bức tranh rộng hơn trước khi bạn thu hẹp lại.</p>
+
+<figure>
+  <img src="assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp" alt="Hình tách rời các linh kiện khoá cửa thông minh dựng bằng Blender, thân khoá, bàn phím cảm ứng và tay nắm xếp theo trục dọc" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Hình tách rời linh kiện trong dự án khoá cửa thông minh của LXAM Studio.</strong> Dạng hình này chỉ dựng được khi từng chi tiết đúng tỉ lệ và lưới đủ sạch, vì mọi khe hở và bo góc đều bị nhìn rõ ở cự ly gần.</figcaption>
+</figure>
+
+<h2>Lộ trình tám tuần hợp lý cho người mới</h2>
+
+<p>Đây là thứ tự chúng tôi thấy ít gây nản nhất. Mỗi tuần kết thúc bằng một file lưu lại, không phải bằng một bài giảng đã xem.</p>
+
+<h3>Tuần một và hai, làm chủ thao tác và dựng khối thô</h3>
+<p>Mục tiêu không phải là đẹp, mà là dựng xong một món đơn giản có số đo đúng, ví dụ một hộp đựng hoặc một chai nước. Người mới hay bỏ qua giai đoạn này để nhảy vào món phức tạp, và đó là lý do họ kẹt ở tuần thứ năm. Nền tảng tối thiểu nằm trong bài <a href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a>.</p>
+
+<h3>Tuần ba và bốn, cạnh sắc và đổ bóng</h3>
+<p>Giai đoạn khó chịu nhất. Bạn sẽ dựng lại cùng một chi tiết nhiều lần chỉ để hết vệt gợn. Dấu hiệu bạn đang đi đúng là tự nhìn ra chỗ hỏng trước khi người dạy chỉ ra.</p>
+
+<h3>Tuần năm và sáu, một món thật có nhiều bộ phận</h3>
+<p>Chọn một món có vỏ, nút bấm, chi tiết kim loại và một phần trong suốt. Đây là lúc quy ước đặt tên và tách nhóm bắt đầu trả công cho bạn.</p>
+
+<h3>Tuần bảy và tám, ra ảnh và dựng hồ sơ</h3>
+<p>Vật liệu, đèn, kết xuất, và chọn ba góc máy. Kết thúc tám tuần bạn nên cầm được một món hoàn chỉnh đủ đăng. Dạng bài tập ở mức này trông ra sao thì xem trang <a href="hoc-vien.html">bài tập học viên</a>, còn mức thương mại thì xem <a href="du-an-san-pham.html">dự án dựng hình sản phẩm</a> của studio.</p>
+
+<h2>Bảy câu hỏi lọc lớp trước khi đóng tiền</h2>
+
+<p>Dùng được cho mọi nơi dạy. Chỗ tử tế trả lời thẳng cả những câu bất lợi cho họ.</p>
+
+<ul>
+<li>Bài tập dựa trên bản vẽ có kích thước thật hay chỉ dựa trên ảnh tham khảo?</li>
+<li>Khoá có chương riêng về topology bề mặt cứng và xử lý đổ bóng không?</li>
+<li>Trong cả khoá, file của riêng tôi được mở ra chữa bao nhiêu lần?</li>
+<li>Khoá dừng ở lưới, hay dạy tới vật liệu, đèn và một bản kết xuất hoàn chỉnh?</li>
+<li>Kết thúc khoá tôi cầm được bao nhiêu món đủ đưa vào portfolio?</li>
+<li>Người chữa bài có đang làm dự án sản phẩm thật không, xem ở đâu?</li>
+<li>Có dạy phần đặt tên, tách nhóm và chuẩn đơn vị để file bàn giao được không?</li>
+</ul>
+
+<p>Câu một và câu bốn lọc mạnh nhất. Nếu câu trả lời cho câu bốn là khoá chỉ dạy dựng hình, bạn vẫn có thể học, nhưng hãy tính luôn chi phí và thời gian học phần còn lại. Cách quy đổi học phí theo số lần được chữa bài nằm trong bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>.</p>
+
+<h2>Khi nào khoá học dựng hình sản phẩm là lựa chọn sai</h2>
+
+<p>Ba trường hợp nên chọn hướng khác, nói thẳng.</p>
+
+<p>Nếu bạn muốn làm nhân vật, hoạt hình hoặc dựng cảnh phim, mảng này dạy gần như toàn bộ kỹ năng không dùng tới. Chọn nhầm hướng ở giai đoạn đầu tốn nhiều tháng. Bức tranh nghề và các nhánh có mô tả trong trang <a href="nghe-nghiep.html">nghề 3D artist</a>, kèm ghi chú rằng các mức thu nhập ở đó chỉ là khoảng ước lượng.</p>
+
+<p>Nếu máy của bạn chưa chạy nổi khâu kết xuất, hãy kiểm tra trước thay vì nâng cấp giữa khoá, dùng bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> để biết mức nào là đủ.</p>
+
+<p>Nếu mỗi tuần bạn chỉ còn dưới ba giờ rảnh, chưa nên đóng tiền. Không định dạng nào bù được việc không ngồi vào bàn. Trong lúc chờ, tải <a href="cam-nang.html">cẩm nang Blender miễn phí</a> và làm phần bài tập trong đó là đủ để giữ tay.</p>
+
+<h2>Chọn khoá học dựng hình sản phẩm theo thứ bạn cầm được sau khoá</h2>
+
+<p>Thứ đáng trả tiền trong một khoá học dựng hình sản phẩm không phải là số giờ bài giảng, mà là số lần bài của bạn được mở ra chữa, cộng với việc khoá có đưa bạn tới tận tấm ảnh hoàn chỉnh hay không. Nhìn theo đó thì việc chọn lớp gọn lại thành hai câu: lớp này bắt tôi dựng theo số đo thật chứ, và hết khoá tôi cầm được mấy món đăng lên được.</p>
+
+<p>Nếu bạn muốn đối chiếu với một chương trình cụ thể, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ bài nộp từng tuần và cách chữa bài. Còn nếu bạn tới đây vì cần hình cho sản phẩm của mình chứ không phải để học, phần <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> mô tả cách chúng tôi nhận việc và cần gì từ phía bạn.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Khoá học dựng hình sản phẩm có cần biết phần mềm CAD không?</p>
+<p>Không bắt buộc. Phần lớn việc thương mại bắt đầu từ ảnh chụp, bản vẽ kích thước hoặc mẫu thật, và bạn dựng lại trong Blender. Biết mở được file bước từ bên kỹ thuật là lợi thế, nhưng đó là kỹ năng thêm chứ không phải điều kiện vào nghề.</p>
+
+<p class="faq-q">Học dựng hình sản phẩm bao lâu thì dựng được một món hoàn chỉnh?</p>
+<p>Ước lượng từ các nhóm chúng tôi đã kèm là khoảng sáu tới mười tuần với nhịp sáu tới mười giờ mỗi tuần, để dựng xong một món vừa phải và render ra ảnh đăng được. Con số này dao động mạnh theo độ phức tạp của món bạn chọn. Các mốc dài hơn có trong bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a>.</p>
+
+<p class="faq-q">Máy yếu có học dựng hình sản phẩm được không?</p>
+<p>Được, vì khâu dựng khối và chỉnh lưới gần như không cần card đồ hoạ mạnh. Máy chỉ thành rào cản ở bước kết xuất. Nên kiểm tra cấu hình trước khi vào khoá thay vì nâng cấp giữa chừng.</p>
+
+<p class="faq-q">Dựng hình sản phẩm và dựng hình nhân vật khác nhau nhiều không?</p>
+<p>Khác gần như toàn bộ phần kỹ thuật. Sản phẩm đòi bề mặt cứng, cạnh sắc, tỉ lệ đúng tới milimet và lưới sạch để đổ bóng không gợn. Nhân vật đòi lưới chảy theo chuyển động và kỹ năng điêu khắc. Chọn một hướng trước, học chéo sau.</p>
+
+<p class="faq-q">Khoá học dựng hình sản phẩm có dạy luôn render không?</p>
+<p>Tuỳ nơi, và đây là chỗ nên hỏi kỹ. Một khoá chỉ dừng ở lưới sẽ để bạn cầm file không ai nhìn ra là đẹp hay xấu. Tối thiểu khoá nên dạy tới mức vật liệu cơ bản, một bộ đèn studio và một bản kết xuất đủ sạch để đưa vào portfolio.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang so vài lớp với nhau, gửi cho chúng tôi mô tả từng lớp: bài tập dựa trên gì, số buổi, số lần chữa bài và đầu ra cuối khoá. Chúng tôi sẽ nói thẳng lớp nào đưa bạn tới một món đăng được nhanh hơn, kể cả khi câu trả lời là chưa nên học ở đâu cả. Muốn xem trước cách một chương trình chia bài theo tuần, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>; muốn tự đi trước một đoạn, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước.</p>
 """,
     },
 ]
