@@ -2,8 +2,8 @@
 <html lang="vi"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>5 lỗi lighting khiến render của bạn trông rẻ tiền | LXAM</title>
-<meta name="description" content="Không phải do máy yếu hay thiếu plugin. Năm lỗi lighting dưới đây gặp ở gần như mọi bài tự học Blender, và cái nào cũng sửa được trong một buổi.">
+<title>Học lighting trong Blender: 5 lỗi làm render rẻ tiền | LXAM</title>
+<meta name="description" content="Học lighting trong Blender hay mắc năm lỗi làm render trông rẻ tiền. Bài này chỉ rõ từng lỗi, cách sửa trong một buổi và bài kiểm tra ảnh xám ba mươi giây.">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -14,15 +14,16 @@
 <meta property="article:published_time" content="2026-09-07">
 <meta property="og:site_name" content="LXAM Studio">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:title" content="5 lỗi lighting khiến render của bạn trông rẻ tiền | LXAM">
-<meta property="og:description" content="Không phải do máy yếu hay thiếu plugin. Năm lỗi lighting dưới đây gặp ở gần như mọi bài tự học Blender, và cái nào cũng sửa được trong một buổi.">
+<meta property="og:title" content="Học lighting trong Blender: 5 lỗi làm render rẻ tiền | LXAM">
+<meta property="og:description" content="Học lighting trong Blender hay mắc năm lỗi làm render trông rẻ tiền. Bài này chỉ rõ từng lỗi, cách sửa trong một buổi và bài kiểm tra ảnh xám ba mươi giây.">
 <meta property="og:image" content="https://lxamstudio.com/assets/2afcaceb.jpg">
 <meta property="og:url" content="https://lxamstudio.com/blog-5-loi-lighting.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://lxamstudio.com/blog-5-loi-lighting.html">
 <link rel="stylesheet" href="assets/lx.css?v=den2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "5 lỗi lighting khiến render của bạn trông rẻ tiền", "description": "Không phải do máy yếu hay thiếu plugin. Năm lỗi lighting dưới đây gặp ở gần như mọi bài tự học Blender, và cái nào cũng sửa được trong một buổi.", "image": "https://lxamstudio.com/assets/2afcaceb.jpg", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-5-loi-lighting.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "5 lỗi lighting khiến render của bạn trông rẻ tiền", "item": "https://lxamstudio.com/blog-5-loi-lighting.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Học lighting trong Blender: 5 lỗi làm render rẻ tiền", "description": "Học lighting trong Blender hay mắc năm lỗi làm render trông rẻ tiền. Bài này chỉ rõ từng lỗi, cách sửa trong một buổi và bài kiểm tra ảnh xám ba mươi giây.", "image": "https://lxamstudio.com/assets/2afcaceb.jpg", "datePublished": "2026-09-07", "dateModified": "2026-10-13", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-5-loi-lighting.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Học lighting trong Blender: 5 lỗi làm render rẻ tiền", "item": "https://lxamstudio.com/blog-5-loi-lighting.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Học lighting trong Blender mất bao lâu để dùng được?", "acceptedAnswer": {"@type": "Answer", "text": "Ước lượng từ các nhóm chúng tôi đã chữa bài, cần khoảng tám tới mười hai tuần làm đều để đặt đèn có lý do thay vì mò. Riêng việc sửa năm lỗi trong bài này thì nhanh hơn nhiều, thường chỉ một tới hai buổi là thấy khác."}}, {"@type": "Question", "name": "Nên học lighting trong Cycles hay Eevee?", "acceptedAnswer": {"@type": "Answer", "text": "Học nguyên lý trong Cycles vì nó phản ứng gần với ánh sáng thật, sai là thấy ngay. Eevee dùng để xem nhanh và cho việc cần tốc độ. Nguyên lý đặt đèn giống nhau, chỉ khác cách xử lý phản chiếu và bóng đổ."}}, {"@type": "Question", "name": "Có cần mua HDRI hoặc add-on lighting trả phí không?", "acceptedAnswer": {"@type": "Answer", "text": "Không cần, nhất là trong giai đoạn học. Năm lỗi phổ biến nhất đều sửa bằng area light và vài mặt phẳng hắt sáng có sẵn trong Blender. Add-on tiết kiệm thời gian khi đã biết mình muốn gì, chứ không dạy bạn muốn gì."}}, {"@type": "Question", "name": "Máy yếu có học lighting được không?", "acceptedAnswer": {"@type": "Answer", "text": "Được. Lighting là khâu ít ngốn máy nhất nếu bạn làm việc với ảnh xám và render nháp ở độ phân giải thấp. Phần cần máy mạnh là bản render cuối, và đó là việc có thể để sau."}}, {"@type": "Question", "name": "Render vẫn trông giả dù đã sửa hết năm lỗi, vấn đề ở đâu?", "acceptedAnswer": {"@type": "Answer", "text": "Thường là vật liệu hoặc bố cục, không phải đèn nữa. Làm bài kiểm tra ảnh xám trong bài này: nếu ảnh xám đã có chiều sâu mà bản màu vẫn giả, lỗi nằm ở roughness và màu bề mặt."}}]}</script>
 
 </head>
 <body>
@@ -51,22 +52,38 @@
     <div class="wrap-narrow">
       <a href="blog.html" style="display:inline-block;font-size:13px;color:#9a8f84;text-decoration:none;margin-bottom:26px;">← Tất cả bài viết</a>
       <span class="tag">Kỹ thuật</span>
-      <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">5 lỗi lighting khiến render của bạn trông rẻ tiền</h1>
-      <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · 6 phút đọc</p>
-      <img src="assets/2afcaceb.jpg" alt="5 lỗi lighting khiến render của bạn trông rẻ tiền" width="1280" height="720" fetchpriority="high" decoding="async" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;">
-      <nav class="toc" aria-label="Mục lục bài viết"><p class="toc-h">Trong bài này</p><ol><li><a href="#1-dung-dung-mot-hdri-va-goi-do-la-lighting">1. Dùng đúng một HDRI và gọi đó là lighting</a></li><li><a href="#2-den-qua-nho-so-voi-vat-the">2. Đèn quá nhỏ so với vật thể</a></li><li><a href="#3-khong-co-gi-de-phan-chieu">3. Không có gì để phản chiếu</a></li><li><a href="#4-sang-deu-tuyet-doi-khong-co-vung-toi">4. Sáng đều tuyệt đối, không có vùng tối</a></li><li><a href="#5-chinh-mau-o-khau-hau-ky-de-cuu-anh-sang-sai">5. Chỉnh màu ở khâu hậu kỳ để cứu ánh sáng sai</a></li><li><a href="#cach-tu-kiem-tra-trong-ba-muoi-giay">Cách tự kiểm tra trong ba mươi giây</a></li></ol></nav>
+      <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Học lighting trong Blender: 5 lỗi làm render rẻ tiền</h1>
+      <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · Cập nhật 13/10/2026 · 11 phút đọc</p>
+      <img src="assets/2afcaceb.jpg" alt="Học lighting trong Blender: 5 lỗi làm render rẻ tiền" width="1280" height="720" fetchpriority="high" decoding="async" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;">
+      <nav class="toc" aria-label="Mục lục bài viết"><p class="toc-h">Trong bài này</p><ol><li><a href="#hoc-lighting-trong-blender-nen-bat-dau-tu-dau">Học lighting trong Blender nên bắt đầu từ đâu</a></li><li><a href="#loi-1-dung-dung-mot-hdri-roi-goi-do-la-lighting">Lỗi 1: dùng đúng một HDRI rồi gọi đó là lighting</a></li><li><a href="#loi-2-den-qua-nho-so-voi-vat-the">Lỗi 2: đèn quá nhỏ so với vật thể</a></li><li><a href="#loi-3-khong-co-gi-de-phan-chieu">Lỗi 3: không có gì để phản chiếu</a></li><li><a href="#loi-4-sang-deu-tuyet-doi-khong-co-vung-toi">Lỗi 4: sáng đều tuyệt đối, không có vùng tối</a></li><li><a href="#loi-5-chinh-mau-o-hau-ky-de-cuu-anh-sang-sai">Lỗi 5: chỉnh màu ở hậu kỳ để cứu ánh sáng sai</a></li><li><a href="#ba-kieu-setup-den-thuong-gap-va-luc-nao-nen-dung">Ba kiểu setup đèn thường gặp và lúc nào nên dùng</a></li><li><a href="#cach-tu-kiem-tra-trong-ba-muoi-giay">Cách tự kiểm tra trong ba mươi giây</a></li><li><a href="#danh-sach-kiem-tra-truoc-khi-render-ban-cuoi">Danh sách kiểm tra trước khi render bản cuối</a></li><li><a href="#lo-trinh-hoc-lighting-trong-blender-trong-tam-tuan">Lộ trình học lighting trong Blender trong tám tuần</a></li><li><a href="#hoi-dap-ve-hoc-lighting-trong-blender">Hỏi đáp về học lighting trong Blender</a></li></ol></nav>
       
-<p class="lead">Khi ai đó gửi tôi một bài render và hỏi "sao nhìn nó chưa đã", tám trên mười lần vấn đề nằm ở ánh sáng, không phải model, không phải vật liệu, và gần như không bao giờ là do card đồ hoạ.</p>
+<p class="lead">Học lighting trong Blender không vướng ở plugin hay cấu hình máy. Khi có người gửi tôi một bài render và hỏi sao nhìn nó chưa đã, tám trên mười lần vấn đề nằm ở ánh sáng, không phải model, không phải vật liệu, và gần như không bao giờ do card đồ hoạ. Năm lỗi dưới đây gặp ở gần như mọi bài tự học, và cái nào cũng sửa được trong một buổi.</p>
 
-<p>Dưới đây là năm lỗi tôi gặp nhiều nhất. Không cái nào cần plugin trả phí để sửa.</p>
+<p>Bài này xếp theo đúng thứ tự tôi dùng khi chữa bài: xét nguồn sáng chính trước, rồi mới tới kích thước đèn, môi trường phản chiếu, vùng tối và cuối cùng là hậu kỳ. Sửa theo thứ tự đó thì mỗi lần sửa một thứ là hình khá lên thật, không phải vá chỗ nọ hỏng chỗ kia.</p>
 
-<h2 id="1-dung-dung-mot-hdri-va-goi-do-la-lighting">1. Dùng đúng một HDRI và gọi đó là lighting</h2>
+<h2 id="hoc-lighting-trong-blender-nen-bat-dau-tu-dau">Học lighting trong Blender nên bắt đầu từ đâu</h2>
+
+<p>Phần lớn người mới học ánh sáng theo kiểu sưu tầm. Thấy một setup ba đèn trên YouTube thì dựng lại ba đèn, thấy một HDRI đẹp thì tải về dùng. Cách đó cho ra ảnh tạm được nhưng không tích luỹ, lần sau gặp vật thể khác là mò lại từ đầu.</p>
+
+<p>Thứ tích luỹ được là ba câu hỏi, đặt theo đúng thứ tự này cho mọi cảnh:</p>
+
+<ul>
+<li>Nguồn chính đến từ hướng nào, và vì sao hướng đó hợp với hình khối của vật thể này?</li>
+<li>Bề mặt đang phản chiếu cái gì? Nếu câu trả lời là không có gì, đó đã là một lỗi.</li>
+<li>Vùng tối nằm ở đâu, và nó có đang giúp mắt người đọc được hình khối hay chỉ làm mất chi tiết?</li>
+</ul>
+
+<p>Ba câu đó là toàn bộ nội dung của năm phần tiếp theo. Nếu bạn muốn biết ánh sáng nằm ở chỗ nào trong cả chuỗi kỹ năng, <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> đặt nó ở bước ba, sau modeling và vật liệu, và đó cũng là bước chiếm nhiều thời gian nhất trong bảy bước.</p>
+
+<h2 id="loi-1-dung-dung-mot-hdri-roi-goi-do-la-lighting">Lỗi 1: dùng đúng một HDRI rồi gọi đó là lighting</h2>
 
 <p>HDRI cho bạn ánh sáng môi trường tử tế trong ba mươi giây, nên rất dễ dừng lại ở đó. Vấn đề là HDRI chiếu đều từ mọi phía. Nó xoá đi cái bạn cần nhất: hướng. Không có hướng thì không có khối, không có khối thì vật thể trông như dán lên nền.</p>
 
-<p><strong style="color:#fff;">Sửa:</strong> giữ HDRI làm nền, hạ cường độ xuống còn khoảng một phần ba, rồi thêm một area light làm nguồn chính. Chỉ một đèn thôi. So sánh trước/sau, bạn sẽ thấy vật thể đột nhiên có trọng lượng.</p>
+<p><strong style="color:#fff;">Sửa:</strong> giữ HDRI làm nền, hạ cường độ xuống còn khoảng một phần ba, rồi thêm một area light làm nguồn chính. Chỉ một đèn thôi. So sánh trước và sau, bạn sẽ thấy vật thể đột nhiên có trọng lượng.</p>
 
-<h2 id="2-den-qua-nho-so-voi-vat-the">2. Đèn quá nhỏ so với vật thể</h2>
+<p>Một cách kiểm tra nhanh: xoay HDRI đi chín mươi độ. Nếu ảnh gần như không đổi, nghĩa là bạn đang không có nguồn chính nào cả, chỉ có ánh sáng môi trường.</p>
+
+<h2 id="loi-2-den-qua-nho-so-voi-vat-the">Lỗi 2: đèn quá nhỏ so với vật thể</h2>
 
 <p>Đây là lỗi âm thầm nhất. Nguồn sáng nhỏ tạo bóng đổ sắc cạnh và highlight nhỏ như đầu kim, thứ ngoài đời chỉ xuất hiện dưới nắng gắt hoặc đèn flash trần. Sản phẩm chụp studio luôn dùng nguồn lớn, vì nguồn lớn cho chuyển sáng mềm dọc theo bề mặt cong, và chính cái chuyển đó nói cho mắt người biết vật thể làm bằng gì.</p>
 
@@ -74,33 +91,102 @@
 
 <blockquote><p>Nếu highlight trên bề mặt kim loại của bạn là một chấm nhỏ thay vì một vệt dài, đèn của bạn đang quá nhỏ.</p></blockquote>
 
-<h2 id="3-khong-co-gi-de-phan-chieu">3. Không có gì để phản chiếu</h2>
+<p>Đi kèm kích thước là khoảng cách. Đèn lớn đặt xa sẽ hành xử như đèn nhỏ. Khi muốn chuyển sáng mềm hơn mà không đổi cường độ cảm nhận, kéo đèn lại gần và hạ power, thay vì phóng to mãi.</p>
+
+<h2 id="loi-3-khong-co-gi-de-phan-chieu">Lỗi 3: không có gì để phản chiếu</h2>
 
 <p>Kim loại và nhựa bóng không tự đẹp, chúng đẹp nhờ những gì xung quanh phản chiếu vào. Render một chiếc đồng hồ trong không gian trống, bề mặt của nó sẽ chỉ có màu xám chết. Studio thật luôn đầy vật thể: hắt sáng, cờ đen, tường, trần.</p>
 
 <p><strong style="color:#fff;">Sửa:</strong> đặt vài mặt phẳng lớn quanh vật thể, một trắng để hắt sáng, một đen để tạo mảng tối tương phản trên cạnh. Tắt bóng đổ của chúng nếu cần. Chi phí render gần như bằng không, khác biệt thì thấy ngay.</p>
 
-<h2 id="4-sang-deu-tuyet-doi-khong-co-vung-toi">4. Sáng đều tuyệt đối, không có vùng tối</h2>
+<figure>
+  <img src="assets/mercedes-g63-cum-den-truoc-can-canh.webp" alt="Cận cảnh cụm đèn trước Mercedes G63 render bằng Blender, vệt sáng dài trên mặt kính và viền kim loại phản chiếu mảng tối" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Cụm đèn trước trong dự án Mercedes G63 của LXAM Studio.</strong> Toàn bộ cảm giác kim loại và kính ở đây đến từ cái mà bề mặt phản chiếu, chủ yếu là các mặt hắt sáng và cờ đen quanh xe, không phải từ số lượng đèn.</figcaption>
+</figure>
+
+<h2 id="loi-4-sang-deu-tuyet-doi-khong-co-vung-toi">Lỗi 4: sáng đều tuyệt đối, không có vùng tối</h2>
 
 <p>Người mới sợ vùng tối, nên thêm fill light cho tới khi mọi ngóc ngách đều nhìn rõ. Kết quả là ảnh phẳng lì. Vùng tối không phải chỗ thiếu thông tin. Nó là chỗ mắt người nghỉ, và là thứ làm vùng sáng trở nên sáng.</p>
 
-<p><strong style="color:#fff;">Sửa:</strong> tắt hết đèn phụ, chỉ để nguồn chính. Nhìn kỹ. Rồi thêm lại từng đèn một, mỗi lần tự hỏi "đèn này đang giải quyết vấn đề gì?". Đèn nào không trả lời được thì xoá.</p>
+<p><strong style="color:#fff;">Sửa:</strong> tắt hết đèn phụ, chỉ để nguồn chính. Nhìn kỹ. Rồi thêm lại từng đèn một, mỗi lần tự hỏi đèn này đang giải quyết vấn đề gì. Đèn nào không trả lời được thì xoá.</p>
 
 <p>Một ví dụ đi ngược cả bốn lỗi trên: <a href="du-an-volvo-s90.html">bộ hình Volvo S90 dựng và render bằng Blender</a>, đèn lớn, có vật để phản chiếu, và vùng tối được giữ nguyên thay vì kéo sáng cho đều.</p>
 
-<h2 id="5-chinh-mau-o-khau-hau-ky-de-cuu-anh-sang-sai">5. Chỉnh màu ở khâu hậu kỳ để cứu ánh sáng sai</h2>
+<h2 id="loi-5-chinh-mau-o-hau-ky-de-cuu-anh-sang-sai">Lỗi 5: chỉnh màu ở hậu kỳ để cứu ánh sáng sai</h2>
 
-<p>Kéo contrast và saturation trong Compositor cho tới khi ảnh "đỡ tệ" là dấu hiệu bạn đang vá triệu chứng. Hậu kỳ nên là bước tinh chỉnh cuối, không phải bước cứu hộ. Nếu bạn phải kéo mạnh tay, quay lại sửa đèn, nhanh hơn nhiều.</p>
+<p>Kéo contrast và saturation trong Compositor cho tới khi ảnh đỡ tệ là dấu hiệu bạn đang vá triệu chứng. Hậu kỳ nên là bước tinh chỉnh cuối, không phải bước cứu hộ. Nếu bạn phải kéo mạnh tay, quay lại sửa đèn, nhanh hơn nhiều.</p>
 
-<hr class="hr">
+<p>Có một ngoại lệ đáng nói: khi ánh sáng đã đúng, hậu kỳ nhẹ lại rất hiệu quả, và đó cũng là lúc nên nghĩ tới thời gian render. Các cách cắt thời gian mà không làm hình xấu đi nằm trong bài <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a>.</p>
+
+<h2 id="ba-kieu-setup-den-thuong-gap-va-luc-nao-nen-dung">Ba kiểu setup đèn thường gặp và lúc nào nên dùng</h2>
+
+<p>Không có setup nào đúng cho mọi cảnh. Bảng dưới là ba kiểu tôi dùng nhiều nhất khi làm hình sản phẩm, kèm điểm bất lợi của từng kiểu, vì phần bất lợi mới là thứ quyết định nên chọn cái nào.</p>
+
+<table>
+<thead><tr><th>Kiểu setup</th><th>Hợp với</th><th>Điểm bất lợi</th></tr></thead>
+<tbody>
+<tr><td>Một đèn lớn, nhiều mặt hắt</td><td>Sản phẩm bóng, kim loại, kính</td><td>Cần kiên nhẫn dịch từng mặt hắt</td></tr>
+<tr><td>Đèn chính và một đèn viền</td><td>Vật thể tối trên nền tối</td><td>Dễ thành viền giả nếu đèn viền quá mạnh</td></tr>
+<tr><td>HDRI hạ cường độ và một area light</td><td>Cảnh ngoại cảnh, dựng nhanh</td><td>Khó kiểm soát phản chiếu chi tiết</td></tr>
+</tbody>
+</table>
+
+<p>Khi chưa chắc, chọn dòng đầu. Một đèn lớn với ba bốn mặt hắt sạch sẽ hầu như luôn cho kết quả đọc được, và nó cũng là nền để hiểu hai kiểu còn lại. Đây cũng là cách chúng tôi dựng phần lớn shot trong <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>.</p>
 
 <h2 id="cach-tu-kiem-tra-trong-ba-muoi-giay">Cách tự kiểm tra trong ba mươi giây</h2>
 
 <p>Đổi toàn bộ vật liệu trong cảnh sang một chất xám trung tính rồi render nháp. Nếu ảnh xám đó đã đọc được hình khối và có chiều sâu, ánh sáng của bạn ổn, phần còn lại là chuyện vật liệu. Nếu ảnh xám trông phẳng và nhạt, không vật liệu nào cứu được nó.</p>
 
-<p>Bài kiểm tra này tôi dùng cho gần như mọi shot, và nó bắt lỗi sớm hơn bất kỳ thứ gì khác.</p>
+<p>Bài kiểm tra này tôi dùng cho gần như mọi shot, và nó bắt lỗi sớm hơn bất kỳ thứ gì khác. Lý do nó hiệu quả: khi còn màu và texture, mắt bạn bị lừa bởi chi tiết đẹp và bỏ qua việc hình khối đang phẳng.</p>
 
-<p>Năm lỗi trên đều sửa được một mình. Thứ khó tự sửa là thói quen đọc ảnh, và đó là phần một <a href="blog-khoa-hoc-render.html">khoá học render</a> có người nhận xét từng vòng làm tốt hơn hẳn video hướng dẫn.</p>
+<p>Làm thêm một bước nữa thì tốt: thu ảnh xám xuống bằng con tem rồi nhìn. Ở kích thước đó chỉ còn mảng sáng và mảng tối. Nếu không phân biệt được vật thể với nền, ánh sáng chưa xong, dù zoom vào vẫn thấy đẹp.</p>
+
+<h2 id="danh-sach-kiem-tra-truoc-khi-render-ban-cuoi">Danh sách kiểm tra trước khi render bản cuối</h2>
+
+<p>Chạy qua danh sách này trước mỗi bản render cuối. Thiếu quá hai dòng thì nên quay lại sửa đèn, đừng render, vì render một bản sai mất nhiều thời gian hơn sửa.</p>
+
+<ul>
+<li>Có một nguồn chính rõ ràng, nói được nó đến từ hướng nào.</li>
+<li>Nguồn chính lớn ít nhất bằng vật thể, thường là gấp hai tới ba lần.</li>
+<li>Mỗi đèn phụ trả lời được câu hỏi nó đang giải quyết vấn đề gì.</li>
+<li>Có ít nhất một mặt hắt trắng và một cờ đen quanh vật thể bóng.</li>
+<li>Highlight trên bề mặt kim loại là vệt có hình, không phải chấm.</li>
+<li>Vùng tối còn nguyên, không bị fill light kéo sáng cho đều.</li>
+<li>Ảnh xám đã đọc được hình khối trước khi gắn vật liệu thật.</li>
+<li>Hậu kỳ chỉ còn là tinh chỉnh nhẹ, không phải cứu hộ.</li>
+<li>Có một ảnh tham chiếu thật đặt cạnh để so, không dựng theo trí nhớ.</li>
+</ul>
+
+<h2 id="lo-trinh-hoc-lighting-trong-blender-trong-tam-tuan">Lộ trình học lighting trong Blender trong tám tuần</h2>
+
+<p>Nếu bạn muốn một cách làm có thứ tự thay vì sửa lỗi lẻ, đây là khung tám tuần đủ để đi từ mò mẫm sang đặt đèn có lý do. Mỗi tuần một bài, làm xong mới sang tuần sau.</p>
+
+<p>Hai tuần đầu chỉ dùng một đèn duy nhất, không HDRI, dựng lại ba vật thể đơn giản cho tới khi nói được vì sao đặt đèn ở đúng chỗ đó. Hai tuần tiếp thêm mặt hắt và cờ đen, làm việc với một vật thể kim loại. Hai tuần sau đó tập vùng tối: dựng lại cùng một shot theo ba phương án sáng khác nhau. Hai tuần cuối ghép vào quy trình thật, gồm cả hậu kỳ nhẹ và kiểm tra bằng ảnh xám.</p>
+
+<p>Khung này cố tình không có phần học thêm phần mềm hay add-on mới. Phần khó của ánh sáng là thói quen đọc ảnh, và thói quen đó chỉ hình thành khi làm lại cùng một việc với điều kiện khác nhau. Bộ bảng tra cứu đi kèm nằm trong <a href="cam-nang.html">cẩm nang Blender</a>, trong đó có checklist lighting và quy trình render dùng khi làm việc thật.</p>
+
+<p>Năm lỗi trên đều sửa được một mình. Thứ khó tự sửa là thói quen đọc ảnh, và đó là phần một <a href="blog-khoa-hoc-render.html">khoá học render</a> có người nhận xét từng vòng làm tốt hơn hẳn video hướng dẫn. Nếu bạn muốn học cả khâu dựng hình trước đó, hai hệ trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> đi theo đúng thứ tự modeling, vật liệu, rồi ánh sáng.</p>
+
+<h2 id="hoi-dap-ve-hoc-lighting-trong-blender">Hỏi đáp về học lighting trong Blender</h2>
+
+<p class="faq-q">Học lighting trong Blender mất bao lâu để dùng được?</p>
+<p>Ước lượng từ các nhóm chúng tôi đã chữa bài, cần khoảng tám tới mười hai tuần làm đều để đặt đèn có lý do thay vì mò. Riêng việc sửa năm lỗi trong bài này thì nhanh hơn nhiều, thường chỉ một tới hai buổi là thấy khác.</p>
+
+<p class="faq-q">Nên học lighting trong Cycles hay Eevee?</p>
+<p>Học nguyên lý trong Cycles vì nó phản ứng gần với ánh sáng thật, sai là thấy ngay. Eevee dùng để xem nhanh và cho việc cần tốc độ. Nguyên lý đặt đèn giống nhau, chỉ khác cách xử lý phản chiếu và bóng đổ.</p>
+
+<p class="faq-q">Có cần mua HDRI hoặc add-on lighting trả phí không?</p>
+<p>Không cần, nhất là trong giai đoạn học. Năm lỗi phổ biến nhất đều sửa bằng area light và vài mặt phẳng hắt sáng có sẵn trong Blender. Add-on tiết kiệm thời gian khi đã biết mình muốn gì, chứ không dạy bạn muốn gì.</p>
+
+<p class="faq-q">Máy yếu có học lighting được không?</p>
+<p>Được. Lighting là khâu ít ngốn máy nhất nếu bạn làm việc với ảnh xám và render nháp ở độ phân giải thấp. Phần cần máy mạnh là bản render cuối, và đó là việc có thể để sau. Mức cấu hình hợp lý cho từng giai đoạn nằm trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<p class="faq-q">Render vẫn trông giả dù đã sửa hết năm lỗi, vấn đề ở đâu?</p>
+<p>Thường là vật liệu hoặc bố cục, không phải đèn nữa. Làm bài kiểm tra ảnh xám ở trên: nếu ảnh xám đã có chiều sâu mà bản màu vẫn giả, lỗi nằm ở roughness và màu bề mặt.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang mắc ở một shot cụ thể, cứ gửi ảnh render kèm ảnh chụp màn hình phần đặt đèn. Chúng tôi xem và nói thẳng lỗi nào đang ăn nhiều nhất, kể cả khi câu trả lời là bố cục chứ không phải ánh sáng. Không cần đăng ký gì.</p>
 
       
       <section class="rel" aria-label="Bài viết liên quan"><p class="rel-h">Đọc tiếp</p><div class="rel-g"><a class="rel-c" href="blog-sau-node-va-mot-hanh-lang.html"><img src="assets/2cdbf5f9.jpg" alt="Sáu node và một hành lang: dựng không khí" loading="lazy" width="640" height="360"><span class="rel-t">Sáu node và một hành lang: dựng không khí</span><span class="rel-k">6 phút đọc</span></a><a class="rel-c" href="blog-lo-trinh-tu-hoc-blender.html"><img src="assets/2cdbf5f9.jpg" alt="Lộ trình tự học Blender: 7 kỹ năng, đúng thứ tự" loading="lazy" width="640" height="360"><span class="rel-t">Lộ trình tự học Blender: 7 kỹ năng, đúng thứ tự</span><span class="rel-k">12 phút đọc</span></a><a class="rel-c" href="blog-quy-trinh-mot-shot-tvc.html"><img src="assets/0954717e.jpg" alt="Quy trình một shot TVC 3D từ file Blender" loading="lazy" width="640" height="360"><span class="rel-t">Quy trình một shot TVC 3D từ file Blender</span><span class="rel-k">7 phút đọc</span></a></div></section>
