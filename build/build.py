@@ -335,7 +335,7 @@ POSTS = [
 
 <h3>3. Lighting: ánh sáng</h3>
 <p>Đây là bước tạo ra khác biệt lớn nhất giữa ảnh nghiệp dư và ảnh thương mại, và cũng là bước bị bỏ qua nhiều nhất. Ánh sáng quyết định người xem nhìn vào đâu, cảm thấy gì, và tin sản phẩm đó đắt hay rẻ.</p>
-<p>Nếu bạn chỉ có thời gian để giỏi một kỹ năng duy nhất trong bảy cái này, chọn cái này. Trước khi học thêm kỹ thuật mới, nên đọc qua năm <a href="blog-5-loi-lighting.html">lỗi lighting khiến render trông rẻ tiền</a>, vì phần lớn bài của người tự học mắc ít nhất hai trong số đó.</p>
+<p>Nếu bạn chỉ có thời gian để giỏi một kỹ năng duy nhất trong bảy cái này, chọn cái này. Trước khi học thêm kỹ thuật mới, nên đọc bài <a href="blog-5-loi-lighting.html">học lighting trong Blender và năm lỗi làm render rẻ tiền</a>, vì phần lớn bài của người tự học mắc ít nhất hai trong số đó.</p>
 
 <figure>
   <img src="assets/chivas15-glorifier-logo-anh-sang.webp" alt="Mô hình glorifier trưng bày Chivas Regal XV dựng bằng Blender, chai vàng kim loại và viền chữ phát sáng trên nền đen" loading="lazy" width="1800" height="1013">
@@ -471,25 +471,55 @@ POSTS = [
     },
     {
         "slug": "5-loi-lighting",
-        "title": "5 lỗi lighting khiến render của bạn trông rẻ tiền",
-        "desc": "Không phải do máy yếu hay thiếu plugin. Năm lỗi lighting dưới đây gặp ở gần như mọi bài tự học Blender, và cái nào cũng sửa được trong một buổi.",
+        "title": "Học lighting trong Blender: 5 lỗi làm render rẻ tiền",
+        "desc": "Học lighting trong Blender hay mắc năm lỗi làm render trông rẻ tiền. Bài này chỉ rõ từng lỗi, cách sửa trong một buổi và bài kiểm tra ảnh xám ba mươi giây.",
         "tag": "Kỹ thuật",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "read": "6 phút đọc",
+        "updated": "2026-10-13",
+        "updated_vn": "13/10/2026",
+        "read": "11 phút đọc",
         "thumb": "assets/2afcaceb.jpg",
+        "faq": [
+            ("Học lighting trong Blender mất bao lâu để dùng được?",
+             "Ước lượng từ các nhóm chúng tôi đã chữa bài, cần khoảng tám tới mười hai tuần làm đều để đặt đèn có lý do thay vì mò. Riêng việc sửa năm lỗi trong bài này thì nhanh hơn nhiều, thường chỉ một tới hai buổi là thấy khác."),
+            ("Nên học lighting trong Cycles hay Eevee?",
+             "Học nguyên lý trong Cycles vì nó phản ứng gần với ánh sáng thật, sai là thấy ngay. Eevee dùng để xem nhanh và cho việc cần tốc độ. Nguyên lý đặt đèn giống nhau, chỉ khác cách xử lý phản chiếu và bóng đổ."),
+            ("Có cần mua HDRI hoặc add-on lighting trả phí không?",
+             "Không cần, nhất là trong giai đoạn học. Năm lỗi phổ biến nhất đều sửa bằng area light và vài mặt phẳng hắt sáng có sẵn trong Blender. Add-on tiết kiệm thời gian khi đã biết mình muốn gì, chứ không dạy bạn muốn gì."),
+            ("Máy yếu có học lighting được không?",
+             "Được. Lighting là khâu ít ngốn máy nhất nếu bạn làm việc với ảnh xám và render nháp ở độ phân giải thấp. Phần cần máy mạnh là bản render cuối, và đó là việc có thể để sau."),
+            ("Render vẫn trông giả dù đã sửa hết năm lỗi, vấn đề ở đâu?",
+             "Thường là vật liệu hoặc bố cục, không phải đèn nữa. Làm bài kiểm tra ảnh xám trong bài này: nếu ảnh xám đã có chiều sâu mà bản màu vẫn giả, lỗi nằm ở roughness và màu bề mặt."),
+        ],
         "body": """
-<p class="lead">Khi ai đó gửi tôi một bài render và hỏi "sao nhìn nó chưa đã", tám trên mười lần vấn đề nằm ở ánh sáng, không phải model, không phải vật liệu, và gần như không bao giờ là do card đồ hoạ.</p>
+<p class="lead">Học lighting trong Blender không vướng ở plugin hay cấu hình máy. Khi có người gửi tôi một bài render và hỏi sao nhìn nó chưa đã, tám trên mười lần vấn đề nằm ở ánh sáng, không phải model, không phải vật liệu, và gần như không bao giờ do card đồ hoạ. Năm lỗi dưới đây gặp ở gần như mọi bài tự học, và cái nào cũng sửa được trong một buổi.</p>
 
-<p>Dưới đây là năm lỗi tôi gặp nhiều nhất. Không cái nào cần plugin trả phí để sửa.</p>
+<p>Bài này xếp theo đúng thứ tự tôi dùng khi chữa bài: xét nguồn sáng chính trước, rồi mới tới kích thước đèn, môi trường phản chiếu, vùng tối và cuối cùng là hậu kỳ. Sửa theo thứ tự đó thì mỗi lần sửa một thứ là hình khá lên thật, không phải vá chỗ nọ hỏng chỗ kia.</p>
 
-<h2>1. Dùng đúng một HDRI và gọi đó là lighting</h2>
+<h2>Học lighting trong Blender nên bắt đầu từ đâu</h2>
+
+<p>Phần lớn người mới học ánh sáng theo kiểu sưu tầm. Thấy một setup ba đèn trên YouTube thì dựng lại ba đèn, thấy một HDRI đẹp thì tải về dùng. Cách đó cho ra ảnh tạm được nhưng không tích luỹ, lần sau gặp vật thể khác là mò lại từ đầu.</p>
+
+<p>Thứ tích luỹ được là ba câu hỏi, đặt theo đúng thứ tự này cho mọi cảnh:</p>
+
+<ul>
+<li>Nguồn chính đến từ hướng nào, và vì sao hướng đó hợp với hình khối của vật thể này?</li>
+<li>Bề mặt đang phản chiếu cái gì? Nếu câu trả lời là không có gì, đó đã là một lỗi.</li>
+<li>Vùng tối nằm ở đâu, và nó có đang giúp mắt người đọc được hình khối hay chỉ làm mất chi tiết?</li>
+</ul>
+
+<p>Ba câu đó là toàn bộ nội dung của năm phần tiếp theo. Nếu bạn muốn biết ánh sáng nằm ở chỗ nào trong cả chuỗi kỹ năng, <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> đặt nó ở bước ba, sau modeling và vật liệu, và đó cũng là bước chiếm nhiều thời gian nhất trong bảy bước.</p>
+
+<h2>Lỗi 1: dùng đúng một HDRI rồi gọi đó là lighting</h2>
 
 <p>HDRI cho bạn ánh sáng môi trường tử tế trong ba mươi giây, nên rất dễ dừng lại ở đó. Vấn đề là HDRI chiếu đều từ mọi phía. Nó xoá đi cái bạn cần nhất: hướng. Không có hướng thì không có khối, không có khối thì vật thể trông như dán lên nền.</p>
 
-<p><strong style="color:#fff;">Sửa:</strong> giữ HDRI làm nền, hạ cường độ xuống còn khoảng một phần ba, rồi thêm một area light làm nguồn chính. Chỉ một đèn thôi. So sánh trước/sau, bạn sẽ thấy vật thể đột nhiên có trọng lượng.</p>
+<p><strong style="color:#fff;">Sửa:</strong> giữ HDRI làm nền, hạ cường độ xuống còn khoảng một phần ba, rồi thêm một area light làm nguồn chính. Chỉ một đèn thôi. So sánh trước và sau, bạn sẽ thấy vật thể đột nhiên có trọng lượng.</p>
 
-<h2>2. Đèn quá nhỏ so với vật thể</h2>
+<p>Một cách kiểm tra nhanh: xoay HDRI đi chín mươi độ. Nếu ảnh gần như không đổi, nghĩa là bạn đang không có nguồn chính nào cả, chỉ có ánh sáng môi trường.</p>
+
+<h2>Lỗi 2: đèn quá nhỏ so với vật thể</h2>
 
 <p>Đây là lỗi âm thầm nhất. Nguồn sáng nhỏ tạo bóng đổ sắc cạnh và highlight nhỏ như đầu kim, thứ ngoài đời chỉ xuất hiện dưới nắng gắt hoặc đèn flash trần. Sản phẩm chụp studio luôn dùng nguồn lớn, vì nguồn lớn cho chuyển sáng mềm dọc theo bề mặt cong, và chính cái chuyển đó nói cho mắt người biết vật thể làm bằng gì.</p>
 
@@ -497,33 +527,102 @@ POSTS = [
 
 <blockquote><p>Nếu highlight trên bề mặt kim loại của bạn là một chấm nhỏ thay vì một vệt dài, đèn của bạn đang quá nhỏ.</p></blockquote>
 
-<h2>3. Không có gì để phản chiếu</h2>
+<p>Đi kèm kích thước là khoảng cách. Đèn lớn đặt xa sẽ hành xử như đèn nhỏ. Khi muốn chuyển sáng mềm hơn mà không đổi cường độ cảm nhận, kéo đèn lại gần và hạ power, thay vì phóng to mãi.</p>
+
+<h2>Lỗi 3: không có gì để phản chiếu</h2>
 
 <p>Kim loại và nhựa bóng không tự đẹp, chúng đẹp nhờ những gì xung quanh phản chiếu vào. Render một chiếc đồng hồ trong không gian trống, bề mặt của nó sẽ chỉ có màu xám chết. Studio thật luôn đầy vật thể: hắt sáng, cờ đen, tường, trần.</p>
 
 <p><strong style="color:#fff;">Sửa:</strong> đặt vài mặt phẳng lớn quanh vật thể, một trắng để hắt sáng, một đen để tạo mảng tối tương phản trên cạnh. Tắt bóng đổ của chúng nếu cần. Chi phí render gần như bằng không, khác biệt thì thấy ngay.</p>
 
-<h2>4. Sáng đều tuyệt đối, không có vùng tối</h2>
+<figure>
+  <img src="assets/mercedes-g63-cum-den-truoc-can-canh.webp" alt="Cận cảnh cụm đèn trước Mercedes G63 render bằng Blender, vệt sáng dài trên mặt kính và viền kim loại phản chiếu mảng tối" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Cụm đèn trước trong dự án Mercedes G63 của LXAM Studio.</strong> Toàn bộ cảm giác kim loại và kính ở đây đến từ cái mà bề mặt phản chiếu, chủ yếu là các mặt hắt sáng và cờ đen quanh xe, không phải từ số lượng đèn.</figcaption>
+</figure>
+
+<h2>Lỗi 4: sáng đều tuyệt đối, không có vùng tối</h2>
 
 <p>Người mới sợ vùng tối, nên thêm fill light cho tới khi mọi ngóc ngách đều nhìn rõ. Kết quả là ảnh phẳng lì. Vùng tối không phải chỗ thiếu thông tin. Nó là chỗ mắt người nghỉ, và là thứ làm vùng sáng trở nên sáng.</p>
 
-<p><strong style="color:#fff;">Sửa:</strong> tắt hết đèn phụ, chỉ để nguồn chính. Nhìn kỹ. Rồi thêm lại từng đèn một, mỗi lần tự hỏi "đèn này đang giải quyết vấn đề gì?". Đèn nào không trả lời được thì xoá.</p>
+<p><strong style="color:#fff;">Sửa:</strong> tắt hết đèn phụ, chỉ để nguồn chính. Nhìn kỹ. Rồi thêm lại từng đèn một, mỗi lần tự hỏi đèn này đang giải quyết vấn đề gì. Đèn nào không trả lời được thì xoá.</p>
 
 <p>Một ví dụ đi ngược cả bốn lỗi trên: <a href="du-an-volvo-s90.html">bộ hình Volvo S90 dựng và render bằng Blender</a>, đèn lớn, có vật để phản chiếu, và vùng tối được giữ nguyên thay vì kéo sáng cho đều.</p>
 
-<h2>5. Chỉnh màu ở khâu hậu kỳ để cứu ánh sáng sai</h2>
+<h2>Lỗi 5: chỉnh màu ở hậu kỳ để cứu ánh sáng sai</h2>
 
-<p>Kéo contrast và saturation trong Compositor cho tới khi ảnh "đỡ tệ" là dấu hiệu bạn đang vá triệu chứng. Hậu kỳ nên là bước tinh chỉnh cuối, không phải bước cứu hộ. Nếu bạn phải kéo mạnh tay, quay lại sửa đèn, nhanh hơn nhiều.</p>
+<p>Kéo contrast và saturation trong Compositor cho tới khi ảnh đỡ tệ là dấu hiệu bạn đang vá triệu chứng. Hậu kỳ nên là bước tinh chỉnh cuối, không phải bước cứu hộ. Nếu bạn phải kéo mạnh tay, quay lại sửa đèn, nhanh hơn nhiều.</p>
 
-<hr class="hr">
+<p>Có một ngoại lệ đáng nói: khi ánh sáng đã đúng, hậu kỳ nhẹ lại rất hiệu quả, và đó cũng là lúc nên nghĩ tới thời gian render. Các cách cắt thời gian mà không làm hình xấu đi nằm trong bài <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a>.</p>
+
+<h2>Ba kiểu setup đèn thường gặp và lúc nào nên dùng</h2>
+
+<p>Không có setup nào đúng cho mọi cảnh. Bảng dưới là ba kiểu tôi dùng nhiều nhất khi làm hình sản phẩm, kèm điểm bất lợi của từng kiểu, vì phần bất lợi mới là thứ quyết định nên chọn cái nào.</p>
+
+<table>
+<thead><tr><th>Kiểu setup</th><th>Hợp với</th><th>Điểm bất lợi</th></tr></thead>
+<tbody>
+<tr><td>Một đèn lớn, nhiều mặt hắt</td><td>Sản phẩm bóng, kim loại, kính</td><td>Cần kiên nhẫn dịch từng mặt hắt</td></tr>
+<tr><td>Đèn chính và một đèn viền</td><td>Vật thể tối trên nền tối</td><td>Dễ thành viền giả nếu đèn viền quá mạnh</td></tr>
+<tr><td>HDRI hạ cường độ và một area light</td><td>Cảnh ngoại cảnh, dựng nhanh</td><td>Khó kiểm soát phản chiếu chi tiết</td></tr>
+</tbody>
+</table>
+
+<p>Khi chưa chắc, chọn dòng đầu. Một đèn lớn với ba bốn mặt hắt sạch sẽ hầu như luôn cho kết quả đọc được, và nó cũng là nền để hiểu hai kiểu còn lại. Đây cũng là cách chúng tôi dựng phần lớn shot trong <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>.</p>
 
 <h2>Cách tự kiểm tra trong ba mươi giây</h2>
 
 <p>Đổi toàn bộ vật liệu trong cảnh sang một chất xám trung tính rồi render nháp. Nếu ảnh xám đó đã đọc được hình khối và có chiều sâu, ánh sáng của bạn ổn, phần còn lại là chuyện vật liệu. Nếu ảnh xám trông phẳng và nhạt, không vật liệu nào cứu được nó.</p>
 
-<p>Bài kiểm tra này tôi dùng cho gần như mọi shot, và nó bắt lỗi sớm hơn bất kỳ thứ gì khác.</p>
+<p>Bài kiểm tra này tôi dùng cho gần như mọi shot, và nó bắt lỗi sớm hơn bất kỳ thứ gì khác. Lý do nó hiệu quả: khi còn màu và texture, mắt bạn bị lừa bởi chi tiết đẹp và bỏ qua việc hình khối đang phẳng.</p>
 
-<p>Năm lỗi trên đều sửa được một mình. Thứ khó tự sửa là thói quen đọc ảnh, và đó là phần một <a href="blog-khoa-hoc-render.html">khoá học render</a> có người nhận xét từng vòng làm tốt hơn hẳn video hướng dẫn.</p>
+<p>Làm thêm một bước nữa thì tốt: thu ảnh xám xuống bằng con tem rồi nhìn. Ở kích thước đó chỉ còn mảng sáng và mảng tối. Nếu không phân biệt được vật thể với nền, ánh sáng chưa xong, dù zoom vào vẫn thấy đẹp.</p>
+
+<h2>Danh sách kiểm tra trước khi render bản cuối</h2>
+
+<p>Chạy qua danh sách này trước mỗi bản render cuối. Thiếu quá hai dòng thì nên quay lại sửa đèn, đừng render, vì render một bản sai mất nhiều thời gian hơn sửa.</p>
+
+<ul>
+<li>Có một nguồn chính rõ ràng, nói được nó đến từ hướng nào.</li>
+<li>Nguồn chính lớn ít nhất bằng vật thể, thường là gấp hai tới ba lần.</li>
+<li>Mỗi đèn phụ trả lời được câu hỏi nó đang giải quyết vấn đề gì.</li>
+<li>Có ít nhất một mặt hắt trắng và một cờ đen quanh vật thể bóng.</li>
+<li>Highlight trên bề mặt kim loại là vệt có hình, không phải chấm.</li>
+<li>Vùng tối còn nguyên, không bị fill light kéo sáng cho đều.</li>
+<li>Ảnh xám đã đọc được hình khối trước khi gắn vật liệu thật.</li>
+<li>Hậu kỳ chỉ còn là tinh chỉnh nhẹ, không phải cứu hộ.</li>
+<li>Có một ảnh tham chiếu thật đặt cạnh để so, không dựng theo trí nhớ.</li>
+</ul>
+
+<h2>Lộ trình học lighting trong Blender trong tám tuần</h2>
+
+<p>Nếu bạn muốn một cách làm có thứ tự thay vì sửa lỗi lẻ, đây là khung tám tuần đủ để đi từ mò mẫm sang đặt đèn có lý do. Mỗi tuần một bài, làm xong mới sang tuần sau.</p>
+
+<p>Hai tuần đầu chỉ dùng một đèn duy nhất, không HDRI, dựng lại ba vật thể đơn giản cho tới khi nói được vì sao đặt đèn ở đúng chỗ đó. Hai tuần tiếp thêm mặt hắt và cờ đen, làm việc với một vật thể kim loại. Hai tuần sau đó tập vùng tối: dựng lại cùng một shot theo ba phương án sáng khác nhau. Hai tuần cuối ghép vào quy trình thật, gồm cả hậu kỳ nhẹ và kiểm tra bằng ảnh xám.</p>
+
+<p>Khung này cố tình không có phần học thêm phần mềm hay add-on mới. Phần khó của ánh sáng là thói quen đọc ảnh, và thói quen đó chỉ hình thành khi làm lại cùng một việc với điều kiện khác nhau. Bộ bảng tra cứu đi kèm nằm trong <a href="cam-nang.html">cẩm nang Blender</a>, trong đó có checklist lighting và quy trình render dùng khi làm việc thật.</p>
+
+<p>Năm lỗi trên đều sửa được một mình. Thứ khó tự sửa là thói quen đọc ảnh, và đó là phần một <a href="blog-khoa-hoc-render.html">khoá học render</a> có người nhận xét từng vòng làm tốt hơn hẳn video hướng dẫn. Nếu bạn muốn học cả khâu dựng hình trước đó, hai hệ trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> đi theo đúng thứ tự modeling, vật liệu, rồi ánh sáng.</p>
+
+<h2>Hỏi đáp về học lighting trong Blender</h2>
+
+<p class="faq-q">Học lighting trong Blender mất bao lâu để dùng được?</p>
+<p>Ước lượng từ các nhóm chúng tôi đã chữa bài, cần khoảng tám tới mười hai tuần làm đều để đặt đèn có lý do thay vì mò. Riêng việc sửa năm lỗi trong bài này thì nhanh hơn nhiều, thường chỉ một tới hai buổi là thấy khác.</p>
+
+<p class="faq-q">Nên học lighting trong Cycles hay Eevee?</p>
+<p>Học nguyên lý trong Cycles vì nó phản ứng gần với ánh sáng thật, sai là thấy ngay. Eevee dùng để xem nhanh và cho việc cần tốc độ. Nguyên lý đặt đèn giống nhau, chỉ khác cách xử lý phản chiếu và bóng đổ.</p>
+
+<p class="faq-q">Có cần mua HDRI hoặc add-on lighting trả phí không?</p>
+<p>Không cần, nhất là trong giai đoạn học. Năm lỗi phổ biến nhất đều sửa bằng area light và vài mặt phẳng hắt sáng có sẵn trong Blender. Add-on tiết kiệm thời gian khi đã biết mình muốn gì, chứ không dạy bạn muốn gì.</p>
+
+<p class="faq-q">Máy yếu có học lighting được không?</p>
+<p>Được. Lighting là khâu ít ngốn máy nhất nếu bạn làm việc với ảnh xám và render nháp ở độ phân giải thấp. Phần cần máy mạnh là bản render cuối, và đó là việc có thể để sau. Mức cấu hình hợp lý cho từng giai đoạn nằm trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<p class="faq-q">Render vẫn trông giả dù đã sửa hết năm lỗi, vấn đề ở đâu?</p>
+<p>Thường là vật liệu hoặc bố cục, không phải đèn nữa. Làm bài kiểm tra ảnh xám ở trên: nếu ảnh xám đã có chiều sâu mà bản màu vẫn giả, lỗi nằm ở roughness và màu bề mặt.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang mắc ở một shot cụ thể, cứ gửi ảnh render kèm ảnh chụp màn hình phần đặt đèn. Chúng tôi xem và nói thẳng lỗi nào đang ăn nhiều nhất, kể cả khi câu trả lời là bố cục chứ không phải ánh sáng. Không cần đăng ký gì.</p>
 """,
     },
     {
@@ -744,7 +843,7 @@ POSTS = [
 <p>Một vài tấm đèn tắt, một vài tấm sáng yếu hơn. Chi tiết rất nhỏ nhưng là thứ tách cảnh CG khỏi cảnh trông như thật, vì sự đều tăm tắp là dấu hiệu của máy tính.</p>
 
 <h3>Film grain và glare</h3>
-<p>Hai thứ này thêm ở khâu compositing, nhưng chỉ hiệu quả khi ánh sáng bên dưới đã đúng. Nếu bạn thấy mình dựa vào grain để cảnh đỡ giả, vấn đề nằm ở đèn. Tôi có viết kỹ hơn trong <a href="blog-5-loi-lighting.html">bài về 5 lỗi lighting</a>.</p>
+<p>Hai thứ này thêm ở khâu compositing, nhưng chỉ hiệu quả khi ánh sáng bên dưới đã đúng. Nếu bạn thấy mình dựa vào grain để cảnh đỡ giả, vấn đề nằm ở đèn. Tôi có viết kỹ hơn trong bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>.</p>
 
 <h2>Bài tập</h2>
 
@@ -914,7 +1013,7 @@ POSTS = [
 
 <hr class="hr">
 
-<p>Tóm lại: bắt đầu bằng máy đang có. Khi nào bạn thấy mình <em>chờ</em> nhiều hơn <em>làm</em>, lúc đó nâng cấp, và nâng GPU trước. Còn nếu vấn đề là hình chưa đẹp thì máy mới không giải quyết được; cái cần xem lại là <a href="blog-5-loi-lighting.html">ánh sáng</a>.</p>
+<p>Tóm lại: bắt đầu bằng máy đang có. Khi nào bạn thấy mình <em>chờ</em> nhiều hơn <em>làm</em>, lúc đó nâng cấp, và nâng GPU trước. Còn nếu vấn đề là hình chưa đẹp thì máy mới không giải quyết được; cái cần xem lại là ánh sáng, xem bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>.</p>
 """,
     },
     {
@@ -926,6 +1025,18 @@ POSTS = [
         "date_vn": "06/10/2026",
         "read": "11 phút đọc",
         "thumb": "assets/vplas-exploded-view-blender.jpg",
+        "faq": [
+            ('Tự học Blender có xin được việc không?',
+             'Được. Không ai hỏi bằng, người ta xem portfolio. Nhưng tự học thường mất lâu hơn để đạt mức portfolio đủ thuyết phục, vì phần lâu nhất không phải học kỹ thuật mà là tự nhận ra bài mình còn thiếu gì.'),
+            ('Học kèm 3D Blender online có kém hơn ngồi cạnh nhau không?',
+             'Khác biệt nhỏ, vì bài nộp là file và ảnh, gửi đi rất nhanh. Phần quyết định là người kèm có mở được file của bạn và sửa trực tiếp trong đó không, và buổi học có được ghi hình để bạn xem lại không.'),
+            ('Đã tự học một năm rồi, học kèm có bị trùng lặp không?',
+             'Thường là không, nếu bạn nói rõ trình độ từ đầu và người kèm chịu bỏ qua phần nền. Đây cũng là lý do kèm riêng hoặc gia sư theo buổi hợp với người đã tự học hơn là lớp nhóm có giáo trình cố định.'),
+            ('Cần bao nhiêu buổi thì thấy khác?',
+             'Ước lượng bốn tới sáu buổi, với điều kiện giữa hai buổi bạn có làm bài mới. Nếu sau sáu buổi bạn vẫn không tự chẩn đoán được lỗi của chính mình, vấn đề nằm ở cách dạy hoặc ở lượng bài bạn làm, không nằm ở số buổi.'),
+            ('Không có tiền học thì nên làm gì trước?',
+             'Lấy một vật thể thật trên bàn, dựng lại ba lần trong ba tuần, mỗi lần tự so với ảnh gốc và ghi ra ba chỗ lệch. Cách này rèn đúng cái mà học kèm bán cho bạn, chỉ chậm hơn. Phần nền để làm việc đó có trong cẩm nang Blender 3D, tải miễn phí, không cần đăng ký khoá nào.'),
+        ],
         "body": """
 <p class="lead">Câu trả lời ngắn: tự học đủ để bạn đi hết phần nền, còn học kèm 3D Blender chỉ đáng tiền khi bạn đã có bài nộp và bắt đầu đứng yên. Nếu bạn chưa mở Blender bao giờ, chưa cần trả đồng nào. Nếu bạn đã học vài tháng mà chất lượng không nhích, phần dưới đây là chỗ để đọc.</p>
 
@@ -1645,7 +1756,7 @@ POSTS = [
 <p>Người tự học thường dừng quá sớm hoặc chỉnh mãi không dứt. Khoá học có người trong nghề sẽ cho bạn biết mức nào là đủ cho một shot thương mại, mức nào là đang phí thời gian. Đây là thứ hầu như không ai làm video, vì nó phụ thuộc bối cảnh dự án.</p>
 
 <h3>Thứ tự sửa</h3>
-<p>Render có một trình tự sửa khá cố định: bố cục trước, ánh sáng sau, vật liệu tiếp theo, hậu kỳ cuối cùng. Người mới hay làm ngược, kéo hậu kỳ để cứu ánh sáng hỏng. Năm lỗi hay gặp nhất trong nhóm này tôi đã viết riêng ở bài <a href="blog-5-loi-lighting.html">5 lỗi lighting khiến render trông rẻ tiền</a>.</p>
+<p>Render có một trình tự sửa khá cố định: bố cục trước, ánh sáng sau, vật liệu tiếp theo, hậu kỳ cuối cùng. Người mới hay làm ngược, kéo hậu kỳ để cứu ánh sáng hỏng. Năm lỗi hay gặp nhất trong nhóm này tôi đã viết riêng ở bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>, kèm bảng ba kiểu setup đèn và danh sách kiểm tra trước khi render bản cuối.</p>
 
 <figure>
   <img src="assets/aston-dbx-goc-ben-dai-sang.webp" alt="Xe Aston Martin DBX màu xanh ngọc dựng và render 3D bằng Blender, chụp nghiêng trên nền vải xanh đậm với một dải sáng trắng chạy ngang sàn phía sau xe" loading="lazy" width="1800" height="1013">
@@ -1791,7 +1902,7 @@ POSTS = [
 </table>
 </div>
 
-<p>Nếu bạn chưa mở Blender bao giờ, ba kiểu đầu đều dùng được, kiểu thứ tư thì chưa. Còn nếu bạn đã dựng được vài vật nhưng ảnh ra vẫn nhìn rẻ tiền, vấn đề của bạn nằm ở ánh sáng và vật liệu chứ không nằm ở dựng hình, và một <a href="blog-khoa-hoc-render.html">khoá học render</a> đúng nghĩa sẽ hiệu quả hơn là học lại từ đầu.</p>
+<p>Nếu bạn chưa mở Blender bao giờ, ba kiểu đầu đều dùng được, kiểu thứ tư thì chưa. Còn nếu bạn đã dựng được vài vật nhưng ảnh ra vẫn nhìn rẻ tiền, vấn đề của bạn nằm ở ánh sáng và vật liệu chứ không nằm ở dựng hình. Thử đối chiếu với bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a> trước, còn nếu muốn có người chữa bài thì một <a href="blog-khoa-hoc-render.html">khoá học render</a> đúng nghĩa sẽ hiệu quả hơn là học lại từ đầu.</p>
 
 <h2>Khoá học 3D online hay khoá học 3D tại TPHCM</h2>
 
@@ -2028,6 +2139,18 @@ POSTS = [
         "date_vn": "05/10/2026",
         "read": "9 phút đọc",
         "thumb": "assets/volvo-s90-goc-ben-hoang-hon.webp",
+        "faq": [
+            ('Khoá học 3D tại TPHCM có bắt buộc phải học trực tiếp không?',
+             'Không. Nhiều nơi, gồm cả LXAM Academy, dạy cả online và trực tiếp tại TPHCM với cùng nội dung. Điều cần hỏi là lớp online có chữa bài riêng hay chỉ phát video, vì đó mới là phần tạo ra khác biệt.'),
+            ('Người đi làm toàn thời gian học được không?',
+             'Được, nhưng phải tính thật số giờ rảnh mỗi tuần. Ước lượng từ các nhóm đã đi qua, cần khoảng sáu tới mười giờ mỗi tuần để theo kịp một chương trình có nộp bài. Dưới mức đó, nên chọn lớp cho phép giãn tiến độ thay vì lớp có lịch cứng.'),
+            ('Chưa biết vẽ thì học khoá 3D được không?',
+             'Được. Dựng hình sản phẩm và phối cảnh dựa vào quan sát tỉ lệ và hình khối, không dựa vào kỹ năng vẽ tay. Bài khoá học Blender 3D cho người mới nói rõ phần nền tối thiểu thật sự cần.'),
+            ('Học bao lâu thì nhận được việc?',
+             'Tuỳ vào việc bạn có được sửa bài đều hay không, và tuỳ mảng bạn nhắm. Khoảng ước lượng cùng các mốc cụ thể nằm trong bài học Blender 3D bao lâu, kèm phần nói thẳng về những trường hợp lâu hơn trung bình.'),
+            ('Học phí chênh nhau nhiều thì nên chọn rẻ hay đắt?',
+             'Chọn theo đơn giá mỗi lần bài của bạn được chữa, không theo tổng học phí. Một khoá đắt gấp đôi nhưng chữa bài hằng tuần thường rẻ hơn tính theo giá trị thật so với một khoá rẻ chỉ phát video.'),
+        ],
         "body": """
 <p class="lead">Nếu bạn đang tìm khoá học 3D tại TPHCM, câu hỏi thật sự không phải trung tâm nào nổi tiếng hơn, mà là bạn có cần ngồi cùng phòng với người sửa bài hay không. Với phần lớn người mới, học trực tiếp giúp ba tháng đầu đỡ hoang mang. Từ tháng thứ tư trở đi, cái quyết định tiến độ là tần suất bài được chữa, không phải chỗ ngồi.</p>
 
@@ -2168,6 +2291,18 @@ POSTS = [
         "date_vn": "07/10/2026",
         "read": "9 phút đọc",
         "thumb": "assets/jhm-chu-thich-lo-vua.webp",
+        "faq": [
+            ('Học phí khoá học Blender khoảng bao nhiêu là hợp lý?',
+             'Không có mức chung, vì một khoá phát video và một khoá chữa bài hằng tuần là hai sản phẩm khác nhau. Thay vì tìm mức hợp lý, hãy lấy tổng học phí chia cho số lần bài của bạn được chữa riêng, rồi so các báo giá bằng con số đó.'),
+            ('Blender miễn phí thì sao vẫn phải trả học phí?',
+             'Vì bạn trả cho thời gian của người chữa bài và cho cơ chế buộc bạn nộp bài đều, không trả cho phần mềm. Nếu bạn đã có khả năng tự kỷ luật và tự chẩn đoán lỗi, tài liệu miễn phí hoàn toàn đủ.'),
+            ('Khoá đắt có chắc tốt hơn khoá rẻ không?',
+             'Không chắc. Giá cao chỉ hợp lý khi nó mua được thời lượng dành riêng cho bạn. Một khoá đắt mà vẫn bốn mươi người một lớp và nhận xét chung thì chỉ là khoá rẻ bán giá cao.'),
+            ('Có nên trả góp hoặc đóng theo từng phần?',
+             'Nếu nơi dạy cho đóng theo chặng, đó thường là dấu hiệu tốt vì họ chịu rủi ro cùng bạn. Hỏi rõ điều kiện dừng giữa khoá trước khi ký, và đọc kỹ phần hoàn tiền.'),
+            ('Học xong khoá là làm được việc ngay chứ?',
+             'Thường là không ngay. Khoảng thời gian thực tế tới mức nhận được việc, cùng các mốc cụ thể, nằm trong bài học Blender 3D bao lâu. Bất cứ nơi nào cam kết có việc ngay sau khoá đều nên bị hỏi lại rất kỹ.'),
+        ],
         "body": """
 <p class="lead">Học phí khoá học Blender ở Việt Nam chênh nhau tới vài lần cho những lớp nghe mô tả gần giống nhau, nên so tổng tiền là cách so sai. Con số đáng nhìn là đơn giá mỗi lần bài của bạn được chữa riêng, cộng với số món hoàn chỉnh bạn mang ra khỏi khoá. Tính theo hai chỉ số đó, một lớp đắt gấp đôi thường lại rẻ hơn.</p>
 
@@ -2302,6 +2437,18 @@ POSTS = [
         "date_vn": "09/10/2026",
         "read": "9 phút đọc",
         "thumb": "assets/vplas-lot-xac.webp",
+        "faq": [
+            ('Khoá học 3D online có hiệu quả bằng học trực tiếp không?',
+             'Hiệu quả tương đương nếu khoá đó có người chữa bài riêng và có hạn nộp. Nếu chỉ là thư viện video, hiệu quả thấp hơn rõ rệt, không phải vì nội dung kém mà vì phần lớn người học dừng lại trước khi hết khoá.'),
+            ('Tôi ở tỉnh, đường truyền không mạnh thì học được không?',
+             'Được. Phần nặng là kết xuất chạy trên máy bạn chứ không qua mạng. Thứ cần đủ chỉ là gọi video và chia sẻ màn hình. Hỏi trước xem lớp có bản ghi lại để xem lại khi mạng chập chờn không.'),
+            ('Máy yếu có nên đăng ký khoá online trước rồi nâng cấp sau?',
+             'Không nên. Nâng cấp giữa khoá là lúc tốn kém và mất mạch nhất. Kiểm tra cấu hình trước, và nếu chưa đủ thì lùi lịch học lại một tháng thay vì vừa học vừa chờ máy.'),
+            ('Học online bao lâu thì nhận được việc?',
+             'Không khác học trực tiếp, vì thị trường chấm portfolio chứ không chấm hình thức học. Các mốc thời gian thực tế nằm trong bài học Blender 3D bao lâu. Nơi nào cam kết có việc ngay sau khoá đều nên bị hỏi lại rất kỹ.'),
+            ('Nên chọn lớp trực tuyến hay kèm riêng qua màn hình?',
+             'Nếu bạn mới bắt đầu và cần nhịp, chọn lớp trực tuyến theo lịch. Nếu bạn đã làm được vài món và đang kẹt ở một khâu, kèm riêng kết thúc nhanh hơn và tính theo số lần được chữa bài thì thường rẻ hơn.'),
+        ],
         "body": """
 <p class="lead">Một khoá học 3D online tốt hay dở không nằm ở chất lượng video, mà nằm ở việc có người mở file của bạn ra xem hay không. Học từ xa làm mất hai thứ mà lớp trực tiếp cho sẵn: nhịp đi học cố định và ánh mắt người ngồi cạnh. Chọn đúng khoá online nghĩa là chọn khoá có cơ chế bù lại đúng hai thứ đó, chứ không phải khoá nhiều bài giảng nhất.</p>
 
