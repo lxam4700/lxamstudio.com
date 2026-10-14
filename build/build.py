@@ -1077,7 +1077,7 @@ POSTS = [
 <p>Khoảng năm tới mười người, có giáo trình, có bài nộp theo tuần. Rẻ hơn kèm riêng, và phần nghe người khác bị sửa bài thực sự có giá trị, vì bạn thấy được những lỗi mình chưa kịp mắc. Nhược điểm là nhịp lớp không chờ bạn.</p>
 
 <h3>Gia sư Blender theo buổi</h3>
-<p>Không giáo trình, bạn mang vấn đề tới, trả tiền theo giờ. Hợp với người đang tự học và chỉ cần gỡ đúng một chỗ, chẳng hạn topology một chi tiết khó hoặc một cảnh render chậm bất thường. Không hợp nếu bạn còn chưa biết mình thiếu gì, vì lúc đó tiền giờ sẽ trôi vào việc chẩn đoán.</p>
+<p>Không giáo trình, bạn mang vấn đề tới, trả tiền theo giờ. Hợp với người đang tự học và chỉ cần gỡ đúng một chỗ, chẳng hạn topology một chi tiết khó hoặc một cảnh render chậm bất thường. Không hợp nếu bạn còn chưa biết mình thiếu gì, vì lúc đó tiền giờ sẽ trôi vào việc chẩn đoán. Ranh giới giữa hai trường hợp đó, cùng cách kiểm tra người dạy trước buổi đầu, được viết kỹ trong bài <a href="blog-gia-su-blender.html">gia sư Blender</a>.</p>
 
 <h3>Kèm theo dự án</h3>
 <p>Bạn làm một shot hoàn chỉnh, người kèm đi cùng từ brief tới file giao. Đây là hình thức giống việc thật nhất và cũng là cách nhanh nhất để có một bài portfolio dùng được. Hai hệ chuyên sâu theo hướng sản phẩm và hướng automotive đang mô tả ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>, xem để biết một lộ trình đầy đủ gồm những chặng nào.</p>
@@ -1455,7 +1455,7 @@ POSTS = [
 
 <h2>Cách thử một gia sư Blender trước khi trả tiền</h2>
 
-<p>Xin một buổi thử, mang theo một bài bạn làm và đang không ưng. Đừng hỏi họ dạy gì, hãy đưa bài và xem họ phản ứng thế nào. Danh sách dưới là những thứ cần kiểm trong đúng buổi đó.</p>
+<p>Xin một buổi thử, mang theo một bài bạn làm và đang không ưng. Đừng hỏi họ dạy gì, hãy đưa bài và xem họ phản ứng thế nào. Danh sách dưới là những thứ cần kiểm trong đúng buổi đó, còn bộ câu hỏi đầy đủ để lọc người dạy thì nằm trong bài <a href="blog-gia-su-blender.html">gia sư Blender</a>.</p>
 
 <ul>
 <li><strong style="color:#fff;">Họ chỉ ra được vấn đề bạn chưa tự thấy.</strong> Nếu họ chỉ nhắc lại những lỗi bạn đã biết, buổi học sẽ không đưa bạn đi đâu.</li>
@@ -2701,6 +2701,8 @@ POSTS = [
 
 <p>Nếu mỗi tuần bạn chỉ còn dưới ba giờ rảnh, chưa nên đóng tiền. Không định dạng nào bù được việc không ngồi vào bàn. Trong lúc chờ, tải <a href="cam-nang.html">cẩm nang Blender miễn phí</a> và làm phần bài tập trong đó là đủ để giữ tay.</p>
 
+<p>Nếu bạn đã dựng được vài món và chỉ kẹt ở một khâu cụ thể, một khoá dài là thừa. Trường hợp đó thuê <a href="blog-gia-su-blender.html">gia sư Blender</a> theo buổi gỡ nhanh hơn và tính ra thường rẻ hơn.</p>
+
 <h2>Chọn khoá học dựng hình sản phẩm theo thứ bạn cầm được sau khoá</h2>
 
 <p>Thứ đáng trả tiền trong một khoá học dựng hình sản phẩm không phải là số giờ bài giảng, mà là số lần bài của bạn được mở ra chữa, cộng với việc khoá có đưa bạn tới tận tấm ảnh hoàn chỉnh hay không. Nhìn theo đó thì việc chọn lớp gọn lại thành hai câu: lớp này bắt tôi dựng theo số đo thật chứ, và hết khoá tôi cầm được mấy món đăng lên được.</p>
@@ -2727,6 +2729,148 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đang so vài lớp với nhau, gửi cho chúng tôi mô tả từng lớp: bài tập dựa trên gì, số buổi, số lần chữa bài và đầu ra cuối khoá. Chúng tôi sẽ nói thẳng lớp nào đưa bạn tới một món đăng được nhanh hơn, kể cả khi câu trả lời là chưa nên học ở đâu cả. Muốn xem trước cách một chương trình chia bài theo tuần, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>; muốn tự đi trước một đoạn, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước.</p>
+""",
+    },
+    {
+        "slug": "gia-su-blender",
+        "title": "Gia sư Blender: khi nào cần và chọn thế nào",
+        "desc": "Gia sư Blender khác lớp đông ở đâu, khi nào kèm riêng là đúng tiền, cách kiểm tra người dạy và năm câu hỏi lọc trước buổi đầu. Kèm bảng so sánh thẳng thắn.",
+        "tag": "Định hướng",
+        "date": "2026-10-14",
+        "date_vn": "14/10/2026",
+        "read": "10 phút đọc",
+        "thumb": "assets/insta360-gimbal-hoc-vien-loc.jpg",
+        "faq": [
+            ('Gia sư Blender và lớp học kèm nhóm nhỏ khác nhau thế nào?',
+             'Gia sư là một người dạy cho một người, toàn bộ buổi xoay quanh file của bạn. Nhóm nhỏ vẫn chạy theo một giáo trình chung, bạn được chữa bài nhiều hơn lớp đông nhưng vẫn phải chờ lượt. Nếu bạn đang kẹt ở một khâu rất riêng thì gia sư kết thúc nhanh hơn, còn nếu bạn mới bắt đầu và cần nhịp thì nhóm nhỏ hợp hơn.'),
+            ('Mới học Blender hoàn toàn có nên thuê gia sư ngay không?',
+             'Thường là chưa. Vài tuần đầu bạn chỉ cần làm quen giao diện và dựng vài khối đơn giản, phần đó tài liệu miễn phí dạy tốt và trả tiền cho nó là lãng phí. Gia sư phát huy tác dụng khi bạn đã có file của riêng mình và không hiểu vì sao nó chưa đẹp.'),
+            ('Học với gia sư Blender bao nhiêu buổi là đủ?',
+             'Ước lượng từ các nhóm chúng tôi đã kèm là sáu tới mười buổi cho một mục tiêu cụ thể, ví dụ hoàn thiện một món sản phẩm từ khối thô tới ảnh đăng được. Nếu quá mười lăm buổi mà chưa ra món nào hoàn chỉnh, vấn đề thường nằm ở mục tiêu quá rộng chứ không ở người dạy.'),
+            ('Làm sao biết một gia sư Blender có thật sự làm nghề hay không?',
+             'Hỏi xem một file gốc chứ không chỉ ảnh đã kết xuất. Người làm nghề mở file ra được, chỉ cho bạn cách đặt tên, cách gom bộ sưu tập và chỗ họ đã phải sửa lại. Ảnh đẹp có thể tải về từ bất cứ đâu, còn cấu trúc file thì không giả được.'),
+            ('Học kèm riêng qua mạng có kém học trực tiếp không?',
+             'Không kém, vì phần lớn thời gian là hai người cùng nhìn một màn hình. Điều kiện cần chỉ là gọi video ổn định và quyền điều khiển màn hình khi cần sửa trực tiếp. Phần nặng là kết xuất chạy trên máy bạn chứ không qua đường truyền.'),
+        ],
+        "body": """
+<p class="lead">Gia sư Blender là hình thức một người dạy kèm riêng một người học, toàn bộ buổi học xoay quanh file bạn đang làm dở chứ không theo giáo trình chung. Nó đáng tiền khi bạn đã dựng được vài món nhưng không tự chỉ ra được chúng sai ở đâu. Nó lãng phí khi bạn mới mở phần mềm lần đầu, vì giai đoạn đó tài liệu miễn phí đã đủ.</p>
+
+<p>Bài này nói rõ ranh giới giữa hai trường hợp đó, kèm cách kiểm tra một người dạy trước khi trả buổi đầu tiên. Chúng tôi không nêu mức giá của bất kỳ ai, kể cả của mình, vì giá thay đổi theo thời điểm và theo việc buổi học có chữa file thật hay không.</p>
+
+<h2>Gia sư Blender khác lớp đông ở chỗ nào</h2>
+
+<p>Khác biệt không nằm ở kiến thức. Phần lớn nội dung một gia sư nói ra, bạn đều tìm được trên mạng. Khác biệt nằm ở thứ tự: lớp đông đi theo thứ tự của giáo trình, gia sư đi theo thứ tự của chỗ bạn đang kẹt.</p>
+
+<h3>Lớp đông dạy cái đa số cần</h3>
+<p>Giáo trình được thiết kế cho người học trung bình. Nếu bạn đã mạnh phần dựng khối nhưng yếu ánh sáng, bạn vẫn ngồi hết các buổi dựng khối. Thời gian mất đi ở đó không nhỏ.</p>
+
+<h3>Gia sư dạy cái riêng bạn thiếu</h3>
+<p>Buổi học bắt đầu bằng việc mở file của bạn. Người dạy nhìn cấu trúc lưới, cách bạn đặt đèn, cách bạn tổ chức bộ sưu tập, rồi chỉ ra ba bốn chỗ làm hình xấu đi. Đó là việc không video nào làm được, vì video không biết bạn đã làm gì.</p>
+
+<blockquote><p>Thứ bạn mua ở một gia sư không phải bài giảng. Bài giảng Blender trên mạng đã quá nhiều và hầu hết miễn phí. Bạn mua khả năng chẩn đoán: có người nhìn file của bạn và nói đúng chỗ sai trong mười phút thay vì để bạn mò ba tuần.</p></blockquote>
+
+<h2>Khi nào bạn thật sự cần một gia sư Blender</h2>
+
+<p>Bốn tình huống dưới đây là lúc kèm riêng cho hiệu quả rõ rệt nhất, dựa trên các nhóm chúng tôi đã làm việc cùng.</p>
+
+<p><strong style="color:#fff;">Bạn làm xong một món nhưng nó trông vẫn rẻ tiền.</strong> Đây là tình huống phổ biến nhất. Lưới đúng, vật liệu có vẻ ổn, nhưng ảnh cuối cùng thiếu sức nặng. Nguyên nhân thường nằm ở ánh sáng và bố cục, hai thứ rất khó tự thấy. Một buổi kèm có thể tiết kiệm cho bạn cả tháng thử sai.</p>
+
+<p><strong style="color:#fff;">Bạn có hạn nộp thật và không được phép hỏng.</strong> Một khách hàng đầu tiên, một bài dự tuyển, một món cho hồ sơ xin việc. Lúc này thứ bạn cần là người đi cùng từng bước chứ không phải một khoá mười hai tuần.</p>
+
+<p><strong style="color:#fff;">Bạn đã quen phần mềm khác và muốn chuyển sang.</strong> Người từng làm 3ds Max hoặc Cinema 4D không cần học lại tư duy 3D, chỉ cần ánh xạ thao tác và hiểu khác biệt về bộ kết xuất. Ngồi lớp người mới là phí thời gian rõ ràng.</p>
+
+<p><strong style="color:#fff;">Bạn cần dựng đúng một loại món cho công việc.</strong> Ví dụ chỉ cần dựng được sản phẩm của chính công ty mình. Trường hợp này phần kèm riêng bám sát thực tế hơn hẳn, và nếu bạn muốn xem một chương trình bài bản hơn cho hướng này thì bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> mô tả đủ các khâu cần có.</p>
+
+<h2>Khi nào chưa nên thuê gia sư, nói thẳng</h2>
+
+<p>Phần này đi ngược lợi ích của một nơi vừa dạy vừa nhận kèm riêng như chúng tôi, nhưng nói trước thì bạn đỡ mất tiền.</p>
+
+<p>Nếu bạn chưa mở Blender lần nào, hãy dành hai tuần tự làm quen trước. Tải <a href="cam-nang.html">cẩm nang Blender miễn phí</a> và làm hết phần bài tập trong đó. Hai tuần này không tốn đồng nào và nó quyết định việc bạn có thật sự thích công việc này hay không.</p>
+
+<p>Nếu mỗi tuần bạn chỉ còn dưới ba giờ rảnh, kèm riêng sẽ thành buổi nhắc bài. Người dạy giao việc, bạn không kịp làm, buổi sau lại ôn lại. Tiền chảy đi mà kỹ năng đứng yên.</p>
+
+<p>Nếu bạn cần một môi trường có người cùng học để không bỏ cuộc, lớp mới là thứ bạn cần chứ không phải gia sư. Phần so sánh đầy đủ giữa hai lựa chọn nằm trong bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a>.</p>
+
+<p>Nếu máy của bạn chưa kham nổi khâu kết xuất, hãy xử lý phần cứng trước. Học kèm trên một máy dựng xong không render được là trả tiền để nhìn vòng xoay chờ. Mức cấu hình đủ cho từng giai đoạn nằm trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<h2>Bảng so sánh ba hình thức học theo thứ bạn thật sự nhận được</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Tự học qua video</th><th>Lớp có chữa bài nhóm</th><th>Gia sư kèm riêng</th></tr></thead>
+<tbody>
+<tr><td>Nội dung bám theo</td><td>Giáo trình của người quay</td><td>Giáo trình chung của lớp</td><td>File và mục tiêu của bạn</td></tr>
+<tr><td>Tốc độ gỡ một chỗ kẹt cụ thể</td><td>Chậm, phụ thuộc may mắn tìm kiếm</td><td>Trung bình, phải chờ lượt</td><td>Nhanh nhất</td></tr>
+<tr><td>Chi phí tính theo buổi</td><td>Gần bằng không</td><td>Trung bình</td><td>Cao nhất</td></tr>
+<tr><td>Chi phí tính theo một lần được chữa file</td><td>Rất cao vì gần như không có</td><td>Trung bình</td><td>Thường thấp nhất</td></tr>
+<tr><td>Rủi ro bỏ giữa chừng</td><td>Cao nhất</td><td>Trung bình</td><td>Thấp, vì có lịch hẹn riêng</td></tr>
+<tr><td>Môi trường có bạn học</td><td>Không</td><td>Có</td><td>Không</td></tr>
+<tr><td>Hợp nhất khi</td><td>Bạn đang làm quen giai đoạn đầu</td><td>Bạn cần nhịp và nền tảng</td><td>Bạn kẹt ở một khâu hoặc có hạn nộp</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không chọn hộ bạn. Nó chỉ ra rằng ba hình thức giải ba bài toán khác nhau, và lỗi hay gặp là trả tiền cho hình thức đắt khi vấn đề chỉ cần hình thức rẻ, hoặc ngược lại. Cách quy mọi báo giá về một con số so sánh được nằm trong bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>.</p>
+
+<figure>
+  <img src="assets/insta360-gimbal-hoc-vien-loc.jpg" alt="Render máy quay gimbal cầm tay chia đôi, nửa trái là bản kết xuất hoàn chỉnh, nửa phải là lưới wireframe xám của cùng mẫu" loading="lazy" width="1600" height="900">
+  <figcaption><strong>Một bài học viên dựng trong quá trình kèm riêng tại LXAM Studio.</strong> Nửa lưới và nửa đã kết xuất đặt cạnh nhau là cách buổi kèm thường diễn ra: người dạy xem cấu trúc lưới trước, vì phần lớn lỗi ở ảnh cuối bắt nguồn từ chỗ không nhìn thấy.</figcaption>
+</figure>
+
+<h2>Cách kiểm tra một gia sư Blender trước khi trả buổi đầu</h2>
+
+<p>Đây là danh sách bạn nên chạy qua với bất kỳ ai nhận kèm, kể cả với chúng tôi. Người làm nghề thật trả lời được hết, kể cả những câu bất lợi cho họ.</p>
+
+<ul>
+<li>Cho tôi xem một file gốc chứ không chỉ ảnh đã kết xuất, để tôi nhìn cách bạn tổ chức lưới và bộ sưu tập.</li>
+<li>Bạn đang làm dự án thật nào trong sáu tháng qua, xem ở đâu?</li>
+<li>Buổi học diễn ra thế nào: tôi làm và bạn sửa, hay bạn làm và tôi xem?</li>
+<li>Giữa hai buổi tôi phải nộp gì, và bạn phản hồi trong bao lâu?</li>
+<li>Sau sáu buổi, thứ cụ thể tôi cầm trong tay là gì?</li>
+<li>Bạn có nhận chỉnh trực tiếp vào file của tôi không, hay chỉ hướng dẫn bằng lời?</li>
+<li>Nếu tôi thấy không hợp sau hai buổi thì dừng thế nào?</li>
+</ul>
+
+<p>Câu đầu và câu áp chót là hai câu lọc mạnh nhất. Ảnh đẹp tải ở đâu cũng có, nhưng một file sạch thì không giả được. Còn người không dám đụng vào file của bạn thường là người chưa đủ tự tin với chính thao tác của mình. Dạng bằng chứng bạn nên đòi hỏi trông như trang <a href="hoc-vien.html">bài tập học viên</a> của chúng tôi, có cả bài tốt lẫn bài còn yếu kèm nhận xét.</p>
+
+<h2>Một chu kỳ kèm riêng tám buổi trông như thế nào</h2>
+
+<p>Đây là khung chúng tôi hay dùng khi người học đã có nền cơ bản và muốn ra một món sản phẩm hoàn chỉnh. Nó không phải chuẩn mực, chỉ là một ví dụ để bạn biết nên đòi hỏi mức rõ ràng nào.</p>
+
+<p>Hai buổi đầu dành cho chẩn đoán và dựng khối. Người dạy xem lại toàn bộ thứ bạn đã làm, chốt một món để theo tới cùng, rồi cùng bạn dựng khối thô và kiểm tra tỉ lệ. Hai buổi tiếp là chỉnh lưới và cạnh, khâu quyết định việc đổ bóng có gợn hay không.</p>
+
+<p>Buổi năm và sáu làm vật liệu và ánh sáng, thường là chỗ tiến bộ nhìn thấy rõ nhất. Hai buổi cuối dành cho kết xuất, hậu kỳ nhẹ và dựng trang trình bày món đó cho hồ sơ. Kết thúc chu kỳ bạn cầm một món đăng được, không phải tám bài tập rời rạc.</p>
+
+<p>Nếu bạn muốn tự đi trước một đoạn rồi mới thuê kèm cho phần khó, thứ tự bảy kỹ năng trong bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> cho biết bạn đang đứng ở đâu và còn thiếu bước nào.</p>
+
+<h2>Gia sư Blender không thay được số giờ bạn ngồi vào bàn</h2>
+
+<p>Đây là phần nhiều người không muốn nghe. Kèm riêng rút ngắn quãng mò mẫm, nó không rút ngắn quãng luyện tay. Một người dạy giỏi có thể chỉ cho bạn trong mười lăm phút thứ bạn tự tìm mất ba tuần, nhưng sau đó vẫn phải là bạn ngồi dựng lại cho tới khi thao tác thành phản xạ.</p>
+
+<p>Cách dùng gia sư hiệu quả nhất, theo quan sát của chúng tôi, là xen kẽ chứ không liên tục. Học kèm một đợt ngắn để gỡ chỗ kẹt và nhận một bộ tiêu chuẩn, rồi tự làm vài tháng, rồi quay lại khi gặp bức tường mới. Chi phí thấp hơn nhiều so với kèm đều đặn, và kỹ năng bền hơn vì bạn tự giải quyết phần lớn vấn đề.</p>
+
+<p>Nếu bạn đang cân nhắc giữa kèm riêng và một chương trình dài hơi, bài <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> phân tích kỹ hơn từng kiểu người học, còn mức thu nhập và nhu cầu tuyển của mảng này được mô tả theo khoảng trong trang <a href="nghe-nghiep.html">nghề 3D artist</a>, kèm ghi chú rõ đó là ước lượng chứ không phải số liệu chính thức.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Gia sư Blender và lớp học kèm nhóm nhỏ khác nhau thế nào?</p>
+<p>Gia sư là một người dạy cho một người, toàn bộ buổi xoay quanh file của bạn. Nhóm nhỏ vẫn chạy theo một giáo trình chung, bạn được chữa bài nhiều hơn lớp đông nhưng vẫn phải chờ lượt. Nếu bạn đang kẹt ở một khâu rất riêng thì gia sư kết thúc nhanh hơn, còn nếu bạn mới bắt đầu và cần nhịp thì nhóm nhỏ hợp hơn.</p>
+
+<p class="faq-q">Mới học Blender hoàn toàn có nên thuê gia sư ngay không?</p>
+<p>Thường là chưa. Vài tuần đầu bạn chỉ cần làm quen giao diện và dựng vài khối đơn giản, phần đó tài liệu miễn phí dạy tốt và trả tiền cho nó là lãng phí. Gia sư phát huy tác dụng khi bạn đã có file của riêng mình và không hiểu vì sao nó chưa đẹp.</p>
+
+<p class="faq-q">Học với gia sư Blender bao nhiêu buổi là đủ?</p>
+<p>Ước lượng từ các nhóm chúng tôi đã kèm là sáu tới mười buổi cho một mục tiêu cụ thể, ví dụ hoàn thiện một món sản phẩm từ khối thô tới ảnh đăng được. Nếu quá mười lăm buổi mà chưa ra món nào hoàn chỉnh, vấn đề thường nằm ở mục tiêu quá rộng chứ không ở người dạy.</p>
+
+<p class="faq-q">Làm sao biết một gia sư Blender có thật sự làm nghề hay không?</p>
+<p>Hỏi xem một file gốc chứ không chỉ ảnh đã kết xuất. Người làm nghề mở file ra được, chỉ cho bạn cách đặt tên, cách gom bộ sưu tập và chỗ họ đã phải sửa lại. Ảnh đẹp có thể tải về từ bất cứ đâu, còn cấu trúc file thì không giả được.</p>
+
+<p class="faq-q">Học kèm riêng qua mạng có kém học trực tiếp không?</p>
+<p>Không kém, vì phần lớn thời gian là hai người cùng nhìn một màn hình. Điều kiện cần chỉ là gọi video ổn định và quyền điều khiển màn hình khi cần sửa trực tiếp. Phần nặng là kết xuất chạy trên máy bạn chứ không qua đường truyền.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn không chắc mình thuộc nhóm nên thuê kèm hay nên tự đi thêm một đoạn, gửi cho chúng tôi hai ba món bạn đã làm và một câu mô tả chỗ bạn thấy bí. Chúng tôi sẽ nói thẳng bạn đang thiếu gì, kể cả khi câu trả lời là chưa cần trả tiền cho ai cả. Muốn xem cách một chương trình chia bài và chữa bài theo tuần, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
 """,
     },
 ]
