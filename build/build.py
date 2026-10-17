@@ -535,6 +535,8 @@ POSTS = [
 
 <p><strong style="color:#fff;">Sửa:</strong> đặt vài mặt phẳng lớn quanh vật thể, một trắng để hắt sáng, một đen để tạo mảng tối tương phản trên cạnh. Tắt bóng đổ của chúng nếu cần. Chi phí render gần như bằng không, khác biệt thì thấy ngay.</p>
 
+<p>Trang sức là trường hợp cực đoan của lỗi này, vì gần như toàn bộ bề mặt đều là thứ phản chiếu lại môi trường. Có thể xem <a href="du-an-locphuc-bo-suu-tap.html">key visual bộ sưu tập trang sức Lộc Phúc</a> để thấy mảng sáng và mảng tối trên kim loại được dựng từ vật đặt quanh chứ không phải từ việc tăng số đèn.</p>
+
 <figure>
   <img src="assets/mercedes-g63-cum-den-truoc-can-canh.webp" alt="Cận cảnh cụm đèn trước Mercedes G63 render bằng Blender, vệt sáng dài trên mặt kính và viền kim loại phản chiếu mảng tối" loading="lazy" width="1800" height="1013">
   <figcaption><strong>Cụm đèn trước trong dự án Mercedes G63 của LXAM Studio.</strong> Toàn bộ cảm giác kim loại và kính ở đây đến từ cái mà bề mặt phản chiếu, chủ yếu là các mặt hắt sáng và cờ đen quanh xe, không phải từ số lượng đèn.</figcaption>
@@ -937,8 +939,8 @@ POSTS = [
     },
     {
         "slug": "cau-hinh-may-hoc-blender",
-        "title": "Cấu hình máy học Blender 3D theo từng giai đoạn",
-        "desc": "Chọn cấu hình máy học Blender 3D theo từng giai đoạn: CPU, GPU, RAM, SSD, mốc nào nên nâng cấp, và lý do máy yếu thường không phải thứ cản bạn.",
+        "title": "Cấu hình máy học Blender 3D: máy yếu có học được?",
+        "desc": "Cấu hình máy học Blender 3D cần tới đâu, máy yếu kẹt lại ở khâu nào trước, nên nâng GPU hay RAM trước, và mốc nào thì nâng cấp mới thật sự đáng tiền.",
         "tag": "Thiết bị",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
@@ -2743,10 +2745,10 @@ POSTS = [
 <p>Trọng tâm là kiểm soát cạnh và đổ bóng: khi nào dùng bộ chia mặt, khi nào bo cạnh thẳng, cách xử lý chỗ ba cạnh gặp nhau, cách tránh vệt gợn trên mặt cong. Đây là phần kỹ thuật dày nhất của mảng này. Một số công cụ rút ngắn được thao tác, xem phần đánh giá trong bài <a href="blog-add-on-hard-surface-blender.html">add-on hard surface cho Blender</a>, nhưng công cụ chỉ nhanh hơn khi bạn đã hiểu nguyên tắc bên dưới.</p>
 
 <h3>Ba, chuẩn bị file để chịu được ánh sáng</h3>
-<p>Gồm đặt gốc toạ độ, chuẩn tỉ lệ theo đơn vị thật, tách nhóm theo vật liệu, đặt tên có quy ước. Nghe như việc hành chính, nhưng chính nó quyết định bạn sửa một yêu cầu của khách trong mười phút hay trong ba tiếng.</p>
+<p>Gồm đặt gốc toạ độ, chuẩn tỉ lệ theo đơn vị thật, tách nhóm theo vật liệu, đặt tên có quy ước. Nghe như việc hành chính, nhưng chính nó quyết định bạn sửa một yêu cầu của khách trong mười phút hay trong ba tiếng. Mức độ tách nhóm cần tới đâu thì nhìn <a href="du-an-khoa-cua-thong-minh.html">bộ hình khoá cửa thông minh tách rời linh kiện</a> là rõ nhất: ảnh tách rời chỉ dựng được khi từng chi tiết đã nằm đúng nhóm ngay từ lúc modeling.</p>
 
 <h3>Bốn, một quy trình ra ảnh tối thiểu</h3>
-<p>Vật liệu cơ bản, một bộ đèn studio ba nguồn, một góc máy chuẩn và một bản kết xuất sạch. Không cần dạy sâu, nhưng phải dạy tới mức bạn tự ra được tấm hình để người khác đánh giá. Cách các khâu này nối vào nhau có mô tả trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> theo từng tuần.</p>
+<p>Vật liệu cơ bản, một bộ đèn studio ba nguồn, một góc máy chuẩn và một bản kết xuất sạch. Không cần dạy sâu, nhưng phải dạy tới mức bạn tự ra được tấm hình để người khác đánh giá. Mức hoàn thiện mà một bài giao khách cần thì xem <a href="du-an-locphuc-10-nam.html">bộ hình kỷ niệm mười năm Lộc Phúc</a>, nơi cùng một món phải ra nhiều phương án ánh sáng cho bên duyệt chọn. Cách các khâu này nối vào nhau có mô tả trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> theo từng tuần.</p>
 
 <h2>Bảng so sánh ba kiểu lớp dạy dựng hình sản phẩm</h2>
 
@@ -3365,12 +3367,19 @@ def main():
           "nghe-nghiep.html", "ve-chung-toi.html", "blog.html"]
     urls = [""] + P9 + P8 + ["hoc-vien.html"] + ["blog-%s.html" % p["slug"] for p in POSTS] \
            + ["blog-%s.html" % p["slug"] for p in EXTRA_POSTS]
+    # lastmod chi gan cho trang ma ta biet chac ngay doi: cac bai blog.
+    lastmod = {}
+    for p_ in POSTS + EXTRA_POSTS:
+        lastmod["blog-%s.html" % p_["slug"]] = p_.get("updated") or p_["date"]
+
     rows = []
     for u in urls:
         pri = "1.0" if u == "" else ("0.9" if u in P9 else ("0.8" if u in P8 else "0.7"))
         freq = "weekly" if u in ("", "blog.html") else "monthly"
-        rows.append('  <url><loc>https://lxamstudio.com/%s</loc>'
-                    '<changefreq>%s</changefreq><priority>%s</priority></url>' % (u, freq, pri))
+        lm = lastmod.get(u)
+        lm_tag = "<lastmod>%s</lastmod>" % lm if lm else ""
+        rows.append('  <url><loc>https://lxamstudio.com/%s</loc>%s'
+                    '<changefreq>%s</changefreq><priority>%s</priority></url>' % (u, lm_tag, freq, pri))
     write("sitemap.xml",
           '<?xml version="1.0" encoding="UTF-8"?>\n'
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
