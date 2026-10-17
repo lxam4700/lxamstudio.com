@@ -16,6 +16,7 @@ NAV_ITEMS = [
     ("ve-chung-toi.html", "Về chúng tôi"),
     ("#portfolio", "Portfolio"),
     ("blog.html", "Blog"),
+    ("du-an-hoc-vien.html", "Bài học viên"),
     ("hoc-vien.html", "Khu học viên"),
     ("#lienhe", "Liên hệ"),
     ("khoa-hoc.html", "Khóa học"),
@@ -831,6 +832,211 @@ def tvc_grid():
 
 
 
+# ------------------------------------------------------------------ BÀI HỌC VIÊN
+# Dữ liệu bài tốt nghiệp. Mỗi mục là một chặng của phim, đánh số theo kiểu toà soạn.
+HV_CHANG = [
+    ("01", "Mở bằng căn phòng, chưa mở bằng xe",
+     "hydran-goc-phong-anh-tu-lieu.webp",
+     "Góc phòng tối với tường dán ảnh tư liệu đua xe và một ngọn đèn bàn, khung mở đầu phim tốt nghiệp",
+     "Phim không mở bằng chiếc xe. Nó mở bằng một căn phòng tối, tường dán ảnh tư liệu, một ngọn đèn "
+     "hắt sáng vừa đủ. Cách mở này mua được thời gian cho người xem làm quen với không khí trước khi "
+     "có bất kỳ chuyển động nào."),
+    ("02", "Một vật kể chuyện thay lời thoại",
+     "hydran-mu-bao-hiem-va-may-bang-tu.webp",
+     "Mũ bảo hiểm đua đã sờn đặt cạnh máy ghi âm băng cối cổ, ánh sáng ấm hắt từ một phía",
+     "Chiếc mũ sờn đặt cạnh máy băng cối. Vết xước trên mũ và lớp bụi trên máy là phần kể chuyện, "
+     "không phải phần trang trí. Đây cũng là chỗ thấy rõ nhất công làm vật liệu: bề mặt cũ đi theo "
+     "kiểu dùng nhiều, chứ không phải kiểu phủ một lớp bẩn cho đều."),
+    ("03", "Chuyển sang trường đua bằng ánh sáng, không bằng cắt cảnh",
+     "hydran-den-xuat-phat-duong-dua.webp",
+     "Cụm đèn đỏ xuất phát trên giàn thép đầu đường đua, nhìn ngược từ dưới lên nền trời sáng",
+     "Cụm đèn đỏ nhìn ngược từ dưới lên, nền trời sáng trắng. Nhiệt độ màu đảo hẳn so với hai chặng "
+     "trước. Phim đổi không gian bằng cách đổi nguồn sáng, đây là thứ khó hơn nhiều so với việc cắt "
+     "sang một cảnh mới."),
+    ("04", "Khối chính, và chỗ bài thi lộ rõ tay nghề",
+     "hydran-porsche-dan-dau-duong-dua.webp",
+     "Xe đua Porsche 911 GT3 dẫn đầu nhóm xe trên đường đua lúc hoàng hôn, render 3D bằng Blender",
+     "Chiếc 911 dẫn đầu nhóm xe lúc nắng xiên. Sơn, kính, decal và mặt đường phải cùng đứng được "
+     "trong một khung. Đây là chặng ăn nhiều thời gian nhất của bài, và cũng là chặng mà người chấm "
+     "nhìn vào đầu tiên."),
+    ("05", "Đóng bằng một góc máy không ai nhìn thấy ngoài đời",
+     "hydran-vach-dich-nhin-tu-tren.webp",
+     "Góc nhìn thẳng từ trên xuống hai xe đua băng qua vạch đích kẻ ô vuông, bảng đèn báo kết thúc phía trên",
+     "Góc thẳng từ trên xuống vạch đích. Một góc máy chỉ 3D mới dựng được, và được để dành tới cuối "
+     "thay vì dùng sớm. Biết giữ góc mạnh nhất tới phút cuối là thứ khó dạy hơn kỹ thuật."),
+]
+
+
+def _imgwh(name):
+    """Doc kich thuoc that cua anh trong assets, tra ve chuoi thuoc tinh width/height."""
+    try:
+        from PIL import Image as _I
+        w, h = _I.open(os.path.join(SITE, "assets", name)).size
+        return ' width="%d" height="%d"' % (w, h)
+    except Exception:
+        return ""
+
+
+def hv_hero():
+    return """
+<header class="subh">
+  <div class="wrap">
+    <p class="mn-k">LXAM Academy / Bài học viên</p>
+    <h1 class="mn-big">Bài <em>tốt nghiệp</em> của học viên</h1>
+    <p class="subh-l">Bài cuối khoá do học viên tự dựng, tự chiếu sáng và tự kết xuất. Đăng nguyên bản,
+    kèm phần đọc lại từng chặng để thấy bài được xây như thế nào, chứ không chỉ thấy kết quả.</p>
+  </div>
+</header>"""
+
+
+def hv_phim():
+    return """
+<section id="hydran">
+  <div class="wrap">
+    %s
+    <button class="vid vid-big" type="button" data-src="assets/hydran-tot-nghiep.mp4"
+            aria-label="Phát phim tốt nghiệp của học viên Hydran">
+      <img src="assets/hydran-poster.webp" alt="Khung mở đầu phim tốt nghiệp của học viên Hydran, căn phòng tối dán ảnh tư liệu đua xe"
+           width="1600" height="675" loading="lazy" decoding="async">
+      <span class="pl"></span>
+    </button>
+    <div class="vid-l"><span class="wk-t">Hydran · Phim tốt nghiệp hệ 3D Master Automotive</span><span class="wk-c">2 phút 20 giây</span></div>
+    <div class="table-wrap" style="margin-top:34px;">
+    <table>
+      <tbody>
+        <tr><td>Học viên</td><td>Hydran</td></tr>
+        <tr><td>Chương trình</td><td><a href="lo-trinh-3d-automotive.html">Hệ 3D Automotive</a>, thời lượng một năm</td></tr>
+        <tr><td>Phần mềm</td><td>Blender cho dựng hình, chiếu sáng và kết xuất; dựng phim và hậu kỳ ở ngoài</td></tr>
+        <tr><td>Bản gốc</td><td>2560 × 1080, 30 hình trên giây. Bản trên trang này đã nén lại cho nhẹ</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>""" % section_head("01", "Phim", "Hydran · bài tốt nghiệp")
+
+
+def hv_quytrinh():
+    rows = []
+    for i, (no, tieu_de, anh, alt, van) in enumerate(HV_CHANG):
+        ben = "hv-r" if i % 2 else "hv-l"
+        rows.append(
+            '<article class="hv-step %s">'
+            '<figure><img src="assets/%s" alt="%s"%s loading="lazy" decoding="async"></figure>'
+            '<div class="hv-tx"><span class="hv-no">%s</span><h3>%s</h3><p>%s</p></div>'
+            '</article>' % (ben, anh, alt, _imgwh(anh), no, tieu_de, van))
+    return """
+<section id="quy-trinh">
+  <div class="wrap">
+    %s
+    <p class="hv-lead">Năm chặng dưới đây là phần đọc lại mạch phim từ bản hoàn chỉnh, theo đúng thứ tự
+    người xem gặp. Mục đích là để người đang cân nhắc học thấy một bài cuối khoá được xây theo lớp nào,
+    chứ không phải một tập ảnh đẹp xếp cạnh nhau.</p>
+    <div class="hv-steps">%s</div>
+  </div>
+</section>""" % (section_head("02", "Quy trình", "Đọc lại từng chặng"), "".join(rows))
+
+
+def hv_thang_than():
+    return """
+<section id="noi-that">
+  <div class="wrap">
+    %s
+    <div class="hv-note">
+      <p>Bài này mạnh ở không khí và ở nhịp. Phần mở chậm, phần giữa dồn, phần đóng gọn. Vật liệu cũ
+      làm có nghề, nhất là ở mũ bảo hiểm và mặt đường.</p>
+      <p>Chỗ còn yếu cũng nên nói: một vài khung ở chặng giữa còn nhiễu hạt ở vùng tối, dấu hiệu của
+      việc cắt số mẫu kết xuất để kịp hạn. Đám đông và hậu cảnh xa xử lý còn đơn giản. Đây là bài một
+      người làm trong thời gian có hạn, không phải sản phẩm của một ê kíp.</p>
+      <p>Chúng tôi đăng nguyên bản gồm cả những chỗ đó. Một bài tốt nghiệp được sửa cho hết lỗi trước
+      khi đăng thì không còn phản ánh đúng thứ một người học được sau một năm.</p>
+    </div>
+    <div class="hv-cta">
+      <a class="lxcta" href="khoa-hoc.html">Xem hai hệ đào tạo</a>
+      <a class="lnk" href="lo-trinh-3d-automotive.html">Lộ trình hệ Automotive →</a>
+      <a class="lnk" href="cam-nang.html">Tải cẩm nang Blender →</a>
+    </div>
+  </div>
+</section>""" % section_head("03", "Nhận xét", "Nói thẳng chỗ được và chỗ chưa được")
+
+
+HV_CSS = """<style>
+.hv-lead{max-width:60ch;color:#9a8f84;font-size:15px;line-height:1.75;margin:0 0 42px;}
+.hv-steps{display:flex;flex-direction:column;gap:62px;}
+.hv-step{display:grid;grid-template-columns:1.25fr 1fr;gap:34px;align-items:center;}
+.hv-step.hv-r{direction:rtl;}
+.hv-step.hv-r>*{direction:ltr;}
+.hv-step figure{margin:0;}
+.hv-step img{width:100%;height:auto;display:block;border:1px solid #1e1b19;}
+.hv-no{display:block;font-size:11px;letter-spacing:4px;color:#8a6a45;margin-bottom:12px;}
+.hv-tx h3{font-size:21px;line-height:1.3;margin:0 0 12px;color:#f2ece6;font-weight:600;}
+.hv-tx p{margin:0;color:#9a8f84;font-size:14.5px;line-height:1.8;}
+.hv-note{max-width:66ch;border-left:2px solid #2a2522;padding-left:22px;}
+.hv-note p{color:#9a8f84;font-size:14.5px;line-height:1.85;margin:0 0 16px;}
+.hv-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:38px;}
+@media(max-width:760px){
+  .hv-step{grid-template-columns:1fr;gap:18px;}
+  .hv-step.hv-r{direction:ltr;}
+  .hv-steps{gap:46px;}
+}
+</style>"""
+
+
+
+def chung_nhan():
+    return """
+<section id="chung-nhan">
+  <div class="wrap">
+    %s
+    <div class="cn-grid">
+      <figure class="cn-main">
+        <img src="assets/chung-nhan-lxam-master-automotive.webp"
+             alt="Mẫu chứng nhận hoàn thành khoá học Blender 3D của LXAM Studio, các trường tên điểm và mã đã được ẩn"
+             width="1600" height="1131" loading="lazy" decoding="async">
+        <figcaption>Mẫu chứng nhận hệ 3D Master. Tên học viên, điểm tốt nghiệp và mã chứng chỉ
+        trên bản mẫu này đã được ẩn.</figcaption>
+      </figure>
+      <div class="cn-tx">
+        <p>Học viên hoàn thành chương trình nhận một chứng nhận có mã riêng, ghi rõ hệ đào tạo,
+        thời lượng và kết quả tốt nghiệp. Mỗi mã gắn với một hồ sơ học viên, dùng để đối chiếu khi
+        nhà tuyển dụng muốn xác minh.</p>
+        <p class="cn-k">Trên chứng nhận có gì</p>
+        <ul class="cn-ul">
+          <li>Hệ đào tạo và thời lượng thực học</li>
+          <li>Kết quả tốt nghiệp, chấm trên bài cuối khoá</li>
+          <li>Mã chứng chỉ riêng và ngày cấp</li>
+          <li>Chữ ký của giảng viên phụ trách</li>
+        </ul>
+        <p class="cn-note">Nói cho rõ: đây là chứng nhận của một studio tư nhân, không phải văn bằng
+        do cơ quan giáo dục cấp. Thứ thuyết phục người tuyển dụng vẫn là bài trong hồ sơ năng lực.
+        Chứng nhận chỉ là phần ghi lại bạn đã đi hết chương trình.
+        Xem <a href="du-an-hoc-vien.html">bài tốt nghiệp của học viên</a> để biết mức bài cuối khoá.</p>
+      </div>
+    </div>
+    <figure class="cn-wide">
+      <img src="assets/chung-nhan-lxam-dong-khung.webp"
+           alt="Chứng nhận LXAM Studio đóng khung gỗ đen đặt dựa tường bên cửa sổ"
+           width="1600" height="1200" loading="lazy" decoding="async">
+    </figure>
+  </div>
+</section>""" % section_head("02", "Chứng nhận", "Hoàn thành khoá, bạn cầm về gì")
+
+
+CERT_CSS = """<style>
+.cn-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:38px;align-items:start;}
+.cn-main{margin:0;}
+.cn-main img{width:100%;height:auto;display:block;border:1px solid #1e1b19;}
+.cn-main figcaption{margin-top:12px;font-size:12.5px;line-height:1.7;color:#7d736a;}
+.cn-tx p{color:#9a8f84;font-size:14.5px;line-height:1.85;margin:0 0 18px;}
+.cn-k{font-size:11px;letter-spacing:4px;color:#8a6a45;margin:0 0 12px !important;}
+.cn-ul{margin:0 0 20px;padding-left:18px;color:#9a8f84;font-size:14.5px;line-height:1.9;}
+.cn-note{border-left:2px solid #2a2522;padding-left:18px;font-size:13.5px !important;color:#7d736a !important;}
+.cn-wide{margin:42px 0 0;}
+.cn-wide img{width:100%;height:auto;display:block;border:1px solid #1e1b19;}
+@media(max-width:860px){.cn-grid{grid-template-columns:1fr;gap:26px;}}
+</style>"""
+
+
+
 # ------------------------------------------------------------------ KHUNG TRANG
 def jsonld(with_faq=False):
     blocks = json.load(io.open(os.path.join(os.path.dirname(__file__), "home_ld.json"), encoding="utf-8"))
@@ -1058,10 +1264,15 @@ if __name__ == "__main__":
                               url=URL + "dich-vu.html", home=False)),
         ("khoa-hoc.html", page(sub_hero("LXAM Academy / Khoá học", "Khoá học <em>Blender 3D</em>",
                                         "Hai hệ đào tạo theo đúng quy trình studio làm nghề, từ con số 0 tới TVC hoàn chỉnh.")
-                               + academy() + contact_min("02", "Chưa biết bắt đầu <em>từ đâu</em>?", "Tu%20van%20khoa%20hoc%20Blender"),
+                               + academy() + chung_nhan() + CERT_CSS
+                               + contact_min("03", "Chưa biết bắt đầu <em>từ đâu</em>?", "Tu%20van%20khoa%20hoc%20Blender"),
                                title="Khoá học Blender 3D từ con số 0 | LXAM Academy",
                                desc="Khoá học 3D Blender của LXAM Academy: hai hệ đào tạo đi theo quy trình studio, có người chữa bài hằng tuần, học online hoặc tại TPHCM, kèm cẩm nang.",
                                url=URL + "khoa-hoc.html", faq=True, home=False)),
+        ("du-an-hoc-vien.html", page(hv_hero() + hv_phim() + hv_quytrinh() + hv_thang_than() + HV_CSS,
+                               title="Bài tốt nghiệp của học viên | LXAM Academy",
+                               desc="Phim tốt nghiệp của học viên khoá học Blender 3D tại LXAM Academy, đăng nguyên bản kèm phần đọc lại từng chặng dựng và nhận xét thẳng cả chỗ còn yếu.",
+                               url=URL + "du-an-hoc-vien.html", home=False)),
     ]
     for fn, out in pages:
         io.open(os.path.join(SITE, fn), "w", encoding="utf-8").write(out)

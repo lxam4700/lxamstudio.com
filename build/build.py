@@ -14,6 +14,7 @@ NAV_ITEMS = [
     ("ve-chung-toi.html", "Về chúng tôi", "about"),
     ("index.html#portfolio", "Portfolio", "portfolio"),
     ("blog.html", "Blog", "blog"),
+    ("du-an-hoc-vien.html", "Bài học viên", "duanhocvien"),
     ("hoc-vien.html", "Khu học viên", "hocvien"),
     ("index.html#lienhe", "Liên hệ", "lienhe"),
     ("khoa-hoc.html", "Khóa học", "khoahoc"),
@@ -105,6 +106,7 @@ FOOTER = f"""<footer class="lxfooter">
         <a href="du-an-event.html">Dự án Event</a>
         <a href="du-an-automotive.html">Dự án Automotive</a>
         <a href="du-an-san-pham.html">Dự án sản phẩm</a>
+        <a href="du-an-hoc-vien.html">Bài học viên</a>
         <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
         <a href="blog.html">Blog</a>
         <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
@@ -3363,7 +3365,7 @@ def main():
           "du-an-mclaren-765lt.html", "du-an-aston-martin-dbx.html", "du-an-volvo-s90.html",
           "du-an-san-pham.html", "du-an-vplas.html", "du-an-jhm-masonry-hanger.html",
           "du-an-khoa-cua-thong-minh.html", "du-an-jewelry.html", "du-an-locphuc-10-nam.html",
-          "du-an-locphuc-bo-suu-tap.html",
+          "du-an-locphuc-bo-suu-tap.html", "du-an-hoc-vien.html",
           "nghe-nghiep.html", "ve-chung-toi.html", "blog.html"]
     urls = [""] + P9 + P8 + ["hoc-vien.html"] + ["blog-%s.html" % p["slug"] for p in POSTS] \
            + ["blog-%s.html" % p["slug"] for p in EXTRA_POSTS]

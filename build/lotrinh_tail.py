@@ -18,6 +18,7 @@ def nav_links(active):
         ("index.html#portfolio", "Portfolio", None),
         ("ve-chung-toi.html", "Về chúng tôi", None),
         ("blog.html", "Blog", None),
+        ("du-an-hoc-vien.html", "Bài học viên", None),
         ("hoc-vien.html", "Khu học viên", None),
     ]
     out = ""
@@ -35,6 +36,7 @@ DRAWER = (
     '<a href="cam-nang.html">Cẩm nang</a>'
     '<a href="ve-chung-toi.html">Về chúng tôi</a>'
     '<a href="blog.html">Blog</a>'
+    '<a href="du-an-hoc-vien.html">Bài học viên</a>'
     '<a href="hoc-vien.html">Khu học viên</a>'
 ) % (PAGES["auto"], PAGES["ai"])
 
@@ -464,6 +466,7 @@ FOOTER = """<footer class="lxfooter">
         <a href="cam-nang.html">Cẩm nang</a>
         <a href="ve-chung-toi.html">Về chúng tôi</a>
         <a href="blog.html">Blog</a>
+        <a href="du-an-hoc-vien.html">Bài học viên</a>
         <a href="hoc-vien.html">Khu học viên</a>
       </div>
     </div>

@@ -74,6 +74,7 @@ NAV_LINKS = (
     '<a href="ve-chung-toi.html">Về chúng tôi</a>'
     '<a href="index.html#portfolio">Portfolio</a>'
     '<a href="blog.html">Blog</a>'
+    '<a href="du-an-hoc-vien.html">Bài học viên</a>'
     '<a href="hoc-vien.html">Khu học viên</a>'
     '<a href="index.html#lienhe">Liên hệ</a>'
     '<a href="khoa-hoc.html">Khóa học</a>'
@@ -83,6 +84,7 @@ DRAWER_LINKS = (
     '<a href="ve-chung-toi.html">Về chúng tôi</a>'
     '<a href="index.html#portfolio">Portfolio</a>'
     '<a href="blog.html">Blog</a>'
+    '<a href="du-an-hoc-vien.html">Bài học viên</a>'
     '<a href="hoc-vien.html">Khu học viên</a>'
     '<a href="index.html#lienhe">Liên hệ</a>'
     '<a href="khoa-hoc.html">Khóa học</a>'
@@ -761,6 +763,7 @@ def nav_links(active):
         ("ve-chung-toi.html", "Về chúng tôi", None),
         ("index.html#portfolio", "Portfolio", None),
         ("blog.html", "Blog", None),
+        ("du-an-hoc-vien.html", "Bài học viên", None),
         ("hoc-vien.html", "Khu học viên", None),
         ("index.html#lienhe", "Liên hệ", None),
         ("khoa-hoc.html", "Khóa học", "hub"),
@@ -777,6 +780,7 @@ DRAWER = (
     '<a href="ve-chung-toi.html">Về chúng tôi</a>'
     '<a href="index.html#portfolio">Portfolio</a>'
     '<a href="blog.html">Blog</a>'
+    '<a href="du-an-hoc-vien.html">Bài học viên</a>'
     '<a href="hoc-vien.html">Khu học viên</a>'
     '<a href="index.html#lienhe">Liên hệ</a>'
     '<a href="khoa-hoc.html">Khóa học</a>'

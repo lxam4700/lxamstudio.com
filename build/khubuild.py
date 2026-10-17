@@ -75,6 +75,7 @@ NAV_ITEMS = [
     ("ve-chung-toi.html", "Về chúng tôi", "ve"),
     ("index.html#portfolio", "Portfolio", "pf"),
     ("blog.html", "Blog", "blog"),
+    ("du-an-hoc-vien.html", "Bài học viên", "dahv"),
     ("hoc-vien.html", "Khu học viên", "hv"),
     ("index.html#lienhe", "Liên hệ", "lh"),
     ("khoa-hoc.html", "Khóa học", "kh"),
@@ -319,6 +320,7 @@ FOOTER = """<footer class="lxfooter">
         <a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
         <a href="blog.html">Blog</a>
         <a href="lo-trinh.html">Lộ trình &amp; học phí</a>
+        <a href="du-an-hoc-vien.html">Bài học viên</a>
         <a href="hoc-vien.html">Khu học viên</a>
       </div>
     </div>
