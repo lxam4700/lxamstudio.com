@@ -632,6 +632,7 @@ def services():
       <span>Gửi brief hoặc bản vẽ, chúng tôi báo lại thời gian và chi phí trong 24 giờ.</span>
       <a class="lnk" href="mailto:anhminhlexuan@gmail.com?subject=Brief%%20du%%20an%%203D">anhminhlexuan@gmail.com →</a>
     </div>
+    <p style="margin:10px 0 0;font-size:14px;color:var(--muted);">Muốn biết trước một shot đi qua những bước nào và duyệt ở đâu, đọc bài <a class="lnk" href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D một shot sản phẩm</a>.</p>
   </div>
 </section>""" % (section_head("01", "Dịch vụ", "Bốn mảng chính"), sv, ps)
 
