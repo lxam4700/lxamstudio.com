@@ -2,8 +2,8 @@
 <html lang="vi"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Quy trình một shot TVC 3D từ file Blender | LXAM Studio</title>
-<meta name="description" content="Toàn bộ các bước một shot sản phẩm đi qua trong dự án thương mại, kể cả những khâu không ai quay video hướng dẫn: brief, duyệt, và sửa theo ý khách.">
+<title>Dựng TVC 3D: quy trình một shot sản phẩm | LXAM Studio</title>
+<meta name="description" content="Dựng TVC 3D cho một shot sản phẩm đi qua chín bước, từ brief tới vòng sửa. Bài viết nói cả phần ít ai quay hướng dẫn: chốt góc máy sớm và tách lớp render.">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -14,15 +14,16 @@
 <meta property="article:published_time" content="2026-09-07">
 <meta property="og:site_name" content="LXAM Studio">
 <meta property="og:locale" content="vi_VN">
-<meta property="og:title" content="Quy trình một shot TVC 3D từ file Blender | LXAM Studio">
-<meta property="og:description" content="Toàn bộ các bước một shot sản phẩm đi qua trong dự án thương mại, kể cả những khâu không ai quay video hướng dẫn: brief, duyệt, và sửa theo ý khách.">
+<meta property="og:title" content="Dựng TVC 3D: quy trình một shot sản phẩm | LXAM Studio">
+<meta property="og:description" content="Dựng TVC 3D cho một shot sản phẩm đi qua chín bước, từ brief tới vòng sửa. Bài viết nói cả phần ít ai quay hướng dẫn: chốt góc máy sớm và tách lớp render.">
 <meta property="og:image" content="https://lxamstudio.com/assets/0954717e.jpg">
 <meta property="og:url" content="https://lxamstudio.com/blog-quy-trinh-mot-shot-tvc.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://lxamstudio.com/blog-quy-trinh-mot-shot-tvc.html">
 <link rel="stylesheet" href="assets/lx.css?v=den2">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Quy trình một shot TVC 3D từ file Blender", "description": "Toàn bộ các bước một shot sản phẩm đi qua trong dự án thương mại, kể cả những khâu không ai quay video hướng dẫn: brief, duyệt, và sửa theo ý khách.", "image": "https://lxamstudio.com/assets/0954717e.jpg", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-quy-trinh-mot-shot-tvc.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Quy trình một shot TVC 3D từ file Blender", "item": "https://lxamstudio.com/blog-quy-trinh-mot-shot-tvc.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dựng TVC 3D: quy trình một shot sản phẩm", "description": "Dựng TVC 3D cho một shot sản phẩm đi qua chín bước, từ brief tới vòng sửa. Bài viết nói cả phần ít ai quay hướng dẫn: chốt góc máy sớm và tách lớp render.", "image": "https://lxamstudio.com/assets/0954717e.jpg", "datePublished": "2026-09-07", "dateModified": "2026-10-20", "inLanguage": "vi-VN", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://lxamstudio.com/blog-quy-trinh-mot-shot-tvc.html"}, "author": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}, "publisher": {"@type": "Organization", "name": "LXAM Studio", "logo": {"@type": "ImageObject", "url": "https://lxamstudio.com/assets/2792c6e0.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://lxamstudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://lxamstudio.com/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Dựng TVC 3D: quy trình một shot sản phẩm", "item": "https://lxamstudio.com/blog-quy-trinh-mot-shot-tvc.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Dựng TVC 3D một shot sản phẩm mất bao lâu?", "acceptedAnswer": {"@type": "Answer", "text": "Ước lượng cho một shot độ phức tạp trung bình là bốn tới bảy ngày làm việc nếu khách phản hồi trong ngày, và dài hơn đáng kể khi vòng duyệt chậm. Phần chiếm thời gian thật thường không phải render mà là chờ duyệt bố cục và vật liệu."}}, {"@type": "Question", "name": "Vì sao phải chốt góc máy trước khi model chi tiết?", "acceptedAnswer": {"@type": "Answer", "text": "Vì chi tiết ở mặt không lên hình là chi tiết bỏ đi. Chốt camera từ giai đoạn khối xám cho biết chính xác cần làm kỹ chỗ nào, và ngăn tình huống dựng xong mới nghe khách nói muốn nhìn từ hướng khác."}}, {"@type": "Question", "name": "Có nhất thiết phải render theo lớp không?", "acceptedAnswer": {"@type": "Answer", "text": "Với bài tập cá nhân thì không. Với dự án có khách duyệt thì gần như bắt buộc, vì phần lớn yêu cầu sửa chỉ liên quan tới một lớp. Tách lớp biến một vòng sửa từ việc render lại cả cảnh thành việc chỉnh trong vài phút."}}, {"@type": "Question", "name": "Người mới nên bắt đầu học khâu nào trong chuỗi này?", "acceptedAnswer": {"@type": "Answer", "text": "Khối thô và góc máy. Hai khâu đó quyết định phần lớn chất lượng cuối cùng, lại ít phụ thuộc cấu hình máy và ít phụ thuộc phần mềm nhất, nên học sớm là có lãi lâu nhất."}}, {"@type": "Question", "name": "Studio tính báo giá dựng 3D sản phẩm theo shot hay theo ngày?", "acceptedAnswer": {"@type": "Answer", "text": "Cách phổ biến ở Việt Nam là tính theo shot với số vòng sửa ghi rõ trong hợp đồng, vì khách dễ hình dung hơn. Dù tính kiểu nào, phần cần chốt bằng văn bản là số vòng sửa được bao gồm và mốc nào coi là đã duyệt."}}]}</script>
 
 </head>
 <body>
@@ -51,56 +52,159 @@
     <div class="wrap-narrow">
       <a href="blog.html" style="display:inline-block;font-size:13px;color:#9a8f84;text-decoration:none;margin-bottom:26px;">← Tất cả bài viết</a>
       <span class="tag">Nghề</span>
-      <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Quy trình một shot TVC 3D từ file Blender</h1>
-      <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · 7 phút đọc</p>
-      <img src="assets/0954717e.jpg" alt="Quy trình một shot TVC 3D từ file Blender" width="1280" height="720" fetchpriority="high" decoding="async" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;">
-      <nav class="toc" aria-label="Mục lục bài viết"><p class="toc-h">Trong bài này</p><ol><li><a href="#buoc-1-doc-brief-va-hoi-lai">Bước 1: Đọc brief, và hỏi lại</a></li><li><a href="#buoc-2-dung-khoi-tho-va-chot-goc-may-truoc">Bước 2: Dựng khối thô và chốt góc máy trước</a></li><li><a href="#buoc-3-lighting-truoc-vat-lieu-sau">Bước 3: Lighting trước, vật liệu sau</a></li><li><a href="#buoc-4-vat-lieu-va-kiem-che">Bước 4: Vật liệu, và kiềm chế</a></li><li><a href="#buoc-5-render-theo-lop-khong-render-mot-cuc">Bước 5: Render theo lớp, không render một cục</a></li><li><a href="#buoc-6-hau-ky-nhe-tay">Bước 6: Hậu kỳ nhẹ tay</a></li><li><a href="#buoc-7-vong-sua-va-cach-song-sot">Bước 7: Vòng sửa, và cách sống sót</a></li></ol></nav>
+      <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Dựng TVC 3D: quy trình một shot sản phẩm</h1>
+      <p class="post-meta" style="margin-bottom:34px;">07/09/2026 · Cập nhật 20/10/2026 · 11 phút đọc</p>
+      <img src="assets/0954717e.jpg" alt="Dựng TVC 3D: quy trình một shot sản phẩm" width="1280" height="720" fetchpriority="high" decoding="async" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;">
+      <nav class="toc" aria-label="Mục lục bài viết"><p class="toc-h">Trong bài này</p><ol><li><a href="#quy-trinh-dung-tvc-3d-trong-mot-bang">Quy trình dựng TVC 3D trong một bảng</a></li><li><a href="#buoc-1-doc-brief-va-hoi-lai">Bước 1: Đọc brief, và hỏi lại</a></li><li><a href="#buoc-2-va-3-khoi-tho-truoc-chot-goc-may-truoc-khi-lam-chi-ti">Bước 2 và 3: Khối thô trước, chốt góc máy trước khi làm chi tiết</a></li><li><a href="#buoc-4-lighting-truoc-vat-lieu-sau">Bước 4: Lighting trước, vật liệu sau</a></li><li><a href="#buoc-5-vat-lieu-va-kiem-che">Bước 5: Vật liệu, và kiềm chế</a></li><li><a href="#buoc-6-render-theo-lop-khong-render-mot-cuc">Bước 6: Render theo lớp, không render một cục</a></li><li><a href="#buoc-7-hau-ky-nhe-tay">Bước 7: Hậu kỳ nhẹ tay</a></li><li><a href="#buoc-8-va-9-gui-duyet-va-song-sot-qua-vong-sua">Bước 8 và 9: Gửi duyệt và sống sót qua vòng sửa</a></li><li><a href="#nhung-cho-quy-trinh-nay-hay-vo">Những chỗ quy trình này hay vỡ</a></li><li><a href="#dung-tvc-3d-buoc-di-tiep-cho-nguoi-dang-hoc">Dựng TVC 3D: bước đi tiếp cho người đang học</a></li><li><a href="#hoi-dap-nhanh">Hỏi đáp nhanh</a></li></ol></nav>
       
-<p class="lead">Phần lớn hướng dẫn trên mạng dừng lại ở lúc bấm render. Trong một dự án thật, đó mới là khoảng giữa. Bài này đi hết một shot sản phẩm từ lúc nhận brief đến lúc file cuối được duyệt.</p>
+<p class="lead">Dựng TVC 3D cho một shot sản phẩm là chuỗi chín bước, và nút render nằm ở khoảng giữa chuỗi đó chứ không phải ở cuối. Thứ tự chạy được trong dự án thật là: đọc brief, dựng khối thô, chốt góc máy, lighting trên chất xám, vật liệu, render theo lớp, hậu kỳ, duyệt, vòng sửa. Bài này đi hết chín bước theo cách một studio 3D làm việc với khách, kèm thời gian ước lượng và những chỗ quy trình hay vỡ.</p>
+
+<p>Phần lớn hướng dẫn trên mạng dừng lại ở lúc bấm render. Hệ quả là nhiều người dựng hình khá nhưng vỡ ở khâu phối hợp, vì chỗ một dự án thương mại chết thường không nằm trong phần mềm: brief thiếu thông tin, duyệt sai thời điểm, file gộp một cục nên mỗi lần khách đổi ý là render lại từ đầu.</p>
+
+<h2 id="quy-trinh-dung-tvc-3d-trong-mot-bang">Quy trình dựng TVC 3D trong một bảng</h2>
+
+<p>Đây là bản đồ trước khi vào chi tiết. Cột thời gian là ước lượng cho một shot sản phẩm độ phức tạp trung bình, tính theo ngày làm việc. Con số sẽ lệch tuỳ số chi tiết phải dựng, cấu hình máy render và nhất là tốc độ phản hồi của khách.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Bước</th><th>Kết quả giao ra</th><th>Ai duyệt</th><th>Ước lượng</th></tr></thead>
+<tbody>
+<tr><td>1. Đọc brief, hỏi lại</td><td>Danh sách thông số đã chốt</td><td>Khách</td><td>Nửa ngày</td></tr>
+<tr><td>2. Khối thô</td><td>Ảnh xám khối, chưa chi tiết</td><td>Nội bộ</td><td>Nửa tới một ngày</td></tr>
+<tr><td>3. Chốt góc máy</td><td>Ảnh xám đúng khung hình cuối</td><td>Khách</td><td>Nửa ngày cộng thời gian chờ</td></tr>
+<tr><td>4. Lighting trên chất xám</td><td>Bản ánh sáng trung tính</td><td>Nội bộ</td><td>Một ngày</td></tr>
+<tr><td>5. Vật liệu</td><td>Bản màu đầu tiên</td><td>Khách</td><td>Một tới hai ngày</td></tr>
+<tr><td>6. Render theo lớp</td><td>Các pass rời</td><td>Nội bộ</td><td>Nửa tới hai ngày máy</td></tr>
+<tr><td>7. Hậu kỳ</td><td>Bản ghép hoàn chỉnh</td><td>Nội bộ</td><td>Nửa ngày</td></tr>
+<tr><td>8. Gửi duyệt</td><td>Bản có số phiên bản</td><td>Khách</td><td>Tuỳ khách</td></tr>
+<tr><td>9. Vòng sửa</td><td>Bản cuối</td><td>Khách</td><td>Nửa ngày mỗi vòng</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nhìn bảng này sẽ thấy ngay một điều: khách xuất hiện ở bốn trong chín bước. Quy trình dựng TVC 3D vì thế không chỉ là chuỗi việc kỹ thuật, nó là chuỗi điểm duyệt. Đặt điểm duyệt sai chỗ là nguyên nhân phổ biến nhất khiến dự án đội thời gian gấp đôi.</p>
 
 <h2 id="buoc-1-doc-brief-va-hoi-lai">Bước 1: Đọc brief, và hỏi lại</h2>
 
-<p>Brief đến từ khách hầu như luôn thiếu thứ quan trọng nhất: shot này dùng ở đâu. Cùng một sản phẩm, dựng cho banner web khác hẳn dựng cho màn LED ngoài trời hay cho video dọc trên điện thoại. Tỉ lệ khung, khoảng cách nhìn, thời lượng người xem dừng lại, ba thứ đó quyết định gần như mọi lựa chọn phía sau.</p>
+<p>Brief từ khách hầu như luôn thiếu thứ quan trọng nhất: shot này dùng ở đâu. Cùng một sản phẩm, dựng cho banner web khác hẳn dựng cho màn LED ngoài trời hay cho video dọc trên điện thoại. Tỉ lệ khung, khoảng cách người xem, thời lượng họ dừng lại, ba thứ đó quyết định gần như mọi lựa chọn phía sau.</p>
 
-<p>Câu tôi luôn hỏi trước khi mở Blender: đăng ở đâu, khung hình gì, và có chữ đè lên không. Câu thứ ba cứu tôi vô số lần, vì bố cục đẹp mà chừa sai chỗ cho chữ thì phải dựng lại.</p>
+<h3>Ba câu phải hỏi trước khi mở Blender</h3>
 
-<h2 id="buoc-2-dung-khoi-tho-va-chot-goc-may-truoc">Bước 2: Dựng khối thô và chốt góc máy trước</h2>
+<p>Đăng ở đâu. Khung hình gì. Có chữ đè lên không. Câu thứ ba cứu được rất nhiều thời gian, vì bố cục đẹp mà chừa sai chỗ cho chữ thì vẫn phải dựng lại từ bước hai.</p>
 
-<p>Trước khi model chi tiết, tôi dựng khối thô rồi chốt camera. Lý do đơn giản: chi tiết ở mặt không lên hình là chi tiết vứt đi. Chốt góc máy sớm giúp biết chính xác cần làm kỹ chỗ nào.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Nơi đăng</th><th>Tỉ lệ thường gặp</th><th>Phải tính trước</th></tr></thead>
+<tbody>
+<tr><td>Banner web</td><td>16:9 hoặc rộng hơn</td><td>Chừa khoảng trống cho chữ một bên</td></tr>
+<tr><td>Feed Facebook, Instagram</td><td>1:1 hoặc 4:5</td><td>Sản phẩm phải đọc được ở kích thước nhỏ</td></tr>
+<tr><td>Reels, TikTok, YouTube Shorts</td><td>9:16</td><td>Chi tiết dồn vào giữa khung, tránh viền</td></tr>
+<tr><td>Màn LED ngoài trời</td><td>Tuỳ thiết bị</td><td>Tương phản cao, bỏ chi tiết quá nhỏ</td></tr>
+<tr><td>Catalogue, in ấn</td><td>Tuỳ khổ</td><td>Độ phân giải cao hơn, không gian màu khác</td></tr>
+</tbody>
+</table>
+</div>
 
-<p>Ở bước này tôi gửi khách ảnh xám khối thô. Nghe thì thô sơ, nhưng nó ngăn được thảm hoạ lớn nhất: làm xong hết rồi khách mới nói "anh muốn nhìn từ bên kia".</p>
+<p>Nếu khách chưa chốt được nơi đăng, cách an toàn là dựng cho khung rộng nhất rồi cắt, nhưng phải nói trước rằng bản cắt sẽ không tối ưu bằng bản dựng riêng. Các dạng đầu việc thường gặp và cách mô tả yêu cầu nằm ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>, đọc qua là dễ hỏi đúng câu hơn.</p>
+
+<h2 id="buoc-2-va-3-khoi-tho-truoc-chot-goc-may-truoc-khi-lam-chi-ti">Bước 2 và 3: Khối thô trước, chốt góc máy trước khi làm chi tiết</h2>
+
+<p>Trước khi model chi tiết, dựng khối thô rồi chốt camera. Lý do đơn giản: chi tiết ở mặt không lên hình là chi tiết vứt đi. Chốt góc máy sớm cho biết chính xác cần làm kỹ chỗ nào, và cũng cho biết chỗ nào có thể bỏ qua hoàn toàn mà không ai nhận ra.</p>
+
+<p>Ở bước này nên gửi khách ảnh xám khối thô. Nghe thô sơ, nhưng nó ngăn được thảm hoạ lớn nhất: làm xong hết rồi khách mới nói muốn nhìn từ bên kia.</p>
 
 <blockquote><p>Duyệt bố cục ở giai đoạn khối xám mất của bạn một ngày. Duyệt ở giai đoạn đã render mất của bạn một tuần.</p></blockquote>
 
-<h2 id="buoc-3-lighting-truoc-vat-lieu-sau">Bước 3: Lighting trước, vật liệu sau</h2>
+<p>Khâu này cũng là chỗ đo được trình độ dựng hình nhanh nhất. Người dựng chắc tay thì khối thô đã đúng tỉ lệ và đã đọc được là sản phẩm gì. Nếu khối thô còn méo, phần sau càng làm càng phải quay lại. Đây là phần được luyện kỹ nhất trong <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, vì nó quyết định phần lớn chất lượng cuối cùng.</p>
 
-<p>Tôi dựng ánh sáng khi mọi thứ còn là chất xám trung tính. Ánh sáng đúng ở trạng thái xám thì gần như chắc chắn đúng khi có vật liệu. Làm ngược lại, tức chỉnh vật liệu dưới ánh sáng tạm, là tự tạo việc cho mình hai lần.</p>
+<h2 id="buoc-4-lighting-truoc-vat-lieu-sau">Bước 4: Lighting trước, vật liệu sau</h2>
 
-<h2 id="buoc-4-vat-lieu-va-kiem-che">Bước 4: Vật liệu, và kiềm chế</h2>
+<p>Dựng ánh sáng khi mọi thứ còn là chất xám trung tính. Ánh sáng đúng ở trạng thái xám thì gần như chắc chắn đúng khi có vật liệu. Làm ngược lại, tức chỉnh vật liệu dưới ánh sáng tạm, là tự tạo việc cho mình hai lần: sửa vật liệu rồi lại sửa đèn, rồi lại sửa vật liệu.</p>
 
-<p>Sản phẩm thương mại thường đơn giản hơn người ta tưởng: vài chất liệu sạch, đúng độ nhám, đúng màu thương hiệu. Cám dỗ lớn nhất là thêm trầy xước, bụi, vân tay cho "thật". Với sản phẩm bán hàng, những thứ đó thường làm hại, khách muốn hàng mới tinh.</p>
+<figure>
+  <img src="assets/mercedes-g63-canh-mo-trong-duong-ham.webp" alt="Mercedes-AMG G63 đứng trong đường hầm bê tông, ánh sáng dải dài hai bên thân xe, dựng bằng Blender cho TVC 3D" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Shot mở trong dự án TVC Mercedes G63 của LXAM Studio.</strong> Toàn bộ cảm giác khối của thân xe ở đây đến từ hai dải sáng dọc hành lang, không phải từ số lượng đèn. Đó là loại quyết định phải chốt ở bước bốn, lúc cảnh vẫn còn là chất xám.</figcaption>
+</figure>
 
-<p>Toàn bộ năm bước trên chạy trọn một lần trong <a href="du-an-mercedes-g63-tvc.html">dự án dựng TVC 3D Mercedes G63</a>: từ khối thô chốt góc máy, tới lighting, vật liệu rồi tách lớp render. Xem bản hoàn chỉnh dễ hình dung hơn là đọc mô tả quy trình.</p>
+<p>Một cách kiểm tra nhanh: nhìn bản xám và tự hỏi có đọc được hình khối hay không. Nếu bản xám đã phẳng thì thêm vật liệu cũng không cứu được. Những lỗi hay gặp ở khâu này được mổ kỹ trong bài về <a href="blog-5-loi-lighting.html">lỗi lighting làm render rẻ tiền</a>, phần lớn đều xuất phát từ việc chỉnh đèn khi đã có màu.</p>
 
-<h2 id="buoc-5-render-theo-lop-khong-render-mot-cuc">Bước 5: Render theo lớp, không render một cục</h2>
+<h2 id="buoc-5-vat-lieu-va-kiem-che">Bước 5: Vật liệu, và kiềm chế</h2>
 
-<p>Tách render ra thành các pass riêng: sản phẩm, nền, bóng đổ, phản chiếu. Lý do không phải kỹ thuật mà là thực tế: khi khách nói "nền tối hơn chút", bạn chỉnh trong ba phút thay vì render lại bốn tiếng.</p>
+<p>Sản phẩm thương mại thường đơn giản hơn người ta tưởng: vài chất liệu sạch, đúng độ nhám, đúng màu thương hiệu. Cám dỗ lớn nhất là thêm trầy xước, bụi, vân tay cho thật. Với hình bán hàng, những thứ đó thường làm hại, vì khách muốn hàng mới tinh.</p>
 
-<p>Đây là khâu tách người làm nghề với người làm bài tập rõ nhất. Người mới render ra một file duy nhất và cầu trời khách duyệt.</p>
+<p>Ngoại lệ là các shot kể chuyện, nơi vết dùng thật làm hình có đời sống hơn. Phân biệt hai trường hợp này dựa vào mục đích của shot, không dựa vào sở thích người dựng. Toàn bộ chuỗi chín bước chạy trọn một lần trong <a href="du-an-mercedes-g63-tvc.html">dự án dựng TVC 3D Mercedes G63</a>, xem bản hoàn chỉnh dễ hình dung hơn đọc mô tả quy trình.</p>
 
-<h2 id="buoc-6-hau-ky-nhe-tay">Bước 6: Hậu kỳ nhẹ tay</h2>
+<h2 id="buoc-6-render-theo-lop-khong-render-mot-cuc">Bước 6: Render theo lớp, không render một cục</h2>
 
-<p>Ghép pass, cân bằng tổng thể, thêm chút bloom nếu cảnh cần, xuất đúng không gian màu nơi sẽ đăng. Nếu ở bước này tôi phải kéo mạnh tay, tôi quay lại bước 3. Luôn nhanh hơn.</p>
+<p>Tách render thành các pass riêng: sản phẩm, nền, bóng đổ, phản chiếu, phần phát sáng. Lý do không phải kỹ thuật mà là thực tế: khi khách nói nền tối hơn chút, bạn chỉnh trong ba phút thay vì render lại bốn tiếng.</p>
 
-<h2 id="buoc-7-vong-sua-va-cach-song-sot">Bước 7: Vòng sửa, và cách sống sót</h2>
+<figure>
+  <img src="assets/mercedes-g63-khung-gam-va-doi-ky-thuat.webp" alt="Khung gầm Mercedes G63 và đội kỹ thuật đang lắp ráp trong cảnh TVC 3D dựng bằng Blender" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Cảnh nhiều thành phần trong dự án Mercedes G63.</strong> Một cảnh có người, khung gầm, khói và sàn phản chiếu như thế này gần như không thể sửa được nếu render thành một file duy nhất. Tách lớp ở đây không phải để đẹp hơn mà để còn sửa được.</figcaption>
+</figure>
 
-<p>Sẽ có sửa. Luôn luôn. Điều bạn kiểm soát được là chi phí của mỗi vòng sửa, và nó được quyết định từ bước 5: file có tách lớp gọn gàng thì một vòng sửa là buổi chiều, file gộp một cục thì là hai ngày.</p>
+<p>Đây là khâu tách người làm nghề với người làm bài tập rõ nhất. Người mới render ra một file duy nhất rồi cầu trời khách duyệt. Phần cài đặt render, kiểm soát nhiễu và chia pass là nội dung chính của <a href="blog-khoa-hoc-render.html">khoá học render</a>, và cũng là chỗ tiết kiệm được nhiều giờ máy nhất.</p>
 
-<p>Một thói quen nhỏ giúp rất nhiều: mỗi lần gửi duyệt, đánh số phiên bản và ghi lại đúng một dòng đã đổi những gì. Khi khách bảo "quay lại bản hôm trước", bạn có bản hôm trước thật.</p>
+<h3>Tách tới mức nào là đủ</h3>
+
+<p>Nguyên tắc gọn: tách theo thứ khách hay yêu cầu sửa. Nền, bóng đổ, cường độ phát sáng và màu sản phẩm là bốn thứ bị sửa nhiều nhất, nên để riêng bốn thứ đó là đã đủ cho phần lớn shot. Tách quá vụn thì khâu ghép lại thành gánh nặng mới.</p>
+
+<h2 id="buoc-7-hau-ky-nhe-tay">Bước 7: Hậu kỳ nhẹ tay</h2>
+
+<p>Ghép pass, cân bằng tổng thể, thêm chút bloom nếu cảnh cần, xuất đúng không gian màu nơi sẽ đăng. Nếu ở bước này phải kéo mạnh tay, nên quay lại bước bốn. Luôn nhanh hơn, vì sửa gốc một lần rẻ hơn che bằng hậu kỳ ở mọi bản sau.</p>
+
+<h2 id="buoc-8-va-9-gui-duyet-va-song-sot-qua-vong-sua">Bước 8 và 9: Gửi duyệt và sống sót qua vòng sửa</h2>
+
+<p>Sẽ có sửa. Luôn luôn. Điều kiểm soát được là chi phí mỗi vòng sửa, và nó được quyết định từ bước sáu: file tách lớp gọn gàng thì một vòng sửa là buổi chiều, file gộp một cục thì là hai ngày.</p>
+
+<p>Một thói quen nhỏ giúp rất nhiều: mỗi lần gửi duyệt, đánh số phiên bản và ghi lại đúng một dòng đã đổi những gì. Khi khách bảo quay lại bản hôm trước, bạn có bản hôm trước thật, không phải dựng lại từ ký ức.</p>
+
+<h3>Danh sách kiểm tra trước khi gửi khách</h3>
+
+<ul>
+<li>Khung hình đúng tỉ lệ đã chốt ở bước một, kể cả bản cắt cho từng nền tảng.</li>
+<li>Chỗ chừa cho chữ còn trống, không bị chi tiết sản phẩm lấn vào.</li>
+<li>Màu thương hiệu kiểm tra lại trên ảnh cuối, không chỉ trong cửa sổ render.</li>
+<li>Không còn vết nhiễu ở vùng tối và vùng phản chiếu.</li>
+<li>Logo và chữ trên bao bì đọc được ở kích thước thật khi đăng.</li>
+<li>File xuất đúng không gian màu và đúng định dạng khách yêu cầu.</li>
+<li>Tên file có số phiên bản và ngày, kèm một dòng ghi đã đổi gì.</li>
+</ul>
+
+<h2 id="nhung-cho-quy-trinh-nay-hay-vo">Những chỗ quy trình này hay vỡ</h2>
+
+<p>Nói cho công bằng, chuỗi chín bước không miễn nhiễm rủi ro. Có ba chỗ hay vỡ.</p>
+
+<p>Thứ nhất, khách không duyệt ở bước ba. Nhiều khách thấy ảnh xám thì chưa hình dung được nên bảo cứ làm tiếp. Cách giảm thiệt hại là ghi rõ trong email rằng bố cục coi như đã chốt, và mọi thay đổi góc máy sau bước năm sẽ tính thành vòng sửa.</p>
+
+<p>Thứ hai, brief đổi giữa đường vì phía khách đổi người phụ trách. Không ai chống được việc này, chỉ có thể giảm đau bằng cách giữ file tách lớp và giữ khối thô đủ sạch để dựng lại nhanh.</p>
+
+<p>Thứ ba, shot đơn giản tới mức quy trình thành nặng. Một ảnh sản phẩm nền trắng cho sàn thương mại điện tử không cần chín bước. Dùng đúng mức phức tạp của việc là một phần của tay nghề, và các dạng shot khác nhau có thể xem ở <a href="du-an-san-pham.html">các dự án render sản phẩm</a> để ước lượng mức đầu tư hợp lý.</p>
+
+<h2 id="dung-tvc-3d-buoc-di-tiep-cho-nguoi-dang-hoc">Dựng TVC 3D: bước đi tiếp cho người đang học</h2>
+
+<p>Không bước nào ở trên đòi hỏi kỹ thuật cao siêu. Chúng đòi hỏi biết trước điều gì sắp xảy ra, thứ mà học một mình thì phải trả giá bằng vài dự án hỏng mới rút ra được. Nếu bạn đang tự học và muốn rút ngắn đoạn đó, hai hệ trong <a href="khoa-hoc.html">khoá học 3D Blender</a> được dựng theo đúng thứ tự chín bước này, chỉ khác là có người chữa bài ở mỗi mốc.</p>
+
+<h2 id="hoi-dap-nhanh">Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Dựng TVC 3D một shot sản phẩm mất bao lâu?</p>
+<p>Ước lượng cho một shot độ phức tạp trung bình là bốn tới bảy ngày làm việc nếu khách phản hồi trong ngày, và dài hơn đáng kể khi vòng duyệt chậm. Phần chiếm thời gian thật thường không phải render mà là chờ duyệt bố cục và vật liệu.</p>
+
+<p class="faq-q">Vì sao phải chốt góc máy trước khi model chi tiết?</p>
+<p>Vì chi tiết ở mặt không lên hình là chi tiết bỏ đi. Chốt camera từ giai đoạn khối xám cho biết chính xác cần làm kỹ chỗ nào, và ngăn tình huống dựng xong mới nghe khách nói muốn nhìn từ hướng khác.</p>
+
+<p class="faq-q">Có nhất thiết phải render theo lớp không?</p>
+<p>Với bài tập cá nhân thì không. Với dự án có khách duyệt thì gần như bắt buộc, vì phần lớn yêu cầu sửa chỉ liên quan tới một lớp. Tách lớp biến một vòng sửa từ việc render lại cả cảnh thành việc chỉnh trong vài phút.</p>
+
+<p class="faq-q">Người mới nên bắt đầu học khâu nào trong chuỗi này?</p>
+<p>Khối thô và góc máy. Hai khâu đó quyết định phần lớn chất lượng cuối cùng, lại ít phụ thuộc cấu hình máy và ít phụ thuộc phần mềm nhất, nên học sớm là có lãi lâu nhất.</p>
+
+<p class="faq-q">Studio tính báo giá dựng 3D sản phẩm theo shot hay theo ngày?</p>
+<p>Cách phổ biến ở Việt Nam là tính theo shot với số vòng sửa ghi rõ trong hợp đồng, vì khách dễ hình dung hơn. Dù tính kiểu nào, phần cần chốt bằng văn bản là số vòng sửa được bao gồm và mốc nào coi là đã duyệt.</p>
 
 <hr class="hr">
 
-<p>Không bước nào ở trên đòi hỏi kỹ thuật cao siêu. Chúng chỉ đòi hỏi bạn biết trước điều gì sắp xảy ra, thứ mà học một mình thì phải trả giá bằng vài dự án hỏng mới rút ra được.</p>
+<p>Nếu bạn muốn tự chạy thử chuỗi này trên một shot của mình, tải <a href="cam-nang.html">cẩm nang Blender</a> để có sẵn checklist lighting và bảng cài đặt render, rồi làm lại đúng một sản phẩm theo chín bước trên. Gửi bản xám ở bước ba cho một người biết nghề xem trước khi đi tiếp, đó là một bước nhỏ nhưng tiết kiệm nhiều nhất.</p>
 
       
       <section class="rel" aria-label="Bài viết liên quan"><p class="rel-h">Đọc tiếp</p><div class="rel-g"><a class="rel-c" href="blog-lo-trinh-tu-hoc-blender.html"><img src="assets/2cdbf5f9.jpg" alt="Lộ trình tự học Blender: 7 kỹ năng, đúng thứ tự" loading="lazy" width="640" height="360"><span class="rel-t">Lộ trình tự học Blender: 7 kỹ năng, đúng thứ tự</span><span class="rel-k">12 phút đọc</span></a><a class="rel-c" href="blog-5-loi-lighting.html"><img src="assets/2afcaceb.jpg" alt="Học lighting trong Blender: 5 lỗi làm render rẻ tiền" loading="lazy" width="640" height="360"><span class="rel-t">Học lighting trong Blender: 5 lỗi làm render rẻ tiền</span><span class="rel-k">11 phút đọc</span></a><a class="rel-c" href="blog-kho-hau-truong-overgrown-blender-studio.html"><img src="assets/a77adfda.jpg" alt="Kho hậu trường OVERGROWN của Blender Studio" loading="lazy" width="640" height="360"><span class="rel-t">Kho hậu trường OVERGROWN của Blender Studio</span><span class="rel-k">7 phút đọc</span></a></div></section>
