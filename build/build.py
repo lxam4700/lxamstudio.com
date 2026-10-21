@@ -1015,7 +1015,7 @@ POSTS = [
 </figure>
 
 <h3>Tháng 6 đến 10: làm được sản phẩm hoàn chỉnh</h3>
-<p>Bạn xử lý được hard-surface, biết tổ chức scene cho dự án nhiều shot, render ra file dùng được chứ không phải file phải sửa lại. Đây là lúc portfolio bắt đầu có sức nặng.</p>
+<p>Bạn xử lý được hard-surface, biết tổ chức scene cho dự án nhiều shot, render ra file dùng được chứ không phải file phải sửa lại. Đây là lúc portfolio bắt đầu có sức nặng. Số món cần có và thứ tự làm chúng nằm ở bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>.</p>
 <p><strong style="color:#fff;">Dấu hiệu qua:</strong> bạn hoàn thành một dự án từ đầu tới cuối mà không bỏ dở giữa chừng.</p>
 
 <h3>Tháng 10 trở đi: làm được job thật</h3>
@@ -1201,7 +1201,7 @@ POSTS = [
 <p>Không giáo trình, bạn mang vấn đề tới, trả tiền theo giờ. Hợp với người đang tự học và chỉ cần gỡ đúng một chỗ, chẳng hạn topology một chi tiết khó hoặc một cảnh render chậm bất thường. Không hợp nếu bạn còn chưa biết mình thiếu gì, vì lúc đó tiền giờ sẽ trôi vào việc chẩn đoán. Ranh giới giữa hai trường hợp đó, cùng cách kiểm tra người dạy trước buổi đầu, được viết kỹ trong bài <a href="blog-gia-su-blender.html">gia sư Blender</a>.</p>
 
 <h3>Kèm theo dự án</h3>
-<p>Bạn làm một shot hoàn chỉnh, người kèm đi cùng từ brief tới file giao. Đây là hình thức giống việc thật nhất và cũng là cách nhanh nhất để có một bài portfolio dùng được. Hai hệ chuyên sâu theo hướng sản phẩm và hướng automotive đang mô tả ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>, xem để biết một lộ trình đầy đủ gồm những chặng nào.</p>
+<p>Bạn làm một shot hoàn chỉnh, người kèm đi cùng từ brief tới file giao. Đây là hình thức giống việc thật nhất và cũng là cách nhanh nhất để có một bài portfolio dùng được. Cách gộp nhiều shot như vậy thành một bộ bốn tới sáu món nằm ở bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>. Hai hệ chuyên sâu theo hướng sản phẩm và hướng automotive đang mô tả ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>, xem để biết một lộ trình đầy đủ gồm những chặng nào.</p>
 
 <h2>So sánh trực tiếp</h2>
 
@@ -1573,6 +1573,8 @@ POSTS = [
 <p>Việc của người kèm ở chặng này gồm bốn phần: bỏ những shot kéo mặt bằng xuống, chỉ ra shot nào còn cứu được và cứu bằng cách nào, xếp thứ tự để shot mạnh nhất đứng đầu, và soát phần kỹ thuật như độ phân giải, tỷ lệ khung và cách xuất file cho từng kênh. Phần ánh sáng chiếm nhiều thời gian nhất, nên đọc trước <a href="blog-khoa-hoc-render.html">khoá học render</a> để biết những gì sẽ bị soi.</p>
 
 <p>Một giới hạn cần nói thẳng: người kèm không được làm hộ. Portfolio có bàn tay người khác trong đó sẽ lộ ngay khi bạn phải mở file ra giải thích ở buổi phỏng vấn hoặc khi khách yêu cầu sửa.</p>
+
+<p>Chặng này đủ dài để tách thành một bài riêng. Bộ hồ sơ cần mấy món, chia theo tuần thế nào và ba tình huống chưa nên trả tiền nằm ở bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>.</p>
 
 <h2>Cách thử một gia sư Blender trước khi trả tiền</h2>
 
@@ -2962,7 +2964,7 @@ POSTS = [
 
 <hr class="hr">
 
-<p>Nếu bạn đang so vài lớp với nhau, gửi cho chúng tôi mô tả từng lớp: bài tập dựa trên gì, số buổi, số lần chữa bài và đầu ra cuối khoá. Chúng tôi sẽ nói thẳng lớp nào đưa bạn tới một món đăng được nhanh hơn, kể cả khi câu trả lời là chưa nên học ở đâu cả. Muốn xem trước cách một chương trình chia bài theo tuần, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>; muốn tự đi trước một đoạn, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước.</p>
+<p>Nếu bạn đang so vài lớp với nhau, gửi cho chúng tôi mô tả từng lớp: bài tập dựa trên gì, số buổi, số lần chữa bài và đầu ra cuối khoá. Chúng tôi sẽ nói thẳng lớp nào đưa bạn tới một món đăng được nhanh hơn, kể cả khi câu trả lời là chưa nên học ở đâu cả. Muốn xem trước cách một chương trình chia bài theo tuần, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>; muốn tự đi trước một đoạn, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước. Còn nếu bạn đã dựng được vài món và chỉ cần gom chúng thành hồ sơ nộp được, đọc bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>.</p>
 """,
     },
     {
@@ -3000,6 +3002,8 @@ POSTS = [
 
 <h3>Gia sư dạy cái riêng bạn thiếu</h3>
 <p>Buổi học bắt đầu bằng việc mở file của bạn. Người dạy nhìn cấu trúc lưới, cách bạn đặt đèn, cách bạn tổ chức bộ sưu tập, rồi chỉ ra ba bốn chỗ làm hình xấu đi. Đó là việc không video nào làm được, vì video không biết bạn đã làm gì.</p>
+
+<p>Nếu mục tiêu của bạn không phải học thêm kỹ thuật mà là ra được bộ hồ sơ đem đi xin việc, hình thức <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a> đi theo một nhịp khác: chốt danh sách món trước, rồi mỗi buổi đẩy một món tiến thêm một bước.</p>
 
 <blockquote><p>Thứ bạn mua ở một gia sư không phải bài giảng. Bài giảng Blender trên mạng đã quá nhiều và hầu hết miễn phí. Bạn mua khả năng chẩn đoán: có người nhìn file của bạn và nói đúng chỗ sai trong mười phút thay vì để bạn mò ba tuần.</p></blockquote>
 
@@ -3105,6 +3109,164 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn không chắc mình thuộc nhóm nên thuê kèm hay nên tự đi thêm một đoạn, gửi cho chúng tôi hai ba món bạn đã làm và một câu mô tả chỗ bạn thấy bí. Chúng tôi sẽ nói thẳng bạn đang thiếu gì, kể cả khi câu trả lời là chưa cần trả tiền cho ai cả. Muốn xem cách một chương trình chia bài và chữa bài theo tuần, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
+""",
+    },
+    {
+        "slug": "kem-1-1-lam-portfolio-3d",
+        "title": "Kèm 1 kèm 1 làm portfolio 3D: lộ trình sáu món",
+        "desc": "Kèm 1 kèm 1 làm portfolio 3D khác lớp thường ở đâu, bộ hồ sơ cần mấy món, kèm bao lâu là đủ và khi nào chưa nên trả tiền. Kèm bảng so sánh thẳng thắn.",
+        "tag": "Định hướng",
+        "date": "2026-10-21",
+        "date_vn": "21/10/2026",
+        "read": "11 phút đọc",
+        "thumb": "assets/khoa-cua-thong-minh-lap-tren-cua-thuc-te.webp",
+        "faq": [
+            ('Kèm 1 kèm 1 làm portfolio 3D khác lớp học 3D thường ở đâu?',
+             'Lớp thường dạy kỹ năng theo giáo trình, bài tập là bài tập chung của lớp. Kèm riêng theo hồ sơ lấy đích đến là bộ món bạn sẽ đem đi xin việc, nên mọi buổi đều xoay quanh một món cụ thể trong bộ đó. Hệ quả là bạn học ít kỹ thuật hơn nhưng ra sản phẩm hoàn chỉnh nhanh hơn.'),
+            ('Portfolio 3D cần mấy món thì đủ để nộp?',
+             'Bốn tới sáu món hoàn chỉnh là khoảng hợp lý. Dưới bốn thì người xem không phân biệt được bạn làm được hay chỉ may mắn một lần. Trên tám thì gần như chắc chắn có món yếu kéo cả bộ xuống, vì người tuyển thường đánh giá theo món tệ nhất chứ không theo món đẹp nhất.'),
+            ('Kèm 1 kèm 1 làm portfolio 3D mất bao lâu?',
+             'Ước lượng từ các nhóm chúng tôi đã kèm là khoảng mười tới mười sáu tuần cho một bộ bốn tới sáu món, với nhịp tám tới mười hai giờ tự làm mỗi tuần. Con số dao động mạnh theo độ phức tạp món bạn chọn và theo việc bạn có nộp bài đúng hạn giữa hai buổi hay không.'),
+            ('Chưa biết gì về Blender có nên kèm riêng để làm portfolio luôn không?',
+             'Không nên. Giai đoạn làm quen giao diện và dựng khối cơ bản không cần người kèm, tài liệu miễn phí đủ dùng và trả tiền cho nó là lãng phí. Mốc hợp lý để bắt đầu kèm theo hồ sơ là khi bạn đã tự dựng xong ít nhất một món và tự thấy nó chưa đẹp nhưng không chỉ ra được vì sao.'),
+            ('Portfolio 3D nên đưa ảnh kết xuất hay cả file gốc?',
+             'Đưa ảnh trước, nhưng luôn chuẩn bị sẵn file gốc để mở khi được hỏi. Nhiều studio hỏi xem lưới và cách tổ chức bộ sưu tập ngay trong buổi phỏng vấn, vì ảnh đẹp có thể đến từ nhiều nguồn còn cấu trúc file thì không giả được.'),
+        ],
+        "body": """
+<p class="lead">Kèm 1 kèm 1 làm portfolio 3D là hình thức học kèm riêng lấy đích đến là bộ hồ sơ bạn sẽ đem đi xin việc, chứ không phải lấy đích đến là học hết một giáo trình. Mỗi buổi xoay quanh một món trong bộ đó: chọn món, dựng, sửa, kết xuất, rồi đóng gói thành trang trình bày. Nó đáng tiền khi bạn đã dựng được vài thứ nhưng chưa có món nào đủ sạch để nộp.</p>
+
+<p>Bài này nói rõ bộ hồ sơ cần mấy món, một chu kỳ kèm theo hồ sơ chia theo tuần trông thế nào, và ba tình huống mà chúng tôi khuyên bạn chưa nên trả tiền cho ai cả. Chúng tôi không nêu mức giá, vì giá thay đổi theo thời điểm và theo việc buổi học có chữa file thật hay không.</p>
+
+<h2>Kèm 1 kèm 1 làm portfolio 3D là gì</h2>
+
+<p>Khác biệt lớn nhất không nằm ở số người trong lớp. Nó nằm ở thứ được coi là đầu ra.</p>
+
+<h3>Lớp thường lấy kỹ năng làm đầu ra</h3>
+<p>Một khoá học 3D bình thường kết thúc khi bạn đi hết các chương: dựng khối, vật liệu, ánh sáng, kết xuất. Bài tập là bài tập của lớp, ai cũng làm giống nhau. Bạn ra khỏi khoá với nhiều kỹ năng rời và thường là không có món nào hoàn chỉnh của riêng mình.</p>
+
+<h3>Kèm theo hồ sơ lấy bộ món làm đầu ra</h3>
+<p>Buổi đầu không dạy gì. Buổi đầu là ngồi chọn bốn tới sáu món, dựa trên loại việc bạn muốn nhận. Từ buổi hai trở đi, mỗi buổi đều mở file của bạn và đẩy một món tiến thêm một bước. Kỹ thuật được dạy khi món đó cần tới, không dạy trước.</p>
+
+<p>Nếu bạn muốn hiểu hình thức kèm riêng nói chung trước khi đọc tiếp, bài <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a> mô tả cách một buổi diễn ra, còn bài <a href="blog-gia-su-blender.html">gia sư Blender</a> nói về cách kiểm tra người dạy. Bài này giả định bạn đã quyết định học kèm và chỉ bàn phần hồ sơ.</p>
+
+<blockquote><p>Thị trường không chấm số giờ bạn học. Nó mở bốn năm hình, xem trong khoảng một phút, rồi quyết định. Mọi thứ bạn làm trong lúc kèm riêng nên được tính theo việc nó có làm một trong bốn năm hình đó tốt hơn hay không.</p></blockquote>
+
+<h2>Portfolio 3D cần có gì</h2>
+
+<p>Bốn tới sáu món hoàn chỉnh. Hoàn chỉnh nghĩa là có ảnh kết xuất sạch, có vài góc, có một ảnh lưới và một dòng mô tả bạn đã làm gì. Một món dở dang không tính, kể cả khi phần đã làm rất ấn tượng.</p>
+
+<p>Bộ nên trải ra theo loại việc, không nên là bốn món cùng kiểu. Cấu hình chúng tôi thường dùng khi kèm:</p>
+
+<ul>
+<li>Một món sản phẩm cứng có nhiều chi tiết cơ khí, để chứng minh bạn kiểm soát được lưới và cạnh.</li>
+<li>Một món sản phẩm mềm hoặc trong suốt, ví dụ chai, bao bì, vải, để chứng minh bạn hiểu vật liệu.</li>
+<li>Một bối cảnh nhỏ có nhiều vật thể, để chứng minh bạn biết bố cục và quản lý tệp.</li>
+<li>Một món chạy theo ảnh tham chiếu thật, dựng lại gần đúng, để chứng minh bạn làm được việc theo yêu cầu.</li>
+<li>Tuỳ chọn thêm: một đoạn chuyển động ngắn vài giây, hoặc một ảnh tách lớp kỹ thuật.</li>
+</ul>
+
+<p>Đếm ngược cũng quan trọng. Trên tám món thì gần như chắc chắn có món yếu, và người xem hồ sơ thường nhớ món tệ nhất. Cắt bớt là việc khó nhưng thường nâng chất bộ hồ sơ nhanh hơn làm thêm.</p>
+
+<figure>
+  <img src="assets/vplas-exploded-view-blender.jpg" alt="Ảnh tách rời linh kiện của một thiết bị điện tử dựng bằng Blender, các bộ phận treo lơ lửng theo trục dọc trên nền tối" loading="lazy" width="1600" height="900">
+  <figcaption><strong>Một ảnh tách lớp kỹ thuật trong dự án VPLAS của LXAM Studio.</strong> Dạng hình này nặng về tổ chức tệp hơn là về thẩm mỹ, nên nó là món chứng minh rất tốt trong hồ sơ: người xem biết ngay bạn có đặt tên và gom bộ sưu tập tử tế hay không.</figcaption>
+</figure>
+
+<h2>Lộ trình sáu món khi kèm riêng, chia theo tuần</h2>
+
+<p>Đây là nhịp chúng tôi dùng cho phần lớn người học đi làm, giả định tám tới mười hai giờ tự làm mỗi tuần và một buổi kèm mỗi tuần hoặc mỗi hai tuần.</p>
+
+<h3>Tuần một tới hai: chọn món và dựng khối món đầu</h3>
+<p>Không mở phần mềm trong nửa buổi đầu. Việc của hai tuần này là chốt danh sách món và tìm ảnh tham chiếu cho từng món. Rất nhiều hồ sơ thất bại ở đây chứ không ở khâu kỹ thuật, vì chọn món quá khó rồi bỏ giữa chừng.</p>
+
+<h3>Tuần ba tới sáu: hai món sản phẩm đầu tiên</h3>
+<p>Mỗi món khoảng hai tuần. Buổi kèm tập trung vào lưới và cạnh ở món một, vào vật liệu ở món hai. Nếu bạn còn yếu khâu dựng hình, phần nền tảng trong bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> là chỗ bù trước khi vào giai đoạn này.</p>
+
+<h3>Tuần bảy tới mười: bối cảnh và ánh sáng</h3>
+<p>Giai đoạn này đổi tính chất. Bạn không thêm chi tiết nữa mà học cách làm hình có sức nặng. Phần lớn chỗ kẹt ở đây là ánh sáng, và nó đáng được đọc trước: bài <a href="blog-5-loi-lighting.html">năm lỗi lighting</a> liệt kê đúng những lỗi hay xuất hiện trong hồ sơ người mới.</p>
+
+<h3>Tuần mười một tới mười sáu: món theo yêu cầu và đóng gói</h3>
+<p>Món cuối nên là một món dựng lại theo ảnh tham chiếu do người kèm đưa, không do bạn chọn. Đó là bài kiểm tra gần nhất với việc thật. Sau đó là hai tuần đóng gói: chọn góc, dựng trang trình bày, viết mô tả từng món.</p>
+
+<p>Khâu đóng gói bị coi nhẹ nhiều nhất và lại là khâu đổi kết quả nhiều nhất. Cùng một bộ file, cách trình bày tốt hay tệ chênh nhau rất xa ở vòng lọc hồ sơ.</p>
+
+<h2>Bảng so sánh ba cách làm portfolio 3D</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Tự làm theo video</th><th>Khoá học có bài tập</th><th>Kèm 1 kèm 1 theo hồ sơ</th></tr></thead>
+<tbody>
+<tr><td>Món trong hồ sơ là của ai</td><td>Thường trùng bài của video</td><td>Trùng bài tập của lớp</td><td>Do bạn chọn, không trùng ai</td></tr>
+<tr><td>Số lần được chữa file</td><td>Gần như không</td><td>Có, phải chờ lượt</td><td>Nhiều nhất</td></tr>
+<tr><td>Nguy cơ bỏ giữa chừng</td><td>Cao nhất</td><td>Trung bình</td><td>Thấp, vì có hạn nộp riêng</td></tr>
+<tr><td>Thời gian ra bộ bốn tới sáu món</td><td>Rất khó dự đoán</td><td>Thường dài hơn một khoá</td><td>Ước lượng mười tới mười sáu tuần</td></tr>
+<tr><td>Chi phí theo buổi</td><td>Gần bằng không</td><td>Trung bình</td><td>Cao nhất</td></tr>
+<tr><td>Chi phí theo một món hoàn chỉnh</td><td>Rất cao nếu không ra món nào</td><td>Trung bình</td><td>Thường thấp nhất</td></tr>
+<tr><td>Dạy kỹ năng rộng</td><td>Trung bình</td><td>Tốt nhất</td><td>Hẹp, chỉ dạy cái món cần</td></tr>
+<tr><td>Hợp nhất khi</td><td>Bạn mới làm quen phần mềm</td><td>Bạn cần nền tảng và nhịp</td><td>Bạn có hạn nộp hoặc đã kẹt lâu</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không chọn hộ bạn. Nó chỉ ra một điều: kèm riêng theo hồ sơ hẹp về kiến thức và đó là nhược điểm thật. Nếu bạn chưa có nền, học kèm theo hồ sơ sẽ cho bạn bốn món đẹp nhưng nhiều lỗ hổng kỹ thuật. Muốn xem cách hai hệ chia bài theo tuần và đầu ra từng tuần, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>.</p>
+
+<h2>Kèm riêng dựng hình sản phẩm ra việc nhanh nhất</h2>
+
+<p>Trong các nhóm chúng tôi từng kèm, người chọn hướng sản phẩm thường nhận việc đầu tiên sớm hơn người chọn hướng nhân vật hoặc hướng phim. Lý do không phải vì sản phẩm dễ hơn, mà vì thị trường Việt Nam mua dạng hình này nhiều hơn.</p>
+
+<p>Nhu cầu thật nằm ở ảnh bán hàng, ảnh bao bì, ảnh thiết bị và phối cảnh trưng bày. Đó là lý do chúng tôi hay khuyên người cần việc sớm nhắm hướng này trước, kể cả khi sở thích của họ là hướng khác. Nội dung một lớp hướng sản phẩm được mô tả trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, còn dạng việc thật mà studio nhận thì nằm ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>.</p>
+
+<h2>Danh sách kiểm tra trước buổi kèm đầu tiên</h2>
+
+<p>Chạy qua danh sách này với bất kỳ ai nhận kèm hồ sơ, kể cả với chúng tôi. Người làm nghề trả lời được hết, kể cả câu bất lợi cho họ.</p>
+
+<ul>
+<li>Buổi đầu có chốt danh sách món không, hay bắt đầu dạy kỹ thuật ngay?</li>
+<li>Người kèm cho xem một file gốc của chính họ chứ không chỉ ảnh đã kết xuất?</li>
+<li>Giữa hai buổi tôi nộp gì, và nhận phản hồi trong bao lâu?</li>
+<li>Có được quyền hỏi lại sau khi khoá kết thúc không, trong bao lâu?</li>
+<li>Khâu đóng gói và viết mô tả món có nằm trong phạm vi kèm không?</li>
+<li>Nếu tới buổi cuối mà tôi chưa xong bộ món thì xử lý thế nào?</li>
+</ul>
+
+<p>Câu cuối là câu quan trọng nhất và cũng là câu hay bị trả lời vòng vo. Một chương trình tử tế nói rõ trước rằng kết quả phụ thuộc vào số giờ bạn tự làm, và nói luôn cơ chế khi bạn trượt tiến độ.</p>
+
+<h2>Khi nào chưa nên thuê kèm 1 kèm 1, nói thẳng</h2>
+
+<p>Ba tình huống dưới đây, trả tiền bây giờ là lãng phí.</p>
+
+<p><strong style="color:#fff;">Bạn chưa dựng xong món nào.</strong> Giai đoạn làm quen giao diện không cần người kèm. Hãy tự đi một tháng theo một lộ trình có thứ tự, ví dụ bảy bước trong bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>, rồi mới tính chuyện thuê kèm.</p>
+
+<p><strong style="color:#fff;">Bạn không có tám giờ mỗi tuần để tự làm.</strong> Kèm riêng không thay được số giờ ngồi vào bàn. Nếu lịch của bạn chỉ cho hai ba giờ một tuần, buổi kèm sẽ thành buổi nghe lại cùng một lời nhắc, và tiền đó nên để dành tới lúc rảnh hơn.</p>
+
+<p><strong style="color:#fff;">Bạn chưa biết mình muốn nhận loại việc nào.</strong> Hồ sơ phải nhắm một hướng mới có sức. Nếu bạn còn phân vân giữa sản phẩm, nội thất, nhân vật và phim, hãy đọc phần hướng nghề trong <a href="cam-nang.html">cẩm nang học Blender</a> và chốt hướng trước, vì chọn sai hướng làm hỏng cả bộ món chứ không chỉ một món.</p>
+
+<h2>Kèm 1 kèm 1 làm portfolio 3D không thay được số giờ của bạn</h2>
+
+<p>Điều này cần nói thẳng ở cuối. Người kèm rút ngắn thời gian bạn đi sai đường, chỉ ra trong mười phút chỗ bạn có thể mò ba tuần. Nhưng toàn bộ số giờ dựng, sửa và kết xuất vẫn là của bạn. Mốc thời gian thực tế cho từng chặng nằm trong bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a>.</p>
+
+<p>Nếu có ai hứa với bạn một bộ hồ sơ hoàn chỉnh mà không cần bạn bỏ ra hàng trăm giờ, đó là lời nên bị hỏi lại rất kỹ. Hồ sơ là bằng chứng về số giờ, nên nó không thể được mua tách khỏi số giờ đó.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Kèm 1 kèm 1 làm portfolio 3D khác lớp học 3D thường ở đâu?</p>
+<p>Lớp thường dạy kỹ năng theo giáo trình, bài tập là bài tập chung của lớp. Kèm riêng theo hồ sơ lấy đích đến là bộ món bạn sẽ đem đi xin việc, nên mọi buổi đều xoay quanh một món cụ thể trong bộ đó. Hệ quả là bạn học ít kỹ thuật hơn nhưng ra sản phẩm hoàn chỉnh nhanh hơn.</p>
+
+<p class="faq-q">Portfolio 3D cần mấy món thì đủ để nộp?</p>
+<p>Bốn tới sáu món hoàn chỉnh là khoảng hợp lý. Dưới bốn thì người xem không phân biệt được bạn làm được hay chỉ may mắn một lần. Trên tám thì gần như chắc chắn có món yếu kéo cả bộ xuống, vì người tuyển thường đánh giá theo món tệ nhất chứ không theo món đẹp nhất.</p>
+
+<p class="faq-q">Kèm 1 kèm 1 làm portfolio 3D mất bao lâu?</p>
+<p>Ước lượng từ các nhóm chúng tôi đã kèm là khoảng mười tới mười sáu tuần cho một bộ bốn tới sáu món, với nhịp tám tới mười hai giờ tự làm mỗi tuần. Con số dao động mạnh theo độ phức tạp món bạn chọn và theo việc bạn có nộp bài đúng hạn giữa hai buổi hay không.</p>
+
+<p class="faq-q">Chưa biết gì về Blender có nên kèm riêng để làm portfolio luôn không?</p>
+<p>Không nên. Giai đoạn làm quen giao diện và dựng khối cơ bản không cần người kèm, tài liệu miễn phí đủ dùng và trả tiền cho nó là lãng phí. Mốc hợp lý để bắt đầu kèm theo hồ sơ là khi bạn đã tự dựng xong ít nhất một món và tự thấy nó chưa đẹp nhưng không chỉ ra được vì sao.</p>
+
+<p class="faq-q">Portfolio 3D nên đưa ảnh kết xuất hay cả file gốc?</p>
+<p>Đưa ảnh trước, nhưng luôn chuẩn bị sẵn file gốc để mở khi được hỏi. Nhiều studio hỏi xem lưới và cách tổ chức bộ sưu tập ngay trong buổi phỏng vấn, vì ảnh đẹp có thể đến từ nhiều nguồn còn cấu trúc file thì không giả được.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn muốn biết bộ món hiện tại của mình còn thiếu gì, gửi cho chúng tôi ba bốn hình bạn đang có và một câu nói rõ bạn muốn nhận loại việc nào. Chúng tôi sẽ nói thẳng nên bỏ món nào và thêm món nào, kể cả khi câu trả lời là bạn chưa cần thuê kèm. Muốn xem cách hai hệ chia bài và chữa bài theo tuần, trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
 """,
     },
 ]
