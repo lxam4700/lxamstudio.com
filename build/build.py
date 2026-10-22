@@ -223,7 +223,7 @@ ABOUT_BODY = """
           <h2 class="founder-name">Lê Xuân<br>Anh Minh</h2>
           <p class="founder-role">Founder &amp; Creative Director &middot; LXAM Studio</p>
 
-          <p class="founder-say">Tôi không nghĩ mình đang làm 3D. Tôi đang dùng hình để nói một điều gì đó, và phần mềm nào cũng được, miễn nói được.</p>
+          <p class="founder-say">Bạn đang không làm 3D, bạn đang là đấng tạo hoá toàn năng trong ngôi đền tâm trí của bạn.</p>
 
           <p style="margin-top:28px;">Vào nghề sớm hơn dự định, năm ba đại học, công cụ trong tay chỉ có Blender và vài phần mềm Adobe. Không studio đứng sau, không ai cầm tay chỉ việc. Mọi thứ học được đều đến từ việc nhận job, làm hỏng, sửa, rồi làm lại cho tới khi khách gật đầu.</p>
 
