@@ -974,11 +974,13 @@ POSTS = [
     {
         "slug": "hoc-blender-3d-bao-lau",
         "title": "Học Blender 3D bao lâu thì nhận được job đầu tiên?",
-        "desc": "Mốc thời gian thực tế để đi từ mở Blender lần đầu tới lúc có khách trả tiền, chia theo từng giai đoạn, và điều gì quyết định bạn nhanh hay chậm.",
+        "desc": "Học Blender 3D bao lâu mới nhận được job đầu tiên? Mốc thời gian theo số giờ học mỗi tuần, bốn giai đoạn kèm dấu hiệu đã qua và cách rút ngắn quãng đường.",
         "tag": "Định hướng",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "read": "8 phút đọc",
+        "updated": "2026-10-22",
+        "updated_vn": "22/10/2026",
+        "read": "12 phút đọc",
         "thumb": "assets/vplas-render-san-pham-blender.jpg",
         "faq": [
             ("Học Blender 3D bao lâu thì đi làm được?",
@@ -989,15 +991,38 @@ POSTS = [
              "Không, trừ khi bạn nhắm vào studio bắt buộc dùng phần mềm đó. Blender làm được trọn pipeline sản phẩm và TVC."),
             ("Trên 30 tuổi học Blender có muộn không?",
              "Không. Khách hàng nhìn portfolio chứ không nhìn tuổi. Người chuyển ngành còn có lợi thế vì đã quen deadline và làm việc với khách."),
+            ("Học Blender bao lâu thì nên bỏ tiền đi học khoá?",
+             "Thường là sau một tới hai tháng tự đi, khi bạn bắt đầu thấy mình lặp lại cùng một lỗi. Lúc đó bạn đã đủ nền để tận dụng buổi chữa bài, nên so các nơi bằng số lần được chữa bài thay vì tổng học phí."),
+            ("Học 3D online có chậm hơn học trực tiếp không?",
+             "Không chậm hơn đáng kể, miễn là bài của bạn vẫn được mở ra và sửa trực tiếp trên file. Cái quyết định là tần suất phản hồi chứ không phải việc ngồi cùng phòng."),
         ],
         "body": """
-<p class="lead">Đây là câu hỏi tôi nhận nhiều nhất, và cũng là câu bị trả lời ẩu nhất. "Ba tháng là làm được" nghe thì dễ chốt đơn, nhưng không đúng. Dưới đây là mốc thời gian thật, kèm điều kiện đi kèm.</p>
+<p class="lead">Học Blender 3D bao lâu thì nhận được job đầu tiên? Với người học đều 10 tới 15 giờ mỗi tuần và có người sửa bài, mốc thường thấy là 4 tới 6 tháng để có portfolio nhận job nhỏ, 10 tới 14 tháng để nhận job thương mại. Tự học một mình thường cộng thêm gấp hai tới gấp ba. Đây là khoảng ước lượng rút ra từ việc kèm học viên, không phải cam kết.</p>
 
 <h2>Câu trả lời ngắn</h2>
 
 <p>Với người học đều <strong style="color:#fff;">10 đến 15 giờ mỗi tuần</strong> và có người sửa bài: khoảng <strong style="color:#fff;">4 đến 6 tháng</strong> để có portfolio đủ nhận job nhỏ, <strong style="color:#fff;">10 đến 14 tháng</strong> để nhận được job thương mại tử tế.</p>
 
 <p>Tự học hoàn toàn, không ai sửa: cộng thêm gấp đôi tới gấp ba. Không phải vì bạn học chậm hơn, mà vì bạn mất nhiều tháng đi sai hướng rồi mới nhận ra.</p>
+
+<p>Câu "ba tháng là làm được" nghe thì dễ chốt đơn, nhưng nó bỏ qua phần tốn thời gian nhất của nghề: không phải học nút bấm, mà học cách nhìn ra hình của mình sai ở đâu. Phần đó không rút ngắn được bằng cách xem thêm video.</p>
+
+<h2>Học Blender 3D bao lâu nếu mỗi tuần chỉ rảnh vài giờ</h2>
+
+<p>Số giờ mỗi tuần là biến dễ đo nhất, nên bắt đầu từ đó. Bảng dưới là ước lượng cho người có người chữa bài định kỳ. Nếu tự học hoàn toàn, nhân đôi mọi cột.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Số giờ mỗi tuần</th><th>Có bài tử tế đầu tiên</th><th>Nhận được job nhỏ</th><th>Nhận job thương mại</th></tr></thead>
+<tbody>
+<tr><td>4 tới 6 giờ</td><td>5 tới 8 tháng</td><td>12 tới 18 tháng</td><td>Khó nói trước</td></tr>
+<tr><td>10 tới 15 giờ</td><td>3 tới 4 tháng</td><td>4 tới 6 tháng</td><td>10 tới 14 tháng</td></tr>
+<tr><td>25 giờ trở lên</td><td>6 tới 10 tuần</td><td>3 tới 5 tháng</td><td>8 tới 11 tháng</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Dòng đầu tiên là dòng cần nói thẳng. Bốn tới sáu giờ mỗi tuần vẫn học được, nhưng quãng đường dài tới mức phần lớn người bỏ giữa chừng vì không thấy mình nhúc nhích. Nếu lịch của bạn chỉ cho phép tới đó, nên thu hẹp mục tiêu lại: chọn một mảng hẹp, ví dụ dựng hình sản phẩm, thay vì học dàn trải cả modeling, lighting, chuyển động và hậu kỳ cùng lúc.</p>
 
 <h2>Bốn giai đoạn, và dấu hiệu bạn đã qua</h2>
 
@@ -1006,7 +1031,7 @@ POSTS = [
 <p><strong style="color:#fff;">Dấu hiệu qua:</strong> bạn dựng được một vật ngoài đời mà không cần xem hướng dẫn từng bước.</p>
 
 <h3>Tháng 3 đến 5: hình bắt đầu "trông được"</h3>
-<p>Ánh sáng và vật liệu vào cuộc. Đây là chỗ khoảng cách giữa người có người kèm và người tự học mở ra lớn nhất, vì bạn không tự thấy được ánh sáng của mình sai ở đâu khi chưa có ai chỉ.</p>
+<p>Ánh sáng và vật liệu vào cuộc. Đây là chỗ khoảng cách giữa người có người kèm và người tự học mở ra lớn nhất, vì bạn không tự thấy được ánh sáng của mình sai ở đâu khi chưa có ai chỉ. Phần lớn lỗi ở giai đoạn này lặp lại y hệt nhau, tôi gom trong bài <a href="blog-5-loi-lighting.html">năm lỗi lighting thường gặp</a>.</p>
 <p><strong style="color:#fff;">Dấu hiệu qua:</strong> bạn nhìn render của mình và nói được cụ thể chỗ nào chưa ổn, chứ không chỉ cảm giác "chưa đã".</p>
 
 <figure>
@@ -1021,10 +1046,49 @@ POSTS = [
 <h3>Tháng 10 trở đi: làm được job thật</h3>
 <p>Khác biệt ở giai đoạn này không còn là kỹ thuật. Là biết đọc brief, biết báo giá, biết xử lý khi khách đổi ý ở phút cuối, biết chia file để sửa nhanh. Tôi có viết riêng về <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình một shot chạy thật</a>.</p>
 
-<h2>Ba thứ quyết định bạn nhanh hay chậm</h2>
+<figure>
+  <img src="assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp" alt="Key visual khoá cửa thông minh dựng bằng Blender, hai thân khoá màu đen lơ lửng trên nền xám sáng với dòng chữ DIGITAL LOCK phía sau" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một key visual sản phẩm trong dự án khoá cửa thông minh của LXAM Studio.</strong> Mức hoàn thiện mà khách trả tiền không nằm ở số chi tiết trên mẫu, mà ở chỗ bố cục, chữ và ánh sáng cùng phục vụ một thông điệp.</figcaption>
+</figure>
+
+<h2>Danh sách kiểm tra: bạn đang ở giai đoạn nào</h2>
+
+<p>Đọc từ trên xuống, dừng ở dòng đầu tiên bạn chưa làm được. Đó là chỗ bạn đang đứng, và cũng là việc cần làm trong vài tuần tới. Phần lớn người tự học kẹt ở dòng thứ ba hoặc thứ tư mà tưởng mình đã ở dòng thứ sáu.</p>
+
+<ul>
+<li>Mở Blender và dựng được một vật đơn giản mà không bật video hướng dẫn.</li>
+<li>Nói được vì sao đặt đèn chính ở đúng hướng đó, không phải thử tới khi thấy ổn.</li>
+<li>Nhìn render của mình và chỉ ra được ít nhất hai chỗ sai cụ thể.</li>
+<li>Hoàn thành một bài tới khâu cuối, kể cả phần hậu kỳ, không bỏ dở.</li>
+<li>Dựng lại cùng một vật lần thứ hai và thấy rõ bản sau tốt hơn ở chỗ nào.</li>
+<li>Giữ được cạnh sạch trên hard-surface khi lên subdivision.</li>
+<li>Mở lại file của ba tháng trước và vẫn hiểu mình đặt tên, chia nhóm thế nào.</li>
+<li>Có ít nhất ba bài đủ chất lượng đặt cạnh nhau mà không bài nào kéo hai bài kia xuống.</li>
+<li>Đọc một brief và ước lượng được số buổi làm, không phải đoán bừa.</li>
+</ul>
+
+<p>Danh sách này dùng tốt nhất mỗi tháng một lần. Nếu sau ba tháng bạn vẫn dừng ở đúng một dòng, vấn đề không phải thời gian, mà là thiếu phản hồi. Bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a> so sánh thẳng hai con đường ở chính điểm này.</p>
+
+<h2>Học bao lâu còn tuỳ hướng bạn chọn</h2>
+
+<p>"Nghề 3D" không phải một nghề. Mỗi hướng có độ dốc khác nhau, và chọn sai hướng so với quỹ thời gian của mình là cách mất một năm êm ái nhất.</p>
+
+<h3>Dựng hình sản phẩm: dốc thoải nhất</h3>
+<p>Vật thể có ảnh tham chiếu rõ, yêu cầu của khách cụ thể, và bạn biết ngay mình đúng hay sai vì đặt cạnh ảnh thật là thấy. Đây là hướng cho kết quả sớm nhất, thường 6 tới 10 tháng là có bài dùng được. Nội dung của hướng này nằm ở <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
+
+<h3>Hard-surface và automotive: lâu hơn, rõ ràng hơn</h3>
+<p>Bề mặt phản chiếu không tha cho lỗi nào, nên yêu cầu về lưới và ánh sáng cao hơn hẳn. Cộng thêm 4 tới 8 tháng so với sản phẩm thường. Bù lại thị trường hẹp và người làm được không nhiều.</p>
+
+<h3>Phối cảnh sự kiện và triển lãm: nhanh có việc</h3>
+<p>Hướng này ở Việt Nam có nhu cầu đều, vì mỗi sự kiện đều cần phối cảnh để duyệt trước khi dựng thật. Yêu cầu về độ chính xác bề mặt thấp hơn automotive, nhưng đòi hỏi đọc được bản vẽ và làm việc theo deadline gấp. Xem các dạng việc thật ở trang <a href="dich-vu.html">dịch vụ render 3D và phối cảnh sự kiện</a>.</p>
+
+<h3>TVC và chuyển động: dốc nhất</h3>
+<p>Cộng thêm timing, camera, mô phỏng và hậu kỳ, nên thời gian gần như nhân đôi so với làm hình tĩnh. Đừng bắt đầu từ đây nếu bạn chưa làm chủ được một shot tĩnh.</p>
+
+<h2>Bốn thứ quyết định bạn nhanh hay chậm</h2>
 
 <h3>1. Có được sửa bài hay không</h3>
-<p>Đây là biến số lớn nhất, hơn cả tài năng hay số giờ ngồi máy. Người tự học có thể ngồi sáu tháng với một thói quen sai mà không biết. Người được sửa bài mất một buổi để bỏ thói quen đó.</p>
+<p>Đây là biến số lớn nhất, hơn cả tài năng hay số giờ ngồi máy. Người tự học có thể ngồi sáu tháng với một thói quen sai mà không biết. Người được sửa bài mất một buổi để bỏ thói quen đó. Nếu chưa muốn đi học hẳn, thuê <a href="blog-gia-su-blender.html">gia sư Blender</a> theo buổi cũng đủ để cắt những vòng lặp sai dài nhất.</p>
 
 <h3>2. Làm dự án hay làm bài tập</h3>
 <p>Bài tập có đáp án sẵn, làm xong thấy vui rồi thôi. Dự án có ràng buộc thật: deadline, yêu cầu, người duyệt, và ép bạn giải quyết vấn đề chưa ai dạy. Một dự án hoàn chỉnh dạy nhiều hơn hai mươi bài tập.</p>
@@ -1037,21 +1101,43 @@ POSTS = [
 
 <blockquote><p>Thứ khiến người ta bỏ Blender hiếm khi là độ khó. Thường là sáu tháng không thấy mình tiến bộ, vì không ai nói cho họ biết họ đang sai ở đâu.</p></blockquote>
 
+<h2>Rút ngắn thời gian mà không đốt cháy giai đoạn</h2>
+
+<p>Có vài cách rút ngắn thật sự có tác dụng, và chúng đều nhàm chán hơn người ta mong đợi.</p>
+
+<ul>
+<li><strong style="color:#fff;">Dựng lại một vật ba lần, thay vì dựng ba vật một lần.</strong> Lần hai và lần ba là nơi kỹ năng thật sự hình thành, vì bạn đã biết chỗ khó nằm ở đâu.</li>
+<li><strong style="color:#fff;">Nhờ nhận xét sớm, đừng đợi đến khi thấy mình đủ giỏi.</strong> Bài càng thô thì lỗi càng cơ bản, mà lỗi cơ bản sửa một lần là xong, để lâu thành thói quen.</li>
+<li><strong style="color:#fff;">Luôn có ảnh tham chiếu thật đặt cạnh.</strong> Dựng theo trí nhớ là cách luyện sai nhanh nhất.</li>
+<li><strong style="color:#fff;">Đừng đổi phần mềm giữa chừng.</strong> Nếu còn phân vân, đọc <a href="blog-blender-hay-3dsmax-c4d.html">so sánh Blender với 3ds Max và C4D</a> một lần rồi chốt, đừng để câu hỏi đó quay lại mỗi hai tháng.</li>
+<li><strong style="color:#fff;">Giới hạn thời gian xem video.</strong> Quá một phần tư quỹ thời gian dành cho việc xem mà không mở Blender nghĩa là bạn đang tiêu thụ chứ không học.</li>
+</ul>
+
+<p>Thứ không rút ngắn được là số lần bạn làm hỏng rồi sửa. Khoá học, gia sư hay nhóm học chỉ làm một việc: rút ngắn quãng giữa lúc bạn làm hỏng và lúc bạn biết mình đã hỏng ở đâu. Toàn bộ chênh lệch thời gian trong bài này nằm ở đó.</p>
+
 <h2>Vài câu hỏi hay gặp</h2>
 
 <p class="faq-q">Không biết vẽ có học được không?</p>
 <p>Được. 3D thương mại, từ sản phẩm, hard-surface tới kiến trúc, không đòi hỏi kỹ năng vẽ tay. Mảng cần vẽ là character và concept stylized, không phải hướng duy nhất của nghề.</p>
 
 <p class="faq-q">Học Blender rồi có phải học thêm 3ds Max hay Maya?</p>
-<p>Không, trừ khi bạn nhắm vào một studio bắt buộc dùng phần mềm đó. Blender làm được trọn pipeline sản phẩm và TVC. Nắm chắc một công cụ hơn là biết lõm bõm ba cái. Nếu vẫn đang cân nhắc, bài <a href="blog-blender-hay-3dsmax-c4d.html">so sánh Blender với 3ds Max và C4D</a> nói rõ phần kỹ năng nào chuyển được giữa các phần mềm.</p>
+<p>Không, trừ khi bạn nhắm vào một studio bắt buộc dùng phần mềm đó. Blender làm được trọn pipeline sản phẩm và TVC. Nắm chắc một công cụ hơn là biết lõm bõm ba cái.</p>
 
 <p class="faq-q">Trên 30 tuổi bắt đầu có muộn không?</p>
 <p>Không. Khách hàng nhìn portfolio, không nhìn tuổi. Người đi làm chuyển ngành thường còn có lợi thế: đã quen deadline và làm việc với khách, hai thứ dân mới ra trường phải học lại từ đầu.</p>
+
+<p class="faq-q">Học bao lâu thì nên bỏ tiền đi học khoá?</p>
+<p>Thường là sau khi bạn đã tự đi được một tới hai tháng và bắt đầu thấy mình lặp lại cùng một lỗi. Lúc đó bạn đủ nền để tận dụng buổi chữa bài. Cách bóc tách <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a> theo số lần được chữa bài giúp bạn so các nơi bằng cùng một thước.</p>
+
+<p class="faq-q">Học online có chậm hơn học trực tiếp không?</p>
+<p>Không chậm hơn đáng kể, miễn là bài của bạn vẫn được mở ra và sửa trực tiếp trên file. Cái quyết định là tần suất phản hồi chứ không phải ngồi cùng phòng. Chi tiết nằm ở bài <a href="blog-khoa-hoc-3d-online.html">khoá học 3D online</a>.</p>
 
 <p class="faq-q">Cần máy mạnh không?</p>
 <p>Lúc bắt đầu thì không. Tôi có viết riêng một bài về <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> và khi nào thật sự cần nâng cấp.</p>
 
 <hr class="hr">
+
+<p>Tóm lại, học Blender 3D bao lâu phụ thuộc vào ba thứ theo đúng thứ tự: có ai sửa bài cho bạn không, bạn học đều hay học dồn, và bạn chọn hướng nào. Nếu muốn xem nội dung từng chặng được chia ra sao, hai hệ đào tạo nằm ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>, còn bản tóm tắt lộ trình để tự dò thì tải ở <a href="cam-nang.html">cẩm nang 3D</a>.</p>
 
 <p>Nếu bạn đang tự học và không chắc mình đang ở giai đoạn nào, gửi tôi vài bài render, tôi xem qua và nói thẳng bạn đang mắc ở đâu, kể cả khi câu trả lời là bạn chưa cần học khoá nào cả.</p>
 """,
