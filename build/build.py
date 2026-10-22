@@ -225,17 +225,25 @@ ABOUT_BODY = """
 
           <p class="founder-say">Bạn đang không làm 3D, bạn đang là đấng tạo hoá toàn năng trong ngôi đền tâm trí của bạn.</p>
 
-          <p style="margin-top:28px;">Vào nghề sớm hơn dự định, năm ba đại học, công cụ trong tay chỉ có Blender và vài phần mềm Adobe. Không studio đứng sau, không ai cầm tay chỉ việc. Mọi thứ học được đều đến từ việc nhận job, làm hỏng, sửa, rồi làm lại cho tới khi khách gật đầu.</p>
+          <p style="margin-top:28px;">Năm lớp 11 tôi đứng bét lớp. Không phải gần cuối, là cuối. Ở một tỉnh nghèo miền Trung, kết quả đó gần như đồng nghĩa với việc chỗ ngồi của bạn trong đời đã được xếp sẵn: một nghề tay chân, một thị trấn, và hết.</p>
 
-          <p>Mười năm sau là một team Multimedia trong phòng Marketing cần dẫn dắt, song song với LXAM Studio nhận các dự án TVC và hình ảnh thương mại. Hai vai trò đó nuôi nhau: con mắt của người duyệt bài cho biết một portfolio còn thiếu gì, còn việc trực tiếp làm job giữ cho bài giảng không dạy những thứ đã lỗi thời.</p>
+          <p>Vài năm sau tôi bưng cà phê, hai mươi nghìn một giờ. Ca đứng liên tục, hết ca thì chân gần như không còn cảm giác. Giãn tĩnh mạch đến sớm hơn tuổi. Có những tối về phòng, việc đầu tiên làm được không phải là mở máy, mà là nằm gác chân lên tường chờ máu chảy ngược lại.</p>
+
+          <p>Thứ giữ tôi lại không phải quyết tâm gì to tát. Là một cái máy cũ và Blender, phần mềm miễn phí nên không phải xin phép ai. Tôi muốn dựng một chiếc xe. Chỉ vậy thôi. Dựng hỏng, dựng lại, trong đúng những giờ lẽ ra phải ngủ.</p>
+
+          <p>Vào nghề sớm hơn dự định, năm ba đại học, công cụ trong tay vẫn chỉ có Blender và vài phần mềm Adobe. Không studio đứng sau, không ai cầm tay chỉ việc. Mọi thứ học được đều đến từ việc nhận job, làm hỏng, sửa, rồi làm lại cho tới khi khách gật đầu.</p>
+
+          <p>Hiện tại tôi là <strong style="color:#fff;">Art Director của KHP</strong>, tập đoàn trang sức phân phối trực tiếp cho PNJ và xuất khẩu ra thị trường quốc tế, song song với việc vận hành LXAM Studio nhận các dự án TVC và hình ảnh thương mại. Hai vai trò đó nuôi nhau: con mắt của người duyệt bài cho biết một portfolio còn thiếu gì, còn việc trực tiếp làm job giữ cho bài giảng không dạy những thứ đã lỗi thời.</p>
 
           <p>Điều dẫn tới việc mở lớp không phải vì thiếu khoá học Blender trên mạng, có quá nhiều là đằng khác. Mà vì gần như không khoá nào trả lời được câu hỏi thật sự khó: <strong style="color:#fff;">làm sao đi từ chỗ biết dùng phần mềm đến chỗ có người trả tiền cho sản phẩm của bạn.</strong></p>
 
+          <p>Tôi kể chuyện này không phải để ai thấy nó hay. Kể vì nó là bằng chứng cho một điều rất khô khan: điểm xuất phát quyết định ít hơn nhiều so với việc bạn có chịu làm lại lần thứ mười hay không. Thằng bé đứng bét lớp vẫn học được cái nghề này. Tôi là ví dụ, và tôi không phải ví dụ đặc biệt.</p>
+
           <div class="founder-meta">
+            <span>Art Director &middot; tập đoàn trang sức KHP</span>
             <span>10 năm 3D &amp; Multimedia</span>
             <span>Blender-first pipeline</span>
             <span>TVC &middot; Sản phẩm &middot; Event</span>
-            <span>Dẫn dắt team Multimedia</span>
             <span>Kèm 1 kèm 1</span>
           </div>
 
@@ -244,6 +252,13 @@ ABOUT_BODY = """
             <em>Founder, LXAM Studio</em>
           </div>
         </div>
+      </div>
+
+      <div class="arc">
+        <div class="arc-i"><p class="arc-k">Năm lớp 11</p><p class="arc-v">Đứng bét lớp</p></div>
+        <div class="arc-i"><p class="arc-k">20.000đ một giờ</p><p class="arc-v">Ca bưng cà phê</p></div>
+        <div class="arc-i"><p class="arc-k">Năm ba đại học</p><p class="arc-v">Job 3D đầu tiên</p></div>
+        <div class="arc-i"><p class="arc-k">Hôm nay</p><p class="arc-v">Art Director &amp; Founder</p></div>
       </div>
 
       <div style="margin-top:clamp(56px,7vw,96px);">
@@ -345,7 +360,7 @@ ABOUT_BODY = """
 """
 
 
-ABOUT_LD = """<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "AboutPage", "name": "Về LXAM Studio", "description": "Studio visual 3D và đào tạo Blender tại Việt Nam", "url": "https://lxamstudio.com/ve-chung-toi.html", "inLanguage": "vi-VN", "mainEntity": {"@id": "https://lxamstudio.com/ve-chung-toi.html#founder"}}, {"@type": "Person", "@id": "https://lxamstudio.com/ve-chung-toi.html#founder", "name": "Lê Xuân Anh Minh", "alternateName": "LXAM", "jobTitle": "Founder & Creative Director", "description": "Founder LXAM Studio, studio visual 3D tại Việt Nam. Làm TVC, render sản phẩm, phối cảnh sự kiện và đào tạo Blender 1 kèm 1.", "knowsAbout": ["Blender", "3D modeling", "Lighting", "Rendering", "TVC 3D", "Phối cảnh sự kiện 3D"], "url": "https://lxamstudio.com/ve-chung-toi.html#founder", "worksFor": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}}, {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/", "founder": {"@id": "https://lxamstudio.com/ve-chung-toi.html#founder"}}]}</script>"""
+ABOUT_LD = """<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "AboutPage", "name": "Về LXAM Studio", "description": "Studio visual 3D và đào tạo Blender tại Việt Nam", "url": "https://lxamstudio.com/ve-chung-toi.html", "inLanguage": "vi-VN", "mainEntity": {"@id": "https://lxamstudio.com/ve-chung-toi.html#founder"}}, {"@type": "Person", "@id": "https://lxamstudio.com/ve-chung-toi.html#founder", "name": "Lê Xuân Anh Minh", "alternateName": "LXAM", "jobTitle": ["Founder & Creative Director", "Art Director"], "description": "Founder LXAM Studio, studio visual 3D tại Việt Nam. Làm TVC, render sản phẩm, phối cảnh sự kiện và đào tạo Blender 1 kèm 1.", "knowsAbout": ["Blender", "3D modeling", "Lighting", "Rendering", "TVC 3D", "Phối cảnh sự kiện 3D"], "url": "https://lxamstudio.com/ve-chung-toi.html#founder", "worksFor": {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/"}}, {"@type": "Organization", "name": "LXAM Studio", "url": "https://lxamstudio.com/", "founder": {"@id": "https://lxamstudio.com/ve-chung-toi.html#founder"}}]}</script>"""
 
 
 # ---------------------------------------------------------------- BLOG POSTS
