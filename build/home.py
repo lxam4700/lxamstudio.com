@@ -1075,7 +1075,7 @@ def page(body_html, title=TITLE, desc=DESC, url=URL, faq=False, home=True):
 <meta property="og:image" content="{URL}assets/card-mercedes-g63.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" as="image" href="assets/hero-poster-1600.webp">
-<link rel="stylesheet" href="assets/lx.css?v=den2">
+<link rel="stylesheet" href="assets/lx.css?v=den3">
 {jsonld(faq)}
 {CSS}
 </head>

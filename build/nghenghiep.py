@@ -272,7 +272,7 @@ HEAD = """<!DOCTYPE html>
 <meta property="og:url" content="%snghe-nghiep.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="%snghe-nghiep.html">
-<link rel="stylesheet" href="assets/lx.css?v=den2">
+<link rel="stylesheet" href="assets/lx.css?v=den3">
 <script type="application/ld+json">%s</script>
 %s
 </head>

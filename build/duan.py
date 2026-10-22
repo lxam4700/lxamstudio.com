@@ -612,7 +612,7 @@ def build(p):
 <meta property="og:url" content="https://lxamstudio.com/{url}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://lxamstudio.com/{url}">
-<link rel="stylesheet" href="assets/lx.css?v=den2">
+<link rel="stylesheet" href="assets/lx.css?v=den3">
 <script type="application/ld+json">{ld}</script>
 <script type="application/ld+json">{crumbs}</script>
 <style>

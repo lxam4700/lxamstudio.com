@@ -813,7 +813,7 @@ def head(title, desc, canonical, jsonld, og_image, active):
 <meta property="og:url" content="%s%s">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="%s%s">
-<link rel="stylesheet" href="assets/lx.css?v=den2">
+<link rel="stylesheet" href="assets/lx.css?v=den3">
 <script type="application/ld+json">%s</script>
 %s
 </head>
