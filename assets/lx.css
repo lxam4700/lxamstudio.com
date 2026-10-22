@@ -218,6 +218,7 @@ footer.lxfooter{
   gap:clamp(30px,5vw,76px);align-items:start;
 }
 .founder-media{position:relative;}
+@media (min-width:861px){ .founder-media{position:sticky;top:96px;} }
 .founder-portrait{
   width:100%;aspect-ratio:4/5;object-fit:cover;display:block;
   border-radius:var(--r);border:1px solid var(--line);
@@ -286,6 +287,25 @@ footer.lxfooter{
   .tenet{grid-template-columns:1fr;gap:8px;}
   .tenet-n{padding-top:0;}
 }
+
+/* ---------- ARC (moc hanh trinh founder) ---------- */
+.arc{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  margin-top:clamp(44px,5.5vw,72px);background:var(--line);
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+}
+.arc-i{background:#000;padding:clamp(22px,2.6vw,32px) clamp(18px,2.2vw,28px);position:relative;}
+.arc-i::before{content:"";position:absolute;top:0;left:0;width:34px;height:2px;background:var(--ac);opacity:.9;}
+.arc-k{
+  font-size:11px;letter-spacing:2.2px;text-transform:uppercase;
+  color:var(--faint);margin:0 0 10px;
+}
+.arc-v{
+  font-family:'Unbounded',sans-serif;font-weight:600;color:#fff;
+  font-size:clamp(14px,1.35vw,17px);line-height:1.45;margin:0;
+}
+@media (max-width:860px){ .arc{grid-template-columns:1fr 1fr;} }
+@media (max-width:460px){ .arc{grid-template-columns:1fr;} }
 
 /* ---------- TRUY CAP ---------- */
 :focus-visible{outline:2px solid var(--ac);outline-offset:3px;}
