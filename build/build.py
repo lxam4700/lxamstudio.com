@@ -1342,6 +1342,8 @@ POSTS = [
 <h3>Không biết thứ tự học</h3>
 <p>YouTube gợi ý theo lượt xem, không theo trình độ của bạn. Nhiều người học vật liệu nâng cao trước khi biết đặt đèn, rồi kết luận mình không có năng khiếu. Tôi có viết riêng về <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> và vì sao đảo thứ tự lại hại.</p>
 
+<p>Chọn sai nhánh còn tốn hơn đảo sai thứ tự. Bài <a href="blog-hoc-kem-1-1-do-hoa.html">học kèm 1 kèm 1 đồ hoạ</a> có bảng so sánh bốn nhánh theo số giờ tự làm cần có và theo độ đều của đơn ở thị trường Việt Nam.</p>
+
 <h3>Không ai dạy phần ngoài phần mềm</h3>
 <p>Báo giá thế nào, nhận brief ra sao, file phải chia thế nào để sửa nhanh, trình bày một shot ra sao để người duyệt hiểu ngay. Không có video nào dạy mấy thứ này, vì chúng đến từ việc làm job thật và va vấp.</p>
 
@@ -1672,6 +1674,8 @@ POSTS = [
 
 <h3>Phần nghề nằm ngoài phần mềm</h3>
 <p>Báo giá ra sao, nhận brief thế nào, chia file để sửa nhanh, trình bày một shot cho người duyệt hiểu ngay. Mấy thứ này không có trong giáo trình vì chúng đến từ việc đi làm, và chúng thường là lý do thật khiến một người tự học mãi không chuyển được sang làm có tiền.</p>
+
+<p>Ba thứ trên không chỉ đúng với Blender. Nếu bạn còn đang cân giữa các nhánh khác nhau của ngành, bài <a href="blog-hoc-kem-1-1-do-hoa.html">học kèm 1 kèm 1 đồ hoạ</a> so sánh bốn nhánh thường gặp và nói rõ kèm riêng trả về kết quả nhanh ở nhánh nào, chậm ở nhánh nào.</p>
 
 <figure>
   <img src="assets/porsche-911-pit-lane-toan-canh.webp" alt="Cảnh xe Porsche 911 trong pit lane dựng 3D bằng Blender, ánh sáng chiều và mặt đường ướt" loading="lazy" width="1800" height="1013">
@@ -3168,6 +3172,8 @@ POSTS = [
 
 <p>Nếu mục tiêu của bạn không phải học thêm kỹ thuật mà là ra được bộ hồ sơ đem đi xin việc, hình thức <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a> đi theo một nhịp khác: chốt danh sách món trước, rồi mỗi buổi đẩy một món tiến thêm một bước.</p>
 
+<p>Còn nếu bạn chưa chốt được mình muốn đi nhánh nào trong ngành, nên lùi lại một bước: bài <a href="blog-hoc-kem-1-1-do-hoa.html">học kèm 1 kèm 1 đồ hoạ</a> chia ngành thành bốn nhánh và chỉ ra chặng nào trong mỗi nhánh thì thuê kèm riêng mới đáng tiền.</p>
+
 <blockquote><p>Thứ bạn mua ở một gia sư không phải bài giảng. Bài giảng Blender trên mạng đã quá nhiều và hầu hết miễn phí. Bạn mua khả năng chẩn đoán: có người nhìn file của bạn và nói đúng chỗ sai trong mười phút thay vì để bạn mò ba tuần.</p></blockquote>
 
 <h2>Khi nào bạn thật sự cần một gia sư Blender</h2>
@@ -3430,6 +3436,153 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn muốn biết bộ món hiện tại của mình còn thiếu gì, gửi cho chúng tôi ba bốn hình bạn đang có và một câu nói rõ bạn muốn nhận loại việc nào. Chúng tôi sẽ nói thẳng nên bỏ món nào và thêm món nào, kể cả khi câu trả lời là bạn chưa cần thuê kèm. Muốn xem cách hai hệ chia bài và chữa bài theo tuần, trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
+""",
+    },
+    {
+        "slug": "hoc-kem-1-1-do-hoa",
+        "title": "Học kèm 1 kèm 1 đồ hoạ: chọn nhánh nào trước",
+        "desc": "Học kèm 1 kèm 1 đồ hoạ hợp với nhánh nào, một buổi kèm tử tế gồm những gì, cách thử người dạy trước khi trả tiền và ba lúc chưa nên thuê kèm riêng.",
+        "tag": "Định hướng",
+        "date": "2026-10-23",
+        "date_vn": "23/10/2026",
+        "read": "11 phút đọc",
+        "thumb": "assets/khoa-cua-thong-minh-render-blender.jpg",
+        "faq": [
+            ('Học kèm 1 kèm 1 đồ hoạ khác học lớp nhóm ở điểm nào?',
+             'Lớp nhóm chạy theo giáo trình cố định, bài tập giống nhau cho cả lớp, và bạn phải chờ lượt để được chữa bài. Kèm riêng chạy theo file của bạn: người dạy mở đúng file bạn đang kẹt, sửa ngay trong buổi và giao bài tiếp theo dựa trên lỗi vừa thấy. Đổi lại, kèm riêng hẹp về kiến thức nền và đắt hơn theo giờ.'),
+            ('Nên chọn nhánh đồ hoạ nào nếu muốn kèm riêng để sớm nhận việc?',
+             'Theo những nhóm chúng tôi đã kèm, nhánh dựng hình sản phẩm 3D và nhánh thiết kế bao bì thường có đơn đều hơn ở thị trường Việt Nam, nên người cần thu nhập sớm hay chọn hai nhánh này. Nhánh minh hoạ và nhánh nhân vật thú vị hơn nhưng đường ra việc dài hơn và cạnh tranh rộng hơn.'),
+            ('Chưa biết gì về đồ hoạ có nên học kèm 1 kèm 1 luôn không?',
+             'Không nên. Giai đoạn làm quen công cụ, học phím tắt và dựng vài món đầu tiên có đủ tài liệu miễn phí, trả tiền theo giờ cho phần đó là lãng phí. Mốc hợp lý để bắt đầu kèm riêng là khi bạn đã tự làm xong ít nhất một món và tự thấy nó chưa đạt nhưng không chỉ ra được vì sao.'),
+            ('Học kèm 1 kèm 1 đồ hoạ cần mỗi tuần bao nhiêu giờ tự làm?',
+             'Ước lượng từ các nhóm chúng tôi kèm là khoảng tám tới mười hai giờ tự làm cho mỗi buổi kèm một tuần. Dưới bốn giờ thì buổi kèm sau thường biến thành buổi nhắc lại buổi trước, và tiền đó nên để dành tới lúc lịch của bạn rộng hơn.'),
+            ('Học kèm online có kém hơn kèm trực tiếp không?',
+             'Với đồ hoạ thì gần như không, vì phần lớn thời gian là hai người cùng nhìn một màn hình. Điều kiện cần chỉ là gọi video ổn định và quyền điều khiển màn hình khi người dạy cần sửa trực tiếp trong file. Phần nặng là kết xuất vẫn chạy trên máy bạn chứ không qua đường truyền.'),
+        ],
+        "body": """
+<p class="lead">Học kèm 1 kèm 1 đồ hoạ là trả tiền theo giờ để một người làm nghề mở đúng file bạn đang kẹt và sửa ngay trong buổi. Nó đáng tiền khi bạn đã tự làm được vài món nhưng không tự chỉ ra được vì sao chúng chưa đạt. Việc khó nhất không phải tìm người dạy, mà là chốt trước xem bạn muốn kèm nhánh nào trong đồ hoạ.</p>
+
+<p>Đồ hoạ là một cái tên rất rộng. Người kèm giỏi nhánh thiết kế nhận diện có thể không giúp được gì cho một người muốn dựng hình sản phẩm, và ngược lại. Bài này chia đồ hoạ thành bốn nhánh thường gặp ở Việt Nam, nói rõ kèm riêng hợp với nhánh nào, một buổi kèm tử tế gồm những gì, và ba tình huống chúng tôi khuyên bạn chưa nên trả tiền.</p>
+
+<p>Chúng tôi không nêu mức giá trong bài, vì giá thay đổi theo thời điểm, theo nhánh và theo việc buổi học có chữa file thật hay chỉ giảng lý thuyết.</p>
+
+<h2>Học kèm 1 kèm 1 đồ hoạ thật ra mua cái gì</h2>
+
+<p>Bạn không mua kiến thức. Kiến thức đồ hoạ gần như đã miễn phí hết trên mạng, bằng cả tiếng Việt lẫn tiếng Anh, và nhiều hơn số bạn kịp xem.</p>
+
+<p>Thứ bạn mua là ba món khác: thứ tự học, phản hồi trên đúng file của bạn, và thời gian không bị mò. Một người làm nghề nhìn file của bạn vài phút là biết bạn đang sai ở khâu nào, trong khi bạn có thể mất ba tuần để tự đoán ra.</p>
+
+<blockquote><p>Người kèm không làm bạn giỏi nhanh hơn. Người kèm làm bạn đi sai đường ít hơn. Đó là hai việc khác nhau, và chỉ việc thứ hai mới đáng trả tiền theo giờ.</p></blockquote>
+
+<h3>Phần kèm riêng không mua được</h3>
+<p>Số giờ ngồi vào bàn vẫn là của bạn, không ai thay được. Nếu tuần nào bạn cũng tới buổi kèm với đúng file của tuần trước, buổi kèm sẽ thành buổi nghe lại một lời nhắc cũ. Hình thức kèm riêng nói chung được mô tả kỹ hơn trong bài <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a>, còn bài này tập trung vào phần chọn nhánh.</p>
+
+<h2>Bốn nhánh đồ hoạ và nhánh nào hợp với kèm riêng</h2>
+
+<p>Chia nhánh theo thứ thị trường mua, không theo tên phần mềm.</p>
+
+<h3>Nhánh thiết kế hai chiều</h3>
+<p>Nhận diện thương hiệu, ấn phẩm, bao bì, giao diện. Nhánh này nặng về tư duy bố cục và chữ, nhẹ về kỹ thuật phần mềm. Kèm riêng ở đây chủ yếu là chữa mắt nhìn, nên hiệu quả rất phụ thuộc vào việc người kèm có chịu nói thẳng hay không.</p>
+
+<h3>Nhánh dựng hình sản phẩm ba chiều</h3>
+<p>Ảnh bán hàng, ảnh bao bì, ảnh thiết bị, phối cảnh trưng bày. Nhánh này kỹ thuật nhiều hơn, nên kèm riêng cho kết quả rõ nhất vì lỗi thường cụ thể và sửa được ngay trong buổi: lưới sai, cạnh gãy, vật liệu sai, ánh sáng phẳng.</p>
+
+<h3>Nhánh chuyển động</h3>
+<p>Đồ hoạ chuyển động, dựng TVC ngắn, hiệu ứng. Kèm riêng hiệu quả ở khâu nhịp và dựng cảnh, nhưng tốn thời gian hơn vì mỗi lần sửa đều phải kết xuất lại mới thấy.</p>
+
+<h3>Nhánh minh hoạ và nhân vật</h3>
+<p>Vẽ minh hoạ, dựng nhân vật, tạo hình. Nhánh này cần nhiều giờ luyện tay nhất và phần kèm riêng khó đẩy nhanh được, vì cái thiếu thường là số giờ chứ không phải kiến thức.</p>
+
+<p>Nếu bạn chưa chốt được nhánh, đừng thuê kèm vội. Đọc phần hướng nghề trong <a href="cam-nang.html">cẩm nang học Blender</a> và chốt hướng trước, vì chọn sai nhánh làm hỏng cả một quý chứ không chỉ một buổi học.</p>
+
+<h2>Bảng so sánh bốn nhánh đồ hoạ khi học kèm riêng</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Thiết kế 2D</th><th>Dựng hình sản phẩm 3D</th><th>Chuyển động</th><th>Minh hoạ, nhân vật</th></tr></thead>
+<tbody>
+<tr><td>Lỗi có sửa ngay trong buổi được không</td><td>Một phần</td><td>Gần như luôn được</td><td>Chậm, phải kết xuất lại</td><td>Khó, phụ thuộc tay nghề</td></tr>
+<tr><td>Phần kèm riêng giúp nhiều nhất</td><td>Mắt nhìn bố cục</td><td>Lưới, vật liệu, ánh sáng</td><td>Nhịp và dựng cảnh</td><td>Sửa hình khối</td></tr>
+<tr><td>Số giờ tự làm mỗi tuần nên có</td><td>Sáu tới tám giờ</td><td>Tám tới mười hai giờ</td><td>Mười giờ trở lên</td><td>Mười giờ trở lên</td></tr>
+<tr><td>Độ đều của đơn ở thị trường Việt Nam</td><td>Đều</td><td>Đều</td><td>Theo mùa chiến dịch</td><td>Thưa hơn</td></tr>
+<tr><td>Thời gian ước lượng để có món đầu nộp được</td><td>Bốn tới tám tuần</td><td>Tám tới mười hai tuần</td><td>Mười tới mười sáu tuần</td><td>Rất khó dự đoán</td></tr>
+<tr><td>Kèm riêng đáng tiền nhất ở chặng</td><td>Khi đã có vài bản thiết kế</td><td>Khi đã dựng xong món đầu</td><td>Khi đã làm được một đoạn ngắn</td><td>Sau vài trăm giờ luyện</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không nói nhánh nào hay hơn. Nó nói một điều: kèm riêng trả về kết quả nhanh nhất ở nhánh mà lỗi cụ thể và sửa được ngay, và chậm nhất ở nhánh mà cái thiếu là số giờ luyện tay. Hai cột giữa là lý do phần lớn người tìm tới chúng tôi đều nằm ở nhánh ba chiều.</p>
+
+<h2>Một buổi học kèm 1 kèm 1 đồ hoạ nên diễn ra thế nào</h2>
+
+<p>Nếu buổi kèm của bạn chỉ là nghe giảng rồi xem người dạy thao tác, bạn đang trả giá theo giờ cho thứ một video miễn phí làm được. Một buổi tử tế có bốn phần.</p>
+
+<figure>
+  <img src="assets/volvo-s90-render-blender.jpg" alt="Ảnh kết xuất xe Volvo S90 màu bạc trong không gian tối, đèn pha xanh sáng và một mảng đèn ấm hắt từ bên phải" loading="lazy" width="1600" height="900">
+  <figcaption><strong>Một bài chữa ánh sáng điển hình trong dự án Volvo S90 của LXAM Studio.</strong> Dạng hình này là ví dụ rõ cho việc kèm riêng làm được gì: cùng một file, chỉ đổi hướng nguồn sáng chính và độ lớn tấm hắt là hình chuyển hẳn chất, và đó là thứ rất khó tự nhận ra khi ngồi một mình.</figcaption>
+</figure>
+
+<p>Mười lăm phút đầu là soát bài cũ: mở file bạn làm giữa hai buổi, nói rõ chỗ nào đạt, chỗ nào chưa. Phần giữa là sửa trực tiếp trong file của bạn, không phải trong file mẫu của người dạy. Phần ba là một mẩu kỹ thuật mới, chỉ dạy khi món đang làm cần tới nó. Phần cuối là giao bài có hạn nộp cụ thể.</p>
+
+<p>Thiếu phần cuối là lỗi hay gặp nhất. Không có bài giao và hạn nộp thì tuần sau bạn quay lại với đúng file cũ, và cả hai bên cùng mất buổi. Cách người dạy kiểm soát phần này là thứ nên hỏi ngay từ buổi tư vấn, cùng với các câu trong bài <a href="blog-gia-su-blender.html">gia sư Blender</a>.</p>
+
+<h2>Danh sách kiểm tra trước khi chọn người kèm</h2>
+
+<p>Chạy qua danh sách này với bất kỳ ai nhận kèm, kể cả với chúng tôi. Người làm nghề trả lời được hết, kể cả câu bất lợi cho họ.</p>
+
+<ul>
+<li>Người dạy cho xem một file gốc của chính họ chứ không chỉ ảnh đã kết xuất?</li>
+<li>Buổi kèm có mở file của tôi và sửa trực tiếp, hay chỉ giảng rồi tôi tự về làm?</li>
+<li>Giữa hai buổi tôi nộp gì, và bao lâu thì nhận được phản hồi?</li>
+<li>Người dạy có làm việc thật trong nhánh tôi chọn, hay chỉ dạy nhánh đó?</li>
+<li>Nếu sau bốn buổi tôi thấy không hợp thì dừng được không, cơ chế thế nào?</li>
+<li>Sau khi hết buổi, tôi còn được hỏi lại trong bao lâu?</li>
+</ul>
+
+<p>Câu thứ tư quan trọng hơn vẻ ngoài của nó. Trong đồ hoạ, người đang nhận việc thật biết thị trường trả tiền cho cái gì, còn người chỉ dạy thì dễ truyền lại tiêu chuẩn của một cuộc thi hoặc của một bài tập trường lớp. Dạng việc thật mà một studio nhận được liệt kê ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>, bạn có thể dùng đó làm thước đo khi hỏi.</p>
+
+<h2>Khi nào chưa nên học kèm 1 kèm 1 đồ hoạ, nói thẳng</h2>
+
+<p>Ba tình huống dưới đây, trả tiền bây giờ là lãng phí.</p>
+
+<p><strong style="color:#fff;">Bạn chưa làm xong món nào.</strong> Giai đoạn làm quen giao diện không cần người kèm. Hãy tự đi một tháng theo một lộ trình có thứ tự, ví dụ bảy bước trong bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>, rồi mới tính chuyện thuê kèm.</p>
+
+<p><strong style="color:#fff;">Bạn chưa chốt nhánh.</strong> Kèm riêng là hình thức hẹp. Nếu còn phân vân giữa bốn nhánh ở trên, mỗi buổi kèm sẽ bị kéo sang một hướng khác và bạn trả tiền cho sự lan man. Ba tháng đầu nên đi thế nào thì bài <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a> có mô tả thứ tự cụ thể.</p>
+
+<p><strong style="color:#fff;">Bạn không có tám giờ mỗi tuần.</strong> Số giờ tự làm là phần kèm riêng không thay thế được. Nếu lịch hiện tại chỉ cho hai ba giờ, một lớp có nhịp và bài tập sẽ hợp hơn, và phần so sánh trong bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm 3D</a> nói rõ khi nào nên chọn hướng nào.</p>
+
+<h2>Nếu bạn chọn nhánh ba chiều, đi tiếp đường nào</h2>
+
+<p>Với người chọn nhánh dựng hình sản phẩm, thứ tự chúng tôi thường khuyên là nền trước, hồ sơ sau. Nền là dựng khối, vật liệu, ánh sáng và kết xuất, học theo lớp có bài tập thì rẻ và chắc hơn kèm riêng. Hồ sơ là bốn tới sáu món hoàn chỉnh, và đó mới là chặng kèm riêng phát huy nhiều nhất.</p>
+
+<p>Chặng hồ sơ được mô tả theo tuần trong bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>, còn nội dung phần nền của một lớp hướng sản phẩm nằm trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>. Đi đúng thứ tự này thường rẻ hơn đáng kể so với thuê kèm ngay từ buổi đầu.</p>
+
+<h2>Học kèm 1 kèm 1 đồ hoạ chỉ rút ngắn đoạn đi lạc</h2>
+
+<p>Nói lại một lần nữa cho rõ. Kèm riêng rút ngắn đoạn bạn đi lạc, chỉ trong mười phút ra chỗ bạn có thể mò ba tuần. Nhưng toàn bộ số giờ dựng, sửa và kết xuất vẫn là của bạn, và không có hình thức học nào mua được phần đó.</p>
+
+<p>Nếu ai hứa với bạn một bộ kỹ năng đồ hoạ dùng được mà không cần bạn bỏ ra hàng trăm giờ, đó là lời nên bị hỏi lại rất kỹ. Mốc thời gian thực tế cho từng chặng nằm trong bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a>.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Học kèm 1 kèm 1 đồ hoạ khác học lớp nhóm ở điểm nào?</p>
+<p>Lớp nhóm chạy theo giáo trình cố định, bài tập giống nhau cho cả lớp, và bạn phải chờ lượt để được chữa bài. Kèm riêng chạy theo file của bạn: người dạy mở đúng file bạn đang kẹt, sửa ngay trong buổi và giao bài tiếp theo dựa trên lỗi vừa thấy. Đổi lại, kèm riêng hẹp về kiến thức nền và đắt hơn theo giờ.</p>
+
+<p class="faq-q">Nên chọn nhánh đồ hoạ nào nếu muốn kèm riêng để sớm nhận việc?</p>
+<p>Theo những nhóm chúng tôi đã kèm, nhánh dựng hình sản phẩm 3D và nhánh thiết kế bao bì thường có đơn đều hơn ở thị trường Việt Nam, nên người cần thu nhập sớm hay chọn hai nhánh này. Nhánh minh hoạ và nhánh nhân vật thú vị hơn nhưng đường ra việc dài hơn và cạnh tranh rộng hơn.</p>
+
+<p class="faq-q">Chưa biết gì về đồ hoạ có nên học kèm 1 kèm 1 luôn không?</p>
+<p>Không nên. Giai đoạn làm quen công cụ, học phím tắt và dựng vài món đầu tiên có đủ tài liệu miễn phí, trả tiền theo giờ cho phần đó là lãng phí. Mốc hợp lý để bắt đầu kèm riêng là khi bạn đã tự làm xong ít nhất một món và tự thấy nó chưa đạt nhưng không chỉ ra được vì sao.</p>
+
+<p class="faq-q">Học kèm 1 kèm 1 đồ hoạ cần mỗi tuần bao nhiêu giờ tự làm?</p>
+<p>Ước lượng từ các nhóm chúng tôi kèm là khoảng tám tới mười hai giờ tự làm cho mỗi buổi kèm một tuần. Dưới bốn giờ thì buổi kèm sau thường biến thành buổi nhắc lại buổi trước, và tiền đó nên để dành tới lúc lịch của bạn rộng hơn.</p>
+
+<p class="faq-q">Học kèm online có kém hơn kèm trực tiếp không?</p>
+<p>Với đồ hoạ thì gần như không, vì phần lớn thời gian là hai người cùng nhìn một màn hình. Điều kiện cần chỉ là gọi video ổn định và quyền điều khiển màn hình khi người dạy cần sửa trực tiếp trong file. Phần nặng là kết xuất vẫn chạy trên máy bạn chứ không qua đường truyền.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn chưa chắc mình nên vào nhánh nào, gửi cho chúng tôi hai ba món bạn đã làm và một câu nói rõ bạn muốn nhận loại việc gì. Chúng tôi sẽ nói thẳng bạn hợp nhánh nào và đang thiếu gì, kể cả khi câu trả lời là bạn chưa cần thuê kèm. Muốn xem cách một chương trình chia bài và chữa bài theo tuần, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
 """,
     },
 ]
