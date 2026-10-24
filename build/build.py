@@ -372,8 +372,8 @@ POSTS = [
         "tag": "Lộ trình",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "updated": "2026-10-08",
-        "updated_vn": "08/10/2026",
+        "updated": "2026-10-24",
+        "updated_vn": "24/10/2026",
         "read": "12 phút đọc",
         "thumb": "assets/2cdbf5f9.jpg",
         "faq": [
@@ -427,6 +427,7 @@ POSTS = [
 
 <h3>5. Hard-surface: bề mặt cứng</h3>
 <p>Đến đây bạn mới nên đụng vào sản phẩm công nghiệp: máy móc, thiết bị, xe cộ. Hard-surface đòi hỏi kỷ luật về topology và bevel mà ba bước đầu đã rèn cho bạn. Vào sớm hơn, bạn sẽ chỉ tạo ra những khối méo mà không biết vì sao nó méo.</p>
+<p>Chắc tay rồi thì mới tới lúc xem danh sách <a href="blog-add-on-hard-surface-blender.html">add-on hard-surface Blender</a> để bớt thao tác lặp lại. Cài sớm hơn chỉ che được lỗi topology chứ không sửa được, và đó là cái bẫy đắt tiền nhất ở bước này.</p>
 
 <figure>
   <img src="assets/jhm-khoi-kinh-ky-thuat.webp" alt="Chi tiết giá treo kim loại JHM dựng hard-surface bằng Blender, đặt trong khối kính trong suốt trên nền lưới kỹ thuật tối màu" loading="lazy" width="1800" height="1012">
@@ -521,6 +522,8 @@ POSTS = [
 <p>Hết bảy bước, bạn có nền chung. Việc tiếp theo là chọn một mảng để đào sâu, vì thị trường trả tiền cho người chuyên chứ không trả cho người biết đều. Ba hướng phổ biến ở Việt Nam là hình ảnh sản phẩm, phối cảnh sự kiện và triển lãm, và automotive hoặc TVC.</p>
 
 <p>Cách chọn đơn giản nhất là nhìn vào loại công việc thật đang có trên thị trường. Phần <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> của studio liệt kê các dạng đầu việc thường gặp, đọc qua là hình dung được mảng nào hợp với mình. Nếu muốn đi theo đường có lộ trình sẵn thay vì tự ghép, hai hệ trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> được dựng đúng theo thứ tự bảy bước ở trên, chỉ khác là có người chữa bài ở mỗi mốc.</p>
+
+<p>Một cách luyện mắt gần như không tốn gì là mở file dự án thật của người khác ra xem. <a href="blog-kho-hau-truong-overgrown-blender-studio.html">Kho hậu trường OVERGROWN của Blender Studio</a> là bộ file đầy đủ kèm nhật ký sản xuất, tải về rồi lần theo cách họ chia shot và quản lý phiên bản. Muốn tập riêng phần không khí trong một buổi thì xem bài <a href="blog-sau-node-va-mot-hanh-lang.html">sáu node và một hành lang</a>.</p>
 
 <p>Dù chọn đường nào, nên tải <a href="cam-nang.html">cẩm nang Blender</a> để có sẵn checklist lighting và quy trình render dùng khi làm việc thật. Có bảng tra cứu bên cạnh thì bớt được kha khá thời gian mò mẫm ở bước ba và bước bốn.</p>
 
@@ -888,6 +891,8 @@ POSTS = [
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
         "read": "7 phút đọc",
+        "updated": "2026-10-24",
+        "updated_vn": "24/10/2026",
         "thumb": "assets/a77adfda.jpg",
         "sources": [
             ("Blender Studio Opens OVERGROWN's Free Behind-the-Scenes Archive (80 Level)",
@@ -928,7 +933,9 @@ POSTS = [
 
 <p>Cái đáng lấy là <strong style="color:#fff;">cách tổ chức công việc</strong>: chia shot ra sao, quản lý phiên bản thế nào, ai quyết cái gì ở khâu nào. Phần đó dùng được cho mọi thể loại, và là phần khó tự nghĩ ra nhất khi làm một mình.</p>
 
-<p>Nếu bạn chưa rõ mình đang yếu khâu nào để chọn nhật ký mà xem, bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình 7 kỹ năng</a> có thể giúp bạn định vị.</p>
+<p>Nếu bạn chưa rõ mình đang yếu khâu nào để chọn nhật ký mà xem, bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> có thể giúp bạn định vị. Người mới hoàn toàn thì nên đi qua <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a> trước đã, vì xem nhật ký sản xuất khi chưa dựng nổi một khối cơ bản thì chỉ thấy hay mà không rút ra được gì.</p>
+
+<p>Tới phần ánh sáng và compositing, nên mở sẵn <a href="cam-nang.html">cẩm nang Blender</a> để đối chiếu checklist lighting với cách ê-kíp họ làm. Còn nếu bạn muốn có người chữa bài thay vì tự đối chiếu, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> đi theo đúng thứ tự kỹ năng nói ở trên.</p>
 """,
     },
     {
@@ -939,6 +946,8 @@ POSTS = [
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
         "read": "9 phút đọc",
+        "updated": "2026-10-24",
+        "updated_vn": "24/10/2026",
         "thumb": "assets/b64a4cd7.jpg",
         "sources": [
             ("Tools and Tips for Hard-Surface Modeling in Blender (80 Level, Michał Kalisz, CD Projekt Red)",
@@ -989,7 +998,9 @@ POSTS = [
 
 <p>Với người học hard-surface để làm sản phẩm thương mại, tôi chọn: <strong style="color:#fff;">Hard Ops, Boxcutter, MESHMachine</strong>, và chỉ sau khi đã dựng tay được vài món tử tế. Số tiền còn lại để dành mua tham chiếu tốt hoặc một khoá học có người sửa bài, giá trị cao hơn.</p>
 
-<p>Muốn biết hard-surface nằm ở đâu trong lộ trình học, xem <a href="blog-lo-trinh-tu-hoc-blender.html">bài về 7 kỹ năng</a>. Nó là bước thứ năm, và có lý do nó không đứng sớm hơn. Còn nếu bạn đang nhắm hẳn vào mảng hàng tiêu dùng và thiết bị, bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> nói rõ bốn kỹ năng một lớp dạng này phải dạy và chỗ các lớp hay cắt bớt.</p>
+<p>Muốn biết hard-surface nằm ở đâu trong lộ trình học, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>. Nó là bước thứ năm, và có lý do nó không đứng sớm hơn. Còn nếu bạn đang nhắm hẳn vào mảng hàng tiêu dùng và thiết bị, bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> nói rõ bốn kỹ năng một lớp dạng này phải dạy và chỗ các lớp hay cắt bớt.</p>
+
+<p>Nếu chưa dựng tay được vài món tử tế thì chưa phải lúc nghĩ tới add-on. Thứ tự bài tập để qua được mốc đó nằm trong bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a>, dùng được cả khi bạn tự học. Muốn có người soi topology từng tuần thay vì tự đoán, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> chữa bài theo đúng thứ tự đó.</p>
 """,
     },
     {
@@ -1000,6 +1011,8 @@ POSTS = [
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
         "read": "6 phút đọc",
+        "updated": "2026-10-24",
+        "updated_vn": "24/10/2026",
         "thumb": "assets/2cdbf5f9.jpg",
         "sources": [
             ("Blender Guru Shares How to Create The Backrooms Using Blender (80 Level)",
@@ -1046,6 +1059,10 @@ POSTS = [
 <h2>Bài tập</h2>
 
 <p>Lấy một không gian bạn từng dựng thủ công và tự hỏi: nếu chỉ được dùng năm node, phần nào của cảnh này thật sự cần thiết? Trả lời được câu đó, bạn tiết kiệm được vài chục giờ cho mọi dự án sau.</p>
+
+<p>Nguyên tắc này thuộc bước ba và bước bốn trong <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>: biết cái gì không cần dựng là kỹ năng đọc hình, không phải mẹo phần mềm. Nếu cảnh của bạn đang chậm vì dựng quá nhiều thứ người xem không nhìn tới, các cách <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a> chỉ rõ phần nào cắt được mà không ai nhận ra.</p>
+
+<p>Bài tập trên thuộc nhóm bài luyện mắt mà hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> cho làm ngay tuần đầu. Tự luyện thì checklist trong <a href="cam-nang.html">cẩm nang Blender</a> đủ dùng, miễn là bạn chịu viết ra câu trả lời trước khi mở file tham chiếu.</p>
 """,
     },
     {
@@ -1227,6 +1244,8 @@ POSTS = [
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
         "read": "9 phút đọc",
+        "updated": "2026-10-24",
+        "updated_vn": "24/10/2026",
         "thumb": "assets/vplas-hieu-ung-plasma-blender.jpg",
         "body": """
 <p class="lead">Câu hỏi này thường đến kèm một mong đợi ngầm: rằng máy mạnh hơn sẽ làm hình đẹp hơn. Nói thẳng: không. Máy mạnh làm bạn chờ ít hơn. Đẹp hay không nằm ở chỗ khác.</p>
@@ -1247,6 +1266,8 @@ POSTS = [
 
 <h3>GPU: quan trọng nhất</h3>
 <p>Cycles render bằng GPU nhanh hơn CPU nhiều lần. Điều cần chú ý không chỉ là tốc độ mà là <strong style="color:#fff;">dung lượng VRAM</strong>: nếu cảnh không nhét vừa VRAM, render sẽ đổ ngược về RAM hệ thống và chậm đi thảm hại, hoặc lỗi hẳn. Với công việc sản phẩm, 12GB VRAM là mức dễ thở, 24GB thì thoải mái.</p>
+
+<p>Trước khi quyết đổi card, nên thử hết các cách <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a>. Khá nhiều cảnh chậm vì thiết lập sai chứ không vì máy yếu, và máy mới không chữa được nguyên nhân đó, chỉ làm nó đỡ lộ ra trong vài tháng.</p>
 
 <h3>RAM: thứ hai</h3>
 <p>32GB là mức làm việc được. 64GB dành cho cảnh nặng, nhiều texture độ phân giải cao, hoặc khi bạn vừa mở Blender vừa mở phần mềm dựng phim. Thiếu RAM biểu hiện rất khó chịu: máy không báo lỗi, chỉ đơ dần.</p>
@@ -1298,6 +1319,8 @@ POSTS = [
 <hr class="hr">
 
 <p>Tóm lại: bắt đầu bằng máy đang có. Khi nào bạn thấy mình <em>chờ</em> nhiều hơn <em>làm</em>, lúc đó nâng cấp, và nâng GPU trước. Còn nếu vấn đề là hình chưa đẹp thì máy mới không giải quyết được; cái cần xem lại là ánh sáng, xem bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>.</p>
+
+<p>Ba cách tiết kiệm ở trên nằm trong checklist render của <a href="cam-nang.html">cẩm nang Blender</a>, tải về để cạnh máy lúc làm thì đỡ phải nhớ. Nếu bạn vẫn không chắc máy đang có đủ cho mảng mình nhắm tới, phần mô tả hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ cấu hình tối thiểu cho từng hệ.</p>
 """,
     },
     {
@@ -3904,7 +3927,7 @@ def jsonld_simple(kind, name, desc, url):
 def main():
     write("ve-chung-toi.html",
           head("Về LXAM Studio | Studio visual 3D Việt Nam",
-               "LXAM Studio: studio visual 3D tại Việt Nam làm TVC, render sản phẩm và animation kỹ thuật, đồng thời đào tạo Blender 1:1. Founder, hệ triết lý và quan điểm nghề.",
+               "LXAM Studio là studio visual 3D tại Việt Nam: TVC, render sản phẩm, phối cảnh sự kiện và dạy Blender 1 kèm 1. Founder, hệ triết lý và quan điểm nghề.",
                "about",
                canonical="ve-chung-toi.html",
                og_image="assets/a26a7e39.jpg",
