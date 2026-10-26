@@ -3078,7 +3078,7 @@ POSTS = [
 </table>
 </div>
 
-<p>Bảng này không nói kiểu nào tốt hơn. Nó chỉ ra lỗi chọn lớp phổ biến nhất: đăng ký một lớp tổng quát trong khi mục tiêu thật là đi làm mảng sản phẩm, rồi mất thêm vài tháng học bù. Nếu bạn còn đang phân vân giữa các hướng, bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> mô tả bức tranh rộng hơn trước khi bạn thu hẹp lại.</p>
+<p>Bảng này không nói kiểu nào tốt hơn. Nó chỉ ra lỗi chọn lớp phổ biến nhất: đăng ký một lớp tổng quát trong khi mục tiêu thật là đi làm mảng sản phẩm, rồi mất thêm vài tháng học bù. Nếu bạn còn đang phân vân giữa các hướng, bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a> mô tả bức tranh rộng hơn trước khi bạn thu hẹp lại. Còn nếu bạn chỉ cần đi sâu đúng một hai món và muốn người chữa file từng tuần, cột thứ ba của bảng được nói kỹ trong bài <a href="blog-kem-rieng-dung-hinh-san-pham.html">kèm riêng dựng hình sản phẩm</a>.</p>
 
 <figure>
   <img src="assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp" alt="Hình tách rời các linh kiện khoá cửa thông minh dựng bằng Blender, thân khoá, bàn phím cảm ứng và tay nắm xếp theo trục dọc" loading="lazy" width="1800" height="1013">
@@ -3209,7 +3209,7 @@ POSTS = [
 
 <p><strong style="color:#fff;">Bạn đã quen phần mềm khác và muốn chuyển sang.</strong> Người từng làm 3ds Max hoặc Cinema 4D không cần học lại tư duy 3D, chỉ cần ánh xạ thao tác và hiểu khác biệt về bộ kết xuất. Ngồi lớp người mới là phí thời gian rõ ràng.</p>
 
-<p><strong style="color:#fff;">Bạn cần dựng đúng một loại món cho công việc.</strong> Ví dụ chỉ cần dựng được sản phẩm của chính công ty mình. Trường hợp này phần kèm riêng bám sát thực tế hơn hẳn, và nếu bạn muốn xem một chương trình bài bản hơn cho hướng này thì bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> mô tả đủ các khâu cần có.</p>
+<p><strong style="color:#fff;">Bạn cần dựng đúng một loại món cho công việc.</strong> Ví dụ chỉ cần dựng được sản phẩm của chính công ty mình. Trường hợp này phần kèm riêng bám sát thực tế hơn hẳn, và nếu bạn muốn xem một chương trình bài bản hơn cho hướng này thì bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> mô tả đủ các khâu cần có, còn cách kèm theo đúng một món thì nằm ở bài <a href="blog-kem-rieng-dung-hinh-san-pham.html">kèm riêng dựng hình sản phẩm</a>.</p>
 
 <h2>Khi nào chưa nên thuê gia sư, nói thẳng</h2>
 
@@ -3406,7 +3406,7 @@ POSTS = [
 
 <p>Trong các nhóm chúng tôi từng kèm, người chọn hướng sản phẩm thường nhận việc đầu tiên sớm hơn người chọn hướng nhân vật hoặc hướng phim. Lý do không phải vì sản phẩm dễ hơn, mà vì thị trường Việt Nam mua dạng hình này nhiều hơn.</p>
 
-<p>Nhu cầu thật nằm ở ảnh bán hàng, ảnh bao bì, ảnh thiết bị và phối cảnh trưng bày. Đó là lý do chúng tôi hay khuyên người cần việc sớm nhắm hướng này trước, kể cả khi sở thích của họ là hướng khác. Nội dung một lớp hướng sản phẩm được mô tả trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, còn dạng việc thật mà studio nhận thì nằm ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>.</p>
+<p>Nhu cầu thật nằm ở ảnh bán hàng, ảnh bao bì, ảnh thiết bị và phối cảnh trưng bày. Đó là lý do chúng tôi hay khuyên người cần việc sớm nhắm hướng này trước, kể cả khi sở thích của họ là hướng khác. Nội dung một lớp hướng sản phẩm được mô tả trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, còn dạng việc thật mà studio nhận thì nằm ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>. Nếu bạn chỉ cần đi sâu một hai món thay vì cả bộ hồ sơ, hình thức <a href="blog-kem-rieng-dung-hinh-san-pham.html">kèm riêng dựng hình sản phẩm</a> sát hơn.</p>
 
 <h2>Danh sách kiểm tra trước buổi kèm đầu tiên</h2>
 
@@ -3508,7 +3508,7 @@ POSTS = [
 <p>Nhận diện thương hiệu, ấn phẩm, bao bì, giao diện. Nhánh này nặng về tư duy bố cục và chữ, nhẹ về kỹ thuật phần mềm. Kèm riêng ở đây chủ yếu là chữa mắt nhìn, nên hiệu quả rất phụ thuộc vào việc người kèm có chịu nói thẳng hay không.</p>
 
 <h3>Nhánh dựng hình sản phẩm ba chiều</h3>
-<p>Ảnh bán hàng, ảnh bao bì, ảnh thiết bị, phối cảnh trưng bày. Nhánh này kỹ thuật nhiều hơn, nên kèm riêng cho kết quả rõ nhất vì lỗi thường cụ thể và sửa được ngay trong buổi: lưới sai, cạnh gãy, vật liệu sai, ánh sáng phẳng.</p>
+<p>Ảnh bán hàng, ảnh bao bì, ảnh thiết bị, phối cảnh trưng bày. Nhánh này kỹ thuật nhiều hơn, nên kèm riêng cho kết quả rõ nhất vì lỗi thường cụ thể và sửa được ngay trong buổi: lưới sai, cạnh gãy, vật liệu sai, ánh sáng phẳng. Cách một chu kỳ kèm cho nhánh này chia theo tuần nằm trong bài <a href="blog-kem-rieng-dung-hinh-san-pham.html">kèm riêng dựng hình sản phẩm</a>.</p>
 
 <h3>Nhánh chuyển động</h3>
 <p>Đồ hoạ chuyển động, dựng TVC ngắn, hiệu ứng. Kèm riêng hiệu quả ở khâu nhịp và dựng cảnh, nhưng tốn thời gian hơn vì mỗi lần sửa đều phải kết xuất lại mới thấy.</p>
@@ -3606,6 +3606,159 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn chưa chắc mình nên vào nhánh nào, gửi cho chúng tôi hai ba món bạn đã làm và một câu nói rõ bạn muốn nhận loại việc gì. Chúng tôi sẽ nói thẳng bạn hợp nhánh nào và đang thiếu gì, kể cả khi câu trả lời là bạn chưa cần thuê kèm. Muốn xem cách một chương trình chia bài và chữa bài theo tuần, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
+""",
+    },
+    {
+        "slug": "kem-rieng-dung-hinh-san-pham",
+        "title": "Kèm riêng dựng hình sản phẩm: học gì, bao lâu",
+        "desc": "Kèm riêng dựng hình sản phẩm dạy gì, một chu kỳ kèm chia theo tuần ra sao, bao lâu thì ra ảnh dùng được và ba lúc chưa nên trả tiền. Có bảng so sánh.",
+        "tag": "Định hướng",
+        "date": "2026-10-26",
+        "date_vn": "26/10/2026",
+        "read": "11 phút đọc",
+        "thumb": "assets/jhm-chi-tiet-lo-bat.webp",
+        "faq": [
+            ('Kèm riêng dựng hình sản phẩm khác lớp nhóm ở điểm nào?',
+             'Lớp nhóm dạy theo giáo trình chung, ai cũng dựng cùng một mẫu tập. Kèm riêng lấy chính sản phẩm bạn cần dựng làm bài học, nên mỗi buổi đều mở file của bạn và sửa trực tiếp trên đó. Đổi lại, kèm riêng hẹp hơn về kiến thức: người kèm chỉ dạy phần mà món đang dựng cần tới.'),
+            ('Kèm riêng dựng hình sản phẩm mất bao lâu thì ra ảnh dùng được?',
+             'Ước lượng từ các nhóm chúng tôi đã kèm là khoảng sáu tới mười tuần cho hai tới ba món hoàn chỉnh, với nhịp tám tới mười hai giờ tự làm mỗi tuần. Người đã quen giao diện Blender thường rơi vào đầu khoảng, người vừa học xong phần cơ bản thì rơi vào cuối khoảng.'),
+            ('Chưa biết Blender có nên thuê kèm riêng luôn không?',
+             'Không nên. Phần làm quen giao diện, phím tắt và dựng khối cơ bản không cần người kèm, tài liệu miễn phí đủ dùng. Mốc hợp lý để bắt đầu kèm là khi bạn đã tự dựng xong ít nhất một sản phẩm đơn giản và tự thấy nó chưa giống ảnh thật nhưng không chỉ ra được vì sao.'),
+            ('Kèm riêng dựng hình sản phẩm có cần máy mạnh không?',
+             'Cần ít hơn nhiều người tưởng. Phần dựng khối, vật liệu và bố cục chạy được trên máy tầm trung. Chỉ khâu kết xuất cuối là chịu ảnh hưởng của card đồ hoạ, và khâu đó có thể để chạy qua đêm. Máy yếu làm bạn chậm hơn chứ không làm bạn học sai.'),
+            ('Học kèm online có kém hơn kèm trực tiếp không?',
+             'Với dựng hình sản phẩm thì gần như không, vì phần lớn buổi kèm là hai người cùng nhìn một màn hình và sửa trong cùng một file. Điều kiện cần là gọi video ổn định và quyền điều khiển màn hình khi người dạy cần chỉnh trực tiếp. Phần nặng là kết xuất vẫn chạy trên máy bạn.'),
+        ],
+        "body": """
+<p class="lead">Kèm riêng dựng hình sản phẩm là hình thức học kèm một thầy một học viên, lấy đích đến là một ảnh sản phẩm dùng được chứ không phải lấy đích đến là học hết một giáo trình. Mỗi buổi mở đúng file bạn đang dựng, sửa chỗ sai ngay trong file đó, rồi giao việc cho tuần sau. Nó đáng tiền khi bạn đã dựng được vài thứ nhưng ảnh ra vẫn nhìn ra là hình 3D.</p>
+
+<p>Bài này nói rõ một chương trình kèm riêng dạy những gì, chu kỳ kèm chia theo tuần trông thế nào, cách kiểm tra người nhận kèm trước khi trả tiền, và ba tình huống chúng tôi khuyên bạn chưa nên thuê ai cả. Chúng tôi không nêu mức giá cụ thể, vì giá thay đổi theo thời điểm và theo việc buổi học có chữa file thật hay chỉ xem bài giảng.</p>
+
+<h2>Kèm riêng dựng hình sản phẩm là gì</h2>
+
+<p>Điểm khác biệt không nằm ở số người trong lớp. Nó nằm ở thứ được coi là đầu ra của buổi học.</p>
+
+<h3>Lớp nhóm lấy giáo trình làm đầu ra</h3>
+<p>Một lớp dựng hình sản phẩm bình thường kết thúc khi đi hết các chương: khối, vật liệu, ánh sáng, kết xuất. Mẫu tập là mẫu chung, ai cũng dựng cùng một chai nước hoặc cùng một hộp bao bì. Bạn ra khỏi lớp với nhiều kỹ năng rời và thường chưa có ảnh nào của riêng mình đủ sạch để đưa cho khách.</p>
+
+<h3>Kèm riêng lấy món bạn đang dựng làm đầu ra</h3>
+<p>Buổi đầu thường không dạy gì. Buổi đầu là ngồi chọn món và chốt góc ảnh. Từ buổi hai trở đi, mỗi buổi đều đẩy món đó tiến một bước: hôm nay sửa tỉ lệ, tuần sau sửa bề mặt kim loại, tuần sau nữa sửa hướng đèn. Kỹ thuật được dạy khi món cần tới, không dạy trước.</p>
+
+<p>Đây cũng là nhược điểm thật của hình thức này, cần nói ngay: bạn học hẹp. Nếu muốn nền tảng rộng và có nhịp lớp, một chương trình có bài tập theo tuần phục vụ bạn tốt hơn, và hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần để bạn tự so.</p>
+
+<figure>
+  <img src="assets/vplas-cong-sac-chi-tiet.webp" alt="Ảnh chi tiết cổng sạc của một thiết bị dựng 3D bằng Blender, bề mặt nhựa nhám và viền kim loại" loading="lazy" width="1800" height="1012">
+  <figcaption><strong>Chi tiết quyết định ảnh sản phẩm.</strong> Người mới thường nghĩ phần khó là dựng hình. Thực tế phần khó là độ nhám của bề mặt, bán kính các góc bo và hướng đèn làm lộ chất liệu, và đó đúng là những thứ dễ chỉ nhất khi ngồi cạnh nhau.</figcaption>
+</figure>
+
+<h2>Một chương trình kèm riêng dựng hình sản phẩm dạy gì</h2>
+
+<p>Nội dung thay đổi theo món bạn chọn, nhưng bốn khối dưới đây gần như luôn có. Thứ tự này cũng là thứ tự nên đi, vì sai ở khối trước thì khối sau càng làm càng phải quay lại.</p>
+
+<h3>Khối thô và tỉ lệ</h3>
+<p>Dựng lại sản phẩm bằng hình khối đơn giản, đúng kích thước thật, trước khi làm bất cứ chi tiết nào. Khâu này bị bỏ qua nhiều nhất và lại là khâu quyết định nhiều nhất. Một món sai tỉ lệ thì vật liệu và ánh sáng đẹp cỡ nào cũng không cứu được.</p>
+
+<h3>Bề mặt và vật liệu</h3>
+<p>Phần lớn thời gian ở đây là chỉnh độ nhám, chứ không phải chọn màu. Nhựa nhám, nhựa bóng, kim loại xước và kính đều có cách phản chiếu riêng, và người xem nhận ra ngay khi sai, kể cả khi họ không gọi tên được lỗi.</p>
+
+<h3>Ánh sáng và bố cục</h3>
+<p>Một nguồn sáng chính đủ lớn, một nguồn phụ để tách sản phẩm khỏi nền, và các mảng phản chiếu để vẽ đường viền trên thân sản phẩm. Đây là khối mà một buổi kèm tiết kiệm cho bạn nhiều thời gian nhất, vì người kèm chỉ cần kéo đèn vài lần là bạn thấy khác biệt.</p>
+
+<h3>Kết xuất và hậu kỳ</h3>
+<p>Chọn độ nhiễu dừng lại ở đâu, khử nhiễu thế nào, rồi chỉnh tương phản và màu ở bước cuối. Đây là khối ngắn nhất nhưng hay bị làm quá tay, dẫn tới ảnh nhìn gắt và mất chi tiết ở vùng sáng.</p>
+
+<p>Bốn khối này cũng là xương sống của một lớp theo giáo trình, bạn có thể đối chiếu với nội dung trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> để thấy phần nào trùng và phần nào chỉ kèm riêng mới làm được.</p>
+
+<h2>Một chu kỳ kèm riêng chia theo tuần</h2>
+
+<p>Mốc dưới đây là ước lượng từ các nhóm chúng tôi đã kèm, với nhịp một buổi mỗi tuần và tám tới mười hai giờ tự làm giữa hai buổi. Số giờ tự làm là biến quyết định, không phải số buổi.</p>
+
+<h3>Tuần một tới tuần ba: một món đơn giản, làm cho xong</h3>
+<p>Chọn một sản phẩm có hình khối rõ ràng, ít chi tiết nhỏ. Mục tiêu của ba tuần này không phải ảnh đẹp, mà là đi hết một lượt từ khối thô tới ảnh cuối. Nhiều người học hai năm vẫn chưa làm xong một lượt trọn vẹn nào.</p>
+
+<h3>Tuần bốn tới tuần bảy: một món có chất liệu khó</h3>
+<p>Thêm kính, kim loại xước hoặc nhãn in. Đây là chặng mà kỹ thuật thực sự được dạy, vì món đã đủ phức tạp để cần tới. Cũng là chặng dễ bỏ giữa đường nhất, nên hạn nộp giữa hai buổi cần rõ ràng.</p>
+
+<h3>Tuần tám tới tuần mười: một món theo yêu cầu</h3>
+<p>Món cuối nên do người kèm đưa ảnh tham chiếu, không do bạn chọn. Đó là bài kiểm tra gần nhất với việc thật, vì khách cũng đưa ảnh tham chiếu rồi yêu cầu bạn làm ra đúng cái đó.</p>
+
+<blockquote><p>Sửa tỉ lệ ở giai đoạn khối thô mất của bạn mười phút. Sửa tỉ lệ sau khi đã làm vật liệu và ánh sáng mất của bạn cả buổi.</p></blockquote>
+
+<h2>Bảng so sánh ba cách học dựng hình sản phẩm</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Tự học theo video</th><th>Lớp nhóm có bài tập</th><th>Kèm riêng dựng hình sản phẩm</th></tr></thead>
+<tbody>
+<tr><td>Món được dựng là của ai</td><td>Thường trùng bài của video</td><td>Trùng mẫu tập của lớp</td><td>Do bạn chọn</td></tr>
+<tr><td>Số lần được chữa file</td><td>Gần như không</td><td>Có, phải chờ lượt</td><td>Nhiều nhất</td></tr>
+<tr><td>Độ rộng kiến thức</td><td>Rời rạc</td><td>Rộng nhất</td><td>Hẹp, chỉ dạy cái món cần</td></tr>
+<tr><td>Thời gian ra hai tới ba món</td><td>Rất khó dự đoán</td><td>Thường dài hơn một khoá</td><td>Ước lượng sáu tới mười tuần</td></tr>
+<tr><td>Chi phí theo buổi</td><td>Gần bằng không</td><td>Trung bình</td><td>Cao nhất</td></tr>
+<tr><td>Nguy cơ bỏ giữa chừng</td><td>Cao nhất</td><td>Trung bình</td><td>Thấp, vì có hạn nộp riêng</td></tr>
+<tr><td>Hợp nhất khi</td><td>Bạn mới làm quen phần mềm</td><td>Bạn cần nền tảng và nhịp học</td><td>Bạn đã kẹt lâu hoặc có hạn nộp</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không chọn hộ bạn. Nó chỉ nói một điều: kèm riêng mua thời gian, lớp nhóm mua nền tảng. Nếu bạn còn phân vân giữa hai hướng, phần so sánh trong bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a> đi sâu hơn vào chi phí cơ hội của từng cách.</p>
+
+<h2>Danh sách kiểm tra trước khi chọn người kèm</h2>
+
+<p>Chạy qua danh sách này với bất kỳ ai nhận kèm riêng, kể cả với chúng tôi. Người làm nghề trả lời được hết, kể cả câu bất lợi cho họ.</p>
+
+<ul>
+<li>Buổi đầu có chốt món và góc ảnh không, hay bắt đầu dạy kỹ thuật ngay?</li>
+<li>Người kèm cho xem một file gốc của chính họ chứ không chỉ ảnh đã kết xuất?</li>
+<li>Giữa hai buổi tôi nộp gì, và nhận phản hồi trong bao lâu?</li>
+<li>Buổi kèm có sửa trực tiếp trong file của tôi, hay chỉ nhận xét bằng lời?</li>
+<li>Khâu kết xuất cuối và chỉnh màu có nằm trong phạm vi kèm không?</li>
+<li>Nếu tới buổi cuối mà món vẫn chưa xong thì xử lý thế nào?</li>
+</ul>
+
+<p>Câu cuối hay bị trả lời vòng vo nhất. Một chương trình tử tế nói trước rằng kết quả phụ thuộc vào số giờ bạn tự làm, và nói luôn cơ chế khi bạn trượt tiến độ. Nếu bạn muốn xem dạng ảnh mà việc thật đòi hỏi, các món trên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> là mức mà khách trả tiền để nhận.</p>
+
+<h2>Khi nào chưa nên thuê kèm riêng, nói thẳng</h2>
+
+<p>Ba tình huống dưới đây, trả tiền bây giờ là lãng phí.</p>
+
+<p><strong style="color:#fff;">Bạn chưa dựng xong món nào.</strong> Giai đoạn làm quen giao diện không cần người kèm. Hãy tự đi một tháng theo một thứ tự có sẵn, ví dụ bảy bước trong bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>, rồi mới tính chuyện thuê.</p>
+
+<p><strong style="color:#fff;">Bạn không có tám giờ mỗi tuần để tự làm.</strong> Kèm riêng không thay được số giờ ngồi vào bàn. Nếu lịch của bạn chỉ cho hai ba giờ một tuần, buổi kèm sau sẽ thành buổi nhắc lại buổi trước.</p>
+
+<p><strong style="color:#fff;">Bạn cần một bộ hồ sơ, không phải một món.</strong> Nếu đích đến là bốn tới sáu món để đi xin việc, hình thức phù hợp hơn là kèm theo hồ sơ, mô tả trong bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>. Kèm riêng theo món mạnh ở chiều sâu một món, không mạnh ở việc dàn đều cả bộ.</p>
+
+<figure>
+  <img src="assets/khoa-cua-thong-minh-than-khoa-mat-trong.webp" alt="Mặt trong thân khoá cửa thông minh dựng 3D, thấy rõ gân nhựa và chi tiết lắp ghép" loading="lazy" width="1800" height="1800">
+  <figcaption><strong>Món có chi tiết lắp ghép là bài tập tốt ở chặng giữa.</strong> Nó buộc bạn giữ tỉ lệ đúng trong khi thêm chi tiết, đó là kỹ năng khó luyện một mình vì sai số nhỏ chỉ lộ ra khi đã kết xuất.</figcaption>
+</figure>
+
+<h2>Kèm riêng dựng hình sản phẩm không thay được số giờ của bạn</h2>
+
+<p>Điều này cần nói thẳng ở cuối. Người kèm rút ngắn thời gian bạn đi sai đường, chỉ ra trong mười phút chỗ bạn có thể mò ba tuần. Nhưng toàn bộ số giờ dựng, sửa và kết xuất vẫn là của bạn. Mốc thời gian thực tế cho từng chặng nằm trong bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a>, và các hình thức kèm khác được so trong bài <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a>.</p>
+
+<p>Nếu có ai hứa với bạn ảnh sản phẩm dùng được mà không cần bạn bỏ ra hàng trăm giờ, đó là lời nên bị hỏi lại rất kỹ. Ảnh tốt là bằng chứng về số giờ, nên nó không mua tách khỏi số giờ đó được.</p>
+
+<h2>Câu hỏi thường gặp về kèm riêng dựng hình sản phẩm</h2>
+
+<p class="faq-q">Kèm riêng dựng hình sản phẩm khác lớp nhóm ở điểm nào?</p>
+<p>Lớp nhóm dạy theo giáo trình chung, ai cũng dựng cùng một mẫu tập. Kèm riêng lấy chính sản phẩm bạn cần dựng làm bài học, nên mỗi buổi đều mở file của bạn và sửa trực tiếp trên đó. Đổi lại, kèm riêng hẹp hơn về kiến thức.</p>
+
+<p class="faq-q">Kèm riêng dựng hình sản phẩm mất bao lâu thì ra ảnh dùng được?</p>
+<p>Ước lượng từ các nhóm chúng tôi đã kèm là khoảng sáu tới mười tuần cho hai tới ba món hoàn chỉnh, với nhịp tám tới mười hai giờ tự làm mỗi tuần. Người đã quen giao diện rơi vào đầu khoảng, người vừa học xong phần cơ bản rơi vào cuối khoảng.</p>
+
+<p class="faq-q">Chưa biết Blender có nên thuê kèm riêng luôn không?</p>
+<p>Không nên. Phần làm quen giao diện và dựng khối cơ bản không cần người kèm. Mốc hợp lý để bắt đầu là khi bạn đã tự dựng xong một sản phẩm đơn giản và tự thấy nó chưa giống ảnh thật nhưng không chỉ ra được vì sao. Nếu cần người chữa bài theo giờ thay vì theo khoá, hình thức <a href="blog-gia-su-blender.html">gia sư Blender</a> linh hoạt hơn.</p>
+
+<p class="faq-q">Kèm riêng dựng hình sản phẩm có cần máy mạnh không?</p>
+<p>Cần ít hơn nhiều người tưởng. Dựng khối, vật liệu và bố cục chạy được trên máy tầm trung. Chỉ khâu kết xuất cuối chịu ảnh hưởng của card đồ hoạ, và khâu đó có thể để chạy qua đêm. Máy yếu làm bạn chậm hơn chứ không làm bạn học sai.</p>
+
+<p class="faq-q">Học kèm online có kém hơn kèm trực tiếp không?</p>
+<p>Với dựng hình sản phẩm thì gần như không, vì phần lớn buổi kèm là hai người cùng nhìn một màn hình và sửa trong cùng một file. Điều kiện cần là gọi video ổn định và quyền điều khiển màn hình khi người dạy cần chỉnh trực tiếp. Phần nặng là kết xuất vẫn chạy trên máy bạn.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn chưa chắc mình nên thuê kèm riêng hay vào lớp nhóm, gửi cho chúng tôi một hai món bạn đã dựng và một câu mô tả chỗ bạn thấy bí. Chúng tôi sẽ nói thẳng bạn đang thiếu gì, kể cả khi câu trả lời là chưa cần trả tiền cho ai cả. Muốn tự đọc trước thì phần chọn hướng và chọn món trong <a href="cam-nang.html">cẩm nang học Blender</a> là chỗ nên bắt đầu.</p>
 """,
     },
 ]
