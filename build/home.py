@@ -632,7 +632,7 @@ def services():
       <span>Gửi brief hoặc bản vẽ, chúng tôi báo lại thời gian và chi phí trong 24 giờ.</span>
       <a class="lnk" href="mailto:anhminhlexuan@gmail.com?subject=Brief%%20du%%20an%%203D">anhminhlexuan@gmail.com →</a>
     </div>
-    <p style="margin:10px 0 0;font-size:14px;color:var(--muted);">Muốn biết trước một shot đi qua những bước nào và duyệt ở đâu, đọc bài <a class="lnk" href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D một shot sản phẩm</a>.</p>
+    <p style="margin:10px 0 0;font-size:14px;color:var(--muted);">Muốn biết trước một shot đi qua những bước nào và duyệt ở đâu, đọc bài <a class="lnk" href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D một shot sản phẩm</a>. Đang so nhiều nơi làm hình, xem cách đọc portfolio và các câu cần hỏi trong bài <a class="lnk" href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, và phần đầu vào cần gửi kèm báo giá trong bài <a class="lnk" href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
   </div>
 </section>""" % (section_head("01", "Dịch vụ", "Bốn mảng chính"), sv, ps)
 

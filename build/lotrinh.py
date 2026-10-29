@@ -302,11 +302,50 @@ def track_price(slug, he, label, line):
         </div>
         <div class="price-grid">%s</div>
         <p class="price-note">Đóng trước <strong>50%% học phí</strong> thì được tặng thêm
-        <strong>6 tháng coaching</strong>. Mọi học viên được đồng hành trọn 1 năm.</p>
+        <strong>6 tháng coaching</strong>. Mọi học viên được <strong>bảo hành kiến thức trọn đời</strong>
+        và <strong>takecare trọn đời</strong>, chi tiết ở phần điều khoản bên dưới.</p>
         <details class="pmore">
           <summary>Chỉ cần học lẻ một kỹ năng?</summary>
           <p>Học riêng từng kỹ năng: <strong>5tr / kỹ năng</strong>. Hợp với người đã làm 3D và chỉ
           thiếu đúng một mảng. Để lại thông tin bên dưới, tôi xem rồi nói bạn cần học kỹ năng nào.</p>
+        </details>
+        <details class="pmore" id="dieu-khoan">
+          <summary>Điều khoản học phí, bảo lưu và bảo hành</summary>
+          <ol>
+            <li><b>1. Bảo hành trọn đời và takecare trọn đời</b>
+              <ul>
+                <li>Học viên được <strong>bảo hành kiến thức trọn đời</strong>: học lại bất kỳ phần nào trong lộ trình đã đăng ký, không tính thêm học phí, kể cả khi phần đó đã được cập nhật nội dung mới.</li>
+                <li>Học viên được <strong>takecare trọn đời</strong>: hỏi nghề, nhờ xem file, nhờ nhận xét bài và hỏi về hướng đi, không giới hạn thời gian sau khi kết thúc lộ trình.</li>
+                <li>Hai quyền lợi này áp dụng cho phần lộ trình học viên đã hoàn thiện học phí.</li>
+              </ul>
+            </li>
+            <li><b>2. Bảo lưu lộ trình vì công việc hoặc sức khoẻ</b>
+              <ul>
+                <li>Học viên được xin bảo lưu, tức tạm hoãn việc học. Phần đã học, bài giảng đã mở và tài liệu đã nhận <strong>không bị thu hồi</strong>.</li>
+                <li>Với học viên đóng học phí <strong>một lần</strong>: bảo lưu không phát sinh thêm khoản nào.</li>
+                <li>Với học viên đóng học phí <strong>theo tháng</strong>: trong thời gian bảo lưu <strong>vẫn phải hoàn thiện học phí hàng tháng</strong> theo đúng cam kết ban đầu. Bảo lưu là tạm hoãn việc học, không phải tạm hoãn nghĩa vụ học phí.</li>
+              </ul>
+            </li>
+            <li><b>3. Bảo lưu kèm việc ngừng đóng học phí</b>
+              <ul>
+                <li>Nếu học viên bảo lưu và không tiếp tục đóng học phí, LXAM sẽ <strong>nhắc nhở trong vòng 1 tháng</strong>, bằng tin nhắn hoặc email, ghi rõ khoản còn thiếu và hạn đóng.</li>
+                <li>Sau 1 tháng kể từ lần nhắc đầu tiên mà học phí duy trì vẫn chưa được đóng, <strong>mọi offer, discount và ưu đãi đã áp dụng sẽ tự động được xoá</strong>.</li>
+                <li>Khi học viên đăng ký học lại sau đó, học phí được <strong>tính lại theo giá đang áp dụng tại thời điểm đăng ký mới</strong>.</li>
+                <li>Việc xoá ưu đãi không làm mất phần kiến thức và tài liệu học viên đã nhận, cũng không làm mất bảo hành với phần lộ trình đã hoàn thiện học phí.</li>
+              </ul>
+            </li>
+            <li><b>4. Vì sao có điều khoản này</b>
+              <div class="terms-why"><p>Nói thẳng: ưu đãi được cấp theo từng đợt tuyển sinh và có số lượng. Giữ một suất ưu đãi cho người đã ngừng đóng phí đồng nghĩa với việc lấy suất đó khỏi tay người đang học và đang đóng đúng hạn. Điều khoản này tồn tại để công bằng với các học viên khác, không phải để phạt ai.</p></div>
+            </li>
+            <li><b>5. Phần LXAM cam kết ngược lại</b>
+              <ul>
+                <li>Mọi lần nhắc nhở đều bằng văn bản, ghi rõ số tiền và hạn, không nhắc miệng rồi tính.</li>
+                <li>Trước khi xoá ưu đãi, học viên luôn được thông báo trước, không xoá âm thầm.</li>
+                <li>Khi học phí được đóng lại trong thời gian nhắc nhở, ưu đãi cũ được giữ nguyên.</li>
+                <li>Mọi thay đổi điều khoản chỉ áp dụng cho học viên đăng ký sau ngày thay đổi, không áp dụng ngược.</li>
+              </ul>
+            </li>
+          </ol>
         </details>
         <div class="track-cta">
           <div class="track-cta-txt">
@@ -632,6 +671,16 @@ PAGE_CSS = """
   .pmore[open] summary::before{content:"\2013";}
   .pmore summary:hover{color:#e6ded6;}
   .pmore p{margin:12px 0 0;font-size:14.5px;line-height:1.7;color:#b8afa6;}
+  .pmore ol,.pmore ul{margin:12px 0 0;padding-left:0;list-style:none;}
+  .pmore ol>li{margin:0 0 14px;font-size:14.5px;line-height:1.7;color:#b8afa6;}
+  .pmore ol>li:last-child{margin-bottom:0;}
+  .pmore ol>li>b{display:block;color:#fff;font-size:14px;letter-spacing:.01em;margin-bottom:5px;}
+  .pmore ul li{position:relative;padding-left:16px;margin:0 0 7px;font-size:14.5px;line-height:1.7;color:#b8afa6;}
+  .pmore ul li::before{content:"";position:absolute;left:3px;top:11px;width:4px;height:4px;border-radius:50%;background:var(--ac);}
+  .pmore ul li:last-child{margin-bottom:0;}
+  .pmore ul li strong{color:#e6ded6;}
+  .terms-why{margin-top:14px;padding:14px 16px;border-left:2px solid rgba(255,122,26,.5);background:rgba(255,122,26,.05);}
+  .terms-why p{margin:0;}
 
   /* ---- form dang ky ---- */
   .reg{

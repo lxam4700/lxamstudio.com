@@ -876,7 +876,7 @@ POSTS = [
 <p>Khối thô và góc máy. Hai khâu đó quyết định phần lớn chất lượng cuối cùng, lại ít phụ thuộc cấu hình máy và ít phụ thuộc phần mềm nhất, nên học sớm là có lãi lâu nhất.</p>
 
 <p class="faq-q">Studio tính báo giá dựng 3D sản phẩm theo shot hay theo ngày?</p>
-<p>Cách phổ biến ở Việt Nam là tính theo shot với số vòng sửa ghi rõ trong hợp đồng, vì khách dễ hình dung hơn. Dù tính kiểu nào, phần cần chốt bằng văn bản là số vòng sửa được bao gồm và mốc nào coi là đã duyệt.</p>
+<p>Cách phổ biến ở Việt Nam là tính theo shot với số vòng sửa ghi rõ trong hợp đồng, vì khách dễ hình dung hơn. Dù tính kiểu nào, phần cần chốt bằng văn bản là số vòng sửa được bao gồm và mốc nào coi là đã duyệt. Cách so giữa freelancer, studio và agency nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn phần đầu vào và báo giá thì ở bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
 
 <hr class="hr">
 
@@ -3154,7 +3154,7 @@ POSTS = [
 
 <hr class="hr">
 
-<p>Nếu bạn đang so vài lớp với nhau, gửi cho chúng tôi mô tả từng lớp: bài tập dựa trên gì, số buổi, số lần chữa bài và đầu ra cuối khoá. Chúng tôi sẽ nói thẳng lớp nào đưa bạn tới một món đăng được nhanh hơn, kể cả khi câu trả lời là chưa nên học ở đâu cả. Muốn xem trước cách một chương trình chia bài theo tuần, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>; muốn tự đi trước một đoạn, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước. Còn nếu bạn đã dựng được vài món và chỉ cần gom chúng thành hồ sơ nộp được, đọc bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>.</p>
+<p>Nếu bạn đang so vài lớp với nhau, gửi cho chúng tôi mô tả từng lớp: bài tập dựa trên gì, số buổi, số lần chữa bài và đầu ra cuối khoá. Chúng tôi sẽ nói thẳng lớp nào đưa bạn tới một món đăng được nhanh hơn, kể cả khi câu trả lời là chưa nên học ở đâu cả. Muốn xem trước cách một chương trình chia bài theo tuần, mở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>; muốn tự đi trước một đoạn, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước. Còn nếu bạn đã dựng được vài món và chỉ cần gom chúng thành hồ sơ nộp được, đọc bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>. Nếu bạn đang ở phía đi thuê chứ không phải phía đi học, bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a> nói rõ cách đọc portfolio và các câu cần hỏi trước khi chốt.</p>
 """,
     },
     {
@@ -3716,7 +3716,7 @@ POSTS = [
 <li>Nếu tới buổi cuối mà món vẫn chưa xong thì xử lý thế nào?</li>
 </ul>
 
-<p>Câu cuối hay bị trả lời vòng vo nhất. Một chương trình tử tế nói trước rằng kết quả phụ thuộc vào số giờ bạn tự làm, và nói luôn cơ chế khi bạn trượt tiến độ. Nếu bạn muốn xem dạng ảnh mà việc thật đòi hỏi, các món trên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> là mức mà khách trả tiền để nhận.</p>
+<p>Câu cuối hay bị trả lời vòng vo nhất. Một chương trình tử tế nói trước rằng kết quả phụ thuộc vào số giờ bạn tự làm, và nói luôn cơ chế khi bạn trượt tiến độ. Nếu bạn muốn xem dạng ảnh mà việc thật đòi hỏi, các món trên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> là mức mà khách trả tiền để nhận. Phía đi thuê đánh giá người làm theo tiêu chí nào thì bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a> liệt kê đủ, và các dạng ảnh khách thường đặt thì ở bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
 
 <h2>Khi nào chưa nên thuê kèm riêng, nói thẳng</h2>
 
@@ -3759,6 +3759,339 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn chưa chắc mình nên thuê kèm riêng hay vào lớp nhóm, gửi cho chúng tôi một hai món bạn đã dựng và một câu mô tả chỗ bạn thấy bí. Chúng tôi sẽ nói thẳng bạn đang thiếu gì, kể cả khi câu trả lời là chưa cần trả tiền cho ai cả. Muốn tự đọc trước thì phần chọn hướng và chọn món trong <a href="cam-nang.html">cẩm nang học Blender</a> là chỗ nên bắt đầu.</p>
+""",
+    },
+    {
+        "slug": "studio-3d-chon-the-nao",
+        "title": "Studio 3D là gì và cách chọn cho đúng việc",
+        "desc": "Studio 3D nhận những việc gì, khác freelancer và agency ở đâu, cách đọc portfolio và sáu câu cần hỏi trước khi chốt hợp đồng. Có bảng so sánh ba cách làm.",
+        "tag": "Dịch vụ",
+        "date": "2026-10-28",
+        "date_vn": "28/10/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/chivas18-phoi-canh-tong-the-man-led.webp",
+        "faq": [
+            ('Studio 3D là gì, nói ngắn gọn?',
+             'Studio 3D là đơn vị làm ra hình ảnh và video bằng phần mềm ba chiều thay cho việc chụp hoặc quay thật. Đầu ra thường là ảnh sản phẩm độ phân giải cao, phim quảng cáo ngắn, phối cảnh sự kiện và triển lãm, hoặc key visual cho một chiến dịch. Đầu vào là bản vẽ kỹ thuật, mẫu thật, ảnh tham chiếu và một brief nói rõ hình sẽ dùng ở đâu.'),
+            ('Thuê studio 3D hay chụp ảnh thật thì hợp hơn?',
+             'Chụp thật hợp hơn khi sản phẩm đã có mẫu hoàn thiện, bối cảnh đơn giản và bạn chỉ cần một vài ảnh. Studio 3D hợp hơn khi món chưa sản xuất xong, khi cần nhiều phiên bản màu hoặc nhiều tỉ lệ khung cho từng kênh, khi bối cảnh dựng thật quá tốn, hoặc khi hình phải sửa nhiều vòng mà không thể dựng lại set.'),
+            ('Một studio 3D tại Việt Nam cần bao lâu cho một bộ ảnh sản phẩm?',
+             'Ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho một bộ ba tới năm ảnh của món có hình khối rõ ràng, tính từ lúc nhận đủ bản vẽ và mẫu. Món nhiều chi tiết nhỏ, nhiều chất liệu trong suốt hoặc cần hoạt hoá thì dài hơn, và phần khó dự đoán nhất luôn là số vòng duyệt nội bộ bên phía khách.'),
+            ('Chi phí thuê studio 3D phụ thuộc vào những gì?',
+             'Bốn yếu tố đẩy giá lên rõ nhất là số shot cuối cùng, độ phức tạp của bề mặt, việc hình tĩnh hay hình động, và số vòng sửa được bao gồm trong báo giá. Chúng tôi không nêu số ở đây vì giá đổi theo từng dự án, nhưng một báo giá tử tế luôn tách riêng bốn mục này để bạn biết mình đang trả cho cái gì.'),
+            ('Bản quyền file gốc thuộc về ai?',
+             'Điều này phải ghi trong hợp đồng chứ không mặc định. Thực tế phổ biến là khách nhận quyền sử dụng hình ảnh đầu ra, còn file gốc và thư viện vật liệu thuộc về studio, trừ khi hai bên thoả thuận mua riêng. Nếu bạn dự định sửa hình trong tương lai bằng một đơn vị khác, hãy đặt câu hỏi này ngay từ vòng báo giá.'),
+        ],
+        "body": """
+<p class="lead">Studio 3D là đơn vị làm ra hình ảnh và video bằng phần mềm ba chiều thay cho việc chụp và quay thật: ảnh sản phẩm, phim quảng cáo ngắn, phối cảnh sự kiện và key visual cho chiến dịch. Bạn thuê một studio 3D khi món cần chụp chưa tồn tại, khi bối cảnh dựng thật quá tốn, hoặc khi hình phải sửa nhiều vòng mà không thể dựng lại set mỗi lần. Nếu sản phẩm đã có mẫu hoàn thiện và bạn chỉ cần vài ảnh nền trắng, chụp thật thường nhanh hơn và rẻ hơn.</p>
+
+<p>Bài này nói rõ một studio 3D nhận những nhóm việc gì, khác freelancer và agency ở đâu, cách đọc portfolio để biết họ tự làm hay làm hộ, sáu câu nên hỏi trước khi chốt, và những lúc bạn chưa cần thuê ai cả. Chúng tôi không nêu mức giá cụ thể vì giá đổi theo số shot và độ phức tạp bề mặt, nhưng sẽ nói thẳng những yếu tố làm giá tăng.</p>
+
+<h2>Studio 3D là gì và nhận những việc gì</h2>
+
+<p>Tên gọi nghe rộng, nhưng phần lớn công việc thực tế rơi vào bốn nhóm. Biết món của bạn thuộc nhóm nào giúp bạn hỏi đúng câu ngay từ email đầu tiên.</p>
+
+<h3>Render sản phẩm tĩnh</h3>
+<p>Ảnh một món hàng ở độ phân giải cao, dùng cho trang bán, bao bì, hồ sơ sản phẩm hoặc quảng cáo in. Đây là nhóm việc có tiêu chuẩn rõ nhất: hoặc bề mặt nhìn ra đúng chất liệu, hoặc không. Người xem nhận ra ngay khi nhựa trông như cao su, kể cả khi họ không gọi tên được lỗi.</p>
+
+<h3>Phim quảng cáo và hình động</h3>
+<p>Một shot hoặc một chuỗi shot có chuyển động camera, thường kèm hoạt hoá cơ cấu hoặc hiệu ứng vật liệu. Khối lượng công việc nhảy bậc so với ảnh tĩnh, vì mỗi giây là hai mươi tư tới ba mươi khung và mỗi lần sửa bố cục phải kết xuất lại cả đoạn. Các bước duyệt của một shot được mô tả cụ thể trong bài <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D</a>.</p>
+
+<h3>Phối cảnh sự kiện và triển lãm</h3>
+<p>Dựng trước không gian để duyệt với khách hàng hoặc với ban tổ chức: vị trí gian hàng, hướng đi của khách, chiều cao màn hình, ánh sáng buổi tối. Giá trị lớn nhất của nhóm này không phải ảnh đẹp mà là phát hiện sai sót trước khi thi công. Một dạng kết quả cụ thể nằm ở trang <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a>.</p>
+
+<h3>Key visual cho chiến dịch</h3>
+<p>Một hình chủ đạo dùng lại trên nhiều kênh, kéo theo nhiều tỉ lệ khung và nhiều phiên bản chữ. Đây là lúc 3D có lợi thế rõ rệt so với chụp: đổi tỉ lệ khung, đổi màu nền hoặc đổi góc nhẹ đều làm được từ cùng một bối cảnh đã dựng.</p>
+
+<h2>Studio 3D khác freelancer và agency ở chỗ nào</h2>
+
+<p>Khác biệt không nằm ở chất lượng hình, vì cả ba đều có người giỏi và người dở. Nó nằm ở ai chịu trách nhiệm khi hình chưa đạt và ai lo phần việc không ai muốn làm.</p>
+
+<p>Một freelancer bán giờ làm của chính họ, nên bạn trả ít hơn và đổi lại bạn phải tự làm vai trò điều phối: gom bản vẽ, chốt tham chiếu, nhắc tiến độ. Một agency đầy đủ bán giải pháp trọn gói, lo cả ý tưởng và truyền thông, nên giá cao hơn và vòng phản hồi dài hơn. Một studio 3D nằm giữa: nhận trách nhiệm toàn bộ phần hình, có quy trình duyệt theo chặng, nhưng không nhận phần chiến lược truyền thông.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Freelancer</th><th>Studio 3D</th><th>Agency trọn gói</th></tr></thead>
+<tbody>
+<tr><td>Ai chịu trách nhiệm phần hình</td><td>Một người</td><td>Studio, có người phụ trách dự án</td><td>Studio thầu lại, agency đối soát</td></tr>
+<tr><td>Phạm vi thường nhận</td><td>Một tới vài shot</td><td>Cả bộ hình của một món hoặc một sự kiện</td><td>Từ ý tưởng tới triển khai kênh</td></tr>
+<tr><td>Quy trình duyệt theo chặng</td><td>Thường không có</td><td>Có, chia theo khối thô, vật liệu, kết xuất</td><td>Có, thêm vòng duyệt nội bộ</td></tr>
+<tr><td>Rủi ro khi người làm biến mất</td><td>Cao nhất</td><td>Thấp, file nằm ở studio</td><td>Thấp</td></tr>
+<tr><td>Thời gian phản hồi sửa</td><td>Phụ thuộc lịch một người</td><td>Trong ngày tới vài ngày</td><td>Dài nhất, qua nhiều lớp</td></tr>
+<tr><td>Chi phí tương đối</td><td>Thấp nhất</td><td>Trung bình</td><td>Cao nhất</td></tr>
+<tr><td>Hợp nhất khi</td><td>Bạn đã biết rõ mình muốn gì</td><td>Bạn cần cả bộ hình và một người chịu trách nhiệm</td><td>Bạn cần cả ý tưởng và kênh phân phối</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không chọn hộ bạn. Nó chỉ nói một điều: freelancer bán giờ, studio bán trách nhiệm trên phần hình, agency bán việc điều phối toàn chiến dịch. Chọn sai lớp thì bạn trả tiền cho thứ mình không dùng tới.</p>
+
+<figure>
+  <img src="assets/aston-dbx-goc-cao-key-visual.webp" alt="Key visual góc cao của một mẫu xe dựng và render 3D bằng Blender, ánh sáng dải dài trên nắp capo" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Cùng một bối cảnh đã dựng cho ra nhiều tỉ lệ khung.</strong> Đây là lợi thế thực tế của 3D so với chụp: đổi khung ngang sang khung dọc, đổi màu nền hoặc xoay góc nhẹ đều không phải dựng lại set, chỉ phải kết xuất lại.</figcaption>
+</figure>
+
+<h2>Cách đọc portfolio của một studio 3D tại Việt Nam</h2>
+
+<p>Portfolio nào cũng chỉ trưng ảnh đẹp nhất, nên nhìn ảnh đẹp không nói lên gì nhiều. Ba cách dưới đây tốn của bạn mười phút và lọc được phần lớn rủi ro.</p>
+
+<h3>Xem cùng một món ở nhiều góc</h3>
+<p>Một món được trưng ở bốn năm góc khác nhau là bằng chứng rằng hình được dựng thật trong không gian ba chiều, không phải ghép từ ảnh có sẵn. Studio làm thật luôn có sẵn nhiều góc của cùng một dự án, vì đó là đầu ra bình thường của quy trình.</p>
+
+<h3>Xem phối cảnh có vật tham chiếu</h3>
+<p>Trong phối cảnh sự kiện, hãy tìm người, cửa, bậc thang hoặc bàn trong hình. Những thứ đó khoá tỉ lệ lại. Phối cảnh không có vật tham chiếu nào rất dễ nhìn hoành tráng trên màn hình rồi nhỏ bất ngờ khi thi công.</p>
+
+<h3>Hỏi một file gốc, không chỉ xem ảnh cuối</h3>
+<p>Câu hỏi đơn giản nhất và hiệu quả nhất: cho tôi xem ảnh chụp màn hình file gốc của một dự án. Người làm thật đưa được ngay. Cách đặt câu hỏi này giống cách chúng tôi khuyên người học kiểm tra nơi dạy, mô tả trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
+
+<blockquote><p>Ảnh cuối cho bạn biết studio làm được gì một lần. File gốc cho bạn biết họ làm lại được bao nhiêu lần mà không phải dựng lại từ đầu.</p></blockquote>
+
+<h2>Danh sách kiểm tra trước khi chốt studio 3D</h2>
+
+<p>Chạy qua danh sách này với bất kỳ đơn vị nào, kể cả với chúng tôi. Người làm nghề trả lời được hết, kể cả câu bất lợi cho họ.</p>
+
+<ul>
+<li>Báo giá có tách riêng số shot, phần hình động và số vòng sửa không?</li>
+<li>Một vòng sửa được định nghĩa thế nào, và vòng thứ bao nhiêu thì tính thêm?</li>
+<li>Các chặng duyệt là gì, và tôi được xem gì ở mỗi chặng?</li>
+<li>Đầu vào tối thiểu các anh cần từ tôi là gì: bản vẽ, mẫu thật, mã màu?</li>
+<li>Bàn giao gồm những định dạng nào, ở độ phân giải nào?</li>
+<li>File gốc và quyền sử dụng hình ảnh thuộc về ai, ghi ở đâu trong hợp đồng?</li>
+<li>Nếu trễ hạn do phía các anh thì xử lý thế nào?</li>
+</ul>
+
+<p>Câu về định nghĩa một vòng sửa hay bị trả lời vòng vo nhất, và nó cũng là nguồn tranh chấp phổ biến nhất. Một báo giá tử tế ghi rõ số vòng kèm trong giá và mức tính thêm từ vòng tiếp theo. Dạng đầu ra mà khách trả tiền để nhận được liệt kê ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>.</p>
+
+<h2>Quy trình làm việc với một studio 3D, từ brief tới file cuối</h2>
+
+<p>Quy trình tử tế chia việc thành các chặng có điểm duyệt, để sai sót bị bắt ở chặng rẻ chứ không ở chặng đắt.</p>
+
+<h3>Brief và tham chiếu</h3>
+<p>Nói rõ hình dùng ở đâu, khung nào, và ba ảnh tham chiếu mà bạn thấy đúng hướng. Một brief một trang có ba ảnh tham chiếu còn hữu dụng hơn một brief mười trang không có ảnh nào.</p>
+
+<h3>Khối thô và duyệt bố cục</h3>
+<p>Chặng này cho bạn thấy tỉ lệ, góc camera và vị trí các thành phần, chưa có vật liệu. Đây là chặng bạn nên khó tính nhất, vì sửa bố cục ở đây mất vài giờ, còn sửa sau khi đã làm vật liệu và ánh sáng mất vài ngày.</p>
+
+<h3>Vật liệu, ánh sáng và kết xuất thử</h3>
+<p>Bề mặt được gán chất liệu, đèn được đặt, và studio gửi bản kết xuất thử ở độ phân giải thấp. Phần lớn thời gian ở chặng này là chỉnh độ nhám và hướng đèn, không phải chọn màu.</p>
+
+<h3>Kết xuất cuối, hậu kỳ và bàn giao</h3>
+<p>Kết xuất ở độ phân giải thật, chỉnh tương phản và màu, rồi xuất đủ các tỉ lệ khung đã thống nhất. Hãy chốt danh sách tỉ lệ khung ngay từ brief, vì thêm một khung mới ở cuối nghe nhỏ nhưng kéo theo cả một vòng kết xuất.</p>
+
+<figure>
+  <img src="assets/axehibition-loi-vao-trien-lam.webp" alt="Phối cảnh 3D lối vào một triển lãm, có người và cửa làm vật tham chiếu tỉ lệ" loading="lazy" width="1800" height="1200">
+  <figcaption><strong>Phối cảnh có người trong hình đáng tin hơn.</strong> Người, cửa và bậc thang khoá tỉ lệ lại, nên ban tổ chức duyệt được chiều cao thật của vách và màn hình trước khi đội thi công bắt tay vào làm.</figcaption>
+</figure>
+
+<h2>Chi phí và thời gian, nói theo khoảng</h2>
+
+<p>Chúng tôi không nêu con số cụ thể ở đây vì giá đổi theo từng dự án và sẽ nhanh chóng lạc hậu. Nhưng bốn yếu tố dưới đây đẩy chi phí lên rõ nhất, và bạn kiểm soát được phần lớn chúng từ phía mình.</p>
+
+<p><strong style="color:#fff;">Số shot cuối cùng.</strong> Không phải số ảnh bạn muốn xem, mà số ảnh bạn thật sự sẽ dùng. Cắt danh sách này xuống là cách giảm chi phí hiệu quả nhất.</p>
+
+<p><strong style="color:#fff;">Độ phức tạp bề mặt.</strong> Kính, chất lỏng, kim loại xước và nhãn in trong suốt đều tốn thời gian hơn nhựa nhám nhiều lần.</p>
+
+<p><strong style="color:#fff;">Tĩnh hay động.</strong> Một shot hình động tốn nhiều hơn một ảnh tĩnh ở cả khâu dựng và khâu kết xuất, nên hãy quyết sớm chứ đừng thêm vào giữa dự án.</p>
+
+<p><strong style="color:#fff;">Số vòng sửa.</strong> Yếu tố này phụ thuộc vào phía bạn nhiều nhất. Gom phản hồi của mọi người liên quan thành một lần, thay vì gửi nhỏ giọt, là cách rút ngắn dự án mà không tốn thêm đồng nào.</p>
+
+<p>Về thời gian, ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho một bộ ba tới năm ảnh của món có hình khối rõ ràng, tính từ lúc nhận đủ bản vẽ và mẫu. Đây là ước lượng, không phải cam kết, và biến số lớn nhất luôn là số vòng duyệt nội bộ bên phía khách.</p>
+
+<h2>Thuê studio 3D hay dựng đội nội bộ</h2>
+
+<p>Nếu mỗi năm bạn cần vài bộ ảnh, thuê ngoài gần như luôn hợp hơn. Một đội nội bộ chỉ bắt đầu có lý khi khối lượng đủ đều để người làm không ngồi không, và khi bạn chấp nhận trả cả phần chi phí học của họ.</p>
+
+<p>Có một hướng trung gian mà nhiều đội marketing chọn: giữ một người trong nhà làm được phần dựng khối và chỉnh sửa nhỏ, còn phần hình cuối thì thuê ngoài. Người đó không cần học hai năm, chỉ cần đi hết phần nền tảng, và hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần để bạn tự so với nhu cầu của mình. Phần chọn hướng trong <a href="cam-nang.html">cẩm nang học Blender</a> cũng nói thẳng những việc một người tự học làm được và những việc chưa nên nhận.</p>
+
+<p>Dù chọn hướng nào, điều cần nhớ là hình tốt không mua tách khỏi thời gian. Một studio 3D rút ngắn thời gian bạn đi sai đường và nhận trách nhiệm trên kết quả, nhưng vẫn cần bạn đưa đủ đầu vào và phản hồi đúng chặng.</p>
+
+<h2>Câu hỏi thường gặp về studio 3D</h2>
+
+<p class="faq-q">Studio 3D là gì, nói ngắn gọn?</p>
+<p>Là đơn vị làm ra hình ảnh và video bằng phần mềm ba chiều thay cho việc chụp hoặc quay thật. Đầu ra thường là ảnh sản phẩm độ phân giải cao, phim quảng cáo ngắn, phối cảnh sự kiện hoặc key visual cho một chiến dịch. Đầu vào là bản vẽ kỹ thuật, mẫu thật, ảnh tham chiếu và một brief nói rõ hình sẽ dùng ở đâu.</p>
+
+<p class="faq-q">Thuê studio 3D hay chụp ảnh thật thì hợp hơn?</p>
+<p>Chụp thật hợp hơn khi sản phẩm đã có mẫu hoàn thiện, bối cảnh đơn giản và bạn chỉ cần vài ảnh. Studio 3D hợp hơn khi món chưa sản xuất xong, khi cần nhiều phiên bản màu hoặc nhiều tỉ lệ khung cho từng kênh, khi bối cảnh dựng thật quá tốn, hoặc khi hình phải sửa nhiều vòng.</p>
+
+<p class="faq-q">Một studio 3D tại Việt Nam cần bao lâu cho một bộ ảnh sản phẩm?</p>
+<p>Ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho một bộ ba tới năm ảnh của món có hình khối rõ ràng, tính từ lúc nhận đủ bản vẽ và mẫu. Món nhiều chi tiết nhỏ hoặc cần hoạt hoá thì dài hơn, và phần khó dự đoán nhất luôn là số vòng duyệt bên phía khách. Các dự án tĩnh ở trang <a href="du-an-san-pham.html">dự án render sản phẩm</a> là dạng đầu ra tương ứng.</p>
+
+<p class="faq-q">Chi phí thuê studio 3D phụ thuộc vào những gì?</p>
+<p>Bốn yếu tố đẩy giá lên rõ nhất là số shot cuối cùng, độ phức tạp của bề mặt, việc hình tĩnh hay hình động, và số vòng sửa được bao gồm trong báo giá. Một báo giá tử tế luôn tách riêng bốn mục này để bạn biết mình đang trả cho cái gì.</p>
+
+<p class="faq-q">Bản quyền file gốc thuộc về ai?</p>
+<p>Điều này phải ghi trong hợp đồng chứ không mặc định. Thực tế phổ biến là khách nhận quyền sử dụng hình ảnh đầu ra, còn file gốc và thư viện vật liệu thuộc về studio, trừ khi hai bên thoả thuận mua riêng. Nếu bạn dự định sửa hình sau này bằng một đơn vị khác, hãy hỏi ngay từ vòng báo giá.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang có một món cần ra hình, gửi cho chúng tôi bản vẽ hoặc vài ảnh mẫu kèm một câu nói rõ hình sẽ dùng ở đâu. Chúng tôi sẽ nói thẳng nên làm 3D hay nên chụp thật, kể cả khi câu trả lời là bạn chưa cần thuê ai cả. Muốn xem cách chúng tôi làm việc trước khi hỏi giá thì trang <a href="ve-chung-toi.html">studio visual 3D LXAM</a> và các bộ ảnh ở <a href="du-an-automotive.html">dự án automotive</a> là chỗ nên bắt đầu. Cần biết trước phải gửi gì và mất bao lâu thì đọc bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
+""",
+    },
+    {
+        "slug": "dich-vu-render-3d-san-pham",
+        "title": "Dịch vụ render 3D sản phẩm: cần gì, mất bao lâu",
+        "desc": "Dịch vụ render 3D sản phẩm nhận những dạng ảnh nào, bạn cần gửi gì để có báo giá, mất bao lâu và điều gì làm giá tăng. Kèm bảng so chụp thật với render.",
+        "tag": "Dịch vụ",
+        "date": "2026-10-29",
+        "date_vn": "29/10/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/chivas18-chai-bo-ba.webp",
+        "faq": [
+            ('Dịch vụ render 3D sản phẩm cần tôi gửi những gì?',
+             'Tối thiểu là bản vẽ kỹ thuật hoặc file CAD, ảnh chụp mẫu thật ở nhiều mặt, mã màu và thông tin vật liệu, file nhãn ở dạng vector, và một câu nói rõ ảnh sẽ dùng ở đâu. Thiếu bản vẽ thì vẫn làm được từ ảnh chụp kèm số đo, nhưng thời gian dài hơn và sai số tỉ lệ cao hơn đáng kể.'),
+            ('Render 3D sản phẩm có rẻ hơn chụp ảnh thật không?',
+             'Không phải lúc nào cũng rẻ hơn. Một hai ảnh nền trắng của món đã có mẫu hoàn thiện thì chụp thật thường nhanh và rẻ hơn. Render 3D có lợi khi món chưa sản xuất xong, khi cần nhiều phiên bản màu hoặc nhiều tỉ lệ khung, khi cần ảnh nổ linh kiện và ảnh cắt lớp, hoặc khi hình phải sửa nhiều vòng.'),
+            ('Một bộ ảnh render sản phẩm mất bao lâu?',
+             'Ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho ba tới năm ảnh của món có hình khối rõ ràng, tính từ lúc nhận đủ bản vẽ và mẫu. Món nhiều chi tiết nhỏ, nhiều chất liệu trong suốt, hoặc cần hình động thì dài hơn. Biến số khó đoán nhất là số vòng duyệt bên phía khách.'),
+            ('Báo giá dựng 3D sản phẩm thường tính theo gì?',
+             'Cách phổ biến là tính theo số shot cuối cùng, kèm ghi rõ số vòng sửa được bao gồm. Bốn thứ đẩy giá lên là số shot, độ phức tạp bề mặt, hình tĩnh hay hình động, và số vòng sửa. Một báo giá tử tế tách riêng từng mục thay vì gộp thành một con số duy nhất.'),
+            ('Ảnh render có bị coi là quảng cáo không trung thực không?',
+             'Chỉ khi hình thể hiện sai sản phẩm thật. Nguyên tắc chúng tôi giữ là hình phải khớp với món sẽ giao tới tay người mua: đúng tỉ lệ, đúng màu theo mã, đúng chất liệu. Làm bề mặt bóng hơn thực tế hoặc bỏ bớt chi tiết gây xấu là chỗ dễ vượt ranh giới, nên cần chốt bằng ảnh mẫu thật ở vòng duyệt.'),
+        ],
+        "body": """
+<p class="lead">Dịch vụ render 3D sản phẩm là việc dựng lại món hàng trong phần mềm ba chiều rồi kết xuất ra ảnh hoặc video dùng được cho trang bán, bao bì, hồ sơ kỹ thuật và quảng cáo. Bạn đặt dịch vụ này khi món chưa sản xuất xong, khi cần nhiều phiên bản màu và nhiều tỉ lệ khung từ cùng một bối cảnh, hoặc khi cần những dạng ảnh mà máy ảnh không chụp được như ảnh nổ linh kiện và ảnh cắt lớp. Nếu món đã có mẫu hoàn thiện và bạn chỉ cần một hai ảnh nền trắng, chụp thật vẫn nhanh hơn và rẻ hơn.</p>
+
+<p>Bài này nói rõ các dạng ảnh thường được đặt, bạn cần gửi gì để nhận một báo giá dựng 3D sản phẩm có cơ sở, quy trình đi qua những mốc duyệt nào, mất bao lâu, điều gì làm giá tăng và cách cắt bớt phần không cần thiết. Chúng tôi không nêu con số cụ thể vì giá đổi theo từng dự án, nhưng sẽ nói thẳng các yếu tố cấu thành.</p>
+
+<h2>Dịch vụ render 3D sản phẩm nhận những dạng ảnh nào</h2>
+
+<p>Gọi tên đúng dạng ảnh bạn cần là cách rút ngắn vòng báo giá nhanh nhất. Năm dạng dưới đây chiếm phần lớn yêu cầu thực tế.</p>
+
+<h3>Ảnh nền trắng và nền đơn sắc</h3>
+<p>Dạng cơ bản nhất, dùng cho trang bán và sàn thương mại điện tử. Yêu cầu khó nhất ở đây không phải bố cục mà là bề mặt: nhựa phải ra nhựa, kim loại phải ra kim loại. Nền trắng không che được lỗi vật liệu, nó phơi ra hết.</p>
+
+<h3>Ảnh bối cảnh</h3>
+<p>Món được đặt trong một khung cảnh có chất liệu nền, bóng đổ và đạo cụ. Dạng này bán cảm giác sử dụng chứ không bán thông số, nên tốn thời gian ở khâu dựng bối cảnh nhiều hơn khâu dựng chính món.</p>
+
+<h3>Ảnh nổ linh kiện và ảnh cắt lớp</h3>
+<p>Các bộ phận được tách rời trong không gian hoặc thân sản phẩm được cắt để thấy bên trong. Đây là dạng máy ảnh không chụp được, nên cũng là lúc 3D không có đối thủ. Dạng này đòi bản vẽ kỹ thuật đầy đủ, vì mỗi chi tiết bên trong đều phải đúng.</p>
+
+<h3>Ảnh có chú thích kỹ thuật</h3>
+<p>Ảnh kèm đường chỉ và nhãn tên bộ phận, dùng cho hồ sơ sản phẩm, catalogue công nghiệp và tài liệu đấu thầu. Phần hình chỉ là một nửa công việc, nửa còn lại là chốt đúng tên gọi và đơn vị đo với phía kỹ thuật của bạn.</p>
+
+<h3>Hình động ngắn</h3>
+<p>Một shot quay quanh món, một đoạn mở nắp hoặc một cơ cấu hoạt động. Khối lượng công việc nhảy bậc so với ảnh tĩnh vì mỗi giây là hai mươi tư tới ba mươi khung. Các mốc duyệt của một shot nằm trong bài <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D</a>.</p>
+
+<figure>
+  <img src="assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp" alt="Ảnh nổ linh kiện của một khoá cửa thông minh dựng 3D, các bộ phận tách rời theo trục" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Ảnh nổ linh kiện là dạng máy ảnh không chụp được.</strong> Mỗi bộ phận phải đúng hình và đúng vị trí lắp, nên dạng này đòi bản vẽ kỹ thuật đầy đủ chứ không làm được từ ảnh chụp bên ngoài.</figcaption>
+</figure>
+
+<h2>Khi nào render 3D hợp hơn chụp thật</h2>
+
+<p>Câu trả lời thật thà là tuỳ món và tuỳ số lượng ảnh. Bảng dưới đây là cách chúng tôi tự so trước khi nhận việc, kể cả khi kết luận là khách nên đi chụp.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tình huống</th><th>Chụp ảnh thật</th><th>Render 3D</th><th>Kết hợp hai cách</th></tr></thead>
+<tbody>
+<tr><td>Món chưa có mẫu hoàn thiện</td><td>Không làm được</td><td>Làm được từ bản vẽ</td><td>Không cần thiết</td></tr>
+<tr><td>Một tới hai ảnh nền trắng</td><td>Nhanh và rẻ hơn</td><td>Tốn hơn vì phải dựng từ đầu</td><td>Không cần thiết</td></tr>
+<tr><td>Nhiều phiên bản màu</td><td>Phải chụp lại từng màu</td><td>Đổi màu trên cùng bối cảnh</td><td>Chụp một màu, render các màu còn lại</td></tr>
+<tr><td>Nhiều tỉ lệ khung cho từng kênh</td><td>Phải chụp lại hoặc cắt ảnh</td><td>Kết xuất lại từ cùng cảnh</td><td>Hợp khi đã có sẵn ảnh chụp tốt</td></tr>
+<tr><td>Ảnh nổ linh kiện, ảnh cắt lớp</td><td>Gần như không làm được</td><td>Đúng việc của 3D</td><td>Không cần thiết</td></tr>
+<tr><td>Cần người thật tương tác với món</td><td>Đúng việc của chụp</td><td>Tốn và dễ ra hình giả</td><td>Chụp người, ghép món dựng 3D</td></tr>
+<tr><td>Sửa hình nhiều vòng sau khi chốt</td><td>Phải dựng lại set</td><td>Sửa trong file, kết xuất lại</td><td>Hợp khi phần sửa chỉ ở món</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Dòng cuối là lý do phổ biến nhất khiến các đội marketing chuyển sang 3D, và nó cũng là dòng dễ bị đánh giá thấp nhất khi so giá lần đầu. Cách so giữa freelancer, studio và agency cho phần việc này nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>.</p>
+
+<blockquote><p>Chụp thật bán cho bạn một lần bấm máy. Render 3D bán cho bạn một bối cảnh đã dựng, dùng lại được cho mọi màu, mọi khung và mọi vòng sửa về sau.</p></blockquote>
+
+<h2>Bạn cần gửi gì để nhận báo giá dựng 3D sản phẩm</h2>
+
+<p>Một báo giá có cơ sở cần đủ đầu vào. Gửi thiếu thì bên nhận việc phải báo giá theo trường hợp xấu nhất, và bạn là người chịu phần dự phòng đó.</p>
+
+<ul>
+<li>Bản vẽ kỹ thuật hoặc file CAD, nếu có, ở định dạng bất kỳ mà bên bạn đang dùng.</li>
+<li>Ảnh chụp mẫu thật ở mặt trước, mặt sau, hai cạnh và mặt đáy, kể cả ảnh điện thoại.</li>
+<li>Số đo chính của món, tối thiểu là dài, rộng, cao và đường kính các phần tròn.</li>
+<li>Mã màu và tên vật liệu từng bộ phận, không chỉ nói nhựa đen hay kim loại.</li>
+<li>File nhãn và logo ở dạng vector, kèm vị trí dán trên thân.</li>
+<li>Danh sách ảnh cần giao, mỗi ảnh một dòng, kèm tỉ lệ khung của từng ảnh.</li>
+<li>Một câu nói rõ ảnh dùng ở đâu: sàn bán, bao bì in, màn hình LED hay hồ sơ kỹ thuật.</li>
+</ul>
+
+<p>Dòng cuối quan trọng hơn vẻ ngoài của nó. Ảnh cho bao bì in cần độ phân giải và không gian màu khác ảnh cho trang bán, và biết trước thì không phải kết xuất lại lần hai. Các dạng đầu ra tương ứng được liệt kê ở trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>, còn dạng bộ ảnh hoàn chỉnh thì xem ở <a href="du-an-san-pham.html">dự án render sản phẩm</a>.</p>
+
+<h2>Quy trình và các mốc duyệt</h2>
+
+<p>Quy trình tử tế chia việc thành chặng có điểm duyệt, để sai sót bị bắt ở chặng rẻ chứ không ở chặng đắt.</p>
+
+<h3>Chặng một: khối thô và góc máy</h3>
+<p>Bạn nhận hình khối xám chưa có vật liệu, đủ để duyệt tỉ lệ và góc nhìn. Hãy khó tính nhất ở đây. Sửa góc máy tại chặng này mất vài giờ, sửa sau khi đã làm vật liệu và ánh sáng mất vài ngày.</p>
+
+<h3>Chặng hai: vật liệu và ánh sáng</h3>
+<p>Bề mặt được gán chất liệu, đèn được đặt, bạn nhận bản kết xuất thử ở độ phân giải thấp. Việc của bạn ở chặng này là so với mẫu thật trong tay, nhất là màu và độ bóng.</p>
+
+<h3>Chặng ba: kết xuất cuối và hậu kỳ</h3>
+<p>Kết xuất ở độ phân giải thật, chỉnh tương phản và màu, xuất đủ các tỉ lệ khung đã thống nhất. Chặng này gần như không nên có yêu cầu sửa về bố cục nữa, vì mọi thay đổi bố cục đều kéo theo kết xuất lại.</p>
+
+<p>Nếu bạn muốn hiểu phía trong mỗi chặng người làm đang làm gì, nội dung từng khâu được mô tả theo góc người học trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
+
+<figure>
+  <img src="assets/jhm-chu-thich-lo-vua.webp" alt="Ảnh render 3D một chi tiết cơ khí kèm đường chỉ và chú thích tên bộ phận" loading="lazy" width="1800" height="1012">
+  <figcaption><strong>Ảnh có chú thích kỹ thuật là hai phần việc.</strong> Phần hình do bên dựng lo, phần tên gọi và đơn vị đo phải do kỹ thuật phía bạn chốt, nếu không thì ảnh đẹp mà tài liệu vẫn phải làm lại.</figcaption>
+</figure>
+
+<h2>Mất bao lâu, nói theo khoảng</h2>
+
+<p>Ước lượng từ các dự án chúng tôi đã làm, với điều kiện đã nhận đủ bản vẽ và mẫu ngay từ đầu.</p>
+
+<p><strong style="color:#fff;">Món hình khối rõ ràng, ba tới năm ảnh tĩnh:</strong> khoảng một tới hai tuần. Ví dụ là món vỏ nhựa hoặc kim loại ít chi tiết nhỏ.</p>
+
+<p><strong style="color:#fff;">Món nhiều chi tiết hoặc nhiều chất liệu trong suốt:</strong> dài hơn đáng kể, vì kính và chất lỏng tốn cả thời gian dựng lẫn thời gian kết xuất. Trang sức là ví dụ rõ nhất, xem các bộ ở <a href="du-an-jewelry.html">dự án render trang sức</a>.</p>
+
+<p><strong style="color:#fff;">Thêm một shot hình động ngắn:</strong> cộng thêm ít nhất một tuần nữa so với bộ ảnh tĩnh tương ứng, và nên quyết ngay từ đầu chứ đừng thêm vào giữa dự án.</p>
+
+<p>Đây là ước lượng, không phải cam kết. Biến số khó đoán nhất không nằm ở phía kỹ thuật mà ở số vòng duyệt nội bộ bên phía bạn. Gom phản hồi của mọi người liên quan thành một lần thay vì gửi nhỏ giọt là cách rút ngắn dự án mà không tốn thêm đồng nào.</p>
+
+<h2>Điều gì làm báo giá tăng lên</h2>
+
+<p>Bốn yếu tố dưới đây quyết định phần lớn chi phí, và bạn kiểm soát được ba trong số đó.</p>
+
+<p><strong style="color:#fff;">Số shot cuối cùng.</strong> Không phải số ảnh bạn muốn xem thử, mà số ảnh bạn thật sự sẽ dùng. Cắt danh sách này là cách giảm chi phí hiệu quả nhất và hầu như không ai làm trước khi hỏi giá.</p>
+
+<p><strong style="color:#fff;">Độ phức tạp bề mặt.</strong> Kính, chất lỏng, kim loại xước và nhãn in trong suốt tốn hơn nhựa nhám nhiều lần, cả ở khâu dựng lẫn khâu kết xuất.</p>
+
+<p><strong style="color:#fff;">Chất lượng đầu vào.</strong> Có file CAD thì khâu dựng khối ngắn lại rất nhiều. Chỉ có ảnh chụp và vài số đo thì phần dựng phải suy luận, và suy luận luôn tốn thời gian hơn đọc bản vẽ.</p>
+
+<p><strong style="color:#fff;">Số vòng sửa.</strong> Hãy hỏi thẳng một vòng sửa được định nghĩa thế nào và vòng thứ bao nhiêu thì tính thêm. Đây là nguồn tranh chấp phổ biến nhất trong loại việc này.</p>
+
+<h2>Những lúc chưa nên đặt dịch vụ render 3D sản phẩm</h2>
+
+<p>Ba tình huống dưới đây, trả tiền bây giờ là lãng phí, và chúng tôi nói điều này cả khi người hỏi đang muốn đặt hàng.</p>
+
+<p><strong style="color:#fff;">Thiết kế còn đang đổi.</strong> Nếu hình dáng món còn sửa trong vài tuần tới, hãy chờ. Dựng theo bản chưa chốt nghĩa là trả tiền hai lần cho cùng một việc.</p>
+
+<p><strong style="color:#fff;">Bạn chỉ cần một ảnh nền trắng của món đã có sẵn.</strong> Thuê chụp là lựa chọn đúng. Một studio tử tế sẽ nói với bạn điều này thay vì nhận việc.</p>
+
+<p><strong style="color:#fff;">Chưa biết ảnh dùng ở đâu.</strong> Chưa rõ kênh và tỉ lệ khung thì danh sách ảnh sẽ phình ra trong lúc làm, và mỗi lần phình là một lần phát sinh. Chốt mục đích trước, đặt hàng sau.</p>
+
+<p>Nếu bạn muốn giữ một người trong nhà làm được phần dựng khối và sửa nhỏ, còn phần hình cuối thuê ngoài, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần, và phần chọn hướng trong <a href="cam-nang.html">cẩm nang học Blender</a> nói thẳng những việc một người tự học làm được và chưa nên nhận.</p>
+
+<h2>Câu hỏi thường gặp về dịch vụ render 3D sản phẩm</h2>
+
+<p class="faq-q">Dịch vụ render 3D sản phẩm cần tôi gửi những gì?</p>
+<p>Tối thiểu là bản vẽ kỹ thuật hoặc file CAD, ảnh chụp mẫu thật ở nhiều mặt, mã màu và thông tin vật liệu, file nhãn ở dạng vector, và một câu nói rõ ảnh sẽ dùng ở đâu. Thiếu bản vẽ thì vẫn làm được từ ảnh chụp kèm số đo, nhưng thời gian dài hơn và sai số tỉ lệ cao hơn.</p>
+
+<p class="faq-q">Render 3D sản phẩm có rẻ hơn chụp ảnh thật không?</p>
+<p>Không phải lúc nào cũng rẻ hơn. Một hai ảnh nền trắng của món đã có mẫu hoàn thiện thì chụp thật thường nhanh và rẻ hơn. Render 3D có lợi khi món chưa sản xuất xong, khi cần nhiều phiên bản màu hoặc nhiều tỉ lệ khung, khi cần ảnh nổ linh kiện, hoặc khi hình phải sửa nhiều vòng.</p>
+
+<p class="faq-q">Một bộ ảnh render sản phẩm mất bao lâu?</p>
+<p>Ước lượng là khoảng một tới hai tuần cho ba tới năm ảnh của món có hình khối rõ ràng, tính từ lúc nhận đủ bản vẽ và mẫu. Món nhiều chi tiết nhỏ hoặc cần hình động thì dài hơn, và biến số khó đoán nhất là số vòng duyệt bên phía khách.</p>
+
+<p class="faq-q">Báo giá dựng 3D sản phẩm thường tính theo gì?</p>
+<p>Cách phổ biến là tính theo số shot cuối cùng, kèm ghi rõ số vòng sửa được bao gồm. Bốn thứ đẩy giá lên là số shot, độ phức tạp bề mặt, hình tĩnh hay hình động, và số vòng sửa. Một báo giá tử tế tách riêng từng mục thay vì gộp thành một con số duy nhất.</p>
+
+<p class="faq-q">Ảnh render có bị coi là quảng cáo không trung thực không?</p>
+<p>Chỉ khi hình thể hiện sai sản phẩm thật. Nguyên tắc chúng tôi giữ là hình phải khớp với món sẽ giao tới tay người mua: đúng tỉ lệ, đúng màu theo mã, đúng chất liệu. Làm bề mặt bóng hơn thực tế hoặc bỏ bớt chi tiết gây xấu là chỗ dễ vượt ranh giới, nên cần chốt bằng mẫu thật ở vòng duyệt.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang có một món cần ra hình, gửi cho chúng tôi bản vẽ hoặc vài ảnh mẫu kèm danh sách ảnh cần giao và nơi ảnh sẽ xuất hiện. Chúng tôi báo lại thời gian và chi phí, và nói thẳng nếu chụp thật là lựa chọn hợp hơn cho trường hợp của bạn. Muốn xem cách chọn nơi làm trước khi hỏi giá thì đọc bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>.</p>
 """,
     },
 ]
