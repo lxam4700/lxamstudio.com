@@ -4178,6 +4178,89 @@ def related_html(p):
             '<p class="rel-h">Đọc tiếp</p><div class="rel-g">%s</div></section>' % cards)
 
 
+DIEUKHOAN_BODY = """
+<main>
+  <article class="prose">
+    <div class="wrap-narrow">
+      <span class="tag">Điều khoản</span>
+      <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Điều khoản học phí, bảo lưu và bảo hành</h1>
+      <p class="post-meta" style="margin-bottom:34px;">Áp dụng cho mọi khoá học và gói kèm của LXAM Academy</p>
+
+      <p class="lead">Trang này nói rõ ba thứ hay bị hiểu nhầm nhất khi đóng học phí: bảo hành kéo dài bao lâu, bảo lưu thì còn phải đóng tiền không, và nếu ngừng đóng thì mất những gì. Viết ra để hai bên không phải nhớ bằng miệng.</p>
+
+      <p>Điều khoản áp dụng cho cả ba gói ở hai hệ đào tạo: Tự học có chữa bài, Lớp 8 tuần và Kèm riêng 1 kèm 1. Xem nội dung và học phí từng gói ở trang <a href="lo-trinh.html">lộ trình và học phí</a>.</p>
+
+      <h2>1. Bảo hành trọn đời và takecare trọn đời</h2>
+
+      <ul>
+        <li><strong>Bảo hành kiến thức trọn đời.</strong> Học viên được học lại bất kỳ phần nào trong lộ trình đã đăng ký, không tính thêm học phí, kể cả khi phần đó đã được cập nhật nội dung mới.</li>
+        <li><strong>Takecare trọn đời.</strong> Học viên được hỏi nghề, nhờ xem file, nhờ nhận xét bài và hỏi về hướng đi, không giới hạn thời gian sau khi kết thúc lộ trình.</li>
+        <li>Hai quyền lợi trên áp dụng cho phần lộ trình học viên đã hoàn thiện học phí.</li>
+      </ul>
+
+      <h2>2. Bảo lưu lộ trình vì công việc hoặc sức khoẻ</h2>
+
+      <p>Học viên được xin bảo lưu, tức tạm hoãn việc học. Phần đã học, bài giảng đã mở và tài liệu đã nhận không bị thu hồi.</p>
+
+      <div class="table-wrap">
+      <table>
+      <thead><tr><th>Cách đóng học phí</th><th>Trong thời gian bảo lưu</th></tr></thead>
+      <tbody>
+      <tr><td>Đóng một lần</td><td>Không phát sinh thêm khoản nào</td></tr>
+      <tr><td>Đóng theo tháng</td><td>Vẫn phải hoàn thiện học phí hàng tháng theo cam kết ban đầu</td></tr>
+      </tbody>
+      </table>
+      </div>
+
+      <p>Nói cho gọn: bảo lưu là tạm hoãn việc học, không phải tạm hoãn nghĩa vụ học phí.</p>
+
+      <h2>3. Bảo lưu kèm việc ngừng đóng học phí</h2>
+
+      <ul>
+        <li>Nếu học viên bảo lưu và không tiếp tục đóng học phí, LXAM sẽ nhắc nhở trong vòng <strong>1 tháng</strong>, bằng tin nhắn hoặc email, ghi rõ khoản còn thiếu và hạn đóng.</li>
+        <li>Sau 1 tháng kể từ lần nhắc đầu tiên mà học phí duy trì vẫn chưa được đóng, <strong>mọi offer, discount và ưu đãi đã áp dụng sẽ tự động được xoá</strong>.</li>
+        <li>Khi học viên đăng ký học lại sau đó, học phí được <strong>tính lại theo giá đang áp dụng tại thời điểm đăng ký mới</strong>.</li>
+        <li>Việc xoá ưu đãi không làm mất phần kiến thức và tài liệu học viên đã nhận, cũng không làm mất bảo hành với phần lộ trình đã hoàn thiện học phí.</li>
+      </ul>
+
+      <h2>4. Vì sao có điều khoản này</h2>
+
+      <blockquote><p>Ưu đãi được cấp theo từng đợt tuyển sinh và có số lượng. Giữ một suất ưu đãi cho người đã ngừng đóng phí đồng nghĩa với việc lấy suất đó khỏi tay người đang học và đang đóng đúng hạn.</p></blockquote>
+
+      <p>Điều khoản này tồn tại để công bằng với các học viên khác, không phải để phạt ai. Nếu bạn gặp khó thật sự, nhắn trước khi tới hạn, chúng tôi xử lý theo tình huống thay vì để nó tự chạy tới mốc xoá ưu đãi.</p>
+
+      <h2>5. Phần LXAM cam kết ngược lại</h2>
+
+      <ul>
+        <li>Mọi lần nhắc nhở đều bằng văn bản, ghi rõ số tiền và hạn, không nhắc miệng rồi tính.</li>
+        <li>Trước khi xoá ưu đãi, học viên luôn được thông báo trước, không xoá âm thầm.</li>
+        <li>Khi học phí được đóng lại trong thời gian nhắc nhở, ưu đãi cũ được giữ nguyên.</li>
+        <li>Mọi thay đổi điều khoản chỉ áp dụng cho học viên đăng ký sau ngày thay đổi, không áp dụng ngược.</li>
+      </ul>
+
+      <h2>Câu hỏi thường gặp</h2>
+
+      <p class="faq-q">Tôi đóng theo tháng, xin bảo lưu 2 tháng thì có phải đóng không?</p>
+      <p>Có. Hai tháng đó vẫn đóng theo cam kết ban đầu. Đổi lại, thời gian học được giữ nguyên và bạn quay lại đúng chỗ đã dừng, không mất phần nào.</p>
+
+      <p class="faq-q">Nếu tôi ngừng đóng hẳn thì mất những gì?</p>
+      <p>Mất offer, discount và các ưu đãi đã được áp dụng, sau mốc 1 tháng kể từ lần nhắc đầu tiên. Không mất bài giảng đã mở, tài liệu đã nhận, và không mất bảo hành với phần lộ trình đã đóng đủ tiền.</p>
+
+      <p class="faq-q">Học lại sau 1 năm thì tính giá cũ hay giá mới?</p>
+      <p>Giá mới tại thời điểm đăng ký lại, nếu ưu đãi cũ đã bị xoá theo mục 3. Nếu bạn chưa từng ngừng đóng thì không rơi vào trường hợp này.</p>
+
+      <p class="faq-q">Bảo hành trọn đời có kèm điều kiện ẩn nào không?</p>
+      <p>Không. Điều kiện duy nhất là phần lộ trình đó đã hoàn thiện học phí. Học lại không tính thêm tiền, kể cả khi nội dung đã được cập nhật.</p>
+
+      <hr class="hr">
+
+      <p>Còn chỗ nào chưa rõ thì nhắn trước khi đóng tiền, đừng đóng rồi mới hỏi. Xem học phí từng gói ở <a href="lo-trinh.html">lộ trình và học phí</a>, xem nội dung hai hệ ở <a href="khoa-hoc.html">khoá học 3D Blender</a>.</p>
+    </div>
+  </article>
+</main>
+"""
+
+
 POST_TPL = """
 <main>
   <article class="prose">
@@ -4450,6 +4533,16 @@ def main():
                    jsonld=jsonld_post(p))
               + body + FOOTER)
 
+    write("dieu-khoan.html",
+          head("Điều khoản học phí và bảo lưu | LXAM Academy",
+               "Điều khoản học phí LXAM Academy: bảo hành kiến thức trọn đời, takecare trọn đời, quy định bảo lưu lộ trình và mốc xoá ưu đãi khi ngừng đóng học phí.",
+               "khoahoc",
+               canonical="dieu-khoan.html",
+               jsonld=jsonld_simple("WebPage", "Điều khoản học phí, bảo lưu và bảo hành",
+                                    "Điều khoản áp dụng cho các khoá học và gói kèm của LXAM Academy",
+                                    "https://lxamstudio.com/dieu-khoan.html"))
+          + DIEUKHOAN_BODY + FOOTER)
+
     write("hoc-vien.html",
           head("Khu học viên | LXAM Studio",
                "Khu học viên LXAM Studio: bài giảng đã ghi, file .blend dự án gốc, thư viện asset dùng được cho job thật, khu nộp bài để được sửa và lịch buổi kèm 1 kèm 1.",
@@ -4468,7 +4561,7 @@ def main():
           "du-an-san-pham.html", "du-an-vplas.html", "du-an-jhm-masonry-hanger.html",
           "du-an-khoa-cua-thong-minh.html", "du-an-jewelry.html", "du-an-locphuc-10-nam.html",
           "du-an-locphuc-bo-suu-tap.html", "du-an-hoc-vien.html",
-          "nghe-nghiep.html", "ve-chung-toi.html", "blog.html"]
+          "nghe-nghiep.html", "ve-chung-toi.html", "blog.html", "dieu-khoan.html"]
     urls = [""] + P9 + P8 + ["hoc-vien.html"] + ["blog-%s.html" % p["slug"] for p in POSTS] \
            + ["blog-%s.html" % p["slug"] for p in EXTRA_POSTS]
     # lastmod chi gan cho trang ma ta biet chac ngay doi: cac bai blog.
