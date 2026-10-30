@@ -876,7 +876,7 @@ POSTS = [
 <p>Khối thô và góc máy. Hai khâu đó quyết định phần lớn chất lượng cuối cùng, lại ít phụ thuộc cấu hình máy và ít phụ thuộc phần mềm nhất, nên học sớm là có lãi lâu nhất.</p>
 
 <p class="faq-q">Studio tính báo giá dựng 3D sản phẩm theo shot hay theo ngày?</p>
-<p>Cách phổ biến ở Việt Nam là tính theo shot với số vòng sửa ghi rõ trong hợp đồng, vì khách dễ hình dung hơn. Dù tính kiểu nào, phần cần chốt bằng văn bản là số vòng sửa được bao gồm và mốc nào coi là đã duyệt. Cách so giữa freelancer, studio và agency nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn phần đầu vào và báo giá thì ở bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
+<p>Cách phổ biến ở Việt Nam là tính theo shot với số vòng sửa ghi rõ trong hợp đồng, vì khách dễ hình dung hơn. Dù tính kiểu nào, phần cần chốt bằng văn bản là số vòng sửa được bao gồm và mốc nào coi là đã duyệt. Cách so giữa freelancer, studio và agency nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn phần đầu vào và báo giá thì ở bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>. Với một chương trình thay vì một món hàng, các mốc duyệt tương ứng nằm ở bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D cần gì</a>.</p>
 
 <hr class="hr">
 
@@ -3798,7 +3798,7 @@ POSTS = [
 <p>Một shot hoặc một chuỗi shot có chuyển động camera, thường kèm hoạt hoá cơ cấu hoặc hiệu ứng vật liệu. Khối lượng công việc nhảy bậc so với ảnh tĩnh, vì mỗi giây là hai mươi tư tới ba mươi khung và mỗi lần sửa bố cục phải kết xuất lại cả đoạn. Các bước duyệt của một shot được mô tả cụ thể trong bài <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D</a>.</p>
 
 <h3>Phối cảnh sự kiện và triển lãm</h3>
-<p>Dựng trước không gian để duyệt với khách hàng hoặc với ban tổ chức: vị trí gian hàng, hướng đi của khách, chiều cao màn hình, ánh sáng buổi tối. Giá trị lớn nhất của nhóm này không phải ảnh đẹp mà là phát hiện sai sót trước khi thi công. Một dạng kết quả cụ thể nằm ở trang <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a>.</p>
+<p>Dựng trước không gian để duyệt với khách hàng hoặc với ban tổ chức: vị trí gian hàng, hướng đi của khách, chiều cao màn hình, ánh sáng buổi tối. Giá trị lớn nhất của nhóm này không phải ảnh đẹp mà là phát hiện sai sót trước khi thi công. Một dạng kết quả cụ thể nằm ở trang <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a>, còn cách đặt và nghiệm thu nhóm việc này thì bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D cần gì</a> nói chi tiết hơn.</p>
 
 <h3>Key visual cho chiến dịch</h3>
 <p>Một hình chủ đạo dùng lại trên nhiều kênh, kéo theo nhiều tỉ lệ khung và nhiều phiên bản chữ. Đây là lúc 3D có lợi thế rõ rệt so với chụp: đổi tỉ lệ khung, đổi màu nền hoặc đổi góc nhẹ đều làm được từ cùng một bối cảnh đã dựng.</p>
@@ -4091,7 +4091,170 @@ POSTS = [
 
 <hr class="hr">
 
-<p>Nếu bạn đang có một món cần ra hình, gửi cho chúng tôi bản vẽ hoặc vài ảnh mẫu kèm danh sách ảnh cần giao và nơi ảnh sẽ xuất hiện. Chúng tôi báo lại thời gian và chi phí, và nói thẳng nếu chụp thật là lựa chọn hợp hơn cho trường hợp của bạn. Muốn xem cách chọn nơi làm trước khi hỏi giá thì đọc bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>.</p>
+<p>Nếu bạn đang có một món cần ra hình, gửi cho chúng tôi bản vẽ hoặc vài ảnh mẫu kèm danh sách ảnh cần giao và nơi ảnh sẽ xuất hiện. Chúng tôi báo lại thời gian và chi phí, và nói thẳng nếu chụp thật là lựa chọn hợp hơn cho trường hợp của bạn. Muốn xem cách chọn nơi làm trước khi hỏi giá thì đọc bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>. Nếu việc của bạn là một chương trình chứ không phải một món hàng, bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D cần gì</a> đi đúng vào nhóm đó.</p>
+""",
+    },
+    {
+        "slug": "phoi-canh-su-kien-3d",
+        "title": "Phối cảnh sự kiện 3D: dùng để làm gì, cần gì",
+        "desc": "Phối cảnh sự kiện 3D giúp chốt mặt bằng và key visual trước khi dựng thật. Bài này nói rõ các dạng hình, bạn cần gửi gì, mất bao lâu, giá phụ thuộc đâu.",
+        "tag": "Dịch vụ",
+        "date": "2026-10-30",
+        "date_vn": "30/10/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/chivas18-vcca-toan-canh-khoi-trung-tam.webp",
+        "faq": [
+            ('Phối cảnh sự kiện 3D khác gì bản vẽ 2D của đơn vị thi công?',
+             'Bản vẽ 2D trả lời câu hỏi kích thước và vị trí, phối cảnh 3D trả lời câu hỏi người đứng trong đó nhìn thấy gì. Hai thứ không thay thế nhau. Bản vẽ kỹ thuật vẫn là tài liệu để thi công và để bóc khối lượng, còn phối cảnh là tài liệu để duyệt ý tưởng, để thuyết trình với nhà tài trợ và để làm hình truyền thông trước ngày khai mạc.'),
+            ('Cần gửi gì để nhận báo giá dựng phối cảnh sự kiện?',
+             'Tối thiểu là mặt bằng khu vực kèm số đo và chiều cao trần, danh sách hạng mục cần dựng, bộ nhận diện của chương trình ở dạng vector, và một câu nói rõ hình sẽ dùng để duyệt nội bộ hay để làm key visual. Có thêm ảnh hiện trạng mặt bằng và ảnh tham chiếu phong cách thì vòng duyệt đầu tiên rút ngắn đáng kể.'),
+            ('Một bộ phối cảnh sự kiện 3D mất bao lâu?',
+             'Ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho ba tới năm góc của một khu vực có mặt bằng đã chốt, tính từ lúc nhận đủ bản vẽ và nhận diện. Triển lãm nhiều khu, sân khấu có màn LED lớn hoặc chương trình còn đang đổi concept thì dài hơn. Biến số khó đoán nhất vẫn là số vòng duyệt bên phía khách.'),
+            ('Phối cảnh 3D có bắt buộc giống y hệt sự kiện thật không?',
+             'Phải giống ở những thứ đo được: tỉ lệ, kích thước hạng mục, vị trí và chiều cao. Không thể giống tuyệt đối ở ánh sáng và vật liệu, vì đèn thật tại hiện trường và bề mặt in thật luôn lệch ít nhiều so với hình kết xuất. Chỗ nên cảnh giác là hình đẹp hơn mức thi công có thể làm được trong ngân sách đã duyệt.'),
+            ('Chương trình nhỏ có cần phối cảnh 3D không?',
+             'Thường là không cần nhiều. Một chương trình nội bộ dùng lại backdrop và sân khấu có sẵn thì một mặt bằng 2D cộng ảnh tham chiếu là đủ. Phối cảnh 3D đáng tiền khi hạng mục phải đóng mới, khi cần thuyết phục người chưa từng thấy mặt bằng, hoặc khi hình còn phải dùng tiếp cho truyền thông.'),
+        ],
+        "body": """
+<p class="lead">Phối cảnh sự kiện 3D là hình dựng lại toàn bộ không gian của một chương trình trước khi nó được thi công: sân khấu, gian hàng, lối đi, khu trưng bày, màn LED và ánh sáng. Bạn đặt loại hình này khi cần chốt mặt bằng với các bên liên quan, khi cần thuyết trình cho khách hoặc nhà tài trợ, và khi cần hình truyền thông cho chương trình trước ngày khai mạc. Nếu sự kiện chỉ dùng lại thiết bị có sẵn và không ai cần duyệt gì, một mặt bằng 2D kèm ảnh tham chiếu đã đủ.</p>
+
+<p>Bài này nói rõ phối cảnh sự kiện 3D giải quyết những việc gì, các dạng hình thường được đặt, khác biệt so với bản vẽ 2D và ảnh ghép, bạn cần gửi gì để nhận một báo giá có cơ sở, quy trình đi qua những mốc duyệt nào, mất bao lâu và điều gì đẩy chi phí lên. Chúng tôi không nêu con số cụ thể vì giá đổi theo quy mô từng chương trình, nhưng sẽ nói thẳng các yếu tố cấu thành và những chỗ bạn cắt được.</p>
+
+<h2>Phối cảnh sự kiện 3D giải quyết việc gì</h2>
+
+<p>Giá trị của loại hình này không nằm ở chỗ đẹp, mà nằm ở chỗ nó giúp ba nhóm người khác nhau cùng nhìn vào một thứ và đồng ý với nhau trước khi ai đó bắt đầu cắt vật liệu.</p>
+
+<h3>Chốt mặt bằng trước khi bóc khối lượng</h3>
+<p>Đọc bản vẽ mặt bằng là một kỹ năng, và phần lớn người ra quyết định trong một chương trình không có kỹ năng đó. Khi mọi thứ đã dựng ba chiều, câu hỏi về lối đi quá hẹp, bục cao chắn tầm nhìn hay cụm trưng bày đặt sai hướng xuất hiện ngay ở bàn họp, chứ không xuất hiện vào đêm dựng.</p>
+
+<h3>Thuyết trình cho khách và nhà tài trợ</h3>
+<p>Đây là lý do phổ biến nhất khiến các đơn vị tổ chức đặt phối cảnh. Một bộ hình ba tới năm góc nói thay cho ba mươi phút giải thích, và quan trọng hơn, nó cho thấy logo nhà tài trợ nằm ở đâu, lớn bao nhiêu, người đi qua có thấy không. Những câu hỏi đó rất khó trả lời bằng lời.</p>
+
+<h3>Làm hình truyền thông trước ngày khai mạc</h3>
+<p>Trước khi sự kiện diễn ra thì không có ảnh thật nào để đăng. Phối cảnh 3D lấp đúng khoảng đó: ảnh mời, ảnh giới thiệu khu, ảnh cho bộ bài đăng đếm ngược. Phần này gần với cách làm key visual hơn là cách làm bản vẽ, nên tiêu chuẩn về bố cục và ánh sáng cũng khắt khe hơn.</p>
+
+<figure>
+  <img src="assets/chivas18-vcca-toan-canh-khoi-trung-tam.webp" alt="Phối cảnh sự kiện 3D toàn cảnh khối trưng bày trung tâm trong triển lãm Chivas 18 tại VCCA" loading="lazy" width="1800" height="810">
+  <figcaption><strong>Một góc toàn cảnh làm việc của cả ba nhóm người cùng lúc.</strong> Người thi công đọc được kích thước và vị trí, người tổ chức thấy được luồng di chuyển, còn bộ phận truyền thông có ngay một hình dùng được. Xem trọn bộ ở <a href="du-an-chivas-18.html">phối cảnh triển lãm Chivas 18</a>.</figcaption>
+</figure>
+
+<h2>Các dạng hình phối cảnh sự kiện thường được đặt</h2>
+
+<p>Gọi đúng tên dạng hình mình cần là cách rút ngắn vòng báo giá nhanh nhất, vì mỗi dạng tốn công ở một khâu khác nhau.</p>
+
+<h3>Mặt bằng isometric</h3>
+<p>Góc nhìn chéo từ trên xuống, thấy toàn bộ khu vực và quan hệ giữa các hạng mục. Đây là hình để họp và để chốt luồng di chuyển. Nó ít tốn công ánh sáng nhưng đòi mặt bằng phải đúng từng mét, vì sai lệch tỉ lệ ở dạng này lộ ra ngay.</p>
+
+<h3>Phối cảnh góc mắt người</h3>
+<p>Camera đặt ở độ cao khoảng một mét sáu, mô phỏng đúng những gì khách tham quan thấy khi bước vào. Dạng này tốn công nhất ở khâu ánh sáng và vật liệu, và cũng là dạng thuyết phục nhất khi đưa cho người chưa từng tới mặt bằng.</p>
+
+<h3>Chi tiết hạng mục</h3>
+<p>Một quầy bar, một tủ trưng bày, một cụm glorifier, một tường chiếu. Dạng này phục vụ cả thi công lẫn duyệt thiết kế, và thường kèm nhiều phương án để chọn. Cách chúng tôi dựng từng hạng mục nhỏ không khác nhiều so với <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>, chỉ là bối cảnh xung quanh phức tạp hơn.</p>
+
+<h3>Hình động ngắn</h3>
+<p>Một đoạn camera đi dọc lối vào, hoặc một vòng quanh sân khấu. Khối lượng công việc nhảy bậc so với ảnh tĩnh vì mỗi giây là hai mươi tư tới ba mươi khung, và mọi lỗi nhỏ ở vật liệu đều bị nhân lên theo thời lượng. Các mốc duyệt của một shot động nằm trong bài <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D</a>.</p>
+
+<h2>Phối cảnh 3D so với bản vẽ 2D và ảnh ghép</h2>
+
+<p>Ba cách này hay bị đặt cạnh nhau như ba lựa chọn thay thế, trong khi thực tế chúng trả lời ba câu hỏi khác nhau. Bảng dưới đây là cách chúng tôi tự so trước khi nhận việc, kể cả khi kết luận là khách chưa cần dựng 3D.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Bản vẽ 2D</th><th>Ảnh ghép từ ảnh thật</th><th>Phối cảnh 3D</th></tr></thead>
+<tbody>
+<tr><td>Dùng để thi công</td><td>Đúng việc của nó</td><td>Không dùng được</td><td>Cần xuất kèm bản vẽ</td></tr>
+<tr><td>Thuyết trình cho người ngoài ngành</td><td>Khó hình dung</td><td>Dễ hiểu nếu đúng góc</td><td>Dễ hiểu ở mọi góc</td></tr>
+<tr><td>Mặt bằng chưa có hiện trạng</td><td>Làm được</td><td>Không làm được</td><td>Làm được từ bản vẽ</td></tr>
+<tr><td>Đổi phương án nhiều lần</td><td>Nhanh</td><td>Phải ghép lại từ đầu</td><td>Sửa trong file, kết xuất lại</td></tr>
+<tr><td>Nhiều góc của cùng một khu</td><td>Phải vẽ thêm từng góc</td><td>Phụ thuộc ảnh gốc có sẵn</td><td>Thêm camera trong cùng cảnh</td></tr>
+<tr><td>Dùng tiếp cho truyền thông</td><td>Gần như không</td><td>Dùng được</td><td>Dùng được, nhiều tỉ lệ khung</td></tr>
+<tr><td>Thời gian cho một phương án đầu</td><td>Ngắn nhất</td><td>Trung bình</td><td>Dài nhất</td></tr>
+<tr><td>Chi phí khi chỉ cần một hình</td><td>Thấp nhất</td><td>Trung bình</td><td>Cao nhất</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Hai dòng cuối là chỗ cần đọc thẳng: nếu bạn chỉ cần đúng một hình cho một khu nhỏ, dựng 3D là cách đắt nhất. Lợi thế của nó chỉ xuất hiện từ hình thứ ba trở đi, và xuất hiện rất rõ khi phương án còn phải đổi. Cách so giữa freelancer, studio và agency cho phần việc này nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>.</p>
+
+<blockquote><p>Bản vẽ 2D trả lời câu hỏi cái gì nằm ở đâu. Phối cảnh 3D trả lời câu hỏi người đứng trong đó nhìn thấy gì. Đội thi công cần câu thứ nhất, người duyệt ngân sách cần câu thứ hai.</p></blockquote>
+
+<h2>Bạn cần gửi gì để nhận báo giá</h2>
+
+<p>Một báo giá có cơ sở cần đủ đầu vào. Gửi thiếu thì bên nhận việc phải báo theo trường hợp xấu nhất, và bạn là người chịu phần dự phòng đó. Danh sách dưới đây là bộ tối thiểu chúng tôi hỏi trước khi báo lại.</p>
+
+<ul>
+<li>Mặt bằng khu vực kèm số đo, ở định dạng bất kỳ mà bên bạn đang dùng, kể cả ảnh chụp bản vẽ giấy.</li>
+<li>Chiều cao trần hoặc chiều cao giới hạn của khu vực, và vị trí các cột, cửa, thang.</li>
+<li>Ảnh hiện trạng mặt bằng nếu địa điểm đã có, chụp từ nhiều góc, ảnh điện thoại là đủ.</li>
+<li>Danh sách hạng mục cần dựng, ghi rõ hạng mục nào đóng mới và hạng mục nào dùng lại.</li>
+<li>Bộ nhận diện chương trình ở dạng vector, kèm mã màu và font.</li>
+<li>Ảnh tham chiếu phong cách, ba tới năm ảnh là đủ, kèm một câu nói rõ bạn thích điểm nào ở mỗi ảnh.</li>
+<li>Số góc cần giao và tỉ lệ khung cho từng kênh sử dụng.</li>
+<li>Mốc thời gian thật của chương trình, gồm cả ngày duyệt nội bộ chứ không chỉ ngày khai mạc.</li>
+</ul>
+
+<p>Thiếu bản vẽ mặt bằng thì vẫn làm được từ ảnh hiện trạng kèm số đo tay, nhưng sai số tỉ lệ cao hơn và số vòng sửa thường tăng. Nếu bạn muốn xem trước cách chúng tôi trình bày một bộ phối cảnh hoàn chỉnh, các bộ ở <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a> là chỗ nên bắt đầu, trong đó <a href="du-an-locphuc-10-nam.html">gian hàng kỷ niệm 10 năm Lộc Phúc</a> là ví dụ của một chương trình nhiều concept song song.</p>
+
+<h2>Quy trình và thời gian thực tế</h2>
+
+<p>Chúng tôi chia việc theo bốn mốc duyệt. Mỗi mốc đóng lại một nhóm quyết định, để vòng sau không phải mở lại vòng trước.</p>
+
+<p><strong style="color:#fff;">Mốc một, khối và mặt bằng.</strong> Dựng hình khối thô đúng tỉ lệ, chưa có vật liệu, chưa có ánh sáng. Đây là lúc đổi vị trí hạng mục và chiều rộng lối đi gần như không mất phí. Bỏ qua mốc này là nguyên nhân phổ biến nhất của phát sinh về sau.</p>
+
+<p><strong style="color:#fff;">Mốc hai, góc máy.</strong> Chốt từng góc sẽ giao, dưới dạng hình kết xuất nháp. Chốt góc trước khi làm chi tiết là cách tiết kiệm lớn nhất, vì mọi công làm bề mặt ở vùng camera không thấy đều là công bỏ đi.</p>
+
+<p><strong style="color:#fff;">Mốc ba, vật liệu và ánh sáng.</strong> Bề mặt in, kim loại, kính, gỗ, và hệ đèn của khu. Đây là mốc tốn thời gian nhất và cũng là mốc quyết định hình trông thật hay trông giả.</p>
+
+<p><strong style="color:#fff;">Mốc bốn, kết xuất và hậu kỳ.</strong> Ra hình độ phân giải cao, chỉnh màu, xuất các tỉ lệ khung cho từng kênh. Phần sửa ở mốc này nên chỉ còn là sửa nhỏ, nếu còn sửa khối thì nghĩa là một mốc trước đó đã bị bỏ qua.</p>
+
+<p>Về thời gian, ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho ba tới năm góc của một khu vực có mặt bằng đã chốt. Triển lãm nhiều khu như <a href="du-an-trien-lam-axe.html">phối cảnh triển lãm Axehibition</a> thì dài hơn, vì mỗi khu gần như là một đề bài riêng. Đây là ước lượng, không phải cam kết, và biến số khó đoán nhất luôn là số vòng duyệt bên phía khách.</p>
+
+<h2>Điều gì đẩy giá lên và chỗ nào cắt được</h2>
+
+<p>Bốn yếu tố quyết định phần lớn chi phí. Biết chúng thì bạn đọc được một báo giá và biết nên hỏi lại chỗ nào.</p>
+
+<p><strong style="color:#fff;">Số góc giao cuối.</strong> Yếu tố ảnh hưởng mạnh nhất và cũng dễ cắt nhất. Hai góc chọn đúng thường làm được việc của bốn góc chọn tuỳ hứng.</p>
+
+<p><strong style="color:#fff;">Số hạng mục đóng mới.</strong> Hạng mục dùng lại thiết bị có sẵn thì dựng nhanh. Hạng mục thiết kế riêng, nhất là loại có cấu trúc phức tạp hoặc nhiều lớp vật liệu, tốn công gấp nhiều lần.</p>
+
+<p><strong style="color:#fff;">Hình tĩnh hay hình động.</strong> Đây là bước nhảy bậc, không phải bước tăng dần. Nếu ngân sách có hạn, giữ hình tĩnh và tăng số góc thường có lợi hơn là đổi sang hình động.</p>
+
+<p><strong style="color:#fff;">Số vòng sửa.</strong> Hãy hỏi thẳng một vòng sửa được định nghĩa thế nào và vòng thứ bao nhiêu thì tính thêm. Đây là nguồn tranh chấp phổ biến nhất trong loại việc này, và một báo giá tử tế ghi rõ nó thay vì để ngỏ.</p>
+
+<p>Chỗ cắt được nhiều nhất thường không phải là mặc cả đơn giá, mà là rút danh sách góc giao và chốt mặt bằng sớm hơn. Phạm vi công việc chúng tôi nhận cho phần này ghi ở trang <a href="dich-vu.html">dịch vụ dựng hình 3D</a>.</p>
+
+<h2>Những điểm bất lợi cần biết trước</h2>
+
+<p>Ba điều dưới đây ít được nói ra trong lúc chào việc, nhưng biết trước thì bạn đỡ thất vọng.</p>
+
+<p><strong style="color:#fff;">Hình luôn đẹp hơn hiện trường một chút.</strong> Đèn thật có tản sáng, bề mặt in thật có sai màu, sàn thật có vết. Cách xử lý đúng là chốt mẫu in và thông số đèn thật ở mốc ba, chứ không phải làm hình xấu đi cho giống.</p>
+
+<p><strong style="color:#fff;">Phối cảnh không thay được bản vẽ thi công.</strong> Nếu đơn vị thi công cần số liệu, phải có bản vẽ kỹ thuật đi kèm. Đưa một bộ ảnh đẹp cho xưởng rồi mong họ tự suy ra kích thước là cách chắc chắn dẫn tới sai.</p>
+
+<p><strong style="color:#fff;">Concept còn đổi thì chưa nên dựng.</strong> Nếu ý tưởng chính còn có thể thay trong vài tuần tới, hãy chờ. Dựng theo bản chưa chốt nghĩa là trả tiền hai lần cho cùng một việc, và chúng tôi nói điều này cả khi người hỏi đang muốn đặt hàng.</p>
+
+<p>Nếu bạn muốn giữ một người trong nhà làm được phần dựng khối và sửa phương án nhanh, còn phần hình cuối thuê ngoài, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần, và phần chọn hướng trong <a href="cam-nang.html">cẩm nang học Blender</a> nói thẳng những việc một người tự học làm được và chưa nên nhận.</p>
+
+<h2>Câu hỏi thường gặp về phối cảnh sự kiện 3D</h2>
+
+<p class="faq-q">Phối cảnh sự kiện 3D khác gì bản vẽ 2D của đơn vị thi công?</p>
+<p>Bản vẽ 2D trả lời câu hỏi kích thước và vị trí, phối cảnh 3D trả lời câu hỏi người đứng trong đó nhìn thấy gì. Hai thứ không thay thế nhau. Bản vẽ kỹ thuật vẫn là tài liệu để thi công và để bóc khối lượng, còn phối cảnh là tài liệu để duyệt ý tưởng, để thuyết trình với nhà tài trợ và để làm hình truyền thông trước ngày khai mạc.</p>
+
+<p class="faq-q">Cần gửi gì để nhận báo giá dựng phối cảnh sự kiện?</p>
+<p>Tối thiểu là mặt bằng khu vực kèm số đo và chiều cao trần, danh sách hạng mục cần dựng, bộ nhận diện của chương trình ở dạng vector, và một câu nói rõ hình sẽ dùng để duyệt nội bộ hay để làm key visual. Có thêm ảnh hiện trạng mặt bằng và ảnh tham chiếu phong cách thì vòng duyệt đầu tiên rút ngắn đáng kể.</p>
+
+<p class="faq-q">Một bộ phối cảnh sự kiện 3D mất bao lâu?</p>
+<p>Ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho ba tới năm góc của một khu vực có mặt bằng đã chốt, tính từ lúc nhận đủ bản vẽ và nhận diện. Triển lãm nhiều khu, sân khấu có màn LED lớn hoặc chương trình còn đang đổi concept thì dài hơn. Biến số khó đoán nhất vẫn là số vòng duyệt bên phía khách.</p>
+
+<p class="faq-q">Phối cảnh 3D có bắt buộc giống y hệt sự kiện thật không?</p>
+<p>Phải giống ở những thứ đo được: tỉ lệ, kích thước hạng mục, vị trí và chiều cao. Không thể giống tuyệt đối ở ánh sáng và vật liệu, vì đèn thật tại hiện trường và bề mặt in thật luôn lệch ít nhiều so với hình kết xuất. Chỗ nên cảnh giác là hình đẹp hơn mức thi công có thể làm được trong ngân sách đã duyệt.</p>
+
+<p class="faq-q">Chương trình nhỏ có cần phối cảnh 3D không?</p>
+<p>Thường là không cần nhiều. Một chương trình nội bộ dùng lại backdrop và sân khấu có sẵn thì một mặt bằng 2D cộng ảnh tham chiếu là đủ. Phối cảnh 3D đáng tiền khi hạng mục phải đóng mới, khi cần thuyết phục người chưa từng thấy mặt bằng, hoặc khi hình còn phải dùng tiếp cho truyền thông.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang có một chương trình cần ra hình, gửi cho chúng tôi mặt bằng kèm danh sách hạng mục và ngày duyệt nội bộ. Chúng tôi báo lại thời gian và chi phí, và nói thẳng nếu một bộ mặt bằng 2D là lựa chọn hợp hơn cho quy mô của bạn. Muốn xem cách chúng tôi làm việc trước khi hỏi giá thì trang <a href="ve-chung-toi.html">studio visual 3D LXAM</a> và các bộ hình ở <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a> là chỗ nên bắt đầu.</p>
 """,
     },
 ]
