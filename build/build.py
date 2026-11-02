@@ -3895,6 +3895,8 @@ POSTS = [
 
 <p><strong style="color:#fff;">Số vòng sửa.</strong> Yếu tố này phụ thuộc vào phía bạn nhiều nhất. Gom phản hồi của mọi người liên quan thành một lần, thay vì gửi nhỏ giọt, là cách rút ngắn dự án mà không tốn thêm đồng nào.</p>
 
+<p>Nếu bạn đang chuẩn bị đi hỏi giá ở vài nơi, bài <a href="blog-bao-gia-dung-3d-san-pham.html">báo giá dựng 3D sản phẩm cần gửi gì</a> nói rõ cách đặt hai báo giá lên cùng một danh sách hạng mục để so được với nhau.</p>
+
 <p>Về thời gian, ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho một bộ ba tới năm ảnh của món có hình khối rõ ràng, tính từ lúc nhận đủ bản vẽ và mẫu. Đây là ước lượng, không phải cam kết, và biến số lớn nhất luôn là số vòng duyệt nội bộ bên phía khách.</p>
 
 <h2>Thuê studio 3D hay dựng đội nội bộ</h2>
@@ -4060,6 +4062,8 @@ POSTS = [
 
 <p><strong style="color:#fff;">Số vòng sửa.</strong> Hãy hỏi thẳng một vòng sửa được định nghĩa thế nào và vòng thứ bao nhiêu thì tính thêm. Đây là nguồn tranh chấp phổ biến nhất trong loại việc này.</p>
 
+<p>Cách đọc từng dòng của một tờ báo giá, gồm cả dấu hiệu nhận ra một con số được báo vội, nằm trong bài <a href="blog-bao-gia-dung-3d-san-pham.html">báo giá dựng 3D sản phẩm tính theo gì</a>.</p>
+
 <h2>Những lúc chưa nên đặt dịch vụ render 3D sản phẩm</h2>
 
 <p>Ba tình huống dưới đây, trả tiền bây giờ là lãng phí, và chúng tôi nói điều này cả khi người hỏi đang muốn đặt hàng.</p>
@@ -4221,6 +4225,8 @@ POSTS = [
 
 <p><strong style="color:#fff;">Số vòng sửa.</strong> Hãy hỏi thẳng một vòng sửa được định nghĩa thế nào và vòng thứ bao nhiêu thì tính thêm. Đây là nguồn tranh chấp phổ biến nhất trong loại việc này, và một báo giá tử tế ghi rõ nó thay vì để ngỏ.</p>
 
+<p>Phần này ở nhóm việc sản phẩm được bóc chi tiết hơn trong bài <a href="blog-bao-gia-dung-3d-san-pham.html">báo giá dựng 3D sản phẩm</a>, cách bóc hạng mục ở đó dùng lại được cho một chương trình.</p>
+
 <p>Chỗ cắt được nhiều nhất thường không phải là mặc cả đơn giá, mà là rút danh sách góc giao và chốt mặt bằng sớm hơn. Phạm vi công việc chúng tôi nhận cho phần này ghi ở trang <a href="dich-vu.html">dịch vụ dựng hình 3D</a>.</p>
 
 <h2>Những điểm bất lợi cần biết trước</h2>
@@ -4255,6 +4261,164 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đang có một chương trình cần ra hình, gửi cho chúng tôi mặt bằng kèm danh sách hạng mục và ngày duyệt nội bộ. Chúng tôi báo lại thời gian và chi phí, và nói thẳng nếu một bộ mặt bằng 2D là lựa chọn hợp hơn cho quy mô của bạn. Muốn xem cách chúng tôi làm việc trước khi hỏi giá thì trang <a href="ve-chung-toi.html">studio visual 3D LXAM</a> và các bộ hình ở <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a> là chỗ nên bắt đầu.</p>
+""",
+    },
+    {
+        "slug": "bao-gia-dung-3d-san-pham",
+        "title": "Báo giá dựng 3D sản phẩm: tính theo gì, cần gửi gì",
+        "desc": "Báo giá dựng 3D sản phẩm bóc theo số hình giao, độ phức tạp của món và số vòng sửa. Bài này nói rõ bạn cần gửi gì và chỗ nào cắt được chi phí.",
+        "tag": "Dịch vụ",
+        "date": "2026-11-02",
+        "date_vn": "02/11/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/vplas-chinh-dien-full.webp",
+        "faq": [
+            ('Báo giá dựng 3D sản phẩm thường tính theo hình hay theo sản phẩm?',
+             'Phổ biến nhất là tính theo hai phần cộng lại: một phần cho việc dựng món hàng, trả một lần vì mô hình dùng lại được cho mọi góc, và một phần cho từng hình giao. Vì vậy ảnh thứ nhất luôn đắt nhất và ảnh thứ năm rẻ hơn nhiều. Một báo giá chỉ đưa một con số gọn cho cả gói thì bạn nên hỏi tách hai phần này ra.'),
+            ('Chưa có bản vẽ kỹ thuật thì có báo giá được không?',
+             'Được, nhưng con số sẽ rộng hơn và thường kèm phần dự phòng. Thay cho bản vẽ, bạn gửi ảnh chụp món thật từ sáu hưồng kèm số đo ba chiều và ảnh cận các chi tiết nhỏ. Ảnh điện thoại là đủ, miễn là thấy rõ đường nối giữa các mảng và chất liệu bề mặt.'),
+            ('Vì sao hai nơi báo giá lệch nhau nhiều lần cho cùng một món?',
+             'Thường vì hai báo giá đang nói về hai khối lượng khác nhau chứ không phải hai mức giá khác nhau. Một bên tính ba góc nền trắng với một vòng sửa, bên kia tính năm góc có bối cảnh, ba vòng sửa và giao kèm file gốc. Muốn so được thì phải đặt hai báo giá trên cùng một danh sách hạng mục.'),
+            ('Giá dựng 3D rẻ hơn chụp ảnh thật không?',
+             'Không phải luôn. Một món hàng đã có sản phẩm mẫu trong tay, chỉ cần vài ảnh nền trắng thì chụp thật thường nhanh và rẻ hơn. Dựng 3D thắng ở nhóm việc khác: món chưa sản xuất, cần nhiều phiên bản màu, cần hình cắt lộ bên trong, hoặc cần dùng lại mô hình cho nhiều chiến dịch sau đó.'),
+            ('Thỏa thuận về số vòng sửa nên ghi thế nào?',
+             'Ghi rõ bao nhiêu vòng, mỗi vòng gồm những gì, và việc gì tính là việc mới. Sửa màu, sửa cường độ đèn và sửa bố cục nhỏ nền nằm trong vòng sửa. Đổi góc camera, thêm phiên bản bao bì hay đổi thiết kế sản phẩm là việc mới. Không ghi ra thì chính chỗ này là nơi hai bên mất lòng nhau.'),
+        ],
+        "body": """
+<p class="lead">Báo giá dựng 3D sản phẩm không có một con số chung, vì nó được bóc theo bốn thứ đo được: số hình phải giao, độ phức tạp của món hàng, mức hoàn thiện của hình cuối, và số vòng sửa hai bên chấp nhận trước khi dừng. Ai đưa ra con số ngay sau khi nghe tên sản phẩm là đang đoán, và phần đoán đó luôn được cộng vào giá bạn trả.</p>
+
+<p>Bài này viết cho người sắp đi hỏi giá: cách một báo giá dựng hình 3D được bóc ra thành hạng mục, bạn cần gửi gì để nhận một con số có cơ sở, vì sao hai nơi báo lệch nhau nhiều lần, chỗ nào cắt được chi phí và chỗ nào cắt vào là hỏng việc. Chúng tôi không nêu con số cho một món cụ thể, vì giá đổi theo từng trường hợp, nhưng sẽ nói thật các thành phần tạo nên nó.</p>
+
+<h2>Báo giá dựng 3D sản phẩm được bóc theo những phần nào</h2>
+
+<p>Một báo giá đáng tin gần như luôn tách ít nhất hai khối: tiền dựng món hàng, trả một lần, và tiền cho từng hình giao. Hiểu đúng hai khối này là bạn đã đọc được phần lớn báo giá.</p>
+
+<h3>Số hình giao và tỉ lệ khung</h3>
+<p>Một góc chính diện nền trắng khác hẳn năm góc có bối cảnh, và cùng một góc xuất ba tỉ lệ khung cho website, sàn thương mại điện tử và bài đăng dọc thì vẫn là ba lần dựng bố cục, không phải một. Hãy đếm số ảnh thật sự sẽ dùng, kèm nơi nó xuất hiện, trước khi hỏi giá.</p>
+
+<h3>Độ phức tạp của món hàng</h3>
+<p>Một hủ kem hình trụ có nhãn dán là một mức công việc. Một thiết bị có khứa, lưới thông hơi, chữ nổi, cảm ứng và phần lắp ghép là mức khác hẳn. Chi tiết nhỏ lại là chỗ tốn thời gian nhất, vì mắt người nhìn vào đó để quyết định hình thật hay giả.</p>
+
+<h3>Mức hoàn thiện của hình cuối</h3>
+<p>Hình để duyệt nội bộ, hình cho trang bán hàng, và hình làm key visual chính của một chiến dịch là ba mức yêu cầu khác nhau về ánh sáng, về độ sạch bề mặt và về thời gian hậu kỳ. Nói rõ mức bạn cần giúp bên nhận việc không báo theo mức cao nhất cho an toàn.</p>
+
+<h3>Số vòng sửa đã bao gồm</h3>
+<p>Đây là dòng hay bị bỏ trống và cũng là dòng gây tranh chấp nhiều nhất. Hai vòng sửa cho mỗi góc là mức thông thường, và đi kèm một định nghĩa rõ ràng về thứ gì tính là sửa, thứ gì tính là việc mới.</p>
+
+<h2>Bốn dạng việc hay bị gộp vào cùng một câu hỏi giá</h2>
+
+<p>Phần lớn các cuộc hỏi giá bắt đầu bằng một câu chung: dựng 3D món này bao nhiêu. Nhưng bốn dạng dưới đây có khối lượng khác nhau rất xa, nên câu trả lời cũng khác.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Dạng việc</th><th>Việc chính</th><th>Khối lượng tương đối</th><th>Phù hợp khi</th></tr></thead>
+<tbody>
+<tr><td>Ảnh nền trắng</td><td>Dựng món, đèn sạch, nhiều góc</td><td>Thấp nhất trên mỗi ảnh</td><td>Cần bộ ảnh cho sàn và website</td></tr>
+<tr><td>Ảnh có bối cảnh</td><td>Thêm tiểu cảnh, vật liệu, đèn theo câu chuyện</td><td>Trung bình tới cao</td><td>Cần hình truyền thông, hình mùa vụ</td></tr>
+<tr><td>Hình cắt lớp và chú thích</td><td>Tách linh kiện, dựng phần bên trong</td><td>Cao, phụ thuộc bản vẽ</td><td>Giải thích công nghệ, hồ sơ kỹ thuật</td></tr>
+<tr><td>Clip ngắn hoặc TVC</td><td>Thêm chuyển động, nhịp cắt, âm thanh</td><td>Nhảy bậc so với ảnh tĩnh</td><td>Cần vài giây cho quảng cáo</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Dòng cuối cần đọc thật kỹ. Một clip sáu giây không bằng sáu ảnh tĩnh, vì mỗi giây là hai mươi bốn tới ba mươi khung và mọi sai sót nhỏ ở vật liệu đều bị nhân lên theo thời lượng. Các mốc duyệt của một shot động nằm trong bài <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D</a>, còn phần giao nhận của nhóm ảnh tĩnh được viết kỹ hơn trong bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
+
+<h2>Bạn cần gửi gì để nhận báo giá có cơ sở</h2>
+
+<p>Gửi thiếu đầu vào thì bên nhận việc buộc phải báo theo trường hợp xấu nhất, và bạn là người trả phần dự phòng đó. Dưới đây là bộ tối thiểu chúng tôi hỏi trước khi báo lại một con số.</p>
+
+<ul>
+<li>Bản vẽ kỹ thuật hoặc số đo ba chiều của món hàng, ở định dạng bất kỳ bên bạn đang có, kể cả ảnh chụp bản vẽ giấy.</li>
+<li>Ảnh chụp món thật từ sáu hưồng, cộng ảnh cận các chi tiết nhỏ như nút, khứa, đường ghép.</li>
+<li>File bao bì và nhãn ở dạng vector, kèm mã màu in và font.</li>
+<li>Danh sách ảnh cần giao, ghi rõ tỉ lệ khung và nơi mỗi ảnh sẽ xuất hiện.</li>
+<li>Một câu nói rõ hình dùng để duyệt nội bộ, để bán hàng, hay để làm key visual.</li>
+<li>Ba tới năm ảnh tham chiếu phong cách, kèm một câu nói rõ bạn thích điểm nào ở mỗi ảnh.</li>
+<li>Số phiên bản màu hoặc số dung tích của cùng dòng sản phẩm, nếu có.</li>
+<li>Mốc thời gian thật, gồm cả ngày duyệt nội bộ chứ không chỉ ngày chạy chiến dịch.</li>
+<li>Ai là người duyệt cuối, và có bao nhiêu người có quyền yêu cầu sửa.</li>
+</ul>
+
+<p>Dòng cuối trông như chuyện hành chính nhưng ảnh hưởng tới giá nhiều hơn người ta tưởng. Một người duyệt và năm người duyệt là hai khối lượng sửa khác nhau.</p>
+
+<figure>
+  <img src="assets/vplas-ban-ve-kich-thuoc-3d.jpg" alt="Bản vẽ kích thước ba chiều của thiết bị VPLAS dùng làm đầu vào để báo giá dựng 3D sản phẩm" loading="lazy" width="1600" height="900">
+  <figcaption><strong>Đây là thứ biến một con số đoán thành một con số có cơ sở.</strong> Có bản vẽ kèm số đo, bên nhận việc đếm được khối lượng dựng và bỏt được phần dự phòng. Xem trọn bộ hình ở <a href="du-an-vplas.html">dự án render thiết bị VPLAS</a>.</figcaption>
+</figure>
+
+<h2>Vì sao hai nơi báo giá lệch nhau nhiều lần</h2>
+
+<p>Khi hai báo giá cho cùng một món lệch nhau gấp mấy lần, lý do thường không nằm ở đơn giá. Nó nằm ở bốn chỗ sau.</p>
+
+<p><strong style="color:#fff;">Hai bên đang đếm số hình khác nhau.</strong> Một bên hiểu là ba góc, bên kia hiểu là ba góc nhân ba tỉ lệ khung. Cách chữa là gửi đúng một danh sách ảnh cho mọi nơi bạn hỏi.</p>
+
+<p><strong style="color:#fff;">Mức hoàn thiện được hiểu khác nhau.</strong> Ảnh đủ dùng cho trang bán hàng và ảnh làm key visual đứng đầu một chiến dịch cách nhau khá xa ở khâu ánh sáng và hậu kỳ.</p>
+
+<p><strong style="color:#fff;">Số vòng sửa không được ghi.</strong> Báo giá thấp thường đã ngầm cắt phần này xuống một vòng, và phần còn lại sẽ quay về dạng phí phát sinh.</p>
+
+<p><strong style="color:#fff;">Quyền sử dụng và file gốc không đồng nhất.</strong> Giao ảnh cuối khác với giao kèm file dựng để bạn tái sử dụng về sau. Hỏi rõ ngay từ đầu, vì đòi sau khi đã chốt giá là rất khó.</p>
+
+<blockquote><p>Một báo giá rẻ hơn chưa chắc là rẻ. Phần lớn trường hợp nó đang mó tả một khối lượng nhỏ hơn, và phần thiếu sẽ xuất hiện lại ở giữa dự án với một cái tên khác.</p></blockquote>
+
+<p>Khoảng lệch giữa freelancer, studio và agency cũng nằm ở nhóm nguyên nhân này nhiều hơn là ở tay nghề. Cách so ba nhóm đó trên cùng một bảng được viết trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn nếu việc của bạn là một chương trình chứ không phải một món hàng thì bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D</a> đi đúng vào nhóm đó.</p>
+
+<h2>Chỗ cắt được chi phí và chỗ không nên cắt</h2>
+
+<p>Ngân sách có hạn là chuyện bình thường. Vấn đề là cắt đúng chỗ thì hình vẫn dùng được, cắt sai chỗ thì phải làm lại.</p>
+
+<h3>Ba chỗ cắt được</h3>
+<ul>
+<li>Giảm số góc ở vòng đầu, giữ lại mô hình để thêm góc sau khi hình đầu chứng minh được hiệu quả.</li>
+<li>Thay bối cảnh phức tạp bằng nền đơn sắc có đèn tốt, nhóm ảnh này sống lâu hơn và đỡ lỗi thời.</li>
+<li>Tự chuẩn bị đầu vào cho đủ và gọn, vì phần thời gian bên nhận việc phải bỏ ra để đoán đều nằm trong giá.</li>
+</ul>
+
+<h3>Ba chỗ không nên cắt</h3>
+<ul>
+<li>Số vòng sửa. Cắt xuống một vòng thường đổi thành phí phát sinh hoặc thành một bộ hình không ai hài lòng.</li>
+<li>Độ chính xác của hình so với món thật. Hình đẹp hơn hàng thật là đường ngắn dẫn tới đổi trả và mất lòng tin.</li>
+<li>Khâu chốt màu với mẫu in thật, nếu bao bì là phần nhận diện chính của sản phẩm.</li>
+</ul>
+
+<p>Nếu bạn ra hình thường xuyên, có một hướng thứ ba đáng tính: giữ một người trong nhà làm được phần dựng khối và các ảnh nền trắng, còn thuê ngoài phần key visual. Đầu ra cụ thể của hướng này được liệt kê trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, và phần danh mục dịch vụ chúng tôi đang nhận nằm ở trang <a href="dich-vu.html">dịch vụ 3D cho thương hiệu</a>.</p>
+
+<h2>Dấu hiệu một báo giá chưa đáng tin</h2>
+
+<p>Không phải dấu hiệu nào cũng là lỗi cố ý. Phần lớn chỉ là báo vội. Nhưng gặp những điểm này thì bạn nên hỏi thêm trước khi chốt.</p>
+
+<ul>
+<li>Báo một con số duy nhất, không tách phần dựng món và phần từng ảnh.</li>
+<li>Không hỏi bản vẽ, không hỏi số đo, không hỏi nơi ảnh sẽ dùng.</li>
+<li>Không ghi số vòng sửa, hoặc ghi sửa không giới hạn, vì điều đó không tồn tại trên thực tế.</li>
+<li>Cam kết tiến độ rất ngắn trước khi xem đầu vào.</li>
+<li>Portfolio chỉ có ảnh cuối, không có bất kỳ dấu vết nào của quy trình và các vòng duyệt.</li>
+<li>Không nói gì về quyền sử dụng hình và việc có giao file gốc hay không.</li>
+</ul>
+
+<p>Ở chiều ngược lại, cũng nên nói thật một điều: người hỏi giá mang theo một danh sách ảnh rõ ràng và một mốc thời gian thật luôn nhận được báo giá tốt hơn. Không phải vì được ưu đãi, mà vì bên nhận việc không còn phải cộng phần rủi ro vào con số.</p>
+
+<p>Muốn xem chúng tôi giao những gì trong thực tế trước khi hỏi giá thì các bộ ở trang <a href="du-an-san-pham.html">dự án render 3D sản phẩm</a> là chỗ nên bắt đầu, trong đó <a href="du-an-khoa-cua-thong-minh.html">bộ hình khoá cửa thông minh</a> là ví dụ của một món nhiều linh kiện cần cả ảnh nền trắng và hình cắt lớp.</p>
+
+<h2>Câu hỏi thường gặp về báo giá dựng 3D sản phẩm</h2>
+
+<p class="faq-q">Báo giá dựng 3D sản phẩm thường tính theo hình hay theo sản phẩm?</p>
+<p>Phổ biến nhất là tính theo hai phần cộng lại: một phần cho việc dựng món hàng, trả một lần vì mô hình dùng lại được cho mọi góc, và một phần cho từng hình giao. Vì vậy ảnh thứ nhất luôn đắt nhất và ảnh thứ năm rẻ hơn nhiều. Một báo giá chỉ đưa một con số gọn cho cả gói thì bạn nên hỏi tách hai phần này ra.</p>
+
+<p class="faq-q">Chưa có bản vẽ kỹ thuật thì có báo giá được không?</p>
+<p>Được, nhưng con số sẽ rộng hơn và thường kèm phần dự phòng. Thay cho bản vẽ, bạn gửi ảnh chụp món thật từ sáu hưồng kèm số đo ba chiều và ảnh cận các chi tiết nhỏ. Ảnh điện thoại là đủ, miễn là thấy rõ đường nối giữa các mảng và chất liệu bề mặt.</p>
+
+<p class="faq-q">Vì sao hai nơi báo giá lệch nhau nhiều lần cho cùng một món?</p>
+<p>Thường vì hai báo giá đang nói về hai khối lượng khác nhau chứ không phải hai mức giá khác nhau. Một bên tính ba góc nền trắng với một vòng sửa, bên kia tính năm góc có bối cảnh, ba vòng sửa và giao kèm file gốc. Muốn so được thì phải đặt hai báo giá trên cùng một danh sách hạng mục.</p>
+
+<p class="faq-q">Giá dựng 3D rẻ hơn chụp ảnh thật không?</p>
+<p>Không phải luôn. Một món hàng đã có sản phẩm mẫu trong tay, chỉ cần vài ảnh nền trắng thì chụp thật thường nhanh và rẻ hơn. Dựng 3D thắng ở nhóm việc khác: món chưa sản xuất, cần nhiều phiên bản màu, cần hình cắt lộ bên trong, hoặc cần dùng lại mô hình cho nhiều chiến dịch sau đó.</p>
+
+<p class="faq-q">Thỏa thuận về số vòng sửa nên ghi thế nào?</p>
+<p>Ghi rõ bao nhiêu vòng, mỗi vòng gồm những gì, và việc gì tính là việc mới. Sửa màu, sửa cường độ đèn và sửa bố cục nhỏ nền nằm trong vòng sửa. Đổi góc camera, thêm phiên bản bao bì hay đổi thiết kế sản phẩm là việc mới. Không ghi ra thì chính chỗ này là nơi hai bên mất lòng nhau.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang cần một con số cho món của mình, gửi cho chúng tôi bản vẽ hoặc ảnh mẫu kèm danh sách ảnh cần giao và nơi ảnh sẽ xuất hiện. Chúng tôi báo lại theo từng hạng mục thay vì một con số gọn, và nói thắng nếu chụp thật là lựa chọn hợp hơn cho trường hợp của bạn. Còn nếu bạn muốn tự làm được phần này, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần, và <a href="cam-nang.html">cẩm nang học Blender</a> nói thật những việc một người mới làm được và chưa nên nhận.</p>
 """,
     },
 ]
