@@ -1243,14 +1243,26 @@ POSTS = [
         "tag": "Thiết bị",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "read": "9 phút đọc",
-        "updated": "2026-10-24",
-        "updated_vn": "24/10/2026",
+        "read": "11 phút đọc",
+        "updated": "2026-11-03",
+        "updated_vn": "03/11/2026",
         "thumb": "assets/vplas-hieu-ung-plasma-blender.jpg",
+        "faq": [
+            ('Cấu hình máy học Blender tối thiểu là gì?',
+             'Một máy có card rời bất kỳ từ 6GB VRAM, 16GB RAM và một ổ SSD là đủ để đi hết phần modeling, vật liệu và ánh sáng cơ bản, tức là khoảng nửa năm đầu học. Máy không có card rời vẫn mở và dựng hình được, chỉ chậm hơn ở viewport và render lâu hơn nhiều. Trong nửa năm đầu, thứ chặn bạn lại gần như luôn là kỹ năng chứ không phải phần cứng.'),
+            ('Máy yếu có học Blender được không?',
+             'Được, và đây là câu trả lời thật chứ không phải câu động viên. Toàn bộ phần dựng hình, UV, dựng vật liệu và căn ánh sáng đều làm được trên máy yếu nếu bạn chịu tắt subdivision khi làm việc, ẩn thứ chưa dùng và render nháp ở độ phân giải thấp. Chỗ máy yếu thật sự chặn bạn là render bản cuối của cảnh nặng, và chỗ đó tới muộn hơn bạn tưởng.'),
+            ('Nên nâng GPU hay RAM trước?',
+             'Nâng cái nào đầy trước. Mở cảnh nặng nhất bạn đang có, render một lần, rồi xem dung lượng bộ nhớ card và RAM hệ thống trong lúc render. Nếu bộ nhớ card tiến sát giới hạn thì nâng GPU trước, vì tràn VRAM làm thời gian render đội lên nhiều lần. Nếu RAM gần đầy mà card còn thừa thì nâng RAM trước, rẻ hơn nhiều. Nếu cả hai còn thừa mà render vẫn lâu thì vấn đề ở thiết lập render, không ở phần cứng.'),
+            ('Laptop có làm được việc 3D thương mại không?',
+             'Làm được, nhưng cùng tầm tiền thì máy để bàn mạnh hơn đáng kể và chịu được render dài. Laptop render lâu sẽ giảm xung để hạ nhiệt, nên con số trên trang thông số không phải con số bạn nhận được sau hai mươi phút render. Chọn laptop khi bạn thật sự cần di chuyển, và nếu chọn thì ưu tiên máy có VRAM cao hơn là máy có điểm chuẩn cao.'),
+            ('Máy Mac học Blender có ổn không?',
+             'Ổn cho học và cho việc sản phẩm vừa phải. Blender chạy Cycles trên chip Apple qua Metal, và bộ nhớ dùng chung của máy Mac là một lợi thế thật với cảnh nặng vì không có cái ngưỡng VRAM riêng để tràn. Mặt bất lợi là tốc độ render thuần thường còn sau card NVIDIA cùng tầm giá, và một số add-on cộng đồng vẫn ưu tiên Windows. Nếu bạn đã có máy Mac, cứ học trên đó, đừng đổi máy vì Blender.'),
+        ],
         "body": """
-<p class="lead">Câu hỏi này thường đến kèm một mong đợi ngầm: rằng máy mạnh hơn sẽ làm hình đẹp hơn. Nói thẳng: không. Máy mạnh làm bạn chờ ít hơn. Đẹp hay không nằm ở chỗ khác.</p>
+<p class="lead">Cấu hình máy học Blender 3D cần ít hơn bạn nghĩ: một máy có card rời bất kỳ từ 6GB VRAM, 16GB RAM và một ổ SSD là đủ cho khoảng nửa năm đầu. Câu hỏi này thường đến kèm một mong đợi ngầm, rằng máy mạnh hơn sẽ làm hình đẹp hơn. Nói thẳng: không. Máy mạnh làm bạn chờ ít hơn, còn đẹp hay không nằm ở chỗ khác.</p>
 
-<p>Nhưng chờ ít hơn cũng đáng tiền, nên đây là hướng dẫn thật theo từng giai đoạn.</p>
+<p>Nhưng chờ ít hơn cũng đáng tiền, nên đây là hướng dẫn thật theo từng giai đoạn, kèm cách tự đo xem máy bạn đang kẹt ở đâu trước khi mở ví.</p>
 
 <h2>Giai đoạn 1: Mới học: đừng mua gì cả</h2>
 
@@ -1259,6 +1271,20 @@ POSTS = [
 <p>Ở giai đoạn này cảnh của bạn nhẹ, render nháp vài phút là xong. Nâng cấp máy lúc này giống mua giày chạy marathon khi mới tập đi bộ. Thứ nên đổ công vào thay vì phần cứng được liệt kê trong bài <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a>.</p>
 
 <blockquote><p>Người mới hay đổ cho máy khi hình chưa đẹp. Chín trên mười lần, đổi máy xong hình vẫn vậy, chỉ là ra kết quả nhanh hơn.</p></blockquote>
+
+<p>Kể cả máy không có card rời vẫn học được. Bạn mất thêm thời gian chờ ở mỗi bản render nháp, và bù lại bằng cách render nhỏ hơn, dùng EEVEE để căn chỉnh và chỉ bật Cycles ở bản cuối. Cách làm cụ thể nằm ở mục ba cách tiết kiệm phía dưới.</p>
+
+<h2>Máy yếu kẹt lại ở khâu nào trước</h2>
+
+<p>Biết thứ tự này giúp bạn khỏi nâng cấp sai chỗ. Một máy yếu không vỡ đều ở mọi khâu, nó vỡ theo đúng một trình tự.</p>
+
+<p>Đầu tiên là viewport. Cảnh lên vài triệu mặt, quay góc máy bắt đầu giật, nhưng bạn vẫn dựng hình được, chỉ bớt thoải mái. Chặng này chưa cần mua gì, chỉ cần tắt subdivision khi làm việc và ẩn những gì chưa dùng tới.</p>
+
+<p>Thứ hai là VRAM khi render Cycles. Đây là chỗ máy yếu thật sự chặn bạn lại: cảnh không nhét vừa bộ nhớ card thì Blender đổ ngược về RAM hệ thống và chậm đi thảm hại, hoặc báo hết bộ nhớ rồi dừng.</p>
+
+<p>Thứ ba là RAM hệ thống, biểu hiện là máy đơ dần khi bạn mở nhiều texture độ phân giải cao hoặc vừa mở Blender vừa mở phần mềm dựng phim. Cuối cùng mới tới CPU, chủ yếu lộ ra ở mô phỏng vật lý, bake và khâu dựng phim.</p>
+
+<p>Nói ngắn: trong nửa năm đầu bạn chỉ gặp vấn đề số một, và vấn đề số một không giải quyết bằng tiền. Những chặng về sau, thứ tự trên chính là bản đồ nâng cấp. Nếu chưa rõ mình đang ở chặng nào, bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a> mô tả dấu hiệu của từng giai đoạn, còn thứ tự kỹ năng thì nằm ở <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>.</p>
 
 <h2>Giai đoạn 2: Bắt đầu render nặng: ưu tiên GPU và RAM</h2>
 
@@ -1287,26 +1313,55 @@ POSTS = [
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Thành phần</th><th>Mới học (0 đến 6 tháng)</th><th>Làm dự án thật</th></tr></thead>
+<thead><tr><th>Thành phần</th><th>Mới học (0 đến 6 tháng)</th><th>Làm dự án thật</th><th>Dấu hiệu đang thiếu</th></tr></thead>
 <tbody>
-<tr><td>GPU</td><td>Card rời bất kỳ, ≥6GB VRAM</td><td>≥12GB VRAM, lý tưởng 24GB</td></tr>
-<tr><td>RAM</td><td>16GB</td><td>32 đến 64GB</td></tr>
-<tr><td>CPU</td><td>Tầm trung đời gần</td><td>Nhiều nhân, đời mới</td></tr>
-<tr><td>Ổ cứng</td><td>SSD 512GB</td><td>NVMe 1 đến 2TB</td></tr>
-<tr><td>Màn hình</td><td>Cái đang có</td><td>Màu chuẩn, hiệu chuẩn được</td></tr>
+<tr><td>GPU</td><td>Card rời bất kỳ, ≥6GB VRAM</td><td>≥12GB VRAM, lý tưởng 24GB</td><td>Render báo hết bộ nhớ, hoặc chậm gấp nhiều lần so với bản nháp</td></tr>
+<tr><td>RAM</td><td>16GB</td><td>32 đến 64GB</td><td>Máy đơ dần khi mở nhiều texture, không báo lỗi gì</td></tr>
+<tr><td>CPU</td><td>Tầm trung đời gần</td><td>Nhiều nhân, đời mới</td><td>Mô phỏng và bake lâu, dựng phim giật khi xem trước</td></tr>
+<tr><td>Ổ cứng</td><td>SSD 512GB</td><td>NVMe 1 đến 2TB</td><td>Mở và lưu file dự án mất hàng chục giây</td></tr>
+<tr><td>Màn hình</td><td>Cái đang có</td><td>Màu chuẩn, hiệu chuẩn được</td><td>Hình trên máy khác hẳn hình khách nhìn thấy</td></tr>
 </tbody>
 </table>
 </div>
+
+<h2>Nâng GPU hay RAM trước: phép thử mười phút</h2>
+
+<p>Đừng đoán theo cảm giác, cũng đừng tin bảng điểm chuẩn của người khác vì cảnh của họ không phải cảnh của bạn. Mở cảnh nặng nhất bạn đang có, render một lần ở kích thước thật, rồi xem hai chỗ.</p>
+
+<h3>Thống kê trong Blender</h3>
+<p>Bật Statistics trong Viewport Overlays và theo dõi dòng bộ nhớ trong lúc render. Nếu con số tiến sát dung lượng VRAM của card, bạn đang kẹt ở GPU, và mọi đồng bỏ vào RAM lúc này gần như không đổi gì.</p>
+
+<h3>Đồng hồ tài nguyên của hệ điều hành</h3>
+<p>Trên Windows mở Task Manager, tab Performance, xem mục bộ nhớ riêng của GPU và mục Memory. Cái nào gần đầy trước thì nâng cái đó trước. Nếu cả hai còn thừa mà render vẫn lâu, nguyên nhân nằm ở thiết lập render chứ không ở phần cứng, và đó là lúc quay lại danh sách cách <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a> thay vì đi mua card.</p>
+
+<p>Một lưu ý dễ bị bỏ qua: VRAM còn bị chia cho hệ điều hành, trình duyệt và màn hình phụ. Đóng bớt tab trước khi đo, nếu không bạn sẽ kết luận sai về card của mình.</p>
+
+<h2>Card NVIDIA, AMD hay máy Mac</h2>
+
+<p>Cycles hỗ trợ cả ba hướng, nhưng mức độ trưởng thành khác nhau, và tới thời điểm viết bài thì bức tranh như sau.</p>
+
+<p>Card NVIDIA đi đường OptiX, dùng được phần lõi dựng tia riêng của card, nên thường là lựa chọn nhanh và ít rắc rối nhất cho người làm sản phẩm. Phần lớn add-on và hướng dẫn trong cộng đồng cũng được thử trên nền này trước.</p>
+
+<p>Card AMD chạy qua HIP. Dùng được, nhưng bạn nên chuẩn bị tinh thần gặp vài trường hợp phải cập nhật driver hoặc đổi thiết lập mới chạy đúng, nhất là với cảnh có volumetric.</p>
+
+<p>Máy Mac chip Apple chạy qua Metal. Lợi thế thật của nó là bộ nhớ dùng chung: không có một ngưỡng VRAM riêng để tràn, nên cảnh nặng ít gặp lỗi hết bộ nhớ hơn. Mặt bất lợi là tốc độ render thuần thường còn sau card NVIDIA cùng tầm giá. Nếu bạn đã có máy Mac thì cứ học trên đó, đừng đổi máy vì Blender.</p>
+
+<figure>
+  <img src="assets/aston-dbx-goc-cao-key-visual.webp" alt="Key visual xe Aston Martin DBX render bằng Blender với vật liệu sơn bóng và phản chiếu môi trường" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Key visual xe trong dự án Aston Martin DBX.</strong> Vật liệu sơn bóng nhiều lớp và phản chiếu môi trường là nhóm cảnh ăn VRAM nhanh nhất, nên đây là loại việc nên lấy làm cảnh thử khi đo máy.</figcaption>
+</figure>
 
 <h2>Thứ ít người nhắc: màn hình</h2>
 
 <p>Nếu bạn làm hình ảnh thương mại, màn hình sai màu là vấn đề nghiêm trọng hơn card yếu. Bạn chỉnh ánh sáng và màu theo cái mình thấy, nên màn ám xanh hoặc quá sáng nghĩa là mọi quyết định màu của bạn đều lệch, và khách sẽ thấy khác hẳn.</p>
 
-<p>Không cần màn đắt tiền. Cần một màn có thể hiệu chuẩn và một lần hiệu chuẩn tử tế.</p>
+<p>Không cần màn đắt tiền. Cần một màn có thể hiệu chuẩn và một lần hiệu chuẩn tử tế. Đây cũng là khoản dễ bị bỏ sót nhất khi người ta dồn hết ngân sách vào card.</p>
 
 <h2>Máy tính xách tay hay để bàn?</h2>
 
 <p>Cùng tầm tiền, máy để bàn mạnh hơn đáng kể và tản nhiệt tốt hơn. Laptop render lâu sẽ giảm xung để hạ nhiệt, nghĩa là con số trên giấy không phải con số bạn nhận được. Chọn laptop khi bạn thật sự cần di chuyển, không phải vì "cho tiện".</p>
+
+<p>Nếu buộc phải chọn laptop, ưu tiên máy có VRAM cao hơn là máy có điểm chuẩn cao, và luôn render khi cắm sạc. Rất nhiều máy hạ hiệu năng GPU khi chạy pin, nên bài thử của bạn phải làm trong đúng điều kiện bạn sẽ làm việc.</p>
 
 <h2>Ba cách tiết kiệm không cần mua gì</h2>
 
@@ -1316,11 +1371,35 @@ POSTS = [
 <li><strong style="color:#fff;">Giảm texture khi làm việc.</strong> Texture 4K trong lúc dựng là lãng phí VRAM; chỉ bật lên ở bản render cuối.</li>
 </ul>
 
+<p>Thêm hai cách nữa khi cảnh đã nặng: render theo lớp rồi ghép ở hậu kỳ, thay vì ép máy làm một cú một; và cắt bớt số lần nảy sáng ở những vật liệu không ai nhìn kỹ. Cách thứ hai là chỗ tiết kiệm nhiều nhất mà ít ai chịu làm, vì nó đòi bạn biết cảnh của mình đang tốn ở đâu. Nếu bạn muốn học phần này cho có hệ thống thay vì mò, nội dung đó nằm trong một <a href="blog-khoa-hoc-render.html">khoá học render</a> tử tế.</p>
+
+<h2>Danh sách kiểm tra trước khi bỏ tiền nâng cấp</h2>
+
+<ul>
+<li>Bạn đã chạy phép thử mười phút ở trên và biết chính xác VRAM hay RAM đầy trước chưa?</li>
+<li>Bạn đã thử hết các cách cắt thời gian render ở mức thiết lập chưa, hay chỉ mới nghe nói máy yếu?</li>
+<li>Trong ba tháng gần nhất, bạn có cảnh nào thật sự không render nổi, hay chỉ là render lâu hơn mức bạn muốn?</li>
+<li>Bạn đang chờ nhiều hơn làm, hay đang làm nhiều hơn chờ? Chỉ trường hợp đầu mới đáng nâng cấp.</li>
+<li>Nếu nâng, bạn đã tính cả màn hình và ổ lưu trữ vào ngân sách, hay dồn hết vào card?</li>
+<li>Khoản tiền này nếu dùng để học thay vì mua máy thì đổi được gì? So thẳng hai phương án trước khi quyết.</li>
+<li>Máy mới có chỗ nâng tiếp không, hay một năm sau phải đổi cả bộ?</li>
+</ul>
+
+<h2>Nâng máy hay nâng kỹ năng: so bằng cùng một đơn vị</h2>
+
+<p>Đây là phần hay bị bỏ qua. Một khoản tiền nâng card thường tương đương một chặng học có người sửa bài, nên hai phương án đó đáng được đặt cạnh nhau chứ không phải nằm ở hai ngăn khác nhau trong đầu.</p>
+
+<p>Nguyên tắc đơn giản: nếu hình của bạn chưa đủ tốt để bán được, nâng kỹ năng trước. Nếu hình đã đủ tốt mà bạn không giao kịp hạn vì thời gian render, nâng máy trước. Cách bóc tách các khoản khi học nằm ở bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>.</p>
+
+<p>Khi đã nhận việc thật, máy chuyển từ chi phí sang biến số trong giá. Thời gian render là một dòng có thật trong <a href="blog-bao-gia-dung-3d-san-pham.html">báo giá dựng 3D sản phẩm</a>, vì nó quyết định bạn nhận được mấy việc trong một tháng. Đó cũng là lý do một <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> làm thường xuyên thì khoản đầu tư phần cứng hoàn lại nhanh hơn nhiều so với lúc còn học.</p>
+
 <hr class="hr">
 
-<p>Tóm lại: bắt đầu bằng máy đang có. Khi nào bạn thấy mình <em>chờ</em> nhiều hơn <em>làm</em>, lúc đó nâng cấp, và nâng GPU trước. Còn nếu vấn đề là hình chưa đẹp thì máy mới không giải quyết được; cái cần xem lại là ánh sáng, xem bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>.</p>
+<p>Tóm lại, cấu hình máy học Blender 3D nên bắt đầu bằng máy đang có. Khi nào bạn thấy mình <em>chờ</em> nhiều hơn <em>làm</em>, lúc đó nâng cấp, và nâng đúng cái đầy trước, thường là GPU. Còn nếu vấn đề là hình chưa đẹp thì máy mới không giải quyết được; cái cần xem lại là ánh sáng, xem bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>.</p>
 
 <p>Ba cách tiết kiệm ở trên nằm trong checklist render của <a href="cam-nang.html">cẩm nang Blender</a>, tải về để cạnh máy lúc làm thì đỡ phải nhớ. Nếu bạn vẫn không chắc máy đang có đủ cho mảng mình nhắm tới, phần mô tả hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ cấu hình tối thiểu cho từng hệ.</p>
+
+<p>Bước đi tiếp cụ thể: chạy phép thử mười phút ở trên với cảnh nặng nhất bạn có, ghi lại hai con số, rồi đối chiếu với bảng tham khảo theo giai đoạn. Nếu kết quả cho thấy máy vẫn đủ, bạn vừa tiết kiệm được một khoản và biết nên dồn thời gian vào đâu.</p>
 """,
     },
     {
@@ -1386,7 +1465,7 @@ POSTS = [
 <p>Khoảng năm tới mười người, có giáo trình, có bài nộp theo tuần. Rẻ hơn kèm riêng, và phần nghe người khác bị sửa bài thực sự có giá trị, vì bạn thấy được những lỗi mình chưa kịp mắc. Nhược điểm là nhịp lớp không chờ bạn.</p>
 
 <h3>Gia sư Blender theo buổi</h3>
-<p>Không giáo trình, bạn mang vấn đề tới, trả tiền theo giờ. Hợp với người đang tự học và chỉ cần gỡ đúng một chỗ, chẳng hạn topology một chi tiết khó hoặc một cảnh render chậm bất thường. Không hợp nếu bạn còn chưa biết mình thiếu gì, vì lúc đó tiền giờ sẽ trôi vào việc chẩn đoán. Ranh giới giữa hai trường hợp đó, cùng cách kiểm tra người dạy trước buổi đầu, được viết kỹ trong bài <a href="blog-gia-su-blender.html">gia sư Blender</a>.</p>
+<p>Không giáo trình, bạn mang vấn đề tới, trả tiền theo giờ. Hợp với người đang tự học và chỉ cần gỡ đúng một chỗ, chẳng hạn topology một chi tiết khó hoặc một cảnh render chậm bất thường. Với trường hợp sau, nên loại nguyên nhân phần cứng ra trước bằng phép thử trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>, để không trả tiền giờ cho một vấn đề của cái card. Không hợp nếu bạn còn chưa biết mình thiếu gì, vì lúc đó tiền giờ sẽ trôi vào việc chẩn đoán. Ranh giới giữa hai trường hợp đó, cùng cách kiểm tra người dạy trước buổi đầu, được viết kỹ trong bài <a href="blog-gia-su-blender.html">gia sư Blender</a>.</p>
 
 <h3>Kèm theo dự án</h3>
 <p>Bạn làm một shot hoàn chỉnh, người kèm đi cùng từ brief tới file giao. Đây là hình thức giống việc thật nhất và cũng là cách nhanh nhất để có một bài portfolio dùng được. Cách gộp nhiều shot như vậy thành một bộ bốn tới sáu món nằm ở bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>. Hai hệ chuyên sâu theo hướng sản phẩm và hướng automotive đang mô tả ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a>, xem để biết một lộ trình đầy đủ gồm những chặng nào.</p>
@@ -4380,7 +4459,7 @@ POSTS = [
 <li>Khâu chốt màu với mẫu in thật, nếu bao bì là phần nhận diện chính của sản phẩm.</li>
 </ul>
 
-<p>Nếu bạn ra hình thường xuyên, có một hướng thứ ba đáng tính: giữ một người trong nhà làm được phần dựng khối và các ảnh nền trắng, còn thuê ngoài phần key visual. Đầu ra cụ thể của hướng này được liệt kê trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, và phần danh mục dịch vụ chúng tôi đang nhận nằm ở trang <a href="dich-vu.html">dịch vụ 3D cho thương hiệu</a>.</p>
+<p>Nếu bạn ra hình thường xuyên, có một hướng thứ ba đáng tính: giữ một người trong nhà làm được phần dựng khối và các ảnh nền trắng, còn thuê ngoài phần key visual. Đầu ra cụ thể của hướng này được liệt kê trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, phần máy móc cần cho người làm trong nhà được bóc theo giai đoạn trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> để không mua thừa ngay từ đầu, và phần danh mục dịch vụ chúng tôi đang nhận nằm ở trang <a href="dich-vu.html">dịch vụ 3D cho thương hiệu</a>.</p>
 
 <h2>Dấu hiệu một báo giá chưa đáng tin</h2>
 
