@@ -3903,7 +3903,7 @@ POSTS = [
 </table>
 </div>
 
-<p>Bảng này không chọn hộ bạn. Nó chỉ nói một điều: freelancer bán giờ, studio bán trách nhiệm trên phần hình, agency bán việc điều phối toàn chiến dịch. Chọn sai lớp thì bạn trả tiền cho thứ mình không dùng tới.</p>
+<p>Bảng này không chọn hộ bạn. Nó chỉ nói một điều: freelancer bán giờ, studio bán trách nhiệm trên phần hình, agency bán việc điều phối toàn chiến dịch. Chọn sai lớp thì bạn trả tiền cho thứ mình không dùng tới. Nếu bạn còn đang phân vân giữa thuê trong nước và thuê nước ngoài, phần so sánh theo múi giờ, ngôn ngữ và sản phẩm mẫu nằm ở bài <a href="blog-studio-3d-tai-viet-nam.html">studio 3D tại Việt Nam</a>.</p>
 
 <figure>
   <img src="assets/aston-dbx-goc-cao-key-visual.webp" alt="Key visual góc cao của một mẫu xe dựng và render 3D bằng Blender, ánh sáng dải dài trên nắp capo" loading="lazy" width="1800" height="1013">
@@ -4077,7 +4077,7 @@ POSTS = [
 </table>
 </div>
 
-<p>Dòng cuối là lý do phổ biến nhất khiến các đội marketing chuyển sang 3D, và nó cũng là dòng dễ bị đánh giá thấp nhất khi so giá lần đầu. Cách so giữa freelancer, studio và agency cho phần việc này nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>.</p>
+<p>Dòng cuối là lý do phổ biến nhất khiến các đội marketing chuyển sang 3D, và nó cũng là dòng dễ bị đánh giá thấp nhất khi so giá lần đầu. Cách so giữa freelancer, studio và agency cho phần việc này nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn lý do nên chọn một <a href="blog-studio-3d-tai-viet-nam.html">studio 3D tại Việt Nam</a> khi bạn cần nhiều vòng duyệt trong ngày thì nằm ở bài riêng.</p>
 
 <blockquote><p>Chụp thật bán cho bạn một lần bấm máy. Render 3D bán cho bạn một bối cảnh đã dựng, dùng lại được cho mọi màu, mọi khung và mọi vòng sửa về sau.</p></blockquote>
 
@@ -4257,7 +4257,7 @@ POSTS = [
 </table>
 </div>
 
-<p>Hai dòng cuối là chỗ cần đọc thẳng: nếu bạn chỉ cần đúng một hình cho một khu nhỏ, dựng 3D là cách đắt nhất. Lợi thế của nó chỉ xuất hiện từ hình thứ ba trở đi, và xuất hiện rất rõ khi phương án còn phải đổi. Cách so giữa freelancer, studio và agency cho phần việc này nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>.</p>
+<p>Hai dòng cuối là chỗ cần đọc thẳng: nếu bạn chỉ cần đúng một hình cho một khu nhỏ, dựng 3D là cách đắt nhất. Lợi thế của nó chỉ xuất hiện từ hình thứ ba trở đi, và xuất hiện rất rõ khi phương án còn phải đổi. Cách so giữa freelancer, studio và agency cho phần việc này nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, và bộ câu hỏi nên hỏi trước khi ký với một <a href="blog-studio-3d-tai-viet-nam.html">studio 3D tại Việt Nam</a> nằm ở bài riêng.</p>
 
 <blockquote><p>Bản vẽ 2D trả lời câu hỏi cái gì nằm ở đâu. Phối cảnh 3D trả lời câu hỏi người đứng trong đó nhìn thấy gì. Đội thi công cần câu thứ nhất, người duyệt ngân sách cần câu thứ hai.</p></blockquote>
 
@@ -4355,7 +4355,7 @@ POSTS = [
             ('Báo giá dựng 3D sản phẩm thường tính theo hình hay theo sản phẩm?',
              'Phổ biến nhất là tính theo hai phần cộng lại: một phần cho việc dựng món hàng, trả một lần vì mô hình dùng lại được cho mọi góc, và một phần cho từng hình giao. Vì vậy ảnh thứ nhất luôn đắt nhất và ảnh thứ năm rẻ hơn nhiều. Một báo giá chỉ đưa một con số gọn cho cả gói thì bạn nên hỏi tách hai phần này ra.'),
             ('Chưa có bản vẽ kỹ thuật thì có báo giá được không?',
-             'Được, nhưng con số sẽ rộng hơn và thường kèm phần dự phòng. Thay cho bản vẽ, bạn gửi ảnh chụp món thật từ sáu hưồng kèm số đo ba chiều và ảnh cận các chi tiết nhỏ. Ảnh điện thoại là đủ, miễn là thấy rõ đường nối giữa các mảng và chất liệu bề mặt.'),
+             'Được, nhưng con số sẽ rộng hơn và thường kèm phần dự phòng. Thay cho bản vẽ, bạn gửi ảnh chụp món thật từ sáu hướng kèm số đo ba chiều và ảnh cận các chi tiết nhỏ. Ảnh điện thoại là đủ, miễn là thấy rõ đường nối giữa các mảng và chất liệu bề mặt.'),
             ('Vì sao hai nơi báo giá lệch nhau nhiều lần cho cùng một món?',
              'Thường vì hai báo giá đang nói về hai khối lượng khác nhau chứ không phải hai mức giá khác nhau. Một bên tính ba góc nền trắng với một vòng sửa, bên kia tính năm góc có bối cảnh, ba vòng sửa và giao kèm file gốc. Muốn so được thì phải đặt hai báo giá trên cùng một danh sách hạng mục.'),
             ('Giá dựng 3D rẻ hơn chụp ảnh thật không?',
@@ -4408,7 +4408,7 @@ POSTS = [
 
 <ul>
 <li>Bản vẽ kỹ thuật hoặc số đo ba chiều của món hàng, ở định dạng bất kỳ bên bạn đang có, kể cả ảnh chụp bản vẽ giấy.</li>
-<li>Ảnh chụp món thật từ sáu hưồng, cộng ảnh cận các chi tiết nhỏ như nút, khứa, đường ghép.</li>
+<li>Ảnh chụp món thật từ sáu hướng, cộng ảnh cận các chi tiết nhỏ như nút, khứa, đường ghép.</li>
 <li>File bao bì và nhãn ở dạng vector, kèm mã màu in và font.</li>
 <li>Danh sách ảnh cần giao, ghi rõ tỉ lệ khung và nơi mỗi ảnh sẽ xuất hiện.</li>
 <li>Một câu nói rõ hình dùng để duyệt nội bộ, để bán hàng, hay để làm key visual.</li>
@@ -4422,7 +4422,7 @@ POSTS = [
 
 <figure>
   <img src="assets/vplas-ban-ve-kich-thuoc-3d.jpg" alt="Bản vẽ kích thước ba chiều của thiết bị VPLAS dùng làm đầu vào để báo giá dựng 3D sản phẩm" loading="lazy" width="1600" height="900">
-  <figcaption><strong>Đây là thứ biến một con số đoán thành một con số có cơ sở.</strong> Có bản vẽ kèm số đo, bên nhận việc đếm được khối lượng dựng và bỏt được phần dự phòng. Xem trọn bộ hình ở <a href="du-an-vplas.html">dự án render thiết bị VPLAS</a>.</figcaption>
+  <figcaption><strong>Đây là thứ biến một con số đoán thành một con số có cơ sở.</strong> Có bản vẽ kèm số đo, bên nhận việc đếm được khối lượng dựng và bớt được phần dự phòng. Xem trọn bộ hình ở <a href="du-an-vplas.html">dự án render thiết bị VPLAS</a>.</figcaption>
 </figure>
 
 <h2>Vì sao hai nơi báo giá lệch nhau nhiều lần</h2>
@@ -4437,9 +4437,9 @@ POSTS = [
 
 <p><strong style="color:#fff;">Quyền sử dụng và file gốc không đồng nhất.</strong> Giao ảnh cuối khác với giao kèm file dựng để bạn tái sử dụng về sau. Hỏi rõ ngay từ đầu, vì đòi sau khi đã chốt giá là rất khó.</p>
 
-<blockquote><p>Một báo giá rẻ hơn chưa chắc là rẻ. Phần lớn trường hợp nó đang mó tả một khối lượng nhỏ hơn, và phần thiếu sẽ xuất hiện lại ở giữa dự án với một cái tên khác.</p></blockquote>
+<blockquote><p>Một báo giá rẻ hơn chưa chắc là rẻ. Phần lớn trường hợp nó đang mô tả một khối lượng nhỏ hơn, và phần thiếu sẽ xuất hiện lại ở giữa dự án với một cái tên khác.</p></blockquote>
 
-<p>Khoảng lệch giữa freelancer, studio và agency cũng nằm ở nhóm nguyên nhân này nhiều hơn là ở tay nghề. Cách so ba nhóm đó trên cùng một bảng được viết trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn nếu việc của bạn là một chương trình chứ không phải một món hàng thì bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D</a> đi đúng vào nhóm đó.</p>
+<p>Khoảng lệch giữa freelancer, studio và agency cũng nằm ở nhóm nguyên nhân này nhiều hơn là ở tay nghề. Cách so ba nhóm đó trên cùng một bảng được viết trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, phần so trong nước với nước ngoài nằm ở bài <a href="blog-studio-3d-tai-viet-nam.html">studio 3D tại Việt Nam</a>, còn nếu việc của bạn là một chương trình chứ không phải một món hàng thì bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D</a> đi đúng vào nhóm đó.</p>
 
 <h2>Chỗ cắt được chi phí và chỗ không nên cắt</h2>
 
@@ -4484,7 +4484,7 @@ POSTS = [
 <p>Phổ biến nhất là tính theo hai phần cộng lại: một phần cho việc dựng món hàng, trả một lần vì mô hình dùng lại được cho mọi góc, và một phần cho từng hình giao. Vì vậy ảnh thứ nhất luôn đắt nhất và ảnh thứ năm rẻ hơn nhiều. Một báo giá chỉ đưa một con số gọn cho cả gói thì bạn nên hỏi tách hai phần này ra.</p>
 
 <p class="faq-q">Chưa có bản vẽ kỹ thuật thì có báo giá được không?</p>
-<p>Được, nhưng con số sẽ rộng hơn và thường kèm phần dự phòng. Thay cho bản vẽ, bạn gửi ảnh chụp món thật từ sáu hưồng kèm số đo ba chiều và ảnh cận các chi tiết nhỏ. Ảnh điện thoại là đủ, miễn là thấy rõ đường nối giữa các mảng và chất liệu bề mặt.</p>
+<p>Được, nhưng con số sẽ rộng hơn và thường kèm phần dự phòng. Thay cho bản vẽ, bạn gửi ảnh chụp món thật từ sáu hướng kèm số đo ba chiều và ảnh cận các chi tiết nhỏ. Ảnh điện thoại là đủ, miễn là thấy rõ đường nối giữa các mảng và chất liệu bề mặt.</p>
 
 <p class="faq-q">Vì sao hai nơi báo giá lệch nhau nhiều lần cho cùng một món?</p>
 <p>Thường vì hai báo giá đang nói về hai khối lượng khác nhau chứ không phải hai mức giá khác nhau. Một bên tính ba góc nền trắng với một vòng sửa, bên kia tính năm góc có bối cảnh, ba vòng sửa và giao kèm file gốc. Muốn so được thì phải đặt hai báo giá trên cùng một danh sách hạng mục.</p>
@@ -4497,7 +4497,158 @@ POSTS = [
 
 <hr class="hr">
 
-<p>Nếu bạn đang cần một con số cho món của mình, gửi cho chúng tôi bản vẽ hoặc ảnh mẫu kèm danh sách ảnh cần giao và nơi ảnh sẽ xuất hiện. Chúng tôi báo lại theo từng hạng mục thay vì một con số gọn, và nói thắng nếu chụp thật là lựa chọn hợp hơn cho trường hợp của bạn. Còn nếu bạn muốn tự làm được phần này, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần, và <a href="cam-nang.html">cẩm nang học Blender</a> nói thật những việc một người mới làm được và chưa nên nhận.</p>
+<p>Nếu bạn đang cần một con số cho món của mình, gửi cho chúng tôi bản vẽ hoặc ảnh mẫu kèm danh sách ảnh cần giao và nơi ảnh sẽ xuất hiện. Chúng tôi báo lại theo từng hạng mục thay vì một con số gọn, và nói thẳng nếu chụp thật là lựa chọn hợp hơn cho trường hợp của bạn. Còn nếu bạn muốn tự làm được phần này, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần, và <a href="cam-nang.html">cẩm nang học Blender</a> nói thật những việc một người mới làm được và chưa nên nhận.</p>
+""",
+    },
+    {
+        "slug": "studio-3d-tai-viet-nam",
+        "title": "Studio 3D tại Việt Nam: thuê trong nước được gì",
+        "desc": "Studio 3D tại Việt Nam mạnh ở đâu, yếu ở đâu, và khi nào nên thuê trong nước thay vì thuê nước ngoài. Kèm bảng so sánh và bộ câu hỏi nên hỏi trước khi ký.",
+        "tag": "Dịch vụ",
+        "date": "2026-11-04",
+        "date_vn": "04/11/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/locphuc-10-nam-toan-canh-san-khau.webp",
+        "faq": [
+            ('Thuê studio 3D tại Việt Nam có rẻ hơn thuê nước ngoài không?',
+             'Thường là rẻ hơn ở cùng một khối lượng, nhưng đó không phải lý do chính nên chọn. Lý do chính là cùng múi giờ, cùng ngôn ngữ và khả năng cầm được sản phẩm mẫu thật. Khoảng chênh lệch giá là ước lượng theo thị trường và thay đổi theo từng loại việc, nên đừng lấy nó làm căn cứ duy nhất để quyết định.'),
+            ('Studio 3D trong nước có làm được hình đạt chuẩn quảng cáo quốc tế không?',
+             'Có, ở nhóm việc họ đã làm nhiều. Phần mềm, thư viện vật liệu và máy render ngày nay gần như giống nhau ở mọi nơi, nên khác biệt nằm ở số lần một nhóm đã làm đúng loại sản phẩm của bạn. Hãy xem portfolio theo nhóm sản phẩm chứ không xem theo tổng số dự án.'),
+            ('Nên chọn freelancer, studio nhỏ hay agency lớn?',
+             'Tùy quy mô việc và mức rủi ro bạn chịu được. Freelancer hợp với một tới ba hình và yêu cầu rõ. Studio nhỏ hợp với bộ hình nhiều góc, có lịch duyệt và cần người thay thế khi một người bận. Agency hợp khi hình chỉ là một phần của chiến dịch lớn cần điều phối nhiều hạng mục.'),
+            ('Làm việc từ xa với studio 3D ở tỉnh khác có ổn không?',
+             'Ổn, với điều kiện chốt được ba thứ ngay từ đầu: một kênh trao đổi duy nhất, một lịch duyệt có ngày cụ thể, và cách gửi sản phẩm mẫu nếu món hàng cần nhìn thật. Phần lớn trục trặc trong các dự án từ xa đến từ việc phản hồi nằm rải rác ở nhiều nơi, không phải từ khoảng cách địa lý.'),
+            ('Studio 3D có giữ file gốc của dự án không?',
+             'Mặc định của phần lớn nơi là giao hình cuối, còn file dựng thì giữ lại. Nếu bạn muốn dùng lại mô hình cho các chiến dịch sau thì phải ghi điều đó vào hợp đồng từ đầu, vì đòi sau khi chốt giá rất khó và thường phải trả thêm một khoản không nhỏ.'),
+        ],
+        "body": """
+<p class="lead">Studio 3D tại Việt Nam ngày nay dùng cùng bộ phần mềm, cùng thư viện vật liệu và cùng chuẩn kỹ thuật với các nơi ở nước ngoài. Thứ bạn thật sự mua khi thuê trong nước là ba thứ khác: cùng múi giờ để duyệt trong ngày, cùng ngôn ngữ để nói rõ cái sai, và khả năng cầm được sản phẩm mẫu thật trước khi dựng. Nếu việc của bạn cần ba thứ đó, thuê trong nước gần như luôn hợp hơn.</p>
+
+<p>Bài này viết cho người đang đi tìm nơi làm hình: cách phân biệt ba nhóm nhà cung cấp trong nước, khi nào nên thuê studio 3D làm key visual thay vì làm ảnh lẻ, những điểm yếu có thật của thị trường trong nước, và bộ câu hỏi nên hỏi trước khi ký. Chúng tôi là một studio 3D ở Việt Nam nên có phần thiên vị, vì vậy phần nhược điểm sẽ được viết thẳng chứ không né.</p>
+
+<h2>Studio 3D tại Việt Nam khác gì so với thuê ngoài nước</h2>
+
+<p>Khoảng mười năm trước, câu trả lời nằm ở công nghệ. Bây giờ thì không. Blender, Cycles, thư viện vật liệu và máy render đám mây đều có sẵn cho mọi người ở mọi nơi, nên khoảng cách kỹ thuật thuần túy đã hẹp lại rất nhiều.</p>
+
+<p>Khoảng cách còn lại nằm ở vận hành. Một vòng duyệt với đối tác lệch sáu tới bảy múi giờ thường mất trọn một ngày làm việc, vì bạn gửi phản hồi lúc chiều thì bên kia mới bắt đầu buổi sáng. Cùng một vòng duyệt đó với một nhóm trong nước có thể xong trong vài giờ. Với dự án ba vòng duyệt thì khác biệt là vài ngày, với dự án mười vòng thì khác biệt là vài tuần.</p>
+
+<p>Thứ hai là ngôn ngữ. Mô tả một cái sai về ánh sáng bằng tiếng mẹ đẻ chính xác hơn nhiều so với mô tả bằng ngoại ngữ. Câu nói kiểu nhìn hơi nặng, hơi bị cũ, hơi giống hàng chợ là những phản hồi rất thật mà rất khó dịch.</p>
+
+<p>Thứ ba là sản phẩm mẫu. Nhiều loại hàng chỉ dựng đúng được khi có món thật trong tay để soi bề mặt, đo chi tiết và chốt màu dưới đèn thật. Gửi một món hàng đi nước ngoài vừa chậm vừa tốn, và nhiều mặt hàng không gửi được.</p>
+
+<h2>Ba nhóm nhà cung cấp trong nước và việc hợp với từng nhóm</h2>
+
+<p>Gọi chung là studio 3D nhưng thị trường trong nước có ít nhất ba nhóm, với cách tính giá và mức rủi ro khác hẳn nhau.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Nhóm</th><th>Mạnh ở</th><th>Rủi ro chính</th><th>Hợp với việc</th></tr></thead>
+<tbody>
+<tr><td>Freelancer</td><td>Giá gọn, phản hồi nhanh, linh hoạt</td><td>Một người bận là cả việc dừng</td><td>Một tới ba hình, yêu cầu đã rõ</td></tr>
+<tr><td>Studio nhỏ</td><td>Có quy trình duyệt, có người thay thế</td><td>Nhận quá nhiều việc cùng lúc</td><td>Bộ hình nhiều góc, có lịch chiến dịch</td></tr>
+<tr><td>Agency lớn</td><td>Điều phối nhiều hạng mục, hồ sơ đầy đủ</td><td>Chi phí quản lý cộng vào giá</td><td>Chiến dịch lớn, nhiều kênh cùng chạy</td></tr>
+<tr><td>Đội trong nhà</td><td>Hiểu sản phẩm, làm được việc nhỏ hằng tuần</td><td>Khó đạt mức key visual ngay</td><td>Thương hiệu ra hình liên tục quanh năm</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Dòng cuối đáng chú ý với các thương hiệu ra hình đều đặn. Giữ một người trong nhà lo phần ảnh nền trắng và ảnh biến thể, rồi thuê ngoài phần hình chủ đạo, thường tiết kiệm hơn thuê ngoài toàn bộ. Cách so ba nhóm đầu trên cùng một bảng tiêu chí được viết kỹ hơn trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn nếu bạn muốn dựng đội trong nhà thì đầu ra từng giai đoạn nằm ở bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
+
+<figure>
+  <img src="assets/locphuc-10-nam-store-concept.webp" alt="Phối cảnh 3D concept cửa hàng Lộc Phúc dựng trong Blender để duyệt trước khi thi công" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Duyệt trên hình trước, thi công sau.</strong> Phối cảnh concept cửa hàng dựng để các bên chốt bố cục và vật liệu khi chưa có gì được dựng ngoài đời. Xem trọn bộ ở <a href="du-an-locphuc-10-nam.html">dự án Lộc Phúc 10 năm</a>.</figcaption>
+</figure>
+
+<h2>Khi nào nên thuê studio 3D làm key visual</h2>
+
+<p>Key visual là hình chủ đạo của một chiến dịch, thứ xuất hiện trên biển lớn, trên trang chủ và trên bài chạy quảng cáo. Nó khác ảnh sản phẩm thông thường ở chỗ phải chịu được việc phóng to, phải đọc được khi thu nhỏ và phải đứng vững cạnh các thương hiệu khác trong cùng một không gian.</p>
+
+<h3>Ba trường hợp nên thuê ngoài</h3>
+<ul>
+<li>Sản phẩm chưa sản xuất xong nhưng chiến dịch đã có ngày chạy. Dựng 3D là cách duy nhất có hình trước khi có hàng.</li>
+<li>Cần nhiều phiên bản màu, nhiều dung tích hoặc nhiều kiểu bao bì từ cùng một bố cục. Chụp thật phải làm lại từ đầu mỗi lần, mô hình 3D thì đổi vật liệu rồi render lại.</li>
+<li>Hình phải dùng được ở cả khổ dọc, khổ ngang và khổ vuông. Dựng một cảnh 3D rồi cắt nhiều tỉ lệ rẻ hơn nhiều so với tổ chức ba buổi chụp.</li>
+</ul>
+
+<h3>Hai trường hợp nên cân nhắc lại</h3>
+<ul>
+<li>Món hàng đã có sẵn, chỉ cần vài ảnh nền trắng đơn giản. Chụp thật thường nhanh hơn và giống thật hơn.</li>
+<li>Ngân sách chỉ đủ cho một vòng sửa. Key visual gần như luôn cần ít nhất hai vòng, và cắt chỗ này là cắt vào thứ quyết định chất lượng cuối.</li>
+</ul>
+
+<p>Cách tính tiền cho hai nhóm việc này khác nhau rõ rệt, và cả hai đều được bóc theo hạng mục chứ không theo một con số gọn. Phần bóc hạng mục nằm trong bài <a href="blog-bao-gia-dung-3d-san-pham.html">báo giá dựng 3D sản phẩm</a>, còn các mốc giao nhận của một bộ ảnh tĩnh thì ở bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
+
+<blockquote><p>Thuê trong nước hay thuê nước ngoài không phải câu hỏi về chất lượng nữa. Nó là câu hỏi về số vòng duyệt bạn cần và tốc độ bạn cần chúng quay vòng.</p></blockquote>
+
+<h2>Những điểm yếu có thật của studio 3D trong nước</h2>
+
+<p>Phần này nên nói thẳng, vì người đi thuê gặp đủ rồi và không ai được lợi khi nó bị giấu đi.</p>
+
+<p><strong style="color:#fff;">Nhận quá nhiều việc cùng lúc.</strong> Đây là vấn đề phổ biến nhất ở nhóm freelancer và studio nhỏ. Việc chồng việc dẫn tới trễ lịch và tới những vòng sửa làm cho xong. Cách phòng là hỏi thẳng lịch hiện tại và yêu cầu ghi ngày giao từng mốc vào hợp đồng.</p>
+
+<p><strong style="color:#fff;">Portfolio không khớp với việc của bạn.</strong> Một nhóm giỏi dựng nội thất chưa chắc dựng tốt đồ kim loại bóng hay chất lỏng. Hãy xem phần portfolio đúng nhóm sản phẩm của bạn, và nếu không có thì hỏi xem họ đã làm chất liệu đó bao giờ chưa.</p>
+
+<p><strong style="color:#fff;">Quy trình duyệt không rõ ràng.</strong> Nhiều nơi làm tốt phần kỹ thuật nhưng không có bước duyệt bố cục trước khi render. Hậu quả là bạn chỉ thấy hình ở bước cuối, khi sửa đã rất tốn.</p>
+
+<p><strong style="color:#fff;">Không nói gì về quyền sử dụng và file gốc.</strong> Phần này hay bị bỏ qua cho tới khi bạn cần dùng lại mô hình cho chiến dịch sau. Hỏi và ghi rõ ngay từ đầu.</p>
+
+<h2>Bộ câu hỏi nên hỏi trước khi ký</h2>
+
+<p>Danh sách dưới đây dùng được cho cả ba nhóm nhà cung cấp. Một nơi làm việc chỉn chu sẽ trả lời được hết trong một buổi trao đổi.</p>
+
+<ul>
+<li>Đã làm nhóm sản phẩm và nhóm chất liệu giống của tôi chưa, cho xem hai ví dụ.</li>
+<li>Quy trình có bước duyệt bố cục và duyệt ánh sáng trước khi render không.</li>
+<li>Bao nhiêu vòng sửa đã nằm trong giá, và thứ gì tính là việc mới.</li>
+<li>Ai là người trực tiếp làm, và nếu người đó bận thì ai thay.</li>
+<li>Giao hình ở định dạng nào, độ phân giải nào, có giao bản cắt nhiều tỉ lệ không.</li>
+<li>File dựng gốc có được giao không, nếu có thì tính thêm bao nhiêu.</li>
+<li>Quyền sử dụng hình trong bao lâu và trên những kênh nào.</li>
+<li>Nếu cần sản phẩm mẫu thì gửi về đâu, ai chịu chi phí vận chuyển.</li>
+<li>Lịch hiện tại đang nhận bao nhiêu việc, ngày sớm nhất bắt đầu được là ngày nào.</li>
+</ul>
+
+<p>Hai câu cuối trông như thủ tục nhưng lại là nơi phần lớn dự án trượt tiến độ. Nếu việc của bạn là một chương trình chứ không phải một món hàng, bộ câu hỏi cần thêm phần mặt bằng và hạng mục thi công, viết trong bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D</a>. Còn nếu đầu ra là vài giây chuyển động, các mốc duyệt lại khác hẳn và nằm ở bài <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D</a>.</p>
+
+<h2>Cách làm việc từ xa cho gọn</h2>
+
+<p>Phần lớn khách của một studio 3D ở Việt Nam không ngồi cùng thành phố, và điều đó hoàn toàn bình thường nếu ba thứ sau được chốt trong tuần đầu.</p>
+
+<h3>Một kênh trao đổi duy nhất</h3>
+<p>Phản hồi nằm rải ở tin nhắn riêng, nhóm chat và thư điện tử là nguyên nhân số một của việc sửa sai chỗ. Chọn một nơi, mọi phản hồi ghi vào đó, kể cả phản hồi nói miệng trong cuộc gọi.</p>
+
+<h3>Lịch duyệt có ngày cụ thể</h3>
+<p>Không phải duyệt khi nào xong, mà là ngày nào duyệt bố cục, ngày nào duyệt ánh sáng, ngày nào duyệt hình cuối. Có ngày thì cả hai bên biết mình đang chậm hay đúng hẹn.</p>
+
+<h3>Một người duyệt cuối</h3>
+<p>Nhiều người góp ý là tốt, nhưng phải có một người gom lại và chốt. Năm người cùng quyền yêu cầu sửa là cách chắc chắn nhất để một bộ hình đi lòng vòng.</p>
+
+<p>Với các dự án dài, chúng tôi thường gửi hình xám chưa có vật liệu ở vòng đầu. Nhìn thì đơn sơ nhưng chính bước đó giúp chốt bố cục trước khi tốn giờ render, và giảm được phần lớn các vòng sửa nặng về sau.</p>
+
+<h2>Vậy nên thuê studio 3D tại Việt Nam khi nào</h2>
+
+<p>Gọn lại thành bốn trường hợp: khi bạn cần nhiều vòng duyệt và cần chúng quay vòng trong ngày, khi món hàng cần được cầm thật để dựng đúng, khi phản hồi của bạn khó diễn đạt bằng ngoại ngữ, và khi bạn muốn giữ quan hệ làm việc dài hạn để lần sau không phải giải thích lại từ đầu. Nếu việc của bạn không rơi vào bốn nhóm này, thuê ở đâu cũng được, và lúc đó hãy chọn theo portfolio chứ đừng chọn theo địa lý.</p>
+
+<h2>Câu hỏi thường gặp về studio 3D tại Việt Nam</h2>
+
+<p class="faq-q">Thuê studio 3D tại Việt Nam có rẻ hơn thuê nước ngoài không?</p>
+<p>Thường là rẻ hơn ở cùng một khối lượng, nhưng đó không phải lý do chính nên chọn. Lý do chính là cùng múi giờ, cùng ngôn ngữ và khả năng cầm được sản phẩm mẫu thật. Khoảng chênh lệch giá là ước lượng theo thị trường và thay đổi theo từng loại việc, nên đừng lấy nó làm căn cứ duy nhất để quyết định.</p>
+
+<p class="faq-q">Studio 3D trong nước có làm được hình đạt chuẩn quảng cáo quốc tế không?</p>
+<p>Có, ở nhóm việc họ đã làm nhiều. Phần mềm, thư viện vật liệu và máy render ngày nay gần như giống nhau ở mọi nơi, nên khác biệt nằm ở số lần một nhóm đã làm đúng loại sản phẩm của bạn. Hãy xem portfolio theo nhóm sản phẩm chứ không xem theo tổng số dự án.</p>
+
+<p class="faq-q">Nên chọn freelancer, studio nhỏ hay agency lớn?</p>
+<p>Tùy quy mô việc và mức rủi ro bạn chịu được. Freelancer hợp với một tới ba hình và yêu cầu rõ. Studio nhỏ hợp với bộ hình nhiều góc, có lịch duyệt và cần người thay thế khi một người bận. Agency hợp khi hình chỉ là một phần của chiến dịch lớn cần điều phối nhiều hạng mục.</p>
+
+<p class="faq-q">Làm việc từ xa với studio 3D ở tỉnh khác có ổn không?</p>
+<p>Ổn, với điều kiện chốt được ba thứ ngay từ đầu: một kênh trao đổi duy nhất, một lịch duyệt có ngày cụ thể, và cách gửi sản phẩm mẫu nếu món hàng cần nhìn thật. Phần lớn trục trặc trong các dự án từ xa đến từ việc phản hồi nằm rải rác ở nhiều nơi, không phải từ khoảng cách địa lý.</p>
+
+<p class="faq-q">Studio 3D có giữ file gốc của dự án không?</p>
+<p>Mặc định của phần lớn nơi là giao hình cuối, còn file dựng thì giữ lại. Nếu bạn muốn dùng lại mô hình cho các chiến dịch sau thì phải ghi điều đó vào hợp đồng từ đầu, vì đòi sau khi chốt giá rất khó và thường phải trả thêm một khoản không nhỏ.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang chọn nơi làm hình, gửi cho chúng tôi danh sách ảnh cần giao, nơi ảnh sẽ xuất hiện và ngày duyệt nội bộ. Chúng tôi báo lại theo từng hạng mục và nói thẳng nếu chụp thật hoặc một nhóm khác hợp hơn cho việc của bạn. Muốn xem chúng tôi làm gì trước khi hỏi thì <a href="du-an-san-pham.html">dự án render 3D sản phẩm</a> và <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a> là chỗ nên bắt đầu, còn danh mục đang nhận nằm ở trang <a href="dich-vu.html">dịch vụ 3D cho thương hiệu</a>.</p>
 """,
     },
 ]
