@@ -523,7 +523,7 @@ POSTS = [
 
 <p>Cách chọn đơn giản nhất là nhìn vào loại công việc thật đang có trên thị trường. Phần <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> của studio liệt kê các dạng đầu việc thường gặp, đọc qua là hình dung được mảng nào hợp với mình. Nếu muốn đi theo đường có lộ trình sẵn thay vì tự ghép, hai hệ trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> được dựng đúng theo thứ tự bảy bước ở trên, chỉ khác là có người chữa bài ở mỗi mốc.</p>
 
-<p>Một cách luyện mắt gần như không tốn gì là mở file dự án thật của người khác ra xem. <a href="blog-kho-hau-truong-overgrown-blender-studio.html">Kho hậu trường OVERGROWN của Blender Studio</a> là bộ file đầy đủ kèm nhật ký sản xuất, tải về rồi lần theo cách họ chia shot và quản lý phiên bản. Muốn tập riêng phần không khí trong một buổi thì xem bài <a href="blog-sau-node-va-mot-hanh-lang.html">sáu node và một hành lang</a>.</p>
+<p>Một cách luyện mắt gần như không tốn gì là mở file dự án thật của người khác ra xem. Cách <a href="blog-kho-hau-truong-overgrown-blender-studio.html">học Blender qua nhật ký sản xuất</a> của một ê-kíp làm phim thật giúp bạn lần theo cách họ chia shot và quản lý phiên bản, thứ khó tự nghĩ ra khi làm một mình. Muốn tập riêng phần không khí trong một buổi thì xem bài <a href="blog-sau-node-va-mot-hanh-lang.html">sáu node và một hành lang</a>.</p>
 
 <p>Dù chọn đường nào, nên tải <a href="cam-nang.html">cẩm nang Blender</a> để có sẵn checklist lighting và quy trình render dùng khi làm việc thật. Có bảng tra cứu bên cạnh thì bớt được kha khá thời gian mò mẫm ở bước ba và bước bốn.</p>
 
@@ -684,6 +684,8 @@ POSTS = [
 <p>Hai tuần đầu chỉ dùng một đèn duy nhất, không HDRI, dựng lại ba vật thể đơn giản cho tới khi nói được vì sao đặt đèn ở đúng chỗ đó. Hai tuần tiếp thêm mặt hắt và cờ đen, làm việc với một vật thể kim loại. Hai tuần sau đó tập vùng tối: dựng lại cùng một shot theo ba phương án sáng khác nhau. Hai tuần cuối ghép vào quy trình thật, gồm cả hậu kỳ nhẹ và kiểm tra bằng ảnh xám.</p>
 
 <p>Khung này cố tình không có phần học thêm phần mềm hay add-on mới. Phần khó của ánh sáng là thói quen đọc ảnh, và thói quen đó chỉ hình thành khi làm lại cùng một việc với điều kiện khác nhau. Bộ bảng tra cứu đi kèm nằm trong <a href="cam-nang.html">cẩm nang Blender</a>, trong đó có checklist lighting và quy trình render dùng khi làm việc thật.</p>
+
+<p>Một cách luyện mắt rẻ tiền là xem người có nghề dựng đèn ở cảnh thật thay vì ở cảnh dạy. Bài <a href="blog-kho-hau-truong-overgrown-blender-studio.html">học Blender qua nhật ký sản xuất</a> chỉ cách chọn đúng khâu ánh sáng trong kho hậu trường của Blender Studio và bóc một shot ra để đối chiếu với checklist ở trên.</p>
 
 <p>Năm lỗi trên đều sửa được một mình. Thứ khó tự sửa là thói quen đọc ảnh, và đó là phần một <a href="blog-khoa-hoc-render.html">khoá học render</a> có người nhận xét từng vòng làm tốt hơn hẳn video hướng dẫn. Nếu bạn muốn học cả khâu dựng hình trước đó, hai hệ trong trang <a href="khoa-hoc.html">khoá học 3D Blender</a> đi theo đúng thứ tự modeling, vật liệu, rồi ánh sáng.</p>
 
@@ -885,14 +887,14 @@ POSTS = [
     },
     {
         "slug": "kho-hau-truong-overgrown-blender-studio",
-        "title": "Kho hậu trường OVERGROWN của Blender Studio",
-        "desc": "Blender Studio mở miễn phí nhật ký sản xuất phim OVERGROWN: rigging, lông, shading, ánh sáng, nước, compositing. Đây là cách khai thác nó cho ra kỹ năng thật.",
+        "title": "Học Blender qua nhật ký sản xuất phim OVERGROWN",
+        "desc": "Học Blender qua nhật ký sản xuất của phim OVERGROWN: nên xem khâu nào trước, cách bóc một shot ra để học, và bảng đối chiếu với tutorial thường.",
         "tag": "Tài nguyên",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "read": "7 phút đọc",
-        "updated": "2026-10-24",
-        "updated_vn": "24/10/2026",
+        "updated": "2026-11-05",
+        "updated_vn": "05/11/2026",
+        "read": "10 phút đọc",
         "thumb": "assets/a77adfda.jpg",
         "sources": [
             ("Blender Studio Opens OVERGROWN's Free Behind-the-Scenes Archive (80 Level)",
@@ -900,42 +902,131 @@ POSTS = [
             ("Blender Studio, trang dự án chính thức", "https://studio.blender.org/"),
         ],
         "body": """
-<p class="lead">Blender Studio vừa mở miễn phí kho nhật ký sản xuất của phim hoạt hình OVERGROWN trong đợt Open Doors Week. Với người tự học, đây là thứ hiếm: không phải tutorial dựng cho người xem, mà là ghi chép của một ê-kíp làm phim thật.</p>
+<p class="lead">Học Blender qua nhật ký sản xuất nghĩa là xem lại ghi chép của một ê-kíp làm phim thật thay vì xem tutorial. Blender Studio đã mở kho hậu trường của phim hoạt hình OVERGROWN theo dạng này, gồm nhiều nhật ký trải khắp pipeline. Bài này nói rõ nên xem khâu nào trước, cách bóc một shot ra để học, và khi nào cách học này chưa hợp với bạn.</p>
 
-<h2>Trong kho có gì</h2>
+<p>Trước khi đi tiếp, một lưu ý về thời hạn. Đợt mở miễn phí của Blender Studio có giới hạn thời gian, nên trạng thái truy cập lúc bạn đọc bài này có thể đã khác. Vào thẳng trang dự án trên studio.blender.org để kiểm tra. Phần phương pháp bên dưới vẫn dùng được cho bất kỳ nhật ký sản xuất nào khác.</p>
 
-<p>Theo 80 Level, bộ tài liệu gồm sáu nhật ký sản xuất trải khắp pipeline: rigging nhân vật và xử lý lông, casting lồng tiếng, dựng bối cảnh, shading, animation từng shot, phát triển hình ảnh, hiệu ứng nước và giọt nước, ánh sáng, nhạc và compositing cuối. Kèm theo là một masterclass của Simon Thommes về kỹ thuật đổ bóng theo hướng painterly.</p>
+<h2>Nhật ký sản xuất là gì</h2>
 
-<p>Toàn bộ truy cập qua trang dự án trên studio.blender.org. Miễn phí có thời hạn, nên nếu định xem, đừng để dành.</p>
+<p>Nhật ký sản xuất là ghi chép trong lúc làm, không phải bài dạy viết sau khi xong. Người viết chưa biết kết quả cuối sẽ ra sao, nên họ ghi cả phương án bị loại, chỗ phải làm lại, và lý do cắt gọt vì hết thời gian.</p>
 
-<h2>Vì sao thứ này khác tutorial thường</h2>
-
-<p>Tutorial trên mạng được dựng ngược: người dạy đã biết kết quả cuối, rồi quay lại làm từng bước cho mượt. Bạn xem xong thấy mọi quyết định đều hiển nhiên, và tưởng nghề này là chuỗi bước đúng nối nhau.</p>
-
-<p>Nhật ký sản xuất thì ngược lại. Nó ghi lại lúc ê-kíp chưa biết đáp án: phương án bị bỏ, chỗ phải làm lại, ràng buộc về thời gian buộc phải cắt gọt. Đó mới là hình dạng thật của công việc.</p>
+<p>Đó là khác biệt lớn nhất so với video hướng dẫn. Tutorial được dựng ngược: người dạy đã biết đích, rồi quay lại đi từng bước cho mượt. Bạn xem xong thấy mọi quyết định đều hiển nhiên, và dễ tưởng nghề này là chuỗi bước đúng nối nhau.</p>
 
 <blockquote><p>Xem tutorial dạy bạn làm được một thứ. Đọc nhật ký sản xuất dạy bạn cách nghĩ khi chưa biết phải làm gì.</p></blockquote>
 
-<h2>Cách khai thác cho ra kỹ năng, không chỉ để xem cho biết</h2>
+<h2>Trong kho OVERGROWN có gì</h2>
 
-<h3>Chọn một khâu, đừng xem hết</h3>
-<p>Cám dỗ lớn nhất là mở tất cả rồi lướt. Sáu nhật ký cộng masterclass là khối lượng đủ để bạn xem hai ngày và không nhớ gì. Chọn đúng khâu bạn đang yếu, nếu đang mắc ở ánh sáng thì chỉ xem phần ánh sáng và compositing.</p>
+<p>Theo bài giới thiệu của 80 Level, bộ tài liệu gồm sáu nhật ký sản xuất trải khắp pipeline: rigging nhân vật và xử lý lông, casting lồng tiếng, dựng bối cảnh, shading, animation từng shot, phát triển hình ảnh, hiệu ứng nước và giọt nước, ánh sáng, nhạc và compositing cuối. Kèm theo là một masterclass của Simon Thommes về kỹ thuật đổ bóng theo hướng painterly.</p>
 
-<h3>Dừng lại ở mỗi quyết định, tự trả lời trước</h3>
+<p>Khối lượng đó đủ để bạn xem hai ngày liền rồi không nhớ gì. Nên trước khi mở, hãy chọn trước một khâu. Bảng dưới là cách đối chiếu nhanh giữa khâu bạn đang yếu và phần nên xem.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Bạn đang kẹt ở</th><th>Phần nên xem trước</th><th>Thứ nên rút ra</th></tr></thead>
+<tbody>
+<tr><td>Hình ra nhưng nhìn phẳng, thiếu không khí</td><td>Ánh sáng và compositing</td><td>Thứ tự dựng đèn, chỗ nào họ cố tình để tối</td></tr>
+<tr><td>Vật liệu nhìn như nhựa dù chỉnh nhiều</td><td>Shading và masterclass painterly</td><td>Cách họ quyết định dừng chỉnh thông số</td></tr>
+<tr><td>Dựng xong một cảnh là loạn file</td><td>Dựng bối cảnh và animation từng shot</td><td>Cách chia shot, đặt tên, quản lý phiên bản</td></tr>
+<tr><td>Làm một mình, không biết thứ tự việc</td><td>Phát triển hình ảnh</td><td>Khâu nào phải chốt trước khi sang khâu sau</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nếu bạn chưa biết mình đang kẹt ở đâu để chọn dòng nào trong bảng, bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> giúp định vị theo từng mốc kỹ năng. Người mới hoàn toàn nên đi qua <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a> trước đã, vì xem nhật ký sản xuất khi chưa dựng nổi một khối cơ bản thì chỉ thấy hay mà không rút ra được gì.</p>
+
+<h2>Nhật ký sản xuất, tutorial và học kèm khác nhau thế nào</h2>
+
+<p>Ba cách học này không thay thế nhau. Chúng giải quyết ba vấn đề khác nhau, và dùng sai thứ tự là lý do phổ biến khiến người tự học chững lại.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th></th><th>Tutorial</th><th>Nhật ký sản xuất</th><th>Học kèm</th></tr></thead>
+<tbody>
+<tr><td>Dạy được gì</td><td>Thao tác cụ thể, nút nào ở đâu</td><td>Cách ra quyết định và tổ chức công việc</td><td>Sửa đúng lỗi của riêng bạn</td></tr>
+<tr><td>Hợp với giai đoạn</td><td>Tháng đầu, khi chưa thuộc giao diện</td><td>Sau khi đã tự dựng xong vài cảnh</td><td>Khi đã có bài để đem ra sửa</td></tr>
+<tr><td>Điểm yếu</td><td>Làm theo được nhưng không chuyển sang bài khác được</td><td>Không ai chỉ ra bạn đang sai chỗ nào</td><td>Tốn tiền, và phụ thuộc vào người dạy</td></tr>
+<tr><td>Chi phí</td><td>Phần lớn miễn phí</td><td>Miễn phí hoặc theo đợt mở</td><td>Trả phí, ước lượng theo buổi hoặc theo khoá</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nói thẳng mặt bất lợi của nhật ký sản xuất: nó không có vòng phản hồi. Bạn xem xong, làm theo, và không ai nói cho bạn biết bản của bạn sai ở đâu. Đó đúng là chỗ nó thua hẳn hình thức có người chữa bài, và bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a> so sánh kỹ hơn hai hướng này theo chi phí và tốc độ.</p>
+
+<h2>Bốn bước khai thác một nhật ký sản xuất</h2>
+
+<h3>Bước 1: chọn một khâu, đừng xem hết</h3>
+<p>Cám dỗ lớn nhất là mở tất cả rồi lướt. Chọn đúng khâu bạn đang yếu theo bảng ở trên, xem hết khâu đó rồi mới tính tiếp. Một khâu làm tới nơi hơn sáu khâu xem lướt.</p>
+
+<h3>Bước 2: dừng lại ở mỗi quyết định, tự trả lời trước</h3>
 <p>Khi họ nêu vấn đề, bấm dừng. Tự hỏi mình sẽ xử lý thế nào, viết ra một câu. Rồi mới xem tiếp. Chênh lệch giữa câu trả lời của bạn và của họ chính là bài học, phần bạn xem trôi tuột không phải.</p>
 
-<h3>Chép lại một shot, không phải cả phim</h3>
-<p>Lấy một shot bạn thích, dựng lại bằng tài sản của riêng bạn. Không cần giống, cần hiểu vì sao ánh sáng đặt ở đó và vì sao camera dừng lại chỗ đó.</p>
+<h3>Bước 3: chép lại một shot, không phải cả phim</h3>
+<p>Lấy một shot bạn thích, dựng lại bằng tài sản của riêng bạn. Không cần giống. Cần hiểu vì sao ánh sáng đặt ở đó và vì sao camera dừng lại chỗ đó. Nếu bạn muốn một quy trình có sẵn để bám theo khi chép shot, phần <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng một shot TVC 3D</a> chia đúng chuỗi việc từ chốt góc máy tới xuất file.</p>
 
-<h2>Một lưu ý về phong cách</h2>
+<h3>Bước 4: ghi lại ba quyết định, không ghi thao tác</h3>
+<p>Sau mỗi buổi xem, viết ba dòng: họ đứng trước lựa chọn gì, họ chọn gì, và vì sao. Thao tác bạn sẽ quên trong một tuần. Ba dòng đó thì không, vì lần sau gặp tình huống tương tự bạn sẽ nhớ ra.</p>
 
-<p>OVERGROWN đi theo hướng stylized, không phải render sản phẩm thương mại. Nếu bạn đang học để làm TVC hay hình ảnh sản phẩm, đừng bê nguyên bảng màu và cách đổ bóng của phim vào job thương mại, hai bài toán khác nhau.</p>
+<figure>
+  <img src="assets/mercedes-g63-khung-gam-va-doi-ky-thuat.webp" alt="Khung gầm xe Mercedes G63 dựng 3D bằng Blender, ba nhân vật mặc đồ bảo hộ quỳ quanh khung xe trần trên mặt đường, tông nâu xám" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một cảnh bị bóc tới khung.</strong> Nhật ký sản xuất cho bạn thấy cảnh ở đúng trạng thái này, trước khi vật liệu và ánh sáng che hết các quyết định bên dưới. Đó là trạng thái đáng học nhất, và cũng là trạng thái tutorial gần như không bao giờ quay.</figcaption>
+</figure>
+
+<h2>Ba trường hợp chưa nên bắt đầu từ nhật ký sản xuất</h2>
+
+<ul>
+<li><strong style="color:#fff;">Bạn chưa dựng xong cảnh nào của riêng mình.</strong> Chưa có trải nghiệm bị kẹt thì xem người khác gỡ kẹt không đọng lại gì. Làm một cảnh nhỏ tới cuối trước đã.</li>
+<li><strong style="color:#fff;">Bạn đang cần ra bài nộp trong hai tuần.</strong> Nhật ký sản xuất là khoản đầu tư dài. Sát hạn thì một quy trình rõ ràng và một người chữa bài có ích hơn.</li>
+<li><strong style="color:#fff;">Bạn đang yếu phần thao tác cơ bản.</strong> Nếu còn loay hoay với modifier và UV, tutorial đúng trọng tâm vẫn hiệu quả hơn. Quay lại nhật ký sau khoảng vài tháng.</li>
+</ul>
+
+<p>Về thời gian, ước lượng theo kinh nghiệm dạy của chúng tôi là sau khoảng ba tới bốn tháng làm bài đều, tức là khi bạn đã tự đi hết một cảnh từ dựng hình tới xuất ảnh. Bài <a href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a> nói kỹ hơn các mốc này.</p>
+
+<h2>Phong cách phim và job thương mại là hai bài toán khác nhau</h2>
+
+<p>OVERGROWN đi theo hướng stylized, không phải render sản phẩm thương mại. Nếu bạn đang học để làm TVC hay hình ảnh sản phẩm, đừng bê nguyên bảng màu và cách đổ bóng của phim vào job thương mại. Khách hàng sản phẩm thường cần vật liệu đọc đúng chất và logo đọc được ở mọi tỉ lệ, hai ràng buộc mà phim hoạt hình không có.</p>
 
 <p>Cái đáng lấy là <strong style="color:#fff;">cách tổ chức công việc</strong>: chia shot ra sao, quản lý phiên bản thế nào, ai quyết cái gì ở khâu nào. Phần đó dùng được cho mọi thể loại, và là phần khó tự nghĩ ra nhất khi làm một mình.</p>
 
-<p>Nếu bạn chưa rõ mình đang yếu khâu nào để chọn nhật ký mà xem, bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> có thể giúp bạn định vị. Người mới hoàn toàn thì nên đi qua <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a> trước đã, vì xem nhật ký sản xuất khi chưa dựng nổi một khối cơ bản thì chỉ thấy hay mà không rút ra được gì.</p>
+<p>Riêng phần ánh sáng thì nên xem song song với một checklist của chính bạn, vì đây là khâu dễ bắt chước sai nhất. Bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a> liệt kê năm lỗi khiến render trông rẻ tiền, dùng nó làm thước đo khi đối chiếu với cách ê-kíp họ dựng đèn.</p>
 
-<p>Tới phần ánh sáng và compositing, nên mở sẵn <a href="cam-nang.html">cẩm nang Blender</a> để đối chiếu checklist lighting với cách ê-kíp họ làm. Còn nếu bạn muốn có người chữa bài thay vì tự đối chiếu, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> đi theo đúng thứ tự kỹ năng nói ở trên.</p>
+<h2>Danh sách kiểm tra sau khi xem xong một khâu</h2>
+
+<p>Xem xong mà không làm gì thì coi như chưa xem. Năm mục dưới là mức tối thiểu để buổi xem đó biến thành kỹ năng.</p>
+
+<ul>
+<li>Viết được ba dòng quyết định theo bước 4, không phải ba dòng thao tác.</li>
+<li>Chép lại một shot bằng tài sản của mình, dù xấu hơn bản gốc.</li>
+<li>Nêu được một thứ trong cách họ làm mà bạn cố ý không áp dụng, kèm lý do.</li>
+<li>Đổi được một thói quen cũ trong file của mình, ví dụ cách đặt tên collection.</li>
+<li>Lên lịch xem khâu tiếp theo, hoặc quyết định dừng và quay lại luyện tay.</li>
+</ul>
+
+<h2>Học Blender qua nhật ký sản xuất hợp với giai đoạn nào</h2>
+
+<p>Gọn lại: dùng tutorial để qua tháng đầu, dùng nhật ký sản xuất để hiểu cách nghĩ sau khi đã tự dựng được vài cảnh, và dùng người chữa bài khi cần biết chính xác mình sai ở đâu. Học Blender qua nhật ký sản xuất mạnh ở phần giữa, chỗ phần lớn người tự học hay chững lại vì không biết mình đang làm sai cái gì.</p>
+
+<p>Nếu bạn muốn tự thử trước, tải <a href="cam-nang.html">cẩm nang Blender</a> rồi đối chiếu checklist trong đó với cách ê-kíp OVERGROWN xử lý khâu ánh sáng. Còn nếu bạn thấy mình xem nhiều nhưng bài làm ra không khá lên, đó là dấu hiệu thiếu vòng phản hồi chứ không phải thiếu tài liệu, và hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> đi theo đúng thứ tự kỹ năng nói trong bài.</p>
+
+<h2>Hỏi đáp về học Blender qua nhật ký sản xuất</h2>
+
+<p class="faq-q">Kho hậu trường OVERGROWN còn miễn phí không?</p>
+<p>Đợt mở của Blender Studio có giới hạn thời gian nên trạng thái có thể đã thay đổi. Kiểm tra trực tiếp trên trang dự án ở studio.blender.org trước khi sắp lịch xem. Cách học mô tả trong bài vẫn áp dụng được cho các nhật ký sản xuất khác.</p>
+
+<p class="faq-q">Chưa giỏi tiếng Anh thì xem được không?</p>
+<p>Được, nhưng chậm hơn. Phần lớn giá trị nằm ở hình ảnh quá trình và thứ tự công việc, không nằm ở lời nói. Bật phụ đề, xem chậm, và tập trung vào cái họ làm trên màn hình hơn là nghe hết từng câu.</p>
+
+<p class="faq-q">Học Blender qua nhật ký sản xuất có thay được một khoá học không?</p>
+<p>Không thay được phần chữa bài. Nhật ký cho bạn cách nghĩ của người có nghề, nhưng không ai nhìn file của bạn và chỉ ra lỗi. Nếu bạn tự đánh giá được bài của mình thì nó đủ, còn nếu chưa thì vẫn cần người sửa.</p>
+
+<p class="faq-q">Nên xem trước phần nào nếu chỉ có một buổi tối?</p>
+<p>Xem phần ánh sáng. Đây là khâu tạo khác biệt lớn nhất trên ảnh cuối và cũng là khâu bạn áp dụng lại được ngay trong cảnh đang làm dở, không cần đổi cách dựng hình.</p>
+
+<p class="faq-q">Xem xong thì nên làm bài gì để không quên?</p>
+<p>Chép lại đúng một shot trong vòng ba ngày kể từ lúc xem. Để lâu hơn thì phần quyết định sẽ mờ đi và bạn chỉ còn nhớ thao tác, tức là phần ít giá trị nhất.</p>
+
+<hr class="hr">
+
+<p>Bước tiếp theo gọn nhất: chọn một khâu theo bảng đối chiếu ở đầu bài, xem hết khâu đó, rồi chép lại một shot trong ba ngày. Nếu muốn có người xem bản chép đó và nói thẳng nó thiếu gì, xem trước hai hệ đào tạo ở trang <a href="khoa-hoc.html">khoá học Blender 3D</a>.</p>
 """,
     },
     {
@@ -1433,6 +1524,8 @@ POSTS = [
 <p>Blender là phần mềm miễn phí có cộng đồng dạy học tốt nhất trong ngành 3D. Tài nguyên chất lượng cao, miễn phí, nhiều tới mức không xem hết. Riêng khoản tài liệu, bạn không thiếu gì.</p>
 
 <p>Người tự học tốt thường có ba đặc điểm: kỷ luật ngồi đều mà không cần ai nhắc, khả năng tự đánh giá bài mình khá chính xác, và kiên nhẫn với việc thử sai. Nếu bạn có đủ ba thứ đó, tự học là lựa chọn đúng, và tôi nói thật lòng.</p>
+
+<p>Nhóm tự học tốt cũng thường biết khai thác tài liệu nặng hơn tutorial. Ví dụ rõ nhất là <a href="blog-kho-hau-truong-overgrown-blender-studio.html">học Blender qua nhật ký sản xuất</a> của một ê-kíp làm phim thật, nơi bạn thấy cả phương án bị loại chứ không chỉ phương án đúng.</p>
 
 <h2>Tự học mắc ở đâu</h2>
 
