@@ -4203,7 +4203,7 @@ POSTS = [
 <h3>Chặng ba: kết xuất cuối và hậu kỳ</h3>
 <p>Kết xuất ở độ phân giải thật, chỉnh tương phản và màu, xuất đủ các tỉ lệ khung đã thống nhất. Chặng này gần như không nên có yêu cầu sửa về bố cục nữa, vì mọi thay đổi bố cục đều kéo theo kết xuất lại.</p>
 
-<p>Nếu bạn muốn hiểu phía trong mỗi chặng người làm đang làm gì, nội dung từng khâu được mô tả theo góc người học trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
+<p>Nếu bạn muốn hiểu phía trong mỗi chặng người làm đang làm gì, nội dung từng khâu được mô tả theo góc người học trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>. Riêng trường hợp ảnh phải làm hình chủ đạo của chiến dịch, các mốc duyệt chặt hơn và brief cần thêm vài nhóm thông tin, viết riêng ở bài <a href="blog-thue-studio-3d-lam-key-visual.html">thuê studio 3D làm key visual</a>.</p>
 
 <figure>
   <img src="assets/jhm-chu-thich-lo-vua.webp" alt="Ảnh render 3D một chi tiết cơ khí kèm đường chỉ và chú thích tên bộ phận" loading="lazy" width="1800" height="1012">
@@ -4524,7 +4524,7 @@ POSTS = [
 
 <p><strong style="color:#fff;">Hai bên đang đếm số hình khác nhau.</strong> Một bên hiểu là ba góc, bên kia hiểu là ba góc nhân ba tỉ lệ khung. Cách chữa là gửi đúng một danh sách ảnh cho mọi nơi bạn hỏi.</p>
 
-<p><strong style="color:#fff;">Mức hoàn thiện được hiểu khác nhau.</strong> Ảnh đủ dùng cho trang bán hàng và ảnh làm key visual đứng đầu một chiến dịch cách nhau khá xa ở khâu ánh sáng và hậu kỳ.</p>
+<p><strong style="color:#fff;">Mức hoàn thiện được hiểu khác nhau.</strong> Ảnh đủ dùng cho trang bán hàng và ảnh làm key visual đứng đầu một chiến dịch cách nhau khá xa ở khâu ánh sáng và hậu kỳ. Nếu việc của bạn thuộc mức sau, bài <a href="blog-thue-studio-3d-lam-key-visual.html">thuê studio 3D làm key visual</a> liệt kê những gì cần gửi kèm để báo giá không bị đội lên vì phải đoán.</p>
 
 <p><strong style="color:#fff;">Số vòng sửa không được ghi.</strong> Báo giá thấp thường đã ngầm cắt phần này xuống một vòng, và phần còn lại sẽ quay về dạng phí phát sinh.</p>
 
@@ -4654,7 +4654,7 @@ POSTS = [
 
 <h2>Khi nào nên thuê studio 3D làm key visual</h2>
 
-<p>Key visual là hình chủ đạo của một chiến dịch, thứ xuất hiện trên biển lớn, trên trang chủ và trên bài chạy quảng cáo. Nó khác ảnh sản phẩm thông thường ở chỗ phải chịu được việc phóng to, phải đọc được khi thu nhỏ và phải đứng vững cạnh các thương hiệu khác trong cùng một không gian.</p>
+<p>Key visual là hình chủ đạo của một chiến dịch, thứ xuất hiện trên biển lớn, trên trang chủ và trên bài chạy quảng cáo. Nó khác ảnh sản phẩm thông thường ở chỗ phải chịu được việc phóng to, phải đọc được khi thu nhỏ và phải đứng vững cạnh các thương hiệu khác trong cùng một không gian. Phần brief, số vòng duyệt và danh sách kiểm tra trước khi gửi yêu cầu được bóc riêng trong bài <a href="blog-thue-studio-3d-lam-key-visual.html">thuê studio 3D làm key visual</a>.</p>
 
 <h3>Ba trường hợp nên thuê ngoài</h3>
 <ul>
@@ -4742,6 +4742,182 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đang chọn nơi làm hình, gửi cho chúng tôi danh sách ảnh cần giao, nơi ảnh sẽ xuất hiện và ngày duyệt nội bộ. Chúng tôi báo lại theo từng hạng mục và nói thẳng nếu chụp thật hoặc một nhóm khác hợp hơn cho việc của bạn. Muốn xem chúng tôi làm gì trước khi hỏi thì <a href="du-an-san-pham.html">dự án render 3D sản phẩm</a> và <a href="du-an-event.html">dự án phối cảnh sự kiện 3D</a> là chỗ nên bắt đầu, còn danh mục đang nhận nằm ở trang <a href="dich-vu.html">dịch vụ 3D cho thương hiệu</a>.</p>
+""",
+    },
+    {
+        "slug": "thue-studio-3d-lam-key-visual",
+        "title": "Thuê studio 3D làm key visual: chuẩn bị những gì",
+        "desc": "Thuê studio 3D làm key visual cần brief thế nào, qua mấy vòng duyệt, mất bao lâu. Kèm bảng so sánh với chụp thật và danh sách kiểm tra trước khi gửi yêu cầu.",
+        "tag": "Dịch vụ",
+        "date": "2026-11-06",
+        "date_vn": "06/11/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/aston-dbx-goc-cao-key-visual.webp",
+        "faq": [
+            ('Thuê studio 3D làm key visual mất bao lâu?',
+             'Với một key visual sản phẩm có bố cục rõ từ đầu, khoảng một tới hai tuần là mức thường gặp, tính từ lúc chốt brief tới lúc giao bản cắt nhiều tỉ lệ. Con số này là ước lượng theo kinh nghiệm và phụ thuộc nhiều nhất vào tốc độ duyệt của phía bạn, không phải vào thời gian render. Nếu cảnh phức tạp, có nhiều sản phẩm trong khung hoặc cần dựng cả không gian xung quanh thì nên tính thêm một tuần.'),
+            ('Cần gửi gì cho studio trước khi họ báo giá key visual?',
+             'Bốn thứ: nơi hình sẽ xuất hiện kèm kích thước, một hình tham chiếu cho cảm giác muốn có, bản vẽ hoặc kích thước thật của sản phẩm, và ngày bạn cần hình. Thiếu nhóm thứ nhất là nguyên nhân phổ biến nhất của việc phải dựng lại, vì bố cục cho biển ngoài trời và bố cục cho khung vuông trên mạng xã hội không giống nhau.'),
+            ('Key visual dựng 3D có cần sản phẩm mẫu thật không?',
+             'Không bắt buộc, nhưng rất nên có với hàng kim loại bóng, thủy tinh, chất lỏng hoặc bao bì có hiệu ứng in đặc biệt. Những bề mặt đó khó đoán đúng từ ảnh chụp, và một món mẫu trong tay thường tiết kiệm được cả một vòng sửa. Với hàng nhựa hoặc giấy phẳng màu thì bản vẽ kèm mã màu là đủ.'),
+            ('Bao nhiêu vòng sửa là hợp lý cho một key visual?',
+             'Hai vòng nằm trong giá là mức thường thấy, cộng một vòng chỉnh nhỏ ở cuối. Điểm quan trọng hơn con số là vòng sửa được đặt ở đâu: nếu bạn chỉ thấy hình lần đầu khi nó đã render xong thì hai vòng cũng không đủ. Hãy yêu cầu một vòng duyệt ở giai đoạn khối xám, trước khi có vật liệu và ánh sáng.'),
+            ('Thuê một studio 3D làm cả bộ hình hay chia cho nhiều nơi?',
+             'Key visual nên để một nơi làm trọn, vì nó quyết định ánh sáng và tông màu cho mọi hình còn lại. Các hình phụ như ảnh nền trắng, ảnh biến thể màu hay ảnh cắt chi tiết thì chia được, miễn là bên làm phần phụ nhận được file hoặc bảng thông số ánh sáng từ bên làm key visual.'),
+        ],
+        "body": """
+<p class="lead">Thuê studio 3D làm key visual là việc bạn đặt một hình chủ đạo cho cả chiến dịch, không phải đặt một tấm ảnh sản phẩm. Thứ quyết định kết quả nằm ở brief và ở số vòng duyệt, không nằm ở phần mềm hay máy render. Chuẩn bị đúng bốn thứ trước khi gửi yêu cầu là nơi sẽ đặt hình kèm kích thước, hình tham chiếu, kích thước thật của sản phẩm và ngày cần giao.</p>
+
+<p>Bài này viết cho người sắp đi hỏi giá: key visual khác ảnh sản phẩm ở đâu, khi nào dựng 3D hợp hơn chụp thật, một key visual đi qua mấy vòng duyệt, mất bao lâu, và những chỗ dễ trượt khi thuê ngoài. Chúng tôi làm nghề này nên có phần thiên vị, vì vậy phần nên cân nhắc lại sẽ được viết thẳng.</p>
+
+<h2>Key visual khác ảnh sản phẩm thông thường ở đâu</h2>
+
+<p>Ảnh sản phẩm trả lời câu hỏi món này trông thế nào. Key visual trả lời câu hỏi chiến dịch này nói điều gì. Hai mục tiêu đó dẫn tới hai cách dựng khác nhau ngay từ bước bố cục.</p>
+
+<p>Một key visual phải chịu được ba thứ cùng lúc. Nó bị phóng to lên biển lớn nên mọi bề mặt phải chịu được việc nhìn gần. Nó bị thu nhỏ xuống ô vuông trên điện thoại nên hình khối chính phải đọc được khi chỉ còn vài trăm pixel. Và nó phải đứng cạnh thương hiệu khác trong cùng một không gian mà không bị lẫn.</p>
+
+<p>Ảnh sản phẩm thường không cần cả ba. Đó là lý do một bộ ảnh nền trắng rất đẹp vẫn không dùng được làm hình chủ đạo, và cũng là lý do giá của hai nhóm việc này khác nhau rõ rệt.</p>
+
+<h3>Ba thứ một key visual phải có mà ảnh thường không cần</h3>
+<ul>
+<li>Một khoảng trống đã tính trước cho chữ và logo, ở đúng vị trí mà bộ phận thiết kế sẽ đặt chúng.</li>
+<li>Bố cục dựng được ở nhiều tỉ lệ từ cùng một cảnh, thay vì chỉ đúng ở một khổ.</li>
+<li>Một hướng ánh sáng đủ mạnh để các hình phụ về sau bám theo được, giữ cho cả bộ hình trông cùng một nhà.</li>
+</ul>
+
+<h2>Khi nào nên thuê studio 3D làm key visual</h2>
+
+<p>Dựng 3D không phải lúc nào cũng hợp hơn. Bảng dưới đây so ba cách làm trên cùng một bộ tiêu chí mà người đi thuê thường quan tâm.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Dựng 3D</th><th>Chụp thật</th><th>Kết hợp</th></tr></thead>
+<tbody>
+<tr><td>Cần hàng mẫu</td><td>Nên có, không bắt buộc</td><td>Bắt buộc, đủ số lượng</td><td>Một món là đủ</td></tr>
+<tr><td>Đổi màu, đổi dung tích</td><td>Đổi vật liệu rồi render lại</td><td>Chụp lại từ đầu</td><td>Phần 3D gánh biến thể</td></tr>
+<tr><td>Cảnh khó hoặc không có thật</td><td>Dựng được</td><td>Tốn hoặc không làm nổi</td><td>Ghép nền 3D vào hàng thật</td></tr>
+<tr><td>Bề mặt phức tạp</td><td>Cần thời gian làm vật liệu</td><td>Giống thật ngay</td><td>Giữ hàng thật cho bề mặt khó</td></tr>
+<tr><td>Nhiều tỉ lệ từ một cảnh</td><td>Cắt lại không tốn thêm buổi</td><td>Phải tính trước khi chụp</td><td>Tùy phần nào chiếm khung</td></tr>
+<tr><td>Sửa sau khi đã giao</td><td>Mở lại cảnh, sửa được</td><td>Thường phải chụp lại</td><td>Sửa được phần dựng</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Ba dấu hiệu nên thuê ngoài phần key visual</h3>
+<ul>
+<li>Hàng chưa ra khỏi nhà máy nhưng ngày chạy chiến dịch đã chốt. Dựng 3D là cách duy nhất có hình trước khi có hàng.</li>
+<li>Một bố cục phải ra nhiều phiên bản màu, nhiều dung tích hoặc nhiều thị trường. Mỗi lần chụp lại là một buổi, mỗi lần render lại là một đêm.</li>
+<li>Cảnh cần một không gian không tồn tại hoặc quá tốn để dựng thật, kiểu một sân khấu rộng hay một bối cảnh dải sáng kín.</li>
+</ul>
+
+<h3>Hai trường hợp nên cân nhắc lại</h3>
+<ul>
+<li>Sản phẩm đã có sẵn, chỉ cần một hình chủ đạo đơn giản trên nền phẳng. Một buổi chụp tử tế thường nhanh hơn và rẻ hơn.</li>
+<li>Ngân sách chỉ đủ cho một vòng sửa. Key visual gần như luôn cần ít nhất hai, và cắt đúng chỗ này là cắt vào thứ quyết định chất lượng cuối.</li>
+</ul>
+
+<p>Nếu bạn còn đang chọn nơi làm, phần phân biệt freelancer, studio nhỏ và agency cùng những điểm yếu có thật của thị trường trong nước nằm ở bài <a href="blog-studio-3d-tai-viet-nam.html">studio 3D tại Việt Nam</a>, còn bộ tiêu chí chọn theo loại việc thì ở bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>.</p>
+
+<figure>
+  <img src="assets/aston-dbx-goc-cao-key-visual.webp" alt="Key visual 3D Aston Martin DBX nhìn từ góc cao trong bối cảnh dải sáng xanh ngọc, dựng bằng Blender" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một bối cảnh không có thật, dựng để hình chủ đạo đứng được một mình.</strong> Góc cao và dải sáng chạy quanh xe được tính từ bước khối xám để chừa chỗ cho chữ ở nửa trên. Xem trọn bộ ở <a href="du-an-aston-martin-dbx.html">dự án Aston Martin DBX</a>.</figcaption>
+</figure>
+
+<h2>Brief cần có gì để không phải dựng lại</h2>
+
+<p>Phần lớn các lần phải dựng lại từ đầu không đến từ tay nghề mà đến từ một brief thiếu. Bốn nhóm thông tin dưới đây là tối thiểu, và nhóm đầu là nhóm bị bỏ quên nhiều nhất.</p>
+
+<h3>Nơi hình sẽ xuất hiện, kèm kích thước</h3>
+<p>Một hình cho biển ngoài trời khổ ngang rất dài và một hình cho ô vuông trên mạng xã hội không thể cùng một bố cục. Hãy liệt kê đủ các nơi sẽ đặt hình ngay từ đầu, kể cả những nơi bạn nghĩ là phụ. Danh sách này quyết định góc máy, nên nó phải có trước khi ai đó bắt đầu dựng.</p>
+
+<h3>Một hình tham chiếu cho cảm giác muốn có</h3>
+<p>Không phải để bắt chước, mà để hai bên nói cùng một ngôn ngữ về ánh sáng và tông màu. Một hình tham chiếu kèm một câu giải thích thích chỗ nào thì hiệu quả hơn mười hình không chú thích.</p>
+
+<h3>Kích thước thật và bản vẽ của sản phẩm</h3>
+<p>Dựng đúng tỉ lệ là phần không thương lượng được. Bản vẽ kỹ thuật, kích thước ba chiều hoặc ít nhất ảnh chụp sáu mặt kèm một vật chuẩn để đối chiếu. Thiếu phần này thì hình trông sai mà khó chỉ ra sai ở đâu.</p>
+
+<h3>Ngày cần giao và ngày duyệt nội bộ</h3>
+<p>Ngày duyệt nội bộ quan trọng hơn ngày giao. Nếu phía bạn cần ba người cùng đồng ý mà không ai chốt được lịch họp, tiến độ sẽ trượt bất kể studio làm nhanh thế nào.</p>
+
+<blockquote><p>Một brief tốt không phải brief dài. Nó là brief nói rõ hình này sẽ bị treo ở đâu, bị thu nhỏ tới mức nào, và ai là người nói câu cuối cùng.</p></blockquote>
+
+<h2>Một key visual đi qua mấy vòng duyệt</h2>
+
+<p>Quy trình dưới đây là cách phần lớn studio làm việc, và cũng là cách chúng tôi làm. Điểm đáng chú ý là vòng đầu cố tình trông đơn sơ.</p>
+
+<h3>Vòng một: khối xám, chưa có vật liệu</h3>
+<p>Chỉ hình khối, một nguồn sáng tạm, chưa màu sắc. Mục tiêu duy nhất là chốt bố cục, góc máy và khoảng trống cho chữ. Nhiều khách thấy hình xám thì sốt ruột, nhưng đây là vòng rẻ nhất để sửa. Đổi góc máy ở bước này mất vài giờ, đổi ở bước đã render xong mất vài ngày.</p>
+
+<h3>Vòng hai: vật liệu và ánh sáng</h3>
+<p>Bề mặt, màu, phản chiếu và hướng sáng chính. Đây là vòng dài nhất và cũng là vòng cần phản hồi cụ thể nhất. Phản hồi kiểu nhìn chưa sang khó xử lý, còn phản hồi kiểu phản chiếu trên nắp hộp gắt quá so với hàng thật thì sửa được ngay.</p>
+
+<h3>Vòng ba: hình cuối và bản cắt nhiều tỉ lệ</h3>
+<p>Render ở độ phân giải cao, hậu kỳ nhẹ, rồi cắt ra các tỉ lệ đã liệt kê trong brief. Nếu danh sách tỉ lệ có từ đầu thì bước này gần như không phát sinh. Nếu nó xuất hiện ở đây, bạn sẽ phải trả thêm cho việc dựng lại bố cục.</p>
+
+<p>Với đầu ra là vài giây chuyển động thì các mốc duyệt khác hẳn, có thêm vòng chốt chuyển động trước khi render, viết kỹ trong bài <a href="blog-quy-trinh-mot-shot-tvc.html">quy trình dựng TVC 3D</a>. Còn nếu hình chủ đạo của bạn là một không gian chứ không phải một món hàng, phần mặt bằng và hạng mục thi công nằm ở bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D</a>.</p>
+
+<h2>Thời gian và cách tính tiền</h2>
+
+<p>Một key visual sản phẩm có brief rõ thường mất khoảng một tới hai tuần từ lúc chốt brief tới lúc giao bản cắt. Đây là ước lượng theo kinh nghiệm, không phải cam kết, và nó phụ thuộc nhiều nhất vào tốc độ duyệt của phía bạn chứ không vào thời gian máy chạy.</p>
+
+<p>Về tiền, điều cần biết là key visual gần như luôn được bóc theo hạng mục chứ không có một con số gọn. Các hạng mục thường gặp là dựng mô hình, làm vật liệu, dựng cảnh và ánh sáng, render, hậu kỳ, rồi bản cắt cho từng tỉ lệ. Hai thứ hay bị bỏ quên khi so giá giữa các nơi là số vòng sửa nằm trong giá và quyền sử dụng hình. Cách bóc từng hạng mục và những gì cần gửi để nhận được báo giá dùng được nằm trong bài <a href="blog-bao-gia-dung-3d-san-pham.html">báo giá dựng 3D sản phẩm</a>, còn các mốc giao nhận của một bộ ảnh tĩnh thì ở bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>.</p>
+
+<h2>Những chỗ dễ trượt khi thuê ngoài</h2>
+
+<p><strong style="color:#fff;">Không có vòng duyệt khối xám.</strong> Nếu studio chỉ cho bạn xem hình ở bước cuối, mọi lỗi bố cục sẽ thành lỗi đắt. Hỏi thẳng xem quy trình có bước này không trước khi ký.</p>
+
+<p><strong style="color:#fff;">Danh sách tỉ lệ bổ sung sau.</strong> Thêm một khổ dọc sau khi đã chốt hình ngang thường không phải việc cắt, mà là việc dựng lại bố cục. Liệt kê hết ngay từ brief.</p>
+
+<p><strong style="color:#fff;">Nhiều người cùng quyền yêu cầu sửa.</strong> Góp ý nhiều là tốt, nhưng phải có một người gom lại và chốt. Năm người cùng quyền là cách chắc chắn nhất để một key visual đi lòng vòng hai tuần.</p>
+
+<p><strong style="color:#fff;">Không nói gì về file gốc.</strong> Mặc định của phần lớn nơi là giao hình cuối, giữ lại file dựng. Nếu bạn muốn dùng lại mô hình cho các chiến dịch sau thì ghi vào hợp đồng từ đầu, vì đòi sau khi đã chốt giá rất khó.</p>
+
+<p><strong style="color:#fff;">Portfolio không khớp nhóm chất liệu.</strong> Một nhóm dựng nội thất giỏi chưa chắc dựng tốt kim loại bóng hay chất lỏng. Xem portfolio theo nhóm chất liệu của bạn, đừng xem theo tổng số dự án.</p>
+
+<h2>Danh sách kiểm tra trước khi gửi yêu cầu</h2>
+
+<p>Chạy qua danh sách này một lượt. Một studio làm việc chỉn chu sẽ trả lời được hết trong một buổi trao đổi, và bạn cũng nên trả lời được hết phần của mình.</p>
+
+<ul>
+<li>Đã liệt kê đủ nơi đặt hình kèm kích thước từng nơi chưa.</li>
+<li>Đã có bản vẽ hoặc kích thước thật của sản phẩm chưa.</li>
+<li>Đã chọn được một tới hai hình tham chiếu kèm chú thích thích chỗ nào chưa.</li>
+<li>Đã biết ai là người duyệt cuối, và người đó có mặt trong hai tuần tới không.</li>
+<li>Đã chốt ngày duyệt bố cục, ngày duyệt ánh sáng và ngày giao chưa.</li>
+<li>Quy trình của studio có vòng duyệt khối xám trước khi render không.</li>
+<li>Bao nhiêu vòng sửa nằm trong giá, thứ gì được tính là việc mới.</li>
+<li>Giao định dạng nào, độ phân giải nào, có kèm bản cắt các tỉ lệ không.</li>
+<li>Quyền sử dụng hình trong bao lâu, trên những kênh nào.</li>
+<li>File dựng gốc có giao không, nếu có thì tính thêm bao nhiêu.</li>
+<li>Nếu cần hàng mẫu thì gửi về đâu, ai chịu phí vận chuyển.</li>
+</ul>
+
+<p>Nếu đội của bạn ra hình đều đặn quanh năm, giữ một người trong nhà lo phần ảnh biến thể rồi chỉ thuê ngoài phần hình chủ đạo thường tiết kiệm hơn thuê ngoài toàn bộ. Đầu ra từng giai đoạn để dựng được người đó nằm ở <a href="khoa-hoc.html">lộ trình hai hệ 3D</a>, còn bộ bảng tra cứu dùng khi làm việc thật thì ở <a href="cam-nang.html">cẩm nang Blender</a>.</p>
+
+<h2>Vậy thuê studio 3D làm key visual khi nào thì đúng</h2>
+
+<p>Gọn lại thành bốn trường hợp. Khi hàng chưa có mà ngày chạy đã chốt. Khi một bố cục phải ra nhiều biến thể màu hoặc nhiều thị trường. Khi cảnh cần một không gian không tồn tại hoặc quá tốn để dựng thật. Và khi bạn muốn giữ lại một mô hình dùng được cho các chiến dịch sau. Nếu việc của bạn không rơi vào bốn nhóm này, một buổi chụp tử tế có thể là lựa chọn đúng hơn, và một studio tử tế sẽ nói với bạn như vậy.</p>
+
+<h2>Câu hỏi thường gặp về thuê studio 3D làm key visual</h2>
+
+<p class="faq-q">Thuê studio 3D làm key visual mất bao lâu?</p>
+<p>Với một key visual sản phẩm có bố cục rõ từ đầu, khoảng một tới hai tuần là mức thường gặp, tính từ lúc chốt brief tới lúc giao bản cắt nhiều tỉ lệ. Con số này là ước lượng theo kinh nghiệm và phụ thuộc nhiều nhất vào tốc độ duyệt của phía bạn, không phải vào thời gian render. Nếu cảnh phức tạp, có nhiều sản phẩm trong khung hoặc cần dựng cả không gian xung quanh thì nên tính thêm một tuần.</p>
+
+<p class="faq-q">Cần gửi gì cho studio trước khi họ báo giá key visual?</p>
+<p>Bốn thứ: nơi hình sẽ xuất hiện kèm kích thước, một hình tham chiếu cho cảm giác muốn có, bản vẽ hoặc kích thước thật của sản phẩm, và ngày bạn cần hình. Thiếu nhóm thứ nhất là nguyên nhân phổ biến nhất của việc phải dựng lại, vì bố cục cho biển ngoài trời và bố cục cho khung vuông trên mạng xã hội không giống nhau.</p>
+
+<p class="faq-q">Key visual dựng 3D có cần sản phẩm mẫu thật không?</p>
+<p>Không bắt buộc, nhưng rất nên có với hàng kim loại bóng, thủy tinh, chất lỏng hoặc bao bì có hiệu ứng in đặc biệt. Những bề mặt đó khó đoán đúng từ ảnh chụp, và một món mẫu trong tay thường tiết kiệm được cả một vòng sửa. Với hàng nhựa hoặc giấy phẳng màu thì bản vẽ kèm mã màu là đủ.</p>
+
+<p class="faq-q">Bao nhiêu vòng sửa là hợp lý cho một key visual?</p>
+<p>Hai vòng nằm trong giá là mức thường thấy, cộng một vòng chỉnh nhỏ ở cuối. Điểm quan trọng hơn con số là vòng sửa được đặt ở đâu: nếu bạn chỉ thấy hình lần đầu khi nó đã render xong thì hai vòng cũng không đủ. Hãy yêu cầu một vòng duyệt ở giai đoạn khối xám, trước khi có vật liệu và ánh sáng.</p>
+
+<p class="faq-q">Thuê một studio 3D làm cả bộ hình hay chia cho nhiều nơi?</p>
+<p>Key visual nên để một nơi làm trọn, vì nó quyết định ánh sáng và tông màu cho mọi hình còn lại. Các hình phụ như ảnh nền trắng, ảnh biến thể màu hay ảnh cắt chi tiết thì chia được, miễn là bên làm phần phụ nhận được file hoặc bảng thông số ánh sáng từ bên làm key visual.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang chuẩn bị một chiến dịch, gửi cho chúng tôi danh sách nơi sẽ đặt hình, kích thước từng nơi và ngày duyệt nội bộ. Chúng tôi báo lại theo từng hạng mục và nói thẳng nếu chụp thật hợp hơn cho việc của bạn. Muốn xem trước thì <a href="du-an-san-pham.html">dự án render 3D sản phẩm</a> và <a href="du-an-chivas-18.html">dự án Chivas 18</a> là chỗ nên bắt đầu, còn danh mục đang nhận nằm ở trang <a href="dich-vu.html">dịch vụ 3D cho thương hiệu</a>.</p>
 """,
     },
 ]
