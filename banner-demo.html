@@ -3,93 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Banner vỡ frame theo cuộn | LXAM</title>
+<title>Banner tua theo cuộn | LXAM</title>
 <meta name="robots" content="noindex,nofollow">
-<meta name="description" content="Bản thử hiệu ứng banner Volvo S90: cuộn xuống thì khối hình vỡ ra thành các frame tĩnh rời, cuộn lên thì khép lại thành một hình liền.">
+<meta name="description" content="Bản thử banner Volvo S90: đứng im thì khung hình đứng, cuộn thì video chạy theo frame, cuộn hết thì zoom vào xe.">
 <link rel="stylesheet" href="assets/lx.css?v=den3">
 <link rel="icon" href="favicon.ico">
-<link rel="preload" as="image" href="assets/shatter-hero.webp">
+<link rel="preload" as="image" href="assets/vd0.webp">
 <link rel="preload" as="font" type="font/woff2" href="assets/brown-italic.woff2" crossorigin>
 <style>
+  /* Font sport chi dung cho chu tieng Anh. Moi chu tieng Viet van chay font co dau. */
   @font-face{font-family:'BrownSport';src:url("assets/brown-italic.woff2") format('woff2');
              font-style:italic;font-weight:400;font-display:swap;}
   @font-face{font-family:'BrownSport';src:url("assets/brown.woff2") format('woff2');
              font-style:normal;font-weight:400;font-display:swap;}
+  .en{font-family:'BrownSport',sans-serif;}
+  .vi{font-family:'Be Vietnam Pro',system-ui,sans-serif;}
 
   html{scroll-behavior:auto;}
   body{background:#000;margin:0;}
 
-  /* duong ray cuon, dai hon man hinh de co quang duong dieu khien hieu ung */
-  .shz{position:relative;height:230svh;background:#000;padding:0;margin:0;}
-  .shz-stick{position:sticky;top:0;height:100svh;overflow:hidden;background:#05060a;}
+  .vsc{position:relative;height:430svh;background:#000;padding:0;margin:0;}
+  .vsc-stick{position:sticky;top:0;height:100svh;overflow:hidden;background:#000;}
+  .vsc-cv{position:absolute;inset:0;width:100%;height:100%;display:block;}
 
-  /* lop dong: mot hinh lien */
-  .shz-base{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-            will-change:opacity,transform;transform:translateZ(0);}
+  .vsc-sh{position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,.52) 0%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 48%,rgba(0,0,0,.72) 82%,#000 100%);}
 
-  /* lop manh: cac frame tinh roi */
-  .shz-g{position:absolute;inset:0;opacity:0;}
-  .shz-t{position:absolute;top:0;left:0;background-repeat:no-repeat;
-         will-change:transform;transform:translate3d(0,0,0);backface-visibility:hidden;}
+  .vsc-in{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;
+          padding:0 var(--pad) clamp(56px,9vh,104px);pointer-events:none;will-change:opacity,transform;}
+  .vsc-k{font-size:clamp(10px,1.1vw,12px);letter-spacing:4px;text-transform:uppercase;
+         color:var(--ac);margin:0 0 14px;}
+  .vsc-h{font-style:italic;font-weight:400;
+         font-size:clamp(36px,8.8vw,126px);line-height:.95;letter-spacing:-.005em;
+         text-transform:uppercase;margin:0 0 20px;color:#fff;text-shadow:0 4px 42px rgba(0,0,0,.5);}
+  .vsc-h span{display:block;}
+  .vsc-h .l2{color:var(--ac);}
+  .vsc-p{font-size:clamp(14px,1.5vw,18px);line-height:1.68;color:#d9cfc5;max-width:520px;margin:0;}
 
-  .shz-sh{position:absolute;inset:0;pointer-events:none;
-    background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.05) 26%,rgba(0,0,0,.42) 56%,rgba(0,0,0,.84) 82%,#000 100%);}
-
-  .shz-in{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;
-          padding:0 var(--pad) clamp(58px,9vh,104px);pointer-events:none;}
-  .shz-k{font-family:'BrownSport',sans-serif;font-style:normal;
-         font-size:clamp(10px,1.1vw,12px);letter-spacing:4px;text-transform:uppercase;
-         color:var(--ac);margin:0 0 16px;}
-  .shz-h{font-family:'BrownSport',sans-serif;font-style:italic;font-weight:400;
-         font-size:clamp(34px,8.6vw,124px);line-height:.96;letter-spacing:-.005em;
-         text-transform:uppercase;margin:0 0 18px;color:#fff;
-         text-shadow:0 4px 40px rgba(0,0,0,.55);}
-  .shz-h span{display:block;}
-  .shz-h .l2{color:var(--ac);}
-  .shz-p{font-size:clamp(14px,1.5vw,18px);line-height:1.68;color:#d7cdc3;max-width:540px;margin:0;}
-
-
-  .shz-bar{position:absolute;left:var(--pad);right:var(--pad);bottom:18px;z-index:4;height:2px;
+  .vsc-hint{position:absolute;z-index:4;right:var(--pad);bottom:34px;
+            font-size:11px;letter-spacing:3.4px;text-transform:uppercase;color:#9a9087;
+            will-change:opacity;}
+  .vsc-bar{position:absolute;left:var(--pad);right:var(--pad);bottom:18px;z-index:4;height:2px;
            background:rgba(255,255,255,.12);overflow:hidden;}
-  .shz-bar i{display:block;height:100%;width:100%;background:var(--ac);
+  .vsc-bar i{display:block;height:100%;width:100%;background:var(--ac);
              transform:scaleX(0);transform-origin:0 50%;}
-  .shz-hint{position:absolute;z-index:4;right:var(--pad);bottom:34px;
-            font-family:'BrownSport',sans-serif;font-style:normal;
-            font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#9a9087;}
+  .vsc-load{position:absolute;z-index:5;left:var(--pad);bottom:34px;
+            font-size:11px;letter-spacing:3.4px;text-transform:uppercase;color:#6e665e;
+            transition:opacity .4s;}
 
   .after{max-width:var(--wrap);margin:0 auto;padding:clamp(70px,10vw,130px) var(--pad);}
-  .after h2{font-family:'BrownSport',sans-serif;font-style:italic;text-transform:uppercase;
-            font-size:clamp(24px,3.6vw,46px);margin:0 0 22px;letter-spacing:-.01em;}
+  .after h2{font-family:'Unbounded',sans-serif;font-weight:600;
+            font-size:clamp(22px,3.2vw,40px);margin:0 0 22px;letter-spacing:-.01em;}
   .after p{color:#bdb3a9;line-height:1.8;max-width:680px;margin:0 0 14px;}
   .after ul{color:#bdb3a9;line-height:1.9;max-width:680px;padding-left:20px;}
   .after code{background:rgba(255,255,255,.07);padding:2px 6px;border-radius:3px;font-size:.92em;}
-  .back{display:inline-block;margin-top:26px;font-family:'BrownSport',sans-serif;font-style:normal;
-        font-size:12px;letter-spacing:3px;text-transform:uppercase;
+  .back{display:inline-block;margin-top:26px;font-size:12px;letter-spacing:3px;text-transform:uppercase;
         color:var(--ac);text-decoration:none;border-bottom:1px solid rgba(255,122,26,.4);padding-bottom:4px;}
 
-  @media (max-width:760px){
-    .shz-p{font-size:14px;}
-  }
-  @media (prefers-reduced-motion:reduce){
-    .shz{height:100svh;}
-    .shz-g{display:none;}
-  }
+  @media (max-width:760px){ .vsc-p{font-size:14px;max-width:none;} .vsc-hint{display:none;} }
+  @media (prefers-reduced-motion:reduce){ .vsc{height:100svh;} }
 </style>
 </head>
 <body>
 
-<section class="shz" id="shz">
-  <div class="shz-stick">
-    <img class="shz-base" id="shzB" src="assets/shatter-hero.webp" alt="Volvo S90 dựng 3D trong phim trường, góc cao" width="1600" height="900" fetchpriority="high">
-    <div class="shz-g" id="shzG" aria-hidden="true"></div>
-    <div class="shz-sh"></div>
-    <div class="shz-in">
-      <p class="shz-k">LXAM Studio</p>
-      <h1 class="shz-h"><span>Elegance</span><span class="l2">Evolved</span></h1>
-      <p class="shz-p">Cuộn xuống thì khối hình vỡ ra thành từng frame rời và trôi theo hướng tay bạn. Cuộn ngược lên thì chúng khép lại thành một hình liền.</p>
+<section class="vsc" id="vsc">
+  <div class="vsc-stick">
+    <canvas class="vsc-cv" id="vscCv" aria-label="Volvo S90 dựng 3D trong phim trường, máy quay tiến dần vào xe" role="img"></canvas>
+    <div class="vsc-sh"></div>
+    <div class="vsc-in" id="vscIn">
+      <p class="vsc-k en">LXAM Studio</p>
+      <h1 class="vsc-h en"><span>Elegance</span><span class="l2">Evolved</span></h1>
+      <p class="vsc-p vi">Đứng im thì khung hình đứng. Cuộn xuống thì đoạn phim chạy tới đúng theo tay bạn, cuộn lên thì chạy lui. Tới cuối thì máy quay tiến hẳn vào chiếc xe.</p>
     </div>
-    <div class="shz-hint">Cuộn xuống</div>
-    <div class="shz-bar"><i id="shzBar"></i></div>
+    <p class="vsc-hint en" id="vscHint">Scroll to explore</p>
+    <p class="vsc-load en" id="vscLoad">Loading</p>
+    <div class="vsc-bar"><i id="vscBar"></i></div>
   </div>
 </section>
 
@@ -97,86 +85,124 @@
   <h2>Bản thử hiệu ứng banner</h2>
   <p>Đây là trang thử, không nằm trong sitemap và đã chặn lập chỉ mục. Khối chữ này chỉ để kiểm tra banner có nhả chỗ đúng cho nội dung bên dưới hay không.</p>
   <ul>
-    <li>Trạng thái đóng là một hình liền, cảnh Volvo S90 quay trong phim trường.</li>
-    <li>Khi bắt đầu cuộn, hình đổi sang lưới frame tĩnh lấy từ chính bộ ảnh dự án đó.</li>
-    <li>Máy tính dùng lưới bốn cột ba hàng, điện thoại rút còn hai cột ba hàng và tải bộ ảnh nhỏ hơn.</li>
-    <li>Chữ chạy font BROWN Italic, bộ font sport trong thư viện của bạn.</li>
-    <li>Toàn bộ chuyển động chạy bằng <code>transform</code> nên trình duyệt không phải tính lại bố cục.</li>
-    <li>Máy bật chế độ giảm chuyển động sẽ chỉ thấy một hình tĩnh, không thấy hiệu ứng vỡ.</li>
+    <li>Vị trí cuộn điều khiển thẳng khung hình. Dừng tay là hình đứng lại ngay tại khung đó.</li>
+    <li>Tám phần mười quãng cuộn đầu dùng để tua phim, hai phần còn lại để máy quay tiến vào xe.</li>
+    <li>Máy tính chạy 72 khung ở bề ngang 1200, điện thoại rút còn 45 khung ở bề ngang 760.</li>
+    <li>Các khung được gộp vào vài tấm ảnh lớn nên trình duyệt chỉ tải vài lượt, không phải tải từng khung.</li>
+    <li>Chữ tiếng Anh chạy font BROWN Italic, chữ tiếng Việt vẫn chạy Be Vietnam Pro để không vỡ dấu.</li>
+    <li>Máy bật chế độ giảm chuyển động chỉ thấy một khung tĩnh.</li>
   </ul>
   <a class="back" href="index.html">Về trang chủ</a>
 </div>
 
 <script>
 (function(){
-  var sec  = document.getElementById('shz');
-  var grid = document.getElementById('shzG');
-  var base = document.getElementById('shzB');
-  var bar  = document.getElementById('shzBar');
-  if(!sec || !grid) return;
+  var sec = document.getElementById('vsc');
+  var cv  = document.getElementById('vscCv');
+  var bar = document.getElementById('vscBar');
+  var inn = document.getElementById('vscIn');
+  var hint= document.getElementById('vscHint');
+  var load= document.getElementById('vscLoad');
+  if(!sec || !cv) return;
 
+  var ctx = cv.getContext('2d', {alpha:false});
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  function pick(){
+  var SPLIT   = 0.80;   // phan quang duong dung de tua phim
+  var ZOOM    = 0.40;   // do tien vao o cuoi
+  var FOCUS_X = 0.545;  // tam chiec xe trong khung cuoi
+  var FOCUS_Y = 0.525;
+  var MAXCROP = 1.95;   // gioi han cat ngang, de man doc khong bi can qua sat
+
+  function cfg(){
     return window.innerWidth < 760
-      ? {src:'assets/shatter-m.webp', fw:540, fh:304, sc:3, sr:2, cols:2, rows:3, n:6}
-      : {src:'assets/shatter-d.webp', fw:800, fh:450, sc:4, sr:3, cols:4, rows:3, n:12};
+      ? {pre:'assets/vm', sheets:5, cw:760,  ch:320, n:45}
+      : {pre:'assets/vd', sheets:8, cw:1200, ch:506, n:72};
   }
 
-  var CFG = null, tiles = [], W = 0, H = 0;
+  var C = null, sheets = [], ready = [], zoomImg = null, loaded = 0;
 
-  function build(){
-    var c = pick();
-    if(CFG && CFG.src === c.src){ layout(); return; }
-    CFG = c;
-    grid.innerHTML = '';
-    tiles = [];
-
-    var total = c.cols * c.rows;
-    for(var i = 0; i < total; i++){
-      var cx = i % c.cols, cy = (i / c.cols) | 0;
-      var d = document.createElement('div');
-      d.className = 'shz-t';
-      d.style.backgroundImage = 'url("' + c.src + '")';
-      var f = i % c.n;                       // moi o mot frame khac nhau
-      tiles.push({
-        el: d, cx: cx, cy: cy,
-        fx: f % c.sc, fy: (f / c.sc) | 0,
-        ux: cx - (c.cols - 1) / 2,           // huong toa ra tu tam
-        uy: cy - (c.rows - 1) / 2,
-        sway: (cx % 2 ? 1 : -1) * (0.55 + 0.45 * ((i * 37) % 7) / 6),
-        rot:  ((i * 53) % 9 - 4) * 0.2
-      });
-      grid.appendChild(d);
+  function loadSheets(){
+    var c = C, i = 0;
+    function next(){
+      if(i >= c.sheets) return;
+      var k = i++;
+      var im = new Image();
+      im.decoding = 'async';
+      im.onload = function(){
+        sheets[k] = im; ready[k] = true; loaded++;
+        if(load){
+          if(loaded >= c.sheets){ load.style.opacity = 0; }
+          else load.textContent = 'Loading ' + Math.round(loaded / c.sheets * 100) + '%';
+        }
+        draw(true);
+        next();
+      };
+      im.onerror = next;
+      im.src = c.pre + k + '.webp';
     }
-    layout();
+    // keo hai tam dau song song cho nhanh co hinh, roi tai tiep tuan tu
+    next(); next();
+
+    zoomImg = new Image();
+    zoomImg.decoding = 'async';
+    zoomImg.onload = function(){ draw(true); };
+    zoomImg.src = 'assets/vzoom.webp';
   }
 
-  function layout(){
-    var c = CFG;
+  var W = 0, H = 0, dpr = 1;
+
+  function size(){
     W = sec.clientWidth;
     H = window.innerHeight || document.documentElement.clientHeight;
-    var tw = W / c.cols, th = H / c.rows;
-
-    // phu kin khung hinh giong object-fit cover
-    var k  = Math.max(W / c.fw, H / c.fh);
-    var dw = c.fw * k, dh = c.fh * k;
-    var ox = (W - dw) / 2, oy = (H - dh) / 2;
-
-    for(var i = 0; i < tiles.length; i++){
-      var t = tiles[i], e = t.el;
-      e.style.width  = (tw + 1) + 'px';
-      e.style.height = (th + 1) + 'px';
-      e.style.left   = (t.cx * tw) + 'px';
-      e.style.top    = (t.cy * th) + 'px';
-      e.style.backgroundSize = (c.sc * dw) + 'px ' + (c.sr * dh) + 'px';
-      e.style.backgroundPosition =
-        (ox - t.fx * dw - t.cx * tw) + 'px ' + (oy - t.fy * dh - t.cy * th) + 'px';
-    }
-    draw(true);
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.style.width = W + 'px';
+    cv.style.height = H + 'px';
+    cv.width  = Math.round(W * dpr);
+    cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
 
-  var p = 0, lastP = 0, vel = 0, queued = false;
+  // ve mot vung nguon vao canvas: phu kin khi man ngang, chen vien khi man doc
+  function paint(img, sx, sy, sw, sh){
+    var k = Math.min(Math.max(W / sw, H / sh), (W / sw) * MAXCROP);
+    var dw = sw * k, dh = sh * k;
+    // man ngang thi dat giua, man doc thi keo khung len de chua cho cho chu
+    var ay = (W / H) < 1 ? 0.24 : 0.5;
+    ctx.fillStyle = '#000';
+    ctx.fillRect(0, 0, W, H);
+    ctx.drawImage(img, sx, sy, sw, sh, (W - dw) / 2, (H - dh) * ay, dw, dh);
+  }
+
+  function nearestSheet(s){
+    for(var i = s; i >= 0; i--) if(ready[i]) return i;
+    for(var j = s + 1; j < C.sheets; j++) if(ready[j]) return j;
+    return -1;
+  }
+
+  function drawFrame(f){
+    var per = 9;
+    var s = Math.floor(f / per);
+    var use = ready[s] ? s : nearestSheet(s);
+    if(use < 0) return false;
+    if(use !== s) f = use * per;            // tam chua ve toi thi lay khung gan nhat
+    var j = f - use * per;
+    paint(sheets[use], (j % 3) * C.cw, ((j / 3) | 0) * C.ch, C.cw, C.ch);
+    return true;
+  }
+
+  function drawZoom(z){
+    var img = (zoomImg && zoomImg.complete && zoomImg.naturalWidth) ? zoomImg : null;
+    if(!img){ return drawFrame(C.n - 1); }
+    var kk = 1 + ZOOM * z;
+    var sw = img.naturalWidth / kk, sh = img.naturalHeight / kk;
+    var sx = Math.max(0, Math.min(img.naturalWidth  - sw, FOCUS_X * img.naturalWidth  - sw / 2));
+    var sy = Math.max(0, Math.min(img.naturalHeight - sh, FOCUS_Y * img.naturalHeight - sh / 2));
+    paint(img, sx, sy, sw, sh);
+    return true;
+  }
+
+  var p = -1, queued = false;
 
   function progress(){
     var span = sec.offsetHeight - H;
@@ -186,37 +212,25 @@
   }
 
   function draw(force){
-    var np = reduce ? 0 : progress();
-    if(!force && Math.abs(np - p) < 0.0008 && Math.abs(vel) < 0.0008){ queued = false; return; }
-
-    vel += ((np - lastP) * 6 - vel) * 0.18;     // van toc cuon da lam muot
-    if(Math.abs(vel) < 0.0005) vel = 0;
-    lastP = np;
+    var np = reduce ? 1 : progress();
+    if(!force && Math.abs(np - p) < 0.0004){ queued = false; return; }
     p = np;
 
-    var e    = p * p * (3 - 2 * p);             // lam mem hai dau
-    var sx   = e * Math.min(W, 1700) * 0.085;   // toa ra ngang
-    var sy   = e * H * 0.105;                   // toa ra doc
-    var kick = vel * H * 0.40;                  // day them theo huong cuon
-
-    for(var i = 0; i < tiles.length; i++){
-      var t = tiles[i];
-      var x = t.ux * sx;
-      var y = t.uy * sy + t.sway * e * H * 0.055 + kick * t.sway * 0.5;
-      var s = 1 - e * 0.24;
-      t.el.style.transform =
-        'translate3d(' + x.toFixed(2) + 'px,' + y.toFixed(2) + 'px,0) ' +
-        'rotate(' + (t.rot * e).toFixed(3) + 'deg) scale(' + s.toFixed(4) + ')';
+    if(p <= SPLIT){
+      drawFrame(Math.round(p / SPLIT * (C.n - 1)));
+    } else {
+      var z = (p - SPLIT) / (1 - SPLIT);
+      drawZoom(z * z * (3 - 2 * z));
     }
 
-    var sw = p < 0.09 ? p / 0.09 : 1;           // doi lop tu hinh lien sang luoi frame
-    grid.style.opacity = sw.toFixed(3);
-    base.style.opacity = (1 - sw).toFixed(3);
-    base.style.transform = 'scale(' + (1 + e * 0.06).toFixed(4) + ')';
+    // chu nhuong cho cho cu tien vao xe
+    var fade = p < 0.70 ? 0 : Math.min(1, (p - 0.70) / 0.16);
+    inn.style.opacity = (1 - fade).toFixed(3);
+    inn.style.transform = 'translate3d(0,' + (-fade * 26).toFixed(1) + 'px,0)';
+    if(hint) hint.style.opacity = (1 - Math.min(1, p / 0.12)).toFixed(3);
     if(bar) bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
 
-    queued = Math.abs(vel) > 0.0005;
-    if(queued) requestAnimationFrame(function(){ draw(false); });
+    queued = false;
   }
 
   function onScroll(){
@@ -225,11 +239,28 @@
     requestAnimationFrame(function(){ draw(false); });
   }
 
-  var rt = 0;
-  function onResize(){ clearTimeout(rt); rt = setTimeout(build, 120); }
+  function build(reload){
+    var c = cfg();
+    if(reload || !C || C.pre !== c.pre){
+      C = c; sheets = []; ready = []; loaded = 0;
+      if(load){ load.style.opacity = 1; load.textContent = 'Loading'; }
+      loadSheets();
+    }
+    size();
+    draw(true);
+  }
 
-  build();
-  if(!reduce) window.addEventListener('scroll', onScroll, {passive:true});
+  var rt = 0;
+  function onResize(){
+    clearTimeout(rt);
+    rt = setTimeout(function(){
+      var changed = cfg().pre !== C.pre;
+      build(changed);
+    }, 140);
+  }
+
+  build(true);
+  window.addEventListener('scroll', onScroll, {passive:true});
   window.addEventListener('resize', onResize);
   window.addEventListener('orientationchange', onResize);
 })();
