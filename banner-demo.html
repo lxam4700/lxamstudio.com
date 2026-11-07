@@ -32,12 +32,21 @@
   .vsc-in{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;
           padding:0 var(--pad) clamp(56px,9vh,104px);pointer-events:none;will-change:opacity,transform;}
   .vsc-k{font-size:clamp(10px,1.1vw,12px);letter-spacing:4px;text-transform:uppercase;
-         color:var(--ac);margin:0 0 14px;}
+         color:#fff;opacity:.72;margin:0 0 14px;}
   .vsc-h{font-style:italic;font-weight:400;
          font-size:clamp(36px,8.8vw,126px);line-height:.95;letter-spacing:-.005em;
          text-transform:uppercase;margin:0 0 20px;color:#fff;text-shadow:0 4px 42px rgba(0,0,0,.5);}
-  .vsc-h span{display:block;}
-  .vsc-h .l2{color:var(--ac);}
+  /* moi dong nam trong mot o cat, chu truot tu trai vao */
+  .vsc-h .ln{display:block;overflow:hidden;padding:.06em .16em .06em 0;margin:-.06em 0;}
+  .vsc-h .ln i{display:block;font-style:italic;transform:translate3d(-104%,0,0);
+               animation:vscIn .9s cubic-bezier(.2,.85,.25,1) both;}
+  .vsc-h .ln1 i{animation-delay:.18s;}
+  .vsc-h .ln2 i{animation-delay:.46s;}
+  @keyframes vscIn{to{transform:translate3d(0,0,0);}}
+  .vsc-k,.vsc-p{opacity:0;animation:vscUp .7s ease-out both;}
+  .vsc-k{animation-delay:.05s;}
+  .vsc-p{animation-delay:.82s;}
+  @keyframes vscUp{from{opacity:0;transform:translate3d(0,14px,0);}to{opacity:1;transform:none;}}
   .vsc-p{font-size:clamp(14px,1.5vw,18px);line-height:1.68;color:#d9cfc5;max-width:520px;margin:0;}
 
   .vsc-hint{position:absolute;z-index:4;right:var(--pad);bottom:34px;
@@ -61,7 +70,10 @@
         color:var(--ac);text-decoration:none;border-bottom:1px solid rgba(255,122,26,.4);padding-bottom:4px;}
 
   @media (max-width:760px){ .vsc-p{font-size:14px;max-width:none;} .vsc-hint{display:none;} }
-  @media (prefers-reduced-motion:reduce){ .vsc{height:100svh;} }
+  @media (prefers-reduced-motion:reduce){
+    .vsc{height:100svh;}
+    .vsc-h .ln i,.vsc-k,.vsc-p{animation:none;transform:none;opacity:1;}
+  }
 </style>
 </head>
 <body>
@@ -72,7 +84,7 @@
     <div class="vsc-sh"></div>
     <div class="vsc-in" id="vscIn">
       <p class="vsc-k en">LXAM Studio</p>
-      <h1 class="vsc-h en"><span>Elegance</span><span class="l2">Evolved</span></h1>
+      <h1 class="vsc-h en"><span class="ln ln1"><i>Elegance</i></span><span class="ln ln2"><i>Evolved</i></span></h1>
       <p class="vsc-p vi">Đứng im thì khung hình đứng. Cuộn xuống thì đoạn phim chạy tới đúng theo tay bạn, cuộn lên thì chạy lui. Tới cuối thì máy quay tiến hẳn vào chiếc xe.</p>
     </div>
     <p class="vsc-hint en" id="vscHint">Scroll to explore</p>
@@ -87,8 +99,9 @@
   <ul>
     <li>Vị trí cuộn điều khiển thẳng khung hình. Dừng tay là hình đứng lại ngay tại khung đó.</li>
     <li>Tám phần mười quãng cuộn đầu dùng để tua phim, hai phần còn lại để máy quay tiến vào xe.</li>
-    <li>Máy tính chạy 72 khung ở bề ngang 1200, điện thoại rút còn 45 khung ở bề ngang 760.</li>
+    <li>Máy tính chạy 60 khung ở bề ngang 1920, điện thoại rút còn 48 khung ở bề ngang 1100.</li>
     <li>Các khung được gộp vào vài tấm ảnh lớn nên trình duyệt chỉ tải vài lượt, không phải tải từng khung.</li>
+    <li>Dòng tiêu đề trên chạy vào từ trái, dòng dưới vào sau một nhịp. Chữ để trắng hết.</li>
     <li>Chữ tiếng Anh chạy font BROWN Italic, chữ tiếng Việt vẫn chạy Be Vietnam Pro để không vỡ dấu.</li>
     <li>Máy bật chế độ giảm chuyển động chỉ thấy một khung tĩnh.</li>
   </ul>
@@ -116,8 +129,8 @@
 
   function cfg(){
     return window.innerWidth < 760
-      ? {pre:'assets/vm', sheets:5, cw:760,  ch:320, n:45}
-      : {pre:'assets/vd', sheets:8, cw:1200, ch:506, n:72};
+      ? {pre:'assets/vm', sheets:8,  cols:3, rows:2, cw:1100, ch:464, n:48}
+      : {pre:'assets/vd', sheets:15, cols:2, rows:2, cw:1920, ch:810, n:60};
   }
 
   var C = null, sheets = [], ready = [], zoomImg = null, loaded = 0;
@@ -141,8 +154,8 @@
       im.onerror = next;
       im.src = c.pre + k + '.webp';
     }
-    // keo hai tam dau song song cho nhanh co hinh, roi tai tiep tuan tu
-    next(); next();
+    // keo ba tam dau song song cho nhanh co hinh, roi tai tiep tuan tu
+    next(); next(); next();
 
     zoomImg = new Image();
     zoomImg.decoding = 'async';
@@ -155,12 +168,14 @@
   function size(){
     W = sec.clientWidth;
     H = window.innerHeight || document.documentElement.clientHeight;
-    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    dpr = Math.min(window.devicePixelRatio || 1, 1.5);
     cv.style.width = W + 'px';
     cv.style.height = H + 'px';
     cv.width  = Math.round(W * dpr);
     cv.height = Math.round(H * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
   }
 
   // ve mot vung nguon vao canvas: phu kin khi man ngang, chen vien khi man doc
@@ -181,13 +196,13 @@
   }
 
   function drawFrame(f){
-    var per = 9;
+    var per = C.cols * C.rows;
     var s = Math.floor(f / per);
     var use = ready[s] ? s : nearestSheet(s);
     if(use < 0) return false;
-    if(use !== s) f = use * per;            // tam chua ve toi thi lay khung gan nhat
+    if(use !== s) f = use * per;            // tam chua tai toi thi lay khung gan nhat
     var j = f - use * per;
-    paint(sheets[use], (j % 3) * C.cw, ((j / 3) | 0) * C.ch, C.cw, C.ch);
+    paint(sheets[use], (j % C.cols) * C.cw, ((j / C.cols) | 0) * C.ch, C.cw, C.ch);
     return true;
   }
 
