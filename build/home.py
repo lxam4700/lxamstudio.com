@@ -585,18 +585,23 @@ def scroll_banner():
              transform:scaleX(0);transform-origin:0 50%;}
   .vsc-load{position:absolute;z-index:5;left:var(--pad);bottom:34px;
             font-size:11px;letter-spacing:3.4px;text-transform:uppercase;color:#6e665e;
-            transition:opacity .4s;}@media (max-width:760px){ .vsc-p{font-size:14px;max-width:none;} .vsc-hint{display:none;} }@media (prefers-reduced-motion:reduce){
+            transition:opacity .4s;}
+
+  @media (max-width:760px){ .vsc-p{font-size:14px;max-width:none;} .vsc-hint{display:none;}
+    .vsc-in{padding-bottom:calc(104px + env(safe-area-inset-bottom));} .vsc-bar{bottom:84px;} }
+  @media (prefers-reduced-motion:reduce){
     .vsc{height:100svh;}
     .vsc-h .ln i,.vsc-k,.vsc-p{transform:none !important;opacity:1 !important;}
-  }</style>
+  }
+</style>
 <section class="vsc" id="vsc">
   <div class="vsc-stick">
     <canvas class="vsc-cv" id="vscCv" aria-label="Volvo S90 dựng 3D trong phim trường, máy quay tiến dần vào xe" role="img"></canvas>
     <div class="vsc-sh"></div>
     <div class="vsc-in" id="vscIn">
       <p class="vsc-k en">LXAM Studio</p>
-      <h1 class="vsc-h en"><span class="ln ln1"><i>Elegance</i></span><span class="ln ln2"><i>Evolved</i></span></h1>
-      <p class="vsc-p vi">Đứng im thì khung hình đứng. Cuộn xuống thì đoạn phim chạy tới đúng theo tay bạn, cuộn lên thì chạy lui. Tới cuối thì máy quay tiến hẳn vào chiếc xe.</p>
+      <h1 class="vsc-h en"><span class="ln ln1"><i>Beyond light</i></span><span class="ln ln2"><i>and color</i></span></h1>
+      <p class="vsc-p vi">Nghệ thuật không chỉ là ánh sáng và màu sắc. Đó là tổng hoà của mọi điều ta cất giữ trong ngôi đền tâm trí.</p>
     </div>
     <p class="vsc-hint en" id="vscHint">Scroll to explore</p>
     <p class="vsc-load en" id="vscLoad">Loading</p>
@@ -606,6 +611,7 @@ def scroll_banner():
 <script>
 (function(){
   var sec = document.getElementById('vsc');
+  var stick = sec ? sec.querySelector('.vsc-stick') : null;
   var cv  = document.getElementById('vscCv');
   var bar = document.getElementById('vscBar');
   var inn = document.getElementById('vscIn');
@@ -624,8 +630,10 @@ def scroll_banner():
 
   function cfg(){
     return window.innerWidth < 760
-      ? {pre:'assets/vm', sheets:11, cols:2, rows:3, cw:1000, ch:422, n:66}
-      : {pre:'assets/vd', sheets:22, cols:2, rows:3, cw:1760, ch:742, n:132};
+      ? {pre:'assets/vm', sheets:11, cols:4, rows:2, cw:600,  ch:1240, n:88,
+         zoom:'assets/vmzoom.webp', fx:0.5,   fy:0.47,  tall:true, z:0.16}
+      : {pre:'assets/vd', sheets:22, cols:2, rows:3, cw:1760, ch:742,  n:132,
+         zoom:'assets/vzoom.webp',  fx:0.545, fy:0.525, tall:false, z:0.34};
   }
 
   var C = null, sheets = [], ready = [], zoomImg = null, loaded = 0;
@@ -655,14 +663,14 @@ def scroll_banner():
     zoomImg = new Image();
     zoomImg.decoding = 'async';
     zoomImg.onload = function(){ draw(true); };
-    zoomImg.src = 'assets/vzoom.webp';
+    zoomImg.src = c.zoom;
   }
 
   var W = 0, H = 0, dpr = 1;
 
   function size(){
     W = sec.clientWidth;
-    H = window.innerHeight || document.documentElement.clientHeight;
+    H = stick.clientHeight || window.innerHeight;
     dpr = Math.min(window.devicePixelRatio || 1, 1.5);
     cv.style.width = W + 'px';
     cv.style.height = H + 'px';
@@ -676,10 +684,10 @@ def scroll_banner():
   // Mot duong tien vao duy nhat chay suot ca quang cuon. Tuyen tinh nen toc do
   // khong doi, khong co cho nao nhay len dot ngot.
   function srcRect(iw, ih, q){
-    var kk = 1 + ZTOTAL * q;
+    var kk = 1 + C.z * q;
     var sw = iw / kk, sh = ih / kk;
-    var fx = 0.5 + (FOCUS_X - 0.5) * q;
-    var fy = 0.5 + (FOCUS_Y - 0.5) * q;
+    var fx = 0.5 + (C.fx - 0.5) * q;
+    var fy = 0.5 + (C.fy - 0.5) * q;
     return [Math.max(0, Math.min(iw - sw, fx * iw - sw / 2)),
             Math.max(0, Math.min(ih - sh, fy * ih - sh / 2)), sw, sh];
   }
@@ -689,7 +697,7 @@ def scroll_banner():
     var k = Math.min(Math.max(W / sw, H / sh), (W / sw) * MAXCROP);
     var dw = sw * k, dh = sh * k;
     // man ngang thi dat giua, man doc thi keo khung len de chua cho cho chu
-    var ay = (W / H) < 1 ? 0.24 : 0.5;
+    var ay = (C.tall || (W / H) >= 1) ? 0.5 : 0.24;
     if(clear){ ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H); }
     if(alpha < 1) ctx.globalAlpha = alpha;
     ctx.drawImage(img, sx, sy, sw, sh, (W - dw) / 2, (H - dh) * ay, dw, dh);
@@ -745,10 +753,10 @@ def scroll_banner():
 
   // Chu chay vao theo dung vi tri cuon. Lan toi thi vao, lan lui thi ra.
   function text(q){
-    var ek = outCubic(seg(q, 0.000, 0.028));   // LXAM STUDIO
-    var e1 = outCubic(seg(q, 0.020, 0.075));   // dong tren vao truoc, xong han
-    var e2 = outCubic(seg(q, 0.085, 0.140));   // dong duoi moi bat dau
-    var ep = outCubic(seg(q, 0.150, 0.215));   // doan tieng Viet sau cung
+    var ek = outCubic(seg(q, 0.000, 0.040));   // LXAM STUDIO
+    var e1 = outCubic(seg(q, 0.020, 0.110));   // dong tren vao truoc, xong han
+    var e2 = outCubic(seg(q, 0.120, 0.210));   // dong duoi moi bat dau
+    var ep = outCubic(seg(q, 0.220, 0.300));   // doan tieng Viet sau cung
     if(el1) el1.style.transform = 'translate3d(' + (-104 * (1 - e1)).toFixed(2) + '%,0,0)';
     if(el2) el2.style.transform = 'translate3d(' + (-104 * (1 - e2)).toFixed(2) + '%,0,0)';
     if(elk){ elk.style.opacity = ek.toFixed(3);
@@ -800,13 +808,15 @@ def scroll_banner():
 
   function build(reload){
     var c = cfg();
+    var first = !C;
     if(reload || !C || C.pre !== c.pre){
       C = c; sheets = []; ready = []; loaded = 0;
       if(load){ load.style.opacity = 1; load.textContent = 'Loading'; }
       loadSheets();
     }
     size();
-    aim = cur = reduce ? 1 : progress();
+    if(first || reduce) aim = cur = reduce ? 1 : progress();
+    else aim = progress();
     draw(true);
   }
 
@@ -814,7 +824,9 @@ def scroll_banner():
   function onResize(){
     clearTimeout(rt);
     rt = setTimeout(function(){
+      var nw = sec.clientWidth, nh = stick.clientHeight;
       var changed = cfg().pre !== C.pre;
+      if(!changed && nw === W && nh === H){ onScroll(); return; }  // chi la thanh dia chi co gian
       build(changed);
     }, 140);
   }
