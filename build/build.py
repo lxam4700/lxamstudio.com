@@ -1802,7 +1802,7 @@ POSTS = [
 
 <h2>Tự học một tháng trước khi đóng tiền</h2>
 
-<p>Nếu bạn chưa mở Blender bao giờ, đừng đóng tiền vội. Dành một tháng làm theo tài liệu miễn phí, xem mình có thật sự thích ngồi hàng giờ chỉnh một khung hình hay không. Bên mình để sẵn <a href="cam-nang.html">cẩm nang Blender 3D miễn phí</a> và bài <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a> để bạn thử trước.</p>
+<p>Nếu bạn chưa mở Blender bao giờ, đừng đóng tiền vội. Dành một tháng làm theo tài liệu miễn phí, xem mình có thật sự thích ngồi hàng giờ chỉnh một khung hình hay không. Bên mình để sẵn <a href="cam-nang.html">giáo trình Blender tiếng Việt</a> tải miễn phí và bài <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a> để bạn thử trước.</p>
 
 <p>Sau một tháng đó, nếu bạn vẫn muốn đi tiếp mà thấy mình đang loay hoay, lúc đó tiền học mới đáng, vì bạn đã biết mình cần gì. Nếu còn phân vân giữa hai hướng, bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học khoá có người kèm</a> phân tích kỹ hơn từng trường hợp.</p>
 
@@ -2246,7 +2246,7 @@ POSTS = [
 
 <h2>Khoá học 3D online hay lớp trực tiếp tại TPHCM</h2>
 
-<p>Câu hỏi này bị đặt sai từ đầu. Thứ quyết định kết quả không phải bạn ngồi ở đâu, mà là bạn được nhận xét bao nhiêu lần. Một lớp trực tiếp mà thầy chỉ giảng rồi về cũng vô ích như một khoá online chỉ có video.</p>
+<p>Câu hỏi này bị đặt sai từ đầu. Thứ quyết định kết quả không phải bạn ngồi ở đâu, mà là bạn được nhận xét bao nhiêu lần. Một lớp trực tiếp mà thầy chỉ giảng rồi về cũng vô ích như một <a href="blog-khoa-hoc-3d-online.html">khoá học 3D online</a> chỉ có video, và ngược lại.</p>
 
 <div class="table-wrap">
 <table>
