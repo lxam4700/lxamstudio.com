@@ -543,6 +543,292 @@ def work():
 
 
 
+def scroll_banner():
+    return """
+<style>
+  /* Font sport chi dung cho chu tieng Anh. Moi chu tieng Viet van chay font co dau. */
+  @font-face{font-family:'BrownSport';src:url("assets/brown-italic.woff2") format('woff2');
+             font-style:italic;font-weight:400;font-display:swap;}
+  @font-face{font-family:'BrownSport';src:url("assets/brown.woff2") format('woff2');
+             font-style:normal;font-weight:400;font-display:swap;}
+  .en{font-family:'BrownSport',sans-serif;}
+  .vi{font-family:'Be Vietnam Pro',system-ui,sans-serif;}
+
+  .vsc{position:relative;height:430svh;background:#000;padding:0;margin:0;}
+  .vsc-stick{position:sticky;top:0;height:100svh;overflow:hidden;background:#000;}
+  .vsc-cv{position:absolute;inset:0;width:100%;height:100%;display:block;}
+
+  .vsc-sh{position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(0,0,0,.52) 0%,rgba(0,0,0,0) 26%,rgba(0,0,0,0) 48%,rgba(0,0,0,.72) 82%,#000 100%);}
+
+  .vsc-in{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;
+          padding:0 var(--pad) clamp(56px,9vh,104px);pointer-events:none;will-change:opacity,transform;}
+  .vsc-k{font-size:clamp(10px,1.1vw,12px);letter-spacing:4px;text-transform:uppercase;
+         color:#fff;opacity:.72;margin:0 0 14px;}
+  .vsc-h{font-style:italic;font-weight:400;
+         font-size:clamp(36px,8.8vw,126px);line-height:.95;letter-spacing:-.005em;
+         text-transform:uppercase;margin:0 0 20px;color:#fff;text-shadow:0 4px 42px rgba(0,0,0,.5);}
+  /* Moi dong nam trong mot o cat. Vi tri chu do chinh vi tri cuon quyet dinh,
+     khong co animation tu chay. Cuon toi thi chu vao, cuon lui thi chu ra. */
+  .vsc-h .ln{display:block;overflow:hidden;padding:.06em .16em .06em 0;margin:-.06em 0;}
+  .vsc-h .ln i{display:block;font-style:italic;transform:translate3d(-104%,0,0);
+               will-change:transform;}
+  .vsc-k,.vsc-p{opacity:0;transform:translate3d(0,16px,0);will-change:transform,opacity;}
+  .vsc-p{font-size:clamp(14px,1.5vw,18px);line-height:1.68;color:#d9cfc5;max-width:520px;margin:0;}
+
+  .vsc-hint{position:absolute;z-index:4;right:var(--pad);bottom:34px;
+            font-size:11px;letter-spacing:3.4px;text-transform:uppercase;color:#9a9087;
+            will-change:opacity;}
+  .vsc-bar{position:absolute;left:var(--pad);right:var(--pad);bottom:18px;z-index:4;height:2px;
+           background:rgba(255,255,255,.12);overflow:hidden;}
+  .vsc-bar i{display:block;height:100%;width:100%;background:var(--ac);
+             transform:scaleX(0);transform-origin:0 50%;}
+  .vsc-load{position:absolute;z-index:5;left:var(--pad);bottom:34px;
+            font-size:11px;letter-spacing:3.4px;text-transform:uppercase;color:#6e665e;
+            transition:opacity .4s;}@media (max-width:760px){ .vsc-p{font-size:14px;max-width:none;} .vsc-hint{display:none;} }@media (prefers-reduced-motion:reduce){
+    .vsc{height:100svh;}
+    .vsc-h .ln i,.vsc-k,.vsc-p{transform:none !important;opacity:1 !important;}
+  }</style>
+<section class="vsc" id="vsc">
+  <div class="vsc-stick">
+    <canvas class="vsc-cv" id="vscCv" aria-label="Volvo S90 dựng 3D trong phim trường, máy quay tiến dần vào xe" role="img"></canvas>
+    <div class="vsc-sh"></div>
+    <div class="vsc-in" id="vscIn">
+      <p class="vsc-k en">LXAM Studio</p>
+      <h1 class="vsc-h en"><span class="ln ln1"><i>Elegance</i></span><span class="ln ln2"><i>Evolved</i></span></h1>
+      <p class="vsc-p vi">Đứng im thì khung hình đứng. Cuộn xuống thì đoạn phim chạy tới đúng theo tay bạn, cuộn lên thì chạy lui. Tới cuối thì máy quay tiến hẳn vào chiếc xe.</p>
+    </div>
+    <p class="vsc-hint en" id="vscHint">Scroll to explore</p>
+    <p class="vsc-load en" id="vscLoad">Loading</p>
+    <div class="vsc-bar"><i id="vscBar"></i></div>
+  </div>
+</section>
+<script>
+(function(){
+  var sec = document.getElementById('vsc');
+  var cv  = document.getElementById('vscCv');
+  var bar = document.getElementById('vscBar');
+  var inn = document.getElementById('vscIn');
+  var hint= document.getElementById('vscHint');
+  var load= document.getElementById('vscLoad');
+  if(!sec || !cv) return;
+
+  var ctx = cv.getContext('2d', {alpha:false});
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var SPLIT   = 0.62;   // phan quang duong dung de tua phim
+  var ZTOTAL  = 0.34;   // tong do tien vao, trai deu tren ca quang cuon
+  var FOCUS_X = 0.545;  // tam chiec xe trong khung cuoi
+  var FOCUS_Y = 0.525;
+  var MAXCROP = 1.95;   // gioi han cat ngang, de man doc khong bi can qua sat
+
+  function cfg(){
+    return window.innerWidth < 760
+      ? {pre:'assets/vm', sheets:11, cols:2, rows:3, cw:1000, ch:422, n:66}
+      : {pre:'assets/vd', sheets:22, cols:2, rows:3, cw:1760, ch:742, n:132};
+  }
+
+  var C = null, sheets = [], ready = [], zoomImg = null, loaded = 0;
+
+  function loadSheets(){
+    var c = C, i = 0;
+    function next(){
+      if(i >= c.sheets) return;
+      var k = i++;
+      var im = new Image();
+      im.decoding = 'async';
+      im.onload = function(){
+        sheets[k] = im; ready[k] = true; loaded++;
+        if(load){
+          if(loaded >= c.sheets){ load.style.opacity = 0; }
+          else load.textContent = 'Loading ' + Math.round(loaded / c.sheets * 100) + '%';
+        }
+        draw(true);
+        next();
+      };
+      im.onerror = next;
+      im.src = c.pre + k + '.webp';
+    }
+    // keo bon tam dau song song cho nhanh co hinh, roi tai tiep tuan tu
+    next(); next(); next(); next();
+
+    zoomImg = new Image();
+    zoomImg.decoding = 'async';
+    zoomImg.onload = function(){ draw(true); };
+    zoomImg.src = 'assets/vzoom.webp';
+  }
+
+  var W = 0, H = 0, dpr = 1;
+
+  function size(){
+    W = sec.clientWidth;
+    H = window.innerHeight || document.documentElement.clientHeight;
+    dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    cv.style.width = W + 'px';
+    cv.style.height = H + 'px';
+    cv.width  = Math.round(W * dpr);
+    cv.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = 'high';
+  }
+
+  // Mot duong tien vao duy nhat chay suot ca quang cuon. Tuyen tinh nen toc do
+  // khong doi, khong co cho nao nhay len dot ngot.
+  function srcRect(iw, ih, q){
+    var kk = 1 + ZTOTAL * q;
+    var sw = iw / kk, sh = ih / kk;
+    var fx = 0.5 + (FOCUS_X - 0.5) * q;
+    var fy = 0.5 + (FOCUS_Y - 0.5) * q;
+    return [Math.max(0, Math.min(iw - sw, fx * iw - sw / 2)),
+            Math.max(0, Math.min(ih - sh, fy * ih - sh / 2)), sw, sh];
+  }
+
+  // ve mot vung nguon vao canvas: phu kin khi man ngang, chen vien khi man doc
+  function paint(img, sx, sy, sw, sh, alpha, clear){
+    var k = Math.min(Math.max(W / sw, H / sh), (W / sw) * MAXCROP);
+    var dw = sw * k, dh = sh * k;
+    // man ngang thi dat giua, man doc thi keo khung len de chua cho cho chu
+    var ay = (W / H) < 1 ? 0.24 : 0.5;
+    if(clear){ ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H); }
+    if(alpha < 1) ctx.globalAlpha = alpha;
+    ctx.drawImage(img, sx, sy, sw, sh, (W - dw) / 2, (H - dh) * ay, dw, dh);
+    if(alpha < 1) ctx.globalAlpha = 1;
+  }
+
+  function nearestSheet(s){
+    for(var i = s; i >= 0; i--) if(ready[i]) return i;
+    for(var j = s + 1; j < C.sheets; j++) if(ready[j]) return j;
+    return -1;
+  }
+
+  // ve dung mot khung. Khong hoa tron hai khung ke nhau vi xe dang chay,
+  // tron vao se thanh bong chong hinh.
+  function drawFrame(f, q){
+    var per = C.cols * C.rows;
+    var s = Math.floor(f / per);
+    var use = ready[s] ? s : nearestSheet(s);
+    if(use < 0) return false;
+    if(use !== s) f = use * per;            // tam chua tai toi thi lay khung gan nhat
+    var j = f - use * per;
+    var r = srcRect(C.cw, C.ch, q);
+    paint(sheets[use], (j % C.cols) * C.cw + r[0], ((j / C.cols) | 0) * C.ch + r[1],
+          r[2], r[3], 1, true);
+    return true;
+  }
+
+  function drawSeq(q){
+    return drawFrame(Math.round(q / SPLIT * (C.n - 1)), q);
+  }
+
+  // doan cuoi: khung dung yen, dung anh do phan giai cao de tien vao cho net
+  function drawZoom(q){
+    var img = (zoomImg && zoomImg.complete && zoomImg.naturalWidth) ? zoomImg : null;
+    if(!img) return drawFrame(C.n - 1, q);
+    var r = srcRect(img.naturalWidth, img.naturalHeight, q);
+    paint(img, r[0], r[1], r[2], r[3], 1, true);
+    return true;
+  }
+
+  var p = -1, aim = 0, cur = 0, running = false;
+
+  var el1 = document.querySelector('.vsc-h .ln1 i');
+  var el2 = document.querySelector('.vsc-h .ln2 i');
+  var elk = document.querySelector('.vsc-k');
+  var elp = document.querySelector('.vsc-p');
+
+  function seg(x, a, b){
+    var t = (x - a) / (b - a);
+    return t < 0 ? 0 : (t > 1 ? 1 : t);
+  }
+  function outCubic(t){ var u = 1 - t; return 1 - u * u * u; }
+
+  // Chu chay vao theo dung vi tri cuon. Lan toi thi vao, lan lui thi ra.
+  function text(q){
+    var ek = outCubic(seg(q, 0.000, 0.028));   // LXAM STUDIO
+    var e1 = outCubic(seg(q, 0.020, 0.075));   // dong tren vao truoc, xong han
+    var e2 = outCubic(seg(q, 0.085, 0.140));   // dong duoi moi bat dau
+    var ep = outCubic(seg(q, 0.150, 0.215));   // doan tieng Viet sau cung
+    if(el1) el1.style.transform = 'translate3d(' + (-104 * (1 - e1)).toFixed(2) + '%,0,0)';
+    if(el2) el2.style.transform = 'translate3d(' + (-104 * (1 - e2)).toFixed(2) + '%,0,0)';
+    if(elk){ elk.style.opacity = ek.toFixed(3);
+             elk.style.transform = 'translate3d(0,' + (16 * (1 - ek)).toFixed(1) + 'px,0)'; }
+    if(elp){ elp.style.opacity = ep.toFixed(3);
+             elp.style.transform = 'translate3d(0,' + (16 * (1 - ep)).toFixed(1) + 'px,0)'; }
+  }
+
+  function progress(){
+    var span = sec.offsetHeight - H;
+    if(span <= 0) return 0;
+    var v = (-sec.getBoundingClientRect().top) / span;
+    return v < 0 ? 0 : (v > 1 ? 1 : v);
+  }
+
+  function draw(force){
+    var np = reduce ? 1 : cur;
+    if(!force && Math.abs(np - p) < 0.0003) return;
+    p = np;
+
+    text(p);
+
+    if(p <= SPLIT) drawSeq(p);
+    else            drawZoom(p);
+
+    // chu nhuong cho cho cu tien vao xe
+    var fade = p < 0.72 ? 0 : Math.min(1, (p - 0.72) / 0.18);
+    inn.style.opacity = (1 - fade).toFixed(3);
+    inn.style.transform = 'translate3d(0,' + (-fade * 26).toFixed(1) + 'px,0)';
+    if(hint) hint.style.opacity = (1 - Math.min(1, p / 0.12)).toFixed(3);
+    if(bar) bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+  }
+
+  // Con lan chuot nhay tung nac chung 100px, tuc moi nac vot qua may khung mot luc.
+  // Vong nay keo hinh truot dan toi vi tri that nen mat thay lien mach.
+  function tick(){
+    var d = aim - cur;
+    if(Math.abs(d) < 0.00025){ cur = aim; draw(false); running = false; return; }
+    cur += d * 0.26;
+    draw(false);
+    requestAnimationFrame(tick);
+  }
+
+  function onScroll(){
+    aim = progress();
+    if(reduce){ cur = aim; draw(false); return; }
+    if(!running){ running = true; requestAnimationFrame(tick); }
+  }
+
+  function build(reload){
+    var c = cfg();
+    if(reload || !C || C.pre !== c.pre){
+      C = c; sheets = []; ready = []; loaded = 0;
+      if(load){ load.style.opacity = 1; load.textContent = 'Loading'; }
+      loadSheets();
+    }
+    size();
+    aim = cur = reduce ? 1 : progress();
+    draw(true);
+  }
+
+  var rt = 0;
+  function onResize(){
+    clearTimeout(rt);
+    rt = setTimeout(function(){
+      var changed = cfg().pre !== C.pre;
+      build(changed);
+    }, 140);
+  }
+
+  build(true);
+  if(reduce) text(1);
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onResize);
+  window.addEventListener('orientationchange', onResize);
+})();
+</script>
+"""
+
+
 def slider():
     cards = []
     for sd in SLIDES:
@@ -1256,7 +1542,7 @@ def page(body_html, title=TITLE, desc=DESC, url=URL, faq=False, home=True):
 
 if __name__ == "__main__":
     pages = [
-        ("index.html", page(hero() + about_line() + slider() + services_min() + showreel_min() + quote_band()
+        ("index.html", page(hero() + about_line() + scroll_banner() + slider() + services_min() + showreel_min() + quote_band()
                             + academy_min() + contact_min())),
         ("dich-vu.html", page(sub_hero("LXAM Studio / Dịch vụ", "Dịch vụ <em>3D visual</em>",
                                        "TVC, key visual, phối cảnh sự kiện và visual kỹ thuật. Gửi brief, chúng tôi báo thời gian và chi phí trong 24 giờ.")
