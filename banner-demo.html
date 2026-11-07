@@ -36,17 +36,12 @@
   .vsc-h{font-style:italic;font-weight:400;
          font-size:clamp(36px,8.8vw,126px);line-height:.95;letter-spacing:-.005em;
          text-transform:uppercase;margin:0 0 20px;color:#fff;text-shadow:0 4px 42px rgba(0,0,0,.5);}
-  /* moi dong nam trong mot o cat. Luc dau chu nam ngoai o, cham lan dau moi lao vao. */
+  /* Moi dong nam trong mot o cat. Vi tri chu do chinh vi tri cuon quyet dinh,
+     khong co animation tu chay. Cuon toi thi chu vao, cuon lui thi chu ra. */
   .vsc-h .ln{display:block;overflow:hidden;padding:.06em .16em .06em 0;margin:-.06em 0;}
-  .vsc-h .ln i{display:block;font-style:italic;transform:translate3d(-104%,0,0);}
-  .vsc-k,.vsc-p{opacity:0;transform:translate3d(0,14px,0);}
-  .vsc-in.is-in .vsc-h .ln i{animation:vscIn .74s cubic-bezier(.16,.92,.22,1) both;}
-  .vsc-in.is-in .ln1 i{animation-delay:.04s;}
-  .vsc-in.is-in .ln2 i{animation-delay:.26s;}
-  .vsc-in.is-in .vsc-k{animation:vscUp .5s ease-out both;}
-  .vsc-in.is-in .vsc-p{animation:vscUp .6s ease-out .5s both;}
-  @keyframes vscIn{to{transform:translate3d(0,0,0);}}
-  @keyframes vscUp{from{opacity:0;transform:translate3d(0,14px,0);}to{opacity:1;transform:none;}}
+  .vsc-h .ln i{display:block;font-style:italic;transform:translate3d(-104%,0,0);
+               will-change:transform;}
+  .vsc-k,.vsc-p{opacity:0;transform:translate3d(0,16px,0);will-change:transform,opacity;}
   .vsc-p{font-size:clamp(14px,1.5vw,18px);line-height:1.68;color:#d9cfc5;max-width:520px;margin:0;}
 
   .vsc-hint{position:absolute;z-index:4;right:var(--pad);bottom:34px;
@@ -72,7 +67,7 @@
   @media (max-width:760px){ .vsc-p{font-size:14px;max-width:none;} .vsc-hint{display:none;} }
   @media (prefers-reduced-motion:reduce){
     .vsc{height:100svh;}
-    .vsc-h .ln i,.vsc-k,.vsc-p{animation:none !important;transform:none !important;opacity:1 !important;}
+    .vsc-h .ln i,.vsc-k,.vsc-p{transform:none !important;opacity:1 !important;}
   }
 </style>
 </head>
@@ -99,7 +94,7 @@
   <ul>
     <li>Vị trí cuộn điều khiển thẳng khung hình. Dừng tay là hình đứng lại ngay tại khung đó.</li>
     <li>Cú tiến vào chạy đều suốt quãng cuộn chứ không dồn vào đoạn cuối, nên không bị nhảy cỡ.</li>
-    <li>Hai khung kề nhau được hoà trộn theo vị trí cuộn nên chuyển động liền, không giật từng nấc.</li>
+    <li>Dòng tiêu đề bám thẳng vào vị trí cuộn. Lăn tới thì chữ vào, lăn lui thì chữ lùi ra lại.</li>
     <li>Máy tính chạy 60 khung ở bề ngang 1920, điện thoại rút còn 48 khung ở bề ngang 1100.</li>
     <li>Các khung được gộp vào vài tấm ảnh lớn nên trình duyệt chỉ tải vài lượt, không phải tải từng khung.</li>
     <li>Dòng tiêu đề trên chạy vào từ trái, dòng dưới vào sau một nhịp. Chữ để trắng hết.</li>
@@ -208,8 +203,9 @@
     return -1;
   }
 
-  // ve mot khung cua chuoi, da ap dung do tien vao tai vi tri q
-  function drawFrame(f, q, alpha, clear){
+  // ve dung mot khung. Khong hoa tron hai khung ke nhau vi xe dang chay,
+  // tron vao se thanh bong chong hinh.
+  function drawFrame(f, q){
     var per = C.cols * C.rows;
     var s = Math.floor(f / per);
     var use = ready[s] ? s : nearestSheet(s);
@@ -218,40 +214,48 @@
     var j = f - use * per;
     var r = srcRect(C.cw, C.ch, q);
     paint(sheets[use], (j % C.cols) * C.cw + r[0], ((j / C.cols) | 0) * C.ch + r[1],
-          r[2], r[3], alpha, clear);
+          r[2], r[3], 1, true);
     return true;
   }
 
-  function sheetReadyFor(f){
-    var per = C.cols * C.rows;
-    return !!ready[Math.floor(f / per)];
-  }
-
-  // doan tua phim: hoa tron hai khung ke nhau nen khong thay giat tung nac
   function drawSeq(q){
-    var pos = q / SPLIT * (C.n - 1);
-    var i0  = Math.floor(pos), t = pos - i0;
-    var i1  = Math.min(i0 + 1, C.n - 1);
-    if(!drawFrame(i0, q, 1, true)) return false;
-    if(t > 0.004 && i1 !== i0 && sheetReadyFor(i1)) drawFrame(i1, q, t, false);
-    return true;
+    return drawFrame(Math.round(q / SPLIT * (C.n - 1)), q);
   }
 
   // doan cuoi: khung dung yen, dung anh do phan giai cao de tien vao cho net
   function drawZoom(q){
     var img = (zoomImg && zoomImg.complete && zoomImg.naturalWidth) ? zoomImg : null;
-    if(!img) return drawFrame(C.n - 1, q, 1, true);
+    if(!img) return drawFrame(C.n - 1, q);
     var r = srcRect(img.naturalWidth, img.naturalHeight, q);
     paint(img, r[0], r[1], r[2], r[3], 1, true);
     return true;
   }
 
-  var p = -1, queued = false, entered = false;
+  var p = -1, queued = false;
 
-  function enter(){
-    if(entered) return;
-    entered = true;
-    inn.classList.add('is-in');
+  var el1 = document.querySelector('.vsc-h .ln1 i');
+  var el2 = document.querySelector('.vsc-h .ln2 i');
+  var elk = document.querySelector('.vsc-k');
+  var elp = document.querySelector('.vsc-p');
+
+  function seg(x, a, b){
+    var t = (x - a) / (b - a);
+    return t < 0 ? 0 : (t > 1 ? 1 : t);
+  }
+  function outCubic(t){ var u = 1 - t; return 1 - u * u * u; }
+
+  // Chu chay vao theo dung vi tri cuon. Lan toi thi vao, lan lui thi ra.
+  function text(q){
+    var e1 = outCubic(seg(q, 0.000, 0.085));
+    var e2 = outCubic(seg(q, 0.035, 0.130));
+    var ek = outCubic(seg(q, 0.000, 0.050));
+    var ep = outCubic(seg(q, 0.085, 0.180));
+    if(el1) el1.style.transform = 'translate3d(' + (-104 * (1 - e1)).toFixed(2) + '%,0,0)';
+    if(el2) el2.style.transform = 'translate3d(' + (-104 * (1 - e2)).toFixed(2) + '%,0,0)';
+    if(elk){ elk.style.opacity = ek.toFixed(3);
+             elk.style.transform = 'translate3d(0,' + (16 * (1 - ek)).toFixed(1) + 'px,0)'; }
+    if(elp){ elp.style.opacity = ep.toFixed(3);
+             elp.style.transform = 'translate3d(0,' + (16 * (1 - ep)).toFixed(1) + 'px,0)'; }
   }
 
   function progress(){
@@ -266,7 +270,7 @@
     if(!force && Math.abs(np - p) < 0.0004){ queued = false; return; }
     p = np;
 
-    if(p > 0.006) enter();   // cham lan dau la chu lao vao
+    text(p);
 
     if(p <= SPLIT) drawSeq(p);
     else            drawZoom(p);
@@ -308,7 +312,7 @@
   }
 
   build(true);
-  if(reduce) enter();
+  if(reduce) text(1);
   window.addEventListener('scroll', onScroll, {passive:true});
   window.addEventListener('resize', onResize);
   window.addEventListener('orientationchange', onResize);
