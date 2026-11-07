@@ -94,8 +94,9 @@
   <ul>
     <li>Vị trí cuộn điều khiển thẳng khung hình. Dừng tay là hình đứng lại ngay tại khung đó.</li>
     <li>Cú tiến vào chạy đều suốt quãng cuộn chứ không dồn vào đoạn cuối, nên không bị nhảy cỡ.</li>
-    <li>Dòng tiêu đề bám thẳng vào vị trí cuộn. Lăn tới thì chữ vào, lăn lui thì chữ lùi ra lại.</li>
-    <li>Máy tính chạy 60 khung ở bề ngang 1920, điện thoại rút còn 48 khung ở bề ngang 1100.</li>
+    <li>Dòng tiêu đề bám thẳng vào vị trí cuộn. Lăn tới thì chữ vào, lăn lui thì chữ lùi ra lại. Dòng trên vào xong hẳn rồi dòng dưới mới bắt đầu.</li>
+    <li>Có bộ làm mượt cho con lăn chuột. Mỗi nấc lăn nhảy khoảng 100px tức vài khung, bộ này kéo hình trượt dần tới nấc đó thay vì nhảy cóc.</li>
+    <li>Máy tính chạy đủ 132 khung, đúng mật độ gốc 24 hình một giây của clip. Điện thoại 66 khung.</li>
     <li>Các khung được gộp vào vài tấm ảnh lớn nên trình duyệt chỉ tải vài lượt, không phải tải từng khung.</li>
     <li>Dòng tiêu đề trên chạy vào từ trái, dòng dưới vào sau một nhịp. Chữ để trắng hết.</li>
     <li>Chữ tiếng Anh chạy font BROWN Italic, chữ tiếng Việt vẫn chạy Be Vietnam Pro để không vỡ dấu.</li>
@@ -125,8 +126,8 @@
 
   function cfg(){
     return window.innerWidth < 760
-      ? {pre:'assets/vm', sheets:8,  cols:3, rows:2, cw:1100, ch:464, n:48}
-      : {pre:'assets/vd', sheets:15, cols:2, rows:2, cw:1920, ch:810, n:60};
+      ? {pre:'assets/vm', sheets:11, cols:2, rows:3, cw:1000, ch:422, n:66}
+      : {pre:'assets/vd', sheets:22, cols:2, rows:3, cw:1760, ch:742, n:132};
   }
 
   var C = null, sheets = [], ready = [], zoomImg = null, loaded = 0;
@@ -150,8 +151,8 @@
       im.onerror = next;
       im.src = c.pre + k + '.webp';
     }
-    // keo ba tam dau song song cho nhanh co hinh, roi tai tiep tuan tu
-    next(); next(); next();
+    // keo bon tam dau song song cho nhanh co hinh, roi tai tiep tuan tu
+    next(); next(); next(); next();
 
     zoomImg = new Image();
     zoomImg.decoding = 'async';
@@ -231,7 +232,7 @@
     return true;
   }
 
-  var p = -1, queued = false;
+  var p = -1, aim = 0, cur = 0, running = false;
 
   var el1 = document.querySelector('.vsc-h .ln1 i');
   var el2 = document.querySelector('.vsc-h .ln2 i');
@@ -246,10 +247,10 @@
 
   // Chu chay vao theo dung vi tri cuon. Lan toi thi vao, lan lui thi ra.
   function text(q){
-    var e1 = outCubic(seg(q, 0.000, 0.085));
-    var e2 = outCubic(seg(q, 0.035, 0.130));
-    var ek = outCubic(seg(q, 0.000, 0.050));
-    var ep = outCubic(seg(q, 0.085, 0.180));
+    var ek = outCubic(seg(q, 0.000, 0.028));   // LXAM STUDIO
+    var e1 = outCubic(seg(q, 0.020, 0.075));   // dong tren vao truoc, xong han
+    var e2 = outCubic(seg(q, 0.085, 0.140));   // dong duoi moi bat dau
+    var ep = outCubic(seg(q, 0.150, 0.215));   // doan tieng Viet sau cung
     if(el1) el1.style.transform = 'translate3d(' + (-104 * (1 - e1)).toFixed(2) + '%,0,0)';
     if(el2) el2.style.transform = 'translate3d(' + (-104 * (1 - e2)).toFixed(2) + '%,0,0)';
     if(elk){ elk.style.opacity = ek.toFixed(3);
@@ -266,8 +267,8 @@
   }
 
   function draw(force){
-    var np = reduce ? 1 : progress();
-    if(!force && Math.abs(np - p) < 0.0004){ queued = false; return; }
+    var np = reduce ? 1 : cur;
+    if(!force && Math.abs(np - p) < 0.0003) return;
     p = np;
 
     text(p);
@@ -281,14 +282,22 @@
     inn.style.transform = 'translate3d(0,' + (-fade * 26).toFixed(1) + 'px,0)';
     if(hint) hint.style.opacity = (1 - Math.min(1, p / 0.12)).toFixed(3);
     if(bar) bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+  }
 
-    queued = false;
+  // Con lan chuot nhay tung nac chung 100px, tuc moi nac vot qua may khung mot luc.
+  // Vong nay keo hinh truot dan toi vi tri that nen mat thay lien mach.
+  function tick(){
+    var d = aim - cur;
+    if(Math.abs(d) < 0.00025){ cur = aim; draw(false); running = false; return; }
+    cur += d * 0.26;
+    draw(false);
+    requestAnimationFrame(tick);
   }
 
   function onScroll(){
-    if(queued) return;
-    queued = true;
-    requestAnimationFrame(function(){ draw(false); });
+    aim = progress();
+    if(reduce){ cur = aim; draw(false); return; }
+    if(!running){ running = true; requestAnimationFrame(tick); }
   }
 
   function build(reload){
@@ -299,6 +308,7 @@
       loadSheets();
     }
     size();
+    aim = cur = reduce ? 1 : progress();
     draw(true);
   }
 
