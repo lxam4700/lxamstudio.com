@@ -2047,6 +2047,8 @@ POSTS = [
 
 <p>Một mẹo nhỏ: chọn đúng một vật thật trong nhà và dựng lại nó mỗi hai tuần trong cả ba tháng. Cùng một đề thì không có chỗ để tự lừa mình.</p>
 
+<p>Riêng phần dựng hình của tháng này có một thứ tự nhỏ bên trong nó, từ nhìn khối tới dựng theo số đo thật. Năm bước đó kèm dấu hiệu nhận biết đã qua từng bước nằm ở bài <a href="blog-hoc-modeling-3d-tu-dau.html">học modeling 3D từ đâu</a>.</p>
+
 <h2>Tháng hai: ánh sáng và vật liệu</h2>
 
 <p>Đây là chỗ hình của bạn bắt đầu khác người mới khác. Đa số người tự học nhảy vào vật liệu phức tạp quá sớm, trong khi thứ quyết định cảm giác của khung hình là ánh sáng.</p>
@@ -2226,7 +2228,7 @@ POSTS = [
 
 <p>Đây không phải giáo trình chuẩn, mỗi nơi sắp xếp một kiểu. Nhưng nếu một khoá học cho người mới thiếu hẳn một trong các mốc dưới đây, bạn nên hỏi lại lý do.</p>
 
-<p>Thứ tự tám tuần này bám theo đúng <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước: dựng hình trước, vật liệu và ánh sáng sau, render sau nữa. Khoá nào đảo thứ tự đó, hãy hỏi vì sao.</p>
+<p>Thứ tự tám tuần này bám theo đúng <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> bảy bước: dựng hình trước, vật liệu và ánh sáng sau, render sau nữa. Khoá nào đảo thứ tự đó, hãy hỏi vì sao. Phần dựng hình ở hai tuần đầu được tách nhỏ thành năm bước trong bài <a href="blog-hoc-modeling-3d-tu-dau.html">học modeling 3D từ đâu</a>, dùng được để tự kiểm tra trước khi vào lớp.</p>
 
 <div class="table-wrap">
 <table>
@@ -2641,6 +2643,8 @@ POSTS = [
 <p>Hai dự án sau cho thấy mức độ sạch của lưới mà một bài giao khách cần: <a href="du-an-vplas.html">dựng hình sản phẩm VPlas bằng Blender</a> với bản vẽ kỹ thuật làm gốc, và <a href="du-an-khoa-cua-thong-minh.html">bộ hình khoá cửa thông minh tách rời linh kiện</a>, nơi mỗi chi tiết bên trong đều phải dựng đủ vì ảnh tách rời không giấu được gì.</p>
 
 <h2>Học modeling từ đâu cho đỡ mất thời gian</h2>
+
+<p>Nếu bạn chưa vào khoá nào và muốn tự chạy thử trước, năm bước đầu kèm bài tập cho từng bước nằm ở bài <a href="blog-hoc-modeling-3d-tu-dau.html">học modeling 3D từ đâu</a>, làm hết là đủ nền để theo một lớp mà không bị tụt lại.</p>
 
 <p>Thứ tự dưới đây là thứ tự mình thấy ít gây tắc nhất. Nó không phải thứ tự duy nhất đúng, nhưng nó tránh được cái bẫy phổ biến nhất là nhảy vào chi tiết khi khối còn sai.</p>
 
@@ -4918,6 +4922,161 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đang chuẩn bị một chiến dịch, gửi cho chúng tôi danh sách nơi sẽ đặt hình, kích thước từng nơi và ngày duyệt nội bộ. Chúng tôi báo lại theo từng hạng mục và nói thẳng nếu chụp thật hợp hơn cho việc của bạn. Muốn xem trước thì <a href="du-an-san-pham.html">dự án render 3D sản phẩm</a> và <a href="du-an-chivas-18.html">dự án Chivas 18</a> là chỗ nên bắt đầu, còn danh mục đang nhận nằm ở trang <a href="dich-vu.html">dịch vụ 3D cho thương hiệu</a>.</p>
+""",
+    },
+    {
+        "slug": "hoc-modeling-3d-tu-dau",
+        "title": "Học modeling 3D từ đâu: 5 bước đầu tiên",
+        "desc": "Học modeling 3D từ đâu khi chưa biết gì: năm bước đầu theo đúng thứ tự, bài tập cho từng bước và dấu hiệu nhận ra mình đã qua bước đó hay chưa.",
+        "tag": "Bắt đầu",
+        "date": "2026-11-09",
+        "date_vn": "09/11/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp",
+        "faq": [
+            ('Học modeling từ đâu nếu chưa từng dùng phần mềm 3D nào?',
+             'Bắt đầu từ việc nhìn ra khối cơ bản của một món hàng thật, không bắt đầu từ danh sách công cụ. Lấy ba món trên bàn, vẽ ra giấy phần khối hộp, khối trụ và khối cầu của từng món, rồi mới mở phần mềm và dựng lại đúng ba món đó bằng khối nguyên thuỷ. Thứ tự này giúp bạn biết mình đang tìm công cụ để làm gì, thay vì học công cụ rồi không biết dùng vào đâu.'),
+            ('Học modeling 3D mất bao lâu mới dựng được món hàng tử tế?',
+             'Với khoảng một tới hai giờ mỗi ngày và học đúng thứ tự, phần lớn người mới dựng được một món hàng đơn giản có bản vẽ sau chừng bốn tới tám tuần. Đây là ước lượng theo kinh nghiệm dạy kèm, không phải con số bảo đảm, và nó xê dịch nhiều theo việc bạn có chịu dựng lại hàng thật hay chỉ xem hướng dẫn.'),
+            ('Nên học modeling trong Blender hay phần mềm khác?',
+             'Với người bắt đầu từ con số không, Blender là lựa chọn gọn nhất vì miễn phí, cài một lần là có đủ modeling, vật liệu, ánh sáng và render để làm xong một hình. Kỹ năng đọc khối, topology và dựng theo bản vẽ chuyển được gần như trọn vẹn sang phần mềm khác về sau, nên không có chuyện học sai chỗ rồi mất trắng.'),
+            ('Có cần máy mạnh để học modeling không?',
+             'Giai đoạn modeling nhẹ hơn render rất nhiều, nên một máy tầm trung vẫn học được. Thứ bạn cần trước tiên là chuột có con lăn giữa và màn hình đủ lớn để nhìn mặt lưới. Máy yếu chỉ thành vấn đề khi bạn render cảnh lớn hoặc dùng cảnh nhiều triệu mặt, và đó là chuyện của vài tháng sau.'),
+            ('Học modeling theo hướng dẫn trên mạng có đủ không?',
+             'Đủ để biết công cụ, không đủ để biết quyết định. Hướng dẫn thường bỏ phần vì sao chọn cách này, và người học theo thường làm lại được đúng cảnh trong video mà không làm được món hàng của mình. Cách sửa gọn nhất là sau mỗi hướng dẫn, dựng thêm một món khác cùng loại khối mà không mở lại video.'),
+        ],
+        "body": """
+<p class="lead">Học modeling từ đâu thì câu trả lời ngắn là: từ việc nhìn ra khối của một món hàng thật, không phải từ danh sách công cụ. Người mới thường mở phần mềm trước rồi mới đi tìm thứ để dựng, và đó là lý do nhiều người thuộc nút bấm nhưng vẫn không dựng nổi một món hàng đơn giản. Bài này đi theo thứ tự ngược lại.</p>
+
+<p>Bên dưới là năm bước đầu tiên của việc học modeling 3D, kèm bài tập cụ thể cho từng bước và dấu hiệu để biết mình đã qua bước đó hay chưa. Chúng tôi viết theo những gì thấy đi thấy lại ở người học kèm, nên phần nói về chỗ dễ mất thời gian sẽ thẳng, kể cả khi nó trái với cách phần lớn video hướng dẫn mở đầu.</p>
+
+<h2>Học modeling từ đâu: trả lời gọn trước khi đi vào từng bước</h2>
+
+<p>Modeling là việc tạo hình khối của vật thể trong không gian ba chiều. Nó là khâu đầu trong chuỗi làm hình, trước vật liệu, ánh sáng và render. Vì đứng đầu chuỗi nên mọi sai ở đây đều đội lên ở các khâu sau, và đó là lý do nên học nó trước.</p>
+
+<p>Thứ tự học hợp lý cho người bắt đầu từ con số không gồm năm bước: nhìn khối, nắm vài công cụ cốt lõi, hiểu topology ở mức vừa đủ, dựng lại một món hàng thật có bản vẽ, rồi đưa mô hình đó vào một khung hình có ánh sáng. Năm bước này không phải năm khoá học. Chúng là năm mốc có thể kiểm tra được.</p>
+
+<p>Nếu bạn muốn thấy toàn bộ chuỗi kỹ năng chứ không chỉ phần dựng hình, bảy kỹ năng theo đúng thứ tự nằm ở bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>. Còn nếu bạn chưa từng mở phần mềm 3D nào, phần chuẩn bị ban đầu được viết riêng trong bài <a href="blog-hoc-do-hoa-3d-tu-con-so-0.html">học đồ hoạ 3D từ con số 0</a>.</p>
+
+<h2>Bước một: tập nhìn khối trước khi học nút bấm</h2>
+
+<p>Mọi món hàng đều phân tích được thành vài khối cơ bản. Một chai nước là khối trụ cộng khối cầu bị cắt. Một hộp loa là khối hộp vát cạnh. Một ổ khoá cửa là hai khối hộp lệch nhau cộng vài khối trụ nhỏ.</p>
+
+<p>Bài tập của bước này không cần máy tính. Lấy ba món trên bàn, vẽ ra giấy phần khối của từng món, ghi rõ món nào chồng lên món nào. Làm chừng mười món là bạn bắt đầu thấy khối trước khi thấy chi tiết, và đó chính là kỹ năng cốt lõi của nghề dựng hình.</p>
+
+<h3>Dấu hiệu đã qua bước một</h3>
+
+<p>Nhìn một món hàng lạ, bạn nói ngay được nó gồm mấy khối và khối nào là khối chính. Nếu còn phải đoán, hãy vẽ thêm vài món nữa trước khi mở phần mềm.</p>
+
+<h2>Bước hai: nắm năm công cụ, chưa cần nhiều hơn</h2>
+
+<p>Phần mềm 3D nào cũng có hàng trăm lệnh, nhưng phần lớn việc dựng hình sản phẩm chỉ xoay quanh một nhóm rất nhỏ. Với Blender, nhóm đó là extrude, bevel, loop cut, mirror và một công cụ chọn theo vòng. Năm thứ này dựng được phần lớn hàng gia dụng, bao bì và đồ kỹ thuật đơn giản.</p>
+
+<p>Cách học hiệu quả là mỗi lần chỉ thêm một công cụ, rồi dựng lại một món đã dựng trước đó để thấy công cụ mới giúp được gì. Học mười công cụ trong một buổi thì sang buổi sau quên chín.</p>
+
+<blockquote><p>Người mới thường nghĩ mình thiếu công cụ. Gần như lúc nào cũng vậy, họ thiếu một quyết định về khối, và công cụ nào cũng không giải quyết được chuyện đó.</p></blockquote>
+
+<figure>
+  <img src="assets/khoa-cua-thong-minh-tach-roi-linh-kien.webp" alt="Mô hình 3D ổ khoá cửa thông minh tách rời từng linh kiện, dựng bằng Blender để thấy cấu trúc khối" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một món hàng tách rời để thấy nó gồm những khối gì.</strong> Khi dựng, các khối này được làm riêng rồi mới ghép, nhờ vậy sửa một chi tiết không phải đụng tới phần còn lại. Xem trọn bộ ở <a href="du-an-khoa-cua-thong-minh.html">dự án khoá cửa thông minh</a>.</figcaption>
+</figure>
+
+<h2>Bước ba: hiểu topology ở mức vừa đủ để đi tiếp</h2>
+
+<p>Topology là cách các mặt lưới xếp trên bề mặt mô hình. Nó thành vấn đề khi bạn bẻ cong một bề mặt hoặc khi bề mặt bóng phản chiếu méo đi. Người mới hay bị dọa bởi chủ đề này và học quá sâu quá sớm.</p>
+
+<p>Mức vừa đủ cho giai đoạn đầu gồm ba điều: giữ mặt bốn cạnh ở những vùng sẽ uốn cong, không để nhiều cạnh dồn về một điểm trên bề mặt bóng, và đặt cạnh phụ sát mép thay vì làm dày cả vùng. Ba điều này xử lý được phần lớn lỗi bóng méo mà người mới gặp.</p>
+
+<h3>Lúc nào thì học sâu hơn</h3>
+
+<p>Khi bạn bắt đầu dựng hàng có bề mặt cong liên tục như vỏ xe, tay cầm hay chai lọ bóp méo. Trước đó, thời gian học sâu về topology đổi được rất ít thành quả nhìn thấy được.</p>
+
+<h2>Bước bốn: dựng lại một món hàng thật có bản vẽ</h2>
+
+<p>Đây là bước đổi người xem hướng dẫn thành người dựng hình. Chọn một món hàng bạn có trong tay, đo hoặc tìm bản vẽ kích thước, rồi dựng lại đúng tỉ lệ. Ràng buộc về kích thước thật là phần quan trọng nhất, vì nó buộc bạn ra quyết định thay vì làm theo video.</p>
+
+<p>Món đầu tiên nên chọn loại nhiều mặt phẳng và ít bề mặt cong: hộp sạc, remote, ổ cắm, kẹp giấy kim loại. Tránh tai nghe, chuột máy tính và chai nhựa bóp méo ở lần đầu, vì ba loại đó cần topology tốt hơn mức bạn đang có.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Cách bắt đầu</th><th>Được gì nhanh</th><th>Mất gì</th><th>Hợp với ai</th></tr></thead>
+<tbody>
+<tr><td>Theo một chuỗi video từ đầu tới cuối</td><td>Thấy đủ chuỗi làm hình, có cảm giác tiến bộ sớm</td><td>Làm lại được đúng cảnh trong video, không làm được món của mình</td><td>Người cần hiểu bức tranh tổng thể trước</td></tr>
+<tr><td>Dựng lại hàng thật có bản vẽ</td><td>Ra quyết định thật, hiểu nhanh vì sao chọn cách này</td><td>Chậm và dễ bí ở tuần đầu, cần kiên nhẫn</td><td>Người có mục tiêu rõ, muốn làm hàng sản phẩm</td></tr>
+<tr><td>Học theo khoá có người sửa bài</td><td>Lỗi được chỉ ngay, không đi sai đường dài</td><td>Tốn chi phí, phụ thuộc lịch của người dạy</td><td>Người thiếu thời gian hoặc đã bí một chỗ lâu</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nếu bạn đang cân nhắc giữa tự học và học có người sửa bài, phần so sánh theo tốc độ và chi phí nằm ở bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a>. Còn nội dung một chương trình dạy dựng hình nên có nằm ở bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a>.</p>
+
+<h2>Bước năm: đưa mô hình vào một khung hình có ánh sáng</h2>
+
+<p>Mô hình nằm trên nền xám không nói được nó đúng hay sai. Chỉ khi có ánh sáng và một góc máy cố định, bạn mới thấy chỗ nào khối lệch, chỗ nào mép quá gắt, chỗ nào tỉ lệ sai.</p>
+
+<p>Ở bước này chưa cần học sâu về ánh sáng. Một đèn chính, một nguồn sáng phản chiếu và một nền trơn là đủ để kiểm tra mô hình. Những lỗi làm hình trông giả ngay cả khi mô hình đúng được liệt kê trong bài <a href="blog-5-loi-lighting.html">năm lỗi lighting thường gặp</a>.</p>
+
+<h3>Vòng lặp nên giữ lại</h3>
+
+<p>Dựng, chiếu sáng, chụp một khung, soi lỗi, sửa mô hình. Lặp lại vòng này ba tới bốn lần cho mỗi món. Người tiến nhanh thường không phải người dựng nhiều món, mà là người sửa lại nhiều lần cùng một món.</p>
+
+<h2>Những chỗ người mới mất thời gian nhất</h2>
+
+<p>Bốn chỗ dưới đây chiếm phần lớn thời gian bị mất mà không đổi được kỹ năng.</p>
+
+<p>Thứ nhất là cài quá nhiều add-on ngay tuần đầu. Add-on rút ngắn việc bạn đã biết làm, chứ không dạy bạn việc chưa biết. Danh sách những add-on thật sự đáng cài về sau nằm ở bài <a href="blog-add-on-hard-surface-blender.html">add-on hard surface cho Blender</a>.</p>
+
+<p>Thứ hai là đổi phần mềm giữa đường vì nghe nói phần mềm khác mạnh hơn. Phần so sánh theo mục tiêu nghề nghiệp nằm ở bài <a href="blog-blender-hay-3dsmax-c4d.html">Blender hay 3ds Max và C4D</a>, đọc một lần rồi chốt.</p>
+
+<p>Thứ ba là lo máy yếu trước khi biết mình cần gì. Giai đoạn modeling nhẹ, và ngưỡng cấu hình thật sự cần nằm ở bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<p>Thứ tư là dựng những món quá khó so với bước hiện tại, rồi bỏ dở. Mỗi món bỏ dở lấy đi thời gian mà không để lại gì kiểm tra được.</p>
+
+<h2>Danh sách kiểm tra để biết mình đang ở bước nào</h2>
+
+<p>Chạy qua danh sách này mỗi hai tuần. Chỉ đi tiếp khi phần lớn các dòng của bước hiện tại đã đúng.</p>
+
+<ul>
+<li>Nhìn một món hàng lạ, nói được nó gồm mấy khối chính.</li>
+<li>Dựng được ba món bằng khối nguyên thuỷ, không xem lại hướng dẫn.</li>
+<li>Dùng thành thạo extrude, bevel, loop cut, mirror và chọn theo vòng.</li>
+<li>Biết vì sao nên giữ mặt bốn cạnh ở vùng uốn cong.</li>
+<li>Sửa được một bề mặt bóng bị méo bóng, không cần dựng lại từ đầu.</li>
+<li>Dựng lại được một món hàng thật đúng tỉ lệ theo bản vẽ hoặc số đo.</li>
+<li>Đặt được một đèn chính và một nền trơn để soi mô hình.</li>
+<li>Nhận ra ba lỗi của mô hình chỉ bằng cách nhìn khung hình đã chiếu sáng.</li>
+<li>Có một món đã làm lại ít nhất ba lần, mỗi lần tốt hơn lần trước.</li>
+<li>Giữ được thói quen dựng tối thiểu ba buổi mỗi tuần trong một tháng.</li>
+</ul>
+
+<p>Khi hết danh sách này, bạn đã xong phần nền của modeling và câu hỏi tiếp theo không còn là học modeling từ đâu, mà là chọn hướng nào để đi sâu. Hai hướng thường gặp cùng đầu ra từng giai đoạn nằm ở <a href="khoa-hoc.html">lộ trình hai hệ 3D</a>, còn bộ bảng tra cứu dùng khi làm việc thật thì ở <a href="cam-nang.html">cẩm nang Blender</a>.</p>
+
+<h2>Vậy học modeling từ đâu, chốt lại</h2>
+
+<p>Từ một món hàng thật trong tay, không từ danh sách công cụ. Phân tích khối của nó, dựng lại bằng vài công cụ cốt lõi, giữ topology đủ sạch để bề mặt không méo, dựng đúng tỉ lệ theo số đo, rồi chiếu sáng để soi lỗi và sửa lại. Làm xong vòng đó với ba món hàng là bạn đã đi xa hơn phần lớn người xem hướng dẫn trong nhiều tháng.</p>
+
+<p>Thứ quyết định không phải bạn học nhanh hay chậm, mà là bạn có chịu quay lại sửa món cũ hay không. Người sửa lại nhiều lần một món tiến nhanh hơn người dựng mỗi tuần một món mới rồi không nhìn lại.</p>
+
+<h2>Câu hỏi thường gặp về học modeling từ đầu</h2>
+
+<p class="faq-q">Học modeling từ đâu nếu chưa từng dùng phần mềm 3D nào?</p>
+<p>Bắt đầu từ việc nhìn ra khối cơ bản của một món hàng thật, không bắt đầu từ danh sách công cụ. Lấy ba món trên bàn, vẽ ra giấy phần khối hộp, khối trụ và khối cầu của từng món, rồi mới mở phần mềm và dựng lại đúng ba món đó bằng khối nguyên thuỷ. Thứ tự này giúp bạn biết mình đang tìm công cụ để làm gì, thay vì học công cụ rồi không biết dùng vào đâu.</p>
+
+<p class="faq-q">Học modeling 3D mất bao lâu mới dựng được món hàng tử tế?</p>
+<p>Với khoảng một tới hai giờ mỗi ngày và học đúng thứ tự, phần lớn người mới dựng được một món hàng đơn giản có bản vẽ sau chừng bốn tới tám tuần. Đây là ước lượng theo kinh nghiệm dạy kèm, không phải con số bảo đảm, và nó xê dịch nhiều theo việc bạn có chịu dựng lại hàng thật hay chỉ xem hướng dẫn.</p>
+
+<p class="faq-q">Nên học modeling trong Blender hay phần mềm khác?</p>
+<p>Với người bắt đầu từ con số không, Blender là lựa chọn gọn nhất vì miễn phí, cài một lần là có đủ modeling, vật liệu, ánh sáng và render để làm xong một hình. Kỹ năng đọc khối, topology và dựng theo bản vẽ chuyển được gần như trọn vẹn sang phần mềm khác về sau, nên không có chuyện học sai chỗ rồi mất trắng.</p>
+
+<p class="faq-q">Có cần máy mạnh để học modeling không?</p>
+<p>Giai đoạn modeling nhẹ hơn render rất nhiều, nên một máy tầm trung vẫn học được. Thứ bạn cần trước tiên là chuột có con lăn giữa và màn hình đủ lớn để nhìn mặt lưới. Máy yếu chỉ thành vấn đề khi bạn render cảnh lớn hoặc dùng cảnh nhiều triệu mặt, và đó là chuyện của vài tháng sau.</p>
+
+<p class="faq-q">Học modeling theo hướng dẫn trên mạng có đủ không?</p>
+<p>Đủ để biết công cụ, không đủ để biết quyết định. Hướng dẫn thường bỏ phần vì sao chọn cách này, và người học theo thường làm lại được đúng cảnh trong video mà không làm được món hàng của mình. Cách sửa gọn nhất là sau mỗi hướng dẫn, dựng thêm một món khác cùng loại khối mà không mở lại video.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang ở bước bốn và bí ở một món cụ thể, gửi cho chúng tôi ảnh mô hình kèm món hàng thật, chúng tôi nói thẳng chỗ khối đang sai và nên sửa theo thứ tự nào. Muốn đi theo lộ trình có người sửa bài thì xem <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, còn hai hệ học và đầu ra từng giai đoạn nằm ở trang <a href="khoa-hoc.html">khoá học 3D tại LXAM</a>.</p>
 """,
     },
 ]
