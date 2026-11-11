@@ -1523,6 +1523,8 @@ POSTS = [
 
 <p>Blender là phần mềm miễn phí có cộng đồng dạy học tốt nhất trong ngành 3D. Tài nguyên chất lượng cao, miễn phí, nhiều tới mức không xem hết. Riêng khoản tài liệu, bạn không thiếu gì.</p>
 
+<p>Nếu bạn nghiêng về phía có người kèm, bước tiếp theo không phải chọn chỗ mà chọn hình thức: bài <a href="blog-hoc-kem-3d.html">học kèm 3D</a> tách năm hình thức đang phổ biến kèm danh sách kiểm tra trước khi đóng tiền buổi đầu.</p>
+
 <p>Người tự học tốt thường có ba đặc điểm: kỷ luật ngồi đều mà không cần ai nhắc, khả năng tự đánh giá bài mình khá chính xác, và kiên nhẫn với việc thử sai. Nếu bạn có đủ ba thứ đó, tự học là lựa chọn đúng, và tôi nói thật lòng.</p>
 
 <p>Nhóm tự học tốt cũng thường biết khai thác tài liệu nặng hơn tutorial. Ví dụ rõ nhất là <a href="blog-kho-hau-truong-overgrown-blender-studio.html">học Blender qua nhật ký sản xuất</a> của một ê-kíp làm phim thật, nơi bạn thấy cả phương án bị loại chứ không chỉ phương án đúng.</p>
@@ -1860,6 +1862,8 @@ POSTS = [
 <h2>Học kèm 1 kèm 1 thật ra mua cái gì</h2>
 
 <p>Bạn không mua thêm kiến thức. Kiến thức trong một buổi kèm không nhiều hơn một video hướng dẫn tốt. Cái bạn mua là ba thứ khó kiếm ở chỗ khác.</p>
+
+<p>Kèm một kèm một chỉ là một trong năm hình thức <a href="blog-hoc-kem-3d.html">học kèm 3D</a>. Nếu bạn còn chưa chắc hình thức nào hợp với mình, bài đó có bảng so sánh cả năm và ba câu hỏi để tự chọn trước khi nhắn cho ai.</p>
 
 <h3>Chẩn đoán đúng chỗ đang kẹt</h3>
 <p>Người có nghề nhìn render của bạn vài giây là chỉ ra được vấn đề nằm ở ánh sáng, ở vật liệu hay ở bố cục. Bạn tự mò chỗ này có khi mất vài tháng, và cái mất lớn nhất không phải thời gian mà là việc bạn tập được một thói quen sai rồi khó sửa.</p>
@@ -3369,6 +3373,8 @@ POSTS = [
 <h3>Gia sư dạy cái riêng bạn thiếu</h3>
 <p>Buổi học bắt đầu bằng việc mở file của bạn. Người dạy nhìn cấu trúc lưới, cách bạn đặt đèn, cách bạn tổ chức bộ sưu tập, rồi chỉ ra ba bốn chỗ làm hình xấu đi. Đó là việc không video nào làm được, vì video không biết bạn đã làm gì.</p>
 
+<p>Trước khi chốt gia sư, nên xem qua bài <a href="blog-hoc-kem-3d.html">học kèm 3D</a>: nó tách năm hình thức kèm đang phổ biến và chỉ ra hình thức nào giải đúng bài toán của bạn, vì gia sư chỉ là một trong năm.</p>
+
 <p>Nếu mục tiêu của bạn không phải học thêm kỹ thuật mà là ra được bộ hồ sơ đem đi xin việc, hình thức <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a> đi theo một nhịp khác: chốt danh sách món trước, rồi mỗi buổi đẩy một món tiến thêm một bước.</p>
 
 <p>Còn nếu bạn chưa chốt được mình muốn đi nhánh nào trong ngành, nên lùi lại một bước: bài <a href="blog-hoc-kem-1-1-do-hoa.html">học kèm 1 kèm 1 đồ hoạ</a> chia ngành thành bốn nhánh và chỉ ra chặng nào trong mỗi nhánh thì thuê kèm riêng mới đáng tiền.</p>
@@ -3812,7 +3818,7 @@ POSTS = [
 
 <h2>Kèm riêng dựng hình sản phẩm là gì</h2>
 
-<p>Điểm khác biệt không nằm ở số người trong lớp. Nó nằm ở thứ được coi là đầu ra của buổi học.</p>
+<p>Điểm khác biệt không nằm ở số người trong lớp. Nó nằm ở thứ được coi là đầu ra của buổi học. Cách phân biệt hình thức này với bốn hình thức <a href="blog-hoc-kem-3d.html">học kèm 3D</a> còn lại nằm trong bảng so sánh ở bài tổng hợp.</p>
 
 <h3>Lớp nhóm lấy giáo trình làm đầu ra</h3>
 <p>Một lớp dựng hình sản phẩm bình thường kết thúc khi đi hết các chương: khối, vật liệu, ánh sáng, kết xuất. Mẫu tập là mẫu chung, ai cũng dựng cùng một chai nước hoặc cùng một hộp bao bì. Bạn ra khỏi lớp với nhiều kỹ năng rời và thường chưa có ảnh nào của riêng mình đủ sạch để đưa cho khách.</p>
@@ -5077,6 +5083,157 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn đang ở bước bốn và bí ở một món cụ thể, gửi cho chúng tôi ảnh mô hình kèm món hàng thật, chúng tôi nói thẳng chỗ khối đang sai và nên sửa theo thứ tự nào. Muốn đi theo lộ trình có người sửa bài thì xem <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>, còn hai hệ học và đầu ra từng giai đoạn nằm ở trang <a href="khoa-hoc.html">khoá học 3D tại LXAM</a>.</p>
+""",
+    },
+    {
+        "slug": "hoc-kem-3d",
+        "title": "Học kèm 3D: năm hình thức và cách chọn đúng",
+        "desc": "Học kèm 3D có năm hình thức, mỗi hình thức giải một bài toán khác nhau. Bảng so sánh theo thứ bạn thật sự nhận được và cách tự chọn trong ba câu hỏi.",
+        "tag": "Định hướng",
+        "date": "2026-11-11",
+        "date_vn": "11/11/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/vplas-ban-ve-kich-thuoc-3d.jpg",
+        "faq": [
+            ('Học kèm 3D là học những gì, có khác lớp 3D thường không?',
+             'Học kèm 3D không có giáo trình cố định. Buổi học bắt đầu bằng việc mở file bạn đang làm dở, người dạy xem lưới, đèn, vật liệu rồi chỉ ra chỗ làm hình xấu đi và sửa cùng bạn. Lớp thường đi theo thứ tự của giáo trình, kèm riêng đi theo thứ tự của chỗ bạn đang kẹt. Vì vậy kèm riêng nhanh hơn khi bạn đã có file, và chậm hơn khi bạn chưa có gì để mang ra.'),
+            ('Học kèm 3D cần bao nhiêu buổi?',
+             'Ước lượng từ các nhóm chúng tôi đã kèm là sáu tới mười buổi cho một mục tiêu gọn, ví dụ hoàn thiện một món sản phẩm từ khối thô tới ảnh đăng được. Nếu đích đến là một bộ hồ sơ bốn tới sáu món thì khoảng mười tới mười sáu tuần. Quá mười lăm buổi mà chưa ra món nào hoàn chỉnh thì thường mục tiêu đặt quá rộng.'),
+            ('Chưa biết gì về Blender có nên học kèm 3D ngay không?',
+             'Thường là chưa. Hai tuần đầu chỉ là làm quen giao diện và dựng vài khối đơn giản, phần đó tài liệu miễn phí dạy tốt và trả tiền cho nó là lãng phí. Mốc hợp lý để bắt đầu kèm là khi bạn đã tự dựng xong ít nhất một món và tự thấy nó chưa đẹp nhưng không chỉ ra được vì sao.'),
+            ('Học kèm 3D online có kém học trực tiếp không?',
+             'Không kém, vì phần lớn thời gian là hai người cùng nhìn một màn hình. Điều kiện cần chỉ là gọi video ổn định và quyền điều khiển màn hình khi cần sửa trực tiếp. Phần nặng là kết xuất chạy trên máy bạn chứ không qua đường truyền, nên khoảng cách gần như không ảnh hưởng tới chất lượng buổi học.'),
+            ('Làm sao biết một chỗ nhận học kèm 3D có làm nghề thật?',
+             'Hỏi xem một file gốc chứ không chỉ ảnh đã kết xuất. Người làm nghề mở file ra được, chỉ cho bạn cách đặt tên, cách gom bộ sưu tập và chỗ họ đã phải sửa lại. Hỏi thêm xem có bài học viên còn yếu kèm nhận xét hay không, vì nơi chỉ trưng bài đẹp nhất thường đang trưng bài của người vốn đã giỏi.'),
+        ],
+        "body": """
+<p class="lead">Học kèm 3D là hình thức học có người xem trực tiếp file của bạn và sửa cùng bạn, thay vì bạn ngồi làm theo một giáo trình chung. Nó đáng tiền khi bạn đã dựng được vài món nhưng không tự chỉ ra được chúng sai ở đâu. Nó lãng phí khi bạn mới mở phần mềm lần đầu, vì giai đoạn đó tài liệu miễn phí đã đủ dùng.</p>
+
+<p>Vấn đề là cụm từ học kèm 3D đang được dùng cho ít nhất năm thứ khác nhau, từ gia sư một kèm một tới nhóm nhỏ bốn người, và giá của chúng chênh nhau nhiều lần. Bài này tách năm hình thức đó ra, nói rõ mỗi hình thức giải bài toán nào, rồi đưa ba câu hỏi để bạn tự chọn. Chúng tôi không nêu mức giá của bất kỳ ai, kể cả của mình, vì giá thay đổi theo thời điểm và theo việc buổi học có chữa file thật hay không.</p>
+
+<h2>Học kèm 3D khác lớp đông ở chỗ nào</h2>
+
+<p>Khác biệt không nằm ở kiến thức. Phần lớn nội dung một người dạy nói ra, bạn đều tìm được trên mạng, phần nhiều là miễn phí. Khác biệt nằm ở thứ tự và ở vòng phản hồi.</p>
+
+<p>Lớp đông đi theo thứ tự của giáo trình, được thiết kế cho người học trung bình. Nếu bạn đã mạnh phần dựng khối nhưng yếu ánh sáng, bạn vẫn ngồi hết các buổi dựng khối. Thời gian mất đi ở đó không nhỏ, nhất là với người đã đi làm và mỗi tuần chỉ còn vài giờ rảnh.</p>
+
+<p>Học kèm 3D đi theo thứ tự của chỗ bạn đang kẹt. Người dạy nhìn cấu trúc lưới, cách bạn đặt đèn, cách bạn tổ chức bộ sưu tập, rồi chỉ ra ba bốn chỗ làm hình xấu đi. Đó là việc không video nào làm được, vì video không biết bạn đã làm gì.</p>
+
+<blockquote><p>Thứ bạn mua ở một buổi học kèm không phải bài giảng. Bài giảng 3D trên mạng đã quá nhiều. Bạn mua khả năng chẩn đoán: có người nhìn file của bạn và nói đúng chỗ sai trong mười phút thay vì để bạn mò ba tuần.</p></blockquote>
+
+<p>Nếu bạn vẫn đang cân nhắc giữa hai hướng chứ chưa chọn hình thức kèm, bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a> so sánh thẳng thắn hai đường đi theo chi phí và theo tỉ lệ bỏ giữa chừng.</p>
+
+<h2>Năm hình thức học kèm 3D đang phổ biến</h2>
+
+<p>Năm hình thức dưới đây là những gì chúng tôi gặp nhiều nhất khi người học tới hỏi. Chúng khác nhau ở đích đến, không chỉ ở số người trong buổi.</p>
+
+<h3>1. Gia sư một kèm một theo chỗ kẹt</h3>
+<p>Không có lộ trình dài, mỗi buổi gỡ một vấn đề. Hợp nhất khi bạn đã làm được món nhưng hình trông vẫn rẻ tiền, hoặc khi bạn chuyển từ phần mềm khác sang và chỉ cần ánh xạ thao tác. Cách kiểm tra người dạy và năm câu hỏi lọc trước buổi đầu nằm trong bài <a href="blog-gia-su-blender.html">gia sư Blender</a>.</p>
+
+<h3>2. Kèm một kèm một theo chương trình</h3>
+<p>Vẫn một người dạy một người, nhưng có lộ trình nhiều tuần, có bài về nhà và có đầu ra từng chặng. Hợp với người muốn đi từ nền tới hoàn chỉnh mà không muốn chờ lượt trong lớp. Phân tích theo từng kiểu người học nằm ở bài <a href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a>.</p>
+
+<h3>3. Kèm theo đúng một loại sản phẩm</h3>
+<p>Dành cho người cần dựng được đúng món hàng của công ty mình, không cần học rộng. Buổi học bám vào bản vẽ và ảnh thật của món đó. Cách chia buổi cho hướng này nằm trong bài <a href="blog-kem-rieng-dung-hinh-san-pham.html">kèm riêng dựng hình sản phẩm</a>.</p>
+
+<figure>
+  <img src="assets/vplas-exploded-view-blender.jpg" alt="Bản tách rời linh kiện của sản phẩm VPLAS dựng bằng Blender, các cụm chi tiết xếp theo trục dọc trên nền tối" loading="lazy" width="1600" height="900">
+  <figcaption><strong>Bản tách rời linh kiện trong dự án VPLAS của LXAM Studio.</strong> Dạng hình này là bài kiểm tra thẳng thắn cho hình thức thứ ba: nếu cấu trúc file không sạch và không đặt tên đúng, tách rời ra là lộ ngay, còn nhìn ảnh ngoài thì không thấy gì.</figcaption>
+</figure>
+
+<h3>4. Kèm theo bộ hồ sơ xin việc</h3>
+<p>Đích đến là bốn tới sáu món hoàn chỉnh đem đi nộp, không phải một danh sách kỹ năng. Mỗi buổi đẩy một món tiến thêm một bước, và phần trình bày món đó cũng được tính là việc phải làm. Lộ trình chi tiết nằm ở bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>.</p>
+
+<h3>5. Nhóm nhỏ ba tới năm người có chữa bài</h3>
+<p>Rẻ hơn kèm riêng, vẫn được chữa file nhưng phải chờ lượt. Điểm mạnh thật sự là có bạn cùng học, thứ làm giảm rõ rệt tỉ lệ bỏ giữa chừng. Hợp với người mới cần nhịp hơn cần chẩn đoán.</p>
+
+<p>Nếu bạn không chắc mình đang thuộc nhánh nào của ngành và vì thế chưa chốt được đích đến, nên lùi lại một bước: bài <a href="blog-hoc-kem-1-1-do-hoa.html">học kèm 1 kèm 1 đồ hoạ</a> chia ngành thành bốn nhánh và chỉ ra chặng nào trong mỗi nhánh thì thuê kèm riêng mới đáng tiền.</p>
+
+<h2>Bảng so sánh năm hình thức học kèm 3D</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Gia sư theo chỗ kẹt</th><th>Kèm 1:1 theo chương trình</th><th>Kèm theo một loại sản phẩm</th><th>Kèm theo bộ hồ sơ</th><th>Nhóm nhỏ có chữa bài</th></tr></thead>
+<tbody>
+<tr><td>Đích đến</td><td>Gỡ một vấn đề cụ thể</td><td>Đi từ nền tới hoàn chỉnh</td><td>Dựng được đúng một loại món</td><td>Bốn tới sáu món nộp được</td><td>Có nền và có nhịp</td></tr>
+<tr><td>Số buổi ước lượng</td><td>Hai tới sáu</td><td>Mười hai tới hai mươi</td><td>Sáu tới mười</td><td>Mười tới mười sáu tuần</td><td>Theo khoá, thường tám tới mười hai tuần</td></tr>
+<tr><td>Chi phí tính theo buổi</td><td>Cao nhất</td><td>Cao</td><td>Cao</td><td>Cao</td><td>Trung bình</td></tr>
+<tr><td>Chi phí tính theo một lần được chữa file</td><td>Thấp</td><td>Thấp</td><td>Thấp</td><td>Thấp</td><td>Trung bình</td></tr>
+<tr><td>Cần có sẵn file của mình</td><td>Bắt buộc</td><td>Không bắt buộc</td><td>Nên có bản vẽ hoặc ảnh món</td><td>Nên có ít nhất một món</td><td>Không cần</td></tr>
+<tr><td>Có bạn cùng học</td><td>Không</td><td>Không</td><td>Không</td><td>Không</td><td>Có</td></tr>
+<tr><td>Rủi ro bỏ giữa chừng</td><td>Thấp</td><td>Thấp</td><td>Thấp</td><td>Trung bình vì đường dài</td><td>Trung bình</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Bảng này không chọn hộ bạn. Nó chỉ ra rằng năm hình thức giải năm bài toán khác nhau, và lỗi hay gặp là trả tiền cho hình thức đắt khi vấn đề chỉ cần hình thức rẻ, hoặc ngược lại. Cách quy mọi báo giá về một con số so sánh được, tính theo số lần bạn thật sự được chữa bài, nằm trong bài <a href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>.</p>
+
+<h2>Ba câu hỏi để tự chọn hình thức học kèm 3D</h2>
+
+<p>Trả lời ba câu này trước khi nhắn cho bất kỳ ai, bạn sẽ tiết kiệm được cả tiền lẫn thời gian tư vấn.</p>
+
+<p><strong style="color:#fff;">Câu một: bạn đã có file của riêng mình chưa?</strong> Nếu chưa có gì ngoài vài bài làm theo hướng dẫn, kèm riêng chưa phát huy được vì không có gì để chẩn đoán. Hãy tự đi hai tuần với tài liệu miễn phí trước, hoặc vào nhóm nhỏ để có nhịp.</p>
+
+<p><strong style="color:#fff;">Câu hai: đích đến của bạn là một món, một bộ hồ sơ, hay một nghề?</strong> Một món thì chọn hình thức ba. Một bộ hồ sơ thì chọn hình thức bốn. Một nghề thì cần chương trình dài và nên xem đường đi dài hơn ở trang <a href="nghe-nghiep.html">nghề 3D artist</a>, nơi mô tả nhu cầu tuyển và mức thu nhập theo khoảng, có ghi rõ đó là ước lượng.</p>
+
+<p><strong style="color:#fff;">Câu ba: mỗi tuần bạn còn bao nhiêu giờ thật sự rảnh?</strong> Dưới ba giờ thì mọi hình thức kèm đều biến thành buổi nhắc bài: người dạy giao việc, bạn không kịp làm, buổi sau lại ôn lại. Tiền chảy đi mà kỹ năng đứng yên. Từ tám giờ một tuần trở lên thì kèm riêng mới chạy đúng nhịp.</p>
+
+<p>Thêm một câu phụ nhưng quan trọng về mặt kỹ thuật: máy của bạn có kham nổi khâu kết xuất chưa. Học kèm trên một máy dựng xong không render được là trả tiền để nhìn vòng xoay chờ. Mức cấu hình đủ cho từng giai đoạn nằm trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<h2>Danh sách kiểm tra trước khi đóng tiền buổi đầu</h2>
+
+<p>Chạy qua danh sách này với bất kỳ nơi nào bạn đang cân nhắc, kể cả với chúng tôi. Thiếu quá hai dòng thì nên hỏi lại cho rõ trước khi chuyển khoản.</p>
+
+<ul>
+<li>Người dạy mở được một file gốc cho bạn xem, không chỉ ảnh đã kết xuất.</li>
+<li>Có bài học viên còn yếu kèm nhận xét, không chỉ trưng bài đẹp nhất.</li>
+<li>Nói rõ được đầu ra sau mỗi chặng, không chỉ liệt kê nội dung sẽ dạy.</li>
+<li>Ghi rõ bạn được chữa file bao nhiêu lần, dưới dạng con số chứ không phải chữ hỗ trợ nhiệt tình.</li>
+<li>Có thoả thuận về việc dời buổi và việc buổi học có được ghi lại hay không.</li>
+<li>Người dạy dám nói ra trường hợp bạn chưa cần trả tiền cho họ.</li>
+<li>Bạn hiểu mình đang mua gì: chẩn đoán, lộ trình, hay môi trường học.</li>
+</ul>
+
+<p>Dạng bằng chứng bạn nên đòi hỏi trông như trang <a href="hoc-vien.html">bài tập học viên</a> của chúng tôi, có cả bài tốt lẫn bài còn yếu kèm nhận xét. Ảnh đẹp tải ở đâu cũng có, nhưng một file sạch và một lời nhận xét cụ thể thì không giả được.</p>
+
+<h2>Khi nào học kèm 3D chưa đáng tiền, nói thẳng</h2>
+
+<p>Phần này đi ngược lợi ích của một nơi vừa dạy vừa nhận kèm riêng như chúng tôi, nhưng nói trước thì bạn đỡ mất tiền.</p>
+
+<p>Nếu bạn chưa mở phần mềm lần nào, hãy dành hai tuần tự làm quen trước. Tải <a href="cam-nang.html">cẩm nang Blender</a> và làm hết phần bài tập trong đó. Hai tuần này không tốn đồng nào và nó quyết định việc bạn có thật sự thích công việc này hay không.</p>
+
+<p>Nếu bạn cần một môi trường có người cùng học để không bỏ cuộc, lớp mới là thứ bạn cần chứ không phải kèm riêng. Hình thức học từ xa có chữa bài theo tuần được mô tả trong bài <a href="blog-khoa-hoc-3d-online.html">khoá học 3D online</a>, còn nếu bạn ở miền Nam và muốn ngồi cùng phòng thì phần so sánh trực tiếp và trực tuyến nằm ở bài <a href="blog-khoa-hoc-3d-tai-tphcm.html">khoá học 3D tại TPHCM</a>.</p>
+
+<p>Nếu bạn đang kẹt vì chưa biết mình muốn làm mảng nào, trả tiền cho người kèm cũng không giải được. Câu hỏi đó cần vài tuần thử nhiều mảng, không cần người ngồi cạnh.</p>
+
+<h2>Dùng học kèm 3D sao cho hiệu quả nhất</h2>
+
+<p>Đây là phần nhiều người không muốn nghe. Kèm riêng rút ngắn quãng mò mẫm, nó không rút ngắn quãng luyện tay. Một người dạy giỏi có thể chỉ cho bạn trong mười lăm phút thứ bạn tự tìm mất ba tuần, nhưng sau đó vẫn phải là bạn ngồi dựng lại cho tới khi thao tác thành phản xạ.</p>
+
+<p>Cách dùng hiệu quả nhất, theo quan sát của chúng tôi, là xen kẽ chứ không liên tục. Học kèm một đợt ngắn để gỡ chỗ kẹt và nhận một bộ tiêu chuẩn, rồi tự làm vài tháng, rồi quay lại khi gặp bức tường mới. Chi phí thấp hơn nhiều so với kèm đều đặn, và kỹ năng bền hơn vì bạn tự giải quyết phần lớn vấn đề.</p>
+
+<p>Một thói quen nhỏ làm buổi kèm đáng tiền hơn hẳn: trước mỗi buổi, viết ra đúng một câu mô tả chỗ bạn thấy bí và gửi trước kèm file. Người dạy có thời gian xem trước, buổi học bắt đầu từ phút thứ nhất chứ không mất hai mươi phút để hiểu bạn đang làm gì.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Học kèm 3D là học những gì, có khác lớp 3D thường không?</p>
+<p>Học kèm 3D không có giáo trình cố định. Buổi học bắt đầu bằng việc mở file bạn đang làm dở, người dạy xem lưới, đèn, vật liệu rồi chỉ ra chỗ làm hình xấu đi và sửa cùng bạn. Lớp thường đi theo thứ tự của giáo trình, kèm riêng đi theo thứ tự của chỗ bạn đang kẹt. Vì vậy kèm riêng nhanh hơn khi bạn đã có file, và chậm hơn khi bạn chưa có gì để mang ra.</p>
+
+<p class="faq-q">Học kèm 3D cần bao nhiêu buổi?</p>
+<p>Ước lượng từ các nhóm chúng tôi đã kèm là sáu tới mười buổi cho một mục tiêu gọn, ví dụ hoàn thiện một món sản phẩm từ khối thô tới ảnh đăng được. Nếu đích đến là một bộ hồ sơ bốn tới sáu món thì khoảng mười tới mười sáu tuần. Quá mười lăm buổi mà chưa ra món nào hoàn chỉnh thì thường mục tiêu đặt quá rộng.</p>
+
+<p class="faq-q">Chưa biết gì về Blender có nên học kèm 3D ngay không?</p>
+<p>Thường là chưa. Hai tuần đầu chỉ là làm quen giao diện và dựng vài khối đơn giản, phần đó tài liệu miễn phí dạy tốt và trả tiền cho nó là lãng phí. Mốc hợp lý để bắt đầu kèm là khi bạn đã tự dựng xong ít nhất một món và tự thấy nó chưa đẹp nhưng không chỉ ra được vì sao.</p>
+
+<p class="faq-q">Học kèm 3D online có kém học trực tiếp không?</p>
+<p>Không kém, vì phần lớn thời gian là hai người cùng nhìn một màn hình. Điều kiện cần chỉ là gọi video ổn định và quyền điều khiển màn hình khi cần sửa trực tiếp. Phần nặng là kết xuất chạy trên máy bạn chứ không qua đường truyền, nên khoảng cách gần như không ảnh hưởng tới chất lượng buổi học.</p>
+
+<p class="faq-q">Làm sao biết một chỗ nhận học kèm 3D có làm nghề thật?</p>
+<p>Hỏi xem một file gốc chứ không chỉ ảnh đã kết xuất. Người làm nghề mở file ra được, chỉ cho bạn cách đặt tên, cách gom bộ sưu tập và chỗ họ đã phải sửa lại. Hỏi thêm xem có bài học viên còn yếu kèm nhận xét hay không, vì nơi chỉ trưng bài đẹp nhất thường đang trưng bài của người vốn đã giỏi.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn không chắc mình thuộc hình thức nào trong năm hình thức trên, gửi cho chúng tôi hai ba món bạn đã làm và một câu mô tả chỗ bạn thấy bí. Chúng tôi sẽ nói thẳng bạn đang thiếu gì, kể cả khi câu trả lời là chưa cần trả tiền cho ai cả. Muốn xem lộ trình có người sửa bài theo tuần thì hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
 """,
     },
 ]
