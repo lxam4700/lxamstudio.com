@@ -1032,13 +1032,13 @@ POSTS = [
     {
         "slug": "add-on-hard-surface-blender",
         "title": "Add-on hard-surface Blender: nên cài những gì",
-        "desc": "Danh sách add-on hard-surface mà artist tại CD Projekt Red dùng, và đánh giá thẳng thắn cái nào thật sự cần khi bạn làm sản phẩm thương mại.",
+        "desc": "Add-on hard-surface Blender nào thật sự cần khi dựng sản phẩm thương mại, cái nào cài sớm thì hại topology. Bảng chọn theo giai đoạn và checklist mua.",
         "tag": "Công cụ",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "read": "9 phút đọc",
-        "updated": "2026-10-24",
-        "updated_vn": "24/10/2026",
+        "read": "12 phút đọc",
+        "updated": "2026-11-12",
+        "updated_vn": "12/11/2026",
         "thumb": "assets/b64a4cd7.jpg",
         "sources": [
             ("Tools and Tips for Hard-Surface Modeling in Blender (80 Level, Michał Kalisz, CD Projekt Red)",
@@ -1046,52 +1046,141 @@ POSTS = [
             ("Ahmed Yahya Shared a Breakdown of Hard-Surface Modeling Process (80 Level)",
              "https://80.lv/articles/artist-shared-how-to-make-hard-surface-modeling-more-artistic-easy"),
         ],
+        "faq": [
+            ('Người mới nên cài add-on hard-surface Blender từ lúc nào?',
+             'Sau khi bạn đã dựng tay xong ít nhất ba món có cạnh bo và lỗ khoan mà không dùng boolean. Mốc đó quan trọng vì add-on hard-surface chủ yếu rút ngắn thao tác, không dạy bạn nhận ra topology xấu. Cài sớm thì bạn vẫn ra hình nhanh, nhưng tới lúc bevel vỡ hoặc bóng trên bề mặt gợn sóng thì không biết bắt đầu sửa từ đâu.'),
+            ('Blender bản thường có đủ để làm hard-surface thương mại không?',
+             'Đủ cho phần lớn việc dựng sản phẩm tĩnh. Bevel, boolean, mirror, array và subdivision có sẵn trong Blender đã giải được hầu hết chi tiết của đồ gia dụng, thiết bị và bao bì. Add-on tiết kiệm thao tác chứ không mở ra hình dạng mới, nên thiếu chúng thì chậm hơn chứ không phải không làm được.'),
+            ('Chỉ được chọn ba add-on hard-surface thì chọn gì?',
+             'Hard Ops, Boxcutter và MESHMachine, theo thứ tự đó, và chỉ sau khi đã qua được mốc dựng tay. Hai cái đầu lo tốc độ cắt khối, cái thứ ba lo chỗ giao nhau giữa các bề mặt sau boolean, đúng chỗ người mới hay bỏ cuộc. Modifier List nên cài kèm vì nhẹ và gần như không có rủi ro.'),
+            ('Add-on hard-surface có làm file nặng hoặc khó mở trên máy khác không?',
+             'Bản thân add-on không đi theo file. Rủi ro nằm ở chỗ chúng khuyến khích để nguyên một chồng modifier và một loạt vật thể boolean chưa áp dụng, nên file mở trên máy khác dễ chậm hoặc khác đi nếu bên kia thiếu đúng phiên bản. Trước khi gửi file cho người khác, nên áp dụng modifier và gom lại cho gọn.'),
+            ('Có nên mua add-on trả phí ngay trong năm đầu học không?',
+             'Thường là chưa cần. Trong năm đầu, phần làm hình xấu hiếm khi là thiếu công cụ, mà là tham chiếu sơ sài và bevel đặt sai chất liệu. Số tiền đó dùng cho tham chiếu tốt hoặc một chặng có người chữa file sẽ đổi lại nhiều hơn. Khi đã nhận việc thật và thời gian là chi phí thật thì add-on trả phí mới hoàn vốn nhanh.'),
+        ],
         "body": """
-<p class="lead">Michał Kalisz, Environment/Prop Artist tại CD Projekt Red, từng chia sẻ trên 80 Level danh sách add-on anh dùng cho hard-surface. Danh sách đó tốt, nhưng nếu bạn đang học để làm sản phẩm thương mại chứ không phải asset game, không phải cái nào cũng cần.</p>
+<p class="lead">Câu trả lời ngắn cho add-on hard-surface Blender: ba cái đáng cài là Hard Ops, Boxcutter và MESHMachine, và chỉ nên cài sau khi bạn đã dựng tay được vài món có cạnh bo tử tế. Trước mốc đó, add-on làm bạn ra hình nhanh hơn nhưng giấu đi đúng thứ bạn cần học.</p>
 
-<p>Dưới đây là danh sách của anh ấy, kèm đánh giá của tôi về mức độ cần thiết cho công việc dựng sản phẩm và TVC.</p>
+<p>Michał Kalisz, Environment và Prop Artist tại CD Projekt Red, từng chia sẻ trên 80 Level danh sách add-on anh dùng cho hard-surface. Danh sách đó tốt, nhưng nó viết cho người làm asset game. Nếu bạn đang học để dựng sản phẩm thương mại, nhu cầu khác đi khá nhiều: ít bake texture hơn, nhiều cạnh bo sạch và phản chiếu đúng hơn.</p>
 
-<h2>Nhóm đáng cài sớm</h2>
+<p>Bài này đi qua danh sách của anh ấy, kèm đánh giá thẳng về mức độ cần thiết cho công việc dựng sản phẩm và TVC, một bảng chọn theo giai đoạn, và danh sách kiểm tra trước khi bạn bỏ tiền.</p>
 
-<h3>Hard Ops + Boxcutter</h3>
+<h2>Ba câu hỏi lọc trước khi cài bất kỳ add-on hard-surface nào</h2>
+
+<p>Phần lớn thời gian lãng phí quanh chủ đề này không nằm ở chọn sai add-on, mà ở cài đúng cái nhưng sai lúc. Ba câu hỏi dưới đây lọc được gần hết.</p>
+
+<p><strong style="color:#fff;">Một: bạn đã dựng tay được món nào có cạnh bo và lỗ khoan chưa?</strong> Nếu chưa, chưa phải lúc. Boolean tạo ra topology xấu, và nếu bạn chưa biết topology tốt trông thế nào thì bạn sẽ không thấy nó xấu, cho tới lúc bevel vỡ và không hiểu vì sao.</p>
+
+<p><strong style="color:#fff;">Hai: bạn làm asset game hay làm ảnh sản phẩm?</strong> Hai hướng này cần hai nhóm công cụ khác nhau. Nhóm UV và texel density chỉ đáng cài ở hướng thứ nhất. Hướng thứ hai dùng vật liệu procedural là chính, nên nửa danh sách trở thành thừa.</p>
+
+<p><strong style="color:#fff;">Ba: chỗ nghẽn hiện tại của bạn là thao tác hay là mắt nhìn?</strong> Nếu bạn biết phải làm gì mà làm chậm, add-on giúp thật. Nếu bạn nhìn render của mình thấy chưa ổn mà không chỉ ra được vì sao, không add-on nào chữa được, chỗ đó cần người xem file. Bài <a href="blog-hoc-modeling-3d-tu-dau.html">học modeling 3D từ đâu</a> mô tả đúng chuỗi mốc này và chỉ ra chỗ phần lớn người học đứng lại.</p>
+
+<h2>Nhóm add-on hard-surface đáng cài sớm</h2>
+
+<h3>Hard Ops và Boxcutter</h3>
 <p>Hai cái này thường đi cùng nhau. Boxcutter lo phần cắt boolean nhanh, Hard Ops là bộ trợ lý gom các thao tác lặp lại. Với đồ công nghiệp như vỏ máy, thiết bị, chi tiết kim loại, cặp này rút ngắn thời gian rõ rệt.</p>
-<p><strong style="color:#fff;">Nhưng:</strong> đừng cài khi chưa dựng được vỏ máy bằng tay. Boolean tạo ra topology xấu, và nếu bạn chưa biết topology tốt trông thế nào thì bạn sẽ không thấy nó xấu, cho tới lúc bevel vỡ và không hiểu vì sao.</p>
+<p><strong style="color:#fff;">Nhưng:</strong> đừng cài khi chưa dựng được vỏ máy bằng tay. Chúng không dạy bạn vì sao một cạnh bo trông đắt tiền còn cạnh khác trông như nhựa rẻ. Chúng chỉ giúp bạn tới chỗ đó nhanh hơn, kể cả khi hướng đi đang sai.</p>
 
 <h3>MESHMachine</h3>
-<p>Chuyên xử lý phần khó nhất của hard-surface: chỗ giao nhau giữa các bề mặt sau khi boolean. Đây là add-on tôi cho là đáng tiền nhất trong danh sách, vì nó giải quyết đúng chỗ mà người mới hay bỏ cuộc.</p>
+<p>Chuyên xử lý phần khó nhất của hard-surface: chỗ giao nhau giữa các bề mặt sau khi boolean. Đây là add-on tôi cho là đáng tiền nhất trong danh sách, vì nó giải quyết đúng chỗ mà người mới hay bỏ cuộc. Khi ba mặt gặp nhau ở một góc và bevel bắt đầu chồng lên nhau, sửa tay mất rất nhiều thời gian.</p>
 
 <h3>Modifier List</h3>
-<p>Nhỏ nhưng dùng hàng ngày. Stack modifier mặc định của Blender khó đọc khi dài; cái này làm nó gọn lại. Rẻ, không rủi ro.</p>
+<p>Nhỏ nhưng dùng hàng ngày. Chồng modifier mặc định của Blender khó đọc khi dài; cái này làm nó gọn lại. Rẻ, không rủi ro, và không che giấu kiến thức nào cả.</p>
 
-<h2>Nhóm tuỳ việc</h2>
+<h2>Nhóm add-on tuỳ việc</h2>
 
-<h3>Texel Density Checker &amp; UVPackMaster</h3>
-<p>Cả hai đều xoay quanh UV. Nếu bạn làm asset game hoặc cần texture bake, chúng cần thiết. Nếu bạn render sản phẩm tĩnh với vật liệu procedural, và phần lớn job TVC sản phẩm rơi vào đây, thì bạn hiếm khi động tới.</p>
+<h3>Texel Density Checker và UVPackMaster</h3>
+<p>Cả hai đều xoay quanh UV. Nếu bạn làm asset game hoặc cần bake texture, chúng cần thiết. Nếu bạn render sản phẩm tĩnh với vật liệu procedural, và phần lớn job TVC sản phẩm rơi vào đây, thì bạn hiếm khi động tới.</p>
 
 <h3>GroupPro, Array Tools, QBlocker, Rebevel</h3>
-<p>Đều là tiện ích tiết kiệm thao tác. Hữu ích khi bạn đã làm nhanh và muốn nhanh hơn. Không nên là thứ bạn cài trong sáu tháng đầu.</p>
+<p>Đều là tiện ích tiết kiệm thao tác. Hữu ích khi bạn đã làm nhanh và muốn nhanh hơn. Không nên là thứ bạn cài trong sáu tháng đầu, vì mỗi add-on thêm vào là một bộ phím tắt phải nhớ, và trí nhớ của bạn lúc đó nên dành cho thứ khác.</p>
 
-<h2>Phần Kalisz nói mà tôi cho là quan trọng hơn cả danh sách add-on</h2>
+<h2>Bảng chọn add-on hard-surface theo giai đoạn</h2>
 
-<p>Anh ấy nhấn mạnh nghiên cứu tham chiếu kỹ trước khi dựng, và làm blockout trước khi vào chi tiết. Về topology: giữ số vòng loop ở mức vừa đủ để kiểm soát, ưu tiên quad nhưng chấp nhận ngon trên bề mặt phẳng, và bevel theo đúng chất liệu, vì kim loại gia công có cạnh khác với nhựa đúc khuôn.</p>
+<p>Bảng dưới đây không xếp hạng add-on theo chất lượng. Nó xếp theo thời điểm cài vào thì có lợi, vì đó mới là chỗ hay sai.</p>
 
-<p>Không add-on nào thay được mấy điều đó. Một người nắm chắc blockout và bevel, dùng Blender trần, vẫn ra sản phẩm tốt hơn người cài đủ mười add-on mà bỏ qua tham chiếu.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Giai đoạn</th><th>Dấu hiệu nhận biết</th><th>Nên cài</th><th>Chưa nên cài</th><th>Việc quan trọng hơn add-on</th></tr></thead>
+<tbody>
+<tr><td>Ba tháng đầu</td><td>Còn phải tra phím tắt khi bo cạnh</td><td>Không cài gì, hoặc chỉ Modifier List</td><td>Mọi thứ liên quan boolean</td><td>Dựng tay ba món có lỗ khoan và cạnh bo</td></tr>
+<tr><td>Đã dựng tay được vài món</td><td>Hình đúng khối nhưng làm rất chậm</td><td>Hard Ops, Boxcutter</td><td>Nhóm UV</td><td>Tập blockout trước khi vào chi tiết</td></tr>
+<tr><td>Bắt đầu nhận bài khó</td><td>Bevel vỡ ở chỗ ba mặt gặp nhau</td><td>MESHMachine</td><td>Nhóm tiện ích tăng tốc</td><td>Học đọc chất liệu từ ảnh tham chiếu</td></tr>
+<tr><td>Làm asset có bake texture</td><td>Cần trải UV đều và xếp khít</td><td>Texel Density Checker, UVPackMaster</td><td>Không có</td><td>Quy ước đặt tên và tổ chức file</td></tr>
+<tr><td>Làm nghề, tính theo giờ</td><td>Lặp lại một dạng chi tiết nhiều lần</td><td>GroupPro, Array Tools, Rebevel</td><td>Không có</td><td>Thư viện chi tiết dùng lại của riêng bạn</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Nếu bạn đang ở hai hàng đầu, kết luận thực tế là chưa nên mua gì. Thứ tự bài tập để qua được mốc đó nằm trong bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a>, dùng được cả khi bạn tự học.</p>
+
+<figure>
+  <img src="assets/jhm-chi-tiet-lo-bat.webp" alt="Cận cảnh chi tiết lỗ bắt vít trên giá treo kim loại JHM dựng bằng Blender, thấy rõ cạnh bo và nếp gấp tôn trên nền tối" loading="lazy" width="1800" height="1012">
+  <figcaption><strong>Chi tiết lỗ bắt vít trong dự án JHM của LXAM Studio.</strong> Dạng chi tiết này là bài kiểm tra thẳng thắn cho mọi add-on hard-surface: chỉ cần bevel sai tỉ lệ hoặc topology quanh lỗ khoan lộn xộn là phản chiếu trên mặt phẳng gợn ngay, nhìn ảnh nhỏ cũng thấy.</figcaption>
+</figure>
+
+<h2>Phần quan trọng hơn cả danh sách add-on</h2>
+
+<p>Kalisz nhấn mạnh nghiên cứu tham chiếu kỹ trước khi dựng, và làm blockout trước khi vào chi tiết. Về topology: giữ số vòng loop ở mức vừa đủ để kiểm soát, ưu tiên quad nhưng chấp nhận tam giác trên bề mặt phẳng, và bevel theo đúng chất liệu, vì kim loại gia công có cạnh khác với nhựa đúc khuôn.</p>
+
+<p>Dòng cuối cùng đó là dòng đáng tiền nhất trong cả bài gốc. Một cạnh bo rộng ba milimet trên vỏ nhựa là bình thường, nhưng đặt lên tấm thép dập thì món đồ lập tức trông như đồ chơi. Không add-on nào biết bạn đang dựng vật liệu gì, chỉ ảnh tham chiếu mới nói được điều đó.</p>
+
+<p>Không add-on nào thay được mấy điều trên. Một người nắm chắc blockout và bevel, dùng Blender trần, vẫn ra sản phẩm tốt hơn người cài đủ mười add-on mà bỏ qua tham chiếu. Nếu bạn đang nhắm hẳn vào mảng hàng tiêu dùng và thiết bị, bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> nói rõ bốn kỹ năng một lớp dạng này phải dạy và chỗ các lớp hay cắt bớt.</p>
 
 <h2>Góc nhìn ngược: đừng để kỹ thuật lấn hết</h2>
 
-<p>Ahmed Yahya, một 3D Environment &amp; Prop Artist khác, đưa ra lập luận đáng cân nhắc: tập trung quá mức vào kỹ thuật làm gián đoạn quá trình sáng tạo, và định hướng nghệ thuật nên dẫn dắt kỹ thuật chứ không phải ngược lại. Quy trình của anh đi qua Plasticity để dựng, Blender để dọn dẹp, ZBrush để lên high-poly.</p>
+<p>Ahmed Yahya, một 3D Environment và Prop Artist khác, đưa ra lập luận đáng cân nhắc: tập trung quá mức vào kỹ thuật làm gián đoạn quá trình sáng tạo, và định hướng nghệ thuật nên dẫn dắt kỹ thuật chứ không phải ngược lại. Quy trình của anh đi qua Plasticity để dựng, Blender để dọn dẹp, ZBrush để lên high-poly.</p>
 
-<p>Tôi đồng ý với nguyên tắc, nhưng có một điều kiện: nó chỉ đúng khi bạn đã đủ kỹ thuật để nó không cản đường. Người mới nghe câu "nghệ thuật quan trọng hơn kỹ thuật" rất dễ dùng nó làm cớ để không học topology, rồi mắc kẹt ở đúng chỗ topology.</p>
+<p>Tôi đồng ý với nguyên tắc, nhưng có một điều kiện: nó chỉ đúng khi bạn đã đủ kỹ thuật để nó không cản đường. Người mới nghe câu nghệ thuật quan trọng hơn kỹ thuật rất dễ dùng nó làm cớ để không học topology, rồi mắc kẹt ở đúng chỗ topology.</p>
 
 <blockquote><p>Kỹ thuật đủ tốt là kỹ thuật bạn không phải nghĩ tới. Trước khi tới được đó, bỏ qua kỹ thuật không phải là tự do, mà là trần thấp.</p></blockquote>
 
+<h2>Danh sách kiểm tra trước khi bỏ tiền mua add-on</h2>
+
+<p>Chạy qua danh sách này trước mỗi lần định mua. Thiếu quá hai dòng thì nên hoãn lại một tháng và quay lại sau.</p>
+
+<ul>
+<li>Bạn chỉ ra được đúng thao tác mình đang mất thời gian, bằng câu cụ thể chứ không phải cảm giác làm chậm.</li>
+<li>Bạn đã thử làm thao tác đó bằng công cụ có sẵn của Blender ít nhất ba lần.</li>
+<li>Add-on còn được cập nhật cho phiên bản Blender bạn đang dùng trong vòng một năm gần đây.</li>
+<li>Có bản dùng thử hoặc có video dài ai đó làm việc thật với nó, không chỉ đoạn quảng cáo ba mươi giây.</li>
+<li>Bạn biết trước nó ảnh hưởng gì tới topology, và biết cách dọn sau khi dùng.</li>
+<li>File bạn tạo ra vẫn mở được bình thường trên máy không cài add-on đó.</li>
+<li>Bạn không mua nó để tránh phải học một thứ cơ bản mà mình đang né.</li>
+</ul>
+
+<p>Dòng cuối là dòng hay bị vi phạm nhất. Mua một add-on để khỏi phải hiểu bevel cũng giống mua thêm giá sách để khỏi phải đọc. Dạng bằng chứng về việc học thật trông như trang <a href="hoc-vien.html">bài tập học viên</a> của chúng tôi, có cả bài tốt lẫn bài còn yếu kèm nhận xét.</p>
+
 <h2>Nếu chỉ được cài ba thứ</h2>
 
-<p>Với người học hard-surface để làm sản phẩm thương mại, tôi chọn: <strong style="color:#fff;">Hard Ops, Boxcutter, MESHMachine</strong>, và chỉ sau khi đã dựng tay được vài món tử tế. Số tiền còn lại để dành mua tham chiếu tốt hoặc một khoá học có người sửa bài, giá trị cao hơn.</p>
+<p>Với người học hard-surface để làm sản phẩm thương mại, tôi chọn: <strong style="color:#fff;">Hard Ops, Boxcutter, MESHMachine</strong>, và chỉ sau khi đã dựng tay được vài món tử tế. Số tiền còn lại để dành mua tham chiếu tốt hoặc một chặng có người sửa bài, giá trị cao hơn.</p>
 
-<p>Muốn biết hard-surface nằm ở đâu trong lộ trình học, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>. Nó là bước thứ năm, và có lý do nó không đứng sớm hơn. Còn nếu bạn đang nhắm hẳn vào mảng hàng tiêu dùng và thiết bị, bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> nói rõ bốn kỹ năng một lớp dạng này phải dạy và chỗ các lớp hay cắt bớt.</p>
+<p>Một lưu ý về máy móc: nhóm add-on boolean làm chồng modifier dài ra, và cảnh nặng lên nhanh hơn bạn nghĩ khi chưa áp dụng modifier. Mức cấu hình đủ cho từng giai đoạn nằm trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>, đọc trước khi đổ tiền vào phần mềm thay vì phần cứng.</p>
 
-<p>Nếu chưa dựng tay được vài món tử tế thì chưa phải lúc nghĩ tới add-on. Thứ tự bài tập để qua được mốc đó nằm trong bài <a href="blog-khoa-hoc-modeling-3d.html">khoá học modeling 3D</a>, dùng được cả khi bạn tự học. Muốn có người soi topology từng tuần thay vì tự đoán, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> chữa bài theo đúng thứ tự đó.</p>
+<p>Muốn biết hard-surface nằm ở đâu trong lộ trình học, xem <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>. Nó là bước thứ năm, và có lý do nó không đứng sớm hơn.</p>
+
+<h2>Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Người mới nên cài add-on hard-surface Blender từ lúc nào?</p>
+<p>Sau khi bạn đã dựng tay xong ít nhất ba món có cạnh bo và lỗ khoan mà không dùng boolean. Mốc đó quan trọng vì add-on hard-surface chủ yếu rút ngắn thao tác, không dạy bạn nhận ra topology xấu. Cài sớm thì bạn vẫn ra hình nhanh, nhưng tới lúc bevel vỡ hoặc bóng trên bề mặt gợn sóng thì không biết bắt đầu sửa từ đâu.</p>
+
+<p class="faq-q">Blender bản thường có đủ để làm hard-surface thương mại không?</p>
+<p>Đủ cho phần lớn việc dựng sản phẩm tĩnh. Bevel, boolean, mirror, array và subdivision có sẵn trong Blender đã giải được hầu hết chi tiết của đồ gia dụng, thiết bị và bao bì. Add-on tiết kiệm thao tác chứ không mở ra hình dạng mới, nên thiếu chúng thì chậm hơn chứ không phải không làm được.</p>
+
+<p class="faq-q">Chỉ được chọn ba add-on hard-surface thì chọn gì?</p>
+<p>Hard Ops, Boxcutter và MESHMachine, theo thứ tự đó, và chỉ sau khi đã qua được mốc dựng tay. Hai cái đầu lo tốc độ cắt khối, cái thứ ba lo chỗ giao nhau giữa các bề mặt sau boolean, đúng chỗ người mới hay bỏ cuộc. Modifier List nên cài kèm vì nhẹ và gần như không có rủi ro.</p>
+
+<p class="faq-q">Add-on hard-surface có làm file nặng hoặc khó mở trên máy khác không?</p>
+<p>Bản thân add-on không đi theo file. Rủi ro nằm ở chỗ chúng khuyến khích để nguyên một chồng modifier và một loạt vật thể boolean chưa áp dụng, nên file mở trên máy khác dễ chậm hoặc khác đi nếu bên kia thiếu đúng phiên bản. Trước khi gửi file cho người khác, nên áp dụng modifier và gom lại cho gọn.</p>
+
+<p class="faq-q">Có nên mua add-on trả phí ngay trong năm đầu học không?</p>
+<p>Thường là chưa cần. Trong năm đầu, phần làm hình xấu hiếm khi là thiếu công cụ, mà là tham chiếu sơ sài và bevel đặt sai chất liệu. Số tiền đó dùng cho tham chiếu tốt hoặc một chặng có người chữa file sẽ đổi lại nhiều hơn. Khi đã nhận việc thật và thời gian là chi phí thật thì add-on trả phí mới hoàn vốn nhanh.</p>
+
+<hr class="hr">
+
+<p>Tóm lại, chọn add-on hard-surface Blender là bài toán thời điểm nhiều hơn là bài toán danh sách. Ba cái đáng cài vẫn là Hard Ops, Boxcutter và MESHMachine, nhưng cài trước mốc dựng tay thì chúng che mất đúng thứ bạn cần nhìn thấy.</p>
+
+<p>Nếu bạn muốn có người soi topology từng tuần thay vì tự đoán, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> chữa bài theo đúng thứ tự trên, còn hình thức ngắn hơn theo chỗ kẹt thì xem bài <a href="blog-hoc-kem-3d.html">học kèm 3D</a>. Cần bộ checklist bevel và quy trình kết xuất để dùng khi làm việc thật thì tải <a href="cam-nang.html">cẩm nang Blender</a>. Còn nếu bạn đang cần ảnh sản phẩm cho thương hiệu chứ không phải học dựng, xem <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> của chúng tôi.</p>
 """,
     },
     {
@@ -3851,6 +3940,8 @@ POSTS = [
 
 <p>Bốn khối này cũng là xương sống của một lớp theo giáo trình, bạn có thể đối chiếu với nội dung trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a> để thấy phần nào trùng và phần nào chỉ kèm riêng mới làm được.</p>
 
+<p>Ở khối dựng hình, câu hỏi hay được mang tới buổi kèm nhất là có nên cài thêm công cụ cho nhanh hay không. Bài <a href="blog-add-on-hard-surface-blender.html">add-on hard-surface Blender</a> trả lời theo từng giai đoạn, kèm mốc nên dựng tay tới đâu rồi mới cài.</p>
+
 <h2>Một chu kỳ kèm riêng chia theo tuần</h2>
 
 <p>Mốc dưới đây là ước lượng từ các nhóm chúng tôi đã kèm, với nhịp một buổi mỗi tuần và tám tới mười hai giờ tự làm giữa hai buổi. Số giờ tự làm là biến quyết định, không phải số buổi.</p>
@@ -5179,6 +5270,8 @@ POSTS = [
 <p><strong style="color:#fff;">Câu ba: mỗi tuần bạn còn bao nhiêu giờ thật sự rảnh?</strong> Dưới ba giờ thì mọi hình thức kèm đều biến thành buổi nhắc bài: người dạy giao việc, bạn không kịp làm, buổi sau lại ôn lại. Tiền chảy đi mà kỹ năng đứng yên. Từ tám giờ một tuần trở lên thì kèm riêng mới chạy đúng nhịp.</p>
 
 <p>Thêm một câu phụ nhưng quan trọng về mặt kỹ thuật: máy của bạn có kham nổi khâu kết xuất chưa. Học kèm trên một máy dựng xong không render được là trả tiền để nhìn vòng xoay chờ. Mức cấu hình đủ cho từng giai đoạn nằm trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<p>Một câu phụ nữa thuộc về công cụ: nhiều người đi học kèm với kỳ vọng được chỉ bộ add-on thần kỳ. Danh sách thật ngắn hơn nhiều và phụ thuộc vào bạn đang ở mốc nào, bài <a href="blog-add-on-hard-surface-blender.html">add-on hard-surface Blender</a> nói rõ cái nào nên cài ở giai đoạn nào và cái nào cài sớm thì hại.</p>
 
 <h2>Danh sách kiểm tra trước khi đóng tiền buổi đầu</h2>
 
