@@ -1353,6 +1353,8 @@ POSTS = [
 <h3>Hard-surface và automotive: lâu hơn, rõ ràng hơn</h3>
 <p>Bề mặt phản chiếu không tha cho lỗi nào, nên yêu cầu về lưới và ánh sáng cao hơn hẳn. Cộng thêm 4 tới 8 tháng so với sản phẩm thường. Bù lại thị trường hẹp và người làm được không nhiều.</p>
 
+<p>Dù chọn hướng nào, mốc kết thúc của giai đoạn học luôn là một bộ hồ sơ gửi đi được, và bài <a href="blog-portfolio-3d-can-co-gi.html">portfolio 3D cần có gì</a> liệt kê sáu món tối thiểu cùng bảng tự chấm.</p>
+
 <h3>Phối cảnh sự kiện và triển lãm: nhanh có việc</h3>
 <p>Hướng này ở Việt Nam có nhu cầu đều, vì mỗi sự kiện đều cần phối cảnh để duyệt trước khi dựng thật. Yêu cầu về độ chính xác bề mặt thấp hơn automotive, nhưng đòi hỏi đọc được bản vẽ và làm việc theo deadline gấp. Xem các dạng việc thật ở trang <a href="dich-vu.html">dịch vụ render 3D và phối cảnh sự kiện</a>.</p>
 
@@ -3628,6 +3630,8 @@ POSTS = [
 <li>Tuỳ chọn thêm: một đoạn chuyển động ngắn vài giây, hoặc một ảnh tách lớp kỹ thuật.</li>
 </ul>
 
+<p>Phần mỗi món phải chứng minh điều gì, thứ tự ảnh bên trong một món và những lỗi trình bày làm mất điểm nhanh nhất được tách riêng trong bài <a href="blog-portfolio-3d-can-co-gi.html">portfolio 3D cần có gì</a>.</p>
+
 <p>Đếm ngược cũng quan trọng. Trên tám món thì gần như chắc chắn có món yếu, và người xem hồ sơ thường nhớ món tệ nhất. Cắt bớt là việc khó nhưng thường nâng chất bộ hồ sơ nhanh hơn làm thêm.</p>
 
 <figure>
@@ -5154,6 +5158,8 @@ POSTS = [
 
 <p>Thứ quyết định không phải bạn học nhanh hay chậm, mà là bạn có chịu quay lại sửa món cũ hay không. Người sửa lại nhiều lần một món tiến nhanh hơn người dựng mỗi tuần một món mới rồi không nhìn lại.</p>
 
+<p>Khi đã có vài món trong tay, câu hỏi tiếp theo là giữ món nào và bỏ món nào ra khỏi hồ sơ. Sáu món nên có và cách bày từng món nằm ở bài <a href="blog-portfolio-3d-can-co-gi.html">portfolio 3D cần có gì</a>.</p>
+
 <h2>Câu hỏi thường gặp về học modeling từ đầu</h2>
 
 <p class="faq-q">Học modeling từ đâu nếu chưa từng dùng phần mềm 3D nào?</p>
@@ -5327,6 +5333,151 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn không chắc mình thuộc hình thức nào trong năm hình thức trên, gửi cho chúng tôi hai ba món bạn đã làm và một câu mô tả chỗ bạn thấy bí. Chúng tôi sẽ nói thẳng bạn đang thiếu gì, kể cả khi câu trả lời là chưa cần trả tiền cho ai cả. Muốn xem lộ trình có người sửa bài theo tuần thì hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ đầu ra từng tuần.</p>
+""",
+    },
+    {
+        "slug": "portfolio-3d-can-co-gi",
+        "title": "Portfolio 3D cần có gì: sáu món và cách bày",
+        "desc": "Portfolio 3D cần có gì để người xem dừng lại: sáu món bắt buộc, thứ tự ảnh trong từng món, lỗi làm mất điểm và bảng tự chấm trước khi gửi hồ sơ đi.",
+        "tag": "Nghề",
+        "date": "2026-11-13",
+        "date_vn": "13/11/2026",
+        "read": "13 phút đọc",
+        "thumb": "assets/mclaren-765lt-goc-truoc-ba-phan-tu.webp",
+        "faq": [
+            ('Portfolio 3D cần có bao nhiêu món là đủ?',
+             'Sáu món hoàn chỉnh là đủ cho vòng hồ sơ đầu tiên, và bốn món cũng đã mở được cửa nếu cả bốn đều sạch. Số lượng gần như không được tính điểm, vì người xem chỉ lướt khoảng một tới hai phút và dừng ở món yếu nhất chứ không ở món mạnh nhất. Thêm món thứ mười hai mà nó kém hơn mức trung bình của chín món trước thì bạn vừa kéo cả bộ xuống.'),
+            ('Bài làm theo hướng dẫn trên mạng có được đưa vào portfolio 3D không?',
+             'Được, với hai điều kiện. Một là bạn ghi rõ đó là bài theo hướng dẫn và ghi tên tác giả gốc. Hai là bạn đã đổi ít nhất một lớp của bài, thường là ánh sáng hoặc vật liệu, rồi nói được vì sao đổi. Giấu nguồn là rủi ro lớn nhất, vì người tuyển trong nghề này thường đã xem qua đúng những bài hướng dẫn phổ biến đó.'),
+            ('Chưa có khách hàng nào thì lấy đề bài ở đâu?',
+             'Lấy một sản phẩm có thật đang bán, tự đặt cho mình một yêu cầu cụ thể như một ảnh trưng bày và một ảnh chi tiết, rồi làm đúng như đang nhận việc. Ghi rõ trong phần mô tả rằng đây là bài tự đặt, không phải việc đã giao. Cách này cho bạn đề bài gần với thực tế mà không phải nói sai về kinh nghiệm.'),
+            ('Nên đăng portfolio 3D ở đâu, ArtStation hay trang riêng?',
+             'Nơi đăng ít quan trọng hơn cách sắp xếp. Một trang có sẵn cộng đồng giúp bạn được nhìn thấy, một trang riêng giúp bạn kiểm soát thứ tự và phần chú thích. Nếu chỉ chọn một thì bắt đầu ở nơi có sẵn người xem, miễn là món mạnh nhất nằm ở ô đầu tiên và mỗi món đều có mô tả ngắn về vai trò của bạn.'),
+            ('Portfolio 3D có cần đoạn chuyển động không hay ảnh tĩnh là đủ?',
+             'Ảnh tĩnh đủ để xin việc dựng hình và kết xuất sản phẩm. Một đoạn quay quanh dài tám tới mười hai giây chủ yếu để chứng minh khối chịu được mọi góc nhìn, thứ mà một ảnh tĩnh chọn góc đẹp có thể che giấu. Nếu bạn nhắm mảng quảng cáo hoặc sự kiện thì đoạn chuyển động chuyển từ nên có thành bắt buộc.'),
+        ],
+        "body": """
+<p class="lead">Portfolio 3D cần có gì thì câu trả lời ngắn là sáu món, không phải sáu mươi: một món sản phẩm sạch lưới, một món vật liệu khó, một món ánh sáng kể được không khí, một món bối cảnh, một đoạn chuyển động ngắn và một trang mô tả quy trình. Người xem hồ sơ của bạn thường dừng lại một tới hai phút, nên thứ quyết định là món đầu tiên họ nhìn thấy và món yếu nhất họ tìm ra, chứ không phải tổng số bài bạn đăng.</p>
+
+<p>Phần lớn hồ sơ bị bỏ qua không phải vì người làm kém. Chúng bị bỏ qua vì chúng là một đống ảnh xếp cạnh nhau, không nói được người làm giỏi ở khâu nào và nhận được việc gì. Bài này đi theo hướng ngược lại: mỗi món trong bộ hồ sơ phải chứng minh đúng một điều, và nếu không chứng minh được gì thì món đó nên bị bỏ ra.</p>
+
+<h2>Portfolio 3D cần có gì: sáu món và việc mỗi món phải chứng minh</h2>
+
+<p>Một bộ hồ sơ tốt giống một bộ bằng chứng hơn là một cuốn album. Người xem cần biết bạn làm được gì mà không cần họ hỏi thêm. Sáu món dưới đây bao phủ gần hết những câu hỏi mà một studio hoặc một khách hàng sẽ đặt ra.</p>
+
+<h3>1. Một món sản phẩm có lưới sạch</h3>
+<p>Thường là món mở đầu. Chọn một vật có mặt cong gặp mặt phẳng, ví dụ một thiết bị gia dụng hoặc một chai đựng. Người xem nhìn vào đây để biết bạn kiểm soát được hình khối chứ không chỉ che lỗi bằng ánh sáng. Nếu bạn chưa chắc bắt đầu từ đâu, thứ tự năm bước đầu nằm ở bài <a href="blog-hoc-modeling-3d-tu-dau.html">học modeling 3D từ đâu</a>.</p>
+
+<h3>2. Một món vật liệu khó</h3>
+<p>Kim loại xước, thuỷ tinh có độ dày, vải, da, hoặc chất lỏng. Vật liệu dễ là thứ ai cũng làm được sau hai tuần, nên nó không chứng minh gì. Một bề mặt kim loại có vết gia công đúng hướng nói nhiều hơn mười ảnh nhựa bóng.</p>
+
+<h3>3. Một món ánh sáng có không khí</h3>
+<p>Cùng một khối, đặt trong hai điều kiện sáng khác nhau, và bạn nói được vì sao chọn phương án cuối. Đây là món phân biệt rõ nhất giữa người mới và người đã làm nghề. Năm lỗi làm render trông rẻ tiền được liệt kê trong bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>, nên soát lại món này theo danh sách đó trước khi đăng.</p>
+
+<h3>4. Một món bối cảnh hoặc không gian</h3>
+<p>Một góc phòng, một quầy trưng bày, một khu gian hàng. Món này chứng minh bạn tổ chức được cảnh nhiều vật thể, biết bố cục và biết giữ file không vỡ khi nặng. Nó cũng là món gần nhất với việc thật trong mảng sự kiện và trưng bày.</p>
+
+<h3>5. Một đoạn chuyển động tám tới mười hai giây</h3>
+<p>Không cần kể chuyện. Một vòng quay quanh hoặc một cú đẩy máy chậm đã đủ, vì mục đích là chứng minh khối của bạn chịu được mọi góc nhìn. Ảnh tĩnh cho phép bạn giấu một mặt chưa xong, đoạn quay thì không. Trình tự dựng một shot hoàn chỉnh nằm trong bài <a href="blog-quy-trinh-mot-shot-tvc.html">dựng TVC 3D</a>.</p>
+
+<h3>6. Một trang mô tả quy trình</h3>
+<p>Món bị bỏ quên nhiều nhất và lại là món ăn điểm nhất. Một trang gồm ảnh lưới, ảnh bố trí đèn, hai bản nháp bị loại và vài dòng giải thích. Người tuyển nhìn trang này để biết bạn làm việc có đầu có đuôi hay chỉ may mắn ra được một ảnh đẹp.</p>
+
+<figure>
+  <img src="assets/jhm-chu-thich-lo-vua.webp" alt="Chi tiết giá đỡ thép JHM dựng 3D, có đường chú thích chỉ vào các lỗ bám vữa kèm dòng giải thích bằng tiếng Anh trên nền lưới xám" loading="lazy" width="1800" height="1012">
+  <figcaption><strong>Một chi tiết kỹ thuật được chú thích, trong dự án JHM của LXAM Studio.</strong> Dạng hình này đáng giá trong hồ sơ vì nó buộc bạn hiểu món đồ chứ không chỉ dựng lại hình dáng của nó. Khi bạn chỉ được vào một bộ phận và nói nó dùng để làm gì, người xem biết bạn đọc được bản vẽ.</figcaption>
+</figure>
+
+<h2>Người tuyển ở studio và khách hàng trực tiếp tìm thứ khác nhau</h2>
+
+<p>Nhiều người làm một bộ hồ sơ rồi gửi cho cả hai nhóm. Hai nhóm này đọc hồ sơ theo hai cách khác hẳn, nên ít nhất bạn nên biết mình đang nhắm ai để xếp thứ tự món cho đúng.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Studio tuyển người</th><th>Khách hàng thuê ngoài</th></tr></thead>
+<tbody>
+<tr><td>Nhìn trước tiên</td><td>Độ sạch của khối và lưới</td><td>Ảnh cuối có dùng được cho hàng của họ không</td></tr>
+<tr><td>Quan tâm tới quy trình</td><td>Rất quan tâm, vì bạn sẽ làm chung file</td><td>Ít quan tâm, trừ khi dự án dài</td></tr>
+<tr><td>Thái độ với bài tự đặt</td><td>Chấp nhận, miễn ghi rõ</td><td>Thích món cùng ngành hàng của họ hơn</td></tr>
+<tr><td>Giá trị của đoạn chuyển động</td><td>Cộng điểm, không bắt buộc</td><td>Quan trọng nếu họ cần nội dung quảng cáo</td></tr>
+<tr><td>Số món cần xem</td><td>Bốn tới sáu, xem kỹ</td><td>Hai tới ba, xem nhanh</td></tr>
+<tr><td>Điểm trừ nặng nhất</td><td>Món yếu lẫn trong bộ</td><td>Không thấy món nào giống hàng của họ</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Kết luận thực dụng từ bảng này: giữ một bộ lõi sáu món, rồi đổi thứ tự và đổi món mở đầu tuỳ người nhận. Nếu bạn nhắm mảng hàng tiêu dùng thì món sản phẩm phải nằm đầu, và phần kỹ năng cần có cho mảng đó nằm trong bài <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
+
+<h2>Trình bày một món: thứ tự ảnh quyết định ấn tượng</h2>
+
+<p>Cùng một món, cách bày khác nhau cho kết quả khác hẳn. Thứ tự dưới đây là thứ tự chúng tôi thấy hiệu quả nhất khi xem hồ sơ của người tới xin học và xin việc.</p>
+
+<p>Ảnh đầu là ảnh mạnh nhất, cắt đúng khung, không viền, không chữ. Ảnh thứ hai và ba là góc khác và một ảnh chi tiết gần. Ảnh thứ tư là lưới hoặc bản tách rời. Ảnh thứ năm là bố trí đèn. Cuối cùng là ba tới bốn dòng mô tả: đề bài là gì, bạn làm phần nào, phần nào khó nhất và bạn giải ra sao.</p>
+
+<blockquote><p>Người xem hồ sơ không chấm điểm món đẹp nhất của bạn. Họ tìm món yếu nhất, vì món yếu nhất mới nói được mức sàn mà bạn luôn làm được. Bỏ một bài trung bình ra khỏi bộ hồ sơ thường làm cả bộ mạnh lên.</p></blockquote>
+
+<p>Ba dòng mô tả quan trọng hơn vẻ ngoài nhiều người tưởng. Khi bạn viết được phần nào khó và bạn xử lý ra sao, người đọc hiểu bạn nhận thức được việc mình làm. Khi phần mô tả chỉ có tên phần mềm và vài thẻ gắn, hồ sơ của bạn trông giống mọi hồ sơ khác.</p>
+
+<figure>
+  <img src="assets/mercedes-g63-khung-gam-va-doi-ky-thuat.webp" alt="Khung gầm xe Mercedes G63 dựng 3D nằm giữa đường, vài nhân vật đội mũ bảo hiểm quỳ xung quanh kiểm tra, ánh sáng ngược vàng cam" loading="lazy" width="1800" height="1013">
+  <figcaption><strong>Một cảnh trong TVC Mercedes G63 do LXAM Studio thực hiện.</strong> Hình dạng này hợp để làm món thứ tư trong hồ sơ: nó cho thấy bạn tổ chức được cảnh nhiều vật thể và giữ được ánh sáng thống nhất, hai thứ mà ảnh một món đặt trên nền trơn không chứng minh được.</figcaption>
+</figure>
+
+<h2>Những thứ làm portfolio 3D mất điểm nhanh nhất</h2>
+
+<p>Phần này rút từ những bộ hồ sơ chúng tôi được gửi tới xem. Lỗi lặp lại nhiều hơn người ta nghĩ, và phần lớn sửa được trong một buổi.</p>
+
+<p>Trộn bài theo hướng dẫn vào mà không ghi nguồn là lỗi nặng nhất. Người trong nghề nhận ra ngay những bài phổ biến, và khi họ nhận ra, mọi món còn lại cũng bị nghi ngờ theo.</p>
+
+<p>Lỗi thứ hai là nhồi số lượng. Mười hai món trong đó bảy món dở kém hơn hẳn bốn món chọn lọc. Lỗi thứ ba là ảnh quá tối hoặc quá nhiều hậu kỳ tới mức không còn nhìn ra khối. Lỗi thứ tư là không nói rõ phần nào do bạn làm trong một dự án nhóm, thứ sẽ thành vấn đề lớn nếu người tuyển hỏi lại ở vòng phỏng vấn.</p>
+
+<p>Lỗi cuối cùng thuộc về kỹ thuật trình bày: ảnh nặng vài chục megabyte, trang tải chậm, người xem thoát trước khi hình hiện ra. Xuất ảnh ở cạnh dài khoảng 2000 pixel là đủ cho gần hết mọi nhu cầu xem trên màn hình.</p>
+
+<h2>Danh sách kiểm tra trước khi gửi portfolio 3D đi</h2>
+
+<p>Chạy qua danh sách này với bộ hồ sơ hiện tại của bạn. Thiếu quá hai dòng thì chưa nên gửi.</p>
+
+<ul>
+<li>Món mạnh nhất nằm ở vị trí đầu tiên, không phải món mới nhất.</li>
+<li>Không còn món nào bạn phải giải thích hộ nó khi người khác xem.</li>
+<li>Mỗi món có ít nhất một ảnh lưới hoặc một ảnh cho thấy cấu trúc.</li>
+<li>Mỗi món có ba tới bốn dòng nói rõ đề bài và vai trò của bạn.</li>
+<li>Bài theo hướng dẫn được ghi rõ nguồn, bài tự đặt được ghi rõ là tự đặt.</li>
+<li>Có ít nhất một món thuộc đúng ngành hàng của nơi bạn đang gửi tới.</li>
+<li>Toàn bộ ảnh tải xong trong vài giây trên mạng di động.</li>
+<li>Tên và cách liên hệ nằm ngay trang đầu, không bắt người xem tìm.</li>
+</ul>
+
+<p>Dạng bằng chứng mà một nơi dạy nghề nên đưa ra cũng theo logic ấy, có cả bài tốt lẫn bài còn yếu kèm nhận xét, như trang <a href="hoc-vien.html">bài tập học viên</a> của chúng tôi. Ảnh đẹp thì tải ở đâu cũng có, còn một file sạch và một nhận xét cụ thể thì không mượn được.</p>
+
+<h2>Portfolio 3D cần có gì khi bạn chưa đi làm ngày nào</h2>
+
+<p>Đây là tình huống của gần hết người mới, và nó không phải trở ngại lớn như nhiều người sợ. Không ai chờ bạn có dự án thương mại ở bộ hồ sơ đầu tiên. Thứ họ chờ là bằng chứng rằng bạn làm việc được theo một đề bài.</p>
+
+<p>Cách làm gọn nhất: chọn ba sản phẩm có thật đang bán trên thị trường, tự viết cho mỗi món một đề bài ngắn như cho một ảnh trưng bày và một ảnh chi tiết, rồi làm đúng như đang nhận việc, kể cả việc đặt hạn hoàn thành cho mình. Ghi rõ trong mô tả rằng đây là bài tự đặt. Không ai trừ điểm sự trung thực, nhưng việc nói quá về kinh nghiệm thì bị phát hiện rất nhanh ở vòng sau.</p>
+
+<p>Nếu bạn muốn làm bộ hồ sơ theo lộ trình có người chữa bài từng tuần thay vì tự mò, cách chia sáu món theo từng chặng nằm ở bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>. Còn nếu bạn đang phân vân nên nhắm nhánh nào trong nghề trước khi dồn sức vào hồ sơ, trang <a href="nghe-nghiep.html">nghề 3D artist</a> mô tả các nhánh và loại việc tương ứng.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Portfolio 3D cần có bao nhiêu món là đủ?</p>
+<p>Sáu món hoàn chỉnh là đủ cho vòng hồ sơ đầu tiên, và bốn món cũng đã mở được cửa nếu cả bốn đều sạch. Số lượng gần như không được tính điểm, vì người xem chỉ lướt khoảng một tới hai phút và dừng ở món yếu nhất chứ không ở món mạnh nhất. Thêm món thứ mười hai mà nó kém hơn mức trung bình của chín món trước thì bạn vừa kéo cả bộ xuống.</p>
+
+<p class="faq-q">Bài làm theo hướng dẫn trên mạng có được đưa vào portfolio 3D không?</p>
+<p>Được, với hai điều kiện. Một là bạn ghi rõ đó là bài theo hướng dẫn và ghi tên tác giả gốc. Hai là bạn đã đổi ít nhất một lớp của bài, thường là ánh sáng hoặc vật liệu, rồi nói được vì sao đổi. Giấu nguồn là rủi ro lớn nhất, vì người tuyển trong nghề này thường đã xem qua đúng những bài hướng dẫn phổ biến đó.</p>
+
+<p class="faq-q">Chưa có khách hàng nào thì lấy đề bài ở đâu?</p>
+<p>Lấy một sản phẩm có thật đang bán, tự đặt cho mình một yêu cầu cụ thể như một ảnh trưng bày và một ảnh chi tiết, rồi làm đúng như đang nhận việc. Ghi rõ trong phần mô tả rằng đây là bài tự đặt, không phải việc đã giao. Cách này cho bạn đề bài gần với thực tế mà không phải nói sai về kinh nghiệm.</p>
+
+<p class="faq-q">Nên đăng portfolio 3D ở đâu, ArtStation hay trang riêng?</p>
+<p>Nơi đăng ít quan trọng hơn cách sắp xếp. Một trang có sẵn cộng đồng giúp bạn được nhìn thấy, một trang riêng giúp bạn kiểm soát thứ tự và phần chú thích. Nếu chỉ chọn một thì bắt đầu ở nơi có sẵn người xem, miễn là món mạnh nhất nằm ở ô đầu tiên và mỗi món đều có mô tả ngắn về vai trò của bạn.</p>
+
+<p class="faq-q">Portfolio 3D có cần đoạn chuyển động không hay ảnh tĩnh là đủ?</p>
+<p>Ảnh tĩnh đủ để xin việc dựng hình và kết xuất sản phẩm. Một đoạn quay quanh dài tám tới mười hai giây chủ yếu để chứng minh khối chịu được mọi góc nhìn, thứ mà một ảnh tĩnh chọn góc đẹp có thể che giấu. Nếu bạn nhắm mảng quảng cáo hoặc sự kiện thì đoạn chuyển động chuyển từ nên có thành bắt buộc.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn muốn một nhận xét thẳng về bộ hồ sơ đang có, gửi cho chúng tôi hai ba món và một câu nói rõ bạn đang nhắm loại việc nào. Chúng tôi sẽ chỉ ra món nên bỏ ra trước khi nói tới món nên thêm vào. Muốn đi theo lộ trình có đầu ra từng tuần thì hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ mỗi chặng bạn phải nộp được gì, và nếu bạn mới bắt đầu thì tải <a href="cam-nang.html">cẩm nang Blender</a> làm hết phần bài tập trong đó trước đã.</p>
 """,
     },
 ]
