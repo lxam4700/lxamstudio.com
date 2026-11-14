@@ -600,7 +600,7 @@ def scroll_banner():
     <div class="vsc-sh"></div>
     <div class="vsc-in" id="vscIn">
       <p class="vsc-k en">LXAM Studio</p>
-      <h1 class="vsc-h en"><span class="ln ln1"><i>Beyond light</i></span><span class="ln ln2"><i>and color</i></span></h1>
+      <div class="vsc-h en"><span class="ln ln1"><i>Beyond light</i></span><span class="ln ln2"><i>and color</i></span></div>
       <p class="vsc-p vi">Nghệ thuật không chỉ là ánh sáng và màu sắc. Đó là tổng hoà của mọi điều ta cất giữ trong ngôi đền tâm trí.</p>
     </div>
     <p class="vsc-hint en" id="vscHint">Scroll to explore</p>
@@ -1566,8 +1566,8 @@ if __name__ == "__main__":
                                         "Hai hệ đào tạo theo đúng quy trình studio làm nghề, từ con số 0 tới TVC hoàn chỉnh.")
                                + academy() + chung_nhan() + CERT_CSS
                                + contact_min("03", "Chưa biết bắt đầu <em>từ đâu</em>?", "Tu%20van%20khoa%20hoc%20Blender"),
-                               title="Khoá học Blender 3D từ con số 0 | LXAM Academy",
-                               desc="Khoá học 3D Blender của LXAM Academy: hai hệ đào tạo đi theo quy trình studio, có người chữa bài hằng tuần, học online hoặc tại TPHCM, kèm cẩm nang.",
+                               title="Khoá học Blender 3D online và tại TPHCM | LXAM Academy",
+                               desc="Khoá học Blender 3D với hai hệ đi theo đúng quy trình studio, có người chữa bài hằng tuần, học online hoặc tại TPHCM. Xem nội dung và đầu ra từng hệ.",
                                url=URL + "khoa-hoc.html", faq=True, home=False)),
         ("du-an-hoc-vien.html", page(hv_hero() + hv_phim() + hv_quytrinh() + hv_thang_than() + HV_CSS,
                                title="Bài tốt nghiệp của học viên | LXAM Academy",
