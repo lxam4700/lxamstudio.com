@@ -691,6 +691,8 @@ POSTS = [
 
 <h2>Hỏi đáp về học lighting trong Blender</h2>
 
+<p>Muốn tập riêng phần không khí trong một buổi, làm bài tập 90 phút trong bài <a href="blog-sau-node-va-mot-hanh-lang.html">dựng không khí trong Blender</a>. Bài đó cho thấy ánh sáng đúng quan trọng tới mức nào khi cảnh gần như không có model.</p>
+
 <p class="faq-q">Học lighting trong Blender mất bao lâu để dùng được?</p>
 <p>Ước lượng từ các nhóm chúng tôi đã chữa bài, cần khoảng tám tới mười hai tuần làm đều để đặt đèn có lý do thay vì mò. Riêng việc sửa năm lỗi trong bài này thì nhanh hơn nhiều, thường chỉ một tới hai buổi là thấy khác.</p>
 
@@ -1185,64 +1187,157 @@ POSTS = [
     },
     {
         "slug": "sau-node-va-mot-hanh-lang",
-        "title": "Sáu node và một hành lang: dựng không khí",
-        "desc": "Andrew Price dựng cảnh Backrooms gần như không model, không UV, chỉ sáu node. Phân tích vì sao cách làm này hiệu quả và khi nào nên áp dụng.",
+        "title": "Dựng không khí trong Blender: sáu node là đủ",
+        "desc": "Dựng không khí trong Blender không cần model chi tiết. Mổ cảnh Backrooms sáu node của Andrew Price và cách dùng lại nguyên tắc đó cho cảnh nền của job thật.",
         "tag": "Kỹ thuật",
         "date": "2026-09-07",
         "date_vn": "07/09/2026",
-        "read": "6 phút đọc",
-        "updated": "2026-10-24",
-        "updated_vn": "24/10/2026",
+        "read": "11 phút đọc",
+        "updated": "2026-11-17",
+        "updated_vn": "17/11/2026",
         "thumb": "assets/2cdbf5f9.jpg",
+        "faq": [
+            (u"Dựng không khí trong Blender có cần máy mạnh không?",
+             u"Phần dựng thì không. Cảnh kiểu này nhẹ vì hầu như không có model chi tiết. Phần nặng là volumetric và số bounce khi render, và cả hai đều giảm được mà người xem không nhận ra. Máy phổ thông dựng và xem thử thoải mái, chỉ chậm ở bản render cuối."),
+            (u"Không biết Geometry Nodes thì bắt đầu từ đâu?",
+             u"Bắt đầu từ một cụm bốn năm node giải quyết đúng một việc, ví dụ rải cột theo một đường. Học theo kiểu đi hết danh sách node thường bỏ giữa chừng vì không thấy dùng vào đâu."),
+            (u"Cách làm này có dùng được cho job thương mại không?",
+             u"Dùng được cho phần nền và bối cảnh, không dùng được cho chủ thể ở tiền cảnh. Khách trả tiền cho món đồ của họ thì mọi cạnh bông đều bị soi, còn bối cảnh thì họ chỉ cảm nhận tổng thể."),
+            (u"Bỏ UV unwrap có sao không?",
+             u"Với bề mặt phẳng và lặp lại như tường, sàn, trần thì box projection cho kết quả đủ tốt. Chỉ cần UV khi bề mặt cong, có đường may, hoặc khi bạn phải đặt nhãn và chữ vào đúng vị trí."),
+            (u"Làm sao biết cảnh đã đủ không khí hay chưa?",
+             u"Thu nhỏ ảnh xuống bằng móng tay rồi nhìn. Nếu vẫn đọc được không gian và vẫn thấy có chỗ sáng chỗ tối rõ rệt thì đã đủ. Nếu phải phóng to mới thấy hay, cảnh đang dựa vào chi tiết chứ không dựa vào không khí."),
+        ],
         "sources": [
             ("Blender Guru Shares How to Create The Backrooms Using Blender (80 Level)",
              "https://80.lv/articles/blender-guru-shares-how-to-create-the-backrooms-using-blender"),
         ],
         "body": """
-<p class="lead">Andrew Price, tức Blender Guru, dựng lại cảnh Backrooms và tuyên bố khoảng 90% hiệu ứng đến từ sáu node, không cần model, không cần UV unwrap. Nghe như mẹo vặt, nhưng bên dưới là một nguyên tắc đáng học.</p>
+<p class="lead">Dựng không khí trong Blender không bắt đầu từ model, mà bắt đầu từ việc quyết định cái gì không cần dựng. Andrew Price dựng lại cảnh Backrooms và cho biết khoảng 90% hiệu quả đến từ sáu node, không model, không UV unwrap. Bài này mổ cách làm đó và chỉ ra phần bạn mang được sang job thật.</p>
 
-<h2>Anh ấy làm gì</h2>
+<p>Viết từ chỗ ngồi dựng bối cảnh cho phim quảng cáo và phối cảnh sự kiện mỗi tuần. Không phải bài khoe mẹo, mà là bài về thứ tự ưu tiên: tiền và thời gian nên đổ vào đâu trong một cảnh mà người xem chỉ nhìn hai giây.</p>
 
-<p>Theo mô tả trên 80 Level: tường dựng bằng cách tính toán thay vì model, đường đi tạo từ texture, các khoảng khoét bằng khối hộp, texture áp bằng projection thay vì UV. Nhóm node chính gồm Grid, Greater Than, Mesh to Curve, Quadrilateral và Curve to Mesh. Đường đi được điều khiển bằng cách chỉnh scale của Noise Texture; box projection dùng để áp vật liệu cho gọn.</p>
+<h2>Dựng không khí trong Blender thực chất là dựng cái gì</h2>
+
+<p>Không khí là thứ người xem cảm được trước khi kịp đọc chi tiết. Nó đến từ ba thứ, và cả ba đều không đòi hỏi bạn model giỏi.</p>
+
+<ul>
+<li><strong style="color:#fff;">Sự lặp lại.</strong> Một hành lang dài, một dãy cột, một trần đèn đều tăm tắp. Lặp lại tạo cảm giác không gian còn kéo dài ngoài khung hình.</li>
+<li><strong style="color:#fff;">Ánh sáng có tính cách.</strong> Bẹt và xanh thì thành bệnh viện, ấm và lệch một bên thì thành chiều muộn. Đèn quyết định cảm xúc nhanh hơn mọi thứ khác.</li>
+<li><strong style="color:#fff;">Chiều sâu nhìn thấy được.</strong> Một lớp sương mỏng, bụi trong luồng sáng, hoặc đơn giản là vật ở xa mờ hơn vật ở gần.</li>
+</ul>
+
+<p>Ba thứ đó cộng lại là khoảng tám phần mười cảm giác của một cảnh nền. Phần còn lại, tức chi tiết bề mặt và đồ đạc nhỏ, là phần người mới thường đổ hết thời gian vào, rồi ngạc nhiên vì ảnh vẫn chưa ra.</p>
+
+<h2>Andrew Price dựng cảnh Backrooms bằng gì</h2>
+
+<p>Theo mô tả trên 80 Level: tường được sinh ra bằng tính toán thay vì model thủ công, đường đi tạo từ texture, các khoảng khoét bằng khối hộp, texture áp bằng projection thay vì UV. Nhóm node chính gồm Grid, Greater Than, Mesh to Curve, Quadrilateral và Curve to Mesh. Đường đi được điều khiển bằng cách chỉnh scale của Noise Texture.</p>
 
 <p>Phần render đi qua Cycles, chỉnh màu bằng RGB curve, thêm film grain cho chất analog, và thêm glare khi compositing. Giá trị shader được nối vào Geometry Nodes để bật tắt đèn và tạo sự ngẫu nhiên cho các tấm đèn trần.</p>
 
-<h2>Điểm đáng học không phải là sáu node</h2>
+<h3>Dịch sang tiếng Việt dễ hiểu</h3>
+<p>Một lưới được tạo ra, một phần lưới bị lọc bỏ theo nhiễu để thành đường đi, phần còn lại được kéo lên thành tường. Bạn không vẽ mê cung, bạn mô tả luật sinh ra mê cung rồi để máy dựng. Đổi một con số là có một mặt bằng khác, trong khi dựng tay thì đổi bố cục đồng nghĩa với làm lại.</p>
 
-<p>Nếu bạn chỉ chép lại setup node, bạn có một cảnh Backrooms. Hết. Điều đáng lấy là câu hỏi Price đặt ra trước khi bắt đầu: <strong style="color:#fff;">cảnh này thật ra cần gì để thuyết phục?</strong></p>
+<h2>Phần đáng học không phải là sáu node</h2>
 
-<p>Backrooms thuyết phục nhờ ba thứ: sự lặp lại đến mức bất an, ánh sáng huỳnh quang bẹt, và cảm giác không gian kéo dài vô tận. Không thứ nào đòi hỏi model chi tiết. Nhận ra điều đó cho phép bỏ qua 90% khối lượng công việc mà không mất gì.</p>
+<p>Nếu bạn chép lại đúng cụm node đó, bạn có một cảnh Backrooms. Hết. Thứ mang đi được là câu hỏi đặt ra trước khi mở Blender: <strong style="color:#fff;">cảnh này thật ra cần gì để thuyết phục?</strong></p>
+
+<p>Backrooms thuyết phục nhờ sự lặp lại đến mức bất an, ánh sáng huỳnh quang bẹt, và cảm giác không gian kéo dài vô tận. Không thứ nào trong ba thứ đó đòi hỏi model chi tiết. Nhận ra điều đó cho phép bỏ qua phần lớn khối lượng công việc mà không mất gì.</p>
 
 <blockquote><p>Trước khi hỏi làm thế nào, hỏi cảnh này thật sự cần gì. Câu trả lời thường ngắn hơn bạn tưởng.</p></blockquote>
 
-<h2>Khi nào cách này dùng được, khi nào không</h2>
+<p>Đây cũng là lý do kỹ năng đọc hình được xếp trước kỹ năng phần mềm trong <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>. Biết cái gì không cần dựng tiết kiệm nhiều giờ hơn mọi phiêm tắt bạn học được trong một năm.</p>
 
-<h3>Dùng được</h3>
-<p>Không gian lặp lại và mang tính không khí: hành lang, kho, bãi đỗ xe, nội thất công nghiệp, background phía sau chủ thể chính. Những chỗ người xem cảm nhận tổng thể chứ không soi chi tiết.</p>
+<h2>Khi nào dựng bằng node, khi nào phải model thật</h2>
 
-<h3>Không dùng được</h3>
-<p>Sản phẩm nằm ở tiền cảnh. Nếu khách trả tiền để chai nước hay chiếc điện thoại của họ lên hình, mọi bevel đều bị soi. Không mẹo procedural nào thay được model đúng ở đó.</p>
+<p>Đây là phần hay bị bỏ qua khi người học xem xong một video mẹo. Cách làm procedural rất mạnh ở đúng chỗ của nó và gây hại ở chỗ khác.</p>
 
-<p>Nhưng ngay trong job sản phẩm, nguyên tắc vẫn dùng được cho phần nền. Dựng cả một studio chi tiết phía sau chai nước là lãng phí. Nền chỉ cần đúng ánh sáng và đúng vệt phản chiếu.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Loại cảnh</th><th>Nên dựng bằng</th><th>Lý do</th></tr></thead>
+<tbody>
+<tr><td>Hành lang, kho, bãi đỗ xe, nội thất công nghiệp</td><td>Node và đèn</td><td>Người xem cảm tổng thể, không soi chi tiết</td></tr>
+<tr><td>Nền phía sau chủ thể trong ảnh sản phẩm</td><td>Node và đèn</td><td>Nền chỉ cần đúng vệt phản chiếu và đúng độ mờ</td></tr>
+<tr><td>Sản phẩm nằm ở tiền cảnh</td><td>Model thật, có bản vẽ</td><td>Mọi cạnh bông và đường ghép đều bị khách soi</td></tr>
+<tr><td>Gian hàng, sân khấu phải thi công được</td><td>Model theo kích thước thật</td><td>Bản vẽ phải khớp vật tư và kết cấu</td></tr>
+<tr><td>Cảnh cần đổi bố cục nhiều lần theo góp ý</td><td>Node</td><td>Đổi một tham số nhanh hơn dựng lại</td></tr>
+</tbody>
+</table>
+</div>
 
-<h2>Ba chi tiết nhỏ đáng chú ý</h2>
+<p>Nói ngắn: node lo phần không ai soi, model lo phần khách trả tiền để soi. Trong một job <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>, hai cách này luôn đi cặp nhau chứ không thay thế nhau. Với <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D</a>, ranh giới còn rõ hơn nữa vì bản vẽ còn phải mang đi thi công.</p>
 
-<h3>Box projection thay UV</h3>
-<p>Với bề mặt phẳng và lặp lại, projection cho kết quả đủ tốt và tiết kiệm hoàn toàn khâu UV. Đây là thứ nhiều người học Blender không biết mình được phép bỏ qua.</p>
+<figure>
+  <img src="assets/chivas18-vcca-duong-ham-loi-vao.webp" alt="Hành lang lối vào triển lãm dựng 3D, một bên là màn LED chữ lớn, một bên là tường logo, sàn bê tông kéo dài về phía khối trưng bày phía trong" loading="lazy" width="1800" height="810">
+  <figcaption><strong>Một hành lang trong phối cảnh triển lãm.</strong> Hai bức tường này gần như không có chi tiết hình học nào. Thứ làm người xem tin là độ dài, độ lặp, và chỗ sáng chỗ tối được đặt có chủ ý.</figcaption>
+</figure>
+
+<h2>Bốn chi tiết nhỏ làm nên không khí</h2>
+
+<h3>Box projection thay cho UV</h3>
+<p>Với bề mặt phẳng và lặp lại, projection cho kết quả đủ tốt và tiết kiệm hoàn toàn khâu UV. Đây là thứ nhiều người học Blender không biết mình được phép bỏ qua. Mẹo nhỏ: đặt blend của box projection khoảng 0.2 để góc tường không lộ đường cắt.</p>
 
 <h3>Ngẫu nhiên hoá đèn trần</h3>
-<p>Một vài tấm đèn tắt, một vài tấm sáng yếu hơn. Chi tiết rất nhỏ nhưng là thứ tách cảnh CG khỏi cảnh trông như thật, vì sự đều tăm tắp là dấu hiệu của máy tính.</p>
+<p>Một vài tấm đèn tắt, một vài tấm sáng yếu hơn. Chi tiết rất nhỏ nhưng là thứ tách cảnh CG khỏi cảnh trông như thật, vì sự đều tăm tắp là dấu hiệu của máy tính. Nguyên tắc này áp được cho mọi thứ lặp lại: gạch sàn, ghế, vệt bẩn.</p>
 
-<h3>Film grain và glare</h3>
-<p>Hai thứ này thêm ở khâu compositing, nhưng chỉ hiệu quả khi ánh sáng bên dưới đã đúng. Nếu bạn thấy mình dựa vào grain để cảnh đỡ giả, vấn đề nằm ở đèn. Tôi có viết kỹ hơn trong bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>.</p>
+<h3>Một lớp sương rất mỏng</h3>
+<p>Volumetric là con dao hai lưỡi. Đủ mỏng thì nó tách lớp gần khỏi lớp xa và cho luồng đèn một hình dạng. Quá tay thì cảnh đục như sương mù và thời gian render tăng gấp nhiều lần. Nếu máy bạn chậm, các cách <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a> chỉ rõ phần volumetric nào cắt được mà không ai nhận ra.</p>
 
-<h2>Bài tập</h2>
+<h3>Film grain và glare ở cuối</h3>
+<p>Hai thứ này thêm ở khâu compositing, nhưng chỉ hiệu quả khi ánh sáng bên dưới đã đúng. Nếu bạn thấy mình dựa vào grain để cảnh đỡ giả, vấn đề nằm ở đèn. Năm lỗi hay gặp nhất mình viết trong bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>, và gần như lần nào chữa bài cũng gặp ít nhất hai trong số đó.</p>
 
-<p>Lấy một không gian bạn từng dựng thủ công và tự hỏi: nếu chỉ được dùng năm node, phần nào của cảnh này thật sự cần thiết? Trả lời được câu đó, bạn tiết kiệm được vài chục giờ cho mọi dự án sau.</p>
+<h2>Danh sách kiểm tra trước khi render cảnh không khí</h2>
 
-<p>Nguyên tắc này thuộc bước ba và bước bốn trong <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>: biết cái gì không cần dựng là kỹ năng đọc hình, không phải mẹo phần mềm. Nếu cảnh của bạn đang chậm vì dựng quá nhiều thứ người xem không nhìn tới, các cách <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a> chỉ rõ phần nào cắt được mà không ai nhận ra.</p>
+<ol>
+<li><strong style="color:#fff;">Thu nhỏ ảnh bằng móng tay.</strong> Còn đọc được không gian thì bố cục đã đứng.</li>
+<li><strong style="color:#fff;">Che chủ thể đi xem nền có tự sống không.</strong> Nền nhạt nhẽo khi che chủ thể là nền chưa làm việc.</li>
+<li><strong style="color:#fff;">Đếm số nguồn sáng.</strong> Trên bốn nguồn trong một cảnh không khí thường là dấu hiệu đang chữa cháy.</li>
+<li><strong style="color:#fff;">Tắt volumetric một lần để so.</strong> Nếu tắt đi mà cảnh vẫn đứng, bạn đang dùng sương đúng liều.</li>
+<li><strong style="color:#fff;">Kiểm tra độ lặp.</strong> Tìm một vết bẩn hoặc một tấm đèn hỏng lặp lại đúng chu kỳ, đó là thứ mắt người bắt được.</li>
+<li><strong style="color:#fff;">Xuất thử ở độ phân giải thấp trước.</strong> Mọi lỗi bố cục đều hiện ra ở bản nháp, không cần chờ bản cuối.</li>
+<li><strong style="color:#fff;">Lưu một phiên bản trước khi thêm grain.</strong> Để còn so được cảnh trần và cảnh đã xử lý.</li>
+</ol>
 
-<p>Bài tập trên thuộc nhóm bài luyện mắt mà hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> cho làm ngay tuần đầu. Tự luyện thì checklist trong <a href="cam-nang.html">cẩm nang Blender</a> đủ dùng, miễn là bạn chịu viết ra câu trả lời trước khi mở file tham chiếu.</p>
+<h2>Cách làm này không giải quyết được gì</h2>
+
+<p>Nói thật phần bất lợi, vì các video mẹo thường bỏ qua.</p>
+
+<p>Thứ nhất, cảnh procedural rất khó chỉnh cục bộ. Khách muốn dịch một cái cột sang trái nửa mét thì bạn phải thêm cả một nhánh node để làm ngoại lệ. Dựng tay thì chỉ cần kéo chuột. Với cảnh có nhiều vòng sửa theo ý khách, cân nhắc trước.</p>
+
+<p>Thứ hai, file node phức tạp khó bàn giao. Người nhận file của bạn phải hiểu cả cây node mới sửa được. Trong một ê kíp, đó là chi phí thật. Hãy đặt tên node group và phơi ra ngoài vài tham số chính, coi như làm một bảng điều khiển cho người sau.</p>
+
+<p>Thứ ba, nó không dạy bạn model. Nếu bạn đang ở giai đoạn chưa dựng nổi một món đồ để đưa lên tiền cảnh, thì mấy cụm node này không lấp được khoảng trống đó. Phần nền đẹp mà chủ thể xấu là một kiểu ảnh rất dễ nhận ra. Muốn chữa đúng chỗ đó thì đi đường dài hơn: luyện dựng hình đều tay, và nếu cần người chữa bài thì một <a href="blog-khoa-hoc-render.html">khoá học render</a> tử tế sẽ nhanh hơn tự mò nhiều tháng.</p>
+
+<p>Thứ tư, nó không làm thay việc lên kịch bản hình. Trong một job <a href="blog-quy-trinh-mot-shot-tvc.html">dựng TVC 3D</a>, thứ tự công việc vẫn là chốt góc máy trước, rồi mới dựng cái gì lọt khung. Node chỉ giúp bước sau đó rẻ hơn.</p>
+
+<h2>Bài tập 90 phút</h2>
+
+<p>Lấy một không gian bạn từng dựng thủ công và tự hỏi: nếu chỉ được dùng năm node, phần nào của cảnh này thật sự cần thiết? Viết câu trả lời ra giấy trước khi mở Blender.</p>
+
+<p>Sau đó dựng lại trong 90 phút với luật chơi: không model thủ công vật nào, không UV, tối đa ba nguồn sáng. Hết giờ thì render một khung ở độ phân giải thấp và đặt cạnh bản cũ. Phần lớn người làm bài này nhận ra bản 90 phút đọc được không gian rõ hơn bản họ tốn ba buổi.</p>
+
+<p>Nếu máy bạn đuối khi bật volumetric, xem trước bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> để biết phần nào nên giảm khi luyện. Còn nếu bạn định đi sâu vào mảng hard-surface, danh sách <a href="blog-add-on-hard-surface-blender.html">add-on hard-surface Blender</a> nên cài giúp bạn khỏi rải tiền vào thứ chưa dùng tới.</p>
+
+<h2>Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Dựng không khí trong Blender có cần máy mạnh không?</p>
+<p>Phần dựng thì không, vì cảnh kiểu này hầu như không có model chi tiết. Phần nặng là volumetric và số bounce khi render, cả hai đều giảm được mà người xem không nhận ra.</p>
+
+<p class="faq-q">Không biết Geometry Nodes thì bắt đầu từ đâu?</p>
+<p>Bắt đầu từ một cụm bốn năm node giải quyết đúng một việc, ví dụ rải cột theo một đường. Học theo kiểu đi hết danh sách node thường bỏ giữa chừng vì không thấy dùng vào đâu.</p>
+
+<p class="faq-q">Cách làm này có dùng được cho job thương mại không?</p>
+<p>Dùng được cho nền và bối cảnh, không dùng được cho chủ thể ở tiền cảnh. Đây cũng là cách một studio chia thời gian: nền làm nhanh, chủ thể làm kỹ.</p>
+
+<p class="faq-q">Bỏ UV unwrap có sao không?</p>
+<p>Với bề mặt phẳng và lặp lại như tường, sàn, trần thì box projection đủ tốt. Chỉ cần UV khi bề mặt cong, có đường may, hoặc khi phải đặt nhãn và chữ vào đúng vị trí.</p>
+
+<p class="faq-q">Làm sao biết cảnh đã đủ không khí hay chưa?</p>
+<p>Thu nhỏ ảnh xuống bằng móng tay rồi nhìn. Nếu vẫn đọc được không gian và vẫn thấy chỗ sáng chỗ tối rõ rệt thì đã đủ. Nếu phải phóng to mới thấy hay, cảnh đang dựa vào chi tiết chứ không dựa vào không khí.</p>
+
+<hr class="hr">
+
+<p>Bài tập 90 phút ở trên thuộc nhóm bài luyện mắt mà hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> cho làm ngay tuần đầu, vì nó lọc ra rất nhanh ai đang dựng theo thói quen và ai dựng theo ý đồ. Tự luyện thì checklist trong <a href="cam-nang.html">cẩm nang Blender</a> đủ dùng, miễn là bạn chịu viết ra câu trả lời trước khi mở file tham chiếu.</p>
 """,
     },
     {
@@ -2545,6 +2640,8 @@ POSTS = [
 
 <p class="faq-q">Khoá học 3D online có học render hiệu quả không?</p>
 <p>Có, nếu khoá đó có buổi sửa bài trực tiếp. Render đặc biệt hợp với hình thức online vì bài nộp là ảnh, gửi đi rất nhanh và người sửa nhìn ảnh là biết ngay vấn đề nằm ở đâu.</p>
+
+<p>Một bài tự kiểm tra miễn phí trước khi đóng tiền: làm thử bài 90 phút trong <a href="blog-sau-node-va-mot-hanh-lang.html">dựng không khí trong Blender</a>. Nếu bạn ra được một cảnh đọc được không gian mà không model gì, phần bạn còn thiếu là vật liệu và hậu kỳ chứ không phải dựng hình.</p>
 
 <p class="faq-q">Học render xong thì làm được việc gì?</p>
 <p>Phổ biến nhất là ảnh sản phẩm, key visual cho chiến dịch, phối cảnh sự kiện và ảnh kiến trúc. Bạn có thể xem vài shot thật bên trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> để hình dung mức hoàn thiện mà khách thường yêu cầu.</p>
@@ -4528,6 +4625,8 @@ POSTS = [
 
 <p class="faq-q">Một bộ phối cảnh sự kiện 3D mất bao lâu?</p>
 <p>Ước lượng từ các dự án chúng tôi đã làm là khoảng một tới hai tuần cho ba tới năm góc của một khu vực có mặt bằng đã chốt, tính từ lúc nhận đủ bản vẽ và nhận diện. Triển lãm nhiều khu, sân khấu có màn LED lớn hoặc chương trình còn đang đổi concept thì dài hơn. Biến số khó đoán nhất vẫn là số vòng duyệt bên phía khách.</p>
+
+<p>Riêng phần bối cảnh phụ như hành lang dẫn vào, khu chờ hay vách ngăn lặp lại, chúng tôi hiếm khi dựng thủ công. Cách <a href="blog-sau-node-va-mot-hanh-lang.html">dựng không khí trong Blender</a> bằng vài cụm node cho ra đúng cảm giác không gian mà tốn ít thời gian hơn nhiều.</p>
 
 <p class="faq-q">Phối cảnh 3D có bắt buộc giống y hệt sự kiện thật không?</p>
 <p>Phải giống ở những thứ đo được: tỉ lệ, kích thước hạng mục, vị trí và chiều cao. Không thể giống tuyệt đối ở ánh sáng và vật liệu, vì đèn thật tại hiện trường và bề mặt in thật luôn lệch ít nhiều so với hình kết xuất. Chỗ nên cảnh giác là hình đẹp hơn mức thi công có thể làm được trong ngân sách đã duyệt.</p>
