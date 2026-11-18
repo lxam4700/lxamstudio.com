@@ -619,6 +619,8 @@ POSTS = [
 
 <p>Trang sức là trường hợp cực đoan của lỗi này, vì gần như toàn bộ bề mặt đều là thứ phản chiếu lại môi trường. Có thể xem <a href="du-an-locphuc-bo-suu-tap.html">key visual bộ sưu tập trang sức Lộc Phúc</a> để thấy mảng sáng và mảng tối trên kim loại được dựng từ vật đặt quanh chứ không phải từ việc tăng số đèn.</p>
 
+<p>Lỗi này nặng hơn hẳn khi bạn render bằng Eevee, vì engine đó gần như không biết tới vật nằm ngoài khung hình. Cách bù lại bằng ảnh môi trường và khối chắn sáng được nói kỹ trong bài <a href="blog-hoc-render-cycles-va-eevee.html">học render Cycles và Eevee</a>.</p>
+
 <figure>
   <img src="assets/mercedes-g63-cum-den-truoc-can-canh.webp" alt="Cận cảnh cụm đèn trước Mercedes G63 render bằng Blender, vệt sáng dài trên mặt kính và viền kim loại phản chiếu mảng tối" loading="lazy" width="1800" height="1013">
   <figcaption><strong>Cụm đèn trước trong dự án Mercedes G63 của LXAM Studio.</strong> Toàn bộ cảm giác kim loại và kính ở đây đến từ cái mà bề mặt phản chiếu, chủ yếu là các mặt hắt sáng và cờ đen quanh xe, không phải từ số lượng đèn.</figcaption>
@@ -2571,7 +2573,7 @@ POSTS = [
 </table>
 </div>
 
-<p>Người học Eevee trước thường ra ảnh nhanh hơn trong tháng đầu, rồi chững lại vì không giải thích được vì sao ảnh sai. Người học Cycles trước chậm hơn lúc đầu nhưng sang tháng thứ ba thì tự sửa được. Nếu bạn đang thấy Cycles quá chậm để luyện tập, xem trước các cách <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a>, phần lớn không cần nâng cấp máy.</p>
+<p>Người học Eevee trước thường ra ảnh nhanh hơn trong tháng đầu, rồi chững lại vì không giải thích được vì sao ảnh sai. Người học Cycles trước chậm hơn lúc đầu nhưng sang tháng thứ ba thì tự sửa được. Ba chặng chuyển qua lại giữa hai engine, kèm bảng phân việc cho từng loại ảnh, nằm ở bài <a href="blog-hoc-render-cycles-va-eevee.html">học render Cycles và Eevee</a>. Nếu bạn đang thấy Cycles quá chậm để luyện tập, xem trước các cách <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a>, phần lớn không cần nâng cấp máy.</p>
 
 <blockquote><p>Render không phải cuộc thi chỉnh thông số. Nó là việc quyết định người xem nên nhìn vào đâu trước, rồi dùng ánh sáng để ép mắt họ làm đúng như vậy.</p></blockquote>
 
@@ -5577,6 +5579,169 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn muốn một nhận xét thẳng về bộ hồ sơ đang có, gửi cho chúng tôi hai ba món và một câu nói rõ bạn đang nhắm loại việc nào. Chúng tôi sẽ chỉ ra món nên bỏ ra trước khi nói tới món nên thêm vào. Muốn đi theo lộ trình có đầu ra từng tuần thì hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ mỗi chặng bạn phải nộp được gì, và nếu bạn mới bắt đầu thì tải <a href="cam-nang.html">cẩm nang Blender</a> làm hết phần bài tập trong đó trước đã.</p>
+""",
+    },
+    {
+        "slug": "hoc-render-cycles-va-eevee",
+        "title": "Học render Cycles và Eevee: chọn theo từng việc",
+        "desc": "Học render Cycles và Eevee đúng thứ tự: engine nào cho việc nào, bảng so sánh thời gian và chất lượng, cùng các lỗi khiến ảnh Eevee trông rẻ tiền.",
+        "tag": "Kỹ thuật",
+        "date": "2026-11-18",
+        "date_vn": "18/11/2026",
+        "read": "13 phút đọc",
+        "thumb": "assets/aston-martin-dbx-render-blender.jpg",
+        "faq": [
+            ('Học render Cycles và Eevee thì nên học cái nào trước?',
+             'Cycles trước, nhưng chỉ ở mức cảnh đơn giản. Cycles tính ánh sáng theo đường đi nên nó phản hồi đúng với mọi thứ bạn chỉnh, và chính phản hồi đúng đó dạy bạn ánh sáng. Khi đã đọc được một tấm hình đúng sai ở đâu, chuyển sang Eevee bạn sẽ biết mình đang bù phần nào bị thiếu, thay vì chỉnh mò cho tới lúc trông tạm được.'),
+            ('Eevee có thay được Cycles cho ảnh sản phẩm không?',
+             'Được với nhóm sản phẩm bề mặt đục như nhựa, vải, gỗ, kim loại sơn, nếu bạn dựng thêm ánh sáng phản xạ bằng tay. Không nên với kính, nước, rượu, đá quý hoặc bất cứ thứ gì ăn tiền ở khúc xạ, vì phần Eevee phải đoán lại đúng là phần khách hàng nhìn vào đầu tiên.'),
+            ('Vì sao ảnh Eevee của tôi trông phẳng và rẻ tiền hơn ảnh Cycles?',
+             'Thường do ba thứ cộng lại: thiếu ánh sáng dội lại nhiều lần, bóng đổ tiếp xúc quá nhạt, và phản chiếu của những vật nằm ngoài khung hình bị mất. Cả ba đều bù được bằng đèn phụ, bằng khối chắn sáng đặt ngoài khung và bằng ảnh môi trường, nhưng bạn phải biết là mình đang bù.'),
+            ('Máy yếu thì học render kiểu nào cho đỡ nản?',
+             'Dựng và căn sáng trong Eevee cho nhanh, chỉ bật Cycles ở khung cuối và render ở cạnh dài nhỏ hơn trước khi xuất bản chính. Máy không có card đồ hoạ rời vẫn học được hết phần tư duy ánh sáng, chỉ là mỗi lần kiểm tra bản cuối sẽ lâu hơn.'),
+            ('Học render bao lâu thì ra được ảnh dùng được cho hồ sơ?',
+             'Ước lượng từ người học quanh LXAM Studio: khoảng tám tới mười hai tuần nếu học đều vài buổi mỗi tuần và có người sửa bài, lâu hơn đáng kể nếu tự mò. Phần tốn thời gian không phải là các nút trong engine mà là học cách nhìn ra tấm hình của mình đang sai ở đâu.'),
+        ],
+        "body": """
+<p class="lead">Học render Cycles và Eevee không phải là chọn một và bỏ một. Cycles tính đường đi của ánh sáng nên cho kết quả đúng vật lý, hợp với ảnh sản phẩm và những bề mặt ăn tiền ở khúc xạ. Eevee tính xấp xỉ gần thời gian thực nên hợp với bản nháp, cảnh rộng và video dài. Thứ tự học nhanh nhất là hiểu ánh sáng trong Cycles trước, rồi mang hiểu biết đó sang Eevee để biết mình đang đánh đổi cái gì.</p>
+
+<p>Phần lớn người mới học render theo chiều ngược lại. Họ bắt đầu ở Eevee vì nó hiện ra ngay, quen tay với việc kéo thanh trượt cho tới khi hình trông tạm được, rồi một ngày mở Cycles lên và không hiểu vì sao cùng một cảnh lại ra hai kết quả khác hẳn. Bài này sắp lại cho gọn: hai engine khác nhau ở đâu, việc nào thuộc về engine nào, và những lỗi lặp đi lặp lại ở cả hai phía.</p>
+
+<h2>Cycles và Eevee khác nhau ở đâu, nói gọn trong một đoạn</h2>
+
+<p>Khác biệt gốc nằm ở chỗ một bên mô phỏng ánh sáng, một bên vẽ lại hình. Mọi điểm mạnh và điểm yếu còn lại đều mọc ra từ đó, nên hiểu đoạn này rồi thì các lựa chọn phía sau gần như tự hiện ra.</p>
+
+<h3>Cycles tính theo đường đi của tia sáng</h3>
+
+<p>Cycles bắn tia từ máy quay vào cảnh, cho tia dội qua các bề mặt và cộng dần ánh sáng thu được. Vì nó mô phỏng đúng cách ánh sáng cư xử, bạn gần như không phải nói dối với nó: đặt một tấm phản quang bên trái thì vệt sáng xuất hiện đúng chỗ, dựng một ly thuỷ tinh có độ dày thì khúc xạ ra đúng hình. Giá phải trả là thời gian, và khi số tia chưa đủ thì ảnh bị nhiễu hạt.</p>
+
+<h3>Eevee dựng hình theo khung hình đang nhìn thấy</h3>
+
+<p>Eevee vẽ cảnh theo kiểu của một engine game: nó xử lý những gì nằm trong khung hình và dùng nhiều phép xấp xỉ để giả lập hiệu ứng ánh sáng. Các bản Blender gần đây đã cải thiện đáng kể phần bóng đổ và ánh sáng gián tiếp, nhưng bản chất vẫn là xấp xỉ. Thứ nằm ngoài khung hình thì engine không biết tới, nên một tấm phản quang đặt sau máy quay sẽ không tự động hiện vào bề mặt kim loại như ở Cycles.</p>
+
+<p>Nói cách khác, Cycles trả lời câu hỏi ánh sáng sẽ đi thế nào, còn Eevee trả lời câu hỏi khung hình này trông ra sao nếu ta chấp nhận vài phép tính tắt. Hai câu hỏi khác nhau, nên không có engine nào đúng hơn engine nào. Chỉ có engine hợp hoặc không hợp với đề bài đang nằm trên bàn.</p>
+
+<h2>Khi nào dùng Cycles, khi nào dùng Eevee</h2>
+
+<p>Bảng dưới đây là cách chúng tôi phân việc trong thực tế khi làm ảnh sản phẩm và phối cảnh. Các con số thời gian chỉ là ước lượng trên một máy để bàn phổ thông có card đồ hoạ rời, cảnh của bạn có thể lệch nhiều.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tiêu chí</th><th>Cycles</th><th>Eevee</th></tr></thead>
+<tbody>
+<tr><td>Cách tính ánh sáng</td><td>Mô phỏng theo đường tia</td><td>Xấp xỉ theo khung hình đang thấy</td></tr>
+<tr><td>Thời gian một khung ảnh sản phẩm</td><td>Vài phút tới vài chục phút</td><td>Vài giây tới dưới một phút</td></tr>
+<tr><td>Kính, nước, khúc xạ nhiều lớp</td><td>Đúng mà không cần mẹo</td><td>Dễ sai, phải dựng lại bằng tay</td></tr>
+<tr><td>Ánh sáng dội lại nhiều lần</td><td>Có sẵn</td><td>Giới hạn, thường phải thêm đèn phụ</td></tr>
+<tr><td>Phản chiếu vật nằm ngoài khung</td><td>Hiện đúng</td><td>Thiếu, phải dùng ảnh môi trường</td></tr>
+<tr><td>Video dài nhiều khung</td><td>Tốn, cần tính trước chi phí</td><td>Hợp, đây là chỗ Eevee thắng rõ</td></tr>
+<tr><td>Duyệt bố cục qua lại với khách</td><td>Chậm</td><td>Nhanh, sửa tới đâu thấy tới đó</td></tr>
+<tr><td>Rủi ro lớn nhất</td><td>Nhiễu hạt và thời gian</td><td>Hình phẳng, vật liệu sai chất</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Quy tắc rút gọn từ bảng này: việc nào mà khách hàng sẽ phóng to lên xem chất liệu thì để Cycles, việc nào cần nhiều khung hoặc cần sửa nhanh trước mặt người duyệt thì để Eevee. Phần kỹ năng chung cho cả hai, tức là đọc ánh sáng và đọc vật liệu, nằm trong <a href="blog-khoa-hoc-render.html">khoá học render</a> và nó không đổi khi bạn đổi engine.</p>
+
+<h2>Thứ tự học render hợp lý cho người mới</h2>
+
+<p>Nhiều người học hai engine song song ngay từ đầu rồi rối. Ba chặng dưới đây chia việc ra cho đỡ loãng, mỗi chặng có một đầu ra kiểm chứng được.</p>
+
+<h3>Chặng một: học ánh sáng trong Cycles với cảnh đơn giản</h3>
+
+<p>Một vật thể, một mặt sàn, một nguồn sáng chính. Đổi kích thước nguồn sáng và nhìn bóng đổ mềm hay cứng theo. Đổi góc đèn và nhìn khối nổi lên hay bẹt đi. Vì Cycles phản hồi đúng, bạn học được quan hệ nhân quả thật chứ không học mẹo. Năm lỗi hay gặp ở chặng này được liệt kê trong bài <a href="blog-5-loi-lighting.html">học lighting trong Blender</a>, soát lại theo danh sách đó trước khi đi tiếp.</p>
+
+<h3>Chặng hai: mang đúng cảnh đó sang Eevee</h3>
+
+<p>Đừng dựng cảnh mới. Lấy chính cảnh vừa làm, chuyển engine, rồi ghi ra giấy những chỗ khác nhau. Bóng tiếp xúc nhạt đi, vùng tối mất chi tiết, kim loại không còn phản chiếu đúng thứ. Mỗi khác biệt bạn tìm ra là một bài học về chỗ Eevee đang tính tắt, và cũng là danh sách những thứ bạn sẽ phải bù bằng tay về sau.</p>
+
+<h3>Chặng ba: chọn engine theo đề bài, không theo thói quen</h3>
+
+<p>Tới đây bạn đã đủ cơ sở để quyết định trước khi bấm nút. Một ảnh chai rượu có nhãn kim loại thì chọn Cycles ngay từ đầu, vì thời gian bạn bỏ ra để ép Eevee ra đúng khúc xạ sẽ nhiều hơn thời gian render. Một đoạn đi máy dài hai mươi giây qua gian hàng thì chọn Eevee ngay từ đầu, vì nhân số khung lên là ra ngay câu trả lời.</p>
+
+<blockquote><p>Người mới thường hỏi engine nào đẹp hơn. Câu hỏi dùng được hơn là engine nào trả lời đúng câu hỏi của tấm hình này. Một ảnh kính trong Eevee và một đoạn phim dài trong Cycles đều là chọn sai công cụ, dù cả hai vẫn ra hình.</p></blockquote>
+
+<figure>
+  <img src="assets/chivas18-vcca-khoi-trung-tam.webp" alt="Phối cảnh 3D không gian triển lãm Chivas 18, khối điêu khắc xanh dương nhiều mặt đặt trên bục có viền đèn LED, tranh treo tường được rọi đèn spot" loading="lazy" width="1800" height="810">
+  <figcaption><strong>Một phối cảnh triển lãm do LXAM Studio dựng.</strong> Dạng cảnh này là chỗ hai engine phân vai rõ nhất: duyệt bố cục và vị trí đèn thì chạy Eevee cho nhanh, còn khung cuối có kim loại và đèn LED hắt nhiều lần thì chuyển sang Cycles vì ánh sáng dội lại chính là thứ làm không gian có chiều sâu.</figcaption>
+</figure>
+
+<p>Cách phân vai này cũng là cách chúng tôi làm việc khi nhận dựng <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D</a>. Khách duyệt bố cục trên bản Eevee trong ngày, bản Cycles chỉ chạy khi mọi thứ đã chốt, nhờ vậy không ai phải chờ một đêm render để biết cái bục đặt lệch nửa mét.</p>
+
+<h2>Những lỗi hay gặp khi học render Eevee</h2>
+
+<p>Gần như mọi tấm hình Eevee trông rẻ tiền đều rơi vào một trong các lỗi dưới đây, và phần lớn sửa được trong một buổi.</p>
+
+<p>Lỗi thứ nhất là bỏ qua ánh sáng dội lại. Ở Cycles, tường trắng tự hắt sáng lên vật thể. Ở Eevee phần này yếu hơn nhiều, nên bạn phải đặt thêm một đèn diện rộng cường độ thấp đóng vai bức tường. Không làm bước này thì vùng tối của bạn sẽ chết đen và cả hình trông như dán lên nền.</p>
+
+<p>Lỗi thứ hai là quên bóng đổ tiếp xúc. Chỗ vật chạm sàn phải tối lại rõ rệt. Thiếu vệt tối đó, não người xem lập tức hiểu là vật đang lơ lửng, dù không ai gọi tên được vì sao.</p>
+
+<p>Lỗi thứ ba là trông chờ Eevee tự biết thứ nằm ngoài khung hình. Mặt kim loại cần có gì đó để phản chiếu. Nếu cảnh của bạn trống xung quanh thì hãy gắn một ảnh môi trường hoặc dựng vài khối sáng tối đặt ngoài khung, đúng như cách người chụp ảnh thật kê tấm hắt sáng.</p>
+
+<p>Lỗi thứ tư là đẩy hậu kỳ quá tay để cứu một bản render sai. Thêm bloom, thêm tương phản, thêm màu, và kết quả là một tấm hình vừa chói vừa bết. Sửa ở gốc luôn rẻ hơn, nhất là khi gốc chỉ là một cái đèn đặt sai độ cao.</p>
+
+<h2>Những lỗi hay gặp khi học render Cycles</h2>
+
+<p>Phía Cycles thì lỗi thường không nằm ở thẩm mỹ mà nằm ở thời gian. Người mới hay trả giá bằng cả đêm render cho những thứ đáng lẽ chỉ tốn vài phút.</p>
+
+<p>Lỗi phổ biến nhất là tăng số mẫu lên thật cao để xử lý nhiễu, trong khi nguyên nhân nhiễu nằm ở nguồn sáng quá nhỏ hoặc ở vật liệu nhiều lớp bóng chồng nhau. Nguồn sáng to hơn một chút thường làm ảnh sạch nhanh hơn gấp nhiều lần so với việc nhân đôi số mẫu. Mười cách cắt thời gian khác nằm trong bài <a href="blog-render-nhanh-hon-blender-cycles.html">render nhanh hơn trong Blender Cycles</a>.</p>
+
+<p>Lỗi thứ hai là để số lần dội sáng cao mặc định cho mọi cảnh. Một cảnh sản phẩm trên nền trơn hiếm khi cần nhiều lần dội như một nội thất kín. Giảm đúng chỗ này tiết kiệm thời gian mà mắt thường không nhận ra khác biệt.</p>
+
+<p>Lỗi thứ ba là dùng khử nhiễu như một tấm chăn phủ lên mọi vấn đề. Khử nhiễu mạnh làm mất chi tiết nhỏ, và thứ đầu tiên bị xoá thường là vết xước trên kim loại, đúng cái phần khiến bề mặt trông thật. Hãy để ảnh sạch một cách tự nhiên trước, rồi mới khử nhiễu ở mức vừa.</p>
+
+<p>Lỗi thứ tư là đổ lỗi cho máy quá sớm. Máy có ảnh hưởng, nhưng một cảnh dựng gọn chạy trên máy trung bình vẫn nhanh hơn một cảnh bừa bộn chạy trên máy mạnh. Nếu bạn đang cân nhắc nâng cấp, phần nào thực sự đáng tiền được phân tích trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<figure>
+  <img src="assets/khoa-cua-thong-minh-ban-phim-cam-ung.webp" alt="Ảnh render cận cảnh khoá cửa thông minh màu đen, viền kim loại sáng, bàn phím cảm ứng hiện mờ trên mặt kính, nền xám chuyển sắc" loading="lazy" width="1800" height="1800">
+  <figcaption><strong>Một ảnh sản phẩm khoá cửa thông minh do LXAM Studio dựng.</strong> Đây là loại hình nên để Cycles làm: giá trị của ảnh nằm ở vệt sáng chạy dọc viền kim loại và ở độ mờ của mặt kính, hai thứ phụ thuộc vào phản chiếu chính xác. Ép Eevee ra đúng hai chi tiết này thường tốn nhiều công hơn là chờ Cycles chạy.</figcaption>
+</figure>
+
+<p>Nếu bạn đang cần ảnh thương mại gấp mà chưa đủ tay nghề cho nhóm bề mặt khó này, cách chúng tôi xử lý và các mốc bàn giao được mô tả ở trang <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>. Còn nếu mục tiêu của bạn là tự làm được, hãy giữ nguyên lộ trình ba chặng ở trên và đừng nhảy cóc.</p>
+
+<h2>Danh sách kiểm tra trước khi bấm nút render</h2>
+
+<p>Chạy qua danh sách này mỗi lần, cho cả hai engine. Nó ngắn, và nó tiết kiệm nhiều đêm làm lại hơn bạn tưởng.</p>
+
+<ul>
+<li>Đã chọn engine theo đề bài, không theo engine đang mở sẵn.</li>
+<li>Cảnh có ít nhất một nguồn sáng chính đủ to để bóng đổ mềm đúng ý.</li>
+<li>Vùng tối còn đọc được chi tiết, không chết đen thành mảng.</li>
+<li>Chỗ vật chạm sàn có vệt tối tiếp xúc rõ ràng.</li>
+<li>Mặt kim loại và mặt bóng đang phản chiếu một thứ có thật trong cảnh.</li>
+<li>Tỉ lệ khung hình và cạnh dài đúng với nơi ảnh sẽ được dùng.</li>
+<li>Đã render thử một khung nhỏ trước khi chạy bản đầy đủ.</li>
+<li>Đã lưu file và ghi lại thiết lập, để bản sửa sau không phải dò lại từ đầu.</li>
+</ul>
+
+<p>Thói quen render thử một khung nhỏ nghe tầm thường nhưng là thứ phân biệt người làm nghề với người mới rõ nhất. Một bản thử mất ba phút có thể cứu một bản chính mất ba tiếng, và nó cũng là lúc bạn phát hiện ra mình quên tắt một đèn hay quên đổi vật liệu.</p>
+
+<h2>Học render Cycles và Eevee trong bao lâu thì đủ dùng</h2>
+
+<p>Mức đủ dùng ở đây hiểu là bạn ra được một ảnh sản phẩm sạch, tự chẩn đoán được lỗi và không phải chỉnh mò. Ước lượng từ người học quanh LXAM Studio là khoảng tám tới mười hai tuần nếu học đều và có người sửa bài, dài hơn đáng kể nếu tự học ngắt quãng.</p>
+
+<p>Điểm nghẽn gần như luôn giống nhau: không phải nút nào nằm ở đâu, mà là nhìn một tấm hình và nói được nó sai ở chỗ nào. Kỹ năng đó chỉ lớn lên khi có người chỉ vào bài của bạn và nói thẳng, hoặc khi bạn tự so bản Cycles và bản Eevee của cùng một cảnh đủ nhiều lần. Thứ tự tổng thể của các kỹ năng, từ dựng hình tới hậu kỳ, nằm trong <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Học render Cycles và Eevee thì nên học cái nào trước?</p>
+<p>Cycles trước, nhưng chỉ ở mức cảnh đơn giản. Cycles tính ánh sáng theo đường đi nên nó phản hồi đúng với mọi thứ bạn chỉnh, và chính phản hồi đúng đó dạy bạn ánh sáng. Khi đã đọc được một tấm hình đúng sai ở đâu, chuyển sang Eevee bạn sẽ biết mình đang bù phần nào bị thiếu, thay vì chỉnh mò cho tới lúc trông tạm được.</p>
+
+<p class="faq-q">Eevee có thay được Cycles cho ảnh sản phẩm không?</p>
+<p>Được với nhóm sản phẩm bề mặt đục như nhựa, vải, gỗ, kim loại sơn, nếu bạn dựng thêm ánh sáng phản xạ bằng tay. Không nên với kính, nước, rượu, đá quý hoặc bất cứ thứ gì ăn tiền ở khúc xạ, vì phần Eevee phải đoán lại đúng là phần khách hàng nhìn vào đầu tiên.</p>
+
+<p class="faq-q">Vì sao ảnh Eevee của tôi trông phẳng và rẻ tiền hơn ảnh Cycles?</p>
+<p>Thường do ba thứ cộng lại: thiếu ánh sáng dội lại nhiều lần, bóng đổ tiếp xúc quá nhạt, và phản chiếu của những vật nằm ngoài khung hình bị mất. Cả ba đều bù được bằng đèn phụ, bằng khối chắn sáng đặt ngoài khung và bằng ảnh môi trường, nhưng bạn phải biết là mình đang bù.</p>
+
+<p class="faq-q">Máy yếu thì học render kiểu nào cho đỡ nản?</p>
+<p>Dựng và căn sáng trong Eevee cho nhanh, chỉ bật Cycles ở khung cuối và render ở cạnh dài nhỏ hơn trước khi xuất bản chính. Máy không có card đồ hoạ rời vẫn học được hết phần tư duy ánh sáng, chỉ là mỗi lần kiểm tra bản cuối sẽ lâu hơn.</p>
+
+<p class="faq-q">Học render bao lâu thì ra được ảnh dùng được cho hồ sơ?</p>
+<p>Ước lượng từ người học quanh LXAM Studio: khoảng tám tới mười hai tuần nếu học đều vài buổi mỗi tuần và có người sửa bài, lâu hơn đáng kể nếu tự mò. Phần tốn thời gian không phải là các nút trong engine mà là học cách nhìn ra tấm hình của mình đang sai ở đâu.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn muốn đi theo thứ tự có người chữa bài từng tuần thay vì tự so hai engine một mình, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ mỗi chặng bạn phải nộp được gì. Còn nếu bạn mới bắt đầu, tải <a href="cam-nang.html">cẩm nang Blender</a> và làm hết phần bài tập ánh sáng trong đó trước đã, vì mọi thứ trong bài này đều đứng trên nền đó.</p>
 """,
     },
 ]
