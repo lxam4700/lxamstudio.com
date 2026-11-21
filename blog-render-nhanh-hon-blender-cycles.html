@@ -48,6 +48,7 @@
   <a href="ve-chung-toi.html">Về chúng tôi</a><a href="index.html#portfolio">Portfolio</a><a href="blog.html">Blog</a><a href="du-an-hoc-vien.html">Bài học viên</a><a href="hoc-vien.html">Khu học viên</a><a href="index.html#lienhe">Liên hệ</a><a href="khoa-hoc.html">Khóa học</a><a href="nghe-nghiep.html">Cơ hội nghề nghiệp</a>
   <a class="lxcta" href="lo-trinh.html#dangky">Giữ chỗ →</a>
 </div>
+      <section class="rel" aria-label="Bài viết liên quan"><p class="rel-h">Đọc tiếp</p><div class="rel-g"><a class="rel-c" href="blog-hoc-render-cycles-va-eevee.html"><img src="assets/aston-martin-dbx-render-blender.jpg" alt="Học render Cycles và Eevee: chọn theo từng việc" loading="lazy" width="640" height="360"><span class="rel-t">Học render Cycles và Eevee: chọn theo từng việc</span><span class="rel-k">13 phút đọc</span></a><a class="rel-c" href="blog-5-loi-lighting.html"><img src="assets/2afcaceb.jpg" alt="Học lighting trong Blender: 5 lỗi làm render rẻ tiền" loading="lazy" width="640" height="360"><span class="rel-t">Học lighting trong Blender: 5 lỗi làm render rẻ tiền</span><span class="rel-k">11 phút đọc</span></a><a class="rel-c" href="blog-cau-hinh-may-hoc-blender.html"><img src="assets/vplas-hieu-ung-plasma-blender.jpg" alt="Cấu hình máy học Blender 3D: máy yếu có học được?" loading="lazy" width="640" height="360"><span class="rel-t">Cấu hình máy học Blender 3D: máy yếu có học được?</span><span class="rel-k">11 phút đọc</span></a></div></section>
 
 
 <main>
@@ -57,31 +58,33 @@
       <span class="tag">Kỹ thuật</span>
       <h1 style="margin-top:18px;font-size:clamp(26px,4.2vw,44px);">Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy</h1>
       <p class="post-meta" style="margin-bottom:34px;">10/09/2026 · 9 phút đọc</p>
-      <img src="assets/vplas-chi-tiet-cong-sac-render.jpg" alt="Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;" width="1600" height="900" loading="lazy" decoding="async">
+      <img src="assets/vplas-chi-tiet-cong-sac-render.jpg" alt="Render nhanh hơn trong Blender Cycles: 10 thứ cần chỉnh trước khi đổ lỗi cho máy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;margin:0 0 40px;" width="1600" height="900" fetchpriority="high" decoding="async">
 
 <p class="lead">Render lâu không phải là cái giá bắt buộc của hình đẹp. Phần lớn thời gian bị đốt vào những thứ không hiện lên trong khung hình, và cắt chúng đi thì ảnh không xấu đi chút nào.</p>
 
+<nav class="toc" aria-label="Mục lục bài viết"><p class="toc-h">Trong bài này</p><ol><li><a href="#1-dat-nguong-nhieu-dung-dat-so-sample">1. Đặt ngưỡng nhiễu, đừng đặt số sample</a></li><li><a href="#2-denoise-la-bat-buoc-khong-phai-tuy-chon">2. Denoise là bắt buộc, không phải tuỳ chọn</a></li><li><a href="#3-cat-bounce-va-clamp-anh-sang-gian-tiep">3. Cắt bounce và clamp ánh sáng gián tiếp</a></li><li><a href="#4-filter-glossy-va-fast-gi">4. Filter Glossy và Fast GI</a></li><li><a href="#5-chon-dung-thiet-bi-va-backend">5. Chọn đúng thiết bị và backend</a></li><li><a href="#6-bat-persistent-data-khi-render-day-hinh">6. Bật Persistent Data khi render dãy hình</a></li><li><a href="#7-volumetric-cho-dot-thoi-gian-so-mot">7. Volumetric: chỗ đốt thời gian số một</a></li><li><a href="#8-texture-4k-chi-dung-o-ban-cuoi">8. Texture 4K chỉ dùng ở bản cuối</a></li><li><a href="#9-instance-thay-vi-nhan-ban">9. Instance thay vì nhân bản</a></li><li><a href="#10-render-vung-va-render-nhap-cho-tu-te">10. Render vùng, và render nháp cho tử tế</a></li><li><a href="#bang-uu-tien-khi-can-cat-thoi-gian-gap">Bảng ưu tiên khi cần cắt thời gian gấp</a></li><li><a href="#thu-khong-nen-dung-vao">Thứ không nên đụng vào</a></li><li><a href="#hoi-dap-nhanh">Hỏi đáp nhanh</a></li></ol></nav>
+
 <p>Dưới đây là những thứ tôi kiểm tra theo đúng thứ tự này mỗi khi một cảnh render lâu bất thường. Bảy trên mười lần, dừng ở bước ba là xong.</p>
 
-<h2>1. Đặt ngưỡng nhiễu, đừng đặt số sample</h2>
+<h2 id="1-dat-nguong-nhieu-dung-dat-so-sample">1. Đặt ngưỡng nhiễu, đừng đặt số sample</h2>
 
 <p>Trong <code>Render Properties → Sampling → Render</code>, thứ quyết định thời gian không phải Max Samples mà là <strong style="color:#fff;">Noise Threshold</strong>. Bật Adaptive Sampling, để ngưỡng khoảng <code>0.01</code>, Max Samples để cao (2000 đến 4096) và Min Samples quanh 32.</p>
 
 <p>Cycles sẽ tự dừng ở từng vùng ảnh khi vùng đó đủ sạch. Vùng trời phẳng dừng ở 60 sample, vùng kim loại phản chiếu chạy tiếp tới 800, thay vì cả ảnh phải chạy 800 chỉ vì một góc.</p>
 
-<h2>2. Denoise là bắt buộc, không phải tuỳ chọn</h2>
+<h2 id="2-denoise-la-bat-buoc-khong-phai-tuy-chon">2. Denoise là bắt buộc, không phải tuỳ chọn</h2>
 
 <p>Bật <strong style="color:#fff;">OpenImageDenoise</strong> ở mục Denoise, với Albedo và Normal làm pass phụ trợ. Có denoise, cùng một chất lượng nhìn thấy được, bạn cần ít hơn khoảng ba tới bốn lần số sample.</p>
 
 <blockquote><p>Cách sai hay gặp: đẩy sample lên thật cao để hết nhiễu rồi mới denoise. Thứ tự đúng ngược lại: giảm sample tới mức denoise còn cứu được, và dừng ngay ở đó.</p></blockquote>
 
-<h2>3. Cắt bounce và clamp ánh sáng gián tiếp</h2>
+<h2 id="3-cat-bounce-va-clamp-anh-sang-gian-tiep">3. Cắt bounce và clamp ánh sáng gián tiếp</h2>
 
 <p>Ở <code>Light Paths</code>, mặc định Total 12 bounce là thừa cho gần như mọi cảnh sản phẩm. Hạ Total xuống 4 đến 6, Diffuse 2, Glossy 3, Transmission 6 (giữ cao nếu có kính hoặc chất lỏng).</p>
 
 <p>Sau đó đặt <code>Clamp → Indirect</code> khoảng 10. Nó chặn những chấm sáng lẻ (fireflies), thứ khiến bạn phải tăng sample gấp đôi chỉ để dập vài chục pixel.</p>
 
-<h2>4. Filter Glossy và Fast GI</h2>
+<h2 id="4-filter-glossy-va-fast-gi">4. Filter Glossy và Fast GI</h2>
 
 <p><code>Filter Glossy</code> ở mức 1.0 làm mờ nhẹ caustic phản chiếu; mắt gần như không thấy khác, nhưng nhiễu giảm rõ. Với cảnh nội thất hoặc cảnh nhiều ánh sáng dội, bật <code>Fast GI Approximation</code> giúp giảm đáng kể thời gian mà bố cục sáng vẫn giữ nguyên.</p>
 
@@ -90,29 +93,29 @@
   <figcaption><strong>Shot macro trong dự án VPLAS.</strong> Cảnh chỉ có một vật thể và hai nguồn sáng, nhưng nếu để bounce mặc định và không clamp, nó vẫn render lâu gấp ba lần cần thiết.</figcaption>
 </figure>
 
-<h2>5. Chọn đúng thiết bị và backend</h2>
+<h2 id="5-chon-dung-thiet-bi-va-backend">5. Chọn đúng thiết bị và backend</h2>
 
 <p>Trong <code>Preferences → System</code>, card NVIDIA nên chọn <strong style="color:#fff;">OptiX</strong> thay vì CUDA, chênh lệch thường thấy rõ. Card AMD dùng HIP, máy Apple Silicon dùng Metal. Ở <code>Render Properties → Device</code> nhớ đặt GPU Compute; rất nhiều người chỉnh Preferences xong quên bước này và vẫn render bằng CPU.</p>
 
-<h2>6. Bật Persistent Data khi render dãy hình</h2>
+<h2 id="6-bat-persistent-data-khi-render-day-hinh">6. Bật Persistent Data khi render dãy hình</h2>
 
 <p><code>Performance → Final Render → Persistent Data</code> giữ cảnh đã dựng trong bộ nhớ giữa các frame, thay vì tải lại từ đầu mỗi frame. Với animation, riêng cái này có thể cắt vài giây mỗi frame, nhân với 500 frame thì không nhỏ. Đổi lại là tốn RAM, nên tắt đi nếu cảnh quá nặng.</p>
 
-<h2>7. Volumetric: chỗ đốt thời gian số một</h2>
+<h2 id="7-volumetric-cho-dot-thoi-gian-so-mot">7. Volumetric: chỗ đốt thời gian số một</h2>
 
 <p>Khói, sương, ánh sáng thể tích đắt hơn mọi thứ khác trong cảnh cộng lại. Nếu cảnh có volume, chỉnh <code>Volumes → Step Rate Render</code> lên cao hơn (bước dài hơn, tính ít lần hơn) và hạ Max Steps. Với sương môi trường mỏng, khác biệt hình ảnh gần như bằng không.</p>
 
 <p>Tốt hơn nữa: tách volume ra render riêng thành một layer và ghép lại ở compositing, nhờ vậy sửa nồng độ sương sau đó không phải render lại cả cảnh.</p>
 
-<h2>8. Texture 4K chỉ dùng ở bản cuối</h2>
+<h2 id="8-texture-4k-chi-dung-o-ban-cuoi">8. Texture 4K chỉ dùng ở bản cuối</h2>
 
 <p>Bảng <code>Simplify</code> có <code>Texture Limit</code> riêng cho Viewport và Render. Đặt viewport ở 1024 để thao tác mượt. Và thành thật: một vật thể chiếm 200 pixel trên khung hình không cần texture 4K, hạ xuống 2K, VRAM thở ra và tốc độ tăng.</p>
 
-<h2>9. Instance thay vì nhân bản</h2>
+<h2 id="9-instance-thay-vi-nhan-ban">9. Instance thay vì nhân bản</h2>
 
 <p>Copy bằng <code>Alt+D</code> (linked duplicate) hoặc bằng Geometry Nodes cho ra instance dùng chung dữ liệu lưới. Copy bằng <code>Shift+D</code> nhân toàn bộ dữ liệu lên. Với một cảnh có vài trăm vật thể lặp lại, khác biệt về bộ nhớ và thời gian tải cảnh là rất lớn.</p>
 
-<h2>10. Render vùng, và render nháp cho tử tế</h2>
+<h2 id="10-render-vung-va-render-nhap-cho-tu-te">10. Render vùng, và render nháp cho tử tế</h2>
 
 <ul>
 <li><strong style="color:#fff;">Render Region (<code>Ctrl+B</code> trong camera view).</strong> Đang sửa vật liệu ở một góc thì chỉ render đúng góc đó.</li>
@@ -120,7 +123,7 @@
 <li><strong style="color:#fff;">Dựng sáng bằng EEVEE.</strong> Căn hướng và cường độ ở EEVEE cho nhanh, chuyển Cycles ở bước hoàn thiện.</li>
 </ul>
 
-<h2>Bảng ưu tiên khi cần cắt thời gian gấp</h2>
+<h2 id="bang-uu-tien-khi-can-cat-thoi-gian-gap">Bảng ưu tiên khi cần cắt thời gian gấp</h2>
 
 <div class="table-wrap">
 <table>
@@ -137,7 +140,7 @@
 </table>
 </div>
 
-<h2>Thứ không nên đụng vào</h2>
+<h2 id="thu-khong-nen-dung-vao">Thứ không nên đụng vào</h2>
 
 <p>Đừng cắt độ phân giải bản giao khách, đừng tắt hẳn denoise vì "nó làm mất chi tiết" (bản OIDN mới giữ chi tiết tốt hơn nhiều so với tiếng đồn), và đừng hạ Transmission bounce nếu cảnh có kính, vì kính sẽ đen thui và bạn sẽ mất cả buổi đi tìm nguyên nhân.</p>
 
@@ -150,7 +153,24 @@
 <p>Toàn bộ phần render setting này có bản chi tiết hơn, kèm ảnh chụp từng bảng, trong <a href="cam-nang.html" style="color:var(--ac);">Cẩm Nang Blender 3D</a> tải miễn phí.</p>
 
 
-      <hr class="hr">
+      <h2 id="hoi-dap-nhanh">Hỏi đáp nhanh</h2>
+
+<p class="faq-q">Render nhanh hơn thì ảnh có bị xấu đi không?</p>
+<p>Phần lớn các mục ở trên không làm ảnh xấu đi, vì chúng cắt thứ không hiện lên trong khung hình. Hai mục có đánh đổi thật là cắt bounce, có thể làm vùng tối mất chút sáng gián tiếp, và Filter Glossy, có thể làm vài đốm phản chiếu mềm hơn thực tế. Cách kiểm tra là render một khung ở hai thiết lập rồi so cạnh nhau, đừng tin cảm giác.</p>
+
+<p class="faq-q">Đang gấp deadline thì nên chuyển sang Eevee hay cố ở Cycles?</p>
+<p>Tuỳ loại hình. Hình sản phẩm có kính, kim loại bóng và chất trong suốt thì Eevee thường phải bù quá nhiều thủ công, ở lại Cycles và cắt theo bảng ưu tiên bên trên nhanh hơn. Hình môi trường, cảnh nhiều vật thể mờ hoặc video cần xem nhanh thì Eevee hợp hơn. Phần so sánh đầy đủ nằm trong bài <a href="blog-hoc-render-cycles-va-eevee.html">học render Cycles và Eevee</a>.</p>
+
+<p class="faq-q">Máy không có card NVIDIA thì render Cycles có khả thi?</p>
+<p>Khả thi nhưng chậm hơn đáng kể, vì OptiX chỉ có trên card NVIDIA. Máy AMD dùng HIP, máy Apple dùng Metal, cả hai đều chạy được. Nếu bạn đang chọn máy hoặc đang nghi máy mình quá yếu, mình viết các mốc cấu hình thực tế trong bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a>.</p>
+
+<p class="faq-q">Bao nhiêu sample mới là đủ?</p>
+<p>Câu hỏi này đặt sai hướng. Đặt Noise Threshold và một Max Samples cao làm trần, rồi để Blender tự dừng từng ô khi đủ sạch. Cùng một con số sample sẽ thừa ở vùng sáng phẳng và thiếu ở vùng tối nhiều phản chiếu, nên con số tuyệt đối không nói lên gì.</p>
+
+<p class="faq-q">Cắt hết rồi mà vẫn lâu thì nhìn vào đâu?</p>
+<p>Nhìn vào ánh sáng và bố cục cảnh trước khi nhìn vào thiết lập render. Cảnh thiết kế sai sáng luôn phải bù bằng sample và hậu kỳ. Năm lỗi hay gặp nhất mình liệt kê trong bài <a href="blog-5-loi-lighting.html">5 lỗi lighting làm render rẻ tiền</a>, và cách dựng không khí bằng ít node nằm ở bài <a href="blog-sau-node-va-mot-hanh-lang.html">sáu node là đủ</a>.</p>
+
+<hr class="hr">
       <div class="card" style="text-align:center;border-color:rgba(255,122,26,.28);background:rgba(255,122,26,.05);">
         <h3 style="margin-bottom:12px;">Muốn được sửa bài trực tiếp?</h3>
         <p style="margin:0 auto 22px;max-width:460px;">Coaching 1:1 online, đồng hành trọn một năm. Để lại thông tin, tôi xem qua và tư vấn bạn nên bắt đầu từ đâu.</p>
