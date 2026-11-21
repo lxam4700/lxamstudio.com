@@ -1015,7 +1015,7 @@ POSTS = [
 <p>Với bài tập cá nhân thì không. Với dự án có khách duyệt thì gần như bắt buộc, vì phần lớn yêu cầu sửa chỉ liên quan tới một lớp. Tách lớp biến một vòng sửa từ việc render lại cả cảnh thành việc chỉnh trong vài phút.</p>
 
 <p class="faq-q">Người mới nên bắt đầu học khâu nào trong chuỗi này?</p>
-<p>Khối thô và góc máy. Hai khâu đó quyết định phần lớn chất lượng cuối cùng, lại ít phụ thuộc cấu hình máy và ít phụ thuộc phần mềm nhất, nên học sớm là có lãi lâu nhất.</p>
+<p>Khối thô và góc máy. Hai khâu đó quyết định phần lớn chất lượng cuối cùng, lại ít phụ thuộc cấu hình máy và ít phụ thuộc phần mềm nhất, nên học sớm là có lãi lâu nhất. Cách nhanh nhất để thấy chuỗi này chạy thật là xem một đoàn phim bóc từng khâu ra, mình viết cách đọc kho hậu trường đó trong bài <a href="blog-kho-hau-truong-overgrown-blender-studio.html">học Blender qua nhật ký sản xuất phim OVERGROWN</a>.</p>
 
 <p class="faq-q">Studio tính báo giá dựng 3D sản phẩm theo shot hay theo ngày?</p>
 <p>Cách phổ biến ở Việt Nam là tính theo shot với số vòng sửa ghi rõ trong hợp đồng, vì khách dễ hình dung hơn. Dù tính kiểu nào, phần cần chốt bằng văn bản là số vòng sửa được bao gồm và mốc nào coi là đã duyệt. Cách so giữa freelancer, studio và agency nằm trong bài <a href="blog-studio-3d-chon-the-nao.html">studio 3D là gì và chọn thế nào</a>, còn phần đầu vào và báo giá thì ở bài <a href="blog-dich-vu-render-3d-san-pham.html">dịch vụ render 3D sản phẩm</a>. Với một chương trình thay vì một món hàng, các mốc duyệt tương ứng nằm ở bài <a href="blog-phoi-canh-su-kien-3d.html">phối cảnh sự kiện 3D cần gì</a>.</p>
@@ -2500,7 +2500,7 @@ POSTS = [
 <p>Phần lớn là không. Máy có 16GB RAM và một card rời tầm phổ thông đủ cho cả ba tháng đầu, vì bài tập còn nhỏ và render thử ở chất lượng thấp. Để tiền đó cho lúc render thật sự chặn đường bạn, thường là từ tháng thứ tư trở đi khi cảnh đã nhiều vật và nhiều đèn.</p>
 
 <p class="faq-q">Nên tự học ba tháng đầu hay có người kèm ngay từ đầu?</p>
-<p>Nếu bạn chưa biết mình có thích nghề này hay không, tự học một tới hai tháng là cách thử rẻ nhất. Khi đã có vài bài mà không tự biết bài nào yếu ở đâu, lúc đó người kèm mới đáng tiền, vì cái bạn thiếu là người chẩn đoán chứ không phải thêm bài giảng.</p>
+<p>Nếu bạn chưa biết mình có thích nghề này hay không, tự học một tới hai tháng là cách thử rẻ nhất. Khi đã có vài bài mà không tự biết bài nào yếu ở đâu, lúc đó người kèm mới đáng tiền, vì cái bạn thiếu là người chẩn đoán chứ không phải thêm bài giảng. Trong lúc tự học, nguồn miễn phí đáng giá nhất là nhật ký sản xuất của các phim dựng bằng Blender, cách bóc một shot ra để học mình viết ở bài <a href="blog-kho-hau-truong-overgrown-blender-studio.html">kho hậu trường phim OVERGROWN</a>.</p>
 
 <p class="faq-q">Học đồ hoạ 3D bằng Blender rồi có phải học lại phần mềm khác không?</p>
 <p>Chỉ khi nơi bạn vào làm bắt buộc dùng phần mềm khác. Nguyên lý khối, UV, vật liệu, ánh sáng và render chuyển được gần hết giữa các phần mềm, phần phải học lại chủ yếu là phím tắt và cách tổ chức scene, thường mất vài tuần.</p>
