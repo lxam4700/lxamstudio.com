@@ -5920,6 +5920,7 @@ def with_toc(body):
 EXTRA_POSTS = [
     {
         "slug": "render-nhanh-hon-blender-cycles",
+        "updated": "2026-11-21",
         "title": "Cách render nhanh hơn trong Blender Cycles",
         "desc": "Mười cách cắt thời gian render Cycles mà không làm hình xấu đi: noise threshold, denoise, bounce, volumetric, OptiX và những thứ không nên đụng vào.",
         "tag": "Kỹ thuật",
@@ -5930,8 +5931,9 @@ EXTRA_POSTS = [
     },
     {
         "slug": "blender-hay-3dsmax-c4d",
+        "updated": "2026-11-21",
         "title": "Blender hay 3ds Max, C4D? So sánh cho người mới",
-        "desc": "So sánh Blender, 3ds Max, Cinema 4D và Maya theo mục tiêu nghề nghiệp tại Việt Nam, phần kỹ năng chuyển được giữa các phần mềm và cách chọn đỡ mất thời gian.",
+        "desc": "So sánh Blender, 3ds Max, Cinema 4D theo mục tiêu nghề nghiệp ở Việt Nam, kèm lộ trình chuyển từ 3ds Max sang Blender ba tuần và phần kỹ năng giữ lại được.",
         "tag": "Định hướng",
         "date": "2026-09-10",
         "date_vn": "10/09/2026",
