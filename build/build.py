@@ -450,7 +450,7 @@ POSTS = [
 
 <p>Đi làm công ty, bạn bán thời gian và nhận lại sự ổn định cùng cơ hội học từ dự án của người khác. Phần lợi ít ai tính: máy móc, phần mềm và chỗ ngồi không phải tiền của bạn.</p>
 
-<p>Freelance, bạn bán kết quả. Giá theo shot nghe cao hơn nhiều, nhưng bạn phải trừ đi tháng trống việc, thời gian báo giá và sửa ngoài phạm vi, tiền máy và tiền tự lo bảo hiểm. Theo ước lượng của chúng tôi, một người freelance cần giá gấp khoảng hai lần mức lương giờ tương đương mới thật sự bằng nhau về thu nhập năm.</p>
+<p>Freelance, bạn bán kết quả. Giá theo shot nghe cao hơn nhiều, nhưng bạn phải trừ đi tháng trống việc, thời gian báo giá và sửa ngoài phạm vi, tiền máy và tiền tự lo bảo hiểm. Theo ước lượng của chúng tôi, một người freelance cần giá gấp khoảng hai lần mức lương giờ tương đương mới thật sự bằng nhau về thu nhập năm. Phần chuẩn bị trước khi bước vào nhánh này, từ bộ kỹ năng tối thiểu tới cách báo giá, nằm ở bài <a href="blog-hoc-blender-de-lam-freelancer.html">học Blender để làm freelancer</a>.</p>
 
 <p>Cách tính an toàn là lấy thu nhập cả mười hai tháng chia đều, chứ không lấy tháng tốt nhất. Nếu bạn đang định nhận việc ngoài, phần cách chúng tôi bóc một yêu cầu thành báo giá nằm trong trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a>, đọc để biết khách thường hỏi gì trước khi chốt.</p>
 
@@ -5546,7 +5546,7 @@ POSTS = [
 
 <p>Đây là phần nhiều người không muốn nghe. Kèm riêng rút ngắn quãng mò mẫm, nó không rút ngắn quãng luyện tay. Một người dạy giỏi có thể chỉ cho bạn trong mười lăm phút thứ bạn tự tìm mất ba tuần, nhưng sau đó vẫn phải là bạn ngồi dựng lại cho tới khi thao tác thành phản xạ.</p>
 
-<p>Cách dùng hiệu quả nhất, theo quan sát của chúng tôi, là xen kẽ chứ không liên tục. Học kèm một đợt ngắn để gỡ chỗ kẹt và nhận một bộ tiêu chuẩn, rồi tự làm vài tháng, rồi quay lại khi gặp bức tường mới. Chi phí thấp hơn nhiều so với kèm đều đặn, và kỹ năng bền hơn vì bạn tự giải quyết phần lớn vấn đề.</p>
+<p>Cách dùng hiệu quả nhất, theo quan sát của chúng tôi, là xen kẽ chứ không liên tục. Học kèm một đợt ngắn để gỡ chỗ kẹt và nhận một bộ tiêu chuẩn, rồi tự làm vài tháng, rồi quay lại khi gặp bức tường mới. Chi phí thấp hơn nhiều so với kèm đều đặn, và kỹ năng bền hơn vì bạn tự giải quyết phần lớn vấn đề. Với người nhắm tới nhận việc tự do, mốc nên quay lại học kèm thường rơi đúng vào đoạn mô tả trong bài <a href="blog-hoc-blender-de-lam-freelancer.html">học Blender để làm freelancer</a>, tức là khi đã ra được hình nhưng chưa biết nó còn thiếu gì so với mức khách trả tiền.</p>
 
 <p>Một thói quen nhỏ làm buổi kèm đáng tiền hơn hẳn: trước mỗi buổi, viết ra đúng một câu mô tả chỗ bạn thấy bí và gửi trước kèm file. Người dạy có thời gian xem trước, buổi học bắt đầu từ phút thứ nhất chứ không mất hai mươi phút để hiểu bạn đang làm gì.</p>
 
@@ -5691,7 +5691,7 @@ POSTS = [
 
 <p>Đây là tình huống của gần hết người mới, và nó không phải trở ngại lớn như nhiều người sợ. Không ai chờ bạn có dự án thương mại ở bộ hồ sơ đầu tiên. Thứ họ chờ là bằng chứng rằng bạn làm việc được theo một đề bài.</p>
 
-<p>Cách làm gọn nhất: chọn ba sản phẩm có thật đang bán trên thị trường, tự viết cho mỗi món một đề bài ngắn như cho một ảnh trưng bày và một ảnh chi tiết, rồi làm đúng như đang nhận việc, kể cả việc đặt hạn hoàn thành cho mình. Ghi rõ trong mô tả rằng đây là bài tự đặt. Không ai trừ điểm sự trung thực, nhưng việc nói quá về kinh nghiệm thì bị phát hiện rất nhanh ở vòng sau.</p>
+<p>Cách làm gọn nhất: chọn ba sản phẩm có thật đang bán trên thị trường, tự viết cho mỗi món một đề bài ngắn như cho một ảnh trưng bày và một ảnh chi tiết, rồi làm đúng như đang nhận việc, kể cả việc đặt hạn hoàn thành cho mình. Ghi rõ trong mô tả rằng đây là bài tự đặt. Không ai trừ điểm sự trung thực, nhưng việc nói quá về kinh nghiệm thì bị phát hiện rất nhanh ở vòng sau. Nếu bộ hồ sơ này là để nhận việc tự do chứ không phải để xin việc ở công ty, đọc thêm <a href="blog-hoc-blender-de-lam-freelancer.html">học Blender để làm freelancer</a>, vì thứ khách cần thấy có khác đôi chút.</p>
 
 <p>Nếu bạn muốn làm bộ hồ sơ theo lộ trình có người chữa bài từng tuần thay vì tự mò, cách chia sáu món theo từng chặng nằm ở bài <a href="blog-kem-1-1-lam-portfolio-3d.html">kèm 1 kèm 1 làm portfolio 3D</a>. Còn nếu bạn đang phân vân nên nhắm nhánh nào trong nghề trước khi dồn sức vào hồ sơ, trang <a href="nghe-nghiep.html">nghề 3D artist</a> mô tả các nhánh và loại việc tương ứng, và bài <a href="blog-nghe-3d-artist-luong-bao-nhieu.html">nghề 3D artist lương bao nhiêu</a> nói rõ bộ hình ở mức nào thì đổi được sang mức thu nhập nào.</p>
 
@@ -5878,6 +5878,167 @@ POSTS = [
 <hr class="hr">
 
 <p>Nếu bạn muốn đi theo thứ tự có người chữa bài từng tuần thay vì tự so hai engine một mình, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ mỗi chặng bạn phải nộp được gì. Còn nếu bạn mới bắt đầu, tải <a href="cam-nang.html">cẩm nang Blender</a> và làm hết phần bài tập ánh sáng trong đó trước đã, vì mọi thứ trong bài này đều đứng trên nền đó.</p>
+""",
+    },
+    {
+        "slug": "hoc-blender-de-lam-freelancer",
+        "title": "Học Blender để làm freelancer: cần gì, mất bao lâu",
+        "desc": "Học Blender để làm freelancer cần kỹ năng nào, portfolio ra sao, bao lâu thì có job trả tiền và báo giá thế nào. Kèm bảng lộ trình và phần bất lợi ít ai nói.",
+        "tag": "Nghề",
+        "date": "2026-11-25",
+        "date_vn": "25/11/2026",
+        "read": "12 phút đọc",
+        "thumb": "assets/vplas-lot-xac.webp",
+        "faq": [
+            ('Học Blender để làm freelancer thì bao lâu có job đầu tiên?',
+             'Ước lượng từ người học quanh LXAM Studio là khoảng sáu tới mười hai tháng nếu học đều vài buổi mỗi tuần và có người sửa bài. Mốc quyết định không phải là số giờ ngồi máy mà là lúc bạn có ba món hoàn chỉnh cùng một mảng. Trước mốc đó bạn vẫn nhận được việc lẻ, nhưng là việc giá thấp và khách thường không quay lại.'),
+            ('Làm freelancer 3D có cần bằng cấp hay chứng chỉ không?',
+             'Không. Khách gần như luôn quyết định sau khi xem hình, không ai hỏi bằng. Thứ thay thế bằng cấp là một bộ hình nhất quán và một lần trả bài đúng hẹn. Chứng chỉ chỉ có ích khi bạn đi làm công ty hoặc làm hồ sơ ra nước ngoài.'),
+            ('Mới học Blender thì nên nhận job rẻ để lấy kinh nghiệm không?',
+             'Nhận một hai job rẻ để biết cảm giác làm việc với khách thì được. Nhưng đừng ở lại nhóm giá đó quá lâu, vì nhóm khách trả rẻ thường sửa nhiều, brief mơ hồ và không giới thiệu bạn cho ai khác. Tốt hơn là làm hai ba dự án tự đặt đề bài cho thật sạch rồi chào giá đúng mức.'),
+            ('Freelancer 3D ở Việt Nam kiếm được bao nhiêu một tháng?',
+             'Không có con số chung, vì nó phụ thuộc vào mảng, vào số khách quay lại và vào việc bạn có tự chạy được một shot từ brief tới duyệt hay không. Khoảng tham khảo theo cấp độ nằm trong bài nghề 3D artist lương bao nhiêu, nhưng hãy đọc nó như khoảng ước lượng chứ không phải cam kết.'),
+            ('Nên làm freelancer toàn thời gian ngay hay vừa đi làm vừa nhận job?',
+             'Phần lớn người đi đường dài đều bắt đầu bằng cách nhận job ngoài giờ trong sáu tới mười hai tháng, tới khi có hai ba khách quay lại đều thì mới nghỉ việc. Nhảy thẳng sang freelance toàn thời gian lúc chưa có khách quen là cách nhanh nhất để phải nhận mọi job giá rẻ.'),
+        ],
+        "body": """
+<p class="lead">Học Blender để làm freelancer khác với học Blender cho vui ở ba chỗ: bạn phải chọn một mảng đủ hẹp, phải có bộ hình chứng minh được mảng đó, và phải biết quy một đề bài ra số ngày công. Phần mềm chỉ chiếm khoảng một nửa quãng đường. Ước lượng thường gặp là sáu tới mười hai tháng học đều mới tới job trả tiền đầu tiên, và job đó gần như luôn nhỏ hơn bạn tưởng.</p>
+
+<p>Bài này viết cho người đã dùng được Blender ở mức cơ bản và đang tính lấy nó làm nghề tay trái hoặc nghề chính. Không có phần động viên. Thứ tự sẽ là: cần những gì, mất bao lâu, portfolio nên trông ra sao, tìm khách ở đâu, báo giá thế nào, và những mặt bất lợi mà các video hướng nghiệp hay bỏ qua.</p>
+
+<h2>Học Blender để làm freelancer cần ba thứ, phần mềm chỉ là một</h2>
+
+<p>Người mới thường nghĩ rào cản là kỹ thuật. Thực tế rào cản hay gặp hơn là không ai biết nên thuê bạn làm gì. Ba thứ dưới đây phải có đủ thì job mới tới đều, thiếu một thứ là chuỗi đứt ở đó.</p>
+
+<h3>Một mảng hẹp đủ để khách nhớ tên bạn</h3>
+
+<p>Khách không tìm người làm 3D nói chung. Họ tìm người dựng hình sản phẩm cho sàn thương mại điện tử, người làm phối cảnh gian hàng, người làm hình trang sức, người làm shot xe. Chọn một mảng không khoá bạn lại mãi mãi, nó chỉ quyết định bạn được nhớ tới trong hoàn cảnh nào. Người làm được mọi thứ ở mức trung bình thường thua người làm được một thứ ở mức sạch.</p>
+
+<h3>Bộ hình chứng minh được mảng đó</h3>
+
+<p>Ba món cùng một mảng có sức thuyết phục hơn mười món mỗi thứ một kiểu. Khách xem portfolio để trả lời đúng một câu hỏi: người này đã làm thứ giống việc của mình chưa. Chi tiết về số lượng và cách bày nằm ở bài <a href="blog-portfolio-3d-can-co-gi.html">portfolio 3D cần có gì</a>, phần dưới đây chỉ nói riêng điểm khác biệt khi bạn làm freelancer.</p>
+
+<h3>Khả năng ước lượng thời gian và báo giá</h3>
+
+<p>Đây là phần làm nhiều người giỏi kỹ thuật vẫn lỗ. Bạn phải nói được một đề bài mất bao nhiêu ngày công, bao nhiêu vòng sửa, và nếu khách đổi ý ở vòng ba thì tính thế nào. Cách bóc tách một đề bài thành các đầu việc tính tiền được nằm trong bài <a href="blog-bao-gia-dung-3d-san-pham.html">báo giá dựng 3D sản phẩm</a>, viết từ phía studio nhưng freelancer dùng lại được gần hết.</p>
+
+<h2>Bộ kỹ năng tối thiểu để nhận job freelance đầu tiên</h2>
+
+<p>Mức tối thiểu ở đây hiểu là đủ để nhận một job nhỏ có trả tiền mà không phải nhờ người khác cứu. Chưa phải mức giỏi, chỉ là mức không gây rủi ro cho khách.</p>
+
+<table>
+<thead><tr><th>Kỹ năng</th><th>Mức tối thiểu cần có</th><th>Dấu hiệu bạn chưa tới mức đó</th></tr></thead>
+<tbody>
+<tr><td>Dựng hình</td><td>Dựng đúng tỉ lệ từ ảnh và bản vẽ, lưới sạch, bo cạnh đọc được khi nhìn gần</td><td>Hình nhìn xa thì ổn, phóng to là lộ cạnh gãy</td></tr>
+<tr><td>Chất liệu</td><td>Làm được nhựa, kim loại sơn, kim loại trần, thuỷ tinh ở mức tin được</td><td>Mọi vật trong cảnh đều bóng như nhau</td></tr>
+<tr><td>Ánh sáng</td><td>Tự dựng được bộ đèn ba hướng, kiểm soát được vùng sáng và bóng đổ tiếp xúc</td><td>Phải dùng ảnh môi trường có sẵn mới ra hình</td></tr>
+<tr><td>Render</td><td>Biết chọn engine theo việc, xử lý được nhiễu hạt, xuất đúng kích thước khách cần</td><td>Render xong mới phát hiện sai tỉ lệ khung</td></tr>
+<tr><td>Hậu kỳ</td><td>Chỉnh màu, ghép lớp, xoá lỗi nhỏ mà không làm hình bẹt đi</td><td>Ảnh gốc và ảnh đã chỉnh trông như hai sản phẩm khác nhau</td></tr>
+<tr><td>Làm việc với khách</td><td>Đọc brief, hỏi lại đúng chỗ thiếu, trả bài đúng hẹn, nhận sửa có giới hạn</td><td>Nhận job xong mới nhận ra thiếu thông tin quan trọng</td></tr>
+</tbody>
+</table>
+
+<p>Nhìn bảng này thì thấy ngay: bốn dòng đầu là kỹ thuật, hai dòng cuối không phải. Người tự học thường mạnh ở phần trên và yếu hẳn ở phần dưới, vì tự học không có ai đóng vai khách. Nếu bạn còn phân vân chọn engine nào cho việc nào, đọc thêm <a href="blog-hoc-render-cycles-va-eevee.html">học render Cycles và Eevee</a> trước khi nhận job thật.</p>
+
+<blockquote><p>Khách không trả tiền cho bản render đẹp nhất bạn từng làm. Họ trả tiền cho bản render đúng hẹn, đúng brief, và sửa được trong giới hạn đã thống nhất.</p></blockquote>
+
+<h2>Mất bao lâu từ lúc mở Blender tới đồng tiền đầu tiên</h2>
+
+<p>Mốc thời gian dưới đây là ước lượng từ nhóm người học quanh LXAM Studio, tính cho người học đều vài buổi mỗi tuần và có người sửa bài. Tự học ngắt quãng thì kéo dài hơn đáng kể, có người mất gấp đôi. Đây là khoảng tham khảo, không phải cam kết.</p>
+
+<table>
+<thead><tr><th>Giai đoạn</th><th>Khoảng thời gian ước lượng</th><th>Thứ bạn làm xong ở cuối giai đoạn</th></tr></thead>
+<tbody>
+<tr><td>Quen phần mềm</td><td>Khoảng 4 tới 8 tuần</td><td>Dựng lại được một vật thật, chưa cần đẹp</td></tr>
+<tr><td>Ra được hình sạch</td><td>Khoảng 2 tới 4 tháng</td><td>Một ảnh sản phẩm đủ sạch để đưa lên hồ sơ</td></tr>
+<tr><td>Có ba món cùng mảng</td><td>Khoảng 4 tới 8 tháng</td><td>Bộ hình trả lời được câu hỏi bạn làm mảng gì</td></tr>
+<tr><td>Job trả tiền đầu tiên</td><td>Khoảng 6 tới 12 tháng</td><td>Một job nhỏ chạy trọn từ brief tới nghiệm thu</td></tr>
+<tr><td>Khách quay lại lần hai</td><td>Thường sau job thứ ba tới thứ năm</td><td>Nguồn việc bắt đầu đều, bớt phải đi tìm</td></tr>
+</tbody>
+</table>
+
+<p>Điểm đáng chú ý nằm ở dòng cuối. Job đầu tiên là cột mốc tâm lý, nhưng khách quay lại mới là cột mốc kinh tế. Rất nhiều người dừng ở job thứ nhất rồi quay về trạng thái đi tìm việc từ đầu, vì họ làm xong rồi biến mất thay vì giữ liên lạc.</p>
+
+<h2>Portfolio của freelancer khác portfolio của người đi xin việc</h2>
+
+<p>Người đi xin việc cần chứng minh tiềm năng, nên họ bày cả bài tập và quá trình. Freelancer cần chứng minh độ tin cậy, nên thứ cần bày là kết quả cuối ở định dạng khách dùng được ngay: ảnh đúng tỉ lệ khung của sàn, bộ ảnh nhiều góc cho một sản phẩm, hình có chú thích chi tiết kỹ thuật.</p>
+
+<figure>
+  <img src="assets/vplas-lot-xac.webp" alt="Render bút VPLAS cùng pin và cáp sạc trên nền đen, có đường chú thích tên từng phụ kiện, dựng bằng Blender" loading="lazy" width="1800" height="1012">
+  <figcaption><strong>Một dạng hình khách hay đặt: bộ phụ kiện tách riêng kèm chú thích.</strong> Hình này không khó về dựng hình nhưng đòi hỏi đúng thứ khách cần, tức là đọc được tên từng món khi thu nhỏ trên trang bán hàng. Dạng bài như vậy đáng đưa vào hồ sơ hơn một cảnh phức tạp không ai đặt bao giờ.</figcaption>
+</figure>
+
+<p>Thêm một điểm nữa: với mỗi món trong hồ sơ, viết hai ba dòng nói rõ đề bài là gì và bạn giải quyết ra sao. Khách đọc phần đó để đoán xem bạn có hiểu việc hay chỉ làm theo hướng dẫn. Nếu bạn chưa có dự án thật, tự đặt đề bài cho mình theo cách một khách hàng sẽ viết, đó cũng là cách làm bài trong <a href="blog-khoa-hoc-dung-hinh-san-pham.html">khoá học dựng hình sản phẩm</a>.</p>
+
+<h2>Tìm khách ở đâu và báo giá thế nào</h2>
+
+<p>Phần này ít liên quan tới Blender nhưng quyết định bạn sống được hay không với nghề.</p>
+
+<h3>Ba nguồn khách thật, xếp theo độ bền</h3>
+
+<ul>
+  <li><strong>Người quen trong ngành.</strong> Bạn học cũ, người làm agency, thợ chụp sản phẩm, người làm thi công gian hàng. Nguồn này chậm lúc đầu nhưng bền nhất, vì nó đi kèm bảo chứng.</li>
+  <li><strong>Các nhóm nghề và mạng xã hội.</strong> Đăng đều kết quả cuối, không đăng quá trình chưa xong. Khách lướt qua chỉ nhớ hình, không nhớ lời.</li>
+  <li><strong>Sàn việc tự do.</strong> Nhanh có job nhưng cạnh tranh bằng giá và thường không có khách quay lại. Dùng để lấy nhịp làm việc trong vài tháng đầu thì hợp lý, coi là nguồn chính thì mệt.</li>
+</ul>
+
+<h3>Báo giá theo gói, đừng báo theo giờ khi còn mới</h3>
+
+<p>Khi còn mới, bạn ước lượng thời gian chưa chuẩn, nên báo theo giờ gần như luôn lỗ. Báo theo gói thì phạm vi rõ: bao nhiêu góc hình, bao nhiêu vòng sửa, sửa ngoài phạm vi tính thêm thế nào. Luôn ghi rõ mức tạm ứng và thời điểm giao file gốc. Nếu muốn một khung giá có sẵn để đối chiếu, trang <a href="dich-vu.html">dịch vụ render 3D sản phẩm</a> liệt kê các đầu việc mà một job thật thường gồm.</p>
+
+<h2>Mặt bất lợi của làm freelancer 3D, nói thẳng</h2>
+
+<p>Nghề này được quảng cáo nhiều hơn mức nó xứng đáng, nên cần nói cả phần kia.</p>
+
+<ul>
+  <li><strong>Thu nhập không đều.</strong> Có tháng ba job chồng nhau, có tháng không có gì. Không có lương tháng nghĩa là bạn phải tự giữ một khoản đệm.</li>
+  <li><strong>Bạn làm luôn phần việc hành chính.</strong> Tìm khách, viết báo giá, đòi nợ, xuất hoá đơn. Phần này ăn thời gian thật và không ai trả tiền cho nó.</li>
+  <li><strong>Học một mình thì chậm.</strong> Không có người soi bài, lỗi của bạn lặp lại rất lâu mới tự phát hiện ra. Đây là lý do nhiều người chọn <a href="blog-hoc-kem-3d.html">học kèm 3D</a> ở giai đoạn giữa, đúng lúc đã biết mình thiếu gì nhưng chưa biết sửa ra sao.</li>
+  <li><strong>Khách xấu tồn tại.</strong> Sẽ có người sửa vô hạn, trả chậm hoặc biến mất. Hợp đồng ngắn và tạm ứng là hai thứ cắt phần lớn rủi ro đó.</li>
+  <li><strong>Phải tự cập nhật.</strong> Công cụ đổi liên tục, kể cả phần kết hợp AI vào quy trình làm hình. Không ai nhắc bạn học, và thị trường không chờ.</li>
+</ul>
+
+<p>Nói vậy không phải để can. Chỉ là người bước vào với kỳ vọng đúng thường trụ lâu hơn người bước vào vì một video quay cảnh làm việc ở quán cà phê.</p>
+
+<h2>Danh sách kiểm tra trước khi nhận job freelance đầu tiên</h2>
+
+<ul>
+  <li>Bạn có ba món cùng một mảng, hoàn chỉnh tới bản cuối, không phải bài tập dở dang.</li>
+  <li>Bạn dựng lại được một sản phẩm mới trong thời gian tự ước lượng, sai số dưới một phần ba.</li>
+  <li>Bạn trả lời được câu hỏi khách hay hỏi nhất: bao lâu xong, bao nhiêu tiền, sửa mấy vòng.</li>
+  <li>Bạn có nơi để khách xem hình trong vòng một phút, không bắt họ tải file về.</li>
+  <li>Bạn đã viết ra phạm vi công việc thành văn bản, dù chỉ là một tin nhắn dài.</li>
+  <li>Bạn biết mình sẽ làm gì nếu khách đòi sửa lần thứ năm.</li>
+</ul>
+
+<p>Thiếu hai mục trở lên thì chưa vội nhận job có trả tiền. Dành thêm vài tuần làm cho đủ, vì job đầu tiên hỏng sẽ lấy đi nhiều tự tin hơn là số tiền nó mang lại.</p>
+
+<h2>Học Blender để làm freelancer có đáng không</h2>
+
+<p>Đáng, với điều kiện bạn coi nó là một nghề chứ không phải một cách thoát khỏi công việc hiện tại. Phần kỹ thuật của Blender hoàn toàn học được bằng tài liệu miễn phí. Phần khó là giữ nhịp đủ lâu để đi hết đoạn từ hình đầu tiên tới khách thứ ba, và đoạn đó dài hơn vẻ ngoài của nó. Mức thu nhập tham khảo theo từng cấp độ nằm trong bài <a href="blog-nghe-3d-artist-luong-bao-nhieu.html">nghề 3D artist lương bao nhiêu</a>, đọc như khoảng ước lượng để tự đặt mục tiêu.</p>
+
+<p>Nếu bạn muốn rút ngắn đoạn giữa, thứ giúp nhiều nhất không phải thêm một khoá kỹ thuật mà là có người xem bài và nói thẳng bài đó thiếu gì so với mức khách chấp nhận được.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Học Blender để làm freelancer thì bao lâu có job đầu tiên?</p>
+<p>Ước lượng từ người học quanh LXAM Studio là khoảng sáu tới mười hai tháng nếu học đều vài buổi mỗi tuần và có người sửa bài. Mốc quyết định không phải là số giờ ngồi máy mà là lúc bạn có ba món hoàn chỉnh cùng một mảng. Trước mốc đó bạn vẫn nhận được việc lẻ, nhưng là việc giá thấp và khách thường không quay lại.</p>
+
+<p class="faq-q">Làm freelancer 3D có cần bằng cấp hay chứng chỉ không?</p>
+<p>Không. Khách gần như luôn quyết định sau khi xem hình, không ai hỏi bằng. Thứ thay thế bằng cấp là một bộ hình nhất quán và một lần trả bài đúng hẹn. Chứng chỉ chỉ có ích khi bạn đi làm công ty hoặc làm hồ sơ ra nước ngoài.</p>
+
+<p class="faq-q">Mới học Blender thì nên nhận job rẻ để lấy kinh nghiệm không?</p>
+<p>Nhận một hai job rẻ để biết cảm giác làm việc với khách thì được. Nhưng đừng ở lại nhóm giá đó quá lâu, vì nhóm khách trả rẻ thường sửa nhiều, brief mơ hồ và không giới thiệu bạn cho ai khác. Tốt hơn là làm hai ba dự án tự đặt đề bài cho thật sạch rồi chào giá đúng mức.</p>
+
+<p class="faq-q">Freelancer 3D ở Việt Nam kiếm được bao nhiêu một tháng?</p>
+<p>Không có con số chung, vì nó phụ thuộc vào mảng, vào số khách quay lại và vào việc bạn có tự chạy được một shot từ brief tới duyệt hay không. Khoảng tham khảo theo cấp độ nằm trong bài nghề 3D artist lương bao nhiêu, nhưng hãy đọc nó như khoảng ước lượng chứ không phải cam kết.</p>
+
+<p class="faq-q">Nên làm freelancer toàn thời gian ngay hay vừa đi làm vừa nhận job?</p>
+<p>Phần lớn người đi đường dài đều bắt đầu bằng cách nhận job ngoài giờ trong sáu tới mười hai tháng, tới khi có hai ba khách quay lại đều thì mới nghỉ việc. Nhảy thẳng sang freelance toàn thời gian lúc chưa có khách quen là cách nhanh nhất để phải nhận mọi job giá rẻ.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn đang ở đoạn giữa, tức là ra được hình nhưng chưa biết nó còn thiếu gì so với mức khách trả tiền, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ mỗi chặng bạn phải nộp được gì và nộp cho ai chấm. Còn nếu bạn mới bắt đầu, tải <a href="cam-nang.html">cẩm nang Blender</a> và làm hết phần bài tập trong đó trước, vì mọi thứ trong bài này đều đứng trên nền đó.</p>
 """,
     },
 ]
