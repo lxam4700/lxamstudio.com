@@ -478,7 +478,10 @@
   function cfg(){
     return window.innerWidth < 760
       ? {pre:'assets/vm', sheets:11, cols:4, rows:2, cw:600,  ch:1240, n:88,
-         zoom:'assets/vmzoom.webp', fx:0.5,   fy:0.47,  tall:true, z:0.10}
+         zoom:'assets/vmzoom.webp', fx:0.5,   fy:0.47,  tall:true, z:0.10,
+         // Bo khung mobile co khoi den phim truong bi cat cut o hai mep, con lai
+         // mot soc sang mong trong nhu loi. Cat san hai ben cho no ra ngoai khung.
+         zb:1.20}
       : {pre:'assets/vd', sheets:22, cols:2, rows:3, cw:1760, ch:742,  n:132,
          zoom:'assets/vzoom.webp',  fx:0.545, fy:0.525, tall:false, z:0.34};
   }
@@ -531,7 +534,7 @@
   // Mot duong tien vao duy nhat chay suot ca quang cuon. Tuyen tinh nen toc do
   // khong doi, khong co cho nao nhay len dot ngot.
   function srcRect(iw, ih, q){
-    var kk = 1 + C.z * q;
+    var kk = (C.zb || 1) + C.z * q;
     var sw = iw / kk, sh = ih / kk;
     var fx = 0.5 + (C.fx - 0.5) * q;
     var fy = 0.5 + (C.fy - 0.5) * q;
