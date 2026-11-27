@@ -614,6 +614,7 @@ def scroll_banner():
   var stick = sec ? sec.querySelector('.vsc-stick') : null;
   var cv  = document.getElementById('vscCv');
   var bar = document.getElementById('vscBar');
+  var barw= sec ? sec.querySelector('.vsc-bar') : null;
   var inn = document.getElementById('vscIn');
   var hint= document.getElementById('vscHint');
   var load= document.getElementById('vscLoad');
@@ -788,6 +789,12 @@ def scroll_banner():
     inn.style.transform = 'translate3d(0,' + (-fade * 26).toFixed(1) + 'px,0)';
     if(hint) hint.style.opacity = (1 - Math.min(1, p / 0.12)).toFixed(3);
     if(bar) bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+    // Cuoi khoi, khung da toi hoan toan nen thanh tien do con lai thanh mot
+    // vet mau noi tren nen den. Cho no mo dan theo, het khoi la het vet.
+    if(barw){
+      var bfade = p < 0.86 ? 0 : Math.min(1, (p - 0.86) / 0.14);
+      barw.style.opacity = (1 - bfade).toFixed(3);
+    }
   }
 
   // Con lan chuot nhay tung nac chung 100px, tuc moi nac vot qua may khung mot luc.

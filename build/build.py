@@ -2132,6 +2132,8 @@ POSTS = [
 
 <p>Sau một tháng đó, nếu bạn vẫn muốn đi tiếp mà thấy mình đang loay hoay, lúc đó tiền học mới đáng, vì bạn đã biết mình cần gì. Nếu còn phân vân giữa hai hướng, bài <a href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học khoá có người kèm</a> phân tích kỹ hơn từng trường hợp.</p>
 
+<p>Nếu bạn không phải người mới mà đã đi làm bằng phần mềm khác, cách tính sẽ khác hẳn, vì bạn chỉ cần học lại giao diện chứ không học lại nghề. Trường hợp hay gặp nhất, cùng mốc thời gian và bảng đối chiếu công cụ, nằm ở bài <a href="blog-chuyen-tu-3ds-max-sang-blender.html">chuyển từ 3ds Max sang Blender</a>.</p>
+
 <h2>Sau khoá học, cái gì thật sự quyết định bạn có việc</h2>
 
 <p>Không phải chứng chỉ. Người thuê nhìn ba thứ: portfolio có đủ shot hoàn chỉnh hay không, bạn có tự đi hết một dự án mà không cần cầm tay hay không, và bạn có giao đúng hạn hay không. Khoá học chỉ rút ngắn giai đoạn đầu.</p>
@@ -5856,7 +5858,7 @@ POSTS = [
 
 <p>Mức đủ dùng ở đây hiểu là bạn ra được một ảnh sản phẩm sạch, tự chẩn đoán được lỗi và không phải chỉnh mò. Ước lượng từ người học quanh LXAM Studio là khoảng tám tới mười hai tuần nếu học đều và có người sửa bài, dài hơn đáng kể nếu tự học ngắt quãng.</p>
 
-<p>Điểm nghẽn gần như luôn giống nhau: không phải nút nào nằm ở đâu, mà là nhìn một tấm hình và nói được nó sai ở chỗ nào. Kỹ năng đó chỉ lớn lên khi có người chỉ vào bài của bạn và nói thẳng, hoặc khi bạn tự so bản Cycles và bản Eevee của cùng một cảnh đủ nhiều lần. Thứ tự tổng thể của các kỹ năng, từ dựng hình tới hậu kỳ, nằm trong <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>.</p>
+<p>Điểm nghẽn gần như luôn giống nhau: không phải nút nào nằm ở đâu, mà là nhìn một tấm hình và nói được nó sai ở chỗ nào. Kỹ năng đó chỉ lớn lên khi có người chỉ vào bài của bạn và nói thẳng, hoặc khi bạn tự so bản Cycles và bản Eevee của cùng một cảnh đủ nhiều lần. Thứ tự tổng thể của các kỹ năng, từ dựng hình tới hậu kỳ, nằm trong <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a>. Còn nếu bạn vốn quen V-Ray hoặc Corona và đang đổi công cụ, phần tên gọi tương đương nằm trong bài <a href="blog-chuyen-tu-3ds-max-sang-blender.html">chuyển từ 3ds Max sang Blender</a>.</p>
 
 <h2>Hỏi đáp</h2>
 
@@ -6041,6 +6043,180 @@ POSTS = [
 <p>Nếu bạn đang ở đoạn giữa, tức là ra được hình nhưng chưa biết nó còn thiếu gì so với mức khách trả tiền, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ mỗi chặng bạn phải nộp được gì và nộp cho ai chấm. Còn nếu bạn mới bắt đầu, tải <a href="cam-nang.html">cẩm nang Blender</a> và làm hết phần bài tập trong đó trước, vì mọi thứ trong bài này đều đứng trên nền đó.</p>
 """,
     },
+{
+        "slug": "chuyen-tu-3ds-max-sang-blender",
+        "title": "Chuyển từ 3ds Max sang Blender: lộ trình 4 tuần",
+        "desc": "Chuyển từ 3ds Max sang Blender mất bao lâu, kỹ năng nào giữ được, công cụ nào tương đương, đưa file cũ sang kiểu gì. Kèm lộ trình bốn tuần và phần bất lợi.",
+        "tag": "Định hướng",
+        "date": "2026-11-27",
+        "date_vn": "27/11/2026",
+        "read": "11 phút đọc",
+        "thumb": "assets/jhm-mat-truoc.webp",
+        "faq": [
+            ('Chuyển từ 3ds Max sang Blender mất bao lâu?',
+             'Với người đã dùng 3ds Max thành thạo, ước lượng thường gặp là khoảng ba tới sáu tuần học đều để quay lại mức làm việc được, tính theo vài buổi mỗi tuần. Tuần đầu là tuần khó chịu nhất vì tay vẫn nhớ phím cũ. Từ tuần thứ ba trở đi tốc độ hồi lại khá nhanh, vì phần tư duy dựng hình và ánh sáng của bạn không mất đi đâu cả.'),
+            ('Có nên bật Emulate 3 Button Mouse hay dùng keymap giống 3ds Max không?',
+             'Keymap giả lập giúp tuần đầu dễ thở hơn nhưng kéo dài quãng chuyển. Lý do là mọi hướng dẫn, mọi add-on và mọi người bạn hỏi đều nói theo phím mặc định của Blender. Cách đỡ mệt nhất là giữ keymap mặc định, chỉ đổi lại vài phím bạn dùng nhiều nhất, và chấp nhận chậm trong khoảng mười ngày.'),
+            ('File .max cũ có mở được trong Blender không?',
+             'Không. Blender không đọc được định dạng .max. Bạn phải mở bằng 3ds Max rồi xuất ra FBX, OBJ hoặc USD, sau đó nhập vào Blender. Hình khối và UV thường sang được khá nguyên vẹn, còn vật liệu V-Ray hay Corona thì gần như phải dựng lại trong hệ node của Blender.'),
+            ('Chuyển sang Blender rồi thì kỹ năng V-Ray có còn dùng được không?',
+             'Phần hiểu biết về ánh sáng, phơi sáng, vật liệu phản xạ và khử nhiễu vẫn dùng được gần như toàn bộ, vì đó là kiến thức về nhiếp ảnh chứ không phải về một engine. Thứ mất đi là thói quen bấm theo giao diện V-Ray. Cycles có cách gọi tên khác nhưng cùng một logic, nên phần học lại chủ yếu là tên gọi và vị trí nút.'),
+            ('Có nên bỏ hẳn 3ds Max hay dùng song song?',
+             'Nếu công ty hoặc khách của bạn vẫn chạy file 3ds Max thì dùng song song là lựa chọn an toàn trong vài tháng đầu: dựng hoặc nhận file ở 3ds Max, đưa sang Blender để làm chất liệu, ánh sáng và render. Chỉ bỏ hẳn khi bạn đã chạy trọn một job thật bằng Blender mà không phải quay về phần mềm cũ để cứu khâu nào.'),
+        ],
+        "body": """
+<p class="lead">Chuyển từ 3ds Max sang Blender thường mất khoảng ba tới sáu tuần để quay lại mức làm việc được, không phải vài ngày như các video giới thiệu hay nói. Phần khó không nằm ở tính năng, vì hầu hết việc bạn làm trong 3ds Max đều có chỗ tương ứng trong Blender. Phần khó nằm ở phím tắt, ở logic chọn đối tượng và ở việc bạn phải dựng lại toàn bộ vật liệu.</p>
+
+<p>Bài này viết cho người đã dùng 3ds Max đi làm thật, mảng nội thất, kiến trúc, gian hàng hoặc sản phẩm, và đang tính đổi sang Blender. Nếu bạn chưa biết nên chọn phần mềm nào từ đầu thì đọc bài <a href="blog-blender-hay-3dsmax-c4d.html">Blender hay 3ds Max, C4D</a> trước, vì bài này giả định bạn đã quyết định chuyển rồi và chỉ cần biết chuyển ra sao cho đỡ mất thời gian.</p>
+
+<h2>Chuyển từ 3ds Max sang Blender mất bao lâu</h2>
+
+<p>Mốc dưới đây là ước lượng từ nhóm người học quanh LXAM Studio, phần lớn là người đã đi làm bằng 3ds Max từ hai năm trở lên. Con số này thay đổi theo mảng bạn làm, nên hãy đọc như khoảng tham khảo.</p>
+
+<table>
+<thead><tr><th>Mốc</th><th>Khoảng thời gian ước lượng</th><th>Dấu hiệu bạn đã qua mốc đó</th></tr></thead>
+<tbody>
+<tr><td>Hết bỡ ngỡ giao diện</td><td>Khoảng 3 tới 7 ngày</td><td>Không còn phải dừng lại tìm nút mỗi vài phút</td></tr>
+<tr><td>Dựng lại được một vật quen thuộc</td><td>Khoảng 1 tới 2 tuần</td><td>Làm xong một món từng làm bằng 3ds Max, không cần xem hướng dẫn</td></tr>
+<tr><td>Ra được hình sạch bằng Cycles</td><td>Khoảng 2 tới 4 tuần</td><td>Ánh sáng và chất liệu đạt mức bạn từng đạt ở phần mềm cũ</td></tr>
+<tr><td>Quay lại tốc độ làm việc cũ</td><td>Khoảng 3 tới 6 tuần</td><td>Ước lượng được thời gian một job mà không hụt</td></tr>
+<tr><td>Nhận job thật bằng Blender</td><td>Sau mốc trên, thường thêm 1 tới 2 tuần</td><td>Chạy trọn một job từ brief tới file giao mà không mở 3ds Max</td></tr>
+</tbody>
+</table>
+
+<p>Điều đáng chú ý là mốc thứ tư, không phải mốc thứ nhất. Rất nhiều người dừng ở chỗ dùng được nhưng chậm hơn trước, thấy bực rồi quay lại phần mềm cũ. Nếu bạn đã quyết chuyển, hãy đặt kỳ vọng cho đúng: sẽ có khoảng hai tới ba tuần bạn làm chậm hơn mình của tháng trước.</p>
+
+<h2>Kỹ năng bạn giữ được và thứ phải học lại</h2>
+
+<p>Tin tốt là phần lớn thời gian bạn bỏ ra cho 3ds Max không mất. Phần mềm chỉ là lớp vỏ, bên dưới vẫn là cùng một nghề.</p>
+
+<table>
+<thead><tr><th>Nhóm</th><th>Giữ nguyên được</th><th>Phải học lại</th></tr></thead>
+<tbody>
+<tr><td>Dựng hình</td><td>Tư duy khối, tỉ lệ, đọc bản vẽ, cách chia lưới sạch</td><td>Phím tắt, cách chọn thành phần, tên gọi công cụ</td></tr>
+<tr><td>Vật liệu</td><td>Hiểu biết về phản xạ, độ nhám, lớp phủ, bản đồ ảnh</td><td>Toàn bộ thư viện cũ, cách nối node trong Blender</td></tr>
+<tr><td>Ánh sáng</td><td>Bố trí đèn, kiểm soát tương phản, phơi sáng</td><td>Tên thông số và cách đặt đèn trong Blender</td></tr>
+<tr><td>Render</td><td>Cách khử nhiễu, chọn độ phân giải, xuất theo lớp</td><td>Thiết lập của Cycles và Eevee, cách chia lớp mới</td></tr>
+<tr><td>Quy trình</td><td>Cách tổ chức cảnh, đặt tên, làm việc với khách</td><td>Cấu trúc collection thay cho layer và group cũ</td></tr>
+</tbody>
+</table>
+
+<p>Nhìn cột giữa thì thấy ngay: thứ bạn giữ được nhiều hơn thứ phải bỏ. Đây cũng là lý do người có nghề chuyển nhanh hơn người mới học từ đầu rất nhiều, kể cả khi tuần đầu họ thấy vụng về. Nếu bạn muốn so Cycles với Eevee trước khi chọn engine chính, bài <a href="blog-hoc-render-cycles-va-eevee.html">học render Cycles và Eevee</a> chia theo từng loại việc chứ không chia theo thông số.</p>
+
+<blockquote><p>Đổi phần mềm không làm mất nghề của bạn. Nó chỉ làm bạn chậm trong vài tuần, và phần lớn người bỏ cuộc là vì không chấp nhận nổi vài tuần đó.</p></blockquote>
+
+<h2>Bảng đối chiếu những thứ bạn dùng hằng ngày</h2>
+
+<p>Đây là phần tiết kiệm thời gian nhất cho tuần đầu. Thay vì tra từng thứ khi cần, in bảng này ra và để cạnh máy.</p>
+
+<table>
+<thead><tr><th>Trong 3ds Max</th><th>Tương đương trong Blender</th><th>Khác biệt cần nhớ</th></tr></thead>
+<tbody>
+<tr><td>Modifier Stack</td><td>Modifier Properties</td><td>Thứ tự vẫn từ dưới lên, nhưng không gộp theo nhóm như cũ</td></tr>
+<tr><td>Editable Poly</td><td>Edit Mode với ba chế độ đỉnh, cạnh, mặt</td><td>Chuyển chế độ bằng phím số thay vì bấm biểu tượng</td></tr>
+<tr><td>TurboSmooth</td><td>Subdivision Surface</td><td>Nên dùng kèm cạnh phụ hoặc bevel để giữ cạnh cứng</td></tr>
+<tr><td>Chamfer</td><td>Bevel</td><td>Cho đổi số phân đoạn ngay trong lúc thao tác</td></tr>
+<tr><td>Symmetry</td><td>Mirror</td><td>Phụ thuộc gốc toạ độ của đối tượng, kiểm tra trước khi dùng</td></tr>
+<tr><td>Layer Manager</td><td>Collection trong Outliner</td><td>Lồng được nhiều tầng, dùng luôn để bật tắt khi render</td></tr>
+<tr><td>Slate Material Editor</td><td>Shader Editor</td><td>Cùng kiểu node, khác tên và khác cách nối mặc định</td></tr>
+<tr><td>V-Ray Physical Camera</td><td>Camera với phần Depth of Field và Exposure</td><td>Thông số phơi sáng nằm rải ở hai chỗ, không gộp một bảng</td></tr>
+<tr><td>Render Elements</td><td>View Layer và Passes</td><td>Chia lớp linh hoạt hơn nhưng phải tự đặt tên cho gọn</td></tr>
+</tbody>
+</table>
+
+<p>Có hai thói quen nên đổi sớm. Thứ nhất, dùng collection ngay từ ngày đầu thay vì để mọi thứ trong một đống, vì cảnh lớn mà không chia collection thì khâu render theo lớp sẽ rất khổ. Thứ hai, tập quen với việc chuột phải không phải là menu lệnh chính, phần lớn thao tác đi qua phím tắt và menu bên.</p>
+
+<h2>Đưa file và thư viện cũ sang Blender</h2>
+
+<p>Đây là chỗ nhiều người hụt hẫng nhất, nên nói thẳng: bạn không mang được cả thư viện sang. Hình khối thì sang được, phần còn lại thì không.</p>
+
+<h3>Hình khối và UV</h3>
+
+<p>Xuất từ 3ds Max ra FBX cho cảnh có nhiều đối tượng, OBJ cho vật đơn lẻ, USD nếu bạn làm việc theo nhóm và cần giữ cấu trúc. Trước khi xuất, kiểm tra đơn vị đo và reset xform, vì sai tỉ lệ lúc nhập vào là lỗi hay gặp nhất và thường chỉ lộ ra khi bạn đặt đèn.</p>
+
+<h3>Vật liệu</h3>
+
+<p>Vật liệu V-Ray hoặc Corona gần như luôn phải dựng lại. Thứ mang sang được là các file ảnh bản đồ. Cách đỡ mất công nhất là lập một bộ vật liệu gốc trong Blender cho những chất bạn dùng nhiều nhất, thường là nhựa, kim loại sơn, kim loại trần, gỗ, kính, rồi lưu thành file thư viện để nối vào cảnh sau này.</p>
+
+<h3>Thư viện mẫu và add-on</h3>
+
+<p>Phần lớn add-on của 3ds Max không có bản cho Blender, nhưng hệ sinh thái bên này cũng dày tương đương. Danh sách add-on nên cài cho người làm hard surface nằm ở bài <a href="blog-add-on-hard-surface-blender.html">add-on hard surface Blender</a>, cài vừa đủ thôi, cài nhiều quá thì tuần đầu càng rối.</p>
+
+<figure>
+  <img src="assets/chivas18-mat-bang-isometric-1.webp" alt="Mặt bằng isometric cắt nóc của một khu trưng bày, tường trắng, vách và màn hình màu xanh đậm, dựng và render bằng Blender" loading="lazy" width="1800" height="810">
+  <figcaption><strong>Dạng hình quen thuộc với người làm 3ds Max: mặt bằng isometric cắt nóc để khách duyệt luồng đi.</strong> Loại bài này chuyển sang Blender khá êm vì chủ yếu là khối lớn và ánh sáng đều. Nó cũng là bài tập chuyển đổi tốt cho tuần thứ hai, trước khi bạn đụng tới cảnh nhiều chất liệu phức tạp.</figcaption>
+</figure>
+
+<h2>Lộ trình bốn tuần chuyển từ 3ds Max sang Blender</h2>
+
+<p>Lộ trình này giả định bạn vẫn đi làm, học được khoảng một tới hai giờ mỗi ngày. Nguyên tắc xuyên suốt: không học dàn trải, mỗi tuần làm lại một việc bạn vốn đã làm được bằng phần mềm cũ.</p>
+
+<table>
+<thead><tr><th>Tuần</th><th>Trọng tâm</th><th>Bài phải nộp cuối tuần</th></tr></thead>
+<tbody>
+<tr><td>Tuần 1</td><td>Điều hướng, chọn đối tượng, phím tắt, collection</td><td>Dựng lại một món đồ đơn giản đã từng làm, chưa cần chất liệu</td></tr>
+<tr><td>Tuần 2</td><td>Modifier, bevel, subdivision, nhập file FBX cũ</td><td>Một vật hard surface có cạnh sạch, nhìn gần không gãy</td></tr>
+<tr><td>Tuần 3</td><td>Shader Editor, bộ vật liệu gốc, ánh sáng ba hướng</td><td>Một ảnh sản phẩm đủ sạch để đưa vào hồ sơ</td></tr>
+<tr><td>Tuần 4</td><td>Cycles, khử nhiễu, render theo lớp, hậu kỳ</td><td>Làm lại một job cũ của chính bạn, so hai bản cạnh nhau</td></tr>
+</tbody>
+</table>
+
+<p>Bài của tuần thứ tư là bài quan trọng nhất và cũng hay bị bỏ qua nhất. Khi đặt bản cũ và bản mới cạnh nhau, bạn thấy ngay mình còn thiếu khâu nào, thay vì đoán. Nếu muốn một thứ tự kỹ năng đầy đủ hơn cho giai đoạn sau, bài <a href="blog-lo-trinh-tu-hoc-blender.html">lộ trình tự học Blender</a> xếp bảy kỹ năng theo đúng thứ tự nên học.</p>
+
+<h2>Những chỗ Blender thua 3ds Max, nói thẳng</h2>
+
+<p>Không có phần mềm nào thắng toàn diện. Biết trước mấy điểm này sẽ đỡ bực hơn là phát hiện ra giữa lúc chạy job.</p>
+
+<ul>
+  <li><strong>Hệ sinh thái nội thất và kiến trúc.</strong> Thư viện model, vật liệu và plugin cho mảng này bên 3ds Max vẫn dày hơn, nhất là với người cần model nội thất thương mại.</li>
+  <li><strong>Làm việc với file của đối tác.</strong> Nhiều công ty và nhà thầu vẫn gửi nhận bằng định dạng của 3ds Max. Bạn sẽ phải qua một bước chuyển đổi, và bước đó luôn có hao hụt.</li>
+  <li><strong>Vài công cụ dựng hình theo bản vẽ.</strong> Một số thao tác quen tay trong 3ds Max phải thay bằng cách làm khác hoặc bằng add-on, chứ không có nút tương đương một đổi một.</li>
+  <li><strong>Người xung quanh.</strong> Nếu cả nhóm dùng 3ds Max, bạn thành người duy nhất không nhờ được ai khi kẹt. Đây là bất lợi thật và ít người nhắc.</li>
+</ul>
+
+<p>Đổi lại, Blender được phần miễn phí, cập nhật nhanh, một mình chạy được cả chuỗi từ dựng hình tới dựng cảnh động, và cộng đồng tài liệu rất rộng. Với người làm sản phẩm, gian hàng hoặc hình quảng cáo, phần được thường lớn hơn phần mất. Với người làm nội thất số lượng lớn, cân nhắc kỹ hơn.</p>
+
+<h2>Danh sách kiểm tra trước khi nhận job thật bằng Blender</h2>
+
+<ul>
+  <li>Bạn dựng lại được một món cũ trong thời gian không quá gấp rưỡi lúc làm bằng 3ds Max.</li>
+  <li>Bạn có bộ vật liệu gốc cho ít nhất năm chất liệu dùng nhiều nhất.</li>
+  <li>Bạn nhập được file FBX hoặc OBJ của đối tác mà không sai tỉ lệ, không lật mặt.</li>
+  <li>Bạn render được theo lớp và ghép lại ở hậu kỳ, không chỉ xuất một ảnh phẳng.</li>
+  <li>Bạn biết máy mình render một cảnh cỡ trung mất bao lâu, để còn ước lượng cho khách.</li>
+  <li>Bạn đã làm trọn một bài từ brief tới file giao mà không phải mở phần mềm cũ.</li>
+</ul>
+
+<p>Thiếu hai mục trở lên thì chưa nên nhận job gấp bằng Blender. Làm thêm một hai bài tự đặt đề cho đủ, vì job đầu tiên trễ hẹn sẽ tốn của bạn nhiều hơn vài tuần luyện thêm. Nếu máy của bạn đã cũ và bạn lo Cycles chạy không nổi, bài <a href="blog-cau-hinh-may-hoc-blender.html">cấu hình máy học Blender</a> nói rõ ngưỡng nào là đủ và ngưỡng nào thì nên nâng.</p>
+
+<h2>Chuyển từ 3ds Max sang Blender có đáng không</h2>
+
+<p>Đáng, nếu bạn làm sản phẩm, quảng cáo, gian hàng, sự kiện hoặc muốn tự chạy trọn một shot mà không phụ thuộc giấy phép phần mềm. Quãng chuyển đổi khoảng ba tới sáu tuần là có thật, nhưng nó ngắn hơn nhiều so với cảm giác lúc ở trong đó, và phần nghề bạn tích luỹ suốt những năm dùng 3ds Max vẫn đi theo bạn gần như nguyên vẹn.</p>
+
+<p>Chưa đáng, nếu bạn đang làm trong một nhóm chạy toàn bộ bằng 3ds Max và không ai có ý định đổi. Trường hợp đó, dùng song song vài tháng là cách hợp lý hơn: giữ phần nhận và trả file ở phần mềm cũ, đưa phần chất liệu và ánh sáng sang Blender, rồi quyết định sau khi đã có dữ liệu thật từ chính công việc của mình.</p>
+
+<h2>Hỏi đáp</h2>
+
+<p class="faq-q">Chuyển từ 3ds Max sang Blender mất bao lâu?</p>
+<p>Với người đã dùng 3ds Max thành thạo, ước lượng thường gặp là khoảng ba tới sáu tuần học đều để quay lại mức làm việc được, tính theo vài buổi mỗi tuần. Tuần đầu là tuần khó chịu nhất vì tay vẫn nhớ phím cũ. Từ tuần thứ ba trở đi tốc độ hồi lại khá nhanh, vì phần tư duy dựng hình và ánh sáng của bạn không mất đi đâu cả.</p>
+
+<p class="faq-q">Có nên bật Emulate 3 Button Mouse hay dùng keymap giống 3ds Max không?</p>
+<p>Keymap giả lập giúp tuần đầu dễ thở hơn nhưng kéo dài quãng chuyển. Lý do là mọi hướng dẫn, mọi add-on và mọi người bạn hỏi đều nói theo phím mặc định của Blender. Cách đỡ mệt nhất là giữ keymap mặc định, chỉ đổi lại vài phím bạn dùng nhiều nhất, và chấp nhận chậm trong khoảng mười ngày.</p>
+
+<p class="faq-q">File .max cũ có mở được trong Blender không?</p>
+<p>Không. Blender không đọc được định dạng .max. Bạn phải mở bằng 3ds Max rồi xuất ra FBX, OBJ hoặc USD, sau đó nhập vào Blender. Hình khối và UV thường sang được khá nguyên vẹn, còn vật liệu V-Ray hay Corona thì gần như phải dựng lại trong hệ node của Blender.</p>
+
+<p class="faq-q">Chuyển sang Blender rồi thì kỹ năng V-Ray có còn dùng được không?</p>
+<p>Phần hiểu biết về ánh sáng, phơi sáng, vật liệu phản xạ và khử nhiễu vẫn dùng được gần như toàn bộ, vì đó là kiến thức về nhiếp ảnh chứ không phải về một engine. Thứ mất đi là thói quen bấm theo giao diện V-Ray. Cycles có cách gọi tên khác nhưng cùng một logic, nên phần học lại chủ yếu là tên gọi và vị trí nút.</p>
+
+<p class="faq-q">Có nên bỏ hẳn 3ds Max hay dùng song song?</p>
+<p>Nếu công ty hoặc khách của bạn vẫn chạy file 3ds Max thì dùng song song là lựa chọn an toàn trong vài tháng đầu: dựng hoặc nhận file ở 3ds Max, đưa sang Blender để làm chất liệu, ánh sáng và render. Chỉ bỏ hẳn khi bạn đã chạy trọn một job thật bằng Blender mà không phải quay về phần mềm cũ để cứu khâu nào.</p>
+
+<hr class="hr">
+
+<p>Nếu bạn muốn rút ngắn quãng bốn tuần đó bằng cách có người soi bài từng tuần thay vì tự mò, hai hệ ở trang <a href="khoa-hoc.html">khoá học 3D Blender</a> ghi rõ mỗi chặng bạn phải nộp được gì. Còn nếu bạn muốn tự đi trước một đoạn, tải <a href="cam-nang.html">cẩm nang Blender</a> và làm phần bài tập dựng hình trong đó bằng Blender, coi như bài tuần một.</p>
+""",
+    },
 ]
 
 
@@ -6092,7 +6268,7 @@ EXTRA_POSTS = [
     },
     {
         "slug": "blender-hay-3dsmax-c4d",
-        "updated": "2026-11-21",
+        "updated": "2026-11-27",
         "title": "Blender hay 3ds Max, C4D? So sánh cho người mới",
         "desc": "So sánh Blender, 3ds Max, Cinema 4D theo mục tiêu nghề nghiệp ở Việt Nam, kèm lộ trình chuyển từ 3ds Max sang Blender ba tuần và phần kỹ năng giữ lại được.",
         "tag": "Định hướng",
