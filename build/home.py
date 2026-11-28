@@ -5,7 +5,9 @@
 Thay cho bundle x-dc cũ. Dùng chung assets/lx.css với các trang còn lại.
 Thứ tự: Hero (hai cửa) · Về chúng tôi · Dự án · Showreel · Dịch vụ · Học viện · Liên hệ.
 """
-import io, os, json, datetime, html as H
+import io, os, sys, json, datetime, html as H
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from studio_pk import studio_packages
 
 SITE = "/home/claude/site"
 YEAR = datetime.date.today().year
@@ -485,7 +487,7 @@ def hero():
   <div class="hero-in">
     <h1 class="hero-h"><img class="hero-w" src="assets/lxam-studio-wordmark.webp" alt="LXAM Studio" width="1800" height="502" fetchpriority="high"><span class="hero-s"><span>Studio visual 3D <b>&amp; khoá học Blender</b></span><span>Việt Nam</span></span></h1>
     <nav class="doors" aria-label="Chọn lối vào">
-      <a class="door" href="#portfolio">
+      <a class="door" href="dich-vu.html#goi">
         <span class="door-k">Cho doanh nghiệp</span>
         <span class="door-t">Thuê studio <i>→</i></span>
       </a>
@@ -1776,7 +1778,7 @@ if __name__ == "__main__":
                             + academy_min() + contact_min())),
         ("dich-vu.html", page(sub_hero("LXAM Studio / Dịch vụ", "Dịch vụ <em>3D visual</em>",
                                        "TVC, key visual, phối cảnh sự kiện và visual kỹ thuật. Gửi brief, chúng tôi báo thời gian và chi phí trong 24 giờ.")
-                              + services() + tvc_grid() + contact_min("03"),
+                              + studio_packages() + services() + tvc_grid() + contact_min("03"),
                               title="Dịch vụ 3D visual: TVC, key visual, phối cảnh | LXAM Studio",
                               desc="Dịch vụ của studio 3D tại Việt Nam: TVC và animation 3D, key visual và render sản phẩm, phối cảnh sự kiện dựng trước, visual kỹ thuật từ file CAD.",
                               url=URL + "dich-vu.html", home=False)),
