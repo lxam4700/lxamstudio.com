@@ -1176,8 +1176,8 @@ def course_picker():
   .ak-ds{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px);margin:clamp(12px,1.6vw,20px) 0 0;}
   .ak-c{position:relative;display:flex;flex-direction:column;overflow:hidden;border-radius:6px;
         background:#0d0d0d;border:1px solid var(--line);color:var(--ink);text-decoration:none;
-        transition:border-color .3s,transform .35s cubic-bezier(.2,.7,.2,1),background .3s;}
-  .ak-c:hover{border-color:var(--ac);transform:translateY(-3px);background:#111;}
+        transition:border-color .3s,background .3s,box-shadow .4s;}
+  .ak-c:hover{border-color:var(--ac);background:#111;box-shadow:0 18px 40px -20px rgba(255,122,26,.35);}
   .ak-cv{position:relative;aspect-ratio:16/10;overflow:hidden;background:#000;}
   .ak-cv img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1);}
   .ak-c:hover .ak-cv img{transform:scale(1.04);}
