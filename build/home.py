@@ -77,7 +77,7 @@ PRINCIPLES = [
 ]
 
 COURSES = [
-    {"no": "Hệ 01", "name": "3D Automotive", "len": "3 đến 4 tháng",
+    {"no": "Hệ 01", "name": "3D Automotive", "len": "6 đến 9 tháng",
      "img": "lo-trinh-automotive-masterclass-900.webp",
      "alt": "Hệ 3D Automotive: lộ trình Blender tới TVC ô tô tại LXAM Academy",
      "line": "Từ thao tác đầu tiên trong Blender tới một TVC ô tô do chính bạn dựng.",
@@ -100,8 +100,8 @@ FAQ = [
      "Được. Hệ 3D Automotive bắt đầu từ con số 0, đi từ công cụ dựng hình cơ bản tới bản render sản phẩm "
      "đầu tiên. Mỗi tuần có người chữa bài, nên bạn không phải tự đoán mình đang sai ở đâu.", None),
     ("Hình thức học thế nào?",
-     "Chọn hệ trước, rồi chọn một trong ba cách học: tự học với bài giảng quay sẵn và được chữa bài hằng tuần; "
-     "lớp 8 tuần tối đa 10 người, có lịch và deadline; hoặc kèm riêng 1:1, lịch linh hoạt, đồng hành một năm. "
+     "Chọn hệ trước, rồi chọn một trong ba cách học: khoá Basic quay sẵn, tặng 2 buổi chữa bài trực tiếp vào Chủ nhật; "
+     "lớp 8 tuần có lịch và deadline, tặng 8 buổi chữa bài 1:1 miễn phí; hoặc coaching 1:1 từ Basic lên Master, kèm tới lúc giỏi thì thôi. "
      "Chi tiết từng cách nằm trong trang của mỗi hệ.", None),
     ("Học xong có làm được việc không?",
      "Đầu ra của mỗi hệ là sản phẩm portfolio do bạn tự làm, theo đúng quy trình studio dùng để giao hàng cho "
@@ -1238,7 +1238,7 @@ def course_picker():
       <a class="ak-c" href="lo-trinh-3d-automotive.html">
         <div class="ak-cv"><img src="assets/cover-automotive.webp" alt="Mercedes G63 dựng 3D trong TVC của LXAM Studio" width="960" height="600" loading="lazy" decoding="async"><span class="ak-no">01</span></div>
         <div class="ak-bd">
-        <div class="ak-top"><h3 class="ak-nm">3D Automotive</h3><span class="ak-tm">3 đến 4 tháng</span></div>
+        <div class="ak-top"><h3 class="ak-nm">3D Automotive</h3><span class="ak-tm">6 đến 9 tháng</span></div>
         <p class="ak-q">Tự tay dựng và render một TVC ô tô hoàn chỉnh.</p>
         <ul class="ak-ul">
           <li>Modeling, lighting, rendering, animation</li>
@@ -1265,9 +1265,9 @@ def course_picker():
 
     <div class="ak-st"><span>Step 02</span><h3>Học theo cách nào?</h3></div>
     <div class="ak-ws">
-      <div class="ak-w"><h4>Tự học</h4><p>Bài giảng quay sẵn, học giờ nào cũng được. Mỗi tuần có người chữa bài.</p></div>
-      <div class="ak-w hot"><span class="ak-tag">Nhiều người chọn</span><h4>Lớp 8 tuần</h4><p>Tối đa 10 người, có lịch và deadline. Ra lớp với 3 sản phẩm portfolio.</p></div>
-      <div class="ak-w"><span class="ak-tag">Đi xa nhất</span><h4>Kèm riêng 1:1</h4><p>Lịch theo bạn, hỏi lúc nào cũng được. Đồng hành trọn 1 năm.</p></div>
+      <div class="ak-w"><h4>Basic quay sẵn</h4><p>Học giờ nào cũng được. Tặng 2 buổi chữa bài trực tiếp vào Chủ nhật.</p></div>
+      <div class="ak-w hot"><span class="ak-tag">Nhiều người chọn</span><h4>Lớp 8 tuần</h4><p>Có lịch và deadline. Tặng 8 buổi chữa bài 1:1 miễn phí.</p></div>
+      <div class="ak-w"><span class="ak-tag">Đi xa nhất</span><h4>Coaching Basic lên Master</h4><p>Kèm 1:1 tới lúc bạn giỏi thì thôi.</p></div>
     </div>
 
     <div class="ak-cta">

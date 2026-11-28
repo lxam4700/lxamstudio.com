@@ -871,9 +871,9 @@ HE_OPTS = [
     ("Chưa quyết", "Chưa quyết, cần tư vấn"),
 ]
 GOI_OPTS = [
-    ("tuhoc", "Tự học có chữa bài · 2,5tr", "Tự học · 2,5tr"),
+    ("tuhoc", "Basic quay sẵn · 2,5tr", "Basic quay sẵn · 2,5tr"),
     ("lop8tuan", "Lớp 8 tuần · 12tr", "Lớp 8 tuần · 12tr"),
-    ("kemrieng", "Kèm riêng 1:1 · từ 15tr", "Kèm riêng 1:1 · từ 15tr"),
+    ("kemrieng", "Coaching 1:1 · từ 15tr", "Coaching 1:1 · từ 15tr"),
     ("tuvan", "Chưa chọn, cần tư vấn", "Cần tư vấn"),
 ]
 
@@ -1106,7 +1106,7 @@ BODY_HUB = """
     </div>
   </section>
 """ % (
-    hub_card(PAGES["auto"], "01", "Hệ 01 · 3D Automotive", "3 đến 4 tháng",
+    hub_card(PAGES["auto"], "01", "Hệ 01 · 3D Automotive", "6 đến 9 tháng",
              "Làm nghề 3D bằng tay mình",
              "Từ thao tác đầu tiên trong Blender tới một TVC ô tô hoàn chỉnh.",
              ["Modeling · Lighting · Rendering · Animation",
@@ -1356,6 +1356,19 @@ JSONLD_HUB = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
     ]}, ensure_ascii=False)
 
 
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from auto_v2 import body_auto_v2, body_ai_v2
+BODY_AUTO = body_auto_v2(reg_form(
+    "Giữ chỗ hệ 3D Automotive",
+    "Để lại thông tin, tôi gọi tư vấn trong 24h, trước khi bạn đóng bất kỳ khoản nào.", "Hệ 3D Automotive"),
+    PAGES["ai"])
+
+BODY_AI = body_ai_v2(reg_form(
+    "Giữ chỗ hệ 3D × A.I",
+    "Để lại thông tin, tôi gọi tư vấn trong 24h, trước khi bạn đóng bất kỳ khoản nào.", "Hệ 3D × A.I"),
+    PAGES["auto"])
+
 # ---------------------------------------------------------------- WRITE
 OUT = [
     (PAGES["hub"],
@@ -1364,7 +1377,7 @@ OUT = [
      JSONLD_HUB, "lo-trinh-automotive-masterclass.jpg", BODY_HUB, "hub"),
     (PAGES["auto"],
      "Hệ 3D Automotive: học phí & lộ trình | LXAM",
-     "Lộ trình 3D Automotive đi từ Blender con số 0 tới một TVC ô tô hoàn chỉnh: nội dung từng tháng, ba cách học, số vòng sửa bài và học phí của từng hình thức.",
+     "Lộ trình 3D Automotive 6 đến 9 tháng, đi từ Blender con số 0 tới một TVC ô tô hoàn chỉnh. Hai chặng Basic và Master, ba cách học và học phí từng gói.",
      JSONLD_AUTO, "lo-trinh-automotive-masterclass.jpg", BODY_AUTO, "auto"),
     (PAGES["ai"],
      "Hệ 3D × A.I: học phí & lộ trình | LXAM",
