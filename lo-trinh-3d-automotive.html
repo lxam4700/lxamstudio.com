@@ -475,6 +475,45 @@
   @keyframes avMq{to{transform:translateX(-50%);}}
   @media (prefers-reduced-motion:reduce){.av-art-in{animation:none;}}
 
+  /* THANG */
+  .av-mo{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:0;}
+  .av-mo li{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.45;color:#d9cfc5;}
+  .av-mo b{font-weight:600;color:var(--ac);font-size:13px;letter-spacing:.3px;}
+
+  /* SHOWREEL */
+  .av-reel{position:relative;border-radius:14px;overflow:hidden;background:#0a0a0a;aspect-ratio:1280/540;
+           isolation:isolate;transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(white,black);}
+  .av-reel img,.av-reel video{position:absolute;inset:-2px;width:calc(100% + 4px);height:calc(100% + 4px);max-width:none;object-fit:cover;transform:scale(1.02);}
+  .av-reel video{opacity:0;transition:opacity .8s;}
+  .av-reel.on video{opacity:1;}
+  .av-reel-t{position:absolute;left:22px;bottom:18px;z-index:2;font-family:'BrownSport',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;opacity:.8;}
+
+  /* BUNDLE */
+  .av-bd{border-radius:14px;padding:clamp(20px,3vw,40px);background:radial-gradient(90% 120% at 100% 0%,rgba(255,122,26,.16),transparent 60%),#0d0d0d;border:1px solid rgba(255,122,26,.35);}
+  .av-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;border-radius:999px;background:#151515;max-width:640px;}
+  .av-seg button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:12px 10px;background:transparent;color:#cfc6bd;
+                 font-weight:600;font-size:15px;display:flex;flex-direction:column;align-items:center;line-height:1.2;transition:background .3s,color .3s;}
+  .av-seg button small{font-weight:400;font-size:12px;opacity:.7;margin-top:2px;}
+  .av-seg button[aria-selected="true"]{background:var(--ac);color:#000;}
+  .av-bd-main{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,56px);align-items:center;margin:clamp(26px,3vw,40px) 0 0;}
+  .av-bd-old{margin:0;min-height:1.3em;font-size:16px;color:var(--muted);text-decoration:line-through;}
+  .av-bd-price{margin:0;font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(64px,8vw,112px);line-height:.95;color:#fff;letter-spacing:-.03em;}
+  .av-bd-price span{font-variant-numeric:tabular-nums;}
+  .av-bd-sub{margin:10px 0 0;font-size:14px;color:var(--ac);}
+  .av-bd-list{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+  .av-bd-list li{display:flex;gap:10px;font-size:16px;color:#eee6de;line-height:1.45;}
+  .av-bd-list li::before{content:"✓";color:var(--ac);font-weight:700;}
+  .av-bd-ft{margin:clamp(22px,3vw,32px) 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);}
+  .av-lite{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;margin:20px 0 0;font-size:14px;color:var(--muted);}
+  .av-lite a{color:#d9cfc5;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:2px;}
+  .av-lite a:hover{color:var(--ac);border-color:var(--ac);}
+  .av-lite b{color:#fff;font-weight:600;}
+  @media (max-width:900px){
+    .av-bd-main{grid-template-columns:1fr;}
+    .av-seg button{font-size:13.5px;padding:10px 4px;}
+    .av-reel{aspect-ratio:16/10;border-radius:10px;}
+  }
+
   /* HOC PHI */
   .av-pr{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px);align-items:stretch;}
   .av-p{position:relative;display:flex;flex-direction:column;padding:clamp(22px,2.4vw,32px);border-radius:8px;
@@ -558,73 +597,115 @@
       <h2 class="av-h2">Hai chặng, đi từ nền tới TVC.</h2>
       <div class="av-path">
         <article class="av-st">
-          <img src="assets/st-auto-basic.webp" alt="Cận cảnh đèn pha Mercedes G63 dựng 3D, chặng Basic hệ Automotive" width="960" height="720" loading="lazy" decoding="async">
+          <img src="assets/st-auto-basic-light.webp" alt="Sản phẩm dựng 3D bằng Blender của học viên chặng Basic" width="960" height="720" loading="lazy" decoding="async">
           <div>
-            <span class="av-tag">Basic</span>
+            <span class="av-tag">Basic · 3 tháng</span>
             <h3>Automotive Beginner</h3>
-            <p class="av-out"><b>Đầu ra:</b> tự dựng và render một sản phẩm hoàn chỉnh, đủ đưa vào portfolio.</p>
-            <details class="av-more"><summary>Xem chi tiết nội dung</summary><dl><dt>Modeling</dt><dd>extrude, bevel, bridge, boolean; dựng sản phẩm đúng tỉ lệ, đúng form</dd><dt>Shading</dt><dd>Geometry Node, vật liệu PBR</dd><dt>Lighting</dt><dd>các loại đèn, hướng sáng</dd><dt>Camera</dt><dd>bố cục khung hình, góc máy</dd><dt>Render</dt><dd>resolution, denoise, compositing, tối ưu CPU và GPU</dd></dl></details>
+            <ol class="av-mo">
+              <li><b>Tháng 1</b>Làm quen Blender, modeling cơ bản</li>
+              <li><b>Tháng 2</b>Dựng sản phẩm đúng tỉ lệ, đúng form</li>
+              <li><b>Tháng 3</b>Vật liệu, ánh sáng, render bộ ảnh đầu tiên</li>
+            </ol>
           </div>
         </article>
         <article class="av-st mx">
           <img src="assets/st-auto-master.webp" alt="Mercedes G63 lao qua cảnh cháy nổ trong TVC 3D, chặng Master hệ Automotive" width="960" height="720" loading="lazy" decoding="async">
           <div>
-            <span class="av-tag">Master</span>
+            <span class="av-tag">Master · 6 tháng</span>
             <h3>Automotive Masterclass</h3>
-            <p class="av-out"><b>Đầu ra:</b> một TVC ô tô từ concept tới bản dựng cuối. Đã gồm toàn bộ chặng Basic.</p>
-            <details class="av-more"><summary>Xem chi tiết nội dung</summary><dl><dt>Modeling</dt><dd>hard-surface nâng cao, dựng xe Lamborghini Veneno</dd><dt>Concept</dt><dd>sketch, kịch bản, storyboard</dd><dt>Rigging</dt><dd>rig xe bằng LC Addon</dd><dt>Animation</dt><dd>keyframe, tư duy điện ảnh</dd><dt>VFX · SFX</dt><dd>khí động học, hiệu ứng ánh sáng, âm thanh, nhạc nền</dd><dt>Render</dt><dd>ánh sáng điện ảnh, grading, render bản cuối</dd></dl></details>
+            <ol class="av-mo">
+              <li><b>Tháng 1</b>Hard-surface nâng cao</li>
+              <li><b>Tháng 2</b>Dựng thân xe Lamborghini Veneno</li>
+              <li><b>Tháng 3</b>Chi tiết, vật liệu xe, studio lighting</li>
+              <li><b>Tháng 4</b>Concept, storyboard, rig xe</li>
+              <li><b>Tháng 5</b>Animation, góc máy điện ảnh, VFX</li>
+              <li><b>Tháng 6</b>Render, âm thanh, ra TVC hoàn chỉnh</li>
+            </ol>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="av-art" aria-hidden="true"><div class="av-art-in"><span>Make every frame art</span><span>Make every frame art</span></div></section>
-
-  <section id="hocphi" class="av-sec">
+  <section class="av-sec" id="dau-ra">
     <div class="wrap">
-      <p class="av-k">Step 02 · Pricing</p>
-      <h2 class="av-h2">Chọn cách bạn muốn đi.</h2>
-      <div class="av-pr">
-        <div class="av-p">
-          <h3>Basic quay sẵn</h3>
-          <p class="av-price">2,5tr</p>
-          <p class="av-note">Học theo nhịp của bạn</p>
-          <ul>
-            <li>Bài giảng quay sẵn, xem lại không giới hạn</li>
-            <li>Tặng 2 buổi chữa bài trực tiếp Chủ nhật</li>
-          </ul>
-          <a class="av-cta" href="#dangky" data-he="Hệ 3D Automotive" data-goi="tuhoc">Chọn gói này</a>
-        </div>
-        <div class="av-p hot">
-          <span class="av-badge">Nhiều người chọn</span>
-          <h3>Lớp 8 tuần</h3>
-          <p class="av-price">12tr</p>
-          <p class="av-note">Chia 2 mốc, mỗi mốc 6tr</p>
-          <ul>
-            <li>Có lịch, có deadline, không bỏ giữa chừng</li>
-            <li>Tặng 8 buổi chữa bài 1:1</li>
-          </ul>
-          <a class="av-cta" href="#dangky" data-he="Hệ 3D Automotive" data-goi="lop8tuan">Chọn gói này</a>
-        </div>
-        <div class="av-p">
-          <span class="av-badge">Đi xa nhất</span>
-          <h3>Coaching Basic lên Master</h3>
-          <p class="av-price"><small>từ</small>15tr</p>
-          <p class="av-note">Basic 15tr · Master 20tr · Trọn lộ trình 30tr</p>
-          <ul>
-            <li>Kèm 1:1 tới lúc bạn giỏi thì thôi</li>
-            <li>Sửa trực tiếp trên file của bạn</li>
-          </ul>
-          <a class="av-cta" href="#dangky" data-he="Hệ 3D Automotive" data-goi="kemrieng">Chọn gói này</a>
-        </div>
-      </div>
-      <div class="av-extra">
-        <span>Đóng trước 50%: <b>tặng thêm 6 tháng coaching</b></span>
-        <span>Chỉ thiếu một mảng? Học lẻ <b>5tr / kỹ năng</b></span>
+      <p class="av-k">After Masterclass</p>
+      <h2 class="av-h2">Xong Master, bạn làm được thế này.</h2>
+      <div class="av-reel" id="avReel">
+        <img src="assets/reel-poster.webp" alt="" width="1280" height="541" loading="lazy" decoding="async">
+        <video id="avV" muted loop playsinline preload="none" data-src="assets/reel.mp4" poster="assets/reel-poster.webp" aria-label="Showreel LXAM Studio"></video>
+        <span class="av-reel-t">Showreel · LXAM Studio</span>
       </div>
     </div>
   </section>
+  <script>
+  (function(){
+    var b=document.getElementById('avReel'),v=document.getElementById('avV');
+    if(!b||!v) return;
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    v.muted=true; v.defaultMuted=true;
+    v.addEventListener('playing',function(){b.classList.add('on');});
+    function go(){ if(!v.src) v.src=v.dataset.src; var p=v.play(); if(p&&p.catch) p.catch(function(){}); }
+    if(!('IntersectionObserver' in window)){ go(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) go(); else if(v.src) v.pause(); }); },{rootMargin:'300px 0px'}).observe(b);
+  })();
+  </script>
+
+  <section id="hocphi" class="av-sec">
+    <div class="wrap">
+      <p class="av-k">Choose your path</p>
+      <h2 class="av-h2">Chọn chặng bạn muốn đi.</h2>
+      <div class="av-bd" id="avBundle">
+        <div class="av-seg" role="tablist">
+          <button type="button" role="tab" data-i="0">Basic<small>3 tháng</small></button>
+          <button type="button" role="tab" data-i="1">Master<small>6 tháng</small></button>
+          <button type="button" role="tab" data-i="2" aria-selected="true">Full lộ trình<small>9 tháng</small></button>
+        </div>
+        <div class="av-bd-main">
+          <div>
+            <p class="av-bd-old" id="avOld"></p>
+            <p class="av-bd-price"><span id="avPrice">30</span>tr</p>
+            <p class="av-bd-sub" id="avSub"></p>
+          </div>
+          <ul class="av-bd-list" id="avList"></ul>
+          <a class="av-b" id="avGo" href="#dangky" data-he="Hệ 3D Automotive" data-goi="kemrieng">Giữ chỗ gói này →</a>
+        </div>
+        <p class="av-bd-ft">Kèm 1:1 tới lúc bạn giỏi thì thôi · Sửa trực tiếp trên file của bạn · Đóng trước 50% tặng thêm 6 tháng coaching</p>
+      </div>
+      <div class="av-lite">
+        <span>Muốn bắt đầu nhẹ hơn?</span>
+        <a href="#dangky" data-he="Hệ 3D Automotive" data-goi="tuhoc"><b>Basic quay sẵn 2,5tr</b> · tặng 2 buổi chữa bài Chủ nhật</a>
+        <a href="#dangky" data-he="Hệ 3D Automotive" data-goi="lop8tuan"><b>Lớp 8 tuần 12tr</b> · tặng 8 buổi chữa bài 1:1</a>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var B=[
+      {p:15,o:'',s:'Chặng Basic · 3 tháng',l:['Modeling, vật liệu, ánh sáng, render','Ra bộ ảnh sản phẩm đầu tiên cho portfolio']},
+      {p:20,o:'',s:'Chặng Master · 6 tháng',l:['Dựng xe Lamborghini Veneno','Rig, animation, VFX, ra TVC ô tô']},
+      {p:30,o:'35tr',s:'Basic + Master · 9 tháng · tiết kiệm 5tr',l:['Đi trọn từ con số 0 tới TVC ô tô','Một người kèm từ đầu tới cuối']}
+    ];
+    var root=document.getElementById('avBundle'); if(!root) return;
+    var tabs=root.querySelectorAll('.av-seg button'), pr=document.getElementById('avPrice'),
+        old=document.getElementById('avOld'), sub=document.getElementById('avSub'), list=document.getElementById('avList'),
+        cur=+pr.textContent, raf;
+    function count(to){
+      cancelAnimationFrame(raf); var from=cur, t0=performance.now();
+      (function step(t){ var k=Math.min(1,(t-t0)/450), e=1-Math.pow(1-k,3);
+        pr.textContent=Math.round(from+(to-from)*e); if(k<1) raf=requestAnimationFrame(step); else cur=to; })(t0);
+    }
+    function show(i,anim){
+      var d=B[i];
+      for(var x=0;x<tabs.length;x++) tabs[x].setAttribute('aria-selected', x==i?'true':'false');
+      if(anim) count(d.p); else { pr.textContent=d.p; cur=d.p; }
+      old.textContent=d.o; sub.textContent=d.s;
+      list.innerHTML=d.l.map(function(t){return '<li>'+t+'</li>';}).join('');
+    }
+    for(var x=0;x<tabs.length;x++) tabs[x].addEventListener('click',function(){ show(+this.dataset.i,true); });
+    show(2,false);
+  })();
+  </script>
 
   <section class="av-sec" style="padding-bottom:clamp(64px,8vw,120px);">
     <div class="wrap">
