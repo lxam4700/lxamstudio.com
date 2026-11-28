@@ -1085,8 +1085,11 @@ def showreel_min():
   .sr-tb p{font-family:'BrownSport',sans-serif;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;
            line-height:1.5;color:var(--ink);margin:0;}
 
-  .sr-box{position:relative;border-radius:22px;overflow:hidden;background:#0a0a0a;aspect-ratio:1280/540;}
-  .sr-box video,.sr-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .sr-box{position:relative;border-radius:22px;overflow:hidden;background:#0a0a0a;aspect-ratio:1280/540;
+          isolation:isolate;transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(white,black);}
+  /* Safari iPhone de lo 1px mep video trong khung bo goc: phong nhe de mep nam ngoai khung */
+  .sr-box video,.sr-box img{position:absolute;inset:-2px;width:calc(100% + 4px);height:calc(100% + 4px);max-width:none;
+          object-fit:cover;display:block;transform:scale(1.02);transform-origin:50% 50%;}
   .sr-box video{opacity:0;transition:opacity .8s ease;}
   .sr-box.on video{opacity:1;}
   /* Khoet goc duoi phai cho nut mui ten, giong khung mau */
