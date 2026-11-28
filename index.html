@@ -830,6 +830,68 @@
     <div class="qt-bot"><span>LXAM Studio</span><span>Điều chúng tôi tin</span></div>
   </div>
 </section>
+<style>
+  /* Khu chot sale khoa hoc: 2 buoc, chon dich den roi chon cach hoc. */
+  .ak-sub{margin:22px 0 0;font-size:clamp(15px,1.3vw,17px);line-height:1.55;font-weight:500;color:#140c06;max-width:42ch;}
+  .ak-ds{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px);margin:clamp(12px,1.6vw,20px) 0 0;}
+  .ak-c{position:relative;display:flex;flex-direction:column;overflow:hidden;border-radius:6px;
+        background:#0d0d0d;border:1px solid var(--line);color:var(--ink);text-decoration:none;
+        transition:border-color .3s,transform .35s cubic-bezier(.2,.7,.2,1),background .3s;}
+  .ak-c:hover{border-color:var(--ac);transform:translateY(-3px);background:#111;}
+  .ak-cv{position:relative;aspect-ratio:16/10;overflow:hidden;background:#000;}
+  .ak-cv img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1);}
+  .ak-c:hover .ak-cv img{transform:scale(1.04);}
+  .ak-cv::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,13,0) 55%,#0d0d0d 100%);}
+  .ak-c:hover .ak-cv::after{background:linear-gradient(180deg,rgba(17,17,17,0) 55%,#111 100%);}
+  .ak-cv .ak-no{position:absolute;z-index:1;left:clamp(24px,3vw,40px);bottom:6px;text-shadow:0 2px 18px rgba(0,0,0,.6);}
+  .ak-bd{display:flex;flex-direction:column;gap:18px;flex:1;padding:clamp(18px,2vw,26px) clamp(24px,3vw,40px) clamp(24px,3vw,40px);}
+  .ak-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
+  .ak-no{font-family:'BrownSport',sans-serif;font-style:italic;font-size:clamp(34px,3.4vw,48px);line-height:1;color:var(--ac);}
+  .ak-tm{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
+  .ak-nm{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(22px,2.2vw,30px);line-height:1.15;margin:0;letter-spacing:-.01em;}
+  .ak-ds .ak-q{font-size:clamp(15px,1.3vw,17px);line-height:1.55;color:#d9cfc5;margin:0;}
+  .ak-ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:14.5px;color:var(--muted);}
+  .ak-ul li{display:flex;gap:10px;line-height:1.45;}
+  .ak-ul li::before{content:"";flex:0 0 6px;height:6px;margin-top:.55em;border-radius:50%;background:var(--ac);}
+  .ak-ft{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;}
+  .ak-pr{font-size:14px;color:var(--muted);}
+  .ak-pr b{font-family:'Unbounded',sans-serif;font-weight:600;font-size:20px;color:#fff;margin-left:4px;}
+  .ak-go{font-size:14px;font-weight:600;color:var(--ac);white-space:nowrap;}
+  .ak-c:hover .ak-go i{transform:translateX(4px);}
+  .ak-go i{display:inline-block;font-style:normal;transition:transform .3s;}
+
+  .ak-st{display:flex;align-items:center;gap:14px;margin:clamp(40px,5vw,64px) 0 0;}
+  .ak-st span{font-family:'BrownSport',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--ac);}
+  .ak-st h3{font-family:'Unbounded',sans-serif;font-weight:500;font-size:clamp(17px,1.6vw,21px);margin:0;color:#fff;}
+  .ak-ws{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px);margin:clamp(16px,2vw,24px) 0 0;}
+  .ak-w{position:relative;padding:22px 22px 24px;border-radius:6px;border:1px solid var(--line);background:#0a0a0a;}
+  .ak-w.hot{border-color:rgba(255,122,26,.55);background:linear-gradient(180deg,rgba(255,122,26,.10),rgba(255,122,26,0) 70%),#0a0a0a;}
+  .ak-tag{position:absolute;top:-11px;left:18px;padding:3px 10px;border-radius:999px;background:var(--ac);color:#000;
+          font-size:11px;font-weight:700;letter-spacing:.3px;}
+  .ak-w h4{font-family:'Unbounded',sans-serif;font-weight:600;font-size:17px;margin:0 0 8px;color:#fff;}
+  .ak-w p{font-size:14px;line-height:1.55;color:var(--muted);margin:0;}
+
+  .ak-cta{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+          margin:clamp(28px,3.6vw,44px) 0 0;padding:clamp(22px,2.6vw,32px) clamp(22px,3vw,40px);border-radius:6px;background:#111;}
+  .ak-tr{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:14px;color:#d9cfc5;}
+  .ak-tr li::before{content:"✓";color:var(--ac);font-weight:700;margin-right:8px;}
+  .ak-bt{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+  .ak-b{display:inline-flex;align-items:center;gap:12px;padding:17px 28px;border-radius:999px;background:var(--ac);color:#000;
+        text-decoration:none;font-weight:700;font-size:15px;transition:transform .25s,background .25s;}
+  .ak-b:hover{transform:translateY(-2px);background:#ff9447;}
+  .ak-b i{font-style:normal;}
+  .ak-l{color:#fff;font-size:14px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.45);padding-bottom:3px;}
+  .ak-l:hover{border-color:var(--ac);color:var(--ac);}
+
+  @media (max-width:860px){
+    .ak-ds,.ak-ws{grid-template-columns:1fr;}
+    .ak-ws{gap:20px;}
+    .ak-cta{flex-direction:column;align-items:stretch;}
+    .ak-bt{flex-direction:column;align-items:stretch;text-align:center;}
+    .ak-b{justify-content:center;}
+    .ak-l{align-self:center;}
+  }
+</style>
 <section id="khoahoc" class="mn">
   <div class="wrap">
     <div class="ac">
@@ -837,10 +899,56 @@
       <div class="ac-in">
         <p class="mn-k" style="color:#140c06;"><b style="color:#140c06;">04</b> / LXAM Academy</p>
         <h2 class="ac-h">Học Blender 3D<br>theo cách studio làm nghề.</h2>
+        <p class="ak-sub">Từ con số 0 tới sản phẩm đủ sức đưa vào portfolio.<br>Chỉ cần chọn đúng 2 thứ bên dưới.</p>
       </div>
-      <div class="ac-go">
-        <a class="ac-b" href="khoa-hoc.html">Xem khoá học <i>→</i></a>
-        <a class="ac-l" href="cam-nang.html">Nhận cẩm nang miễn phí</a>
+    </div>
+
+    <div class="ak-st"><span>Step 01</span><h3>Bạn muốn làm được gì?</h3></div>
+    <div class="ak-ds">
+      <a class="ak-c" href="lo-trinh-3d-automotive.html">
+        <div class="ak-cv"><img src="assets/cover-automotive.webp" alt="Mercedes G63 dựng 3D trong TVC của LXAM Studio" width="960" height="600" loading="lazy" decoding="async"><span class="ak-no">01</span></div>
+        <div class="ak-bd">
+        <div class="ak-top"><h3 class="ak-nm">3D Automotive</h3><span class="ak-tm">3 đến 4 tháng</span></div>
+        <p class="ak-q">Tự tay dựng và render một TVC ô tô hoàn chỉnh.</p>
+        <ul class="ak-ul">
+          <li>Modeling, lighting, rendering, animation</li>
+          <li>Dựng xe Lamborghini Veneno từ đầu</li>
+          <li>Hợp người muốn nhận job 3D</li>
+        </ul>
+        <div class="ak-ft"><span class="ak-pr">Từ<b>2,5tr</b></span><span class="ak-go">Xem lộ trình <i>→</i></span></div>
+        </div>
+      </a>
+      <a class="ak-c" href="lo-trinh-3d-ai.html">
+        <div class="ak-cv"><img src="assets/cover-ai.webp" alt="Chân dung robot mặt người, hình minh hoạ hệ 3D × A.I" width="960" height="600" loading="lazy" decoding="async"><span class="ak-no">02</span></div>
+        <div class="ak-bd">
+        <div class="ak-top"><h3 class="ak-nm">3D × A.I</h3><span class="ak-tm">4 tháng</span></div>
+        <p class="ak-q">Vững 3D trước, rồi để AI nhân sản lượng hình lên nhiều lần.</p>
+        <ul class="ak-ul">
+          <li>3 tháng 3D nền tảng, 1 tháng AI</li>
+          <li>Nano Banana Pro, Seedance, Kling</li>
+          <li>Hợp marketing, thương mại điện tử, content</li>
+        </ul>
+        <div class="ak-ft"><span class="ak-pr">Từ<b>2,5tr</b></span><span class="ak-go">Xem lộ trình <i>→</i></span></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="ak-st"><span>Step 02</span><h3>Học theo cách nào?</h3></div>
+    <div class="ak-ws">
+      <div class="ak-w"><h4>Tự học</h4><p>Bài giảng quay sẵn, học giờ nào cũng được. Mỗi tuần có người chữa bài.</p></div>
+      <div class="ak-w hot"><span class="ak-tag">Nhiều người chọn</span><h4>Lớp 8 tuần</h4><p>Tối đa 10 người, có lịch và deadline. Ra lớp với 3 sản phẩm portfolio.</p></div>
+      <div class="ak-w"><span class="ak-tag">Đi xa nhất</span><h4>Kèm riêng 1:1</h4><p>Lịch theo bạn, hỏi lúc nào cũng được. Đồng hành trọn 1 năm.</p></div>
+    </div>
+
+    <div class="ak-cta">
+      <ul class="ak-tr">
+        <li>Tư vấn miễn phí trước khi đóng tiền</li>
+        <li>Bảo hành kiến thức trọn đời</li>
+        <li>Chứng nhận có mã riêng</li>
+      </ul>
+      <div class="ak-bt">
+        <a class="ak-b" href="lo-trinh.html#dangky">Giữ chỗ, nhận tư vấn <i>→</i></a>
+        <a class="ak-l" href="cam-nang.html">Hoặc nhận cẩm nang miễn phí</a>
       </div>
     </div>
   </div>
