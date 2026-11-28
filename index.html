@@ -726,15 +726,100 @@
     <div class="sg"><a class="sg-c" href="dich-vu.html#dv-1"><img class="sg-i" src="assets/svc-mercedes-g63.webp" alt="Hình 3D dự án LXAM Studio minh hoạ dịch vụ TVC &amp;amp; animation 3D" width="900" height="1125" loading="lazy" decoding="async"><span class="sg-n">1</span><span class="sg-t">TVC &amp; animation 3D</span></a><a class="sg-c" href="dich-vu.html#dv-2"><img class="sg-i" src="assets/svc-chivas18-chai.webp" alt="Hình 3D dự án LXAM Studio minh hoạ dịch vụ Key visual &amp;amp; render sản phẩm" width="900" height="1125" loading="lazy" decoding="async"><span class="sg-n">2</span><span class="sg-t">Key visual &amp; render sản phẩm</span></a><a class="sg-c" href="dich-vu.html#dv-3"><img class="sg-i" src="assets/svc-chivas18-trien-lam.webp" alt="Hình 3D dự án LXAM Studio minh hoạ dịch vụ Phối cảnh sự kiện" width="900" height="1125" loading="lazy" decoding="async"><span class="sg-n">3</span><span class="sg-t">Phối cảnh sự kiện</span></a><a class="sg-c" href="dich-vu.html#dv-4"><img class="sg-i" src="assets/svc-jhm.webp" alt="Hình 3D dự án LXAM Studio minh hoạ dịch vụ Visual kỹ thuật" width="900" height="1125" loading="lazy" decoding="async"><span class="sg-n">4</span><span class="sg-t">Visual kỹ thuật</span></a></div>
   </div>
 </section>
-<section id="showreel" class="mn">
+<style>
+  /* Showreel tu chay: tat tieng, lap lai, chi tai khi cuon toi gan.
+     Chu tieng Anh dung BrownSport, chu tieng Viet dung Be Vietnam Pro. */
+  .sr{padding:clamp(90px,12vw,170px) 0 0;}
+  .sr-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin:0 0 clamp(18px,2.4vw,28px);}
+  .sr-h{font-family:'BrownSport',sans-serif;font-style:italic;font-weight:400;text-transform:uppercase;
+        font-size:clamp(34px,5.2vw,74px);line-height:.98;letter-spacing:-.005em;color:#fff;margin:0;}
+  .sr-h span{display:block;}
+  .sr-h mark{background:var(--ac);color:#000;padding:0 .12em;margin-left:-.02em;
+             -webkit-box-decoration-break:clone;box-decoration-break:clone;}
+  .sr-tb{flex:0 0 auto;text-align:right;}
+  .sr-sq{display:flex;justify-content:flex-end;gap:4px;margin:0 0 14px;}
+  .sr-sq i{width:30px;height:54px;border-radius:4px;background:var(--ac);opacity:.22;}
+  .sr-sq i:nth-child(2){opacity:.45;}
+  .sr-sq b{min-width:56px;height:54px;padding:0 10px;border-radius:6px;background:var(--ac);color:#000;
+           display:flex;align-items:center;justify-content:center;
+           font-family:'BrownSport',sans-serif;font-style:italic;font-weight:400;font-size:22px;}
+  .sr-tb p{font-family:'BrownSport',sans-serif;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;
+           line-height:1.5;color:var(--ink);margin:0;}
+
+  .sr-box{position:relative;border-radius:22px;overflow:hidden;background:#0a0a0a;aspect-ratio:1280/540;}
+  .sr-box video,.sr-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+  .sr-box video{opacity:0;transition:opacity .8s ease;}
+  .sr-box.on video{opacity:1;}
+  /* Khoet goc duoi phai cho nut mui ten, giong khung mau */
+  .sr-go{position:absolute;right:0;bottom:0;z-index:2;width:clamp(78px,9vw,122px);height:clamp(78px,9vw,122px);
+         padding:14px 0 0 14px;background:var(--bg);border-top-left-radius:26px;box-sizing:content-box;}
+  .sr-go::before,.sr-go::after{content:"";position:absolute;width:22px;height:22px;
+         background:radial-gradient(circle at 0 0,transparent 21.5px,var(--bg) 22px);}
+  .sr-go::before{right:0;top:-22px;}
+  .sr-go::after{left:-22px;bottom:0;}
+  .sr-go a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;border-radius:20px;
+           background:var(--ac);color:#000;transition:transform .35s cubic-bezier(.2,.7,.2,1),background .3s;}
+  .sr-go a:hover{transform:translateY(3px);background:#ff9447;}
+  .sr-go svg{width:38%;height:38%;}
+
+  .sr-ft{display:grid;grid-template-columns:1fr 1fr 2fr;gap:clamp(20px,4vw,60px);align-items:end;
+         padding:clamp(34px,4.6vw,64px) 0 0;}
+  .sr-n{font-family:'BrownSport',sans-serif;font-style:italic;font-weight:400;font-size:clamp(34px,3.6vw,52px);
+        line-height:1;color:#fff;margin:0 0 8px;}
+  .sr-l{font-family:'Be Vietnam Pro',system-ui,sans-serif;font-size:14px;color:var(--muted);margin:0;}
+  .sr-p{font-family:'Be Vietnam Pro',system-ui,sans-serif;font-size:clamp(18px,1.9vw,26px);line-height:1.45;font-weight:300;letter-spacing:-.005em;
+        color:var(--ink);margin:0;}
+  .sr-p b{color:var(--ac);font-weight:600;}
+
+  @media (max-width:860px){
+    .sr-top{flex-direction:column;align-items:flex-start;}
+    .sr-tb{display:flex;align-items:center;gap:14px;text-align:left;}
+    .sr-sq{margin:0;}
+    .sr-box{aspect-ratio:4/5;border-radius:16px;}
+    .sr-ft{grid-template-columns:1fr 1fr;}
+    .sr-p{grid-column:1 / -1;}
+  }
+  @media (prefers-reduced-motion:reduce){ .sr-box video{display:none;} }
+</style>
+<section id="showreel" class="sr">
   <div class="wrap">
     <p class="mn-k"><b>03</b> / Showreel</p>
-    <button class="vid vid-big" type="button" data-src="assets/reel.mp4" aria-label="Phát showreel LXAM Studio">
+    <div class="sr-top">
+      <h2 class="sr-h"><span>Putting Vietnam on</span><span>the <mark>3D motion</mark> map</span></h2>
+      <div class="sr-tb">
+        <div class="sr-sq" aria-hidden="true"><i></i><i></i><b>10+</b></div>
+        <p>Trusted by<br>10+ brands</p>
+      </div>
+    </div>
+    <div class="sr-box" id="srBox">
       <img src="assets/reel-poster.webp" alt="" width="1280" height="541" loading="lazy" decoding="async">
-      <span class="pl"></span>
-    </button>
+      <video id="srV" muted loop playsinline preload="none" aria-label="Showreel LXAM Studio"
+             data-src="assets/reel.mp4" poster="assets/reel-poster.webp"></video>
+      <div class="sr-go"><a href="#tuyen-ngon" aria-label="Cuộn xuống">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
+      </a></div>
+    </div>
+    <div class="sr-ft">
+      <div><p class="sr-n">10+</p><p class="sr-l">Năm làm 3D &amp; multimedia</p></div>
+      <div><p class="sr-n">14</p><p class="sr-l">Dự án thương mại tiêu biểu</p></div>
+      <p class="sr-p">Chúng tôi không chỉ tạo nên hình ảnh,<br>chúng tôi <b>kiến tạo cảm xúc</b> bằng ánh sáng, chuyển động và tư duy nghệ thuật.</p>
+    </div>
   </div>
 </section>
+<script>
+(function(){
+  var box=document.getElementById('srBox'), v=document.getElementById('srV');
+  if(!box||!v) return;
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  v.muted=true; v.defaultMuted=true;
+  v.addEventListener('playing',function(){ box.classList.add('on'); });
+  function go(){ if(!v.src){ v.src=v.dataset.src; } var p=v.play(); if(p&&p.catch) p.catch(function(){}); }
+  if(!('IntersectionObserver' in window)){ go(); return; }
+  new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting) go(); else if(v.src) v.pause(); });
+  },{rootMargin:'300px 0px'}).observe(box);
+})();
+</script>
 <section id="tuyen-ngon" class="tn" aria-label="Tuyên ngôn LXAM Studio">
   <div class="qt qt-band">
     <div class="qt-top"><span>Tuyên ngôn</span><span></span></div>
