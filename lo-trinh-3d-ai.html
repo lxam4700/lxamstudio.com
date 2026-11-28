@@ -475,6 +475,55 @@
   @keyframes avMq{to{transform:translateX(-50%);}}
   @media (prefers-reduced-motion:reduce){.av-art-in{animation:none;}}
 
+  /* THANG */
+  .av-mo{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:0;}
+  .av-mo li{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.45;color:#d9cfc5;}
+  .av-mo b{font-weight:600;color:var(--ac);font-size:13px;letter-spacing:.3px;}
+
+  /* MAT DO AI */
+  .av-dens{display:grid;gap:10px;max-width:640px;margin:-8px 0 clamp(26px,3vw,40px);}
+  .av-dens div{display:grid;grid-template-columns:120px 1fr 64px;gap:14px;align-items:center;font-size:13.5px;color:var(--muted);}
+  .av-dens i{display:block;height:8px;border-radius:99px;background:#1c1c1c;position:relative;overflow:hidden;}
+  .av-dens i::after{content:"";position:absolute;inset:0;width:var(--w);border-radius:99px;background:#5a4a3e;}
+  .av-dens .me{color:#fff;}
+  .av-dens .me i::after{background:var(--ac);}
+  .av-dens b{font-weight:600;font-size:12.5px;text-align:right;}
+  .av-dens .me b{color:var(--ac);}
+
+  /* SHOWREEL */
+  .av-reel{position:relative;border-radius:14px;overflow:hidden;background:#0a0a0a;aspect-ratio:1280/540;
+           isolation:isolate;transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(white,black);}
+  .av-reel img,.av-reel video{position:absolute;inset:-2px;width:calc(100% + 4px);height:calc(100% + 4px);max-width:none;object-fit:cover;transform:scale(1.02);}
+  .av-reel video{opacity:0;transition:opacity .8s;}
+  .av-reel.on video{opacity:1;}
+  .av-reel-t{position:absolute;left:22px;bottom:18px;z-index:2;font-family:'BrownSport',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#fff;opacity:.8;}
+
+  /* BUNDLE */
+  .av-bd{border-radius:14px;padding:clamp(20px,3vw,40px);background:radial-gradient(90% 120% at 100% 0%,rgba(255,122,26,.16),transparent 60%),#0d0d0d;border:1px solid rgba(255,122,26,.35);}
+  .av-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;border-radius:999px;background:#151515;max-width:640px;}
+  .av-seg button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:12px 10px;background:transparent;color:#cfc6bd;
+                 font-weight:600;font-size:15px;display:flex;flex-direction:column;align-items:center;line-height:1.2;transition:background .3s,color .3s;}
+  .av-seg button small{font-weight:400;font-size:12px;opacity:.7;margin-top:2px;}
+  .av-seg button[aria-selected="true"]{background:var(--ac);color:#000;}
+  .av-bd-main{display:grid;grid-template-columns:auto 1fr auto;gap:clamp(20px,4vw,56px);align-items:center;margin:clamp(26px,3vw,40px) 0 0;}
+  .av-bd-old{margin:0;min-height:1.3em;font-size:16px;color:var(--muted);text-decoration:line-through;}
+  .av-bd-price{margin:0;font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(64px,8vw,112px);line-height:.95;color:#fff;letter-spacing:-.03em;}
+  .av-bd-price span{font-variant-numeric:tabular-nums;}
+  .av-bd-sub{margin:10px 0 0;font-size:14px;color:var(--ac);}
+  .av-bd-list{list-style:none;margin:0;padding:0;display:grid;gap:12px;}
+  .av-bd-list li{display:flex;gap:10px;font-size:16px;color:#eee6de;line-height:1.45;}
+  .av-bd-list li::before{content:"✓";color:var(--ac);font-weight:700;}
+  .av-bd-ft{margin:clamp(22px,3vw,32px) 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);}
+  .av-lite{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;margin:20px 0 0;font-size:14px;color:var(--muted);}
+  .av-lite a{color:#d9cfc5;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:2px;}
+  .av-lite a:hover{color:var(--ac);border-color:var(--ac);}
+  .av-lite b{color:#fff;font-weight:600;}
+  @media (max-width:900px){
+    .av-bd-main{grid-template-columns:1fr;}
+    .av-seg button{font-size:13.5px;padding:10px 4px;}
+    .av-reel{aspect-ratio:16/10;border-radius:10px;}
+  }
+
   /* HOC PHI */
   .av-pr{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px);align-items:stretch;}
   .av-p{position:relative;display:flex;flex-direction:column;padding:clamp(22px,2.4vw,32px);border-radius:8px;
@@ -555,76 +604,120 @@
   <section id="ai" class="av-sec">
     <div class="wrap">
       <p class="av-k">Step 01 · Roadmap</p>
-      <h2 class="av-h2">3 tháng 3D, 1 tháng AI.</h2>
+      <h2 class="av-h2">Cùng nền với Automotive. Chỉ khác: AI vào việc nhiều hơn.</h2>
+      <div class="av-dens">
+        <div><span>3D Automotive</span><i style="--w:20%"></i><b>AI 20%</b></div>
+        <div class="me"><span>3D × A.I</span><i style="--w:70%"></i><b>AI 70%</b></div>
+      </div>
       <div class="av-path">
         <article class="av-st">
           <img src="assets/st-ai-basic.webp" alt="Chi tiết mạch cơ khí trên mũ robot, chặng 3D Basic hệ 3D × A.I" width="960" height="720" loading="lazy" decoding="async">
           <div>
-            <span class="av-tag">3D Basic</span>
+            <span class="av-tag">3D Basic · 3 tháng</span>
             <h3>Blender Foundation</h3>
-            <p class="av-out"><b>Đầu ra:</b> tự dựng và render được một sản phẩm hoàn chỉnh.</p>
-            <details class="av-more"><summary>Xem chi tiết nội dung</summary><dl><dt>Modeling</dt><dd>hard-surface, sản phẩm, form chuẩn</dd><dt>Material</dt><dd>hiểu vật liệu để render ra hình bán được</dd><dt>Lighting</dt><dd>ánh sáng, mood, góc máy</dd><dt>Render</dt><dd>setup scene sạch, tối ưu workflow</dd><dt>Tư duy hình</dt><dd>bố cục, storytelling cơ bản</dd></dl></details>
+            <ol class="av-mo">
+              <li><b>Tháng 1</b>Làm quen Blender, modeling cơ bản. AI lên moodboard ý tưởng</li>
+              <li><b>Tháng 2</b>Dựng sản phẩm đúng form. AI gợi ý concept, chất liệu</li>
+              <li><b>Tháng 3</b>Ánh sáng, render bộ ảnh đầu tiên. AI dựng bối cảnh</li>
+            </ol>
           </div>
         </article>
         <article class="av-st mx">
           <img src="assets/st-ai-adv.webp" alt="Khuôn mặt robot người, chặng A.I Advance hệ 3D × A.I" width="960" height="720" loading="lazy" decoding="async">
           <div>
-            <span class="av-tag">A.I Advance</span>
+            <span class="av-tag">A.I Advance · 1 tháng</span>
             <h3>AI × Visual</h3>
-            <p class="av-out"><b>Đầu ra:</b> từ 1 sản phẩm ra 5 đến 10 biến thể chất lượng cao, nhanh.</p>
-            <details class="av-more"><summary>Xem chi tiết nội dung</summary><dl><dt>Prompt</dt><dd>diễn đạt để AI hiểu đúng ý tưởng</dd><dt>Góc máy · ánh sáng</dt><dd>kiểm soát mood, cảm giác điện ảnh với AI</dd><dt>Workflow 3D × AI</dt><dd>lấy render làm gốc, để AI nhân ra nhiều phiên bản</dd><dt>Công cụ</dt><dd>Nano Banana Pro, Seedance, Kling 3.0</dd></dl></details>
+            <ol class="av-mo">
+              <li><b>Tuần 1</b>Tư duy prompt, AI hiểu đúng ý bạn</li>
+              <li><b>Tuần 2</b>Góc máy, ánh sáng với Nano Banana Pro</li>
+              <li><b>Tuần 3</b>Render làm gốc, AI nhân ra 5 đến 10 biến thể</li>
+              <li><b>Tuần 4</b>Video AI với Seedance, Kling</li>
+            </ol>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="av-art" aria-hidden="true"><div class="av-art-in"><span>Make every frame art</span><span>Make every frame art</span></div></section>
-
-  <section id="hocphi" class="av-sec">
+  <section class="av-sec" id="dau-ra">
     <div class="wrap">
-      <p class="av-k">Step 02 · Pricing</p>
-      <h2 class="av-h2">Chọn cách bạn muốn đi.</h2>
-      <div class="av-pr">
-        <div class="av-p">
-          <h3>Basic quay sẵn</h3>
-          <p class="av-price">2,5tr</p>
-          <p class="av-note">Học theo nhịp của bạn</p>
-          <ul>
-            <li>Bài giảng quay sẵn, xem lại không giới hạn</li>
-            <li>Tặng 2 buổi chữa bài trực tiếp Chủ nhật</li>
-          </ul>
-          <a class="av-cta" href="#dangky" data-he="Hệ 3D × A.I" data-goi="tuhoc">Chọn gói này</a>
-        </div>
-        <div class="av-p hot">
-          <span class="av-badge">Nhiều người chọn</span>
-          <h3>Lớp 8 tuần</h3>
-          <p class="av-price">12tr</p>
-          <p class="av-note">Chia 2 mốc, mỗi mốc 6tr</p>
-          <ul>
-            <li>Có lịch, có deadline, không bỏ giữa chừng</li>
-            <li>Tặng 8 buổi chữa bài 1:1</li>
-          </ul>
-          <a class="av-cta" href="#dangky" data-he="Hệ 3D × A.I" data-goi="lop8tuan">Chọn gói này</a>
-        </div>
-        <div class="av-p">
-          <span class="av-badge">Đi xa nhất</span>
-          <h3>Coaching 3D lên A.I</h3>
-          <p class="av-price"><small>từ</small>15tr</p>
-          <p class="av-note">3D Basic 15tr · A.I Advance 10tr · Trọn hệ 22tr</p>
-          <ul>
-            <li>Kèm 1:1 tới lúc bạn giỏi thì thôi</li>
-            <li>Sửa trực tiếp trên file của bạn</li>
-          </ul>
-          <a class="av-cta" href="#dangky" data-he="Hệ 3D × A.I" data-goi="kemrieng">Chọn gói này</a>
-        </div>
-      </div>
-      <div class="av-extra">
-        <span>Đóng trước 50%: <b>tặng thêm 6 tháng coaching</b></span>
-        <span>Chỉ thiếu một mảng? Học lẻ <b>5tr / kỹ năng</b></span>
+      <p class="av-k">After the course</p>
+      <h2 class="av-h2">Xong khoá, hình của bạn ở level này.</h2>
+      <div class="av-reel" id="avReel">
+        <img src="assets/reel-poster.webp" alt="" width="1280" height="541" loading="lazy" decoding="async">
+        <video id="avV" muted loop playsinline preload="none" data-src="assets/reel.mp4" poster="assets/reel-poster.webp" aria-label="Showreel LXAM Studio"></video>
+        <span class="av-reel-t">Showreel · LXAM Studio</span>
       </div>
     </div>
   </section>
+  <script>
+  (function(){
+    var b=document.getElementById('avReel'),v=document.getElementById('avV');
+    if(!b||!v) return;
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    v.muted=true; v.defaultMuted=true;
+    v.addEventListener('playing',function(){b.classList.add('on');});
+    function go(){ if(!v.src) v.src=v.dataset.src; var p=v.play(); if(p&&p.catch) p.catch(function(){}); }
+    if(!('IntersectionObserver' in window)){ go(); return; }
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) go(); else if(v.src) v.pause(); }); },{rootMargin:'300px 0px'}).observe(b);
+  })();
+  </script>
+
+  <section id="hocphi" class="av-sec">
+    <div class="wrap">
+      <p class="av-k">Choose your path</p>
+      <h2 class="av-h2">Chọn chặng bạn muốn đi.</h2>
+      <div class="av-bd" id="avBundle">
+        <div class="av-seg" role="tablist">
+          <button type="button" role="tab" data-i="0">3D Basic<small>3 tháng</small></button>
+          <button type="button" role="tab" data-i="1">A.I Advance<small>1 tháng</small></button>
+          <button type="button" role="tab" data-i="2" aria-selected="true">Full lộ trình<small>4 tháng</small></button>
+        </div>
+        <div class="av-bd-main">
+          <div>
+            <p class="av-bd-old" id="avOld"></p>
+            <p class="av-bd-price"><span id="avPrice">22</span>tr</p>
+            <p class="av-bd-sub" id="avSub"></p>
+          </div>
+          <ul class="av-bd-list" id="avList"></ul>
+          <a class="av-b" id="avGo" href="#dangky" data-he="Hệ 3D × A.I" data-goi="kemrieng">Giữ chỗ gói này →</a>
+        </div>
+        <p class="av-bd-ft">Kèm 1:1 tới lúc bạn giỏi thì thôi · Sửa trực tiếp trên file của bạn · Đóng trước 50% tặng thêm 6 tháng coaching</p>
+      </div>
+      <div class="av-lite">
+        <span>Muốn bắt đầu nhẹ hơn?</span>
+        <a href="#dangky" data-he="Hệ 3D × A.I" data-goi="tuhoc"><b>Basic quay sẵn 2,5tr</b> · tặng 2 buổi chữa bài Chủ nhật</a>
+        <a href="#dangky" data-he="Hệ 3D × A.I" data-goi="lop8tuan"><b>Lớp 8 tuần 12tr</b> · tặng 8 buổi chữa bài 1:1</a>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var B=[
+      {p:15,o:'',s:'Chặng 3D Basic · 3 tháng',l:['Nền 3D giống hệ Automotive','AI vào việc ngay từ tháng đầu']},
+      {p:10,o:'',s:'A.I Advance · 1 tháng · cho người đã có nền 3D',l:['Prompt, ánh sáng, góc máy với AI','Từ 1 render ra 5 đến 10 biến thể, có cả video']},
+      {p:22,o:'25tr',s:'3D Basic + A.I Advance · 4 tháng · tiết kiệm 3tr',l:['Đi trọn từ con số 0 tới workflow 3D × AI','Một người kèm từ đầu tới cuối']}
+    ];
+    var root=document.getElementById('avBundle'); if(!root) return;
+    var tabs=root.querySelectorAll('.av-seg button'), pr=document.getElementById('avPrice'),
+        old=document.getElementById('avOld'), sub=document.getElementById('avSub'), list=document.getElementById('avList'),
+        cur=+pr.textContent, raf;
+    function count(to){
+      cancelAnimationFrame(raf); var from=cur, t0=performance.now();
+      (function step(t){ var k=Math.min(1,(t-t0)/450), e=1-Math.pow(1-k,3);
+        pr.textContent=Math.round(from+(to-from)*e); if(k<1) raf=requestAnimationFrame(step); else cur=to; })(t0);
+    }
+    function show(i,anim){
+      var d=B[i];
+      for(var x=0;x<tabs.length;x++) tabs[x].setAttribute('aria-selected', x==i?'true':'false');
+      if(anim) count(d.p); else { pr.textContent=d.p; cur=d.p; }
+      old.textContent=d.o; sub.textContent=d.s;
+      list.innerHTML=d.l.map(function(t){return '<li>'+t+'</li>';}).join('');
+    }
+    for(var x=0;x<tabs.length;x++) tabs[x].addEventListener('click',function(){ show(+this.dataset.i,true); });
+    show(2,false);
+  })();
+  </script>
 
   <section class="av-sec" style="padding-bottom:clamp(64px,8vw,120px);">
     <div class="wrap">

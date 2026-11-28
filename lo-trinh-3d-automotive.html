@@ -480,6 +480,16 @@
   .av-mo li{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.45;color:#d9cfc5;}
   .av-mo b{font-weight:600;color:var(--ac);font-size:13px;letter-spacing:.3px;}
 
+  /* MAT DO AI */
+  .av-dens{display:grid;gap:10px;max-width:640px;margin:-8px 0 clamp(26px,3vw,40px);}
+  .av-dens div{display:grid;grid-template-columns:120px 1fr 64px;gap:14px;align-items:center;font-size:13.5px;color:var(--muted);}
+  .av-dens i{display:block;height:8px;border-radius:99px;background:#1c1c1c;position:relative;overflow:hidden;}
+  .av-dens i::after{content:"";position:absolute;inset:0;width:var(--w);border-radius:99px;background:#5a4a3e;}
+  .av-dens .me{color:#fff;}
+  .av-dens .me i::after{background:var(--ac);}
+  .av-dens b{font-weight:600;font-size:12.5px;text-align:right;}
+  .av-dens .me b{color:var(--ac);}
+
   /* SHOWREEL */
   .av-reel{position:relative;border-radius:14px;overflow:hidden;background:#0a0a0a;aspect-ratio:1280/540;
            isolation:isolate;transform:translateZ(0);-webkit-mask-image:-webkit-radial-gradient(white,black);}
