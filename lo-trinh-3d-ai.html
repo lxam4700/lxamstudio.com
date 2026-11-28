@@ -407,104 +407,234 @@
   <a class="lxcta" href="#dangky">Giữ chỗ →</a>
 </div>
 
-<main>
-  <section style="padding-bottom:0;">
-    <div class="wrap">
-      <p class="eyebrow"><a href="lo-trinh.html" style="color:inherit;text-decoration:none;">Lộ trình học</a> · Hệ 02</p>
-      <h1>Hệ 3D × A.I</h1>
-      <p class="lead" style="max-width:740px;">Dành cho người cần AI trong công việc hình ảnh: marketing, thương mại
-      điện tử, content sản phẩm. Vẫn học 3D trước, vì AI chỉ nghe lời người biết mình muốn gì, rồi mới ghép AI
-      vào để nhân sản lượng lên.</p>
-    </div>
-  </section>
+<style>
+  @font-face{font-family:'BrownSport';src:url("assets/brown-italic.woff2") format('woff2');font-style:italic;font-weight:400;font-display:swap;}
+  @font-face{font-family:'BrownSport';src:url("assets/brown.woff2") format('woff2');font-style:normal;font-weight:400;font-display:swap;}
+  .av{font-family:'Be Vietnam Pro',system-ui,sans-serif;}
+  .av-en{font-family:'BrownSport',sans-serif;font-style:italic;font-weight:400;}
+  .av-k{font-family:'BrownSport',sans-serif;font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:var(--ac);margin:0 0 14px;}
+  .av-h2{font-family:'Unbounded',sans-serif;font-weight:500;text-transform:none;letter-spacing:-.01em;
+         font-size:clamp(24px,2.8vw,38px);line-height:1.15;margin:0 0 clamp(22px,3vw,36px);color:#fff;}
+  .av-sec{padding:clamp(64px,8vw,120px) 0 0;}
 
-  <section id="ai">
+  /* HERO */
+  .av-hero{position:relative;margin-top:clamp(20px,3vw,40px);border-radius:14px;overflow:hidden;min-height:clamp(440px,58vw,640px);
+           display:flex;align-items:flex-end;isolation:isolate;}
+  .av-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:-2;}
+  .av-hero::before{content:"";position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(90deg,rgba(0,0,0,.86) 0%,rgba(0,0,0,.55) 42%,rgba(0,0,0,0) 72%),
+               linear-gradient(0deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,0) 45%);}
+  .av-hi{padding:clamp(22px,4.4vw,64px);max-width:none;width:100%;box-sizing:border-box;min-width:0;}
+  .av-bc{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#cfc6bd;margin:0 0 16px;}
+  .av-bc a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);}
+  .av-h1{font-family:'BrownSport',sans-serif;font-style:italic;font-weight:400;text-transform:uppercase;
+         font-size:clamp(34px,6vw,88px);line-height:.92;white-space:nowrap;margin:0 0 18px;color:#fff;}
+  .av-lead{font-size:clamp(16px,1.5vw,19px);line-height:1.55;color:#eee6de;margin:0 0 24px;max-width:46ch;}
+  .av-facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none;}
+  .av-facts li{padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);
+               font-size:13.5px;color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);}
+  .av-facts b{color:var(--ac);font-weight:600;}
+  .av-btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+  .av-b{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;background:var(--ac);color:#000;
+        font-weight:700;font-size:15px;text-decoration:none;transition:transform .25s,background .25s;}
+  .av-b:hover{transform:translateY(-2px);background:#ff9447;}
+  .av-g{display:inline-flex;align-items:center;padding:14px 22px;border-radius:999px;border:1px solid rgba(255,255,255,.4);
+        color:#fff;font-weight:500;font-size:14.5px;text-decoration:none;transition:border-color .25s,color .25s;}
+  .av-g:hover{border-color:var(--ac);color:var(--ac);}
+
+  /* LO TRINH */
+  .av-path{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.8vw,22px);position:relative;}
+  .av-st{display:flex;flex-direction:column;border-radius:10px;overflow:hidden;background:#0d0d0d;border:1px solid var(--line);}
+  .av-st img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 30%;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1);}
+  .av-st:hover img{transform:scale(1.03);}
+  .av-st>div{padding:clamp(20px,2.4vw,30px);}
+  .av-tag{display:inline-block;font-family:'BrownSport',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;
+          padding:4px 10px;border-radius:999px;border:1px solid var(--ac);color:var(--ac);margin:0 0 12px;}
+  .av-st.mx .av-tag{background:var(--ac);color:#000;}
+  .av-st h3{font-family:'Unbounded',sans-serif;font-weight:600;text-transform:none;font-size:clamp(18px,1.6vw,22px);
+            line-height:1.2;margin:0 0 14px;color:#fff;letter-spacing:-.01em;}
+  .av-chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px;padding:0;list-style:none;}
+  .av-chips li{font-size:13px;padding:6px 11px;border-radius:6px;background:#181818;color:#e6ddd4;}
+  .av-out{font-size:14.5px;line-height:1.5;color:#d9cfc5;margin:0;}
+  .av-out b{color:#fff;font-weight:600;}
+  .av-more{margin-top:14px;border-top:1px solid var(--line);}
+  .av-more summary{cursor:pointer;list-style:none;padding:14px 0 4px;font-size:13.5px;font-weight:600;color:var(--ac);}
+  .av-more summary::-webkit-details-marker{display:none;}
+  .av-more summary::after{content:" +";}
+  .av-more[open] summary::after{content:" −";}
+  .av-more dl{margin:8px 0 0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:13.5px;line-height:1.5;}
+  .av-more dt{color:#fff;font-weight:600;white-space:nowrap;}
+  .av-more dd{margin:0;color:var(--muted);}
+
+  /* DAI NGHE THUAT */
+  .av-art{padding:clamp(70px,9vw,130px) 0 0;overflow:hidden;}
+  .av-art-in{display:flex;gap:.6em;white-space:nowrap;width:max-content;animation:avMq 28s linear infinite;
+             font-family:'BrownSport',sans-serif;font-style:italic;text-transform:uppercase;line-height:1;
+             font-size:clamp(54px,10vw,150px);color:transparent;-webkit-text-stroke:1px rgba(255,122,26,.55);}
+  .av-art-in span::after{content:"  ·";}
+  @keyframes avMq{to{transform:translateX(-50%);}}
+  @media (prefers-reduced-motion:reduce){.av-art-in{animation:none;}}
+
+  /* HOC PHI */
+  .av-pr{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px);align-items:stretch;}
+  .av-p{position:relative;display:flex;flex-direction:column;padding:clamp(22px,2.4vw,32px);border-radius:8px;
+        background:#0d0d0d;border:1px solid var(--line);}
+  .av-p.hot{border-color:rgba(255,122,26,.6);background:linear-gradient(180deg,rgba(255,122,26,.12),rgba(255,122,26,0) 55%),#0d0d0d;}
+  .av-p .av-badge{position:absolute;top:-12px;left:22px;padding:4px 11px;border-radius:999px;background:var(--ac);color:#000;
+                  font-size:11.5px;font-weight:700;}
+  .av-p h3{font-family:'Unbounded',sans-serif;font-weight:600;text-transform:none;font-size:17px;margin:0 0 16px;color:#fff;}
+  .av-price{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(34px,3.4vw,46px);line-height:1;color:#fff;margin:0 0 6px;}
+  .av-price small{font-size:.42em;font-weight:500;color:var(--muted);margin-right:6px;}
+  .av-note{font-size:13px;color:var(--muted);margin:0 0 20px;min-height:1.4em;}
+  .av-p ul{list-style:none;margin:0 0 24px;padding:20px 0 0;border-top:1px solid var(--line);display:grid;gap:11px;}
+  .av-p li{display:flex;gap:10px;font-size:14.5px;line-height:1.45;color:#e6ddd4;}
+  .av-p li::before{content:"✓";color:var(--ac);font-weight:700;flex:0 0 auto;}
+  .av-p .av-cta{margin-top:auto;display:flex;justify-content:center;padding:14px 18px;border-radius:999px;
+                border:1px solid rgba(255,255,255,.25);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;
+                transition:background .25s,border-color .25s,color .25s;}
+  .av-p .av-cta:hover{border-color:var(--ac);color:var(--ac);}
+  .av-p.hot .av-cta{background:var(--ac);border-color:var(--ac);color:#000;}
+  .av-p.hot .av-cta:hover{background:#ff9447;color:#000;}
+  .av-extra{display:flex;flex-wrap:wrap;gap:10px 28px;margin:22px 0 0;font-size:14px;color:#d9cfc5;}
+  .av-extra b{color:var(--ac);font-weight:600;}
+
+  .av-trust{list-style:none;margin:0;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+            display:flex;flex-wrap:wrap;gap:10px 30px;font-size:14px;color:#d9cfc5;}
+  .av-trust li::before{content:"✓ ";color:var(--ac);font-weight:700;}
+  .av-trust li.sw{margin-left:auto;}
+  .av-trust li.sw::before,.av-trust li:nth-child(4)::before{content:"";}
+  .av-trust a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);}
+  .av-trust a:hover{color:var(--ac);border-color:var(--ac);}
+  @media (max-width:700px){.av-trust{flex-direction:column;}.av-trust li.sw{margin-left:0;}}
+  /* DIEU KHOAN + HOP VOI AI */
+  .av-two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,1.8vw,22px);}
+  .av-box{padding:clamp(22px,2.6vw,34px);border-radius:8px;background:#0d0d0d;border:1px solid var(--line);}
+  .av-box h3{font-family:'Unbounded',sans-serif;font-weight:500;text-transform:none;font-size:18px;margin:0 0 16px;color:#fff;}
+  .av-box ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+  .av-box li{display:flex;gap:10px;font-size:14.5px;line-height:1.5;color:#d9cfc5;}
+  .av-box li::before{content:"";flex:0 0 6px;height:6px;margin-top:.6em;border-radius:50%;background:var(--ac);}
+  .av-box p{font-size:14px;color:var(--muted);margin:16px 0 0;line-height:1.55;}
+  .av-box a{color:#fff;}
+  .av-box a:hover{color:var(--ac);}
+
+  @media (max-width:900px){
+    .av-path,.av-pr,.av-two{grid-template-columns:1fr;}
+    .av-pr{gap:24px;}
+    .av-hero{min-height:560px;}
+    .av-hero img{object-position:70% 50%;}
+    .av-hero::before{background:linear-gradient(0deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,.1) 100%);}
+  }
+  @media (max-width:600px){ .av-h1{white-space:normal;font-size:clamp(34px,11vw,52px);} }
+  @media (max-width:520px){
+    .av-btns .av-b,.av-btns .av-g{flex:1 1 100%;justify-content:center;}
+  }
+</style>
+
+<main class="av">
+  <section style="padding:0;">
     <div class="wrap">
-      <div class="track-head">
-        <span class="track-num">Nội dung học</span>
-        <span class="track-dur">Blender + AI · 4 tháng</span>
-      </div>
-      <div class="track">
-        
-    <article class="lvl">
-      <div class="lvl-art"><img src="assets/lo-trinh-3d-basic-ai.jpg" alt="3D Basic: Blender Foundation, nền tảng 3D trước khi vào AI" loading="lazy" width="1200" height="1200"></div>
-      <div class="lvl-body">
-        <span class="badge">3D Basic</span>
-        <h3>Blender Foundation</h3>
-        <p class="lvl-sub">3 tháng · nền tảng bắt buộc</p>
-        <div class="mod"><div class="mod-head"><span class="mod-tag">Nội dung</span><span class="mod-dur">3 tháng</span></div><ul class="mod-list"><li><strong>Modeling:</strong> hard surface, sản phẩm, form chuẩn</li><li><strong>Material &amp; Lighting:</strong> hiểu vật liệu và ánh sáng để render “ra tiền”</li><li><strong>Rendering:</strong> setup scene sạch, tối ưu workflow</li><li><strong>Tư duy hình ảnh:</strong> bố cục, góc máy, storytelling cơ bản</li></ul></div>
-        <div class="goal"><span class="goal-label">Mục tiêu</span><p>Tự dựng và render được sản phẩm hoàn chỉnh.</p></div>
-        
-      </div>
-    </article>
-        
-    <article class="lvl">
-      <div class="lvl-art"><img src="assets/lo-trinh-ai-advance.jpg" alt="A.I Advance: AI × Visual, khoá AI cho người làm hình ảnh tại LXAM Academy" loading="lazy" width="1200" height="1200"></div>
-      <div class="lvl-body">
-        <span class="badge">A.I Advance</span>
-        <h3>AI × Visual</h3>
-        <p class="lvl-sub">1 tháng · AI từ cơ bản đến nâng cao</p>
-        <div class="mod"><div class="mod-head"><span class="mod-tag">Nội dung</span><span class="mod-dur">1 tháng</span></div><ul class="mod-list"><li><strong>Tư duy Prompt:</strong> cách diễn đạt để AI hiểu đúng ý tưởng</li><li><strong>Góc máy &amp; ánh sáng với AI:</strong> kiểm soát mood, cinematic feel</li><li><strong>Workflow 3D × AI:</strong> kết hợp render và AI để tạo visual mạnh hơn</li><li><strong>Ứng dụng công cụ:</strong> Nano Banana Pro, Seedance, Kling 3.0</li></ul></div>
-        <div class="goal"><span class="goal-label">Mục tiêu</span><p>Biến 1 sản phẩm thành 5 đến 10 biến thể chất lượng cao trong thời gian ngắn.</p></div>
-        <p class="lvl-note">Học phần này nối tiếp 3D Basic. AI thay bạn làm phần lặp lại, không thay phần bạn quyết định, nên nền 3D vẫn là điều kiện đi trước.</p>
-      </div>
-    </article>
-      </div>
-      
-      <div class="price-wrap" id="hocphi-he02">
-        <div class="price-head">
-          <span class="price-eyebrow">Học phí hệ 3D × A.I</span>
-          <p>Ba cách học, cùng một nội dung ở trên. Khác nhau đúng một chỗ: ai ngồi cạnh bạn lúc sửa bài.</p>
-        </div>
-        <div class="price-grid"><div class="pcard" data-card="tuhoc"><button type="button" class="ptoggle" aria-expanded="false"><span class="pname">Tự học có chữa bài</span><span class="pprice"><span class="pnum">2,5tr</span><span class="punit">học theo lịch của bạn</span></span><span class="pchev" aria-hidden="true"></span></button><ul class="plist"><li>Trọn bộ bài giảng quay sẵn, xem lại không giới hạn</li><li>Mỗi tuần nộp bài, giảng viên chữa trực tiếp</li><li>Tài liệu và file dự án đi kèm</li></ul><div class="pdetail" hidden><dl class="pdl"><div class="prow"><dt>Bạn nhận gì</dt><dd>Toàn bộ bài giảng quay sẵn của hệ này, tài liệu và file dự án. Xem lại bao nhiêu lần cũng được.</dd></div><div class="prow"><dt>Chữa bài</dt><dd>Mỗi tuần nộp một bài, giảng viên xem và chỉ thẳng chỗ sai. Nhận xét bằng văn bản và hình.</dd></div><div class="prow"><dt>Thời gian</dt><dd>Không có deadline. Bạn học nhanh hay chậm tuỳ lịch của bạn.</dd></div><div class="prow"><dt>Hợp với</dt><dd>Người đang đi làm, tự kỷ luật được, hoặc muốn thử trước khi đi sâu.</dd></div><div class="prow"><dt>Không có</dt><dd>Lịch cố định, lớp học cùng nhau, và chữa bài trực tiếp trên file của bạn.</dd></div></dl><p class="pterms">Áp dụng <a href="dieu-khoan.html">điều khoản học phí, bảo lưu và bảo hành</a>: bảo hành trọn đời, bảo lưu vẫn đóng phí theo tháng, ngừng đóng quá 1 tháng thì mất ưu đãi.</p><a class="pbtn" href="#dangky" data-he="Hệ 3D × A.I" data-goi="tuhoc">Đăng ký gói này →</a></div><span class="phint">Bấm để xem chi tiết gói</span></div><div class="pcard hot" data-card="lop8tuan"><span class="pbadge">Nhiều người chọn</span><button type="button" class="ptoggle" aria-expanded="false"><span class="pname">Lớp 8 tuần</span><span class="pprice"><span class="pnum">12tr</span><span class="punit">chia 2 mốc, mỗi mốc 6tr</span></span><span class="pchev" aria-hidden="true"></span></button><ul class="plist"><li>Tối đa 10 suất, có lịch và có deadline</li><li>Kết thúc lớp có 3 sản phẩm portfolio</li><li>Học cùng nhóm, chữa bài trước cả lớp</li></ul><div class="pdetail" hidden><dl class="pdl"><div class="prow"><dt>Bạn nhận gì</dt><dd>Một lớp tối đa 10 người, lịch học và deadline rõ ràng trong 8 tuần.</dd></div><div class="prow"><dt>Đầu ra</dt><dd>Ba sản phẩm portfolio: hard-surface, scene lighting, và một sản phẩm thương mại.</dd></div><div class="prow"><dt>Chữa bài</dt><dd>Chữa trước cả lớp. Bạn học được cả từ lỗi của người khác, không chỉ lỗi của mình.</dd></div><div class="prow"><dt>Đóng phí</dt><dd>Hai mốc, mỗi mốc 6tr. Mốc hai đóng khi qua nửa lớp.</dd></div><div class="prow"><dt>Hợp với</dt><dd>Người cần áp lực và bạn đồng hành để không bỏ giữa chừng.</dd></div><div class="prow"><dt>Không có</dt><dd>Lịch linh hoạt riêng cho bạn, lớp chạy theo lịch chung.</dd></div></dl><p class="pterms">Áp dụng <a href="dieu-khoan.html">điều khoản học phí, bảo lưu và bảo hành</a>: bảo hành trọn đời, bảo lưu vẫn đóng phí theo tháng, ngừng đóng quá 1 tháng thì mất ưu đãi.</p><a class="pbtn hot" href="#dangky" data-he="Hệ 3D × A.I" data-goi="lop8tuan">Đăng ký gói này →</a></div><span class="phint">Bấm để xem chi tiết gói</span></div><div class="pcard" data-card="kemrieng"><span class="pbadge alt">Lựa chọn tiết kiệm nhất</span><button type="button" class="ptoggle" aria-expanded="false"><span class="pname">Kèm riêng 1:1</span><span class="pprice"><span class="pnum">từ 15tr</span><span class="punit">lịch theo bạn</span></span><span class="pchev" aria-hidden="true"></span></button><ul class="plist"><li>Chữa bài trên chính file của bạn</li><li>Đồng hành trọn 1 năm</li><li>Trọn hệ 22tr, rẻ hơn 3tr so với mua lẻ từng chặng</li></ul><div class="pdetail" hidden><div class="tierbox"><span class="tierbox-label">Hai chặng của hệ 3D × A.I</span><div class="tier"><div class="tier-h"><strong>3D Basic: Nền tảng</strong><span class="tier-p">15tr</span></div><p>Modeling hard-surface · Material &amp; Lighting · Rendering · tư duy hình ảnh. Ba kỹ năng, ba tháng.</p></div><div class="tier"><div class="tier-h"><strong>A.I Advance: Chuyên sâu</strong><span class="tier-p">10tr</span></div><p>AI × Visual (tư duy prompt, góc máy và ánh sáng với AI) · Workflow 3D × AI. Hai kỹ năng, một tháng.</p></div><div class="tier tier-sum"><div class="tier-h"><strong>Học trọn cả hai</strong><span class="tier-p">22tr</span></div><p>3D Basic + A.I Advance gộp lại, rẻ hơn 3tr so với mua rời từng chặng.</p></div></div><div class="benbox"><span class="benbox-label">Kèm riêng mở khoá những gì</span><ul class="benlist"><li><strong>Mở khoá toàn bộ quyền lợi học viên</strong><span>Không phần nào bị khoá theo gói. Bài giảng, tài liệu, file dự án, nhóm học viên, có hết.</span></li><li><strong>Hỏi bất kỳ lúc nào</strong><span>Vướng là nhắn, không phải để dành tới buổi học. Không giới hạn số câu hỏi.</span></li><li><strong>Đặt lịch coach khi cần</strong><span>Kẹt ở đâu thì mở buổi ở đó. Lịch xếp theo bạn, không chờ tới khung giờ cố định.</span></li><li><strong>Tư vấn sâu, không chỉ dạy phần mềm</strong><span>Chọn mảng nào, nhận job kiểu gì, báo giá ra sao, thị trường đang cần gì, nói thẳng.</span></li><li><strong>Portfolio dựng theo thị trường lao động</strong><span>Làm đúng thứ nhà tuyển dụng và khách hàng đang tìm, không phải bài tập cho đẹp.</span></li><li><strong>Cam kết đầu ra</strong><span>Đồng hành tới khi bạn làm được nghề. Hết nội dung mà chưa vững thì vẫn kèm tiếp.</span></li></ul></div><dl class="pdl"><div class="prow"><dt>Chữa bài</dt><dd>Giảng viên mở chính file của bạn, sửa tại chỗ và giải thích vì sao sửa như vậy.</dd></div><div class="prow"><dt>Hợp với</dt><dd>Người có mục tiêu nghề rõ ràng và muốn đi nhanh nhất có thể.</dd></div></dl><p class="pterms">Áp dụng <a href="dieu-khoan.html">điều khoản học phí, bảo lưu và bảo hành</a>: bảo hành trọn đời, bảo lưu vẫn đóng phí theo tháng, ngừng đóng quá 1 tháng thì mất ưu đãi.</p><a class="pbtn" href="#dangky" data-he="Hệ 3D × A.I" data-goi="kemrieng">Đăng ký gói này →</a></div><span class="phint">Bấm để xem chi tiết gói</span></div></div>
-        <p class="price-note">Đóng trước <strong>50% học phí</strong> thì được tặng thêm
-        <strong>6 tháng coaching</strong>. Mọi học viên được <strong>bảo hành kiến thức trọn đời</strong>
-        và <strong>takecare trọn đời</strong>, chi tiết ở phần điều khoản bên dưới.</p>
-        <details class="pmore">
-          <summary>Chỉ cần học lẻ một kỹ năng?</summary>
-          <p>Học riêng từng kỹ năng: <strong>5tr / kỹ năng</strong>. Hợp với người đã làm 3D và chỉ
-          thiếu đúng một mảng. Để lại thông tin bên dưới, tôi xem rồi nói bạn cần học kỹ năng nào.</p>
-        </details>
-        <details class="pmore" id="dieu-khoan">
-          <summary>Điều khoản học phí, bảo lưu và bảo hành</summary>
-          <ul>
-            <li><strong>Bảo hành kiến thức trọn đời</strong> và <strong>takecare trọn đời</strong> cho phần lộ trình đã hoàn thiện học phí.</li>
-            <li><strong>Bảo lưu</strong> vì công việc hoặc sức khoẻ: đóng một lần thì không phát sinh thêm; đóng theo tháng thì trong thời gian bảo lưu vẫn phải hoàn thiện học phí hàng tháng.</li>
-            <li><strong>Ngừng đóng học phí</strong>: được nhắc trong 1 tháng, sau đó mọi offer và ưu đãi tự động xoá, đăng ký học lại tính theo giá mới.</li>
+      <div class="av-hero">
+        <img src="assets/ac-bg.webp" alt="Chân dung robot mặt người, hình đại diện hệ 3D × A.I của LXAM Academy" width="1392" height="936" fetchpriority="high" style="object-position:80% 35%;">
+        <div class="av-hi">
+          <p class="av-bc"><a href="lo-trinh.html">Lộ trình học</a> · Hệ 02</p>
+          <h1 class="av-h1">3D × A.I</h1>
+          <p class="av-lead">Vững 3D trước, rồi để AI nhân một sản phẩm thành hàng chục hình.</p>
+          <ul class="av-facts">
+            <li><b>4</b> tháng</li>
+            <li>Từ con số 0</li>
           </ul>
-          <p>Bản đầy đủ, gồm cả phần LXAM cam kết ngược lại, nằm ở trang <a href="dieu-khoan.html" style="color:var(--ac);">điều khoản học phí và bảo lưu</a>.</p>
-        </details>
-        <div class="track-cta">
-          <div class="track-cta-txt">
-            <strong>Chưa chắc chọn gói nào?</strong>
-            <p>Để lại thông tin, tôi gọi tư vấn trước khi bạn đóng bất kỳ khoản nào.</p>
-          </div>
-          <div class="track-cta-btns">
-            <a class="lxcta" href="#dangky" data-he="Hệ 3D × A.I" data-goi="">Đăng ký tư vấn hệ 3D × A.I →</a>
-            <a class="lxcta-ghost" href="cam-nang.html?from=he02">Nhận cẩm nang 112 trang miễn phí</a>
+          <div class="av-btns">
+            <a class="av-b" href="#dangky" data-he="Hệ 3D × A.I" data-goi="">Giữ chỗ, nhận tư vấn →</a>
+            <a class="av-g" href="#hocphi">Xem học phí</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section id="ai" class="av-sec">
     <div class="wrap">
-      <p class="eyebrow">Hệ này hợp với ai</p>
-      <h2>Chọn hệ này nếu…</h2>
-      <ul class="mod-list fit-list"><li>Bạn đang làm <strong>marketing, bán hàng, content</strong> và cần hình nhanh.</li><li>Bạn cần nhiều biến thể của cùng một sản phẩm, liên tục.</li><li>Bạn muốn hiểu AI đủ sâu để nó ra đúng ý, không phải bấm may rủi.</li><li>Bạn cần kết quả trong vài tháng, không phải vài năm.</li></ul>
+      <p class="av-k">Step 01 · Roadmap</p>
+      <h2 class="av-h2">3 tháng 3D, 1 tháng AI.</h2>
+      <div class="av-path">
+        <article class="av-st">
+          <img src="assets/st-ai-basic.webp" alt="Chi tiết mạch cơ khí trên mũ robot, chặng 3D Basic hệ 3D × A.I" width="960" height="720" loading="lazy" decoding="async">
+          <div>
+            <span class="av-tag">3D Basic</span>
+            <h3>Blender Foundation</h3>
+            <p class="av-out"><b>Đầu ra:</b> tự dựng và render được một sản phẩm hoàn chỉnh.</p>
+            <details class="av-more"><summary>Xem chi tiết nội dung</summary><dl><dt>Modeling</dt><dd>hard-surface, sản phẩm, form chuẩn</dd><dt>Material</dt><dd>hiểu vật liệu để render ra hình bán được</dd><dt>Lighting</dt><dd>ánh sáng, mood, góc máy</dd><dt>Render</dt><dd>setup scene sạch, tối ưu workflow</dd><dt>Tư duy hình</dt><dd>bố cục, storytelling cơ bản</dd></dl></details>
+          </div>
+        </article>
+        <article class="av-st mx">
+          <img src="assets/st-ai-adv.webp" alt="Khuôn mặt robot người, chặng A.I Advance hệ 3D × A.I" width="960" height="720" loading="lazy" decoding="async">
+          <div>
+            <span class="av-tag">A.I Advance</span>
+            <h3>AI × Visual</h3>
+            <p class="av-out"><b>Đầu ra:</b> từ 1 sản phẩm ra 5 đến 10 biến thể chất lượng cao, nhanh.</p>
+            <details class="av-more"><summary>Xem chi tiết nội dung</summary><dl><dt>Prompt</dt><dd>diễn đạt để AI hiểu đúng ý tưởng</dd><dt>Góc máy · ánh sáng</dt><dd>kiểm soát mood, cảm giác điện ảnh với AI</dd><dt>Workflow 3D × AI</dt><dd>lấy render làm gốc, để AI nhân ra nhiều phiên bản</dd><dt>Công cụ</dt><dd>Nano Banana Pro, Seedance, Kling 3.0</dd></dl></details>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section style="padding-top:0;">
+  <section class="av-art" aria-hidden="true"><div class="av-art-in"><span>Make every frame art</span><span>Make every frame art</span></div></section>
+
+  <section id="hocphi" class="av-sec">
     <div class="wrap">
-      <div class="switch-box">
-        <div>
-          <span class="switch-label">Hệ này chưa hợp?</span>
-          <p>Nếu bạn muốn làm nghề dựng và render bằng chính tay mình, hệ 3D Automotive mới là chỗ của bạn.</p>
+      <p class="av-k">Step 02 · Pricing</p>
+      <h2 class="av-h2">Chọn cách bạn muốn đi.</h2>
+      <div class="av-pr">
+        <div class="av-p">
+          <h3>Basic quay sẵn</h3>
+          <p class="av-price">2,5tr</p>
+          <p class="av-note">Học theo nhịp của bạn</p>
+          <ul>
+            <li>Bài giảng quay sẵn, xem lại không giới hạn</li>
+            <li>Tặng 2 buổi chữa bài trực tiếp Chủ nhật</li>
+          </ul>
+          <a class="av-cta" href="#dangky" data-he="Hệ 3D × A.I" data-goi="tuhoc">Chọn gói này</a>
         </div>
-        <a class="lxcta-ghost" href="lo-trinh-3d-automotive.html">Xem hệ 3D Automotive →</a>
+        <div class="av-p hot">
+          <span class="av-badge">Nhiều người chọn</span>
+          <h3>Lớp 8 tuần</h3>
+          <p class="av-price">12tr</p>
+          <p class="av-note">Chia 2 mốc, mỗi mốc 6tr</p>
+          <ul>
+            <li>Có lịch, có deadline, không bỏ giữa chừng</li>
+            <li>Tặng 8 buổi chữa bài 1:1</li>
+          </ul>
+          <a class="av-cta" href="#dangky" data-he="Hệ 3D × A.I" data-goi="lop8tuan">Chọn gói này</a>
+        </div>
+        <div class="av-p">
+          <span class="av-badge">Đi xa nhất</span>
+          <h3>Coaching 3D lên A.I</h3>
+          <p class="av-price"><small>từ</small>15tr</p>
+          <p class="av-note">3D Basic 15tr · A.I Advance 10tr · Trọn hệ 22tr</p>
+          <ul>
+            <li>Kèm 1:1 tới lúc bạn giỏi thì thôi</li>
+            <li>Sửa trực tiếp trên file của bạn</li>
+          </ul>
+          <a class="av-cta" href="#dangky" data-he="Hệ 3D × A.I" data-goi="kemrieng">Chọn gói này</a>
+        </div>
       </div>
+      <div class="av-extra">
+        <span>Đóng trước 50%: <b>tặng thêm 6 tháng coaching</b></span>
+        <span>Chỉ thiếu một mảng? Học lẻ <b>5tr / kỹ năng</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="av-sec" style="padding-bottom:clamp(64px,8vw,120px);">
+    <div class="wrap">
+      <ul class="av-trust">
+        <li>Bảo hành kiến thức trọn đời</li>
+        <li>Bảo lưu khi bận việc</li>
+        <li>Tư vấn trước khi đóng tiền</li>
+        <li><a href="dieu-khoan.html">Điều khoản →</a></li>
+        <li class="sw"><a href="lo-trinh-3d-automotive.html">Muốn làm nghề dựng? Hệ 3D Automotive →</a></li>
+      </ul>
     </div>
   </section>
 
@@ -514,7 +644,7 @@
         <div class="reg-form">
           <p class="eyebrow">Đăng ký giữ chỗ</p>
           <h2 style="margin-bottom:12px;">Giữ chỗ hệ 3D × A.I</h2>
-          <p style="font-size:14.5px;color:#9a8f84;margin:0 0 26px;">Mỗi lớp giới hạn suất để còn sửa bài được cho từng người. Để lại thông tin, tôi liên hệ tư vấn trong 24h trước khi bạn quyết định.</p>
+          <p style="font-size:14.5px;color:#9a8f84;margin:0 0 26px;">Để lại thông tin, tôi gọi tư vấn trong 24h, trước khi bạn đóng bất kỳ khoản nào.</p>
 
           <div id="lx-done" class="reg-done" hidden>
             <div style="font-family:'Unbounded',sans-serif;font-size:28px;font-weight:700;text-transform:uppercase;color:#fff;margin-bottom:8px;">Đã gửi ✓</div>
@@ -528,7 +658,7 @@
             </div>
             <div class="reg-field">
               <label>Cách học bạn muốn</label>
-              <div class="pills" id="lx-goi" role="group"><button type="button" class="pill" data-k="tuhoc" data-v="Tự học có chữa bài · 2,5tr" aria-pressed="false">Tự học · 2,5tr</button><button type="button" class="pill" data-k="lop8tuan" data-v="Lớp 8 tuần · 12tr" aria-pressed="false">Lớp 8 tuần · 12tr</button><button type="button" class="pill" data-k="kemrieng" data-v="Kèm riêng 1:1 · từ 15tr" aria-pressed="false">Kèm riêng 1:1 · từ 15tr</button><button type="button" class="pill" data-k="tuvan" data-v="Chưa chọn, cần tư vấn" aria-pressed="false">Cần tư vấn</button></div>
+              <div class="pills" id="lx-goi" role="group"><button type="button" class="pill" data-k="tuhoc" data-v="Basic quay sẵn · 2,5tr" aria-pressed="false">Basic quay sẵn · 2,5tr</button><button type="button" class="pill" data-k="lop8tuan" data-v="Lớp 8 tuần · 12tr" aria-pressed="false">Lớp 8 tuần · 12tr</button><button type="button" class="pill" data-k="kemrieng" data-v="Coaching 1:1 · từ 15tr" aria-pressed="false">Coaching 1:1 · từ 15tr</button><button type="button" class="pill" data-k="tuvan" data-v="Chưa chọn, cần tư vấn" aria-pressed="false">Cần tư vấn</button></div>
             </div>
             <div class="reg-field">
               <label for="lx-name">Họ và tên</label>
