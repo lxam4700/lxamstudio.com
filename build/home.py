@@ -964,8 +964,7 @@ def academy():
 <section id="kh">
   <div class="wrap">
     %s
-    <div class="cs" id="lotrinh">%s</div>
-    <div class="faq">
+    <div class="faq" style="margin-top:clamp(56px,7vw,96px);">
       <div><h3>Câu hỏi thường gặp</h3><p class="muted" style="font-size:14px;">Chưa chắc nên vào hệ nào? <a class="lnk" href="lo-trinh.html#dangky">Để lại thông tin</a>, chúng tôi gọi tư vấn trước khi bạn đóng bất kỳ khoản nào.</p></div>
       <div>%s</div>
     </div>
@@ -980,7 +979,7 @@ def academy():
     <p style="margin:10px 0 0;font-size:14px;color:var(--muted);">Trước khi đóng học phí, đọc <a class="lnk" href="dieu-khoan.html">điều khoản học phí, bảo lưu và bảo hành</a>: bảo hành kiến thức trọn đời và takecare trọn đời, quy định bảo lưu, và mốc xoá ưu đãi khi ngừng đóng phí.</p>
     <p style="margin:10px 0 0;font-size:14px;color:var(--muted);">Đang so nhiều nơi? Bắt đầu từ bài tổng hợp <a class="lnk" href="blog-khoa-hoc-3d-blender.html">khoá học 3D Blender</a>, rồi đọc sâu về <a class="lnk" href="blog-khoa-hoc-blender-3d-o-viet-nam.html">khoá học Blender 3D ở Việt Nam</a>, <a class="lnk" href="blog-khoa-hoc-blender-3d-cho-nguoi-moi.html">khoá học Blender 3D cho người mới</a> <a class="lnk" href="blog-khoa-hoc-render.html">khoá học render</a> và <a class="lnk" href="blog-hoc-blender-kem-1-1.html">học kèm 1 kèm 1 Blender</a>. Ở Sài Gòn thì so thêm giữa lớp trực tiếp và lớp từ xa trong bài <a class="lnk" href="blog-khoa-hoc-3d-tai-tphcm.html">khoá học 3D tại TPHCM</a>, hoặc xem cách theo một <a class="lnk" href="blog-khoa-hoc-3d-online.html">khoá học 3D online</a> tới cùng. Trước khi chuyển khoản ở bất cứ đâu, xem cách tính trong bài <a class="lnk" href="blog-hoc-phi-khoa-hoc-blender.html">học phí khoá học Blender</a>. Còn đang cân nhắc có nên trả tiền học hay không, đọc <a class="lnk" href="blog-tu-hoc-blender-hay-hoc-kem.html">tự học Blender hay học kèm</a>. Đã chốt là cần người kèm thì bài tổng hợp <a class="lnk" href="blog-hoc-kem-3d.html">học kèm 3D</a> tách năm hình thức kèm, kèm bảng so sánh và danh sách kiểm tra trước khi đóng tiền buổi đầu. Muốn biết mình mất bao lâu mới ra nghề, bài <a class="lnk" href="blog-hoc-blender-3d-bao-lau.html">học Blender 3D bao lâu</a> chia mốc thời gian theo số giờ học mỗi tuần.</p>
   </div>
-</section>""" % (section_head("01", "LXAM Academy", "Hai hệ đào tạo", ("lo-trinh.html", "So sánh hai hệ")), cs, fq)
+</section>""" % (course_picker(), fq)
 
 
 def contact():
@@ -1165,9 +1164,13 @@ def showreel_min():
 
 
 
-def academy_min():
+def course_picker():
+    """Khoi chon khoa 2 buoc, dung trong trang khoa-hoc.html."""
     return """
+
 <style>
+  @font-face{font-family:'BrownSport';src:url("assets/brown-italic.woff2") format('woff2');font-style:italic;font-weight:400;font-display:swap;}
+  @font-face{font-family:'BrownSport';src:url("assets/brown.woff2") format('woff2');font-style:normal;font-weight:400;font-display:swap;}
   /* Khu chot sale khoa hoc: 2 buoc, chon dich den roi chon cach hoc. */
   .ak-sub{margin:22px 0 0;font-size:clamp(15px,1.3vw,17px);line-height:1.55;font-weight:500;color:#140c06;max-width:42ch;}
   .ak-ds{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,1.6vw,20px);margin:clamp(12px,1.6vw,20px) 0 0;}
@@ -1184,7 +1187,7 @@ def academy_min():
   .ak-bd{display:flex;flex-direction:column;gap:18px;flex:1;padding:clamp(18px,2vw,26px) clamp(24px,3vw,40px) clamp(24px,3vw,40px);}
   .ak-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
   .ak-no{font-family:'BrownSport',sans-serif;font-style:italic;font-size:clamp(34px,3.4vw,48px);line-height:1;color:var(--ac);}
-  .ak-tm{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
+  .ak-tm{white-space:nowrap;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
   .ak-nm{font-family:'Unbounded',sans-serif;font-weight:600;font-size:clamp(22px,2.2vw,30px);line-height:1.15;margin:0;letter-spacing:-.01em;}
   .ak-ds .ak-q{font-size:clamp(15px,1.3vw,17px);line-height:1.55;color:#d9cfc5;margin:0;}
   .ak-ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:14.5px;color:var(--muted);}
@@ -1222,6 +1225,7 @@ def academy_min():
 
   @media (max-width:860px){
     .ak-ds,.ak-ws{grid-template-columns:1fr;}
+    .ak-top{flex-direction:column-reverse;align-items:flex-start;gap:6px;}
     .ak-ws{gap:20px;}
     .ak-cta{flex-direction:column;align-items:stretch;}
     .ak-bt{flex-direction:column;align-items:stretch;text-align:center;}
@@ -1229,19 +1233,8 @@ def academy_min():
     .ak-l{align-self:center;}
   }
 </style>
-<section id="khoahoc" class="mn">
-  <div class="wrap">
-    <div class="ac">
-      <img class="ac-bg" src="assets/ac-bg.webp" alt="" width="1392" height="936" loading="lazy" decoding="async">
-      <div class="ac-in">
-        <p class="mn-k" style="color:#140c06;"><b style="color:#140c06;">04</b> / LXAM Academy</p>
-        <h2 class="ac-h">Học Blender 3D<br>theo cách studio làm nghề.</h2>
-        <p class="ak-sub">Từ con số 0 tới sản phẩm đủ sức đưa vào portfolio.<br>Chỉ cần chọn đúng 2 thứ bên dưới.</p>
-      </div>
-    </div>
-
     <div class="ak-st"><span>Step 01</span><h3>Bạn muốn làm được gì?</h3></div>
-    <div class="ak-ds">
+    <div class="ak-ds" id="lotrinh">
       <a class="ak-c" href="lo-trinh-3d-automotive.html">
         <div class="ak-cv"><img src="assets/cover-automotive.webp" alt="Mercedes G63 dựng 3D trong TVC của LXAM Studio" width="960" height="600" loading="lazy" decoding="async"><span class="ak-no">01</span></div>
         <div class="ak-bd">
@@ -1288,9 +1281,26 @@ def academy_min():
         <a class="ak-l" href="cam-nang.html">Hoặc nhận cẩm nang miễn phí</a>
       </div>
     </div>
+"""
+
+
+def academy_min():
+    return """
+<section id="khoahoc" class="mn">
+  <div class="wrap">
+    <div class="ac">
+      <img class="ac-bg" src="assets/ac-bg.webp" alt="" width="1392" height="936" loading="lazy" decoding="async">
+      <div class="ac-in">
+        <p class="mn-k" style="color:#140c06;"><b style="color:#140c06;">04</b> / LXAM Academy</p>
+        <h2 class="ac-h">Học Blender 3D<br>theo cách studio làm nghề.</h2>
+      </div>
+      <div class="ac-go">
+        <a class="ac-b" href="khoa-hoc.html">Xem khoá học <i>→</i></a>
+        <a class="ac-l" href="cam-nang.html">Nhận cẩm nang miễn phí</a>
+      </div>
+    </div>
   </div>
 </section>"""
-
 
 
 def contact_min(no="05", head="Bắt đầu một <em>dự án</em>.", mail_subject="Brief%20du%20an%203D"):
